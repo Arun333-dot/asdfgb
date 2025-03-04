@@ -1,0 +1,96 @@
+{
+  "id" : "model_asdfbggv_WindowFunction_0",
+  "metainfo" : {
+    "label" : "model_asdfbggv_WindowFunction_0",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"prophecy__temp_asdfbggv_post_WindowFunction_0_0\"",
+        "materialized" : "table",
+        "database" : "\"database\"",
+        "schema" : "\"default\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "prophecy__temp_asdfbggv_post_WindowFunction_0_0" : {
+      "id" : "prophecy__temp_asdfbggv_post_WindowFunction_0_0",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "prophecy__temp_asdfbggv_post_WindowFunction_0_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM WindowFunction_0\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_2_1",
+          "slug" : "input_port_2_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_2_1",
+          "slug" : "output_port_2_1"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "XEenMXliAgF-MOjEeiKRt$$e5ELtWJ_niGqVaJdmhH6w" : {
+      "id" : "XEenMXliAgF-MOjEeiKRt$$e5ELtWJ_niGqVaJdmhH6w",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_0",
+        "x" : 20,
+        "y" : 220,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "q4SJ2CervxJLC5RXDXofg$$eiIsPwNWjROJyvsbpPBkD",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "mjIK7csZkDzwQ9NirBjw0$$I9ybGphWGSrSICdUO9U0j",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_XEenMXliAgF-MOjEeiKRt$$e5ELtWJ_niGqVaJdmhH6w_prophecy__temp_asdfbggv_post_WindowFunction_0_0",
+    "source" : "XEenMXliAgF-MOjEeiKRt$$e5ELtWJ_niGqVaJdmhH6w",
+    "sourcePort" : "mjIK7csZkDzwQ9NirBjw0$$I9ybGphWGSrSICdUO9U0j",
+    "target" : "prophecy__temp_asdfbggv_post_WindowFunction_0_0",
+    "targetPort" : "input_port_2_1"
+  } ],
+  "component" : "Model"
+}

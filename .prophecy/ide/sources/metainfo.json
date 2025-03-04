@@ -1,5 +1,5 @@
 {
-  "name" : "sql_simple_project_10",
+  "name" : "external_sql_simple_project2",
   "fileSystem" : {
     "type" : "Folder",
     "name" : "",
@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "sql_simple_project_10/.prophecy/ide/pipelines/p1.json",
+    "aruns_pipelines" : {
+      "id" : "aruns_pipelines",
+      "name" : "aruns_pipelines",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/aruns_pipelines.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -28,7 +28,558 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "p20" : {
+      "id" : "p20",
+      "name" : "p20",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p20.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p10" : {
+      "id" : "p10",
+      "name" : "p10",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p10.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "2Kv_xiTzD4BRsgqnSLwyY$$YKQKeNQw_VUffY3xJMrb4",
+        "label" : "Filter_0"
+      } ],
+      "sources" : [ ]
+    },
+    "p19" : {
+      "id" : "p19",
+      "name" : "p19",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p19.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI",
+        "label" : "FlattenSchema_0"
+      } ],
+      "sources" : [ ]
+    },
+    "p12" : {
+      "id" : "p12",
+      "name" : "p12",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p12.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "jBQDMhAFp2jUZOF17Z72K$$5n454rTi3_zALXnkrRHvh",
+        "label" : "Aggregate_0"
+      } ],
+      "sources" : [ ]
+    },
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "Mcm7grt5UWQZ7hUuN5hIz$$G9d3hBLByHvskdfhRG7Sv",
+        "label" : "OrchestrationSource_0"
+      } ],
+      "sources" : [ {
+        "id" : "Mcm7grt5UWQZ7hUuN5hIz$$G9d3hBLByHvskdfhRG7Sv",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "p7" : {
+      "id" : "p7",
+      "name" : "p7",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p7.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "h1bx9ndqmPivQBglppbWJ$$kS-QDpCNaBcme_7fad0Sq",
+        "label" : "Aggregate_0"
+      }, {
+        "id" : "oHpl2acAOQuj-jSklJtOy$$NhIP8CQWFyIDK5yDZEl33",
+        "label" : "FlattenSchema_1"
+      }, {
+        "id" : "B2ynvv5H4pZ82y9nq-IVe$$LYuVfs1YoaZPDEO-3fCSO",
+        "label" : "Union_1"
+      } ],
+      "sources" : [ ]
+    },
+    "p23" : {
+      "id" : "p23",
+      "name" : "p23",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p23.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p21" : {
+      "id" : "p21",
+      "name" : "p21",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p21.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "sdfsdfsdfs" : {
+      "id" : "sdfsdfsdfs",
+      "name" : "sdfsdfsdfs",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/sdfsdfsdfs.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p113" : {
+      "id" : "p113",
+      "name" : "p113",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p113.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p18" : {
+      "id" : "p18",
+      "name" : "p18",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p18.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "rthfgh" : {
+      "id" : "rthfgh",
+      "name" : "rthfgh",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/rthfgh.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p15" : {
+      "id" : "p15",
+      "name" : "p15",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p15.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "asdfbggv" : {
+      "id" : "asdfbggv",
+      "name" : "asdfbggv",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/asdfbggv.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "XEenMXliAgF-MOjEeiKRt$$e5ELtWJ_niGqVaJdmhH6w",
+        "label" : "WindowFunction_0"
+      }, {
+        "id" : "jnMNpU0doN_KmBkaAPB10$$sl1MDCiGTLbRyklm6zxHV",
+        "label" : "FlattenSchema_1"
+      }, {
+        "id" : "dWZwPAVUhSm6UaJvhNRjg$$fxewZIWkmv8s9SgAQZOmx",
+        "label" : "Union_1"
+      } ],
+      "sources" : [ ]
+    },
+    "tyjtyjty" : {
+      "id" : "tyjtyjty",
+      "name" : "tyjtyjty",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/tyjtyjty.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p11" : {
+      "id" : "p11",
+      "name" : "p11",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p11.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "KB6aiTI5m4_BCGfzEF78d$$WzE4DkiUrfgVMh7gZhkM5",
+        "label" : "OrchestrationSource_0"
+      } ],
+      "sources" : [ {
+        "id" : "KB6aiTI5m4_BCGfzEF78d$$WzE4DkiUrfgVMh7gZhkM5",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "14" : {
+      "id" : "14",
+      "name" : "14",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/14.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "pipeline3" : {
+      "id" : "pipeline3",
+      "name" : "pipeline3",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/pipeline3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm",
+        "label" : "Aggregate_1"
+      }, {
+        "id" : "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx",
+        "label" : "Filter_1"
+      }, {
+        "id" : "Y2I_HNu5f4Ym8Md1DIVQw$$idPFe3PBIGiyE5P4_SMJb",
+        "label" : "OrchestrationSource_0"
+      }, {
+        "id" : "NH0cMefv1dYGmVRTPZ6d2$$fU2U47EIhd-cnUEzj0wm6",
+        "label" : "OrchestrationSource_1"
+      } ],
+      "sources" : [ {
+        "id" : "Y2I_HNu5f4Ym8Md1DIVQw$$idPFe3PBIGiyE5P4_SMJb",
+        "label" : "OrchestrationSource_0"
+      }, {
+        "id" : "NH0cMefv1dYGmVRTPZ6d2$$fU2U47EIhd-cnUEzj0wm6",
+        "label" : "OrchestrationSource_1"
+      } ]
+    },
+    "dfgdfgdfg" : {
+      "id" : "dfgdfgdfg",
+      "name" : "dfgdfgdfg",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/dfgdfgdfg.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p17" : {
+      "id" : "p17",
+      "name" : "p17",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p17.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p9" : {
+      "id" : "p9",
+      "name" : "p9",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p9.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "NYzBkIfyUyz0YSfETlvtR",
+        "label" : "raw_data",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "databricks",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Bigint"
+            }
+          }, {
+            "name" : "value",
+            "dataType" : {
+              "type" : "Bigint"
+            }
+          } ]
+        }
+      }, {
+        "id" : "tXYrA5muSmqWMXNjcz3iq$$-PFw7rIPJaiEJo7VymzqS",
+        "label" : "Aggregate_1"
+      }, {
+        "id" : "5UJFpbC-XtqGSf-6CL9ya$$HaX7-M_vfherZhIN1e4_H",
+        "label" : "Union_1"
+      }, {
+        "id" : "d5cbYMq7_KdsWf6E4_u98$$R-9Y7hnw3rXQ9csKalMOS",
+        "label" : "Filter_1"
+      }, {
+        "id" : "zFamULpllTJgCV7eJuahe$$yh99qHIwnzz5OJ7sgOKng",
+        "label" : "Aggregate_2"
+      }, {
+        "id" : "sbsYNMylits83h0BIr04r$$3gtqYfXk687_AvQJEMkVy",
+        "label" : "OrchestrationSource_1"
+      } ],
+      "sources" : [ {
+        "id" : "sbsYNMylits83h0BIr04r$$3gtqYfXk687_AvQJEMkVy",
+        "label" : "OrchestrationSource_1"
+      } ]
+    },
+    "dfgdfg" : {
+      "id" : "dfgdfg",
+      "name" : "dfgdfg",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/dfgdfg.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p8" : {
+      "id" : "p8",
+      "name" : "p8",
+      "path" : "external_sql_simple_project2/.prophecy/ide/pipelines/p8.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "yxH2yP3j1SQgEVX-EhUpR$$AU6rWP5hDjYz2eNh0pVuW",
+        "label" : "Deduplicate_0"
+      } ],
+      "sources" : [ ]
     }
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_0",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_1",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_10",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_11",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_12",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_13",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_14",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_15",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_16",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_17",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_18",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_19",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_3",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_4",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_5",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_6",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_7",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_8",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_9",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_performance",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "tanmay",
+      "children" : [ ]
+    } ]
   },
   "dependenciesContainer" : {
     "dependencies" : { },

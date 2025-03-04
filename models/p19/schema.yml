@@ -1,0 +1,16 @@
+---
+version: 2
+models:
+- name: "model_p19_FlattenSchema_0"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p19_source"
+  database: "database"
+  schema: "default"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p19_post_FlattenSchema_0_0"
+    tags:
+    - "prophecy_temp"

@@ -1,0 +1,16 @@
+---
+version: 2
+models:
+- name: "model_p10_Filter_0"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p10_source"
+  database: "database"
+  schema: "default"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p10_post_Filter_0_0"
+    tags:
+    - "prophecy_temp"

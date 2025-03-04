@@ -1,0 +1,53 @@
+{
+  "id" : "p10",
+  "metainfo" : {
+    "label" : "p10",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "2Kv_xiTzD4BRsgqnSLwyY$$YKQKeNQw_VUffY3xJMrb4" : {
+      "id" : "2Kv_xiTzD4BRsgqnSLwyY$$YKQKeNQw_VUffY3xJMrb4",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_0",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OOfuEfNwaoWuv-nnqQ5VT$$E_4phejWY14Flw49qiGv3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "VPJ5Qb3J5h5SWTMYoXXrj$$LQOmCSVJVDRHQUoTGXNlm",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

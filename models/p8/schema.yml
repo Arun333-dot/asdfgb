@@ -1,0 +1,16 @@
+---
+version: 2
+models:
+- name: "model_p8_Deduplicate_0"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p8_source"
+  database: "database"
+  schema: "default"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p8_post_Deduplicate_0_0"
+    tags:
+    - "prophecy_temp"

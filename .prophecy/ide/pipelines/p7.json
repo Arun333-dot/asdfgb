@@ -1,0 +1,113 @@
+{
+  "id" : "p7",
+  "metainfo" : {
+    "label" : "p7",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "h1bx9ndqmPivQBglppbWJ$$kS-QDpCNaBcme_7fad0Sq" : {
+      "id" : "h1bx9ndqmPivQBglppbWJ$$kS-QDpCNaBcme_7fad0Sq",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_0",
+        "x" : -1160,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2ju1VLg7HldA5fOZcDkBR$$NdsiqZfEnvOKaRBzgSTS5",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "GuOoluoydowNhi9DWC1g1$$55FuqSYAi5vTyy1Z1IpBt",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "oHpl2acAOQuj-jSklJtOy$$NhIP8CQWFyIDK5yDZEl33" : {
+      "id" : "oHpl2acAOQuj-jSklJtOy$$NhIP8CQWFyIDK5yDZEl33",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "x" : -1020,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "flattenExpressions" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KPxdOQdXq6e1sMOECd7L2$$L54ZWaTtQy5J2LCzEmJcz",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "B_SGZaXMd8mhnlS20AHuO$$PetlE6UiqGcMLzUelLDoS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "B2ynvv5H4pZ82y9nq-IVe$$LYuVfs1YoaZPDEO-3fCSO" : {
+      "id" : "B2ynvv5H4pZ82y9nq-IVe$$LYuVfs1YoaZPDEO-3fCSO",
+      "component" : "Union",
+      "metadata" : {
+        "label" : "Union_1",
+        "x" : -880,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "operationType" : "union",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mzCAXuwS33rSdfl2yh9zd$$-kX0KZDsUl-hteHuzmDCJ",
+          "slug" : "in0"
+        }, {
+          "id" : "mV2yrPL6DjB3DKnI3fkIl$$uuSKBZNtdm9cGXlNYRA41",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "u0OossXbGmAcNH5583WoK$$HHEO-XcnLiHR4Wp5hwt7P",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

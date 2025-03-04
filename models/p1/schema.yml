@@ -1,2 +1,34 @@
 ---
 version: 2
+models:
+- name: "model_p1_Union_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p1_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p1_Aggregate_2"
+  tags:
+  - "prophecy_temp"
+- name: "model_p1_Aggregate_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p1_source"
+  database: "database"
+  schema: "default"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p1_post_Aggregate_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p1_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p1_post_Union_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p1_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"

@@ -1,0 +1,50 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.aditya"
+  database: "hive_metastore"
+  schema: "arun123"
+  tables: []
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  tables: []
+- name: "hive_metastore.asadas"
+  database: "hive_metastore"
+  schema: "asadas"
+  tables: []
+- name: ""
+  database: "hive_metastore"
+  schema: "vaibhav"
+  tables: []
+- name: "hive_metastore.anewera"
+  database: "hive_metastore"
+  schema: "anewera"
+  tables:
+  - name: "wqwq"
+    columns:
+    - name: "customer"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "id"
+          dataType:
+            type: "Bigint"
+        - name: "name"
+          dataType:
+            type: "String"
+    - name: "order"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "amount"
+          dataType:
+            type: "Bigint"
+  - name: "222"
+    columns:
+    - name: "name"
+      dataType:
+        type: "String"
+    - name: "age"
+      dataType:
+        type: "String"

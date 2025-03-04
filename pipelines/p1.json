@@ -2,7 +2,7 @@
   "id" : "p1",
   "metainfo" : {
     "label" : "p1",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -19,7 +19,216 @@
       "emails" : [ "email@gmail.com" ]
     }
   },
-  "processes" : { },
-  "connections" : [ ],
+  "processes" : {
+    "NYzBkIfyUyz0YSfETlvtR" : {
+      "id" : "NYzBkIfyUyz0YSfETlvtR",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "raw_data",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "raw_data",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.aditya",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "o8CoYTyBIkmI4qDzhxE2B",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "c-r2fxUtzuH9c34uHFkYG",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "tXYrA5muSmqWMXNjcz3iq$$-PFw7rIPJaiEJo7VymzqS" : {
+      "id" : "tXYrA5muSmqWMXNjcz3iq$$-PFw7rIPJaiEJo7VymzqS",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p1_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p1_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p1_post_Aggregate_1_0", "tXYrA5muSmqWMXNjcz3iq$$-PFw7rIPJaiEJo7VymzqS" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p1_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p1_Aggregate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "5UJFpbC-XtqGSf-6CL9ya$$HaX7-M_vfherZhIN1e4_H" : {
+      "id" : "5UJFpbC-XtqGSf-6CL9ya$$HaX7-M_vfherZhIN1e4_H",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p1_Union_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p1_Union_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p1_post_Union_1_0", "5UJFpbC-XtqGSf-6CL9ya$$HaX7-M_vfherZhIN1e4_H" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p1_Union_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p1_Union_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "d5cbYMq7_KdsWf6E4_u98$$R-9Y7hnw3rXQ9csKalMOS" : {
+      "id" : "d5cbYMq7_KdsWf6E4_u98$$R-9Y7hnw3rXQ9csKalMOS",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p1_Filter_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p1_Filter_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p1_post_Filter_1_0", "d5cbYMq7_KdsWf6E4_u98$$R-9Y7hnw3rXQ9csKalMOS" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p1_Filter_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p1_Filter_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "zFamULpllTJgCV7eJuahe$$yh99qHIwnzz5OJ7sgOKng" : {
+      "id" : "zFamULpllTJgCV7eJuahe$$yh99qHIwnzz5OJ7sgOKng",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p1_Aggregate_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p1_Aggregate_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p1_post_Aggregate_2_0", "zFamULpllTJgCV7eJuahe$$yh99qHIwnzz5OJ7sgOKng" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p1_Aggregate_2_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p1_Aggregate_2_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "sbsYNMylits83h0BIr04r$$3gtqYfXk687_AvQJEMkVy" : {
+      "id" : "sbsYNMylits83h0BIr04r$$3gtqYfXk687_AvQJEMkVy",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -1080,
+        "y" : -440,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "kind" : "csv",
+          "category" : "File",
+          "properties" : { }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Ntd1exnvEhBNhnIqFV5pL$$9osytTWje8iioHzqrDJf-",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_5UJFpbC-XtqGSf-6CL9ya$$HaX7-M_vfherZhIN1e4_H_prophecy__temp_p1_post_Union_1_0",
+    "source" : "5UJFpbC-XtqGSf-6CL9ya$$HaX7-M_vfherZhIN1e4_H",
+    "sourcePort" : "IHzt8wvli15dFbtqqLwbi$$MfaHuO1rdQI8N7JcTOHbi",
+    "target" : "5UJFpbC-XtqGSf-6CL9ya$$HaX7-M_vfherZhIN1e4_H",
+    "targetPort" : "model_p1_Union_1_in_1"
+  }, {
+    "id" : "conn_d5cbYMq7_KdsWf6E4_u98$$R-9Y7hnw3rXQ9csKalMOS_prophecy__temp_p1_post_Filter_1_0",
+    "source" : "d5cbYMq7_KdsWf6E4_u98$$R-9Y7hnw3rXQ9csKalMOS",
+    "sourcePort" : "B5MNSK7dlxbmSrJXDEedm$$plp9CGt2HlxN5O71RkdyU",
+    "target" : "d5cbYMq7_KdsWf6E4_u98$$R-9Y7hnw3rXQ9csKalMOS",
+    "targetPort" : "model_p1_Filter_1_in_1"
+  }, {
+    "id" : "conn_zFamULpllTJgCV7eJuahe$$yh99qHIwnzz5OJ7sgOKng_prophecy__temp_p1_post_Aggregate_2_0",
+    "source" : "zFamULpllTJgCV7eJuahe$$yh99qHIwnzz5OJ7sgOKng",
+    "sourcePort" : "uvljuFJ9ftZvKsko5PCCP$$dGQGLi9IdCA1_WFnsMR8n",
+    "target" : "zFamULpllTJgCV7eJuahe$$yh99qHIwnzz5OJ7sgOKng",
+    "targetPort" : "model_p1_Aggregate_2_in_1"
+  }, {
+    "id" : "conn_tXYrA5muSmqWMXNjcz3iq$$-PFw7rIPJaiEJo7VymzqS_prophecy__temp_p1_post_Aggregate_1_0",
+    "source" : "tXYrA5muSmqWMXNjcz3iq$$-PFw7rIPJaiEJo7VymzqS",
+    "sourcePort" : "x6JsrCr7BtgnrGmbI4Aq2$$h93kehqzir7GzlcYLo1Jh",
+    "target" : "tXYrA5muSmqWMXNjcz3iq$$-PFw7rIPJaiEJo7VymzqS",
+    "targetPort" : "model_p1_Aggregate_1_in_1"
+  } ],
   "component" : "Pipeline"
 }

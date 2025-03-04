@@ -1,0 +1,90 @@
+{
+  "id" : "model_p10_Filter_0",
+  "metainfo" : {
+    "label" : "model_p10_Filter_0",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"prophecy__temp_p10_post_Filter_0_0\"",
+        "materialized" : "table",
+        "database" : "\"database\"",
+        "schema" : "\"default\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "prophecy__temp_p10_post_Filter_0_0" : {
+      "id" : "prophecy__temp_p10_post_Filter_0_0",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "prophecy__temp_p10_post_Filter_0_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM Filter_0\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0_1",
+          "slug" : "input_port_0_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0_1",
+          "slug" : "output_port_0_1"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "2Kv_xiTzD4BRsgqnSLwyY$$YKQKeNQw_VUffY3xJMrb4" : {
+      "id" : "2Kv_xiTzD4BRsgqnSLwyY$$YKQKeNQw_VUffY3xJMrb4",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_0",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OOfuEfNwaoWuv-nnqQ5VT$$E_4phejWY14Flw49qiGv3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "VPJ5Qb3J5h5SWTMYoXXrj$$LQOmCSVJVDRHQUoTGXNlm",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_2Kv_xiTzD4BRsgqnSLwyY$$YKQKeNQw_VUffY3xJMrb4_prophecy__temp_p10_post_Filter_0_0",
+    "source" : "2Kv_xiTzD4BRsgqnSLwyY$$YKQKeNQw_VUffY3xJMrb4",
+    "sourcePort" : "VPJ5Qb3J5h5SWTMYoXXrj$$LQOmCSVJVDRHQUoTGXNlm",
+    "target" : "prophecy__temp_p10_post_Filter_0_0",
+    "targetPort" : "input_port_0_1"
+  } ],
+  "component" : "Model"
+}

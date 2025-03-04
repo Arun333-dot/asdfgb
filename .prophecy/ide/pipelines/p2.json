@@ -1,0 +1,148 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm" : {
+      "id" : "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : -1020,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "8sFKGVHv8JNQpmJXntvzy$$d6WKDaI7FsJGB-1VjIia0",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "tK_uZtaU8rE9X-wLH7Mgp$$8uuRxKkbmS9SzXEYZZSFx",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx" : {
+      "id" : "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : -880,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "RqbApVpv4nqmcqyA_s5_3$$wi_5veJAst-G9T7mnaaJf",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "GJRAHSuo9I8Hw_T9ByorX$$iS3a53SYw6nShHmt9cbCB",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Y2I_HNu5f4Ym8Md1DIVQw$$idPFe3PBIGiyE5P4_SMJb" : {
+      "id" : "Y2I_HNu5f4Ym8Md1DIVQw$$idPFe3PBIGiyE5P4_SMJb",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1160,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "kind" : "csv",
+          "category" : "File",
+          "properties" : { }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xJsdWnXniurJuS8FN4glN$$aGvsA185kFzNAc40dAvaz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "NH0cMefv1dYGmVRTPZ6d2$$fU2U47EIhd-cnUEzj0wm6" : {
+      "id" : "NH0cMefv1dYGmVRTPZ6d2$$fU2U47EIhd-cnUEzj0wm6",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -740,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "kind" : "csv",
+          "category" : "File",
+          "properties" : { }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xATy7QvwqkrWM-ycOtY3D$$dORINKRDzt4qH6eg7Exqy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

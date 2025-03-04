@@ -1,6 +1,6 @@
-name: sql_simple_project_10
+name: external_sql_simple_project2
 description: ''
-version: '2'
+version: '25'
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
@@ -16,14 +16,29 @@ gemContainer:
   dependencies: null
 functions:
   author: null
-  createdAt: '2025-03-04 05:37:40'
+  createdAt: '2025-03-03 06:46:25'
   udfs: {}
   udafs: {}
   expressions: {}
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/frfgsddfsd:
+    name: frfgsddfsd
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/frfgsddfsd.sql
+    - .prophecy/ide/models/frfgsddfsd.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-04 05:25:31'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -35,11 +50,338 @@ sqlMacros:
     files:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
-    createdAt: '2025-03-04 05:37:43'
+    createdAt: '2025-03-03 06:46:28'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources:
+    name: ''
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-03 08:17:56'
+    tables: []
+  .prophecy/metadata/sqlsources/prophecy__temp_p7_source:
+    name: prophecy__temp_p7_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p7/schema.yml
+    createdAt: '2025-03-04 05:18:46'
+    tables:
+    - name: prophecy__temp_p7_post_Union_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:18:46'
+    - name: prophecy__temp_p7_post_FlattenSchema_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:18:46'
+    - name: prophecy__temp_p7_post_Aggregate_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:18:46'
+  .prophecy/metadata/sqlsources/prophecy__temp_asdfbggv_source:
+    name: prophecy__temp_asdfbggv_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/asdfbggv/schema.yml
+    createdAt: '2025-03-04 05:33:19'
+    tables:
+    - name: prophecy__temp_asdfbggv_post_Union_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:33:23'
+    - name: prophecy__temp_asdfbggv_post_FlattenSchema_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:33:23'
+    - name: prophecy__temp_asdfbggv_post_WindowFunction_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:33:19'
+  .prophecy/metadata/sqlsources/prophecy__temp_p1_source:
+    name: prophecy__temp_p1_source
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/p1/schema.yml
+    createdAt: '2025-03-03 12:03:38'
+    tables:
+    - name: prophecy__temp_p1_post_Aggregate_2_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:48:25'
+    - name: prophecy__temp_p1_post_Filter_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:48:25'
+    - name: prophecy__temp_p1_post_Union_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:48:25'
+    - name: prophecy__temp_p1_post_Aggregate_1_0
+      schema: null
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-03 12:03:38'
+  .prophecy/metadata/sqlsources/hive_metastore_aditya:
+    name: hive_metastore.aditya
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-03 07:23:47'
+    tables: []
+  .prophecy/metadata/sqlsources/hive_metastore_asadas:
+    name: hive_metastore.asadas
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-03 08:04:22'
+    tables: []
+  .prophecy/metadata/sqlsources/prophecy__temp_p19_source:
+    name: prophecy__temp_p19_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p19/schema.yml
+    createdAt: '2025-03-04 05:22:34'
+    tables:
+    - name: prophecy__temp_p19_post_FlattenSchema_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:22:34'
+  .prophecy/metadata/sqlsources/prophecy__temp_p10_source:
+    name: prophecy__temp_p10_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p10/schema.yml
+    createdAt: '2025-03-04 06:08:44'
+    tables:
+    - name: prophecy__temp_p10_post_Filter_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 06:08:44'
+  .prophecy/metadata/sqlsources/prophecy__temp_p12_source:
+    name: prophecy__temp_p12_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p12/schema.yml
+    createdAt: '2025-03-04 05:13:49'
+    tables:
+    - name: prophecy__temp_p12_post_Aggregate_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-04 05:13:49'
+  .prophecy/metadata/sqlsources/hive_metastore_anewera:
+    name: hive_metastore.anewera
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-03 08:36:51'
+    tables:
+    - name: wqwq
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: customer
+          dataType:
+            type: Struct
+            fields:
+            - name: id
+              dataType:
+                type: Bigint
+            - name: name
+              dataType:
+                type: String
+        - name: order
+          dataType:
+            type: Struct
+            fields:
+            - name: amount
+              dataType:
+                type: Bigint
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-03 08:38:18'
+    - name: '222'
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: name
+          dataType:
+            type: String
+        - name: age
+          dataType:
+            type: String
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-03 08:39:44'
+  .prophecy/metadata/sqlsources/prophecy__temp_p8_source:
+    name: prophecy__temp_p8_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p8/schema.yml
+    createdAt: '2025-03-03 15:28:36'
+    tables:
+    - name: prophecy__temp_p8_post_Deduplicate_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-03 15:28:36'
+  .prophecy/metadata/sqlsources/prophecy__temp_p2_source:
+    name: prophecy__temp_p2_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p2/schema.yml
+    createdAt: '2025-03-03 12:58:38'
+    tables:
+    - name: prophecy__temp_p2_post_Filter_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-03 12:58:38'
+    - name: prophecy__temp_p2_post_Aggregate_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-03 12:58:38'
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-03 07:28:30'
+    tables: []
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
+    name: pipeline3
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pipeline3.json
+    createdAt: '2025-03-03 13:35:43'
+  .prophecy/metadata/sqlorchestratorpipeline/rthfgh:
+    name: rthfgh
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/rthfgh.json
+    createdAt: '2025-03-04 06:16:12'
+  .prophecy/metadata/sqlorchestratorpipeline/p15:
+    name: p15
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p15.json
+    createdAt: '2025-03-03 13:00:44'
+  .prophecy/metadata/sqlorchestratorpipeline/p7:
+    name: p7
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p7.json
+    createdAt: '2025-03-03 12:59:19'
+  .prophecy/metadata/sqlorchestratorpipeline/p21:
+    name: p21
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p21.json
+    createdAt: '2025-03-04 06:12:45'
+  .prophecy/metadata/sqlorchestratorpipeline/p11:
+    name: p11
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p11.json
+    createdAt: '2025-03-03 12:59:54'
+  .prophecy/metadata/sqlorchestratorpipeline/asdfbggv:
+    name: asdfbggv
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/asdfbggv.json
+    createdAt: '2025-03-03 15:43:08'
+  .prophecy/metadata/sqlorchestratorpipeline/p4:
+    name: p4
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p4.json
+    createdAt: '2025-03-03 08:31:56'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p3.json
+    createdAt: '2025-03-03 08:31:49'
+  .prophecy/metadata/sqlorchestratorpipeline/sdfsdfsdfs:
+    name: sdfsdfsdfs
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/sdfsdfsdfs.json
+    createdAt: '2025-03-04 05:34:30'
+  .prophecy/metadata/sqlorchestratorpipeline/p113:
+    name: p113
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p113.json
+    createdAt: '2025-03-03 13:00:30'
+  .prophecy/metadata/sqlorchestratorpipeline/p19:
+    name: p19
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p19.json
+    createdAt: '2025-03-03 13:01:14'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p2.json
+    createdAt: '2025-03-03 08:31:44'
   .prophecy/metadata/sqlorchestratorpipeline/p1:
     name: p1
     schema: null
@@ -47,13 +389,117 @@ sqlOrchestratorPipelines:
     author: arunsharma@prophecy.io
     files:
     - pipelines/p1.json
-    createdAt: '2025-03-04 05:38:36'
+    createdAt: '2025-03-03 07:00:06'
+  .prophecy/metadata/sqlorchestratorpipeline/p18:
+    name: p18
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p18.json
+    createdAt: '2025-03-03 13:01:05'
+  .prophecy/metadata/sqlorchestratorpipeline/p8:
+    name: p8
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p8.json
+    createdAt: '2025-03-03 12:59:30'
+  .prophecy/metadata/sqlorchestratorpipeline/p10:
+    name: p10
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p10.json
+    createdAt: '2025-03-03 12:59:44'
+  .prophecy/metadata/sqlorchestratorpipeline/p23:
+    name: p23
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p23.json
+    createdAt: '2025-03-03 13:00:08'
+  .prophecy/metadata/sqlorchestratorpipeline/p12:
+    name: p12
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p12.json
+    createdAt: '2025-03-03 13:00:02'
+  .prophecy/metadata/sqlorchestratorpipeline/dfgdfgdfg:
+    name: dfgdfgdfg
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/dfgdfgdfg.json
+    createdAt: '2025-03-04 06:14:48'
+  .prophecy/metadata/sqlorchestratorpipeline/p17:
+    name: p17
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p17.json
+    createdAt: '2025-03-03 13:00:55'
+  .prophecy/metadata/sqlorchestratorpipeline/aruns_pipelines:
+    name: aruns_pipelines
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/aruns_pipelines.json
+    createdAt: '2025-03-03 13:29:54'
+  .prophecy/metadata/sqlorchestratorpipeline/dfgdfg:
+    name: dfgdfg
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/dfgdfg.json
+    createdAt: '2025-03-04 06:22:17'
+  .prophecy/metadata/sqlorchestratorpipeline/tyjtyjty:
+    name: tyjtyjty
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/tyjtyjty.json
+    createdAt: '2025-03-04 06:15:53'
+  .prophecy/metadata/sqlorchestratorpipeline/p9:
+    name: p9
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p9.json
+    createdAt: '2025-03-03 12:59:36'
+  .prophecy/metadata/sqlorchestratorpipeline/p20:
+    name: p20
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p20.json
+    createdAt: '2025-03-03 13:01:32'
+  .prophecy/metadata/sqlorchestratorpipeline/14:
+    name: '14'
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/14.json
+    createdAt: '2025-03-03 13:00:36'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
   description: null
   author: arunsharma@prophecy.io
-  createdAt: '2025-03-04 05:37:40'
+  createdAt: '2025-03-03 06:46:25'
 dependencies: []
 projectDependencies: {}
 flags:

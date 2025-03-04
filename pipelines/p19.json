@@ -1,0 +1,59 @@
+{
+  "id" : "p19",
+  "metainfo" : {
+    "label" : "p19",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI" : {
+      "id" : "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p19_FlattenSchema_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p19_FlattenSchema_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p19_post_FlattenSchema_0_0", "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p19_FlattenSchema_0_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p19_FlattenSchema_0_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI_prophecy__temp_p19_post_FlattenSchema_0_0",
+    "source" : "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI",
+    "sourcePort" : "4krnJLQ2u5TrrbQ5GvGsU$$J2CZbZKL3af48vQ_x7D21",
+    "target" : "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI",
+    "targetPort" : "model_p19_FlattenSchema_0_in_1"
+  } ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,52 @@
+{
+  "id" : "p19",
+  "metainfo" : {
+    "label" : "p19",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI" : {
+      "id" : "yfGOr-d9TSdBB4fj8Sr0Y$$IWpM5lJQbLp1gGVWTt-ZI",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_0",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "flattenExpressions" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mzwMD8yDYrAzqVYnM1WDR$$hOUlxOpVMtSpe5YRtB1PT",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "4krnJLQ2u5TrrbQ5GvGsU$$J2CZbZKL3af48vQ_x7D21",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

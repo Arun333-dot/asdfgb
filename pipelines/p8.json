@@ -1,0 +1,59 @@
+{
+  "id" : "p8",
+  "metainfo" : {
+    "label" : "p8",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "yxH2yP3j1SQgEVX-EhUpR$$AU6rWP5hDjYz2eNh0pVuW" : {
+      "id" : "yxH2yP3j1SQgEVX-EhUpR$$AU6rWP5hDjYz2eNh0pVuW",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p8_Deduplicate_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p8_Deduplicate_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p8_post_Deduplicate_0_0", "yxH2yP3j1SQgEVX-EhUpR$$AU6rWP5hDjYz2eNh0pVuW" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p8_Deduplicate_0_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p8_Deduplicate_0_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_yxH2yP3j1SQgEVX-EhUpR$$AU6rWP5hDjYz2eNh0pVuW_prophecy__temp_p8_post_Deduplicate_0_0",
+    "source" : "yxH2yP3j1SQgEVX-EhUpR$$AU6rWP5hDjYz2eNh0pVuW",
+    "sourcePort" : "jDv_KD3frN8-KDFrbKhsW$$1-TOUJvhxfHS4aR-oYflS",
+    "target" : "yxH2yP3j1SQgEVX-EhUpR$$AU6rWP5hDjYz2eNh0pVuW",
+    "targetPort" : "model_p8_Deduplicate_0_in_1"
+  } ],
+  "component" : "Pipeline"
+}

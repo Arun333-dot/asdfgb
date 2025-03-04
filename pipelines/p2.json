@@ -1,0 +1,156 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "NH0cMefv1dYGmVRTPZ6d2$$fU2U47EIhd-cnUEzj0wm6" : {
+      "id" : "NH0cMefv1dYGmVRTPZ6d2$$fU2U47EIhd-cnUEzj0wm6",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -740,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "kind" : "csv",
+          "category" : "File",
+          "properties" : { }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xATy7QvwqkrWM-ycOtY3D$$dORINKRDzt4qH6eg7Exqy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Y2I_HNu5f4Ym8Md1DIVQw$$idPFe3PBIGiyE5P4_SMJb" : {
+      "id" : "Y2I_HNu5f4Ym8Md1DIVQw$$idPFe3PBIGiyE5P4_SMJb",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1160,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "kind" : "csv",
+          "category" : "File",
+          "properties" : { }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xJsdWnXniurJuS8FN4glN$$aGvsA185kFzNAc40dAvaz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx" : {
+      "id" : "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_Filter_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_Filter_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_Filter_1_0", "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_Filter_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_Filter_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm" : {
+      "id" : "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_Aggregate_1_0", "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_Aggregate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm_prophecy__temp_p2_post_Aggregate_1_0",
+    "source" : "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm",
+    "sourcePort" : "tK_uZtaU8rE9X-wLH7Mgp$$8uuRxKkbmS9SzXEYZZSFx",
+    "target" : "BhGyPv9oQq3d1sJT3_tBU$$ajuHpU_wMB5qwx_J3tsNm",
+    "targetPort" : "model_p2_Aggregate_1_in_1"
+  }, {
+    "id" : "conn_xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx_prophecy__temp_p2_post_Filter_1_0",
+    "source" : "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx",
+    "sourcePort" : "GJRAHSuo9I8Hw_T9ByorX$$iS3a53SYw6nShHmt9cbCB",
+    "target" : "xj_Slqu6hbxrfh0LNGFBj$$Ugj280tm2Rc5avZqr82tx",
+    "targetPort" : "model_p2_Filter_1_in_1"
+  } ],
+  "component" : "Pipeline"
+}

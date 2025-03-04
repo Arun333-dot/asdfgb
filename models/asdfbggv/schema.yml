@@ -1,0 +1,28 @@
+---
+version: 2
+models:
+- name: "model_asdfbggv_WindowFunction_0"
+  tags:
+  - "prophecy_temp"
+- name: "model_asdfbggv_Union_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_asdfbggv_FlattenSchema_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_asdfbggv_source"
+  database: "database"
+  schema: "default"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_asdfbggv_post_Union_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_asdfbggv_post_FlattenSchema_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_asdfbggv_post_WindowFunction_0_0"
+    tags:
+    - "prophecy_temp"
