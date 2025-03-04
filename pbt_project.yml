@@ -70,17 +70,26 @@ sqlSources:
     createdAt: '2025-03-04 05:18:46'
     tables:
     - name: prophecy__temp_p7_post_Union_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:18:46'
     - name: prophecy__temp_p7_post_FlattenSchema_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:18:46'
     - name: prophecy__temp_p7_post_Aggregate_0_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:18:46'
@@ -93,17 +102,26 @@ sqlSources:
     createdAt: '2025-03-04 05:33:19'
     tables:
     - name: prophecy__temp_asdfbggv_post_Union_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:33:23'
     - name: prophecy__temp_asdfbggv_post_FlattenSchema_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:33:23'
     - name: prophecy__temp_asdfbggv_post_WindowFunction_0_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:33:19'
@@ -116,22 +134,34 @@ sqlSources:
     createdAt: '2025-03-03 12:03:38'
     tables:
     - name: prophecy__temp_p1_post_Aggregate_2_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:48:25'
     - name: prophecy__temp_p1_post_Filter_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:48:25'
     - name: prophecy__temp_p1_post_Union_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:48:25'
     - name: prophecy__temp_p1_post_Aggregate_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma+admin@prophecy.io
       createdAt: '2025-03-03 12:03:38'
@@ -160,7 +190,10 @@ sqlSources:
     createdAt: '2025-03-04 05:22:34'
     tables:
     - name: prophecy__temp_p19_post_FlattenSchema_0_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:22:34'
@@ -173,7 +206,10 @@ sqlSources:
     createdAt: '2025-03-04 06:08:44'
     tables:
     - name: prophecy__temp_p10_post_Filter_0_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 06:08:44'
@@ -186,7 +222,10 @@ sqlSources:
     createdAt: '2025-03-04 05:13:49'
     tables:
     - name: prophecy__temp_p12_post_Aggregate_0_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-04 05:13:49'
@@ -202,24 +241,7 @@ sqlSources:
       schema:
         entityType: ''
         providerType: databricks
-        fields:
-        - name: customer
-          dataType:
-            type: Struct
-            fields:
-            - name: id
-              dataType:
-                type: Bigint
-            - name: name
-              dataType:
-                type: String
-        - name: order
-          dataType:
-            type: Struct
-            fields:
-            - name: amount
-              dataType:
-                type: Bigint
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-03 08:38:18'
@@ -227,13 +249,7 @@ sqlSources:
       schema:
         entityType: ''
         providerType: databricks
-        fields:
-        - name: name
-          dataType:
-            type: String
-        - name: age
-          dataType:
-            type: String
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-03 08:39:44'
@@ -246,7 +262,10 @@ sqlSources:
     createdAt: '2025-03-03 15:28:36'
     tables:
     - name: prophecy__temp_p8_post_Deduplicate_0_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-03 15:28:36'
@@ -259,12 +278,18 @@ sqlSources:
     createdAt: '2025-03-03 12:58:38'
     tables:
     - name: prophecy__temp_p2_post_Filter_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-03 12:58:38'
     - name: prophecy__temp_p2_post_Aggregate_1_0
-      schema: null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-03 12:58:38'
