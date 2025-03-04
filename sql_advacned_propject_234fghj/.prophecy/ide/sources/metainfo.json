@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "sql_advacned_propject_234/.prophecy/ide/pipelines/p1.json",
+    "test_pipeline_p2" : {
+      "id" : "test_pipeline_p2",
+      "name" : "test_pipeline_p2",
+      "path" : "sql_advacned_propject_234/.prophecy/ide/pipelines/test_pipeline_p2.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -29,10 +29,10 @@
       "preview" : [ ],
       "sources" : [ ]
     },
-    "test_pipeline_p2" : {
-      "id" : "test_pipeline_p2",
-      "name" : "test_pipeline_p2",
-      "path" : "sql_advacned_propject_234/.prophecy/ide/pipelines/test_pipeline_p2.json",
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "sql_advacned_propject_234/.prophecy/ide/pipelines/p1.json",
       "config" : {
         "schema" : {
           "type" : "record",
