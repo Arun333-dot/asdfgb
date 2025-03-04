@@ -1,0 +1,65 @@
+{
+  "name" : "sql_advacned_propject_234",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "sql_advacned_propject_234/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "test_pipeline_p2" : {
+      "id" : "test_pipeline_p2",
+      "name" : "test_pipeline_p2",
+      "path" : "sql_advacned_propject_234/.prophecy/ide/pipelines/test_pipeline_p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "test_pipeline_p3" : {
+      "id" : "test_pipeline_p3",
+      "name" : "test_pipeline_p3",
+      "path" : "sql_advacned_propject_234/.prophecy/ide/pipelines/test_pipeline_p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}
