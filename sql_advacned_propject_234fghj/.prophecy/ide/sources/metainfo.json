@@ -39,8 +39,14 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ ],
-      "sources" : [ ]
+      "preview" : [ {
+        "id" : "zSzKpyv-7tg3_kNJyPHWd$$Uz39uruJbrYvm0XNRWSLk",
+        "label" : "OrchestrationSource_0"
+      } ],
+      "sources" : [ {
+        "id" : "zSzKpyv-7tg3_kNJyPHWd$$Uz39uruJbrYvm0XNRWSLk",
+        "label" : "OrchestrationSource_0"
+      } ]
     },
     "test_pipeline_p3" : {
       "id" : "test_pipeline_p3",
