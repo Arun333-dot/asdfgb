@@ -1,0 +1,9 @@
+---
+version: 2
+models:
+- name: "model1"
+  columns:
+  - name: "amount"
+    dataType:
+      type: "Float"
+  tests: []

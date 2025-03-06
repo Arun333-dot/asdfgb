@@ -1,0 +1,84 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##wnj2c4Fp" : {
+      "id" : "model1##wnj2c4Fp",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 460,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customers_orders\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "U6Ow5Vbg",
+          "slug" : "customers_orders"
+        } ],
+        "outputs" : [ {
+          "id" : "YZaIhQbh",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "OnIefH63fJwzWaBhnuW8C" : {
+      "id" : "OnIefH63fJwzWaBhnuW8C",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers_orders",
+        "slug" : "customers_orders",
+        "x" : -420,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers_orders",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-development.dataset",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "l31aEelCTvPJtZIRdddVp",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "Ynu1SQ6kGzAR9C66jFU49$$NfgekdP0rpbdmXMoZ_LjS",
+    "source" : "OnIefH63fJwzWaBhnuW8C",
+    "sourcePort" : "l31aEelCTvPJtZIRdddVp",
+    "target" : "model1##wnj2c4Fp",
+    "targetPort" : "U6Ow5Vbg"
+  } ],
+  "component" : "Model"
+}

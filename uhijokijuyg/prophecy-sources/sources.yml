@@ -1,0 +1,21 @@
+---
+version: 2
+sources:
+- name: "prophecy-development.dataset"
+  database: "prophecy-development"
+  schema: "dataset"
+  config:
+    enabled: true
+  quoting:
+    database: true
+  tables:
+  - name: "customers_orders"
+    description: "Customer order amounts, providing insights into purchasing behavior\
+      \ and revenue generation."
+    quoting:
+      identifier: true
+    columns:
+    - name: "amount"
+      description: "Total monetary value of the customer's order"
+      dataType:
+        type: "Float"

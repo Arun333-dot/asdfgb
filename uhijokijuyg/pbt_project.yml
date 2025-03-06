@@ -1,0 +1,93 @@
+name: bigquery_sql_databricks_project_external
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-06 07:15:43'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model1:
+    name: model1
+    schema:
+      entityType: ''
+      providerType: BigQuery
+      fields:
+      - name: amount
+        dataType:
+          type: Float
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/model1.sql
+    - .prophecy/ide/models/model1.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-06 07:16:18'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-06 07:15:45'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/prophecy-development_dataset:
+    name: prophecy-development.dataset
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-06 07:16:30'
+    tables:
+    - name: customers_orders
+      schema:
+        entityType: ''
+        providerType: bigquery
+        fields:
+        - name: amount
+          dataType:
+            type: Float
+      description: Customer order amounts, providing insights into purchasing behavior
+        and revenue generation.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2025-03-06 07:16:30'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2025-03-06 07:15:43'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
