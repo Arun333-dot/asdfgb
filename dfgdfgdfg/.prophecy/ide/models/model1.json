@@ -1,0 +1,84 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##C5NZZUTr" : {
+      "id" : "model1##C5NZZUTr",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM ordersdatabaseinput\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lC7ICKUE",
+          "slug" : "ordersdatabaseinput"
+        } ],
+        "outputs" : [ {
+          "id" : "T5n235db",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "cNuUVET4wUdJBJQydviig" : {
+      "id" : "cNuUVET4wUdJBJQydviig",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ordersdatabaseinput",
+        "slug" : "ordersdatabaseinput",
+        "x" : -200,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "ordersdatabaseinput",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-field.dataset_two",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VtsLbOTs4q3RhISSSQduH",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "e5cgJ8E9og51ovJiI4gU7$$iY1Zl0l4FRqKXh9_lyGl6",
+    "source" : "cNuUVET4wUdJBJQydviig",
+    "sourcePort" : "VtsLbOTs4q3RhISSSQduH",
+    "target" : "model1##C5NZZUTr",
+    "targetPort" : "lC7ICKUE"
+  } ],
+  "component" : "Model"
+}

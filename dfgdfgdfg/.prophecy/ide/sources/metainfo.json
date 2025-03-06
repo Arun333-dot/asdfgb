@@ -1,0 +1,181 @@
+{
+  "name" : "new_project_123",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "bigquery",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Database",
+      "name" : "test-project-bq-416511",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "prophecy-field",
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "dataset_two",
+        "tables" : {
+          "test_model_1" : {
+            "entityType" : "VIEW",
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "customer_number",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "dim_first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "dim_last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "middle_initial",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "state",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "zip_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "account_flags",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "account_open_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "phone",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "ordersdatabaseinput" : {
+            "entityType" : "TABLE",
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          }
+        }
+      }, {
+        "type" : "Schema",
+        "name" : "scd_poc",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_field",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "nyc_taxi",
+        "children" : [ ]
+      } ]
+    }, {
+      "type" : "Database",
+      "name" : "prophecy-development",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "model1",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
+  "frontEndLanguage" : "sql"
+}

@@ -1,0 +1,41 @@
+---
+version: 2
+sources:
+- name: "prophecy-field.dataset_two"
+  database: "prophecy-field"
+  schema: "dataset_two"
+  config:
+    enabled: true
+  quoting:
+    database: true
+  tables:
+  - name: "ordersdatabaseinput"
+    description: "Order records capturing transaction details, customer information,\
+      \ and order status for business insights."
+    quoting:
+      identifier: true
+    columns:
+    - name: "order_id"
+      description: "Unique identifier for each order placed"
+      dataType:
+        type: "Integer"
+    - name: "customer_id"
+      description: "The unique ID of the customer who placed the order"
+      dataType:
+        type: "Integer"
+    - name: "order_status"
+      description: "Current status of the order"
+      dataType:
+        type: "String"
+    - name: "order_category"
+      description: "Category of the order placed by the customer"
+      dataType:
+        type: "String"
+    - name: "order_date"
+      description: "Date when the order was placed"
+      dataType:
+        type: "Date"
+    - name: "amount"
+      description: "Total monetary value of the order"
+      dataType:
+        type: "Float"
