@@ -39,6 +39,22 @@
           "fields" : [ ]
         }
       },
+      "preview" : [ {
+        "id" : "i9tqqNHv3wYKhQfFLYt7D$$wq_NGxNrkL1ICjCZbbZoj",
+        "label" : "OrchestrationTarget_0"
+      } ],
+      "sources" : [ ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "redshfit_project_Sql/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
       "preview" : [ ],
       "sources" : [ ]
     }

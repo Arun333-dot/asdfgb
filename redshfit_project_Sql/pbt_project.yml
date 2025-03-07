@@ -177,6 +177,14 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/p2.json
     createdAt: '2025-03-07 08:35:26'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p3.json
+    createdAt: '2025-03-07 08:44:00'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

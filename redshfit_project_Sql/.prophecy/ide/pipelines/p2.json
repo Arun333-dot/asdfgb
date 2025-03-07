@@ -19,7 +19,40 @@
       "emails" : [ "email@gmail.com" ]
     }
   },
-  "processes" : { },
+  "processes" : {
+    "i9tqqNHv3wYKhQfFLYt7D$$wq_NGxNrkL1ICjCZbbZoj" : {
+      "id" : "i9tqqNHv3wYKhQfFLYt7D$$wq_NGxNrkL1ICjCZbbZoj",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -1160,
+        "y" : -540,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : { },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ojJrRPps5kfHw9iE5E8zc$$eujqs1vgam9wQ99CzJkry",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
