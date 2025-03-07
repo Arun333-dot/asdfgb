@@ -26,8 +26,14 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ ],
-      "sources" : [ ]
+      "preview" : [ {
+        "id" : "aCEJImGJM96-EcpIHaPd5$$BUQ0m4L1byM_TB4memNTD",
+        "label" : "OrchestrationSource_0"
+      } ],
+      "sources" : [ {
+        "id" : "aCEJImGJM96-EcpIHaPd5$$BUQ0m4L1byM_TB4memNTD",
+        "label" : "OrchestrationSource_0"
+      } ]
     }
   },
   "dependenciesContainer" : {

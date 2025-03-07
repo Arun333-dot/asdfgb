@@ -19,7 +19,40 @@
       "emails" : [ "email@gmail.com" ]
     }
   },
-  "processes" : { },
+  "processes" : {
+    "aCEJImGJM96-EcpIHaPd5$$BUQ0m4L1byM_TB4memNTD" : {
+      "id" : "aCEJImGJM96-EcpIHaPd5$$BUQ0m4L1byM_TB4memNTD",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1160,
+        "y" : -540,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : { },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "9QrkJDoicwcCSIKbPMuVz$$_0J5aRDjMUjFWdH8cfZi1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
