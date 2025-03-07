@@ -39,7 +39,15 @@ sqlMacros:
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
-sqlOrchestratorPipelines: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/hgjghj:
+    name: hgjghj
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/hgjghj.json
+    createdAt: '2025-03-07 08:20:59'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
