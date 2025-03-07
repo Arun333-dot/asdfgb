@@ -29,6 +29,28 @@
       "preview" : [ ],
       "sources" : [ ]
     },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "redshfit_project_Sql/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "96VMc_Rz-4apNVv1lOmX_$$4aaFw93KRi0TWXT32eL0t",
+        "label" : "Aggregate_0"
+      }, {
+        "id" : "yL5U3aKsbkKaNIQnuC5_V$$jglPV14ZqakJzJp4nZFQE",
+        "label" : "Limit_1"
+      }, {
+        "id" : "Cux7TCGhKtMLZIaouacVJ$$6Ja9es8efCHQr_GpQNaav",
+        "label" : "Union_1"
+      } ],
+      "sources" : [ ]
+    },
     "p2" : {
       "id" : "p2",
       "name" : "p2",
@@ -43,19 +65,6 @@
         "id" : "i9tqqNHv3wYKhQfFLYt7D$$wq_NGxNrkL1ICjCZbbZoj",
         "label" : "OrchestrationTarget_0"
       } ],
-      "sources" : [ ]
-    },
-    "p3" : {
-      "id" : "p3",
-      "name" : "p3",
-      "path" : "redshfit_project_Sql/.prophecy/ide/pipelines/p3.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
       "sources" : [ ]
     },
     "p123" : {

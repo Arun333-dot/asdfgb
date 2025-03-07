@@ -128,6 +128,29 @@ sqlMacros:
     createdAt: '2025-03-06 19:35:37'
 sqlSeeds: {}
 sqlSources:
+  .prophecy/metadata/sqlsources/prophecy__temp_p3_source:
+    name: prophecy__temp_p3_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p3/schema.yml
+    createdAt: '2025-03-07 09:00:26'
+    tables:
+    - name: prophecy__temp_p3_post_Union_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-07 09:00:28'
+    - name: prophecy__temp_p3_post_Limit_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-07 09:00:26'
+    - name: prophecy__temp_p3_post_Aggregate_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-07 09:00:26'
   .prophecy/metadata/sqlsources/qa_database_qa_schema:
     name: qa_database.qa_schema
     description: null
@@ -203,14 +226,6 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/pip1line1.json
     createdAt: '2025-03-06 16:01:01'
-  .prophecy/metadata/sqlorchestratorpipeline/p2:
-    name: p2
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/p2.json
-    createdAt: '2025-03-07 08:35:26'
   .prophecy/metadata/sqlorchestratorpipeline/p3:
     name: p3
     schema: null
@@ -227,6 +242,14 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/p123.json
     createdAt: '2025-03-07 08:52:16'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p2.json
+    createdAt: '2025-03-07 08:35:26'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

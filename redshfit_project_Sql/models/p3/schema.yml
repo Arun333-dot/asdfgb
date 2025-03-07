@@ -1,2 +1,28 @@
 ---
 version: 2
+models:
+- name: "model_p3_Limit_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p3_Aggregate_0"
+  tags:
+  - "prophecy_temp"
+- name: "model_p3_Union_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p3_source"
+  database: "qa_database"
+  schema: "qa_prophecy"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p3_post_Union_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p3_post_Limit_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p3_post_Aggregate_0_0"
+    tags:
+    - "prophecy_temp"
