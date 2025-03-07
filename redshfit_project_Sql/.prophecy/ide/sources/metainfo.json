@@ -1,0 +1,320 @@
+{
+  "name" : "redshfit_project_Sql",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "redshift",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "pip1line1" : {
+      "id" : "pip1line1",
+      "name" : "pip1line1",
+      "path" : "redshfit_project_Sql/.prophecy/ide/pipelines/pip1line1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Database",
+      "name" : "awsdatacatalog",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "dev",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "padb_harvest",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "qa_database",
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "public",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_prophecy",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_schema",
+        "tables" : {
+          "raw_customers" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "raw_orders" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "env_uitesting_model_1" : {
+            "entityType" : "VIEW",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "c_decimal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            } ]
+          },
+          "annual_enterprise" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "industry_code_anzsic06",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "customers_output" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
+          "raw_payments" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "country_classification" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "country_label",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "goods_classification" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "status_hs4",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "env_uitesting_main_model_1" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "model_with_only_seed_base" : {
+            "entityType" : "VIEW",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "c_macro2",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "stg_customers" : {
+            "entityType" : "VIEW",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "test_seed_1" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "all_type_only_basic" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "economic_survey_manufacturing" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "series_title_5",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "business_financial_data" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "series_title_5",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "staging_shared_model_1" : {
+            "entityType" : "VIEW",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "epl_data" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "psca_1",
+              "dataType" : {
+                "type" : "DoublePrecision"
+              }
+            } ]
+          },
+          "hundred_rows_table" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "a",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "electronic_cards_transactions" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "series_title_5",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "service_classification" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "service_label_1",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "customers" : {
+            "entityType" : "TABLE",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
+          "test_redshift_1" : {
+            "entityType" : "VIEW",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "industry_code_anzsic06",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "test_model_1" : {
+            "entityType" : "VIEW",
+            "providerType" : "Redshift",
+            "fields" : [ {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
+      }, {
+        "type" : "Schema",
+        "name" : "qa_schema_another",
+        "children" : [ ]
+      } ]
+    }, {
+      "type" : "Database",
+      "name" : "sample_data_dev",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "sumit-test",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "all_type_only_basic",
+    "type" : "Source",
+    "sourceName" : "qa_database.qa_schema",
+    "syncedOnce" : true
+  } ],
+  "frontEndLanguage" : "sql"
+}
