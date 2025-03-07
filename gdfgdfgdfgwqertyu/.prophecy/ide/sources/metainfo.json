@@ -16,19 +16,6 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "external_sql_simple_projectbmnmb/.prophecy/ide/pipelines/p1.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ ]
-    },
     "p2" : {
       "id" : "p2",
       "name" : "p2",
@@ -47,6 +34,19 @@
         "id" : "-YIAtC8ZPG69ETCXfKNX7$$ey_U1bJs_PHt8TFjvgM9X",
         "label" : "OrchestrationSource_0"
       } ]
+    },
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "external_sql_simple_projectbmnmb/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
