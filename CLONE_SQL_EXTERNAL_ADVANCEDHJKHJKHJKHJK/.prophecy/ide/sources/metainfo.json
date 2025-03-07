@@ -1,0 +1,52 @@
+{
+  "name" : "CLONE_SQL_EXTERNAL_ADVANCED",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "P1" : {
+      "id" : "P1",
+      "name" : "P1",
+      "path" : "CLONE_SQL_EXTERNAL_ADVANCED/.prophecy/ide/pipelines/P1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "P2" : {
+      "id" : "P2",
+      "name" : "P2",
+      "path" : "CLONE_SQL_EXTERNAL_ADVANCED/.prophecy/ide/pipelines/P2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}
