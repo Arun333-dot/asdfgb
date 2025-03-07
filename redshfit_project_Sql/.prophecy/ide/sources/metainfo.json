@@ -57,6 +57,19 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "p123" : {
+      "id" : "p123",
+      "name" : "p123",
+      "path" : "redshfit_project_Sql/.prophecy/ide/pipelines/p123.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "externalSources" : {

@@ -24,6 +24,21 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/m1:
+    name: m1
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/m1.sql
+    - .prophecy/ide/models/m1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-07 08:52:24'
   .prophecy/metadata/sqlmodels/model1:
     name: model1
     schema: null
@@ -41,6 +56,14 @@ sqlModels:
     createdAt: '2025-03-06 20:02:19'
 sqlSnapshots: {}
 sqlTests:
+  .prophecy/metadata/sqltests/fhfghfgh:
+    name: fhfghfgh
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - tests/generic/fhfghfgh.sql/fhfghfgh.sql
+    testType: GenericDataTest
+    createdAt: '2025-03-07 08:53:40'
   .prophecy/metadata/sqltests/hngfbbgnhf:
     name: hngfbbgnhf
     description: null
@@ -50,17 +73,6 @@ sqlTests:
     testType: GenericDataTest
     createdAt: '2025-03-06 20:07:02'
 sqlMacros:
-  .prophecy/metadata/sqlmacros/custom:
-    name: custom
-    macroType: query
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - macros/custom.sql
-    - .prophecy/ide/macros/custom.json
-    - macros/macros.yml
-    - gems/custom.py
-    createdAt: '2025-03-06 19:20:50'
   .prophecy/metadata/sqlmacros/gemname:
     name: gemname
     macroType: query
@@ -81,6 +93,28 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-06 09:55:52'
+  .prophecy/metadata/sqlmacros/custom:
+    name: custom
+    macroType: query
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/custom.sql
+    - .prophecy/ide/macros/custom.json
+    - macros/macros.yml
+    - gems/custom.py
+    createdAt: '2025-03-06 19:20:50'
+  .prophecy/metadata/sqlmacros/dg:
+    name: dg
+    macroType: query
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/dg.sql
+    - .prophecy/ide/macros/dg.json
+    - macros/macros_001.yml
+    - gems/dg.py
+    createdAt: '2025-03-07 08:52:34'
   .prophecy/metadata/sqlmacros/grTYvgfb:
     name: grTYvgfb
     macroType: query
@@ -185,6 +219,14 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/p3.json
     createdAt: '2025-03-07 08:44:00'
+  .prophecy/metadata/sqlorchestratorpipeline/p123:
+    name: p123
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p123.json
+    createdAt: '2025-03-07 08:52:16'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
