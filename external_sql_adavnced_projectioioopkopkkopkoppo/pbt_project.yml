@@ -1,6 +1,6 @@
 name: external_sql_adavnced_project
 description: ''
-version: 0.0.1
+version: v1
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
