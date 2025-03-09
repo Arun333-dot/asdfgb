@@ -1,0 +1,85 @@
+{
+  "id" : "model",
+  "metainfo" : {
+    "label" : "model",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model##SMHZQrbo" : {
+      "id" : "model##SMHZQrbo",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM model_1\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pMApDP1h",
+          "slug" : "model_1"
+        } ],
+        "outputs" : [ {
+          "id" : "Fwt4GOq4",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "-jEVOJDe16UyyLe2MgC78" : {
+      "id" : "-jEVOJDe16UyyLe2MgC78",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "model_1",
+        "slug" : "model_1",
+        "x" : -140,
+        "y" : 0,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "tBY0LsK2_Qwf4V1pkkioU",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "59fr7IB0VvQJRPJRJt1bE$$ucuYv3e8OLS0WBVV_v4xW",
+    "source" : "-jEVOJDe16UyyLe2MgC78",
+    "sourcePort" : "tBY0LsK2_Qwf4V1pkkioU",
+    "target" : "model##SMHZQrbo",
+    "targetPort" : "pMApDP1h"
+  } ],
+  "component" : "Model"
+}

@@ -1,0 +1,44 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "model"
+    description: "Customer order history and lifetime value data, providing insights\
+      \ into customer behavior and value to the business."
+    quoting:
+      identifier: true
+    columns:
+    - name: "customer_id"
+      description: "Unique identifier for the customer"
+      dataType:
+        type: "Bigint"
+    - name: "first_name"
+      description: "First name of the customer"
+      dataType:
+        type: "String"
+    - name: "last_name"
+      description: "Last name of the customer"
+      dataType:
+        type: "String"
+    - name: "first_order"
+      description: "Date of the customer's first order"
+      dataType:
+        type: "Date"
+    - name: "most_recent_order"
+      description: "Date of the most recent order placed by the customer"
+      dataType:
+        type: "Date"
+    - name: "number_of_orders"
+      description: "Total count of orders placed by the customer"
+      dataType:
+        type: "Bigint"
+    - name: "customer_lifetime_value"
+      description: "The total value of purchases made by the customer over their lifetime"
+      dataType:
+        type: "Double"
+    type: "table"
