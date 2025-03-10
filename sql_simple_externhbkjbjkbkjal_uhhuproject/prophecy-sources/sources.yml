@@ -42,3 +42,28 @@ sources:
       dataType:
         type: "Double"
     type: "table"
+- name: "hive_metastore.asadas"
+  database: "hive_metastore"
+  schema: "asadas"
+  config:
+    enabled: true
+  tables:
+  - name: "test5672"
+    description: "Country-specific data capturing various metrics, aiding in regional\
+      \ analysis and insights."
+    quoting:
+      identifier: true
+    columns:
+    - name: "country_code"
+      description: "Code representing the country of the data entry"
+      dataType:
+        type: "String"
+    - name: "1"
+      description: "A numeric identifier associated with the record."
+      dataType:
+        type: "Integer"
+    - name: "scv"
+      description: "A string representing a specific value related to the dataset."
+      dataType:
+        type: "String"
+    type: "table"

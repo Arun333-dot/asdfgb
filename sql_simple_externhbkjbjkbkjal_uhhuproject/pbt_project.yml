@@ -30,27 +30,15 @@ sqlModels:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: customer_id
-        dataType:
-          type: Bigint
-      - name: first_name
+      - name: country_code
         dataType:
           type: String
-      - name: last_name
+      - name: '1'
+        dataType:
+          type: Integer
+      - name: scv
         dataType:
           type: String
-      - name: first_order
-        dataType:
-          type: Date
-      - name: most_recent_order
-        dataType:
-          type: Date
-      - name: number_of_orders
-        dataType:
-          type: Bigint
-      - name: customer_lifetime_value
-        dataType:
-          type: Double
     description: null
     author: arunsharma@prophecy.io
     files:
@@ -115,6 +103,32 @@ sqlSources:
         into customer behavior and value to the business.
       author: arunsharma@prophecy.io
       createdAt: '2025-03-09 15:33:13'
+  .prophecy/metadata/sqlsources/hive_metastore_asadas:
+    name: hive_metastore.asadas
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-10 19:09:32'
+    tables:
+    - name: test5672
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: country_code
+          dataType:
+            type: String
+        - name: '1'
+          dataType:
+            type: Integer
+        - name: scv
+          dataType:
+            type: String
+      description: Country-specific data capturing various metrics, aiding in regional
+        analysis and insights.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 19:09:32'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines: {}
 sqlBusinessApps: {}

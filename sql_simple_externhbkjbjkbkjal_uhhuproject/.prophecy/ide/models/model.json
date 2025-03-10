@@ -24,7 +24,8 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM model_1\n",
+        "query" : "SELECT * \n\nFROM test5672\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -33,7 +34,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "pMApDP1h",
-          "slug" : "model_1"
+          "slug" : "test5672"
         } ],
         "outputs" : [ {
           "id" : "Fwt4GOq4",
@@ -43,21 +44,21 @@
         "autoUpdateOnRun" : false
       }
     },
-    "-jEVOJDe16UyyLe2MgC78" : {
-      "id" : "-jEVOJDe16UyyLe2MgC78",
+    "dyPpd3_YIma4IzwMJp5VF" : {
+      "id" : "dyPpd3_YIma4IzwMJp5VF",
       "component" : "Source",
       "metadata" : {
-        "label" : "model_1",
-        "slug" : "model_1",
-        "x" : -140,
-        "y" : 0,
+        "label" : "test5672",
+        "slug" : "test5672",
+        "x" : -460,
+        "y" : -340,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "model",
+          "name" : "test5672",
           "sourceType" : "Source",
-          "sourceName" : "hive_metastore.arun123",
+          "sourceName" : "hive_metastore.asadas",
           "alias" : "",
           "additionalProperties" : null
         }
@@ -65,7 +66,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "tBY0LsK2_Qwf4V1pkkioU",
+          "id" : "MsNM0ZtJQfwBEiI3lbXLV",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -74,9 +75,9 @@
     }
   },
   "connections" : [ {
-    "id" : "59fr7IB0VvQJRPJRJt1bE$$ucuYv3e8OLS0WBVV_v4xW",
-    "source" : "-jEVOJDe16UyyLe2MgC78",
-    "sourcePort" : "tBY0LsK2_Qwf4V1pkkioU",
+    "id" : "KbOFsRBj-9dYOpZa61rNF",
+    "source" : "dyPpd3_YIma4IzwMJp5VF",
+    "sourcePort" : "MsNM0ZtJQfwBEiI3lbXLV",
     "target" : "model##SMHZQrbo",
     "targetPort" : "pMApDP1h"
   } ],

@@ -167,7 +167,28 @@
       }, {
         "type" : "Schema",
         "name" : "asadas",
-        "children" : [ ]
+        "tables" : {
+          "test5672" : {
+            "entityType" : "TABLE",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "1",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "scv",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
       }, {
         "type" : "Schema",
         "name" : "bad_schema",
