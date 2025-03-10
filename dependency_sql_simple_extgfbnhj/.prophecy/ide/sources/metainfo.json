@@ -15,7 +15,21 @@
     "editable" : true
   },
   "datasets" : { },
-  "pipelines" : { },
+  "pipelines" : {
+    "pip1lin1" : {
+      "id" : "pip1lin1",
+      "name" : "pip1lin1",
+      "path" : "dependency_sql_simple_ext/.prophecy/ide/pipelines/pip1lin1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
   "dependenciesContainer" : {
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
