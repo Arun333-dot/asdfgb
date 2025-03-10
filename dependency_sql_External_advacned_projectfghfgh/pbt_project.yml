@@ -1,0 +1,138 @@
+name: dependency_sql_External_advacned_project
+description: ''
+version: 0.0.1
+author: arunsharma@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-10 18:31:30'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model1:
+    name: model1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Bigint
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: phone
+        dataType:
+          type: String
+      - name: email
+        dataType:
+          type: String
+      - name: country_code
+        dataType:
+          type: String
+      - name: account_open_date
+        dataType:
+          type: Date
+      - name: account_flags
+        dataType:
+          type: String
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/model1.sql
+    - .prophecy/ide/models/model1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-10 18:31:59'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-10 18:31:31'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-10 18:35:11'
+    tables:
+    - name: sqlmodel
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: Customer contact and account information, supporting customer relationship
+        management and engagement strategies.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 18:35:11'
+  .prophecy/metadata/sqlsources/qa_team_qa_database:
+    name: qa_team.qa_database
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-10 18:32:58'
+    tables:
+    - name: customer
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: Customer demographic and contact information, enabling personalized
+        marketing and customer relationship management.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 18:32:58'
+    - name: orders
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: Order records capturing user transactions and their statuses, enabling
+        insights into purchasing behavior.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 18:33:55'
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines: {}
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma@prophecy.io
+  createdAt: '2025-03-10 18:31:30'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
