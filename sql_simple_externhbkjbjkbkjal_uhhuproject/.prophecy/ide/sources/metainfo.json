@@ -919,6 +919,10 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
-  "entitiesToSync" : [ ],
+  "entitiesToSync" : [ {
+    "name" : "model",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
   "frontEndLanguage" : "sql"
 }
