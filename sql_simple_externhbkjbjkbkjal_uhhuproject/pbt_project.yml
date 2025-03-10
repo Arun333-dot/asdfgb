@@ -72,37 +72,7 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2025-03-09 15:33:13'
-    tables:
-    - name: model
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields:
-        - name: customer_id
-          dataType:
-            type: Bigint
-        - name: first_name
-          dataType:
-            type: String
-        - name: last_name
-          dataType:
-            type: String
-        - name: first_order
-          dataType:
-            type: Date
-        - name: most_recent_order
-          dataType:
-            type: Date
-        - name: number_of_orders
-          dataType:
-            type: Bigint
-        - name: customer_lifetime_value
-          dataType:
-            type: Double
-      description: Customer order history and lifetime value data, providing insights
-        into customer behavior and value to the business.
-      author: arunsharma@prophecy.io
-      createdAt: '2025-03-09 15:33:13'
+    tables: []
   .prophecy/metadata/sqlsources/hive_metastore_asadas:
     name: hive_metastore.asadas
     description: null
