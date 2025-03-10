@@ -1,0 +1,149 @@
+---
+version: 2
+sources:
+- name: "main.information_schema"
+  database: "main"
+  schema: "information_schema"
+  tables:
+  - name: "columns"
+    columns:
+    - name: "table_catalog"
+      dataType:
+        type: "String"
+    - name: "table_schema"
+      dataType:
+        type: "String"
+    - name: "table_name"
+      dataType:
+        type: "String"
+    - name: "column_name"
+      dataType:
+        type: "String"
+    - name: "ordinal_position"
+      dataType:
+        type: "Integer"
+    - name: "column_default"
+      dataType:
+        type: "String"
+    - name: "is_nullable"
+      dataType:
+        type: "String"
+    - name: "full_data_type"
+      dataType:
+        type: "String"
+    - name: "data_type"
+      dataType:
+        type: "String"
+    - name: "character_maximum_length"
+      dataType:
+        type: "Bigint"
+    - name: "character_octet_length"
+      dataType:
+        type: "Bigint"
+    - name: "numeric_precision"
+      dataType:
+        type: "Integer"
+    - name: "numeric_precision_radix"
+      dataType:
+        type: "Integer"
+    - name: "numeric_scale"
+      dataType:
+        type: "Integer"
+    - name: "datetime_precision"
+      dataType:
+        type: "Integer"
+    - name: "interval_type"
+      dataType:
+        type: "String"
+    - name: "interval_precision"
+      dataType:
+        type: "Integer"
+    - name: "maximum_cardinality"
+      dataType:
+        type: "Bigint"
+    - name: "is_identity"
+      dataType:
+        type: "String"
+    - name: "identity_generation"
+      dataType:
+        type: "String"
+    - name: "identity_start"
+      dataType:
+        type: "String"
+    - name: "identity_increment"
+      dataType:
+        type: "String"
+    - name: "identity_maximum"
+      dataType:
+        type: "String"
+    - name: "identity_minimum"
+      dataType:
+        type: "String"
+    - name: "identity_cycle"
+      dataType:
+        type: "String"
+    - name: "is_generated"
+      dataType:
+        type: "String"
+    - name: "generation_expression"
+      dataType:
+        type: "String"
+    - name: "is_system_time_period_start"
+      dataType:
+        type: "String"
+    - name: "is_system_time_period_end"
+      dataType:
+        type: "String"
+    - name: "system_time_period_timestamp_generation"
+      dataType:
+        type: "String"
+    - name: "is_updatable"
+      dataType:
+        type: "String"
+    - name: "partition_index"
+      dataType:
+        type: "Integer"
+    - name: "comment"
+      dataType:
+        type: "String"
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "model"
+    description: "Customer order history and lifetime value data for customer relationship\
+      \ management and sales analysis."
+    quoting:
+      identifier: true
+    columns:
+    - name: "customer_id"
+      description: "Unique identifier for the customer"
+      dataType:
+        type: "Bigint"
+    - name: "first_name"
+      description: "First name of the customer"
+      dataType:
+        type: "String"
+    - name: "last_name"
+      description: "Last name of the customer"
+      dataType:
+        type: "String"
+    - name: "first_order"
+      description: "Date of the customer's first order"
+      dataType:
+        type: "Date"
+    - name: "most_recent_order"
+      description: "Date of the most recent order placed by the customer"
+      dataType:
+        type: "Date"
+    - name: "number_of_orders"
+      description: "Total count of orders placed by the customer"
+      dataType:
+        type: "Bigint"
+    - name: "customer_lifetime_value"
+      description: "Total value of purchases made by the customer over their lifetime"
+      dataType:
+        type: "Double"
+    type: "table"

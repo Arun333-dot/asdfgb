@@ -1,0 +1,84 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##l9cl47pZ" : {
+      "id" : "model1##l9cl47pZ",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 760,
+        "y" : -200,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM model\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SbaPGoLN",
+          "slug" : "model"
+        } ],
+        "outputs" : [ {
+          "id" : "k4sneKTl",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "JdqFHqbOsP14BVM33B5tR" : {
+      "id" : "JdqFHqbOsP14BVM33B5tR",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "model",
+        "slug" : "model",
+        "x" : -680,
+        "y" : -140,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xLI5DAGXY8-q7f0KphNxd",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "4Bhch7jGyPSukdyhoOVKc$$Pop3-zdRBzPtBynyIUe5A",
+    "source" : "JdqFHqbOsP14BVM33B5tR",
+    "sourcePort" : "xLI5DAGXY8-q7f0KphNxd",
+    "target" : "model1##l9cl47pZ",
+    "targetPort" : "SbaPGoLN"
+  } ],
+  "component" : "Model"
+}
