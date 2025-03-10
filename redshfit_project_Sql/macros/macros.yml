@@ -1,0 +1,21 @@
+---
+version: 2
+macros:
+- name: "gemname"
+  arguments:
+  - name: "parameter1"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "query"
+- name: "custom"
+  arguments:
+  - name: "parameter1"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "query"
+- name: "grTYvgfb"
+  arguments:
+  - name: "parameter1"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "query"

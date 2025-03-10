@@ -1,0 +1,46 @@
+{
+  "id" : "fghfgh",
+  "metainfo" : {
+    "label" : "fghfgh",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "fghfgh##I3uSvoS9" : {
+      "id" : "fghfgh##I3uSvoS9",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "fghfgh",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QVftpolL",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "pglkaA9T",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
