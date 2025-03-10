@@ -1,0 +1,85 @@
+{
+  "id" : "model2",
+  "metainfo" : {
+    "label" : "model2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model2##cSnbOJ36" : {
+      "id" : "model2##cSnbOJ36",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model2",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM model\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OdwDDvIG",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "oBqWrtKX",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "IfSN0hm9SPQZX6HdzYHym$$5HEYk8orFjbtjs_qRvh1H" : {
+      "id" : "IfSN0hm9SPQZX6HdzYHym$$5HEYk8orFjbtjs_qRvh1H",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "model",
+        "slug" : "model",
+        "x" : -140,
+        "y" : 40,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "62nDA5reTzm7lHjM2kbtG$$u0MUyoI1l8eQKW8RXwawm",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "NLKJw0Kb6XC4zt8olHao8$$I6MvpqrlYRq_7cVm2M5ZC",
+    "source" : "IfSN0hm9SPQZX6HdzYHym$$5HEYk8orFjbtjs_qRvh1H",
+    "sourcePort" : "62nDA5reTzm7lHjM2kbtG$$u0MUyoI1l8eQKW8RXwawm",
+    "target" : "model2##cSnbOJ36",
+    "targetPort" : "OdwDDvIG"
+  } ],
+  "component" : "Model"
+}

@@ -1,0 +1,5 @@
+---
+packages:
+- revision: "external_sql_simple_project2/48"
+  git: "https://github.com/Arun333-dot/dummyrepo1231"
+  subdirectory: "fdvgbhnjmlbnmbnm"

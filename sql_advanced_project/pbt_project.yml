@@ -1,6 +1,6 @@
 name: sql_advanced_project
 description: ''
-version: '1'
+version: '7'
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
@@ -23,7 +23,86 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model1:
+    name: model1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Bigint
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: first_order
+        dataType:
+          type: Date
+      - name: most_recent_order
+        dataType:
+          type: Date
+      - name: number_of_orders
+        dataType:
+          type: Bigint
+      - name: customer_lifetime_value
+        dataType:
+          type: Double
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/model1.sql
+    - .prophecy/ide/models/model1.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-10 09:36:35'
+  .prophecy/metadata/sqlmodels/model2:
+    name: model2
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Bigint
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: first_order
+        dataType:
+          type: Date
+      - name: most_recent_order
+        dataType:
+          type: Date
+      - name: number_of_orders
+        dataType:
+          type: Bigint
+      - name: customer_lifetime_value
+        dataType:
+          type: Double
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/model2.sql
+    - .prophecy/ide/models/model2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-10 11:58:35'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -36,8 +115,179 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-04 07:03:42'
-sqlSeeds: {}
-sqlSources: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/seeddd:
+    name: seeddd
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - seeds/seeddd.csv
+    - seeds/seeds.yml
+    createdAt: '2025-03-10 09:43:32'
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-10 09:42:13'
+    tables:
+    - name: model
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: customer_id
+          dataType:
+            type: Bigint
+        - name: first_name
+          dataType:
+            type: String
+        - name: last_name
+          dataType:
+            type: String
+        - name: first_order
+          dataType:
+            type: Date
+        - name: most_recent_order
+          dataType:
+            type: Date
+        - name: number_of_orders
+          dataType:
+            type: Bigint
+        - name: customer_lifetime_value
+          dataType:
+            type: Double
+      description: Customer order history and lifetime value data for customer relationship
+        management and sales analysis.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 09:42:13'
+  .prophecy/metadata/sqlsources/main_information_schema:
+    name: main.information_schema
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-10 09:39:02'
+    tables:
+    - name: columns
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: table_catalog
+          dataType:
+            type: String
+        - name: table_schema
+          dataType:
+            type: String
+        - name: table_name
+          dataType:
+            type: String
+        - name: column_name
+          dataType:
+            type: String
+        - name: ordinal_position
+          dataType:
+            type: Integer
+        - name: column_default
+          dataType:
+            type: String
+        - name: is_nullable
+          dataType:
+            type: String
+        - name: full_data_type
+          dataType:
+            type: String
+        - name: data_type
+          dataType:
+            type: String
+        - name: character_maximum_length
+          dataType:
+            type: Bigint
+        - name: character_octet_length
+          dataType:
+            type: Bigint
+        - name: numeric_precision
+          dataType:
+            type: Integer
+        - name: numeric_precision_radix
+          dataType:
+            type: Integer
+        - name: numeric_scale
+          dataType:
+            type: Integer
+        - name: datetime_precision
+          dataType:
+            type: Integer
+        - name: interval_type
+          dataType:
+            type: String
+        - name: interval_precision
+          dataType:
+            type: Integer
+        - name: maximum_cardinality
+          dataType:
+            type: Bigint
+        - name: is_identity
+          dataType:
+            type: String
+        - name: identity_generation
+          dataType:
+            type: String
+        - name: identity_start
+          dataType:
+            type: String
+        - name: identity_increment
+          dataType:
+            type: String
+        - name: identity_maximum
+          dataType:
+            type: String
+        - name: identity_minimum
+          dataType:
+            type: String
+        - name: identity_cycle
+          dataType:
+            type: String
+        - name: is_generated
+          dataType:
+            type: String
+        - name: generation_expression
+          dataType:
+            type: String
+        - name: is_system_time_period_start
+          dataType:
+            type: String
+        - name: is_system_time_period_end
+          dataType:
+            type: String
+        - name: system_time_period_timestamp_generation
+          dataType:
+            type: String
+        - name: is_updatable
+          dataType:
+            type: String
+        - name: partition_index
+          dataType:
+            type: Integer
+        - name: comment
+          dataType:
+            type: String
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 09:39:02'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/p1:
