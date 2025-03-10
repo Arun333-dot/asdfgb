@@ -1,6 +1,6 @@
 name: sql_advanced_project
 description: ''
-version: '6'
+version: '7'
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
