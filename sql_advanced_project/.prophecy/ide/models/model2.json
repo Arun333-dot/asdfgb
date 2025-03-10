@@ -1,7 +1,7 @@
 {
-  "id" : "model1",
+  "id" : "model2",
   "metainfo" : {
-    "label" : "model1",
+    "label" : "model2",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -10,13 +10,13 @@
     "version" : 3
   },
   "processes" : {
-    "model1##l9cl47pZ" : {
-      "id" : "model1##l9cl47pZ",
+    "model2##cSnbOJ36" : {
+      "id" : "model2##cSnbOJ36",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "model1",
-        "x" : 760,
-        "y" : -200,
+        "label" : "model2",
+        "x" : 20,
+        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -33,25 +33,25 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "SbaPGoLN",
-          "slug" : "model"
+          "id" : "OdwDDvIG",
+          "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "k4sneKTl",
+          "id" : "oBqWrtKX",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
     },
-    "JdqFHqbOsP14BVM33B5tR" : {
-      "id" : "JdqFHqbOsP14BVM33B5tR",
+    "IfSN0hm9SPQZX6HdzYHym$$5HEYk8orFjbtjs_qRvh1H" : {
+      "id" : "IfSN0hm9SPQZX6HdzYHym$$5HEYk8orFjbtjs_qRvh1H",
       "component" : "Source",
       "metadata" : {
         "label" : "model",
         "slug" : "model",
-        "x" : -680,
-        "y" : -140,
+        "x" : -140,
+        "y" : 40,
         "phase" : 0
       },
       "properties" : {
@@ -66,7 +66,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "xLI5DAGXY8-q7f0KphNxd",
+          "id" : "62nDA5reTzm7lHjM2kbtG$$u0MUyoI1l8eQKW8RXwawm",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -75,11 +75,11 @@
     }
   },
   "connections" : [ {
-    "id" : "4Bhch7jGyPSukdyhoOVKc$$Pop3-zdRBzPtBynyIUe5A",
-    "source" : "JdqFHqbOsP14BVM33B5tR",
-    "sourcePort" : "xLI5DAGXY8-q7f0KphNxd",
-    "target" : "model1##l9cl47pZ",
-    "targetPort" : "SbaPGoLN"
+    "id" : "NLKJw0Kb6XC4zt8olHao8$$I6MvpqrlYRq_7cVm2M5ZC",
+    "source" : "IfSN0hm9SPQZX6HdzYHym$$5HEYk8orFjbtjs_qRvh1H",
+    "sourcePort" : "62nDA5reTzm7lHjM2kbtG$$u0MUyoI1l8eQKW8RXwawm",
+    "target" : "model2##cSnbOJ36",
+    "targetPort" : "OdwDDvIG"
   } ],
   "component" : "Model"
 }
