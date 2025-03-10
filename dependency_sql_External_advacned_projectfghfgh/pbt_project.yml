@@ -1,6 +1,6 @@
 name: dependency_sql_External_advacned_project
 description: ''
-version: 0.0.1
+version: v4
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
