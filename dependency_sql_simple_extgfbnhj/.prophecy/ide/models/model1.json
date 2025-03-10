@@ -1,0 +1,85 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##HBoGr2RP" : {
+      "id" : "model1##HBoGr2RP",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 680,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM model\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SVer3rMt",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "pLcQSOQJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "1jWVI_cVV9b3XjA6qfD7H" : {
+      "id" : "1jWVI_cVV9b3XjA6qfD7H",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "model",
+        "slug" : "model",
+        "x" : -1100,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "TJ6z2pLlev3g5Dz94Zd8X",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "MEwZa_DzobwNAXzScC6G6",
+    "source" : "1jWVI_cVV9b3XjA6qfD7H",
+    "sourcePort" : "TJ6z2pLlev3g5Dz94Zd8X",
+    "target" : "model1##HBoGr2RP",
+    "targetPort" : "SVer3rMt"
+  } ],
+  "component" : "Model"
+}
