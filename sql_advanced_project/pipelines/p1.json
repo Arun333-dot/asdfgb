@@ -19,7 +19,37 @@
       "emails" : [ "email@gmail.com" ]
     }
   },
-  "processes" : { },
+  "processes" : {
+    "TpBwzsNYQuWNQ57AHvKW5" : {
+      "id" : "TpBwzsNYQuWNQ57AHvKW5",
+      "component" : "ExternalSource",
+      "metadata" : {
+        "label" : "model",
+        "x" : -800,
+        "y" : -400,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model",
+          "sourceType" : "ExternalSource",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qgok2nbPv57lbjGIryWke",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "liqNHzF9ez37lGufn7Kdr",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
