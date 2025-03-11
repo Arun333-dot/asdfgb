@@ -76,9 +76,6 @@
       }, {
         "id" : "kkfClPc53R9tL6zjjGcqw$$L3lLxDvm2ZVyz4P51ehrE",
         "label" : "user_profiles_xml"
-      }, {
-        "id" : "Yn15I3q64ey67CBTPWvhQ$$Fh929focUjt2q3CfATZHA",
-        "label" : "user_profiles_csv_1"
       } ],
       "sources" : [ {
         "id" : "aTlHOWr9hp6d8CmdpnKse",
@@ -272,91 +269,8 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ {
-        "id" : "bGlVX5Xo7-Mx48_n9p_kU$$ArToJo9gRt5qTNea_kt1G",
-        "label" : "user_profiles_xml"
-      }, {
-        "id" : "UO3VG1lXXyhikxYgK4BZV$$eR4o21IRYRxSKOXvZ0uSY",
-        "label" : "user_profiles_xlsx"
-      }, {
-        "id" : "tfdtPCG_gbqJseZq22TZ6$$v78CaSDZyckAB4sjHrSay",
-        "label" : "user_profiles_csv"
-      }, {
-        "id" : "USdE8onK0jF15i4h7aLgA$$p0qg673ALVcjICGNzY6yy",
-        "label" : "user_profiles_json"
-      }, {
-        "id" : "aqF3vAZsKSodOHMJkmmjJ",
-        "label" : "SFTPSource_0",
-        "schema" : {
-          "entityType" : "",
-          "providerType" : "snowflake",
-          "fields" : [ {
-            "name" : "ADDRESS",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "BANK_BALANCE",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "HAS_CREDIT_CARD",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "CUSTOM_OBJECT",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "ID",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "AGE",
-            "dataType" : {
-              "type" : "Float"
-            }
-          }, {
-            "name" : "IS_EMPLOYED",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "FAVORITE_COLORS",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "SALARY",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "JOIN_DATE",
-            "dataType" : {
-              "type" : "Date"
-            }
-          }, {
-            "name" : "LAST_LOGIN",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "HOBBIES",
-            "dataType" : {
-              "type" : "String"
-            }
-          } ]
-        }
-      } ],
-      "sources" : [ {
-        "id" : "aqF3vAZsKSodOHMJkmmjJ",
-        "label" : "SFTPSource_0"
-      } ]
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
