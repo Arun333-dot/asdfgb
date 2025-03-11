@@ -45,7 +45,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.xlsx"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xlsxresult.xlsx"
                 }
               } ]
             }
@@ -134,8 +134,8 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "SFTPSource_1",
-        "x" : -400,
-        "y" : 260,
+        "x" : 20,
+        "y" : 320,
         "phase" : 0
       },
       "properties" : {
@@ -311,7 +311,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.xml"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xlsxresult.xml"
                 }
               } ]
             }
@@ -419,7 +419,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.json"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xlsxresult.json"
                 }
               } ]
             }
@@ -527,7 +527,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.csv"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xlsxresult.csv"
                 }
               } ]
             }

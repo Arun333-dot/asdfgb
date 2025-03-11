@@ -205,7 +205,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.csv"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xmlresult.csv"
                 }
               } ]
             }
@@ -308,7 +308,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.xml"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xmlresult.xml"
                 }
               } ]
             }
@@ -411,7 +411,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.xlsx"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xmlresult.xlsx"
                 }
               } ]
             }
@@ -514,7 +514,7 @@
               "elements" : [ {
                 "type" : "literal",
                 "properties" : {
-                  "value" : "/prophecy-sftp/aruns/snowflake_result.json"
+                  "value" : "/prophecy-sftp/aruns/snowflake_xmlresult.json"
                 }
               } ]
             }
