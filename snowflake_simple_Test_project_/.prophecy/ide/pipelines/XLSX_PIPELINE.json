@@ -2,7 +2,7 @@
   "id" : "XLSX_PIPELINE",
   "metainfo" : {
     "label" : "XLSX_PIPELINE",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -26,8 +26,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_xlsx",
-        "x" : 100,
-        "y" : -40,
+        "x" : 220,
+        "y" : 220,
         "phase" : 0
       },
       "properties" : {
@@ -134,8 +134,8 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "SFTPSource_1",
-        "x" : -640,
-        "y" : -400,
+        "x" : 20,
+        "y" : 320,
         "phase" : 0
       },
       "properties" : {
@@ -292,8 +292,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_xml",
-        "x" : 160,
-        "y" : -260,
+        "x" : 220,
+        "y" : 420,
         "phase" : 0
       },
       "properties" : {
@@ -400,8 +400,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_json",
-        "x" : 140,
-        "y" : -520,
+        "x" : 220,
+        "y" : 620,
         "phase" : 0
       },
       "properties" : {
@@ -508,8 +508,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_csv",
-        "x" : 140,
-        "y" : -800,
+        "x" : 220,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {

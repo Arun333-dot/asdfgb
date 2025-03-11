@@ -85,6 +85,97 @@
         "label" : "SFTPSource_0"
       } ]
     },
+    "XLSX_PIPELINE" : {
+      "id" : "XLSX_PIPELINE",
+      "name" : "XLSX_PIPELINE",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/XLSX_PIPELINE.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "LjcxqCkJ95-7d4FEKVHsc$$iWHuGajmFW5dyzqbug-2Q",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "AbFlQSA3rpduHkBklhlnV",
+        "label" : "SFTPSource_1",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "Integer",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "BigInt",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "SmallInt",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "TinyInt",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "Float",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Decimal",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Boolean",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "Date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "Timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "JSON",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Void",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "CK_lsrucd6SKUJsOf5Io1$$0TekwHnzA8CTfrMraH1yO",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "irsZjwj9AXC23YSNnQP_E$$TuiMIo2ELrN3a-TdVy3xK",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "BQeHedsherQ_ignrJ7T5c$$_BeB1551_aa_SVkGJHXfN",
+        "label" : "user_profiles_csv"
+      } ],
+      "sources" : [ {
+        "id" : "AbFlQSA3rpduHkBklhlnV",
+        "label" : "SFTPSource_1"
+      } ]
+    },
     "xml_pipeline" : {
       "id" : "xml_pipeline",
       "name" : "xml_pipeline",
@@ -183,97 +274,6 @@
       },
       "preview" : [ ],
       "sources" : [ ]
-    },
-    "XLSX_PIPELINE" : {
-      "id" : "XLSX_PIPELINE",
-      "name" : "XLSX_PIPELINE",
-      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/XLSX_PIPELINE.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ {
-        "id" : "LjcxqCkJ95-7d4FEKVHsc$$iWHuGajmFW5dyzqbug-2Q",
-        "label" : "user_profiles_xlsx"
-      }, {
-        "id" : "AbFlQSA3rpduHkBklhlnV",
-        "label" : "SFTPSource_1",
-        "schema" : {
-          "entityType" : "",
-          "providerType" : "snowflake",
-          "fields" : [ {
-            "name" : "Integer",
-            "dataType" : {
-              "type" : "Number"
-            }
-          }, {
-            "name" : "BigInt",
-            "dataType" : {
-              "type" : "Float"
-            }
-          }, {
-            "name" : "SmallInt",
-            "dataType" : {
-              "type" : "Number"
-            }
-          }, {
-            "name" : "TinyInt",
-            "dataType" : {
-              "type" : "Number"
-            }
-          }, {
-            "name" : "Float",
-            "dataType" : {
-              "type" : "Float"
-            }
-          }, {
-            "name" : "Decimal",
-            "dataType" : {
-              "type" : "Float"
-            }
-          }, {
-            "name" : "Boolean",
-            "dataType" : {
-              "type" : "Number"
-            }
-          }, {
-            "name" : "Date",
-            "dataType" : {
-              "type" : "Date"
-            }
-          }, {
-            "name" : "Timestamp",
-            "dataType" : {
-              "type" : "Timestamp"
-            }
-          }, {
-            "name" : "JSON",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "Void",
-            "dataType" : {
-              "type" : "String"
-            }
-          } ]
-        }
-      }, {
-        "id" : "CK_lsrucd6SKUJsOf5Io1$$0TekwHnzA8CTfrMraH1yO",
-        "label" : "user_profiles_xml"
-      }, {
-        "id" : "irsZjwj9AXC23YSNnQP_E$$TuiMIo2ELrN3a-TdVy3xK",
-        "label" : "user_profiles_json"
-      }, {
-        "id" : "BQeHedsherQ_ignrJ7T5c$$_BeB1551_aa_SVkGJHXfN",
-        "label" : "user_profiles_csv"
-      } ],
-      "sources" : [ {
-        "id" : "AbFlQSA3rpduHkBklhlnV",
-        "label" : "SFTPSource_1"
-      } ]
     }
   },
   "dependenciesContainer" : {

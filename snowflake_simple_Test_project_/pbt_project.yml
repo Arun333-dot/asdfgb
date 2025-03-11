@@ -56,14 +56,6 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/xml_pipeline.json
     createdAt: '2025-03-11 18:09:12'
-  .prophecy/metadata/sqlorchestratorpipeline/json_pipeline:
-    name: json_pipeline
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/json_pipeline.json
-    createdAt: '2025-03-11 17:50:11'
   .prophecy/metadata/sqlorchestratorpipeline/XLSX_PIPELINE:
     name: XLSX_PIPELINE
     schema: null
@@ -72,6 +64,14 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/XLSX_PIPELINE.json
     createdAt: '2025-03-11 19:12:11'
+  .prophecy/metadata/sqlorchestratorpipeline/json_pipeline:
+    name: json_pipeline
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/json_pipeline.json
+    createdAt: '2025-03-11 17:50:11'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
