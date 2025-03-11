@@ -2,7 +2,7 @@
   "id" : "xml_pipeline",
   "metainfo" : {
     "label" : "xml_pipeline",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -26,8 +26,8 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "SFTPSource_1",
-        "x" : -820,
-        "y" : -340,
+        "x" : 20,
+        "y" : 320,
         "phase" : 0
       },
       "properties" : {
@@ -186,8 +186,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_csv",
-        "x" : 500,
-        "y" : -440,
+        "x" : 220,
+        "y" : 220,
         "phase" : 0
       },
       "properties" : {
@@ -289,8 +289,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_xml",
-        "x" : 520,
-        "y" : 100,
+        "x" : 220,
+        "y" : 620,
         "phase" : 0
       },
       "properties" : {
@@ -392,8 +392,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_xlsx",
-        "x" : 460,
-        "y" : 320,
+        "x" : 220,
+        "y" : 420,
         "phase" : 0
       },
       "properties" : {
@@ -495,8 +495,8 @@
       "kind" : "SFTPTarget",
       "metadata" : {
         "label" : "user_profiles_json",
-        "x" : 500,
-        "y" : -160,
+        "x" : 220,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
