@@ -134,8 +134,8 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "SFTPSource_1",
-        "x" : 20,
-        "y" : 320,
+        "x" : -400,
+        "y" : 260,
         "phase" : 0
       },
       "properties" : {
