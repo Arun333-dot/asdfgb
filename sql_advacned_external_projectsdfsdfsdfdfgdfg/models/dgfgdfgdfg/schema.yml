@@ -1,0 +1,16 @@
+---
+version: 2
+models:
+- name: "model_dgfgdfgdfg_model1_0"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_dgfgdfgdfg_source"
+  database: "database"
+  schema: "default"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_dgfgdfgdfg_post_model1_0_0"
+    tags:
+    - "prophecy_temp"

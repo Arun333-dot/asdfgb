@@ -1,0 +1,49 @@
+{
+  "id" : "dgfgdfgdfg",
+  "metainfo" : {
+    "label" : "dgfgdfgdfg",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "fc7DBw9e0VdbZo_8KAkrT$$PrRGJsCf-It-HILlYGyBm" : {
+      "id" : "fc7DBw9e0VdbZo_8KAkrT$$PrRGJsCf-It-HILlYGyBm",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "model1_0",
+        "x" : -500,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "macroName" : "model1",
+        "parameters" : [ ],
+        "projectName" : "sql_advanced_project"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "XaNyHVQ_ALrh2DC-htzvk$$rGcg0urEFl0AlOCBNTs3v",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

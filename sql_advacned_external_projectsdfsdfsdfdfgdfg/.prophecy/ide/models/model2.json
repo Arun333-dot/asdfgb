@@ -1,0 +1,110 @@
+{
+  "id" : "model2",
+  "metainfo" : {
+    "label" : "model2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model2##WyFabBsD" : {
+      "id" : "model2##WyFabBsD",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model2",
+        "x" : 580,
+        "y" : -380,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM model1\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "R75UnAyQ",
+          "slug" : "model1"
+        } ],
+        "outputs" : [ {
+          "id" : "v7vJFX0a",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "7ee-miyvp2GW28xQufF-s" : {
+      "id" : "7ee-miyvp2GW28xQufF-s",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model1",
+        "slug" : "model1",
+        "x" : -500,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model1",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Q2ldBDGYpQRLaDGeTey7b",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "NNdNA2HKpy9Q_BIBzUK5C" : {
+      "id" : "NNdNA2HKpy9Q_BIBzUK5C",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model3",
+        "slug" : "model3",
+        "x" : -80,
+        "y" : -460,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model3",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "D6N4WYmEmZAlsinZ639aa",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "fYfAjI8xd9pW2fW0fbwYP$$H3mLa2Fu6apCsmpW1R3dg",
+    "source" : "7ee-miyvp2GW28xQufF-s",
+    "sourcePort" : "Q2ldBDGYpQRLaDGeTey7b",
+    "target" : "model2##WyFabBsD",
+    "targetPort" : "R75UnAyQ"
+  } ],
+  "component" : "Model"
+}

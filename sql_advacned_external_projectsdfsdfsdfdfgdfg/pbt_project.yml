@@ -1,0 +1,142 @@
+name: sql_advacned_external_project
+description: ''
+version: 0.0.1
+author: arunsharma@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/databricks:
+    name: databricks
+    description: ''
+    fabricUID: 564
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-03-11 06:57:48'
+    author: arunsharma@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-10 08:54:43'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model2:
+    name: model2
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Bigint
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: phone
+        dataType:
+          type: String
+      - name: email
+        dataType:
+          type: String
+      - name: country_code
+        dataType:
+          type: String
+      - name: account_open_date
+        dataType:
+          type: Date
+      - name: account_flags
+        dataType:
+          type: String
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/model2.sql
+    - .prophecy/ide/models/model2.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-10 11:10:35'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-10 08:54:51'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/prophecy__temp_dgfgdfgdfg_source:
+    name: prophecy__temp_dgfgdfgdfg_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/dgfgdfgdfg/schema.yml
+    createdAt: '2025-03-10 11:06:35'
+    tables:
+    - name: prophecy__temp_dgfgdfgdfg_post_model1_0_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 11:06:35'
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/dgfgdfgdfg:
+    name: dgfgdfgdfg
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/dgfgdfgdfg.json
+    createdAt: '2025-03-10 09:44:33'
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma@prophecy.io
+  createdAt: '2025-03-10 08:54:43'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

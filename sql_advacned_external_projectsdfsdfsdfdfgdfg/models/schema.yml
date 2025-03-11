@@ -1,0 +1,27 @@
+---
+version: 2
+models:
+- name: "model2"
+  columns:
+  - name: "first_name"
+    dataType:
+      type: "String"
+  - name: "customer_id"
+    dataType:
+      type: "Bigint"
+  - name: "customer_lifetime_value"
+    dataType:
+      type: "Double"
+  - name: "first_order"
+    dataType:
+      type: "Date"
+  - name: "last_name"
+    dataType:
+      type: "String"
+  - name: "number_of_orders"
+    dataType:
+      type: "Bigint"
+  - name: "most_recent_order"
+    dataType:
+      type: "Date"
+  tests: []

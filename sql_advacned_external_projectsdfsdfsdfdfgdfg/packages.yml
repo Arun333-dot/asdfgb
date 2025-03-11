@@ -1,0 +1,8 @@
+---
+packages:
+- revision: "sql_advacned_external_projectdsfsdf/sdfsdfsdf"
+  git: "https://github.com/Arun333-dot/testrepo2"
+  subdirectory: "sql_advacned_external_projectdsfsdf"
+- revision: "dependency_sql_external_simple_projkject_2/3"
+  git: "https://github.com/Arun333-dot/testrepo4"
+  subdirectory: "dependency_sql_external_simple_projkject_2"
