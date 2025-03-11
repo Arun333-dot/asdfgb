@@ -19,7 +19,44 @@
       "emails" : [ "email@gmail.com" ]
     }
   },
-  "processes" : { },
+  "processes" : {
+    "aqF3vAZsKSodOHMJkmmjJ" : {
+      "id" : "aqF3vAZsKSodOHMJkmmjJ",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "x" : -660,
+        "y" : -320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "json",
+          "properties" : {
+            "multiDoc" : false
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/varied_json_data.json"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "54a58e08-beda-4bab-aa03-b06cfa9abe00",
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

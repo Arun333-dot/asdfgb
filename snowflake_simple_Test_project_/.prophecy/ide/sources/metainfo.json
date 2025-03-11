@@ -272,8 +272,14 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ ],
-      "sources" : [ ]
+      "preview" : [ {
+        "id" : "aqF3vAZsKSodOHMJkmmjJ",
+        "label" : "SFTPSource_0"
+      } ],
+      "sources" : [ {
+        "id" : "aqF3vAZsKSodOHMJkmmjJ",
+        "label" : "SFTPSource_0"
+      } ]
     }
   },
   "dependenciesContainer" : {
