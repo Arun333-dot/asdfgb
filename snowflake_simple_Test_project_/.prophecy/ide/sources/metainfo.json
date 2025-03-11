@@ -269,8 +269,91 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ ],
-      "sources" : [ ]
+      "preview" : [ {
+        "id" : "UGQebudeIm7blWGL4HXdx$$FalCcUm1RVQvqB-vTOnUd",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "xkkqYQknFcLJud7dq7q2t$$lkBEXUvkk_jVM5m34o8n-",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "vTLupw5DmiRyTxz5FF0TC$$oF6cX6fyWJNKMLUJ_kgce",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "6r6yJkbhpF0FK85R9hF8Q",
+        "label" : "SFTPSource_1",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "FAVORITE_COLORS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "ADDRESS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "BANK_BALANCE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HAS_CREDIT_CARD",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HOBBIES",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "SALARY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "JOIN_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "LAST_LOGIN",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CUSTOM_OBJECT",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "AGE",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "IS_EMPLOYED",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "1YAW7BXxNKcl6WLVBHV4M$$TPeKdGDw6pk9DEes4f1jZ",
+        "label" : "user_profiles_csv"
+      } ],
+      "sources" : [ {
+        "id" : "6r6yJkbhpF0FK85R9hF8Q",
+        "label" : "SFTPSource_1"
+      } ]
     }
   },
   "dependenciesContainer" : {
