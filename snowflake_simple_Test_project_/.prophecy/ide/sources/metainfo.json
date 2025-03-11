@@ -26,8 +26,160 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ ],
-      "sources" : [ ]
+      "preview" : [ {
+        "id" : "EvJybHD2yWFW4nXBKtA1u$$ZMdktohQL_6ibPl6OK0EU",
+        "label" : "user_profiles_csv"
+      }, {
+        "id" : "xi_koNA-y4ufIm7y0YMca$$xFqZLMNXWbObv9yRHtH0t",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "HyctJgl41g38OOGQ-sg4x$$mhNvNcRdNDIa7pN43Y6vj",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "aTlHOWr9hp6d8CmdpnKse",
+        "label" : "SFTPSource_0",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "email",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "age",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "city",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "country",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "kkfClPc53R9tL6zjjGcqw$$L3lLxDvm2ZVyz4P51ehrE",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "Yn15I3q64ey67CBTPWvhQ$$Fh929focUjt2q3CfATZHA",
+        "label" : "user_profiles_csv_1"
+      } ],
+      "sources" : [ {
+        "id" : "aTlHOWr9hp6d8CmdpnKse",
+        "label" : "SFTPSource_0"
+      } ]
+    },
+    "json_pipeline" : {
+      "id" : "json_pipeline",
+      "name" : "json_pipeline",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/json_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "NIU-9S0s1dMhtvFsv3bS0$$q57A6JsyMeM18PjlDqFB-",
+        "label" : "user_profiles_csv"
+      }, {
+        "id" : "yDixuEIq3fg6W7y5-nL8p$$Z2-NoiSmzAXRCbBwbZY01",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "8wnIJHKRj5a0zTrJdPCU0",
+        "label" : "SFTPSource_2",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "HAS_CREDIT_CARD",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HOBBIES",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "FAVORITE_COLORS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "AGE",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "SALARY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "IS_EMPLOYED",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "JOIN_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "LAST_LOGIN",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "ADDRESS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "BANK_BALANCE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CUSTOM_OBJECT",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "fvDutjkHshoTiknZvim1L$$-TvF0ZdsDciPRruSyTfdK",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "KNNOFr3JwLLLzXOD-UARe$$T29Kph6tM54el2_bhlaXH",
+        "label" : "user_profiles_xlsx"
+      } ],
+      "sources" : [ {
+        "id" : "8wnIJHKRj5a0zTrJdPCU0",
+        "label" : "SFTPSource_2"
+      } ]
     }
   },
   "dependenciesContainer" : {
