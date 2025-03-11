@@ -85,6 +85,92 @@
         "label" : "SFTPSource_0"
       } ]
     },
+    "xml_pipeline" : {
+      "id" : "xml_pipeline",
+      "name" : "xml_pipeline",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/xml_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "v8KIYbtjiiwCeVGw7yGKs",
+        "label" : "SFTPSource_1",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "@id",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "array_data",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "description",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "price",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "publish_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "genre",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "struct_data",
+            "dataType" : {
+              "type" : "Variant"
+            }
+          }, {
+            "name" : "json_data",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "author",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "title",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "t7TIsHrJbwnumGNzGlG8p$$nYxtIgFOO04PY_E8-SEGw",
+        "label" : "user_profiles_csv"
+      }, {
+        "id" : "YFWeCJYk9ZdQup0jv5ln_$$kkx64kDjYQ3loU4dEAqzX",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "cGF2KORLTWKZmxhOi-Tlh$$W0NqDgdXSLqfGswFXpkHG",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "UMTV7iEZog4GaICFIIO_o$$_elfmE03Q-9VJOa4UxZyb",
+        "label" : "user_profiles_json"
+      } ],
+      "sources" : [ {
+        "id" : "v8KIYbtjiiwCeVGw7yGKs",
+        "label" : "SFTPSource_1"
+      } ]
+    },
     "json_pipeline" : {
       "id" : "json_pipeline",
       "name" : "json_pipeline",
@@ -95,90 +181,98 @@
           "fields" : [ ]
         }
       },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "XLSX_PIPELINE" : {
+      "id" : "XLSX_PIPELINE",
+      "name" : "XLSX_PIPELINE",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/XLSX_PIPELINE.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
       "preview" : [ {
-        "id" : "NIU-9S0s1dMhtvFsv3bS0$$q57A6JsyMeM18PjlDqFB-",
-        "label" : "user_profiles_csv"
+        "id" : "LjcxqCkJ95-7d4FEKVHsc$$iWHuGajmFW5dyzqbug-2Q",
+        "label" : "user_profiles_xlsx"
       }, {
-        "id" : "yDixuEIq3fg6W7y5-nL8p$$Z2-NoiSmzAXRCbBwbZY01",
-        "label" : "user_profiles_json"
-      }, {
-        "id" : "8wnIJHKRj5a0zTrJdPCU0",
-        "label" : "SFTPSource_2",
+        "id" : "AbFlQSA3rpduHkBklhlnV",
+        "label" : "SFTPSource_1",
         "schema" : {
           "entityType" : "",
           "providerType" : "snowflake",
           "fields" : [ {
-            "name" : "HAS_CREDIT_CARD",
+            "name" : "Integer",
             "dataType" : {
-              "type" : "String"
+              "type" : "Number"
             }
           }, {
-            "name" : "HOBBIES",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "FAVORITE_COLORS",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "AGE",
+            "name" : "BigInt",
             "dataType" : {
               "type" : "Float"
             }
           }, {
-            "name" : "SALARY",
+            "name" : "SmallInt",
             "dataType" : {
-              "type" : "String"
+              "type" : "Number"
             }
           }, {
-            "name" : "IS_EMPLOYED",
+            "name" : "TinyInt",
             "dataType" : {
-              "type" : "String"
+              "type" : "Number"
             }
           }, {
-            "name" : "JOIN_DATE",
+            "name" : "Float",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Decimal",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Boolean",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "Date",
             "dataType" : {
               "type" : "Date"
             }
           }, {
-            "name" : "LAST_LOGIN",
+            "name" : "Timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "JSON",
             "dataType" : {
               "type" : "String"
             }
           }, {
-            "name" : "ADDRESS",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "BANK_BALANCE",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "ID",
-            "dataType" : {
-              "type" : "String"
-            }
-          }, {
-            "name" : "CUSTOM_OBJECT",
+            "name" : "Void",
             "dataType" : {
               "type" : "String"
             }
           } ]
         }
       }, {
-        "id" : "fvDutjkHshoTiknZvim1L$$-TvF0ZdsDciPRruSyTfdK",
+        "id" : "CK_lsrucd6SKUJsOf5Io1$$0TekwHnzA8CTfrMraH1yO",
         "label" : "user_profiles_xml"
       }, {
-        "id" : "KNNOFr3JwLLLzXOD-UARe$$T29Kph6tM54el2_bhlaXH",
-        "label" : "user_profiles_xlsx"
+        "id" : "irsZjwj9AXC23YSNnQP_E$$TuiMIo2ELrN3a-TdVy3xK",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "BQeHedsherQ_ignrJ7T5c$$_BeB1551_aa_SVkGJHXfN",
+        "label" : "user_profiles_csv"
       } ],
       "sources" : [ {
-        "id" : "8wnIJHKRj5a0zTrJdPCU0",
-        "label" : "SFTPSource_2"
+        "id" : "AbFlQSA3rpduHkBklhlnV",
+        "label" : "SFTPSource_1"
       } ]
     }
   },

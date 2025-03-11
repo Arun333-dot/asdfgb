@@ -1,0 +1,622 @@
+{
+  "id" : "xml_pipeline",
+  "metainfo" : {
+    "label" : "xml_pipeline",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "v8KIYbtjiiwCeVGw7yGKs" : {
+      "id" : "v8KIYbtjiiwCeVGw7yGKs",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_1",
+        "x" : -820,
+        "y" : -340,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xml",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "name" : "@id",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "array_data",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "description",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "price",
+                "dataType" : {
+                  "type" : "float64"
+                }
+              }, {
+                "name" : "publish_date",
+                "dataType" : {
+                  "type" : "date32"
+                }
+              }, {
+                "name" : "genre",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "struct_data",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "language",
+                    "dataType" : {
+                      "type" : "utf8"
+                    }
+                  }, {
+                    "name" : "id",
+                    "dataType" : {
+                      "type" : "int64"
+                    }
+                  }, {
+                    "name" : "category",
+                    "dataType" : {
+                      "type" : "utf8"
+                    }
+                  } ]
+                }
+              }, {
+                "name" : "json_data",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "author",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "title",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/book_catalog_separate_columns.xml"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "7b210544-1b3d-4657-a659-27b160e24daa",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "array_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "struct_data",
+              "dataType" : {
+                "type" : "Variant"
+              }
+            }, {
+              "name" : "json_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "t7TIsHrJbwnumGNzGlG8p$$nYxtIgFOO04PY_E8-SEGw" : {
+      "id" : "t7TIsHrJbwnumGNzGlG8p$$nYxtIgFOO04PY_E8-SEGw",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_csv",
+        "x" : 500,
+        "y" : -440,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.csv"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "W8TFoEN81ES3GGibF23uD$$tzGSd_7KWDL1ih1g9iSYv",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "array_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "struct_data",
+              "dataType" : {
+                "type" : "Variant"
+              }
+            }, {
+              "name" : "json_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "YFWeCJYk9ZdQup0jv5ln_$$kkx64kDjYQ3loU4dEAqzX" : {
+      "id" : "YFWeCJYk9ZdQup0jv5ln_$$kkx64kDjYQ3loU4dEAqzX",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xml",
+        "x" : 520,
+        "y" : 100,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xml"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xml",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "miD-2AlYN5rIMqigjZIG9$$svEvDQr2jZlJ6biECk6OH",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "array_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "struct_data",
+              "dataType" : {
+                "type" : "Variant"
+              }
+            }, {
+              "name" : "json_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "cGF2KORLTWKZmxhOi-Tlh$$W0NqDgdXSLqfGswFXpkHG" : {
+      "id" : "cGF2KORLTWKZmxhOi-Tlh$$W0NqDgdXSLqfGswFXpkHG",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xlsx",
+        "x" : 460,
+        "y" : 320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xlsx"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xlsx",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oo3oRt3hj0jpqH0z5GhUk$$xauOOj9UO1u_V2ESVem9k",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "array_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "struct_data",
+              "dataType" : {
+                "type" : "Variant"
+              }
+            }, {
+              "name" : "json_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "UMTV7iEZog4GaICFIIO_o$$_elfmE03Q-9VJOa4UxZyb" : {
+      "id" : "UMTV7iEZog4GaICFIIO_o$$_elfmE03Q-9VJOa4UxZyb",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_json",
+        "x" : 500,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.json"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "json",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HkiXYWcby0wIn0WK1JUse$$rjeYzoPp3QxKaN653b5lo",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "array_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "struct_data",
+              "dataType" : {
+                "type" : "Variant"
+              }
+            }, {
+              "name" : "json_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "fSCeaOmMh234U4RvNEAlp",
+    "source" : "v8KIYbtjiiwCeVGw7yGKs",
+    "sourcePort" : "7b210544-1b3d-4657-a659-27b160e24daa",
+    "target" : "t7TIsHrJbwnumGNzGlG8p$$nYxtIgFOO04PY_E8-SEGw",
+    "targetPort" : "W8TFoEN81ES3GGibF23uD$$tzGSd_7KWDL1ih1g9iSYv"
+  }, {
+    "id" : "C4rtprpb6KSuytZdGyFbO",
+    "source" : "v8KIYbtjiiwCeVGw7yGKs",
+    "sourcePort" : "7b210544-1b3d-4657-a659-27b160e24daa",
+    "target" : "UMTV7iEZog4GaICFIIO_o$$_elfmE03Q-9VJOa4UxZyb",
+    "targetPort" : "HkiXYWcby0wIn0WK1JUse$$rjeYzoPp3QxKaN653b5lo"
+  }, {
+    "id" : "8rCt6nVXDRnXIiUKK7RmY",
+    "source" : "v8KIYbtjiiwCeVGw7yGKs",
+    "sourcePort" : "7b210544-1b3d-4657-a659-27b160e24daa",
+    "target" : "YFWeCJYk9ZdQup0jv5ln_$$kkx64kDjYQ3loU4dEAqzX",
+    "targetPort" : "miD-2AlYN5rIMqigjZIG9$$svEvDQr2jZlJ6biECk6OH"
+  }, {
+    "id" : "cgu_ckVBpGt4Z6v2vq8Ct",
+    "source" : "v8KIYbtjiiwCeVGw7yGKs",
+    "sourcePort" : "7b210544-1b3d-4657-a659-27b160e24daa",
+    "target" : "cGF2KORLTWKZmxhOi-Tlh$$W0NqDgdXSLqfGswFXpkHG",
+    "targetPort" : "oo3oRt3hj0jpqH0z5GhUk$$xauOOj9UO1u_V2ESVem9k"
+  } ],
+  "component" : "Pipeline"
+}
