@@ -20,6 +20,458 @@
     }
   },
   "processes" : {
+    "bGlVX5Xo7-Mx48_n9p_kU$$ArToJo9gRt5qTNea_kt1G" : {
+      "id" : "bGlVX5Xo7-Mx48_n9p_kU$$ArToJo9gRt5qTNea_kt1G",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xml",
+        "x" : -20,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xml"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xml",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "M4njqLR9ZE2dASfF-NvYr$$Z8aF1GBXzBxXe8efmdK66",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "ADDRESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BANK_BALANCE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HAS_CREDIT_CARD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "IS_EMPLOYED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAVORITE_COLORS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "JOIN_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "LAST_LOGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HOBBIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "UO3VG1lXXyhikxYgK4BZV$$eR4o21IRYRxSKOXvZ0uSY" : {
+      "id" : "UO3VG1lXXyhikxYgK4BZV$$eR4o21IRYRxSKOXvZ0uSY",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xlsx",
+        "x" : -20,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xlsx"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xlsx",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "p94mBhmy9S0yG53CFU4lI$$lf5GSG-coLlxqEFrQ1zUZ",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "ADDRESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BANK_BALANCE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HAS_CREDIT_CARD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "IS_EMPLOYED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAVORITE_COLORS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "JOIN_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "LAST_LOGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HOBBIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "tfdtPCG_gbqJseZq22TZ6$$v78CaSDZyckAB4sjHrSay" : {
+      "id" : "tfdtPCG_gbqJseZq22TZ6$$v78CaSDZyckAB4sjHrSay",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_csv",
+        "x" : -20,
+        "y" : -560,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.csv"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2lx8jaA5SBA9x-ITHAhYG$$yJvLkmxn0X3qR4K7DYCNC",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "ADDRESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BANK_BALANCE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HAS_CREDIT_CARD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "IS_EMPLOYED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAVORITE_COLORS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "JOIN_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "LAST_LOGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HOBBIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "USdE8onK0jF15i4h7aLgA$$p0qg673ALVcjICGNzY6yy" : {
+      "id" : "USdE8onK0jF15i4h7aLgA$$p0qg673ALVcjICGNzY6yy",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_json",
+        "x" : -20,
+        "y" : 40,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.json"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "json",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6rEpXUwR4mM0AsK4CGqGt$$hc-FHqjpfLvWKqgimO1Rt",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "ADDRESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BANK_BALANCE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HAS_CREDIT_CARD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "IS_EMPLOYED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAVORITE_COLORS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "JOIN_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "LAST_LOGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HOBBIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "aqF3vAZsKSodOHMJkmmjJ" : {
       "id" : "aqF3vAZsKSodOHMJkmmjJ",
       "component" : "OrchestrationSource",
@@ -41,7 +493,71 @@
         "format" : {
           "kind" : "json",
           "properties" : {
-            "multiDoc" : false
+            "multiDoc" : false,
+            "schema" : {
+              "fields" : [ {
+                "name" : "ADDRESS",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "BANK_BALANCE",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "HAS_CREDIT_CARD",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "CUSTOM_OBJECT",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "ID",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "AGE",
+                "dataType" : {
+                  "type" : "float64"
+                }
+              }, {
+                "name" : "IS_EMPLOYED",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "FAVORITE_COLORS",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "SALARY",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "JOIN_DATE",
+                "dataType" : {
+                  "type" : "date32"
+                }
+              }, {
+                "name" : "LAST_LOGIN",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "HOBBIES",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              } ],
+              "providerType" : "arrow"
+            }
           }
         },
         "properties" : {
@@ -52,11 +568,100 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "54a58e08-beda-4bab-aa03-b06cfa9abe00",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "ADDRESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BANK_BALANCE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HAS_CREDIT_CARD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "IS_EMPLOYED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAVORITE_COLORS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "JOIN_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "LAST_LOGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HOBBIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
           "slug" : "out0"
         } ]
       }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "DOS-xPOUXxrbh6YKelA2i",
+    "source" : "aqF3vAZsKSodOHMJkmmjJ",
+    "sourcePort" : "54a58e08-beda-4bab-aa03-b06cfa9abe00",
+    "target" : "tfdtPCG_gbqJseZq22TZ6$$v78CaSDZyckAB4sjHrSay",
+    "targetPort" : "2lx8jaA5SBA9x-ITHAhYG$$yJvLkmxn0X3qR4K7DYCNC"
+  }, {
+    "id" : "7Rz4ukJ5YtrmpIIG_Ke1F",
+    "source" : "aqF3vAZsKSodOHMJkmmjJ",
+    "sourcePort" : "54a58e08-beda-4bab-aa03-b06cfa9abe00",
+    "target" : "UO3VG1lXXyhikxYgK4BZV$$eR4o21IRYRxSKOXvZ0uSY",
+    "targetPort" : "p94mBhmy9S0yG53CFU4lI$$lf5GSG-coLlxqEFrQ1zUZ"
+  }, {
+    "id" : "xhdy2yeoyrmzLsikW_Tq6",
+    "source" : "aqF3vAZsKSodOHMJkmmjJ",
+    "sourcePort" : "54a58e08-beda-4bab-aa03-b06cfa9abe00",
+    "target" : "bGlVX5Xo7-Mx48_n9p_kU$$ArToJo9gRt5qTNea_kt1G",
+    "targetPort" : "M4njqLR9ZE2dASfF-NvYr$$Z8aF1GBXzBxXe8efmdK66"
+  }, {
+    "id" : "pckDEymW6wOHYW6z44uHZ",
+    "source" : "aqF3vAZsKSodOHMJkmmjJ",
+    "sourcePort" : "54a58e08-beda-4bab-aa03-b06cfa9abe00",
+    "target" : "USdE8onK0jF15i4h7aLgA$$p0qg673ALVcjICGNzY6yy",
+    "targetPort" : "6rEpXUwR4mM0AsK4CGqGt$$hc-FHqjpfLvWKqgimO1Rt"
+  } ],
   "component" : "Pipeline"
 }
