@@ -74,6 +74,80 @@
         "isCustomOutputSchema" : false
       }
     },
+    "PZeRZcQQyXYXZP3XSvLzI$$Jhd5NQH4H5QKQqD-4LOzh" : {
+      "id" : "PZeRZcQQyXYXZP3XSvLzI$$Jhd5NQH4H5QKQqD-4LOzh",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_3",
+        "x" : -1360,
+        "y" : -660,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true,
+            "nullValue" : "",
+            "comment" : "#"
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "dgNz9tcmWi9tPcLc9a3YT$$TI1DJEEdO5OxDFsN4enOw",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "WA7_36k9kp2DZohFN4ta9$$6UTB8HM__gOxfIQSXg6bu" : {
+      "id" : "WA7_36k9kp2DZohFN4ta9$$6UTB8HM__gOxfIQSXg6bu",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : -1500,
+        "y" : -660,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true,
+            "nullValue" : "",
+            "comment" : "#"
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GcAwm6hweT3tCkY1X7Lti$$32LNUJmGfOMZHlz0kUfmJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "NxXUF20yEZBpf2_3h8UuM$$40KMD8ICJPEgyvB7Bdl8-" : {
       "id" : "NxXUF20yEZBpf2_3h8UuM$$40KMD8ICJPEgyvB7Bdl8-",
       "component" : "OrchestrationSource",
