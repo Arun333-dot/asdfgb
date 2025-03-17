@@ -58,7 +58,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r",
+        "label" : "OrchestrationSource_0"
+      } ]
     },
     "pipeline3" : {
       "id" : "pipeline3",
@@ -90,6 +93,9 @@
       }, {
         "id" : "LSmeLCOYwhMZgxtsjA7Vi$$54bvXL101MCaiwjfraL_7",
         "label" : "OrchestrationSource_1"
+      }, {
+        "id" : "NsB1QOjmqvR95ju9TTk1m$$OYc3Nzzxy5D3G03mKaOU4",
+        "label" : "OrchestrationSource_2"
       } ]
     }
   },

@@ -1,2 +1,28 @@
 ---
 version: 2
+models:
+- name: "model_pipeline2_Aggregate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline2_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline2_Join_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_pipeline2_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_pipeline2_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline2_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline2_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
