@@ -94,7 +94,7 @@
             "nullValue" : "",
             "comment" : "#"
           },
-          "kind" : "csv",
+          "kind" : "xml",
           "category" : "file"
         }
       },
@@ -131,7 +131,7 @@
             "nullValue" : "",
             "comment" : "#"
           },
-          "kind" : "csv",
+          "kind" : "xml",
           "category" : "file"
         }
       },
@@ -241,7 +241,7 @@
             "nullValue" : "",
             "comment" : "#"
           },
-          "kind" : "csv",
+          "kind" : "xml",
           "category" : "file"
         }
       },
