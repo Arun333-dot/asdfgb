@@ -93,7 +93,7 @@
           "properties" : {
             "multiDoc" : false
           },
-          "kind" : "json",
+          "kind" : "csv",
           "category" : "file"
         }
       },
