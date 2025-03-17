@@ -74,28 +74,37 @@
         "isCustomOutputSchema" : false
       }
     },
-    "7szoTM2BN7ycshmi0GwG9$$Sc8ZyVCXGGJWTjd5rWldf" : {
-      "id" : "7szoTM2BN7ycshmi0GwG9$$Sc8ZyVCXGGJWTjd5rWldf",
-      "component" : "Filter",
+    "NxXUF20yEZBpf2_3h8UuM$$40KMD8ICJPEgyvB7Bdl8-" : {
+      "id" : "NxXUF20yEZBpf2_3h8UuM$$40KMD8ICJPEgyvB7Bdl8-",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
       "metadata" : {
-        "label" : "Filter_1",
-        "x" : -760,
-        "y" : -360,
+        "label" : "unstructured_content_json",
+        "x" : -1640,
+        "y" : -660,
         "phase" : 0
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "condition" : {
-          "expression" : "true"
+        "connector" : {
+          "kind" : "s3",
+          "type" : "connector",
+          "properties" : {
+            "id" : ""
+          }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "multiDoc" : false
+          },
+          "kind" : "json",
+          "category" : "file"
         }
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "EoHt_zfHSLfiVgJgtf8Sv$$Wq33eAxkplANWXOkgQXxp",
-          "slug" : "in0"
-        } ],
+        "inputs" : [ ],
         "outputs" : [ {
-          "id" : "TFSCU9gxGW2WIN4LFOqbv$$IlI_kJA3B5Xw17dT-LMkw",
+          "id" : "jrC8RPG5QAuC5SbIvW9ZU$$B6Gn-Q3Mmu6WhYJc1zvWe",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -133,6 +142,33 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "V6H7_KVU6JgFnlhUV_ebs$$6tTuzDVpOX3UDqYApUbnW",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "7szoTM2BN7ycshmi0GwG9$$Sc8ZyVCXGGJWTjd5rWldf" : {
+      "id" : "7szoTM2BN7ycshmi0GwG9$$Sc8ZyVCXGGJWTjd5rWldf",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : -760,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "EoHt_zfHSLfiVgJgtf8Sv$$Wq33eAxkplANWXOkgQXxp",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TFSCU9gxGW2WIN4LFOqbv$$IlI_kJA3B5Xw17dT-LMkw",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

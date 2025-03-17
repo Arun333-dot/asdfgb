@@ -15,7 +15,7 @@
     "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-" : {
       "id" : "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-",
       "component" : "OrchestrationSource",
-      "kind" : "csvSource",
+      "kind" : "SharepointSource",
       "metadata" : {
         "label" : "OrchestrationSource_0",
         "x" : 20,
@@ -66,6 +66,42 @@
         "outputs" : [ {
           "id" : "model_pipeline1_Aggregate_1_out_1",
           "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "NxXUF20yEZBpf2_3h8UuM$$40KMD8ICJPEgyvB7Bdl8-" : {
+      "id" : "NxXUF20yEZBpf2_3h8UuM$$40KMD8ICJPEgyvB7Bdl8-",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "unstructured_content_json",
+        "x" : -1640,
+        "y" : -660,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "type" : "connector",
+          "properties" : {
+            "id" : ""
+          }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "multiDoc" : false
+          },
+          "kind" : "json",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "jrC8RPG5QAuC5SbIvW9ZU$$B6Gn-Q3Mmu6WhYJc1zvWe",
+          "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
       }
