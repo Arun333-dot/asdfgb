@@ -2,7 +2,7 @@
   "id" : "pipeline4",
   "metainfo" : {
     "label" : "pipeline4",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -18,8 +18,8 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "OrchestrationSource_0",
-        "x" : -1160,
-        "y" : -540,
+        "x" : 20,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
