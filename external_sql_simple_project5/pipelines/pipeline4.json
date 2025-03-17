@@ -48,6 +48,43 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "LSmeLCOYwhMZgxtsjA7Vi$$54bvXL101MCaiwjfraL_7" : {
+      "id" : "LSmeLCOYwhMZgxtsjA7Vi$$54bvXL101MCaiwjfraL_7",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -1140,
+        "y" : -520,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true,
+            "nullValue" : "",
+            "comment" : "#"
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "G4jnHD3L4HxQcuoiV0xlT$$JIMlIObwn3dNTEBGgV_1H",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],
