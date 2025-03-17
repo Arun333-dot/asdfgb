@@ -1,0 +1,68 @@
+{
+  "name" : "external_sql_simple_project5",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "pipeline1" : {
+      "id" : "pipeline1",
+      "name" : "pipeline1",
+      "path" : "external_sql_simple_project5/.prophecy/ide/pipelines/pipeline1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "pipeline2" : {
+      "id" : "pipeline2",
+      "name" : "pipeline2",
+      "path" : "external_sql_simple_project5/.prophecy/ide/pipelines/pipeline2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "pipeline3" : {
+      "id" : "pipeline3",
+      "name" : "pipeline3",
+      "path" : "external_sql_simple_project5/.prophecy/ide/pipelines/pipeline3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

@@ -1,0 +1,49 @@
+{
+  "id" : "pipeline1",
+  "metainfo" : {
+    "label" : "pipeline1",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-" : {
+      "id" : "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1160,
+        "y" : -540,
+        "phase" : 0
+      },
+      "properties" : {
+        "properties" : { },
+        "connector" : {
+          "id" : "asdasda"
+        },
+        "format" : {
+          "separator" : ",",
+          "header" : true,
+          "nullValue" : "",
+          "comment" : "#"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "NqgsVPiSn1w2GA1Jj9XlV$$AKCxsNAMK47ovs4WM-gd8",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
