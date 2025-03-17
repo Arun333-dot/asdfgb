@@ -2,7 +2,7 @@
   "id" : "pipeline1",
   "metainfo" : {
     "label" : "pipeline1",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -18,8 +18,8 @@
       "kind" : "SharepointSource",
       "metadata" : {
         "label" : "OrchestrationSource_0",
-        "x" : -1160,
-        "y" : -540,
+        "x" : 20,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
