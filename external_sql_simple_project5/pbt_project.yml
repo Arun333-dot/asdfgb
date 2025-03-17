@@ -67,9 +67,35 @@ sqlMacros:
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-17 08:58:49'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/prophecy__temp_pipeline1_source:
+    name: prophecy__temp_pipeline1_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/pipeline1/schema.yml
+    createdAt: '2025-03-17 13:34:57'
+    tables:
+    - name: prophecy__temp_pipeline1_post_Filter_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-17 13:34:57'
+    - name: prophecy__temp_pipeline1_post_Aggregate_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-17 13:34:57'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
+    name: pipeline3
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pipeline3.json
+    createdAt: '2025-03-17 13:13:38'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
     name: pipeline1
     schema: null
@@ -86,14 +112,6 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/pipeline2.json
     createdAt: '2025-03-17 13:12:42'
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
-    name: pipeline3
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/pipeline3.json
-    createdAt: '2025-03-17 13:13:38'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

@@ -42,6 +42,101 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "cs8FGTqlJK5n85FwBXqXR$$l7-fWevLxb1d13SYCNZGK" : {
+      "id" : "cs8FGTqlJK5n85FwBXqXR$$l7-fWevLxb1d13SYCNZGK",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : -1100,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6IHpCBURup4bWM8g1X5yk$$Ls8vNdqDI6EWmsRFD6l0k",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Hs7OvuTb5wUq6YabI2NZ0$$hLukW7N75VA8-Qrmthidy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "7szoTM2BN7ycshmi0GwG9$$Sc8ZyVCXGGJWTjd5rWldf" : {
+      "id" : "7szoTM2BN7ycshmi0GwG9$$Sc8ZyVCXGGJWTjd5rWldf",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : -960,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "EoHt_zfHSLfiVgJgtf8Sv$$Wq33eAxkplANWXOkgQXxp",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TFSCU9gxGW2WIN4LFOqbv$$IlI_kJA3B5Xw17dT-LMkw",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "5FnuXFM4CABRV8hMJy9SR$$5UKDMAbM5oD4Hkd8RdQGM" : {
+      "id" : "5FnuXFM4CABRV8hMJy9SR$$5UKDMAbM5oD4Hkd8RdQGM",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -820,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true,
+            "nullValue" : "",
+            "comment" : "#"
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "V6H7_KVU6JgFnlhUV_ebs$$6tTuzDVpOX3UDqYApUbnW",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

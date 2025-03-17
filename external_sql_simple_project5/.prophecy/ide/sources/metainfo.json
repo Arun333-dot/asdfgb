@@ -30,6 +30,9 @@
       "sources" : [ {
         "id" : "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-",
         "label" : "OrchestrationSource_0"
+      }, {
+        "id" : "5FnuXFM4CABRV8hMJy9SR$$5UKDMAbM5oD4Hkd8RdQGM",
+        "label" : "OrchestrationSource_1"
       } ]
     },
     "pipeline2" : {
