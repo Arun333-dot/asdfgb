@@ -15,7 +15,7 @@
     "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-" : {
       "id" : "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-",
       "component" : "OrchestrationSource",
-      "kind" : "SharepointSource",
+      "kind" : "csvSource",
       "metadata" : {
         "label" : "OrchestrationSource_0",
         "x" : 20,
