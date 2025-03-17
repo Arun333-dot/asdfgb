@@ -40,6 +40,14 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/p3.json
+    createdAt: '2025-03-17 13:25:03'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
     name: pipeline1
     schema: null
@@ -56,14 +64,6 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/pipeline2.json
     createdAt: '2025-03-17 13:24:37'
-  .prophecy/metadata/sqlorchestratorpipeline/p3:
-    name: p3
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/p3.json
-    createdAt: '2025-03-17 13:25:03'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

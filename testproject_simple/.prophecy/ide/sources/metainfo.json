@@ -29,19 +29,6 @@
       "preview" : [ ],
       "sources" : [ ]
     },
-    "pipeline2" : {
-      "id" : "pipeline2",
-      "name" : "pipeline2",
-      "path" : "testproject_simple/.prophecy/ide/pipelines/pipeline2.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ ]
-    },
     "p3" : {
       "id" : "p3",
       "name" : "p3",
@@ -57,6 +44,19 @@
         "id" : "ZLs4P8pT0GvoJ6E7ru_jf$$eeXZkT2mofokbLpnMCDGZ",
         "label" : "OrchestrationSource_0"
       } ]
+    },
+    "pipeline2" : {
+      "id" : "pipeline2",
+      "name" : "pipeline2",
+      "path" : "testproject_simple/.prophecy/ide/pipelines/pipeline2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
