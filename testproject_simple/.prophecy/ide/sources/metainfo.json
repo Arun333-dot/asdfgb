@@ -41,6 +41,22 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "testproject_simple/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "ZLs4P8pT0GvoJ6E7ru_jf$$eeXZkT2mofokbLpnMCDGZ",
+        "label" : "OrchestrationSource_0"
+      } ]
     }
   },
   "dependenciesContainer" : {
