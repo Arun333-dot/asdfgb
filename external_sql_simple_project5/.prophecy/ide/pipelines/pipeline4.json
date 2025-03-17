@@ -122,6 +122,43 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "32RnGEKvasRA7sk0rfohN$$bg-WGqoM_F44JtQFzSfq-" : {
+      "id" : "32RnGEKvasRA7sk0rfohN$$bg-WGqoM_F44JtQFzSfq-",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_3",
+        "x" : -1680,
+        "y" : -760,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true,
+            "nullValue" : "",
+            "comment" : "#"
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "HKQRlmo8EBupT5RkYyxsI$$Jeo7OhLSKecZnIdR5_gEZ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],
