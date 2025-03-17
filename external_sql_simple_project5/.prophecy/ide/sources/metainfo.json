@@ -72,6 +72,22 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "pipeline4" : {
+      "id" : "pipeline4",
+      "name" : "pipeline4",
+      "path" : "external_sql_simple_project5/.prophecy/ide/pipelines/pipeline4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "DHP3WZE_8mwUKOswGdM4F$$GT28dutRtXsl4UFkAS3BF",
+        "label" : "OrchestrationSource_0"
+      } ]
     }
   },
   "dependenciesContainer" : {
