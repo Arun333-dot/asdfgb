@@ -17,7 +17,7 @@
       "component" : "OrchestrationSource",
       "kind" : "SFTPSource",
       "metadata" : {
-        "label" : "OrchestrationSource_0",
+        "label" :    "OrchestrationSource_0",
         "x" : -1160,
         "y" : -540,
         "phase" : 0
