@@ -41,10 +41,10 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "6EGq_bH-dtBLnxuSALMH-$$cz_xesC2GtZHx2W4aOZfp",
-          "slug" : "out"
+          "id" :   "6EGq_bH-dtBLnxuSALMH-$$cz_xesC2GtZHx2W4aOZfp",
+          "slug" :    "out"
         } ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : true
       }
     },
     "Uel532-C7UnL-aLmvEdDf$$dPm54m1KEcTUlGf_hnknp" : {
