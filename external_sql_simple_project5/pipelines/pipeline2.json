@@ -24,7 +24,7 @@
       },
       "properties" : {
         "connector" : {
-          "kind" : "sftp",
+          "kind" : "sharepoint",
           "type" : "connector",
           "properties" : { }
         },
@@ -34,7 +34,7 @@
             "separator" : ",",
             "header" : true
           },
-          "kind" : "csv",
+          "kind" : "xml",
           "category" : "file"
         }
       },
