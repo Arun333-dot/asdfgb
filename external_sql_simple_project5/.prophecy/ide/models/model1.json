@@ -17,13 +17,14 @@
         "label" : "model1",
         "x" : 20,
         "y" : 20,
-        "phase" : 0
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "SELECT * \n\nFROM Aggregate_1\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -33,7 +34,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "BP2L6fBt",
-          "slug" : "in0"
+          "slug" : "Aggregate_1"
         } ],
         "outputs" : [ {
           "id" : "pNEJPHqb",
@@ -42,8 +43,48 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "iF3v5-N7OOP6MDAnSvsZH$$16ZmsX0mgavNflr1i-aCF" : {
+      "id" : "iF3v5-N7OOP6MDAnSvsZH$$16ZmsX0mgavNflr1i-aCF",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : -140,
+        "y" : 80,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "iY48Sc1R2ZbGxO6tWPQAF$$whTsl-b4EjXZly4f9tUCl",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "PiFKY8bpSeHI_-F1mqTMq$$J3JUIZOcme_OZ-XdZr2yb",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "Cl9DMXIXhT_U_gKb2WtZJ$$29pebM98CuyHnBa6FGOsy",
+    "source" : "iF3v5-N7OOP6MDAnSvsZH$$16ZmsX0mgavNflr1i-aCF",
+    "sourcePort" : "PiFKY8bpSeHI_-F1mqTMq$$J3JUIZOcme_OZ-XdZr2yb",
+    "target" : "model1##VCk7OxCY",
+    "targetPort" : "BP2L6fBt"
+  } ],
   "component" : "Model"
 }
