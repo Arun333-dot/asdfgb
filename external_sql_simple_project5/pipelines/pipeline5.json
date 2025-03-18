@@ -41,8 +41,35 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" :   "6EGq_bH-dtBLnxuSALMH-$$cz_xesC2GtZHx2W4aOZfp",
+          "id" : "6EGq_bH-dtBLnxuSALMH-$$cz_xesC2GtZHx2W4aOZfp",
           "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Uel532-C7UnL-aLmvEdDf$$dPm54m1KEcTUlGf_hnknp" : {
+      "id" : "Uel532-C7UnL-aLmvEdDf$$dPm54m1KEcTUlGf_hnknp",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline5_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline5_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_pipeline5_post_Aggregate_1_0", "Uel532-C7UnL-aLmvEdDf$$dPm54m1KEcTUlGf_hnknp" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline5_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline5_Aggregate_1_out_1",
+          "slug" : "out_1"
         } ],
         "isCustomOutputSchema" : false
       }
