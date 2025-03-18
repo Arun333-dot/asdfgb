@@ -12,13 +12,13 @@
     }
   },
   "processes" : {
-    "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC" : {
-      "id" : "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC",
+    "f71WxLr-tYEhHx3TTAJEo$$dJhBuKA5v-F_HZpJzUQGZ" : {
+      "id" : "f71WxLr-tYEhHx3TTAJEo$$dJhBuKA5v-F_HZpJzUQGZ",
       "component" : "OrchestrationSource",
       "kind" : "SFTPSource",
       "metadata" : {
-        "label" : "OrchestrationSource_0",
-        "x" : -1160,
+        "label" : "OrchestrationSource_2",
+        "x" : -740,
         "y" : -540,
         "phase" : 0
       },
@@ -41,7 +41,42 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "6EGq_bH-dtBLnxuSALMH-$$cz_xesC2GtZHx2W4aOZfp",
+          "id" : "c7givtpIbDVi98aeXgdth$$4LiqNT562tLiRiPFa-8OU",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Xt9_bqxud1MqZ43ilIUqP$$x2q2znOoDRAwdkquylO61" : {
+      "id" : "Xt9_bqxud1MqZ43ilIUqP$$x2q2znOoDRAwdkquylO61",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -880,
+        "y" : -540,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "42Qe28qYIfWVIhQLxirmj$$5ZKmMsBzICgfSOxgMJreD",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -78,13 +113,13 @@
         "isCustomOutputSchema" : false
       }
     },
-    "Xt9_bqxud1MqZ43ilIUqP$$x2q2znOoDRAwdkquylO61" : {
-      "id" : "Xt9_bqxud1MqZ43ilIUqP$$x2q2znOoDRAwdkquylO61",
+    "qmAt67dwwYIkLT22Ch3mp$$yCalMiMfN3mZwWLXNQ4_I" : {
+      "id" : "qmAt67dwwYIkLT22Ch3mp$$yCalMiMfN3mZwWLXNQ4_I",
       "component" : "OrchestrationSource",
       "kind" : "SFTPSource",
       "metadata" : {
-        "label" : "OrchestrationSource_1",
-        "x" : -880,
+        "label" : "OrchestrationSource_3",
+        "x" : -600,
         "y" : -540,
         "phase" : 0
       },
@@ -107,7 +142,42 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "42Qe28qYIfWVIhQLxirmj$$5ZKmMsBzICgfSOxgMJreD",
+          "id" : "M32p8Teqt3MAy-IgHW9L7$$qjABFsJFgsa33-O6lOPh2",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC" : {
+      "id" : "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1160,
+        "y" : -540,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "6EGq_bH-dtBLnxuSALMH-$$cz_xesC2GtZHx2W4aOZfp",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
