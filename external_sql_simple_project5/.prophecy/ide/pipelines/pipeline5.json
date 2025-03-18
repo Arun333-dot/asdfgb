@@ -13,8 +13,8 @@
   },
   "processes" : {
     "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC" : {
-      "id" : "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC",
-      "component" : "OrchestrationSource",
+      "id" :   "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC",
+      "component" :   "OrchestrationSource",
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "OrchestrationSource_0",
