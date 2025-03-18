@@ -91,16 +91,7 @@
       },
       "preview" : [ ],
       "sources" : [ {
-        "id" : "f71WxLr-tYEhHx3TTAJEo$$dJhBuKA5v-F_HZpJzUQGZ",
-        "label" : "OrchestrationSource_2"
-      }, {
-        "id" : "Xt9_bqxud1MqZ43ilIUqP$$x2q2znOoDRAwdkquylO61",
-        "label" : "OrchestrationSource_1"
-      }, {
-        "id" : "qmAt67dwwYIkLT22Ch3mp$$yCalMiMfN3mZwWLXNQ4_I",
-        "label" : "OrchestrationSource_3"
-      }, {
-        "id" : "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC",
+        "id" : "HfdrA1VT2GX5snT0LlEyO$$I55nPoj_y6ukILqaLDuYR",
         "label" : "OrchestrationSource_0"
       } ]
     }
