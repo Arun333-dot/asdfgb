@@ -55,8 +55,8 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_1",
-        "x" : -740,
-        "y" : -540,
+        "x" : 20,
+        "y" : 420,
         "phase" : 0
       },
       "properties" : {

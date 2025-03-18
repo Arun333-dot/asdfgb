@@ -55,8 +55,8 @@
       "component" : "Filter",
       "metadata" : {
         "label" : "Filter_1",
-        "x" : -880,
-        "y" : -540,
+        "x" : 20,
+        "y" : 620,
         "phase" : 0
       },
       "properties" : {

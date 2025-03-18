@@ -68,24 +68,6 @@ sqlMacros:
     createdAt: '2025-03-17 08:58:49'
 sqlSeeds: {}
 sqlSources:
-  .prophecy/metadata/sqlsources/prophecy__temp_pipeline1_source:
-    name: prophecy__temp_pipeline1_source
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - models/pipeline1/schema.yml
-    createdAt: '2025-03-17 13:34:57'
-    tables:
-    - name: prophecy__temp_pipeline1_post_Filter_1_0
-      schema: null
-      description: null
-      author: arunsharma@prophecy.io
-      createdAt: '2025-03-17 13:34:57'
-    - name: prophecy__temp_pipeline1_post_Aggregate_1_0
-      schema: null
-      description: null
-      author: arunsharma@prophecy.io
-      createdAt: '2025-03-17 13:34:57'
   .prophecy/metadata/sqlsources/prophecy__temp_pipeline2_source:
     name: prophecy__temp_pipeline2_source
     description: null
@@ -119,14 +101,6 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/pipeline3.json
     createdAt: '2025-03-17 13:13:38'
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
-    name: pipeline1
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/pipeline1.json
-    createdAt: '2025-03-17 13:10:41'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline4:
     name: pipeline4
     schema: null

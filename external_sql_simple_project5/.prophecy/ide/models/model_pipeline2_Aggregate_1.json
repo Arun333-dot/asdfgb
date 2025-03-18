@@ -55,8 +55,8 @@
       "component" : "Aggregate",
       "metadata" : {
         "label" : "Aggregate_1",
-        "x" : -1020,
-        "y" : -540,
+        "x" : 20,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {

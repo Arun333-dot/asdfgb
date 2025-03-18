@@ -16,37 +16,6 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "pipeline1" : {
-      "id" : "pipeline1",
-      "name" : "pipeline1",
-      "path" : "external_sql_simple_project5/.prophecy/ide/pipelines/pipeline1.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ {
-        "id" : "b4DQ2hS2agaGrk8ej4lkq$$14Z5Ln6ftnLDG5F8pYtl-",
-        "label" : "OrchestrationSource_0"
-      }, {
-        "id" : "PZeRZcQQyXYXZP3XSvLzI$$Jhd5NQH4H5QKQqD-4LOzh",
-        "label" : "OrchestrationSource_3"
-      }, {
-        "id" : "WA7_36k9kp2DZohFN4ta9$$6UTB8HM__gOxfIQSXg6bu",
-        "label" : "OrchestrationSource_2"
-      }, {
-        "id" : "NxXUF20yEZBpf2_3h8UuM$$40KMD8ICJPEgyvB7Bdl8-",
-        "label" : "unstructured_content_json"
-      }, {
-        "id" : "vbZVmChzfremh8JG51PJ4$$dqwWVuhVT4MMatxIUK6oY",
-        "label" : "OrchestrationSource_4"
-      }, {
-        "id" : "5FnuXFM4CABRV8hMJy9SR$$5UKDMAbM5oD4Hkd8RdQGM",
-        "label" : "OrchestrationSource_1"
-      } ]
-    },
     "pipeline2" : {
       "id" : "pipeline2",
       "name" : "pipeline2",
