@@ -1,2 +1,25 @@
 ---
 version: 2
+models:
+- name: "model_pipeline5_Reformat_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline5_Reformat_2"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_pipeline5_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_pipeline5_post_Reformat_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline5_pre_Reformat_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline5_post_Reformat_2_0"
+    tags:
+    - "prophecy_temp"

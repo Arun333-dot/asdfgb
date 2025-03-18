@@ -91,6 +91,29 @@ sqlSources:
       description: null
       author: arunsharma@prophecy.io
       createdAt: '2025-03-17 16:01:10'
+  .prophecy/metadata/sqlsources/prophecy__temp_pipeline5_source:
+    name: prophecy__temp_pipeline5_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/pipeline5/schema.yml
+    createdAt: '2025-03-18 13:47:29'
+    tables:
+    - name: prophecy__temp_pipeline5_post_Reformat_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-18 13:47:29'
+    - name: prophecy__temp_pipeline5_pre_Reformat_2_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-18 13:47:34'
+    - name: prophecy__temp_pipeline5_post_Reformat_2_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-18 13:47:34'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/pipeline3:

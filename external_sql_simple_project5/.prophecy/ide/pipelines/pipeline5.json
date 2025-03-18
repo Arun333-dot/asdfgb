@@ -46,8 +46,64 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "wdCcIODn_BPQ2wTAsWbMG$$GRU_gspFm1-UkZmD761lg" : {
+      "id" : "wdCcIODn_BPQ2wTAsWbMG$$GRU_gspFm1-UkZmD761lg",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "x" : -920,
+        "y" : -640,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fKC6wM_L5vo8jByZzhokU$$QjttB6LDoC_NXfll9zjlo",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "5mfU9TFFTVsw2jm0TrWdF$$8Xkq3rObWPQfeC31jCre5",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "AjPueSyEuvGEwJFajF_M0$$_dm51aOBIQ1et6eht9Tjz" : {
+      "id" : "AjPueSyEuvGEwJFajF_M0$$_dm51aOBIQ1et6eht9Tjz",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "x" : -1020,
+        "y" : -400,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "k38LD0iWFIJsBc-dp7LpE$$1vi6y5-oTcSy_PA-FH00Q",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "gdx97nlUXTEaNB0hy8fSJ$$jksDo3zo00i6YTzpr0JUC",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "mLn2c33IN_r0WgKUmCiFo$$xpPfBXxnCpZqD9SGdEWp0",
+    "source" : "HfdrA1VT2GX5snT0LlEyO$$I55nPoj_y6ukILqaLDuYR",
+    "sourcePort" : "UKTto-4wA4438dNWrZH2T$$LEGwMnqrEmXOtbUzw0dfD",
+    "target" : "AjPueSyEuvGEwJFajF_M0$$_dm51aOBIQ1et6eht9Tjz",
+    "targetPort" : "k38LD0iWFIJsBc-dp7LpE$$1vi6y5-oTcSy_PA-FH00Q"
+  } ],
   "component" : "Pipeline"
 }
