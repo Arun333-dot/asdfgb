@@ -96,6 +96,37 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "T10bNnWN_FrUZoCbAXSAS$$aXz42ZEtmlWojQCGijwoV" : {
+      "id" : "T10bNnWN_FrUZoCbAXSAS$$aXz42ZEtmlWojQCGijwoV",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : -780,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PIl8NwZ4J092qG-UguPNc$$HZO-gPcOgYT4_SX6w7Rlu",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "RQlcUJAaHm3ThycUYDaK9$$tdQUam_O6IFRg224zWRxU",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ {

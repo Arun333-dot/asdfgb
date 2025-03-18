@@ -39,12 +39,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_2_1",
-          "slug" : "input_port_2_1"
+          "id" : "input_port_3_1",
+          "slug" : "input_port_3_1"
         } ],
         "outputs" : [ {
-          "id" : "output_port_2_1",
-          "slug" : "output_port_2_1"
+          "id" : "output_port_3_1",
+          "slug" : "output_port_3_1"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -93,12 +93,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_1_1",
-          "slug" : "input_port_1_1"
+          "id" : "input_port_2_1",
+          "slug" : "input_port_2_1"
         } ],
         "outputs" : [ {
-          "id" : "output_port_1_1",
-          "slug" : "output_port_1_1"
+          "id" : "output_port_2_1",
+          "slug" : "output_port_2_1"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -110,11 +110,11 @@
     "source" : "AjPueSyEuvGEwJFajF_M0$$_dm51aOBIQ1et6eht9Tjz",
     "sourcePort" : "gdx97nlUXTEaNB0hy8fSJ$$jksDo3zo00i6YTzpr0JUC",
     "target" : "prophecy__temp_pipeline5_post_Reformat_2_0",
-    "targetPort" : "input_port_2_1"
+    "targetPort" : "input_port_3_1"
   }, {
     "id" : "conn_prophecy__temp_pipeline5_pre_Reformat_2_0_AjPueSyEuvGEwJFajF_M0$$_dm51aOBIQ1et6eht9Tjz_k38LD0iWFIJsBc-dp7LpE$$1vi6y5-oTcSy_PA-FH00Q",
     "source" : "prophecy__temp_pipeline5_pre_Reformat_2_0",
-    "sourcePort" : "output_port_1_1",
+    "sourcePort" : "output_port_2_1",
     "target" : "AjPueSyEuvGEwJFajF_M0$$_dm51aOBIQ1et6eht9Tjz",
     "targetPort" : "k38LD0iWFIJsBc-dp7LpE$$1vi6y5-oTcSy_PA-FH00Q"
   } ],

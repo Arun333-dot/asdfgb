@@ -7,6 +7,9 @@ models:
 - name: "model_pipeline5_Reformat_2"
   tags:
   - "prophecy_temp"
+- name: "model_pipeline5_Aggregate_1"
+  tags:
+  - "prophecy_temp"
 sources:
 - name: "prophecy__temp_pipeline5_source"
   database: "hive_metastore"
@@ -14,6 +17,9 @@ sources:
   config:
     enabled: true
   tables:
+  - name: "prophecy__temp_pipeline5_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
   - name: "prophecy__temp_pipeline5_post_Reformat_1_0"
     tags:
     - "prophecy_temp"
