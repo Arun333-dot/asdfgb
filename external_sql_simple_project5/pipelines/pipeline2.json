@@ -12,14 +12,14 @@
     }
   },
   "processes" : {
-    "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r" : {
-      "id" : "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r",
+    "EfKVKYSg156hWU497pGGH$$DdGLz1aobnQXkOb_9Jb1A" : {
+      "id" : "EfKVKYSg156hWU497pGGH$$DdGLz1aobnQXkOb_9Jb1A",
       "component" : "OrchestrationSource",
       "kind" : "SFTPSource",
       "metadata" : {
-        "label" : "OrchestrationSource_0",
-        "x" : 20,
-        "y" : 220,
+        "label" : "OrchestrationSource_1",
+        "x" : -1100,
+        "y" : -180,
         "phase" : 0
       },
       "properties" : {
@@ -32,13 +32,46 @@
         "format" : {
           "properties" : {
             "separator" : ",",
-            "header" : true,
-            "nullValue" : "",
-            "comment" : "#"
+            "header" : true
           },
           "kind" : "csv",
           "category" : "file"
         }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "c7sOxJMfuiqvqQpujUfzJ$$bC9thY6qxFu2Kteofe60q",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r" : {
+      "id" : "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : 20,
+        "y" : 220,
+        "phase" : 0
+      },
+      "properties" : {
+        "properties" : {
+          "tableFullName" : { }
+        },
+        "connector" : {
+          "id" : "connection2",
+          "authType" : "pat",
+          "token" : {
+            "name" : "empty",
+            "kind" : "prophecy",
+            "type" : "secret",
+            "value" : ""
+          }
+        },
+        "format" : { }
       },
       "ports" : {
         "inputs" : [ ],

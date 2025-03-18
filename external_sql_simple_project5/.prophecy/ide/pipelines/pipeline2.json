@@ -12,14 +12,14 @@
     }
   },
   "processes" : {
-    "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r" : {
-      "id" : "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r",
+    "EfKVKYSg156hWU497pGGH$$DdGLz1aobnQXkOb_9Jb1A" : {
+      "id" : "EfKVKYSg156hWU497pGGH$$DdGLz1aobnQXkOb_9Jb1A",
       "component" : "OrchestrationSource",
       "kind" : "SFTPSource",
       "metadata" : {
-        "label" : "OrchestrationSource_0",
-        "x" : 20,
-        "y" : 220,
+        "label" : "OrchestrationSource_1",
+        "x" : -1100,
+        "y" : -180,
         "phase" : 0
       },
       "properties" : {
@@ -32,9 +32,7 @@
         "format" : {
           "properties" : {
             "separator" : ",",
-            "header" : true,
-            "nullValue" : "",
-            "comment" : "#"
+            "header" : true
           },
           "kind" : "csv",
           "category" : "file"
@@ -43,7 +41,80 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
+          "id" : "c7sOxJMfuiqvqQpujUfzJ$$bC9thY6qxFu2Kteofe60q",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r" : {
+      "id" : "UZjhgtZQCVfiLmfSwD7cO$$vPK5UFEy4BVfEauXtZ36r",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : 20,
+        "y" : 220,
+        "phase" : 0
+      },
+      "properties" : {
+        "properties" : {
+          "tableFullName" : { }
+        },
+        "connector" : {
+          "id" : "connection2",
+          "authType" : "pat",
+          "token" : {
+            "name" : "empty",
+            "kind" : "prophecy",
+            "type" : "secret",
+            "value" : ""
+          }
+        },
+        "format" : { }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
           "id" : "tnqkR0gY_b6P10khGuS3p$$DNIAssNk_9nguZHtxbcW0",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "-edMpeVALPekGKEqFw4FQ$$4z7d6ob9KP7AYOxL2Z5WE" : {
+      "id" : "-edMpeVALPekGKEqFw4FQ$$4z7d6ob9KP7AYOxL2Z5WE",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "x" : 20,
+        "y" : 420,
+        "phase" : 0
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : ""
+          },
+          "joinType" : "inner",
+          "rightAlias" : null
+        } ],
+        "expressions" : [ ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Hc8fOuDNEf9amJakKOFde$$dfVm5uxvsEpBDJSsEgHME",
+          "slug" : "in0"
+        }, {
+          "id" : "7LxZ4GpQyLMMo19rTaZej$$TavImnQyZjQEyTg-ItTjR",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "9LHhThkR03aFqOsEcl-Me$$1vwKES1x7OLfMr2zKzB77",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -102,44 +173,6 @@
         } ],
         "outputs" : [ {
           "id" : "squT73zqUZNO-A8zv0iPi$$bWoRCnASZevv1sIipIr42",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false
-      }
-    },
-    "-edMpeVALPekGKEqFw4FQ$$4z7d6ob9KP7AYOxL2Z5WE" : {
-      "id" : "-edMpeVALPekGKEqFw4FQ$$4z7d6ob9KP7AYOxL2Z5WE",
-      "component" : "Join",
-      "metadata" : {
-        "label" : "Join_1",
-        "x" : 20,
-        "y" : 420,
-        "phase" : 0
-      },
-      "properties" : {
-        "conditions" : [ {
-          "alias" : "in1",
-          "expression" : {
-            "expression" : ""
-          },
-          "joinType" : "inner",
-          "rightAlias" : null
-        } ],
-        "expressions" : [ ],
-        "activeTab" : "conditions",
-        "columnsSelector" : [ ],
-        "headAlias" : "in0"
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Hc8fOuDNEf9amJakKOFde$$dfVm5uxvsEpBDJSsEgHME",
-          "slug" : "in0"
-        }, {
-          "id" : "7LxZ4GpQyLMMo19rTaZej$$TavImnQyZjQEyTg-ItTjR",
-          "slug" : "in1"
-        } ],
-        "outputs" : [ {
-          "id" : "9LHhThkR03aFqOsEcl-Me$$1vwKES1x7OLfMr2zKzB77",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

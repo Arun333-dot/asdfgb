@@ -17,12 +17,12 @@ sources:
   config:
     enabled: true
   tables:
-  - name: "prophecy__temp_pipeline2_post_Join_1_0"
-    tags:
-    - "prophecy_temp"
   - name: "prophecy__temp_pipeline2_post_Filter_1_0"
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_pipeline2_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline2_post_Join_1_0"
     tags:
     - "prophecy_temp"
