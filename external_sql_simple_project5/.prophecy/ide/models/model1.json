@@ -7,6 +7,16 @@
     "sourceSuggestions" : {
       "sources" : [ ]
     },
+    "graphConfig" : {
+      "entityConfig" : {
+        "type" : "ModelConfig"
+      },
+      "userDefinedConfig" : {
+        "vars" : {
+          "enam" : "1234"
+        }
+      }
+    },
     "version" : 3
   },
   "processes" : {
@@ -50,8 +60,8 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : -140,
-        "y" : 80,
+        "x" : -200,
+        "y" : 0,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
