@@ -18,24 +18,23 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "OrchestrationSource_1",
-        "x" : -1100,
-        "y" : -180,
+        "x" : -820,
+        "y" : -100,
         "phase" : 0
       },
       "properties" : {
-        "connector" : {
-          "kind" : "sharepoint",
-          "type" : "connector",
-          "properties" : { }
-        },
         "properties" : { },
+        "connector" : {
+          "password" : {
+            "name" : "empty",
+            "kind" : "prophecy",
+            "type" : "secret",
+            "value" : ""
+          }
+        },
         "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
-          "kind" : "xml",
-          "category" : "file"
+          "separator" : ",",
+          "header" : true
         }
       },
       "ports" : {
@@ -105,6 +104,41 @@
         "outputs" : [ {
           "id" : "model_pipeline2_Join_1_out_1",
           "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "YxhbdfY2s5USI6AeWWiHe$$9zYsZUkiEoihm656ocFry" : {
+      "id" : "YxhbdfY2s5USI6AeWWiHe$$9zYsZUkiEoihm656ocFry",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : -1100,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "mzUf8QWyA1TdA1nlA7iGn$$HAW4KEbgHruPMO2TJU8ft",
+          "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
       }

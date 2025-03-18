@@ -1,0 +1,53 @@
+{
+  "id" : "pipeline5",
+  "metainfo" : {
+    "label" : "pipeline5",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC" : {
+      "id" : "vI6h5qqS_WyGvD-e-2qrf$$y0y8e9OJVHbZsTY6u76AC",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1160,
+        "y" : -540,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "6EGq_bH-dtBLnxuSALMH-$$cz_xesC2GtZHx2W4aOZfp",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
