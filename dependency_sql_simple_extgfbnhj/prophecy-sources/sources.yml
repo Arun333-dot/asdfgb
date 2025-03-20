@@ -1,0 +1,83 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "sqlmodel"
+    description: "Customer account information, including personal details and account\
+      \ status, supporting customer relationship management efforts."
+    quoting:
+      identifier: true
+    columns:
+    - name: "customer_id"
+      description: "The unique identifier for each customer"
+      dataType:
+        type: "Bigint"
+    - name: "first_name"
+      description: "The first name of the customer"
+      dataType:
+        type: "String"
+    - name: "last_name"
+      description: "The last name of the customer"
+      dataType:
+        type: "String"
+    - name: "phone"
+      description: "Contact phone number of the customer"
+      dataType:
+        type: "String"
+    - name: "email"
+      description: "Email address of the customer"
+      dataType:
+        type: "String"
+    - name: "country_code"
+      description: "The code representing the customer's country"
+      dataType:
+        type: "String"
+    - name: "account_open_date"
+      description: "Date when the customer's account was opened"
+      dataType:
+        type: "Date"
+    - name: "account_flags"
+      description: "Flags indicating the status or characteristics of the customer's\
+        \ account"
+      dataType:
+        type: "String"
+    type: "table"
+  - name: "model"
+    description: "Customer order history and lifetime value data, enabling insights\
+      \ into customer behavior and retention."
+    columns:
+    - name: "customer_id"
+      description: "Unique identifier for each customer"
+      dataType:
+        type: "Bigint"
+    - name: "first_name"
+      description: "The first name of the customer"
+      dataType:
+        type: "String"
+    - name: "last_name"
+      description: "The last name of the customer"
+      dataType:
+        type: "String"
+    - name: "first_order"
+      description: "Date of the customer's first order"
+      dataType:
+        type: "Date"
+    - name: "most_recent_order"
+      description: "Date of the customer's most recent order"
+      dataType:
+        type: "Date"
+    - name: "number_of_orders"
+      description: "Total number of orders placed by the customer"
+      dataType:
+        type: "Bigint"
+    - name: "customer_lifetime_value"
+      description: "The total revenue expected from a customer over their relationship\
+        \ with the business."
+      dataType:
+        type: "Double"
+    type: "table"

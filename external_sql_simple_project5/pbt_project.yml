@@ -1,0 +1,156 @@
+name: external_sql_simple_project5
+description: ''
+version: '4'
+author: arunsharma@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-17 08:58:45'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model1:
+    name: model1
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/model1.sql
+    - .prophecy/ide/models/model1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-17 13:17:14'
+  .prophecy/metadata/sqlmodels/model2:
+    name: model2
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/model2.sql
+    - .prophecy/ide/models/model2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-17 13:17:24'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-17 08:58:49'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/prophecy__temp_pipeline1_source:
+    name: prophecy__temp_pipeline1_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/pipeline1/schema.yml
+    createdAt: '2025-03-17 13:34:57'
+    tables:
+    - name: prophecy__temp_pipeline1_post_Filter_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-17 13:34:57'
+    - name: prophecy__temp_pipeline1_post_Aggregate_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-17 13:34:57'
+  .prophecy/metadata/sqlsources/prophecy__temp_pipeline2_source:
+    name: prophecy__temp_pipeline2_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/pipeline2/schema.yml
+    createdAt: '2025-03-17 16:01:08'
+    tables:
+    - name: prophecy__temp_pipeline2_post_Join_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-17 16:01:10'
+    - name: prophecy__temp_pipeline2_post_Filter_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-17 16:01:09'
+    - name: prophecy__temp_pipeline2_post_Aggregate_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-17 16:01:08'
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
+    name: pipeline3
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pipeline3.json
+    createdAt: '2025-03-17 13:13:38'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
+    name: pipeline1
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pipeline1.json
+    createdAt: '2025-03-17 13:10:41'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline4:
+    name: pipeline4
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pipeline4.json
+    createdAt: '2025-03-17 13:46:32'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline2:
+    name: pipeline2
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pipeline2.json
+    createdAt: '2025-03-17 13:12:42'
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma@prophecy.io
+  createdAt: '2025-03-17 08:58:45'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
