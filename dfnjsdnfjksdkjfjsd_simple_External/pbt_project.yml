@@ -36,42 +36,7 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-20 09:28:33'
-sqlSeeds:
-  .prophecy/metadata/sqlseeds/dfvvf:
-    name: dfvvf
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: name
-        dataType:
-          type: String
-      - name: age
-        dataType:
-          type: String
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - seeds/dfvvf.csv
-    createdAt: '2025-03-20 09:30:14'
-  .prophecy/metadata/sqlseeds/seeed:
-    name: seeed
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: name
-        dataType:
-          type: String
-      - name: age
-        dataType:
-          type: String
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - seeds/seeed.csv
-    - seeds/seeds.yml
-    createdAt: '2025-03-20 09:30:59'
+sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines: {}
