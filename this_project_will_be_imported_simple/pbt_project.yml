@@ -1,0 +1,160 @@
+name: this_project_will_be_imported_simple
+description: ''
+version: 0.0.1
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-21 07:13:39'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model1:
+    name: model1
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model1.sql
+    - .prophecy/ide/models/model1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-21 07:14:18'
+  .prophecy/metadata/sqlmodels/model2:
+    name: model2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model2.sql
+    - .prophecy/ide/models/model2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-21 07:14:25'
+  .prophecy/metadata/sqlmodels/model3:
+    name: model3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model3.sql
+    - .prophecy/ide/models/model3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-21 07:14:37'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/gem1:
+    name: gem1
+    macroType: query
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/gem1.sql
+    - .prophecy/ide/macros/gem1.json
+    - macros/macros.yml
+    - gems/gem1.py
+    createdAt: '2025-03-21 07:14:53'
+  .prophecy/metadata/sqlmacros/gem2:
+    name: gem2
+    macroType: query
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/gem2.sql
+    - .prophecy/ide/macros/gem2.json
+    - macros/macros.yml
+    - gems/gem2.py
+    createdAt: '2025-03-21 07:15:04'
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-21 07:13:43'
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p2.py
+    createdAt: '2025-03-21 07:14:00'
+  .prophecy/metadata/sqlorchestratorpipeline/p1:
+    name: p1
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p1.py
+    createdAt: '2025-03-21 07:13:51'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p3.py
+    createdAt: '2025-03-21 07:14:06'
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2025-03-21 07:13:39'
+dependencies: []
+projectDependencies:
+  '22363':
+    projectUID: 22363
+    projectName: ProphecyDatabricksSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
+    version: 0.0.1
+    isDefault: true
+    author: null
+    createdAt: '2025-03-21 07:15:28'
+  '22364':
+    projectUID: 22364
+    projectName: ProphecySnowflakeSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/snowflake-sql-basics&subPath=
+    version: 0.0.1
+    isDefault: true
+    author: null
+    createdAt: '2025-03-21 07:15:28'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
