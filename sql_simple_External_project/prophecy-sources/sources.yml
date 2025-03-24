@@ -1,0 +1,32 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "million_records"
+    description: "A comprehensive dataset of individuals, capturing their names, cities,\
+      \ ages, and unique identifiers for demographic analysis."
+    quoting:
+      identifier: true
+    columns:
+    - name: "ID"
+      description: "Unique identifier for each record"
+      dataType:
+        type: "Bigint"
+    - name: "Name"
+      description: "The name of the individual"
+      dataType:
+        type: "String"
+    - name: "Age"
+      description: "The age of the individual"
+      dataType:
+        type: "Bigint"
+    - name: "City"
+      description: "The city where the individual resides"
+      dataType:
+        type: "String"
+    type: "table"
