@@ -15,7 +15,21 @@
     "editable" : true
   },
   "datasets" : { },
-  "pipelines" : { },
+  "pipelines" : {
+    "this_is_simple_project_pipeline" : {
+      "id" : "this_is_simple_project_pipeline",
+      "name" : "this_is_simple_project_pipeline",
+      "path" : "sql_simple_External_project/.prophecy/ide/pipelines/this_is_simple_project_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
   "externalSources" : {
     "type" : "Project",
     "name" : "",
@@ -102259,6 +102273,10 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
-  "entitiesToSync" : [ ],
+  "entitiesToSync" : [ {
+    "name" : "model1",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
   "frontEndLanguage" : "sql"
 }

@@ -98,7 +98,15 @@ sqlSources:
       author: arunsharma+admin@prophecy.io
       createdAt: '2025-03-24 05:53:17'
 sqlUnreferencedSources: {}
-sqlOrchestratorPipelines: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/this_is_simple_project_pipeline:
+    name: this_is_simple_project_pipeline
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/this_is_simple_project_pipeline.py
+    createdAt: '2025-03-24 05:54:57'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
