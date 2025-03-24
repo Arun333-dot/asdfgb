@@ -1,6 +1,6 @@
 name: sql_simple_External_project
 description: ''
-version: '1'
+version: '2'
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
