@@ -26,22 +26,7 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/model1:
     name: model1
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: ID
-        dataType:
-          type: Bigint
-      - name: Name
-        dataType:
-          type: String
-      - name: Age
-        dataType:
-          type: Bigint
-      - name: City
-        dataType:
-          type: String
+    schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
