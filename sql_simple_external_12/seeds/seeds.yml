@@ -1,3 +1,5 @@
 ---
 version: 2
-seeds: []
+seeds:
+- name: "VXCVXCVXCVXCVX"
+  columns: []

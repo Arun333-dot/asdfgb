@@ -27,7 +27,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "V57C2HgT4s1pmH9q6t_k-",
+        "label" : "SFTPSource_2"
+      } ]
     }
   },
   "externalSources" : {

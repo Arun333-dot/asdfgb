@@ -54,6 +54,21 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-03-25 12:20:32'
+  .prophecy/metadata/sqlmodels/model1ss:
+    name: model1ss
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model1ss.sql
+    - .prophecy/ide/models/model1ss.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-25 13:32:07'
   .prophecy/metadata/sqlmodels/model2:
     name: model2
     schema:
@@ -126,7 +141,25 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-25 11:35:14'
-sqlSeeds: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/VXCVXCVXCVXCVX:
+    name: VXCVXCVXCVXCVX
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: NAME
+        dataType:
+          type: String
+      - name: AGE
+        dataType:
+          type: Integer
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/VXCVXCVXCVXCVX.csv
+    - seeds/seeds.yml
+    createdAt: '2025-03-25 15:47:50'
 sqlSources:
   .prophecy/metadata/sqlsources/hive_metastore_arun123:
     name: hive_metastore.arun123
