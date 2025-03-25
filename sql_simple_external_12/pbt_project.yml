@@ -126,28 +126,7 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-25 11:35:14'
-sqlSeeds:
-  .prophecy/metadata/sqlseeds/seeed6:
-    name: seeed6
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: name
-        dataType:
-          type: String
-      - name: age
-        dataType:
-          type: Integer
-      - name: time
-        dataType:
-          type: Integer
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - seeds/seeed6.csv
-    - seeds/seeds.yml
-    createdAt: '2025-03-25 12:51:18'
+sqlSeeds: {}
 sqlSources:
   .prophecy/metadata/sqlsources/hive_metastore_arun123:
     name: hive_metastore.arun123
@@ -185,15 +164,7 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2025-03-25 11:37:10'
-    tables:
-    - name: store
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields: []
-      description: null
-      author: arunsharma+admin@prophecy.io
-      createdAt: '2025-03-25 11:37:10'
+    tables: []
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/p1:
