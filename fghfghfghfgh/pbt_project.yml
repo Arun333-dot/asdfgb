@@ -40,14 +40,14 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/p2:
-    name: p2
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - pipelines/p2.py
-    createdAt: '2025-03-25 06:24:16'
+    - pipelines/p3.py
+    createdAt: '2025-03-25 06:24:48'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
