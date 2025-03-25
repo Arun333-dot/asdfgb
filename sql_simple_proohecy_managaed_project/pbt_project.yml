@@ -1,6 +1,6 @@
 name: sql_simple_proohecy_managaed_project
 description: ''
-version: '3'
+version: 0.0.1
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
@@ -40,22 +40,6 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/p2:
-    name: p2
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - pipelines/p2.py
-    createdAt: '2025-03-25 18:17:54'
-  .prophecy/metadata/sqlorchestratorpipeline/p5:
-    name: p5
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - pipelines/p5.py
-    createdAt: '2025-03-25 18:22:01'
   .prophecy/metadata/sqlorchestratorpipeline/p1:
     name: p1
     schema: null
@@ -64,14 +48,14 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/p1.py
     createdAt: '2025-03-25 18:17:49'
-  .prophecy/metadata/sqlorchestratorpipeline/p4:
-    name: p4
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - pipelines/p4.py
-    createdAt: '2025-03-25 18:21:11'
+    - pipelines/p2.py
+    createdAt: '2025-03-25 18:17:54'
   .prophecy/metadata/sqlorchestratorpipeline/p3:
     name: p3
     schema: null
