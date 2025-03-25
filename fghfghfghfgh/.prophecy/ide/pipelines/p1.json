@@ -1,8 +1,8 @@
 {
-  "id" : "p3",
+  "id" : "p1",
   "metainfo" : {
-    "label" : "p3",
-    "autoLayout" : false,
+    "label" : "p1",
+    "autoLayout" : true,
     "version" : 1,
     "configuration" : {
       "schema" : {
