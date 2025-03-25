@@ -54,6 +54,19 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
