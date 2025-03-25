@@ -50,8 +50,8 @@
       "metadata" : {
         "label" : "million_records",
         "slug" : "million_records",
-        "x" : -200,
-        "y" : -360,
+        "x" : -420,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
