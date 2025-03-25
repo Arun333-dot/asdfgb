@@ -41,6 +41,19 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
