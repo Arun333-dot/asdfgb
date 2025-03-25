@@ -2,7 +2,7 @@
   "id" : "p1",
   "metainfo" : {
     "label" : "p1",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -11,7 +11,116 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "tpzFBXUC29KW-ltWj-XYx" : {
+      "id" : "tpzFBXUC29KW-ltWj-XYx",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_1",
+        "x" : -880,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "name" : "id"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "email"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "age"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "city"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "country"
+              } ],
+              "providerType" : "arrow"
+            },
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/test_20records_nullvalue.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "02a4495c-e793-49c0-b876-0035f532d262",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
