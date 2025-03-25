@@ -1,4 +1,6 @@
-with DAG():
+Config = {"cvxcvxcvxvxcvx" : "'cdsccc'", "dfsdfsddfsddfs" : "sqrt('4')", "dsfdfsdfsdfsdfs" : "'age'"}
+
+with DAG(Config = Config):
     SFTPSource_2 = SourceTask(
         task_id = "SFTPSource_2", 
         component = "OrchestrationSource", 
@@ -62,13 +64,29 @@ with DAG():
         ), 
         filePath = "/prophecy-sftp/aruns/formatted_json_data_10.json"
     )
+    SFTPSource_2 = Task(
+        task_id = "SFTPSource_2", 
+        component = "Dataset", 
+        table = {
+          "name": "prophecy__temp_p1_pre_custom_object_data_0", 
+          "sourceType": "Source", 
+          "sourceName": "prophecy__temp_p1_source", 
+          "alias": ""
+        }
+    )
     fetch_posts_by_id = Task(
         task_id = "fetch_posts_by_id", 
         component = "RestAPI", 
         method = "GET", 
         body = "", 
-        url = "", 
+        url = "https://jsonplaceholder.typicode.com/posts/1", 
         params = "", 
         headers = ""
     )
-    SFTPSource_2.out0 >> fetch_posts_by_id.in0
+    model_p1_custom_object_data = Task(
+        task_id = "model_p1_custom_object_data", 
+        component = "Model", 
+        modelName = "model_p1_custom_object_data"
+    )
+    SFTPSource_2.out0 >> [fetch_posts_by_id.in0, SFTPSource_2.input_port_0_1]
+    SFTPSource_2.output_port_0_1 >> model_p1_custom_object_data.in_1

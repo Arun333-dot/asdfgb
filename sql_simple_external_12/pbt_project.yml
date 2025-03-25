@@ -206,6 +206,8 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/p1/schema.yml
+    - models/p1/model_p1_custom_object_data.sql
     - pipelines/p1.py
     createdAt: '2025-03-25 12:03:03'
 sqlBusinessApps: {}

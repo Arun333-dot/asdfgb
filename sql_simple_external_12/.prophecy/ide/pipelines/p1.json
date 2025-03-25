@@ -7,7 +7,25 @@
     "configuration" : {
       "schema" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "cvxcvxcvxvxcvx",
+          "kind" : {
+            "type" : "string",
+            "value" : "'cdsccc'"
+          }
+        }, {
+          "name" : "dfsdfsddfsddfs",
+          "kind" : {
+            "type" : "string",
+            "value" : "sqrt('4')"
+          }
+        }, {
+          "name" : "dsfdfsdfsdfsdfs",
+          "kind" : {
+            "type" : "string",
+            "value" : "'age'"
+          }
+        } ]
       }
     }
   },
@@ -18,8 +36,8 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "SFTPSource_2",
-        "x" : -480,
-        "y" : -280,
+        "x" : -760,
+        "y" : -200,
         "phase" : 0
       },
       "properties" : {
@@ -214,7 +232,7 @@
       "properties" : {
         "method" : "GET",
         "body" : "",
-        "url" : "",
+        "url" : "https://jsonplaceholder.typicode.com/posts/1",
         "params" : "",
         "headers" : ""
       },
@@ -369,6 +387,139 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "n7bXQXKLAFMyiRTel5BEL$$2BYZqekJwTlHhZ3Rn3FSy" : {
+      "id" : "n7bXQXKLAFMyiRTel5BEL$$2BYZqekJwTlHhZ3Rn3FSy",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "custom_object_data",
+        "x" : -240,
+        "y" : -520,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##CUSTOM_OBJECT", "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##ID", "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##AGE" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "CUSTOM_OBJECT"
+          },
+          "alias" : "CUSTOM_OBJECT",
+          "_row_id" : "318343054"
+        }, {
+          "expression" : {
+            "expression" : "ID"
+          },
+          "alias" : "ID",
+          "_row_id" : "458832019"
+        }, {
+          "expression" : {
+            "expression" : "AGE"
+          },
+          "alias" : "AGE",
+          "_row_id" : "586908343"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NULL_VALUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HOBBIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ADDRESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BANK_BALANCE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HAS_CREDIT_CARD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_EMPLOYED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "JOIN_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "LAST_LOGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAVORITE_COLORS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Yh2DtEx0T805xDz6Bpdr6$$sJUOwGQmMNmriKviE9aWu",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ {
@@ -377,6 +528,12 @@
     "sourcePort" : "ba647439-e687-441c-a3dd-19ba36e43e85",
     "target" : "vHROWa5o4-UR87vGN5s5Y$$TOL_yP9rCYS5_4zU_GG-a",
     "targetPort" : "OGpqVmGc52LIgTFI5Rusc$$LCHASzlBUDjcNi6dpx860"
+  }, {
+    "id" : "3T63TXEzcy-8L7DHNDEOA",
+    "source" : "V57C2HgT4s1pmH9q6t_k-",
+    "sourcePort" : "ba647439-e687-441c-a3dd-19ba36e43e85",
+    "target" : "n7bXQXKLAFMyiRTel5BEL$$2BYZqekJwTlHhZ3Rn3FSy",
+    "targetPort" : "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f"
   } ],
   "component" : "Pipeline"
 }

@@ -23,7 +23,25 @@
       "config" : {
         "schema" : {
           "type" : "record",
-          "fields" : [ ]
+          "fields" : [ {
+            "name" : "cvxcvxcvxvxcvx",
+            "kind" : {
+              "type" : "string",
+              "value" : "'cdsccc'"
+            }
+          }, {
+            "name" : "dfsdfsddfsddfs",
+            "kind" : {
+              "type" : "string",
+              "value" : "sqrt('4')"
+            }
+          }, {
+            "name" : "dsfdfsdfsdfsdfs",
+            "kind" : {
+              "type" : "string",
+              "value" : "'age'"
+            }
+          } ]
         }
       },
       "preview" : [ ],
