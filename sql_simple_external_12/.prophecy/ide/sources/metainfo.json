@@ -102508,6 +102508,18 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
-  "entitiesToSync" : [ ],
+  "entitiesToSync" : [ {
+    "name" : "model1",
+    "type" : "Model",
+    "syncedOnce" : false
+  }, {
+    "name" : "model2",
+    "type" : "Model",
+    "syncedOnce" : false
+  }, {
+    "name" : "model3",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
   "frontEndLanguage" : "sql"
 }
