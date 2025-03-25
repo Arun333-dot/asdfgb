@@ -1,0 +1,84 @@
+{
+  "id" : "model2",
+  "metainfo" : {
+    "label" : "model2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model2##PV0wiF8J" : {
+      "id" : "model2##PV0wiF8J",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model2",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM million_records\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "aM0dMaBG",
+          "slug" : "million_records"
+        } ],
+        "outputs" : [ {
+          "id" : "FhwFWPVu",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "uQz5UgHDaTk1KRpaloPIe$$PZx_WT8Z00SidIbjU5Q-J" : {
+      "id" : "uQz5UgHDaTk1KRpaloPIe$$PZx_WT8Z00SidIbjU5Q-J",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "million_records",
+        "slug" : "million_records",
+        "x" : -200,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "million_records",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "fzO2KHMBGhkIzF-pINlSa$$0_eCUhaqPlJ0VKlBni_BC",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "drZOQ_UXT0Wzmh_6YRCpV",
+    "source" : "uQz5UgHDaTk1KRpaloPIe$$PZx_WT8Z00SidIbjU5Q-J",
+    "sourcePort" : "fzO2KHMBGhkIzF-pINlSa$$0_eCUhaqPlJ0VKlBni_BC",
+    "target" : "model2##PV0wiF8J",
+    "targetPort" : "aM0dMaBG"
+  } ],
+  "component" : "Model"
+}
