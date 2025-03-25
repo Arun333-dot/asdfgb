@@ -16,10 +16,36 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p1.json",
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p5" : {
+      "id" : "p5",
+      "name" : "p5",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p5.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p3.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -42,10 +68,10 @@
       "preview" : [ ],
       "sources" : [ ]
     },
-    "p3" : {
-      "id" : "p3",
-      "name" : "p3",
-      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p3.json",
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p1.json",
       "config" : {
         "schema" : {
           "type" : "record",
