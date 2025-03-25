@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p3" : {
-      "id" : "p3",
-      "name" : "p3",
-      "path" : "fghfghfghfgh/.prophecy/ide/pipelines/p3.json",
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "fghfghfghfgh/.prophecy/ide/pipelines/p2.json",
       "config" : {
         "schema" : {
           "type" : "record",
