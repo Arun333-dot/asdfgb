@@ -60,7 +60,7 @@
         "phase" : 0
       },
       "properties" : {
-        "columnsSelector" : [ "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##CUSTOM_OBJECT", "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##ID", "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##AGE" ],
+        "columnsSelector" : [ "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##CUSTOM_OBJECT", "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##ID", "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##AGE", "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f##SALARY" ],
         "expressions" : [ {
           "expression" : {
             "expression" : "CUSTOM_OBJECT"
@@ -79,6 +79,18 @@
           },
           "alias" : "AGE",
           "_row_id" : "586908343"
+        }, {
+          "expression" : {
+            "expression" : "SALARY"
+          },
+          "alias" : "SALARY",
+          "_row_id" : "3fA9PAjWY3"
+        }, {
+          "expression" : {
+            "expression" : "{{ var('age') }}"
+          },
+          "alias" : "age2",
+          "_row_id" : "AnSoKgpZN7"
         } ]
       },
       "ports" : {

@@ -8,22 +8,10 @@
       "schema" : {
         "type" : "record",
         "fields" : [ {
-          "name" : "cvxcvxcvxvxcvx",
+          "name" : "age",
           "kind" : {
             "type" : "string",
-            "value" : "'cdsccc'"
-          }
-        }, {
-          "name" : "dfsdfsddfsddfs",
-          "kind" : {
-            "type" : "string",
-            "value" : "sqrt('4')"
-          }
-        }, {
-          "name" : "dsfdfsdfsdfsdfs",
-          "kind" : {
-            "type" : "string",
-            "value" : "'age'"
+            "value" : "age"
           }
         } ]
       }

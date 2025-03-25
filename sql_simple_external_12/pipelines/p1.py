@@ -1,4 +1,4 @@
-Config = {"cvxcvxcvxvxcvx" : "'cdsccc'", "dfsdfsddfsddfs" : "sqrt('4')", "dsfdfsdfsdfsdfs" : "'age'"}
+Config = {"age" : "age"}
 
 with DAG(Config = Config):
     SFTPSource_2 = SourceTask(

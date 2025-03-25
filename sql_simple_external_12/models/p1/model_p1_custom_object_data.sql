@@ -20,7 +20,9 @@ custom_object_data AS (
   SELECT 
     CUSTOM_OBJECT AS CUSTOM_OBJECT,
     ID AS ID,
-    AGE AS AGE
+    AGE AS AGE,
+    SALARY AS SALARY,
+    {{ var('age') }} AS age2
   
   FROM SFTPSource_2 AS in0
 

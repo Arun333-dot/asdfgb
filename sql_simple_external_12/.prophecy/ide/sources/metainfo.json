@@ -16,6 +16,70 @@
   },
   "datasets" : { },
   "pipelines" : {
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "sql_simple_external_12/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "ASxuKV6CvRJFKIyNOX85D$$HeFMeZp1BVy0rLA8jNXCH",
+        "label" : "library_items_catalogue_xml"
+      } ]
+    },
+    "p5" : {
+      "id" : "p5",
+      "name" : "p5",
+      "path" : "sql_simple_external_12/.prophecy/ide/pipelines/p5.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "tyheOMJWkYSZ4x5IEybJ6",
+        "label" : "SFTPSource_0"
+      } ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "sql_simple_external_12/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "KdO9QDzOQLd5dFNJ5Z7oI$$ZSYW71d9OAsXeNa4bUWzW",
+        "label" : "SFTPSource_2"
+      } ]
+    },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "sql_simple_external_12/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "MLS2ztNI3e98DMpvyZMiw",
+        "label" : "SFTPSource_2"
+      } ]
+    },
     "p1" : {
       "id" : "p1",
       "name" : "p1",
@@ -24,22 +88,10 @@
         "schema" : {
           "type" : "record",
           "fields" : [ {
-            "name" : "cvxcvxcvxvxcvx",
+            "name" : "age",
             "kind" : {
               "type" : "string",
-              "value" : "'cdsccc'"
-            }
-          }, {
-            "name" : "dfsdfsddfsddfs",
-            "kind" : {
-              "type" : "string",
-              "value" : "sqrt('4')"
-            }
-          }, {
-            "name" : "dsfdfsdfsdfsdfs",
-            "kind" : {
-              "type" : "string",
-              "value" : "'age'"
+              "value" : "age"
             }
           } ]
         }
