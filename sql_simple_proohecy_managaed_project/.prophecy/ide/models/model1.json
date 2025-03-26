@@ -1,0 +1,50 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##Kwsfem5f" : {
+      "id" : "model1##Kwsfem5f",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM in0\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YiyFz7VK",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ORte1aym",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
