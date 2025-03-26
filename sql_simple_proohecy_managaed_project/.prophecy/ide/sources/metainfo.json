@@ -75,7 +75,13 @@
       "config" : {
         "schema" : {
           "type" : "record",
-          "fields" : [ ]
+          "fields" : [ {
+            "name" : "rwerwerwe",
+            "kind" : {
+              "type" : "string",
+              "value" : "'werererwewr'"
+            }
+          } ]
         }
       },
       "preview" : [ ],
