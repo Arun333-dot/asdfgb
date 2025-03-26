@@ -1,0 +1,55 @@
+{
+  "name" : "gggdfgdfgdfgdfg",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "hhghghf" : {
+      "id" : "hhghghf",
+      "name" : "hhghghf",
+      "path" : "gggdfgdfgdfgdfg/.prophecy/ide/pipelines/hhghghf.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "mDtTCAStjOk06_Yps_ZA9$$lHA3o5h8V-0thv2uahfAG",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "fg" : {
+      "id" : "fg",
+      "name" : "fg",
+      "path" : "gggdfgdfgdfgdfg/.prophecy/ide/pipelines/fg.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}
