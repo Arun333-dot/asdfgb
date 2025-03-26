@@ -175,6 +175,3 @@ sources:
                   \ of details."
           description: "Array of details associated with the structure."
     type: "table"
-  - name: "new_table"
-    columns: []
-    type: "table"
