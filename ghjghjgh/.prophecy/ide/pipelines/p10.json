@@ -11,7 +11,43 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "4AIi4iGl9RZrexEVTLY7D$$8mjcjkU2p0VV5AQm1rKaB" : {
+      "id" : "4AIi4iGl9RZrexEVTLY7D$$8mjcjkU2p0VV5AQm1rKaB",
+      "component" : "OrchestrationTarget",
+      "kind" : "S3Target",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -1020,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hSOYLiEi9067NeJUyyC4l$$D70Rbxsk3OW2ALNH6cbPv",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
