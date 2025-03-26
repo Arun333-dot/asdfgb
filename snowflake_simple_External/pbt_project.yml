@@ -1,6 +1,6 @@
 name: snowflake_simple_External
 description: ''
-version: '13'
+version: '14'
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
