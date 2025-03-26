@@ -84,6 +84,21 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-03-26 08:37:17'
+  .prophecy/metadata/sqlmodels/m9:
+    name: m9
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m9.sql
+    - .prophecy/ide/models/m9.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 14:58:29'
   .prophecy/metadata/sqlmodels/m6:
     name: m6
     schema: null
