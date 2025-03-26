@@ -1,0 +1,68 @@
+name: multi_users_check_project
+description: ''
+version: 0.0.1
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-26 18:13:58'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-26 18:14:09'
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/asasdasd:
+    name: asasdasd
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/asasdasd/model_asasdasd_WindowFunction_1.sql
+    - models/asasdasd/model_asasdasd_Aggregate_1.sql
+    - models/asasdasd/schema.yml
+    - models/asasdasd/model_asasdasd_Filter_1.sql
+    - models/asasdasd/model_asasdasd_Join_1.sql
+    - models/asasdasd/model_asasdasd_Filter_2.sql
+    - models/asasdasd/model_asasdasd_Aggregate_2.sql
+    - pipelines/asasdasd.py
+    createdAt: '2025-03-26 18:14:40'
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2025-03-26 18:13:58'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}

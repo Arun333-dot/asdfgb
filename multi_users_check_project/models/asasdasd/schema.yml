@@ -1,0 +1,48 @@
+---
+version: 2
+models:
+- name: "model_asasdasd_Aggregate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_asasdasd_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_asasdasd_Join_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_asasdasd_Aggregate_2"
+  tags:
+  - "prophecy_temp"
+- name: "model_asasdasd_Filter_2"
+  tags:
+  - "prophecy_temp"
+- name: "model_asasdasd_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_asasdasd_source"
+  database: "database"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_asasdasd_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_asasdasd_post_Aggregate_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_asasdasd_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_asasdasd_post_Filter_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_asasdasd_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_asasdasd_post_WindowFunction_1_0"
+    tags:
+    - "prophecy_temp"
