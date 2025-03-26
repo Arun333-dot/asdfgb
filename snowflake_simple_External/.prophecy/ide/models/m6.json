@@ -1,7 +1,7 @@
 {
-  "id" : "m2",
+  "id" : "m6",
   "metainfo" : {
-    "label" : "m2",
+    "label" : "m6",
     "autoLayout" : false,
     "staleState" : "file",
     "sourceSuggestions" : {
@@ -10,13 +10,11 @@
     "version" : 3
   },
   "processes" : {
-    "m2##t20XBGS5" : {
-      "id" : "m2##t20XBGS5",
+    "m6##q0bT0hJv" : {
+      "id" : "m6##q0bT0hJv",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "m2",
-        "x" : 20,
-        "y" : 20,
+        "label" : "m6",
         "phase" : 0
       },
       "properties" : {
@@ -32,11 +30,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "mzt7hA64",
+          "id" : "VjNUVbu8",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "RZplm82w",
+          "id" : "YUDbrbZE",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
