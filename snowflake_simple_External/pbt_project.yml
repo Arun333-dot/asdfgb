@@ -1,6 +1,6 @@
 name: snowflake_simple_External
 description: ''
-version: 0.0.1
+version: '2'
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
@@ -24,21 +24,21 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
-  .prophecy/metadata/sqlmodels/m2:
-    name: m2
+  .prophecy/metadata/sqlmodels/m3:
+    name: m3
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/m2.sql
-    - .prophecy/ide/models/m2.json
+    - models/m3.sql
+    - .prophecy/ide/models/m3.json
     sqlDependencies:
       models: []
       datasets: []
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2025-03-26 08:37:17'
+    createdAt: '2025-03-26 08:37:27'
   .prophecy/metadata/sqlmodels/model1:
     name: model1
     schema: null
@@ -54,6 +54,111 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-03-26 08:36:45'
+  .prophecy/metadata/sqlmodels/m7:
+    name: m7
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m7.sql
+    - .prophecy/ide/models/m7.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:44:21'
+  .prophecy/metadata/sqlmodels/m2:
+    name: m2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m2.sql
+    - .prophecy/ide/models/m2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:37:17'
+  .prophecy/metadata/sqlmodels/m5:
+    name: m5
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m5.sql
+    - .prophecy/ide/models/m5.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:38:12'
+  .prophecy/metadata/sqlmodels/m8:
+    name: m8
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m8.sql
+    - .prophecy/ide/models/m8.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:44:43'
+  .prophecy/metadata/sqlmodels/m4:
+    name: m4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m4.sql
+    - .prophecy/ide/models/m4.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:37:42'
+  .prophecy/metadata/sqlmodels/m11:
+    name: m11
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m11.sql
+    - .prophecy/ide/models/m11.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:53:01'
+  .prophecy/metadata/sqlmodels/m6:
+    name: m6
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m6.sql
+    - .prophecy/ide/models/m6.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:38:47'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
