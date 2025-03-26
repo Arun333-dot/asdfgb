@@ -53,6 +53,22 @@ sqlMacros:
     createdAt: '2025-03-25 18:15:20'
 sqlSeeds: {}
 sqlSources:
+  .prophecy/metadata/sqlsources/main_information_schema:
+    name: main.information_schema
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-26 07:12:37'
+    tables:
+    - name: routine_privileges
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-26 07:12:37'
   .prophecy/metadata/sqlsources/qa_team_qa_database:
     name: qa_team.qa_database
     description: null
@@ -208,6 +224,14 @@ sqlSources:
         enabling detailed analysis of user attributes and behaviors.
       author: arunsharma+admin@prophecy.io
       createdAt: '2025-03-26 07:06:54'
+    - name: join
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-26 07:11:48'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/p6:

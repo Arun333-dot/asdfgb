@@ -175,3 +175,13 @@ sources:
                   \ of details."
           description: "Array of details associated with the structure."
     type: "table"
+  - name: "join"
+    columns: []
+    type: "table"
+- name: "main.information_schema"
+  database: "main"
+  schema: "information_schema"
+  tables:
+  - name: "routine_privileges"
+    columns: []
+    type: "table"
