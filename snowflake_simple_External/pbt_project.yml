@@ -24,6 +24,21 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/m2:
+    name: m2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m2.sql
+    - .prophecy/ide/models/m2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:37:17'
   .prophecy/metadata/sqlmodels/model1:
     name: model1
     schema: null
