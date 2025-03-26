@@ -52,17 +52,180 @@ sqlMacros:
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-25 18:15:20'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/qa_team_qa_database:
+    name: qa_team.qa_database
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-26 07:06:54'
+    tables:
+    - name: all_type_databricks
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: id
+          dataType:
+            type: Integer
+        - name: tiny_value
+          dataType:
+            type: TinyInt
+        - name: small_value
+          dataType:
+            type: SmallInt
+        - name: big_value
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: is_active
+          dataType:
+            type: Boolean
+        - name: salary
+          dataType:
+            type: String
+        - name: float_value
+          dataType:
+            type: Float
+        - name: double_value
+          dataType:
+            type: Double
+        - name: binary_data
+          dataType:
+            type: Binary
+        - name: created_at
+          dataType:
+            type: Timestamp
+        - name: created_at_ntz
+          dataType:
+            type: Timestamp
+        - name: birth_date
+          dataType:
+            type: Date
+        - name: interval_value
+          dataType:
+            type: String
+        - name: interval_seconds
+          dataType:
+            type: String
+        - name: metadata
+          dataType:
+            type: String
+        - name: int_array
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: float_array
+          dataType:
+            type: Array
+            dataType:
+              type: Float
+        - name: boolean_array
+          dataType:
+            type: Array
+            dataType:
+              type: Boolean
+        - name: decimal_array
+          dataType:
+            type: Array
+            dataType:
+              type: Decimal
+        - name: timestamp_array
+          dataType:
+            type: Array
+            dataType:
+              type: Timestamp
+        - name: date_array
+          dataType:
+            type: Array
+            dataType:
+              type: Date
+        - name: struct_array
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: type
+                dataType:
+                  type: String
+                description: Type field within the structured data array
+              - name: value
+                dataType:
+                  type: Integer
+                description: Value associated with each entry in the structured array
+        - name: array_of_arrays
+          dataType:
+            type: Array
+            dataType:
+              type: Array
+              dataType:
+                type: Integer
+        - name: struct_of_array
+          dataType:
+            type: Struct
+            fields:
+            - name: name
+              dataType:
+                type: String
+              description: Name associated with the structured array
+            - name: values
+              dataType:
+                type: Array
+                dataType:
+                  type: Integer
+              description: Values contained within the structured array
+        - name: struct_of_array_of_structs
+          dataType:
+            type: Struct
+            fields:
+            - name: id
+              dataType:
+                type: Integer
+              description: Unique identifier for the structure containing an array
+                of structs.
+            - name: details
+              dataType:
+                type: Array
+                dataType:
+                  type: Struct
+                  fields:
+                  - name: key
+                    dataType:
+                      type: String
+                    description: Key value within each detail struct.
+                  - name: val
+                    dataType:
+                      type: Integer
+                    description: Value associated with each key in the structured
+                      array of details.
+              description: Array of details associated with the structure.
+      description: Comprehensive dataset capturing diverse data types and structures,
+        enabling detailed analysis of user attributes and behaviors.
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-26 07:06:54'
+    - name: new_table
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-26 07:10:26'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/p2:
-    name: p2
+  .prophecy/metadata/sqlorchestratorpipeline/p6:
+    name: p6
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - pipelines/p2.py
-    createdAt: '2025-03-25 18:17:54'
+    - pipelines/p6.py
+    createdAt: '2025-03-26 05:23:26'
   .prophecy/metadata/sqlorchestratorpipeline/p5:
     name: p5
     schema: null
@@ -79,14 +242,6 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/p1.py
     createdAt: '2025-03-25 18:17:49'
-  .prophecy/metadata/sqlorchestratorpipeline/p4:
-    name: p4
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - pipelines/p4.py
-    createdAt: '2025-03-25 18:21:11'
   .prophecy/metadata/sqlorchestratorpipeline/p3:
     name: p3
     schema: null
@@ -95,6 +250,38 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/p3.py
     createdAt: '2025-03-25 18:20:18'
+  .prophecy/metadata/sqlorchestratorpipeline/ppipeline333:
+    name: ppipeline333
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/ppipeline333.py
+    createdAt: '2025-03-26 07:05:15'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p2.py
+    createdAt: '2025-03-25 18:17:54'
+  .prophecy/metadata/sqlorchestratorpipeline/mysql_pipeline:
+    name: mysql_pipeline
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/mysql_pipeline.py
+    createdAt: '2025-03-26 05:47:14'
+  .prophecy/metadata/sqlorchestratorpipeline/p4:
+    name: p4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p4.py
+    createdAt: '2025-03-25 18:21:11'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

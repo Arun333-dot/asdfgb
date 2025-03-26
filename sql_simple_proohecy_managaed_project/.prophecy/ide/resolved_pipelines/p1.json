@@ -17,7 +17,1147 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "YVbqBgHcHDPW8p0CkVQTu" : {
+      "id" : "YVbqBgHcHDPW8p0CkVQTu",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_1",
+        "x" : -920,
+        "y" : -60,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_team",
+            "name" : "customers",
+            "schema" : "qa_database"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "4f0a7e76-f845-4968-b52d-872013c1ef1d",
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "ldq-bmqyUmSPwfWoSYTip" : {
+      "id" : "ldq-bmqyUmSPwfWoSYTip",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_3",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_team",
+            "name" : "call_center",
+            "schema" : "qa_database"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "95919115-8698-4ab1-b9dc-0b8e0ee6e39f",
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "ILZZjFESaH9T0aEA8RWuv" : {
+      "id" : "ILZZjFESaH9T0aEA8RWuv",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_0",
+        "x" : -180,
+        "y" : -120,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_team",
+            "name" : "new_table",
+            "schema" : "qa_database"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "da6de0f3-c397-4555-b8b2-760540ad31a1",
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "CrF99udYVvWLgaC4CuBwF" : {
+      "id" : "CrF99udYVvWLgaC4CuBwF",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_2",
+        "x" : -740,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "Integer"
+                },
+                "description" : "Unique identifier for each record",
+                "name" : "id"
+              }, {
+                "dataType" : {
+                  "type" : "TinyInt"
+                },
+                "description" : "A small integer value representing a specific metric",
+                "name" : "tiny_value"
+              }, {
+                "dataType" : {
+                  "type" : "SmallInt"
+                },
+                "description" : "A small integer value used for categorization or ranking",
+                "name" : "small_value"
+              }, {
+                "dataType" : {
+                  "type" : "Bigint"
+                },
+                "description" : "A large integer value representing significant data",
+                "name" : "big_value"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "The name associated with the record",
+                "name" : "name"
+              }, {
+                "dataType" : {
+                  "type" : "Boolean"
+                },
+                "description" : "Indicates whether the record is currently active",
+                "name" : "is_active"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "The salary amount of the individual",
+                "name" : "salary"
+              }, {
+                "dataType" : {
+                  "type" : "Float"
+                },
+                "description" : "A floating-point value representing a measurement",
+                "name" : "float_value"
+              }, {
+                "dataType" : {
+                  "type" : "Double"
+                },
+                "description" : "A double-precision value representing a measurement",
+                "name" : "double_value"
+              }, {
+                "dataType" : {
+                  "type" : "Binary"
+                },
+                "description" : "Raw binary data associated with the record",
+                "name" : "binary_data"
+              }, {
+                "dataType" : {
+                  "type" : "Timestamp"
+                },
+                "description" : "Timestamp indicating when the record was created",
+                "name" : "created_at"
+              }, {
+                "dataType" : {
+                  "type" : "Timestamp"
+                },
+                "description" : "Timestamp indicating when the record was created without timezone information",
+                "name" : "created_at_ntz"
+              }, {
+                "dataType" : {
+                  "type" : "Date"
+                },
+                "description" : "The date of birth of the individual",
+                "name" : "birth_date"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "A string representation of a time interval",
+                "name" : "interval_value"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "The duration of the interval measured in seconds",
+                "name" : "interval_seconds"
+              }, {
+                "dataType" : {
+                  "keyType" : {
+                    "type" : "utf8"
+                  },
+                  "type" : "String",
+                  "valueType" : {
+                    "type" : "utf8"
+                  }
+                },
+                "description" : "Additional information related to the record",
+                "name" : "metadata"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Integer"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of integer values associated with the record",
+                "name" : "int_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Float"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of float values associated with the record",
+                "name" : "float_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Boolean"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of boolean values representing various flags",
+                "name" : "boolean_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Decimal"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of decimal values for precise numerical data",
+                "name" : "decimal_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Timestamp"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of timestamps indicating specific moments in time",
+                "name" : "timestamp_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Date"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of dates associated with the record",
+                "name" : "date_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "fields" : [ {
+                      "dataType" : {
+                        "type" : "String"
+                      },
+                      "description" : "Type field within the structured data array",
+                      "name" : "type"
+                    }, {
+                      "dataType" : {
+                        "type" : "Integer"
+                      },
+                      "description" : "Value associated with each entry in the structured array",
+                      "name" : "value"
+                    } ],
+                    "type" : "Struct"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of structured data containing type and value",
+                "name" : "struct_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "dataType" : {
+                      "type" : "Integer"
+                    },
+                    "type" : "Array"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "An array containing multiple arrays of integers",
+                "name" : "array_of_arrays"
+              }, {
+                "dataType" : {
+                  "fields" : [ {
+                    "dataType" : {
+                      "type" : "String"
+                    },
+                    "description" : "Name associated with the structured array",
+                    "name" : "name"
+                  }, {
+                    "dataType" : {
+                      "dataType" : {
+                        "type" : "Integer"
+                      },
+                      "type" : "Array"
+                    },
+                    "description" : "Values contained within the structured array",
+                    "name" : "values"
+                  } ],
+                  "type" : "Struct"
+                },
+                "description" : "Structure containing a name and an array of integer values",
+                "name" : "struct_of_array"
+              }, {
+                "dataType" : {
+                  "fields" : [ {
+                    "dataType" : {
+                      "type" : "Integer"
+                    },
+                    "description" : "Unique identifier for the structure containing an array of structs.",
+                    "name" : "id"
+                  }, {
+                    "dataType" : {
+                      "dataType" : {
+                        "fields" : [ {
+                          "dataType" : {
+                            "type" : "String"
+                          },
+                          "description" : "Key value within each detail struct.",
+                          "name" : "key"
+                        }, {
+                          "dataType" : {
+                            "type" : "Integer"
+                          },
+                          "description" : "Value associated with a specific key in a structured array of details.",
+                          "name" : "val"
+                        } ],
+                        "type" : "Struct"
+                      },
+                      "type" : "Array"
+                    },
+                    "description" : "Array of details associated with the structure.",
+                    "name" : "details"
+                  } ],
+                  "type" : "Struct"
+                },
+                "description" : "Structured data containing an array of key-value pairs",
+                "name" : "struct_of_array_of_structs"
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_team",
+            "name" : "all_type_databricks",
+            "schema" : "qa_database"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "67bc9e5b-7221-4eca-b4fc-e560c0c883d2",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "tiny_value",
+              "dataType" : {
+                "type" : "TinyInt"
+              }
+            }, {
+              "name" : "small_value",
+              "dataType" : {
+                "type" : "SmallInt"
+              }
+            }, {
+              "name" : "big_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "is_active",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "salary",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "float_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "double_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "binary_data",
+              "dataType" : {
+                "type" : "Binary"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_at_ntz",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "birth_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "interval_value",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interval_seconds",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "metadata",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "int_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "float_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Float"
+                }
+              }
+            }, {
+              "name" : "boolean_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Boolean"
+                }
+              }
+            }, {
+              "name" : "decimal_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Decimal"
+                }
+              }
+            }, {
+              "name" : "timestamp_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Timestamp"
+                }
+              }
+            }, {
+              "name" : "date_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Date"
+                }
+              }
+            }, {
+              "name" : "struct_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "type",
+                    "dataType" : {
+                      "type" : "String"
+                    },
+                    "description" : "Type field within the structured data array"
+                  }, {
+                    "name" : "value",
+                    "dataType" : {
+                      "type" : "Integer"
+                    },
+                    "description" : "Value associated with each entry in the structured array"
+                  } ]
+                }
+              }
+            }, {
+              "name" : "array_of_arrays",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }
+              }
+            }, {
+              "name" : "struct_of_array",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  },
+                  "description" : "Name associated with the structured array"
+                }, {
+                  "name" : "values",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  },
+                  "description" : "Values contained within the structured array"
+                } ]
+              }
+            }, {
+              "name" : "struct_of_array_of_structs",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  },
+                  "description" : "Unique identifier for the structure containing an array of structs."
+                }, {
+                  "name" : "details",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Struct",
+                      "fields" : [ {
+                        "name" : "key",
+                        "dataType" : {
+                          "type" : "String"
+                        },
+                        "description" : "Key value within each detail struct."
+                      }, {
+                        "name" : "val",
+                        "dataType" : {
+                          "type" : "Integer"
+                        },
+                        "description" : "Value associated with a specific key in a structured array of details."
+                      } ]
+                    }
+                  },
+                  "description" : "Array of details associated with the structure."
+                } ]
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "N9hASot3yEpur1zxg8ytG" : {
+      "id" : "N9hASot3yEpur1zxg8ytG",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_4",
+        "x" : -540,
+        "y" : 0,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "Integer"
+                },
+                "description" : "Unique identifier for each record",
+                "name" : "id"
+              }, {
+                "dataType" : {
+                  "type" : "TinyInt"
+                },
+                "description" : "A small integer value representing a specific metric",
+                "name" : "tiny_value"
+              }, {
+                "dataType" : {
+                  "type" : "SmallInt"
+                },
+                "description" : "A small integer value used for categorization or ranking",
+                "name" : "small_value"
+              }, {
+                "dataType" : {
+                  "type" : "Bigint"
+                },
+                "description" : "A large integer value representing significant data",
+                "name" : "big_value"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "The name associated with the record",
+                "name" : "name"
+              }, {
+                "dataType" : {
+                  "type" : "Boolean"
+                },
+                "description" : "Indicates whether the record is currently active",
+                "name" : "is_active"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "The salary amount of the individual",
+                "name" : "salary"
+              }, {
+                "dataType" : {
+                  "type" : "Float"
+                },
+                "description" : "A floating-point value representing a measurement",
+                "name" : "float_value"
+              }, {
+                "dataType" : {
+                  "type" : "Double"
+                },
+                "description" : "A double-precision value representing a measurement",
+                "name" : "double_value"
+              }, {
+                "dataType" : {
+                  "type" : "Binary"
+                },
+                "description" : "Raw binary data associated with the record",
+                "name" : "binary_data"
+              }, {
+                "dataType" : {
+                  "type" : "Timestamp"
+                },
+                "description" : "Timestamp indicating when the record was created",
+                "name" : "created_at"
+              }, {
+                "dataType" : {
+                  "type" : "Timestamp"
+                },
+                "description" : "Timestamp indicating when the record was created without timezone information",
+                "name" : "created_at_ntz"
+              }, {
+                "dataType" : {
+                  "type" : "Date"
+                },
+                "description" : "The date of birth of the individual",
+                "name" : "birth_date"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "A string representation of a time interval",
+                "name" : "interval_value"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "The duration of the interval measured in seconds",
+                "name" : "interval_seconds"
+              }, {
+                "dataType" : {
+                  "keyType" : {
+                    "type" : "utf8"
+                  },
+                  "type" : "String",
+                  "valueType" : {
+                    "type" : "utf8"
+                  }
+                },
+                "description" : "Additional information related to the record",
+                "name" : "metadata"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Integer"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of integer values associated with the record",
+                "name" : "int_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Float"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of float values associated with the record",
+                "name" : "float_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Boolean"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of boolean values representing various flags",
+                "name" : "boolean_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Decimal"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of decimal values for precise numerical data",
+                "name" : "decimal_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Timestamp"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of timestamps indicating specific moments in time",
+                "name" : "timestamp_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "Date"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of dates associated with the record",
+                "name" : "date_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "fields" : [ {
+                      "dataType" : {
+                        "type" : "String"
+                      },
+                      "description" : "Type field within the structured data array",
+                      "name" : "type"
+                    }, {
+                      "dataType" : {
+                        "type" : "Integer"
+                      },
+                      "description" : "Value associated with each entry in the structured array",
+                      "name" : "value"
+                    } ],
+                    "type" : "Struct"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "Array of structured data containing type and value",
+                "name" : "struct_array"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "dataType" : {
+                      "type" : "Integer"
+                    },
+                    "type" : "Array"
+                  },
+                  "type" : "Array"
+                },
+                "description" : "An array containing multiple arrays of integers",
+                "name" : "array_of_arrays"
+              }, {
+                "dataType" : {
+                  "fields" : [ {
+                    "dataType" : {
+                      "type" : "String"
+                    },
+                    "description" : "Name associated with the structured array",
+                    "name" : "name"
+                  }, {
+                    "dataType" : {
+                      "dataType" : {
+                        "type" : "Integer"
+                      },
+                      "type" : "Array"
+                    },
+                    "description" : "Values contained within the structured array",
+                    "name" : "values"
+                  } ],
+                  "type" : "Struct"
+                },
+                "description" : "Structure containing a name and an array of integer values",
+                "name" : "struct_of_array"
+              }, {
+                "dataType" : {
+                  "fields" : [ {
+                    "dataType" : {
+                      "type" : "Integer"
+                    },
+                    "description" : "Unique identifier for the structure containing an array of structs.",
+                    "name" : "id"
+                  }, {
+                    "dataType" : {
+                      "dataType" : {
+                        "fields" : [ {
+                          "dataType" : {
+                            "type" : "String"
+                          },
+                          "description" : "Key value within each detail struct.",
+                          "name" : "key"
+                        }, {
+                          "dataType" : {
+                            "type" : "Integer"
+                          },
+                          "description" : "Value associated with a specific key in a structured array of details.",
+                          "name" : "val"
+                        } ],
+                        "type" : "Struct"
+                      },
+                      "type" : "Array"
+                    },
+                    "description" : "Array of details associated with the structure.",
+                    "name" : "details"
+                  } ],
+                  "type" : "Struct"
+                },
+                "description" : "Structured data containing an array of key-value pairs",
+                "name" : "struct_of_array_of_structs"
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_team",
+            "name" : "all_type_databricks",
+            "schema" : "qa_database"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "bb24cc46-280c-48d4-908c-22ccc82f9d92",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "tiny_value",
+              "dataType" : {
+                "type" : "TinyInt"
+              }
+            }, {
+              "name" : "small_value",
+              "dataType" : {
+                "type" : "SmallInt"
+              }
+            }, {
+              "name" : "big_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "is_active",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "salary",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "float_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "double_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "binary_data",
+              "dataType" : {
+                "type" : "Binary"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_at_ntz",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "birth_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "interval_value",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interval_seconds",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "metadata",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "int_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "float_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Float"
+                }
+              }
+            }, {
+              "name" : "boolean_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Boolean"
+                }
+              }
+            }, {
+              "name" : "decimal_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Decimal"
+                }
+              }
+            }, {
+              "name" : "timestamp_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Timestamp"
+                }
+              }
+            }, {
+              "name" : "date_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Date"
+                }
+              }
+            }, {
+              "name" : "struct_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "type",
+                    "dataType" : {
+                      "type" : "String"
+                    },
+                    "description" : "Type field within the structured data array"
+                  }, {
+                    "name" : "value",
+                    "dataType" : {
+                      "type" : "Integer"
+                    },
+                    "description" : "Value associated with each entry in the structured array"
+                  } ]
+                }
+              }
+            }, {
+              "name" : "array_of_arrays",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }
+              }
+            }, {
+              "name" : "struct_of_array",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  },
+                  "description" : "Name associated with the structured array"
+                }, {
+                  "name" : "values",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  },
+                  "description" : "Values contained within the structured array"
+                } ]
+              }
+            }, {
+              "name" : "struct_of_array_of_structs",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  },
+                  "description" : "Unique identifier for the structure containing an array of structs."
+                }, {
+                  "name" : "details",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Struct",
+                      "fields" : [ {
+                        "name" : "key",
+                        "dataType" : {
+                          "type" : "String"
+                        },
+                        "description" : "Key value within each detail struct."
+                      }, {
+                        "name" : "val",
+                        "dataType" : {
+                          "type" : "Integer"
+                        },
+                        "description" : "Value associated with a specific key in a structured array of details."
+                      } ]
+                    }
+                  },
+                  "description" : "Array of details associated with the structure."
+                } ]
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
