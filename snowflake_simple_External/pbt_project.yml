@@ -114,6 +114,21 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-03-26 08:44:43'
+  .prophecy/metadata/sqlmodels/m444:
+    name: m444
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m444.sql
+    - .prophecy/ide/models/m444.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 14:34:09'
   .prophecy/metadata/sqlmodels/m4:
     name: m4
     schema: null
