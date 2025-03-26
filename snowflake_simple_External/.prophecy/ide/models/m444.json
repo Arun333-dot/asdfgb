@@ -24,6 +24,7 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -80,6 +81,69 @@
         "projectName" : "SnowflakeSqlBasics",
         "sourceProjectName" : "SnowflakeSqlBasics",
         "sourceProjectVersion" : "0.0.1"
+      }
+    },
+    "kIWRkollXGNmlgUYIemOv$$zrwEj57z_XxL5ekba5LZ7" : {
+      "id" : "kIWRkollXGNmlgUYIemOv$$zrwEj57z_XxL5ekba5LZ7",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -820,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "0zukyPGAJMAND4Ut35r7q$$LGHsVNmgBL4wZVKJ5DJs2",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "X7HckKZ5ooVFWxVlUtz6l$$i4OQ5efrd0R9C3mTZubKq",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "N_FWgwD6qvs26UW1nsSle$$HQ_rXCG9P0cEzXh-5j-6A" : {
+      "id" : "N_FWgwD6qvs26UW1nsSle$$HQ_rXCG9P0cEzXh-5j-6A",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_1",
+        "slug" : "SetOperation_1",
+        "x" : -680,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "operationType" : "union",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vxpKwKojma3Ssqircycz2$$qt3zBvfAX-OY7OcRk7wG4",
+          "slug" : "in0"
+        }, {
+          "id" : "2X1WnllxF8pcnmCE_kaqL$$OTyl0J8sayVi-BVDIHFUg",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "7bJIkYwK0eRlA8MSzGuPI$$a9q2v-sT0Kx5Hfe7E_wdR",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       }
     }
   },
