@@ -42,6 +42,52 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "WD7CLFhyTaPcNbI8lIINX$$TwJfWITyoKRc1fi_zrUNV" : {
+      "id" : "WD7CLFhyTaPcNbI8lIINX$$TwJfWITyoKRc1fi_zrUNV",
+      "component" : "BulkColumnExpressions",
+      "metadata" : {
+        "label" : "BulkColumnExpressions_1",
+        "slug" : "BulkColumnExpressions_1",
+        "x" : -960,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "copyOriginalColumns" : false,
+        "changeOutputFieldType" : false,
+        "relation" : "in0",
+        "remainingColumns" : [ ],
+        "changeOutputFieldName" : false,
+        "schemaColDropdownSchema" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "columnNames" : [ ],
+        "isPrefix" : false,
+        "castOutputTypeName" : "Select output type",
+        "expressionToBeApplied" : "",
+        "dataType" : "",
+        "prefixSuffixToBeAdded" : "",
+        "prefixSuffixOption" : "Prefix / Suffix to be added"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "3nV9Hsxafjzws4ifavm1O$$Y-8bY2vW5TEKGgL8CWCpj",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "componentInfo" : {
+        "gemId" : "BulkColumnExpressions_SnowflakeSqlBasics",
+        "name" : "BulkColumnExpressions",
+        "projectName" : "SnowflakeSqlBasics",
+        "sourceProjectName" : "SnowflakeSqlBasics",
+        "sourceProjectVersion" : "0.0.1"
+      }
     }
   },
   "connections" : [ ],
