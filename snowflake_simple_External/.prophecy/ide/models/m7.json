@@ -15,8 +15,6 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m7",
-        "x" : 20,
-        "y" : 20,
         "phase" : 0
       },
       "properties" : {
