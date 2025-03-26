@@ -84,21 +84,6 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-03-26 08:37:17'
-  .prophecy/metadata/sqlmodels/m6:
-    name: m6
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - models/m6.sql
-    - .prophecy/ide/models/m6.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-03-26 08:38:47'
   .prophecy/metadata/sqlmodels/m5:
     name: m5
     schema: null
@@ -144,6 +129,36 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-03-26 08:37:42'
+  .prophecy/metadata/sqlmodels/m11:
+    name: m11
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m11.sql
+    - .prophecy/ide/models/m11.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:53:01'
+  .prophecy/metadata/sqlmodels/m6:
+    name: m6
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m6.sql
+    - .prophecy/ide/models/m6.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 08:38:47'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
