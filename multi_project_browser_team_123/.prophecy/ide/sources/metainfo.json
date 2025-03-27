@@ -44,6 +44,35 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "ghghhj" : {
+      "id" : "ghghhj",
+      "name" : "ghghhj",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/ghghhj.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "uC8K8Tk8GDt3vCRHE39xf$$zaj-TJ6FFH_zKchULTNmT",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "hjghjgh" : {
+      "id" : "hjghjgh",
+      "name" : "hjghjgh",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/hjghjgh.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
