@@ -1,6 +1,6 @@
 name: multi_project_browser_team_123
 description: ''
-version: 0.0.1
+version: '1'
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
