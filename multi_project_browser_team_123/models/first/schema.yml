@@ -1,0 +1,30 @@
+---
+version: 2
+models:
+- name: "model_first_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_first_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_first_Join_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_first_source"
+  database: "hive_metastore"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_first_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_first_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_first_post_WindowFunction_1_0"
+    tags:
+    - "prophecy_temp"
