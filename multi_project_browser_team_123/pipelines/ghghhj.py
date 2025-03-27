@@ -1,4 +1,11 @@
 with DAG():
+    OrchestrationSource_1 = SourceTask(
+        task_id = "OrchestrationSource_1", 
+        component = "OrchestrationSource", 
+        kind = "S3Source", 
+        connector = Connection(kind = "s3"), 
+        format = CSVFormat(separator = ",", header = True)
+    )
     TableauWrite_1 = Task(task_id = "TableauWrite_1", component = "TableauWrite")
     model_ghghhj_Deduplicate_1 = Task(
         task_id = "model_ghghhj_Deduplicate_1", 
@@ -30,4 +37,14 @@ with DAG():
         task_id = "model_ghghhj_Aggregate_1", 
         component = "Model", 
         modelName = "model_ghghhj_Aggregate_1"
+    )
+    model_ghghhj_Aggregate_2 = Task(
+        task_id = "model_ghghhj_Aggregate_2", 
+        component = "Model", 
+        modelName = "model_ghghhj_Aggregate_2"
+    )
+    model_ghghhj_Filter_1 = Task(
+        task_id = "model_ghghhj_Filter_1", 
+        component = "Model", 
+        modelName = "model_ghghhj_Filter_1"
     )

@@ -10,6 +10,12 @@ models:
 - name: "model_ghghhj_SetOperation_1"
   tags:
   - "prophecy_temp"
+- name: "model_ghghhj_Aggregate_2"
+  tags:
+  - "prophecy_temp"
+- name: "model_ghghhj_Filter_1"
+  tags:
+  - "prophecy_temp"
 sources:
 - name: "prophecy__temp_ghghhj_source"
   database: "hive_metastore"
@@ -22,7 +28,13 @@ sources:
   - name: "prophecy__temp_ghghhj_post_Aggregate_1_0"
     tags:
     - "prophecy_temp"
+  - name: "prophecy__temp_ghghhj_post_Aggregate_2_0"
+    tags:
+    - "prophecy_temp"
   - name: "prophecy__temp_ghghhj_post_Deduplicate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_ghghhj_post_Filter_1_0"
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_ghghhj_post_SetOperation_1_0"
