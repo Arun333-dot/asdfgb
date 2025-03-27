@@ -43,6 +43,7 @@ with DAG():
         component = "Model", 
         modelName = "model_ghghhj_Aggregate_2"
     )
+    model_ghghhj_Join_1 = Task(task_id = "model_ghghhj_Join_1", component = "Model", modelName = "model_ghghhj_Join_1")
     model_ghghhj_Filter_1 = Task(
         task_id = "model_ghghhj_Filter_1", 
         component = "Model", 

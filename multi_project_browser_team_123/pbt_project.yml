@@ -80,6 +80,7 @@ sqlOrchestratorPipelines:
     - models/ghghhj/schema.yml
     - models/ghghhj/model_ghghhj_Filter_1.sql
     - models/ghghhj/model_ghghhj_Aggregate_1.sql
+    - models/ghghhj/model_ghghhj_Join_1.sql
     - models/ghghhj/model_ghghhj_SetOperation_1.sql
     - pipelines/ghghhj.py
     createdAt: '2025-03-27 07:28:15'
