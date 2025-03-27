@@ -181,6 +181,72 @@
         "isCustomOutputSchema" : false
       }
     },
+    "Koa0WGOHtq8A6iRaaFvqr$$f41uKRrQNTHFyK6MiWOxz" : {
+      "id" : "Koa0WGOHtq8A6iRaaFvqr$$f41uKRrQNTHFyK6MiWOxz",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_2",
+        "x" : 460,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PNL-dTKXYXZYYdNg3Vc1c$$JRlw4oCTEWblOSquchYsD",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "1QekWjIPq7wMFC68LSESY$$A2MpCo8ZvkswkzWsCS1Ly",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "CoFceV3kAstUdl4FxN_PI$$n36D8Sy00weEB5E8DBbUF" : {
+      "id" : "CoFceV3kAstUdl4FxN_PI$$n36D8Sy00weEB5E8DBbUF",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_3",
+        "x" : 320,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZAZtMWHMKGQWMQsKJkXCO$$Dt2zLaoA4BqS61VNbkYQX",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "G-w2bzOVIIfTjY4hQihaM$$ISbtcL7WIooOFIpXql_be" : {
       "id" : "G-w2bzOVIIfTjY4hQihaM$$ISbtcL7WIooOFIpXql_be",
       "component" : "WindowFunction",
