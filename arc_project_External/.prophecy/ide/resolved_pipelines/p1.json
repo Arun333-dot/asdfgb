@@ -12,6 +12,41 @@
     }
   },
   "processes" : {
+    "2CYADjMstteNDu40f3sAe$$2B3uSgge3SCDnL5T_HfCH" : {
+      "id" : "2CYADjMstteNDu40f3sAe$$2B3uSgge3SCDnL5T_HfCH",
+      "component" : "OrchestrationTarget",
+      "kind" : "DatabricksVolumeTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_1",
+        "x" : -600,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FYolG6DGSHKgWpEVzUTkc$$8U62LcmTM5RN7suSaGVdR",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "KCIcp-uP657R1B1mjF_N6$$2HALM_97Kutpwhj2v31SY" : {
       "id" : "KCIcp-uP657R1B1mjF_N6$$2HALM_97Kutpwhj2v31SY",
       "component" : "OrchestrationSource",

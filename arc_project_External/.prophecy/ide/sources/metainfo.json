@@ -31,6 +31,22 @@
         "id" : "KCIcp-uP657R1B1mjF_N6$$2HALM_97Kutpwhj2v31SY",
         "label" : "OrchestrationSource_0"
       } ]
+    },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "arc_project_External/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "dMFd9mItyYJyW5SPWWNcj$$6aKcGFsV8Yia-ksJtSgOu",
+        "label" : "OrchestrationSource_1"
+      } ]
     }
   },
   "dependenciesContainer" : {

@@ -1,0 +1,154 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz" : {
+      "id" : "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz",
+      "component" : "OrchestrationTarget",
+      "kind" : "DatabricksVolumeTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -520,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "or4qS-5a0UQXVtqJnxuI6$$4UiA-KQujWgxeSsvDErxt",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "cOyfUYdxDKBkShtR25ZbQ$$Clufn1Sx7f6ua07U6HhqH" : {
+      "id" : "cOyfUYdxDKBkShtR25ZbQ$$Clufn1Sx7f6ua07U6HhqH",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -380,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "_ZfZU9Tn__62mdepvWc7K$$Bhrhi5xXaxJiFpML7irov",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "yZVKamjycpfvmUwMpG-QB$$LLH68gA9AOyBGzHwxLY5w",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "dMFd9mItyYJyW5SPWWNcj$$6aKcGFsV8Yia-ksJtSgOu" : {
+      "id" : "dMFd9mItyYJyW5SPWWNcj$$6aKcGFsV8Yia-ksJtSgOu",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -240,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xMXXcFaWWTTrK_tlwRjtL$$ZGhVi0SE8o8j_PFIGuBPL",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "G-w2bzOVIIfTjY4hQihaM$$ISbtcL7WIooOFIpXql_be" : {
+      "id" : "G-w2bzOVIIfTjY4hQihaM$$ISbtcL7WIooOFIpXql_be",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_2",
+        "x" : -100,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "G82-I7iU66BdLDtBqI8Km$$87_uB1gFzrJHx0vvhn-ly",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "m5qglMJk1I7UrGTHpHYr6$$6j3LVJUMISsXBkUVdvozd",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

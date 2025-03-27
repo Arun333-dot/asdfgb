@@ -51,6 +51,17 @@ sqlOrchestratorPipelines:
     - models/p1/model_p1_Filter_1.sql
     - pipelines/p1.py
     createdAt: '2025-03-27 05:45:02'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma+nonadmin@prophecy.io
+    files:
+    - models/p2/model_p2_WindowFunction_1.sql
+    - models/p2/schema.yml
+    - models/p2/model_p2_WindowFunction_2.sql
+    - pipelines/p2.py
+    createdAt: '2025-03-27 05:46:13'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

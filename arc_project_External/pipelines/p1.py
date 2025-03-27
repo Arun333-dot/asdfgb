@@ -1,4 +1,12 @@
 with DAG():
+    OrchestrationTarget_1 = Task(
+        task_id = "OrchestrationTarget_1", 
+        component = "OrchestrationTarget", 
+        kind = "DatabricksVolumeTarget", 
+        connector = Connection(kind = "databricks"), 
+        properties = {}, 
+        format = {"properties" : {"separator" : ",", "header" : True}, "kind" : "csv", "category" : "file"}
+    )
     OrchestrationSource_0 = SourceTask(
         task_id = "OrchestrationSource_0", 
         component = "OrchestrationSource", 
