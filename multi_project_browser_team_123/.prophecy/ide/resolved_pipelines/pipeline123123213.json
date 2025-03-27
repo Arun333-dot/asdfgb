@@ -77,7 +77,7 @@
         "modelName" : "model_pipeline123123213_FlattenSchema_1"
       },
       "visualMetaInfo" : {
-        "visualProcessIds" : [ "prophecy__temp_pipeline123123213_post_FlattenSchema_1_0", "1yamzd3NAclkVHrgQ_Awa$$tDb8p7MQ8P3d77AKYLvxQ", "OJuth-XorWqK1PknWEG96$$J_UpDCus0-poecOMiK2ut" ],
+        "visualProcessIds" : [ "prophecy__temp_pipeline123123213_post_FlattenSchema_1_0", "1yamzd3NAclkVHrgQ_Awa$$tDb8p7MQ8P3d77AKYLvxQ" ],
         "type" : "table",
         "isTemporaryTable" : true
       },
@@ -88,6 +88,33 @@
         } ],
         "outputs" : [ {
           "id" : "model_pipeline123123213_FlattenSchema_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "OJuth-XorWqK1PknWEG96$$J_UpDCus0-poecOMiK2ut" : {
+      "id" : "OJuth-XorWqK1PknWEG96$$J_UpDCus0-poecOMiK2ut",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline123123213_WindowFunction_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline123123213_WindowFunction_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_pipeline123123213_post_WindowFunction_1_0", "OJuth-XorWqK1PknWEG96$$J_UpDCus0-poecOMiK2ut" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline123123213_WindowFunction_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline123123213_WindowFunction_1_out_1",
           "slug" : "out_1"
         } ],
         "isCustomOutputSchema" : false

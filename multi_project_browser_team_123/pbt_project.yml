@@ -1,6 +1,6 @@
 name: multi_project_browser_team_123
 description: ''
-version: '7'
+version: '1'
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
@@ -23,22 +23,7 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels:
-  .prophecy/metadata/sqlmodels/fghfghfgh:
-    name: fghfghfgh
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - models/fghfghfgh.sql
-    - .prophecy/ide/models/fghfghfgh.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-03-27 11:25:34'
+sqlModels: {}
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -63,19 +48,6 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/p2.py
     createdAt: '2025-03-27 07:27:15'
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline123123213:
-    name: pipeline123123213
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - models/pipeline123123213/model_pipeline123123213_Aggregate_1.sql
-    - models/pipeline123123213/model_pipeline123123213_FlattenSchema_1.sql
-    - models/pipeline123123213/model_pipeline123123213_Join_1.sql
-    - models/pipeline123123213/schema.yml
-    - models/pipeline123123213/model_pipeline123123213_Filter_1.sql
-    - pipelines/pipeline123123213.py
-    createdAt: '2025-03-27 07:25:10'
   .prophecy/metadata/sqlorchestratorpipeline/hjghjgh:
     name: hjghjgh
     schema: null
@@ -84,6 +56,20 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/hjghjgh.py
     createdAt: '2025-03-27 07:28:21'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline123123213:
+    name: pipeline123123213
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/pipeline123123213/model_pipeline123123213_WindowFunction_1.sql
+    - models/pipeline123123213/model_pipeline123123213_Aggregate_1.sql
+    - models/pipeline123123213/schema.yml
+    - models/pipeline123123213/model_pipeline123123213_FlattenSchema_1.sql
+    - models/pipeline123123213/model_pipeline123123213_Join_1.sql
+    - models/pipeline123123213/model_pipeline123123213_Filter_1.sql
+    - pipelines/pipeline123123213.py
+    createdAt: '2025-03-27 07:25:10'
   .prophecy/metadata/sqlorchestratorpipeline/ghghhj:
     name: ghghhj
     schema: null
@@ -91,26 +77,11 @@ sqlOrchestratorPipelines:
     author: arunsharma+nonadmin@prophecy.io
     files:
     - models/ghghhj/model_ghghhj_SetOperation_1.sql
-    - models/ghghhj/model_ghghhj_Filter_1.sql
     - models/ghghhj/model_ghghhj_Deduplicate_1.sql
-    - models/ghghhj/model_ghghhj_Join_1.sql
-    - models/ghghhj/model_ghghhj_Aggregate_2.sql
     - models/ghghhj/model_ghghhj_Aggregate_1.sql
     - models/ghghhj/schema.yml
     - pipelines/ghghhj.py
     createdAt: '2025-03-27 07:28:15'
-  .prophecy/metadata/sqlorchestratorpipeline/first:
-    name: first
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - models/first/schema.yml
-    - models/first/model_first_WindowFunction_1.sql
-    - models/first/model_first_Join_1.sql
-    - models/first/model_first_Filter_1.sql
-    - pipelines/first.py
-    createdAt: '2025-03-27 10:47:09'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

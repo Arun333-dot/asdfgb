@@ -2,7 +2,7 @@
   config({    
     "materialized": "table",
     "alias": "prophecy__temp_ghghhj_post_SetOperation_1_0",
-    "database": "database",
+    "database": "hive_metastore",
     "schema": "default"
   })
 }}
