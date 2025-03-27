@@ -68,22 +68,26 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma@prophecy.io
     files:
-    - models/p17/model_p17_Aggregate_1.sql
-    - models/p1/model_p1_Aggregate_1.sql
-    - models/p17/model_p17_Filter_1.sql
-    - models/p1/model_p1_Deduplicate_1.sql
-    - models/p1/schema.yml
     - models/p17/schema.yml
+    - models/p1/model_p1_Aggregate_1.sql
+    - models/p1/schema.yml
+    - models/p1/model_p1_Deduplicate_1.sql
     - pipelines/p1.py
     createdAt: '2025-03-27 09:32:47'
+  .prophecy/metadata/sqlorchestratorpipeline/wrtertrt:
+    name: wrtertrt
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/wrtertrt.py
+    createdAt: '2025-03-27 10:35:16'
   .prophecy/metadata/sqlorchestratorpipeline/p17:
     name: p17
     schema: null
     description: null
     author: arunsharma@prophecy.io
     files:
-    - models/p17/model_p17_Filter_1.sql
-    - models/p17/model_p17_Aggregate_1.sql
     - models/p17/schema.yml
     - pipelines/p17.py
     createdAt: '2025-03-27 09:32:55'
@@ -98,6 +102,22 @@ sqlOrchestratorPipelines:
     - models/p4/model_p4_WindowFunction_0.sql
     - pipelines/p4.py
     createdAt: '2025-03-27 10:12:27'
+  .prophecy/metadata/sqlorchestratorpipeline/ygfhjnmhgghj:
+    name: ygfhjnmhgghj
+    schema: null
+    description: null
+    author: arunsharma+nonadmin@prophecy.io
+    files:
+    - pipelines/ygfhjnmhgghj.py
+    createdAt: '2025-03-27 10:34:01'
+  .prophecy/metadata/sqlorchestratorpipeline/erterter:
+    name: erterter
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/erterter.py
+    createdAt: '2025-03-27 10:35:33'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

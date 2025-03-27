@@ -16,6 +16,45 @@
   },
   "datasets" : { },
   "pipelines" : {
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "ygfhjnmhgghj" : {
+      "id" : "ygfhjnmhgghj",
+      "name" : "ygfhjnmhgghj",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/ygfhjnmhgghj.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "wrtertrt" : {
+      "id" : "wrtertrt",
+      "name" : "wrtertrt",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/wrtertrt.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
     "p77" : {
       "id" : "p77",
       "name" : "p77",
@@ -54,10 +93,10 @@
         "label" : "OrchestrationSource_0"
       } ]
     },
-    "p4" : {
-      "id" : "p4",
-      "name" : "p4",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p4.json",
+    "erterter" : {
+      "id" : "erterter",
+      "name" : "erterter",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/erterter.json",
       "config" : {
         "schema" : {
           "type" : "record",

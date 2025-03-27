@@ -1,0 +1,17 @@
+{
+  "id" : "erterter",
+  "metainfo" : {
+    "label" : "erterter",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
