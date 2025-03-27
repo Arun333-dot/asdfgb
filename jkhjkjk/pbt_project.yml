@@ -69,11 +69,9 @@ sqlOrchestratorPipelines:
     author: arunsharma@prophecy.io
     files:
     - models/p17/schema.yml
-    - models/p17/model_p17_Filter_1.sql
     - models/p1/schema.yml
     - models/p1/model_p1_Aggregate_1.sql
     - models/p1/model_p1_Aggregate_2.sql
-    - models/p17/model_p17_Aggregate_1.sql
     - models/p1/model_p1_Deduplicate_1.sql
     - pipelines/p1.py
     createdAt: '2025-03-27 09:32:47'
@@ -92,8 +90,6 @@ sqlOrchestratorPipelines:
     author: arunsharma@prophecy.io
     files:
     - models/p17/schema.yml
-    - models/p17/model_p17_Filter_1.sql
-    - models/p17/model_p17_Aggregate_1.sql
     - pipelines/p17.py
     createdAt: '2025-03-27 09:32:55'
   .prophecy/metadata/sqlorchestratorpipeline/p4:
