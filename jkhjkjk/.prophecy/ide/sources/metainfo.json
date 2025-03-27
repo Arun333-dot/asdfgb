@@ -16,48 +16,6 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p17" : {
-      "id" : "p17",
-      "name" : "p17",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p17.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ {
-        "id" : "WzixtcyzrsQAeyzB-zYxl$$tm1L42ciYxc4KO6pxH0LZ",
-        "label" : "OrchestrationSource_0"
-      } ]
-    },
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p1.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ ]
-    },
-    "p4" : {
-      "id" : "p4",
-      "name" : "p4",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p4.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ ]
-    },
     "p77" : {
       "id" : "p77",
       "name" : "p77",
@@ -77,6 +35,51 @@
         "label" : "OrchestrationSource_2"
       }, {
         "id" : "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "p17" : {
+      "id" : "p17",
+      "name" : "p17",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p17.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "WzixtcyzrsQAeyzB-zYxl$$tm1L42ciYxc4KO6pxH0LZ",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "DR2orUNfRYJUVNusLOY4F$$KbuudM7KRhCk4JMl-fQi1",
         "label" : "OrchestrationSource_0"
       } ]
     }

@@ -11,7 +11,97 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "NgFtVw7zvYr8g8IC_UCKa$$_v29umj-8jqUtYqJEC3JN" : {
+      "id" : "NgFtVw7zvYr8g8IC_UCKa$$_v29umj-8jqUtYqJEC3JN",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p1_Deduplicate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p1_Deduplicate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p1_post_Deduplicate_1_0", "NgFtVw7zvYr8g8IC_UCKa$$_v29umj-8jqUtYqJEC3JN" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p1_Deduplicate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p1_Deduplicate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "DR2orUNfRYJUVNusLOY4F$$KbuudM7KRhCk4JMl-fQi1" : {
+      "id" : "DR2orUNfRYJUVNusLOY4F$$KbuudM7KRhCk4JMl-fQi1",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -481.20001220703125,
+        "y" : -465.6000061035156,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "uHPwWSjL3okl_BUGswG3d$$RjpiCRldklQuaLJTW0Pht",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "J60e_uVUnUCnGuqksSqEq$$1-HMEmU8aCtwUeCXXO6So" : {
+      "id" : "J60e_uVUnUCnGuqksSqEq$$1-HMEmU8aCtwUeCXXO6So",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p1_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p1_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p1_post_Aggregate_1_0", "J60e_uVUnUCnGuqksSqEq$$1-HMEmU8aCtwUeCXXO6So" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p1_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p1_Aggregate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
