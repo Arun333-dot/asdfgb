@@ -1,0 +1,84 @@
+{
+  "id" : "p77",
+  "metainfo" : {
+    "label" : "p77",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh" : {
+      "id" : "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : 20,
+        "y" : 220,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GOlAwfo9B7Gm65bC3xWd8$$yQtEXSUihvND_zPNRUDd_",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "O92A4hY-u4bUVf0ThI3fI$$j-eBjJOhAwd0TBVvKegXe" : {
+      "id" : "O92A4hY-u4bUVf0ThI3fI$$j-eBjJOhAwd0TBVvKegXe",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wp57ot17CT_k91coUZ3g2$$Z0rlUrQpEjNO1rlqEB2xb",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "RRzhFELnt9PQjyBcKsE3U$$GbYXeDBgAiGhnwZZVDN7Q",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

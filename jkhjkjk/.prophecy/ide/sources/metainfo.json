@@ -54,6 +54,22 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "p77" : {
+      "id" : "p77",
+      "name" : "p77",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p77.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh",
+        "label" : "OrchestrationSource_0"
+      } ]
     }
   },
   "externalSources" : {
