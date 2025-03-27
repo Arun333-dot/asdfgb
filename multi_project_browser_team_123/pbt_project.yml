@@ -89,6 +89,10 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/first/model_first_WindowFunction_1.sql
+    - models/first/schema.yml
+    - models/first/model_first_Filter_1.sql
+    - models/first/model_first_Join_1.sql
     - pipelines/first.py
     createdAt: '2025-03-27 10:47:09'
 sqlBusinessApps: {}

@@ -18,7 +18,7 @@ models:
   - "prophecy_temp"
 sources:
 - name: "prophecy__temp_ghghhj_source"
-  database: "hive_metastore"
+  database: "database"
   schema: "default"
   tags:
   - "prophecy_temp"

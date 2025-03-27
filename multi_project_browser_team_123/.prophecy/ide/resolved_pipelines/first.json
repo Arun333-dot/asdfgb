@@ -11,7 +11,159 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "j-zvNAfp9MCvr1TX_vqdU$$hace15ERxSVjZ5YV36tmW" : {
+      "id" : "j-zvNAfp9MCvr1TX_vqdU$$hace15ERxSVjZ5YV36tmW",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : 40,
+        "y" : -320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "M9jICzPw9kOK5kvIKXsfn$$YqLNOWPNM2vuUEPQEilwo",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "ku2Wed66fliFfbbFtFd45$$gBT0vT5VHV4GndVrUYrHj" : {
+      "id" : "ku2Wed66fliFfbbFtFd45$$gBT0vT5VHV4GndVrUYrHj",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_first_WindowFunction_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_first_WindowFunction_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_first_post_WindowFunction_1_0", "ku2Wed66fliFfbbFtFd45$$gBT0vT5VHV4GndVrUYrHj" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_first_WindowFunction_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_first_WindowFunction_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "mbKDJ62lWDv9YZWzKNO6-$$HY3Meaz2LVMHATVmXaxp-" : {
+      "id" : "mbKDJ62lWDv9YZWzKNO6-$$HY3Meaz2LVMHATVmXaxp-",
+      "component" : "OrchestrationTarget",
+      "kind" : "DatabricksVolumeTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -520,
+        "y" : -320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "CyFPcgnPGgEsdtkN74neG$$oVj9H7kZEv_rkf1Wh7RPI",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "9JZOoAxhrtun6vn9kDWaO$$iCP7lxMHI-XE_GPdKXL_1" : {
+      "id" : "9JZOoAxhrtun6vn9kDWaO$$iCP7lxMHI-XE_GPdKXL_1",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_first_Filter_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_first_Filter_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_first_post_Filter_1_0", "9JZOoAxhrtun6vn9kDWaO$$iCP7lxMHI-XE_GPdKXL_1" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_first_Filter_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_first_Filter_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "JPIxId_JDODlDPUekN-Tn$$_iJOrMQelQMfio5oydYKJ" : {
+      "id" : "JPIxId_JDODlDPUekN-Tn$$_iJOrMQelQMfio5oydYKJ",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_first_Join_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_first_Join_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_first_post_Join_1_0", "JPIxId_JDODlDPUekN-Tn$$_iJOrMQelQMfio5oydYKJ" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_first_Join_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_first_Join_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

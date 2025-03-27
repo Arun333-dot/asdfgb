@@ -11,7 +11,7 @@
       "entityConfig" : {
         "alias" : "\"prophecy__temp_ghghhj_post_SetOperation_1_0\"",
         "materialized" : "table",
-        "database" : "\"hive_metastore\"",
+        "database" : "\"database\"",
         "schema" : "\"default\"",
         "type" : "ModelConfig"
       }

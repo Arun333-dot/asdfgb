@@ -1,8 +1,8 @@
 {{
   config({    
     "materialized": "table",
-    "alias": "prophecy__temp_ghghhj_post_Filter_1_0",
-    "database": "database",
+    "alias": "prophecy__temp_first_post_Filter_1_0",
+    "database": "hive_metastore",
     "schema": "default"
   })
 }}
