@@ -47,6 +47,19 @@
         "id" : "i0WJm6gt54pZdb2PTGcCk$$jdRVWG57JH-xLvOiJ8ZTc",
         "label" : "OrchestrationSource_0"
       } ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "simple_project_multi_users_project_External/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
