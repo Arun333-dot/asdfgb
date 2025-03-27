@@ -37,6 +37,9 @@ models:
 - name: "model_p77_Filter_2"
   tags:
   - "prophecy_temp"
+- name: "model_p77_Aggregate_3"
+  tags:
+  - "prophecy_temp"
 sources:
 - name: "prophecy__temp_p77_source"
   database: "hive_metastore"
@@ -50,6 +53,9 @@ sources:
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_p77_post_Aggregate_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p77_post_Aggregate_3_0"
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_p77_post_Deduplicate_1_0"

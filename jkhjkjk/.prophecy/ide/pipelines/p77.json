@@ -352,6 +352,37 @@
         "isCustomOutputSchema" : false
       }
     },
+    "P2o9KFriVIqGcZuWvyKaq$$zlOP8OlRVhlWCMm_A5l9K" : {
+      "id" : "P2o9KFriVIqGcZuWvyKaq$$zlOP8OlRVhlWCMm_A5l9K",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_3",
+        "x" : 940,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-f64-qbfK9YjKNQyZlASq$$tTYOi-QR4Uj3XBEe4YEBw",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "tFnHiwQuxiBPWmnL1Bkvz$$AUQRzEVvu8K_JtgpnZ0fS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "QKbnZKxyzKGaFVU1zp5nQ$$u3RaOyUh7mjJBcK9cytaB" : {
       "id" : "QKbnZKxyzKGaFVU1zp5nQ$$u3RaOyUh7mjJBcK9cytaB",
       "component" : "Join",
@@ -385,6 +416,41 @@
         } ],
         "outputs" : [ {
           "id" : "DaKnyAJeG_uZNd-pseYM1$$cH15UsTclEgmg0Grfwm4t",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "D3i5Mqo_j29C75TWo34r-$$ucPhccLbTiiV5GL_bnNlY" : {
+      "id" : "D3i5Mqo_j29C75TWo34r-$$ucPhccLbTiiV5GL_bnNlY",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : 800,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ThyhQgbwrE8-HNpfUaOAf$$bdcsKAVnZAb5MbWOeqPVM",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
