@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p1.json",
+    "p17" : {
+      "id" : "p17",
+      "name" : "p17",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p17.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -29,10 +29,10 @@
       "preview" : [ ],
       "sources" : [ ]
     },
-    "p17" : {
-      "id" : "p17",
-      "name" : "p17",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p17.json",
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p1.json",
       "config" : {
         "schema" : {
           "type" : "record",
