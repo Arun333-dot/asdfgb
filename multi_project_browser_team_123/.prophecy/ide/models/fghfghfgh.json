@@ -39,6 +39,35 @@
         "autoUpdateOnRun" : false
       }
     },
+    "vXXGKxm2OP8PFK7pjq5_q$$0I8-6OFgYhgC6AZI57NuU" : {
+      "id" : "vXXGKxm2OP8PFK7pjq5_q$$0I8-6OFgYhgC6AZI57NuU",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "SQLStatement_3",
+        "slug" : "SQLStatement_3",
+        "x" : 580,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : ""
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "oFbb-wXU8MLuIfo26A8SP$$0JQMTr2LSujqYmHzgSSc-",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
     "a0sYe5WZ4y8avjhMR0Em6$$FTSTCkayIBtSRcZMNqzag" : {
       "id" : "a0sYe5WZ4y8avjhMR0Em6$$FTSTCkayIBtSRcZMNqzag",
       "component" : "Aggregate",
@@ -271,6 +300,34 @@
         } ],
         "outputs" : [ {
           "id" : "gh9YobkVNLdkT8Jqw1f4c$$6cSoIYQGkWXdCH3K-w8WJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "canonical" : false
+    },
+    "l0IUa8qG210g1j0l46ly2$$2p2rhS87XAW5WXihOzevm" : {
+      "id" : "l0IUa8qG210g1j0l46ly2$$2p2rhS87XAW5WXihOzevm",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_5",
+        "slug" : "Subgraph_5",
+        "x" : 720,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "processes" : { },
+      "connections" : [ ],
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4K4ap49XmbEiL0ySoRQIe$$h_XxW6YCfLSlRWRJ673S9",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "c_oKuaFt_0A79Rl82JGLK$$rp_c6LbPnDxtbTWLqk_rv",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
