@@ -46,6 +46,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma@prophecy.io
     files:
+    - models/p17/model_p17_Aggregate_1.sql
+    - models/p17/schema.yml
+    - models/p17/model_p17_Filter_1.sql
     - pipelines/p1.py
     createdAt: '2025-03-27 09:32:47'
   .prophecy/metadata/sqlorchestratorpipeline/p17:
@@ -54,6 +57,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma@prophecy.io
     files:
+    - models/p17/model_p17_Aggregate_1.sql
+    - models/p17/schema.yml
+    - models/p17/model_p17_Filter_1.sql
     - pipelines/p17.py
     createdAt: '2025-03-27 09:32:55'
   .prophecy/metadata/sqlorchestratorpipeline/p4:
