@@ -61,22 +61,6 @@ sqlOrchestratorPipelines:
     - models/p2/model_p2_Deduplicate_1.sql
     - pipelines/p2.py
     createdAt: '2025-03-27 06:27:31'
-  .prophecy/metadata/sqlorchestratorpipeline/p3:
-    name: p3
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/p3.py
-    createdAt: '2025-03-27 06:28:54'
-  .prophecy/metadata/sqlorchestratorpipeline/p4:
-    name: p4
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/p4.py
-    createdAt: '2025-03-27 06:29:14'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
