@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p4" : {
-      "id" : "p4",
-      "name" : "p4",
-      "path" : "simple_project_multi_users_project_External/.prophecy/ide/pipelines/p4.json",
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "simple_project_multi_users_project_External/.prophecy/ide/pipelines/p1.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -27,20 +27,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
-    },
-    "p3" : {
-      "id" : "p3",
-      "name" : "p3",
-      "path" : "simple_project_multi_users_project_External/.prophecy/ide/pipelines/p3.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "DPAeEwDgwWgUAH54v4bdC$$VzgJJGxfZ_-Utvolf4VKq",
+        "label" : "OrchestrationSource_0"
+      } ]
     },
     "p2" : {
       "id" : "p2",
@@ -58,26 +48,10 @@
         "label" : "OrchestrationSource_0"
       } ]
     },
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "simple_project_multi_users_project_External/.prophecy/ide/pipelines/p1.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ {
-        "id" : "DPAeEwDgwWgUAH54v4bdC$$VzgJJGxfZ_-Utvolf4VKq",
-        "label" : "OrchestrationSource_0"
-      } ]
-    },
-    "p6" : {
-      "id" : "p6",
-      "name" : "p6",
-      "path" : "simple_project_multi_users_project_External/.prophecy/ide/pipelines/p6.json",
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "simple_project_multi_users_project_External/.prophecy/ide/pipelines/p3.json",
       "config" : {
         "schema" : {
           "type" : "record",
