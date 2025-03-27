@@ -54,6 +54,14 @@ sqlOrchestratorPipelines:
     - models/pipeline123123213/model_pipeline123123213_FlattenSchema_1.sql
     - pipelines/pipeline123123213.py
     createdAt: '2025-03-27 07:25:10'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p2.py
+    createdAt: '2025-03-27 07:27:15'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
