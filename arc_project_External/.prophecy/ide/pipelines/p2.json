@@ -12,41 +12,6 @@
     }
   },
   "processes" : {
-    "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz" : {
-      "id" : "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz",
-      "component" : "OrchestrationTarget",
-      "kind" : "DatabricksVolumeTarget",
-      "metadata" : {
-        "label" : "OrchestrationTarget_0",
-        "x" : -520,
-        "y" : -360,
-        "phase" : 0
-      },
-      "properties" : {
-        "connector" : {
-          "kind" : "databricks",
-          "properties" : { },
-          "type" : "connector"
-        },
-        "properties" : { },
-        "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
-          "kind" : "csv",
-          "category" : "file"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "or4qS-5a0UQXVtqJnxuI6$$4UiA-KQujWgxeSsvDErxt",
-          "slug" : "in"
-        } ],
-        "outputs" : [ ],
-        "isCustomOutputSchema" : false
-      }
-    },
     "cOyfUYdxDKBkShtR25ZbQ$$Clufn1Sx7f6ua07U6HhqH" : {
       "id" : "cOyfUYdxDKBkShtR25ZbQ$$Clufn1Sx7f6ua07U6HhqH",
       "component" : "WindowFunction",
@@ -110,6 +75,107 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "xMXXcFaWWTTrK_tlwRjtL$$ZGhVi0SE8o8j_PFIGuBPL",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "9mx3eY59vX38IgkJpc1Jo$$DGpq7zY97w5CRzxya8G1Y" : {
+      "id" : "9mx3eY59vX38IgkJpc1Jo$$DGpq7zY97w5CRzxya8G1Y",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : 180,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "btr4hF6j8I1tPQqsVOFZN$$RMbjmN4-97x0y_k_cElPN",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "oYhHonPVrSw9i18Je5NAG$$gzVE_4s-iO5CoRP7XeSas",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz" : {
+      "id" : "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz",
+      "component" : "OrchestrationTarget",
+      "kind" : "DatabricksVolumeTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -520,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "or4qS-5a0UQXVtqJnxuI6$$4UiA-KQujWgxeSsvDErxt",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Bdo6-dbFKDflCnQ78YLP1$$mmVJb8f4snPKJZ-OscwM1" : {
+      "id" : "Bdo6-dbFKDflCnQ78YLP1$$mmVJb8f4snPKJZ-OscwM1",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : 40,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VnwxLJK_6svif2cd_1fRd$$439swS1cSsN6rcToo4PoI",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

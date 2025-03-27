@@ -46,6 +46,9 @@
       "sources" : [ {
         "id" : "dMFd9mItyYJyW5SPWWNcj$$6aKcGFsV8Yia-ksJtSgOu",
         "label" : "OrchestrationSource_1"
+      }, {
+        "id" : "Bdo6-dbFKDflCnQ78YLP1$$mmVJb8f4snPKJZ-OscwM1",
+        "label" : "OrchestrationSource_2"
       } ]
     }
   },

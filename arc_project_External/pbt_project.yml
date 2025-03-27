@@ -60,6 +60,7 @@ sqlOrchestratorPipelines:
     - models/p2/model_p2_WindowFunction_1.sql
     - models/p2/schema.yml
     - models/p2/model_p2_WindowFunction_2.sql
+    - models/p2/model_p2_Aggregate_1.sql
     - pipelines/p2.py
     createdAt: '2025-03-27 05:46:13'
 sqlBusinessApps: {}
