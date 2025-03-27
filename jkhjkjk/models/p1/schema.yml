@@ -7,6 +7,9 @@ models:
 - name: "model_p1_Deduplicate_1"
   tags:
   - "prophecy_temp"
+- name: "model_p1_Aggregate_2"
+  tags:
+  - "prophecy_temp"
 sources:
 - name: "prophecy__temp_p1_source"
   database: "hive_metastore"
@@ -17,6 +20,9 @@ sources:
     enabled: true
   tables:
   - name: "prophecy__temp_p1_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p1_post_Aggregate_2_0"
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_p1_post_Deduplicate_1_0"

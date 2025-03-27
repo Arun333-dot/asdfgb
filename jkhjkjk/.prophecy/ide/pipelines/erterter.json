@@ -2,7 +2,7 @@
   "id" : "erterter",
   "metainfo" : {
     "label" : "erterter",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {

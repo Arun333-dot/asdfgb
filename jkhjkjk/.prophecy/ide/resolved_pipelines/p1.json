@@ -74,6 +74,33 @@
         "isCustomOutputSchema" : false
       }
     },
+    "_sUAC-X_9BqYkJIFPLDWx$$oF_gOxgthmbd3mFaOE7cn" : {
+      "id" : "_sUAC-X_9BqYkJIFPLDWx$$oF_gOxgthmbd3mFaOE7cn",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p1_Aggregate_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p1_Aggregate_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p1_post_Aggregate_2_0", "_sUAC-X_9BqYkJIFPLDWx$$oF_gOxgthmbd3mFaOE7cn" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p1_Aggregate_2_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p1_Aggregate_2_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "J60e_uVUnUCnGuqksSqEq$$1-HMEmU8aCtwUeCXXO6So" : {
       "id" : "J60e_uVUnUCnGuqksSqEq$$1-HMEmU8aCtwUeCXXO6So",
       "component" : "Model",
@@ -97,6 +124,41 @@
         "outputs" : [ {
           "id" : "model_p1_Aggregate_1_out_1",
           "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "bYk0nXVEpQt5CD-mjTF_5$$4ryZ8ERrnlGPCiR8NiK7Y" : {
+      "id" : "bYk0nXVEpQt5CD-mjTF_5$$4ryZ8ERrnlGPCiR8NiK7Y",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -1600,
+        "y" : -820,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ooWeVISwkInQti62t395R$$OLnlb8Ygf8DB8lwk2FAX8",
+          "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
       }

@@ -104,6 +104,41 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "G-iLP7MVeDCVq7thd3a3T$$r5Nhe8RdG6nNAS4y6AjnA" : {
+      "id" : "G-iLP7MVeDCVq7thd3a3T$$r5Nhe8RdG6nNAS4y6AjnA",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -1400,
+        "y" : -680,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "6emZ0ifRduICRbXtNG5pT$$RPMHBfh1bYbddphQSeGdy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],
