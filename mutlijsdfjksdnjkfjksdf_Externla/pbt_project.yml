@@ -40,6 +40,24 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/p2/schema.yml
+    - models/p2/model_p2_Aggregate_1.sql
+    - pipelines/p2.py
+    createdAt: '2025-03-27 06:14:32'
+  .prophecy/metadata/sqlorchestratorpipeline/fghfghfgh:
+    name: fghfghfgh
+    schema: null
+    description: null
+    author: arunsharma+nonadmin@prophecy.io
+    files:
+    - pipelines/fghfghfgh.py
+    createdAt: '2025-03-27 06:47:08'
   .prophecy/metadata/sqlorchestratorpipeline/p1:
     name: p1
     schema: null
@@ -51,16 +69,22 @@ sqlOrchestratorPipelines:
     - models/p1/model_p1_Deduplicate_1.sql
     - pipelines/p1.py
     createdAt: '2025-03-27 06:14:27'
-  .prophecy/metadata/sqlorchestratorpipeline/p2:
-    name: p2
+  .prophecy/metadata/sqlorchestratorpipeline/htfhtfhft:
+    name: htfhtfhft
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/htfhtfhft.py
+    createdAt: '2025-03-27 06:47:27'
+  .prophecy/metadata/sqlorchestratorpipeline/hjjkhjkhjk:
+    name: hjjkhjkhjk
     schema: null
     description: null
     author: arunsharma@prophecy.io
     files:
-    - models/p2/model_p2_Aggregate_1.sql
-    - models/p2/schema.yml
-    - pipelines/p2.py
-    createdAt: '2025-03-27 06:14:32'
+    - pipelines/hjjkhjkhjk.py
+    createdAt: '2025-03-27 06:46:49'
   .prophecy/metadata/sqlorchestratorpipeline/p3:
     name: p3
     schema: null
