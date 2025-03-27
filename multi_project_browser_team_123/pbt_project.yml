@@ -54,11 +54,11 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma@prophecy.io
     files:
+    - models/pipeline123123213/model_pipeline123123213_Aggregate_1.sql
     - models/pipeline123123213/model_pipeline123123213_FlattenSchema_1.sql
     - models/pipeline123123213/model_pipeline123123213_Join_1.sql
-    - models/pipeline123123213/model_pipeline123123213_Aggregate_1.sql
-    - models/pipeline123123213/model_pipeline123123213_Filter_1.sql
     - models/pipeline123123213/schema.yml
+    - models/pipeline123123213/model_pipeline123123213_Filter_1.sql
     - pipelines/pipeline123123213.py
     createdAt: '2025-03-27 07:25:10'
   .prophecy/metadata/sqlorchestratorpipeline/hjghjgh:
@@ -75,13 +75,13 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+nonadmin@prophecy.io
     files:
-    - models/ghghhj/model_ghghhj_Aggregate_2.sql
-    - models/ghghhj/model_ghghhj_Deduplicate_1.sql
-    - models/ghghhj/schema.yml
-    - models/ghghhj/model_ghghhj_Filter_1.sql
-    - models/ghghhj/model_ghghhj_Aggregate_1.sql
-    - models/ghghhj/model_ghghhj_Join_1.sql
     - models/ghghhj/model_ghghhj_SetOperation_1.sql
+    - models/ghghhj/model_ghghhj_Filter_1.sql
+    - models/ghghhj/model_ghghhj_Deduplicate_1.sql
+    - models/ghghhj/model_ghghhj_Join_1.sql
+    - models/ghghhj/model_ghghhj_Aggregate_2.sql
+    - models/ghghhj/model_ghghhj_Aggregate_1.sql
+    - models/ghghhj/schema.yml
     - pipelines/ghghhj.py
     createdAt: '2025-03-27 07:28:15'
   .prophecy/metadata/sqlorchestratorpipeline/first:
@@ -90,10 +90,10 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/first/model_first_WindowFunction_1.sql
     - models/first/schema.yml
-    - models/first/model_first_Filter_1.sql
+    - models/first/model_first_WindowFunction_1.sql
     - models/first/model_first_Join_1.sql
+    - models/first/model_first_Filter_1.sql
     - pipelines/first.py
     createdAt: '2025-03-27 10:47:09'
 sqlBusinessApps: {}
