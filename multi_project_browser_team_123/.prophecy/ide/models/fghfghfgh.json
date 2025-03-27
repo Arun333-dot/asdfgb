@@ -140,6 +140,35 @@
         "autoUpdateOnRun" : false
       }
     },
+    "1p-M2k_u4gOWJNRwkNbNU$$klVPpJr84WTosT2TfidKE" : {
+      "id" : "1p-M2k_u4gOWJNRwkNbNU$$klVPpJr84WTosT2TfidKE",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "SQLStatement_1",
+        "slug" : "SQLStatement_1",
+        "x" : -400,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : ""
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "8fYtQgULVaBMcsz7d9nCP$$FuFHDkL7GfCbG3K8gCBZH",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
     "4D7D2AkAD9Rjnc7e4piPN$$ym05g8AdU7hYFzC-2COKr" : {
       "id" : "4D7D2AkAD9Rjnc7e4piPN$$ym05g8AdU7hYFzC-2COKr",
       "component" : "Subgraph",
