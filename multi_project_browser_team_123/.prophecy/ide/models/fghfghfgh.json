@@ -10,6 +10,35 @@
     "version" : 3
   },
   "processes" : {
+    "FJkx_5yL6ExaDDr4WZgJY$$CgH7ssQKAjB_nNumIgGVW" : {
+      "id" : "FJkx_5yL6ExaDDr4WZgJY$$CgH7ssQKAjB_nNumIgGVW",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "SQLStatement_2",
+        "slug" : "SQLStatement_2",
+        "x" : 440,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : ""
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "kZUs4-0gH8SGpmfHQul-1$$kJtxQgBLn6s_vmcuvi2KS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
     "a0sYe5WZ4y8avjhMR0Em6$$FTSTCkayIBtSRcZMNqzag" : {
       "id" : "a0sYe5WZ4y8avjhMR0Em6$$FTSTCkayIBtSRcZMNqzag",
       "component" : "Aggregate",
@@ -170,6 +199,7 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -215,6 +245,60 @@
         } ],
         "outputs" : [ {
           "id" : "vqNhjBrpFeWE_nF5pFO_k$$H2jqPErpWmGIfYaHFgLHJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "WLDzLEQBlENZlRcn83Eko$$NZyJCBlu3ILgoSlya2aMP" : {
+      "id" : "WLDzLEQBlENZlRcn83Eko$$NZyJCBlu3ILgoSlya2aMP",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_4",
+        "slug" : "Subgraph_4",
+        "x" : 300,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "processes" : { },
+      "connections" : [ ],
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fzf67GZwnRfKJE3St8i8l$$YvO6LlONGgv2nb89_gnAQ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "gh9YobkVNLdkT8Jqw1f4c$$6cSoIYQGkWXdCH3K-w8WJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "canonical" : false
+    },
+    "0M1LWCmtPKBODw56SCRhl$$ascrf4Jir2FPVHLnqVlb0" : {
+      "id" : "0M1LWCmtPKBODw56SCRhl$$ascrf4Jir2FPVHLnqVlb0",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "Macro_2",
+        "slug" : "Macro_2",
+        "x" : 160,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "macroName" : null,
+        "parameters" : [ ],
+        "projectName" : null
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "552WycS8RIO3O1vx9TJU5$$-UM9sFUSY8Wyk1QPHmw33",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
