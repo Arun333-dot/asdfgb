@@ -62,6 +62,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+nonadmin@prophecy.io
     files:
+    - models/p4/model_p4_WindowFunction_0.sql
+    - models/p4/schema.yml
+    - models/p4/model_p4_Deduplicate_1.sql
     - pipelines/p4.py
     createdAt: '2025-03-27 10:12:27'
   .prophecy/metadata/sqlorchestratorpipeline/p77:
@@ -72,6 +75,8 @@ sqlOrchestratorPipelines:
     files:
     - models/p77/model_p77_Aggregate_1.sql
     - models/p77/schema.yml
+    - models/p77/model_p77_Deduplicate_1.sql
+    - models/p77/model_p77_Join_1.sql
     - pipelines/p77.py
     createdAt: '2025-03-27 10:13:59'
 sqlBusinessApps: {}

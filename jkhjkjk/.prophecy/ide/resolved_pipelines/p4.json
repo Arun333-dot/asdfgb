@@ -11,7 +11,62 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "2Pc8wSw_1MrSCGOzqqb3-$$ULjxLeo56MWW0D8_Lyk4r" : {
+      "id" : "2Pc8wSw_1MrSCGOzqqb3-$$ULjxLeo56MWW0D8_Lyk4r",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p4_Deduplicate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p4_Deduplicate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p4_post_Deduplicate_1_0", "2Pc8wSw_1MrSCGOzqqb3-$$ULjxLeo56MWW0D8_Lyk4r" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p4_Deduplicate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p4_Deduplicate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "yd_qwFS5zIA8MahWxLtYA$$Btf9Fg8ABQoLHxA1GRtqB" : {
+      "id" : "yd_qwFS5zIA8MahWxLtYA$$Btf9Fg8ABQoLHxA1GRtqB",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p4_WindowFunction_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p4_WindowFunction_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p4_post_WindowFunction_0_0", "yd_qwFS5zIA8MahWxLtYA$$Btf9Fg8ABQoLHxA1GRtqB" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p4_WindowFunction_0_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p4_WindowFunction_0_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
