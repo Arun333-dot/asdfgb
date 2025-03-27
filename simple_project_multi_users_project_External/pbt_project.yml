@@ -40,14 +40,16 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/p6:
-    name: p6
+  .prophecy/metadata/sqlorchestratorpipeline/p1:
+    name: p1
     schema: null
     description: null
     author: arunsharma@prophecy.io
     files:
-    - pipelines/p6.py
-    createdAt: '2025-03-27 06:29:30'
+    - models/p1/model_p1_WindowFunction_1.sql
+    - models/p1/schema.yml
+    - pipelines/p1.py
+    createdAt: '2025-03-27 06:27:15'
   .prophecy/metadata/sqlorchestratorpipeline/p2:
     name: p2
     schema: null
@@ -59,32 +61,6 @@ sqlOrchestratorPipelines:
     - models/p2/model_p2_Deduplicate_1.sql
     - pipelines/p2.py
     createdAt: '2025-03-27 06:27:31'
-  .prophecy/metadata/sqlorchestratorpipeline/p1:
-    name: p1
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - models/p1/model_p1_WindowFunction_1.sql
-    - models/p1/schema.yml
-    - pipelines/p1.py
-    createdAt: '2025-03-27 06:27:15'
-  .prophecy/metadata/sqlorchestratorpipeline/p4:
-    name: p4
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/p4.py
-    createdAt: '2025-03-27 06:29:14'
-  .prophecy/metadata/sqlorchestratorpipeline/p3:
-    name: p3
-    schema: null
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - pipelines/p3.py
-    createdAt: '2025-03-27 06:28:54'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
