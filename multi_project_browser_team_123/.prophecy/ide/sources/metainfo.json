@@ -32,10 +32,10 @@
         "label" : "OrchestrationSource_0"
       } ]
     },
-    "p2" : {
-      "id" : "p2",
-      "name" : "p2",
-      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/p2.json",
+    "hjghjgh" : {
+      "id" : "hjghjgh",
+      "name" : "hjghjgh",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/hjghjgh.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -61,10 +61,10 @@
         "label" : "OrchestrationSource_0"
       } ]
     },
-    "hjghjgh" : {
-      "id" : "hjghjgh",
-      "name" : "hjghjgh",
-      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/hjghjgh.json",
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/p2.json",
       "config" : {
         "schema" : {
           "type" : "record",
