@@ -39,12 +39,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_1_1",
-          "slug" : "input_port_1_1"
+          "id" : "input_port_2_1",
+          "slug" : "input_port_2_1"
         } ],
         "outputs" : [ {
-          "id" : "output_port_1_1",
-          "slug" : "output_port_1_1"
+          "id" : "output_port_2_1",
+          "slug" : "output_port_2_1"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -95,7 +95,7 @@
     "source" : "QKbnZKxyzKGaFVU1zp5nQ$$u3RaOyUh7mjJBcK9cytaB",
     "sourcePort" : "DaKnyAJeG_uZNd-pseYM1$$cH15UsTclEgmg0Grfwm4t",
     "target" : "prophecy__temp_p77_post_Join_3_0",
-    "targetPort" : "input_port_1_1"
+    "targetPort" : "input_port_2_1"
   } ],
   "component" : "Model"
 }

@@ -82,8 +82,10 @@ sqlOrchestratorPipelines:
     - models/p77/model_p77_Deduplicate_1.sql
     - models/p77/model_p77_Aggregate_1.sql
     - models/p77/model_p77_Join_2.sql
+    - models/p77/model_p77_Filter_2.sql
     - models/p77/model_p77_Join_3.sql
     - models/p77/model_p77_Filter_1.sql
+    - models/p77/model_p77_WindowFunction_2.sql
     - models/p77/schema.yml
     - models/p77/model_p77_Aggregate_2.sql
     - models/p77/model_p77_Deduplicate_2.sql

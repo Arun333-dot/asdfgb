@@ -1,4 +1,9 @@
 with DAG():
+    model_p77_WindowFunction_2 = Task(
+        task_id = "model_p77_WindowFunction_2", 
+        component = "Model", 
+        modelName = "model_p77_WindowFunction_2"
+    )
     model_p77_Deduplicate_2 = Task(
         task_id = "model_p77_Deduplicate_2", 
         component = "Model", 
@@ -43,6 +48,7 @@ with DAG():
         connector = Connection(kind = "s3"), 
         format = CSVFormat(separator = ",", header = True)
     )
+    model_p77_Filter_2 = Task(task_id = "model_p77_Filter_2", component = "Model", modelName = "model_p77_Filter_2")
     model_p77_WindowFunction_1 = Task(
         task_id = "model_p77_WindowFunction_1", 
         component = "Model", 
