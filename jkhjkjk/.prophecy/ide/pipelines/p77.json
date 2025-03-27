@@ -12,36 +12,29 @@
     }
   },
   "processes" : {
-    "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh" : {
-      "id" : "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh",
-      "component" : "OrchestrationSource",
-      "kind" : "S3Source",
+    "sgKMLdfPlGhkyVKp9Ebr0$$4Qq-l9sb7IQTDrQSCmxf1" : {
+      "id" : "sgKMLdfPlGhkyVKp9Ebr0$$4Qq-l9sb7IQTDrQSCmxf1",
+      "component" : "Deduplicate",
       "metadata" : {
-        "label" : "OrchestrationSource_0",
-        "x" : 20,
-        "y" : 220,
+        "label" : "Deduplicate_2",
+        "x" : -740,
+        "y" : -480,
         "phase" : 0
       },
       "properties" : {
-        "connector" : {
-          "kind" : "s3",
-          "properties" : { },
-          "type" : "connector"
-        },
-        "properties" : { },
-        "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
-          "kind" : "csv",
-          "category" : "file"
-        }
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
       },
       "ports" : {
-        "inputs" : [ ],
+        "inputs" : [ {
+          "id" : "x6Pqc3Tze4TGFrE9g8Y7M$$Kl364pJgHlmT-9NjNYCo9",
+          "slug" : "in0"
+        } ],
         "outputs" : [ {
-          "id" : "GOlAwfo9B7Gm65bC3xWd8$$yQtEXSUihvND_zPNRUDd_",
+          "id" : "TBt8uOYczlv__k013rzbU$$fIckSEFrloAV5yRJHwrj5",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -78,31 +71,26 @@
         "isCustomOutputSchema" : false
       }
     },
-    "gqIV5y_f9U4eA153DqOPX$$wAHfqoUxmqWMSYjM7tAE_" : {
-      "id" : "gqIV5y_f9U4eA153DqOPX$$wAHfqoUxmqWMSYjM7tAE_",
-      "component" : "Deduplicate",
+    "3gfQU5c7rGIMJ2wJXM9YQ$$Pp9VxyPkObpzuW8N71Soz" : {
+      "id" : "3gfQU5c7rGIMJ2wJXM9YQ$$Pp9VxyPkObpzuW8N71Soz",
+      "component" : "Email",
       "metadata" : {
-        "label" : "Deduplicate_1",
-        "x" : -1020,
-        "y" : -480,
-        "phase" : 0
+        "label" : "Email_1",
+        "x" : -460,
+        "y" : -480
       },
       "properties" : {
-        "dedupColumns" : [ ],
-        "dedupType" : "distinct",
-        "columnsSelector" : [ ],
-        "orders" : [ ],
-        "useOrderBy" : false
+        "to" : null,
+        "subject" : "",
+        "body" : "",
+        "includeData" : false
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "Y3yJ4xQZScuaU1Du_j3rd$$YQatNeQNeJjCTLKB41A_3",
+          "id" : "g3uyUHEePhri2AvSX7ru6$$aKatgXEMdRCic52Exmlax",
           "slug" : "in0"
         } ],
-        "outputs" : [ {
-          "id" : "TrQ-cfi6A2gpvym4a7OQ5$$epCuiWP3dTdhrE61Tobs5",
-          "slug" : "out"
-        } ],
+        "outputs" : [ ],
         "isCustomOutputSchema" : false
       }
     },
@@ -139,6 +127,107 @@
         } ],
         "outputs" : [ {
           "id" : "qOfQCBIn5QZwkMdp8qDQ_$$OBlMGsEJtHM5XGV8X5Z0P",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "gqIV5y_f9U4eA153DqOPX$$wAHfqoUxmqWMSYjM7tAE_" : {
+      "id" : "gqIV5y_f9U4eA153DqOPX$$wAHfqoUxmqWMSYjM7tAE_",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Y3yJ4xQZScuaU1Du_j3rd$$YQatNeQNeJjCTLKB41A_3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TrQ-cfi6A2gpvym4a7OQ5$$epCuiWP3dTdhrE61Tobs5",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "_Dzdf13ohhGk9hFWUielP$$Z7xO-bvekml_a3rukHp06" : {
+      "id" : "_Dzdf13ohhGk9hFWUielP$$Z7xO-bvekml_a3rukHp06",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_2",
+        "x" : -600,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : ""
+          },
+          "joinType" : "inner",
+          "rightAlias" : null
+        } ],
+        "expressions" : [ ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NU3MJk6QnEciaHjhBHCA9$$kzE-bSGXCx06MupylOAq1",
+          "slug" : "in0"
+        }, {
+          "id" : "VT-hbb3u4AYLo5-XIr_Z7$$gHReb-yiHUF6H4jMTU7Rm",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "NTS35yapa5WQUnAlBjzHN$$NsqUgk5kCDnjk1HjeRlTS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh" : {
+      "id" : "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : 20,
+        "y" : 220,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GOlAwfo9B7Gm65bC3xWd8$$yQtEXSUihvND_zPNRUDd_",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

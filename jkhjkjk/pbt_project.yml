@@ -73,9 +73,11 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/p77/model_p77_Aggregate_1.sql
-    - models/p77/schema.yml
     - models/p77/model_p77_Deduplicate_1.sql
+    - models/p77/model_p77_Aggregate_1.sql
+    - models/p77/model_p77_Join_2.sql
+    - models/p77/schema.yml
+    - models/p77/model_p77_Deduplicate_2.sql
     - models/p77/model_p77_Join_1.sql
     - pipelines/p77.py
     createdAt: '2025-03-27 10:13:59'
