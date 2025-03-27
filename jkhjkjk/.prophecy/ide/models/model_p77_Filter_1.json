@@ -1,7 +1,7 @@
 {
-  "id" : "model_p77_Deduplicate_2",
+  "id" : "model_p77_Filter_1",
   "metainfo" : {
-    "label" : "model_p77_Deduplicate_2",
+    "label" : "model_p77_Filter_1",
     "autoLayout" : true,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -9,7 +9,7 @@
     },
     "graphConfig" : {
       "entityConfig" : {
-        "alias" : "\"prophecy__temp_p77_post_Deduplicate_2_0\"",
+        "alias" : "\"prophecy__temp_p77_post_Filter_1_0\"",
         "materialized" : "table",
         "database" : "\"hive_metastore\"",
         "schema" : "\"default\"",
@@ -19,18 +19,18 @@
     "version" : 3
   },
   "processes" : {
-    "prophecy__temp_p77_post_Deduplicate_2_0" : {
-      "id" : "prophecy__temp_p77_post_Deduplicate_2_0",
+    "prophecy__temp_p77_post_Filter_1_0" : {
+      "id" : "prophecy__temp_p77_post_Filter_1_0",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "prophecy__temp_p77_post_Deduplicate_2_0",
+        "label" : "prophecy__temp_p77_post_Filter_1_0",
         "phase" : 0
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "\nSELECT *\n\nFROM Deduplicate_2\n\n",
+        "query" : "\nSELECT *\n\nFROM Filter_1\n\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -39,40 +39,39 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_6_1",
-          "slug" : "input_port_6_1"
+          "id" : "input_port_3_1",
+          "slug" : "input_port_3_1"
         } ],
         "outputs" : [ {
-          "id" : "output_port_6_1",
-          "slug" : "output_port_6_1"
+          "id" : "output_port_3_1",
+          "slug" : "output_port_3_1"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
     },
-    "sgKMLdfPlGhkyVKp9Ebr0$$4Qq-l9sb7IQTDrQSCmxf1" : {
-      "id" : "sgKMLdfPlGhkyVKp9Ebr0$$4Qq-l9sb7IQTDrQSCmxf1",
-      "component" : "Deduplicate",
+    "DnzNzUJfL6L8Tbwgdyj9W$$bedZYdg1d3Spak50bRvsh" : {
+      "id" : "DnzNzUJfL6L8Tbwgdyj9W$$bedZYdg1d3Spak50bRvsh",
+      "component" : "Filter",
       "metadata" : {
-        "label" : "Deduplicate_2",
-        "x" : -740,
+        "label" : "Filter_1",
+        "x" : -40,
         "y" : -480,
         "phase" : 0
       },
       "properties" : {
-        "dedupColumns" : [ ],
-        "dedupType" : "distinct",
         "columnsSelector" : [ ],
-        "orders" : [ ],
-        "useOrderBy" : false
+        "condition" : {
+          "expression" : "true"
+        }
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "x6Pqc3Tze4TGFrE9g8Y7M$$Kl364pJgHlmT-9NjNYCo9",
+          "id" : "wyy5aSGtpLjhw9ZMDRKn1$$EhdDpnhKOCoIRGVfpKloZ",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "TBt8uOYczlv__k013rzbU$$fIckSEFrloAV5yRJHwrj5",
+          "id" : "QOifh3nhaCi5je1X8cfAy$$3Rzjiu3L7lKwB_1yvI_kf",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -81,11 +80,11 @@
     }
   },
   "connections" : [ {
-    "id" : "conn_sgKMLdfPlGhkyVKp9Ebr0$$4Qq-l9sb7IQTDrQSCmxf1_prophecy__temp_p77_post_Deduplicate_2_0",
-    "source" : "sgKMLdfPlGhkyVKp9Ebr0$$4Qq-l9sb7IQTDrQSCmxf1",
-    "sourcePort" : "TBt8uOYczlv__k013rzbU$$fIckSEFrloAV5yRJHwrj5",
-    "target" : "prophecy__temp_p77_post_Deduplicate_2_0",
-    "targetPort" : "input_port_6_1"
+    "id" : "conn_DnzNzUJfL6L8Tbwgdyj9W$$bedZYdg1d3Spak50bRvsh_prophecy__temp_p77_post_Filter_1_0",
+    "source" : "DnzNzUJfL6L8Tbwgdyj9W$$bedZYdg1d3Spak50bRvsh",
+    "sourcePort" : "QOifh3nhaCi5je1X8cfAy$$3Rzjiu3L7lKwB_1yvI_kf",
+    "target" : "prophecy__temp_p77_post_Filter_1_0",
+    "targetPort" : "input_port_3_1"
   } ],
   "component" : "Model"
 }

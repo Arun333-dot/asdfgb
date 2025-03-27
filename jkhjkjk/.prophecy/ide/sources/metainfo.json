@@ -27,7 +27,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "WzixtcyzrsQAeyzB-zYxl$$tm1L42ciYxc4KO6pxH0LZ",
+        "label" : "OrchestrationSource_0"
+      } ]
     },
     "p1" : {
       "id" : "p1",
@@ -67,6 +70,9 @@
       },
       "preview" : [ ],
       "sources" : [ {
+        "id" : "otv0KSybuxSoZ3j9rat7s$$hj2rd4mUMpa87_ez8faca",
+        "label" : "OrchestrationSource_1"
+      }, {
         "id" : "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh",
         "label" : "OrchestrationSource_0"
       } ]

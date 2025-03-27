@@ -71,6 +71,41 @@
         "isCustomOutputSchema" : false
       }
     },
+    "otv0KSybuxSoZ3j9rat7s$$hj2rd4mUMpa87_ez8faca" : {
+      "id" : "otv0KSybuxSoZ3j9rat7s$$hj2rd4mUMpa87_ez8faca",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -320,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "9vJmUsw8XqxDevfQWRnEu$$XJ8e3cTdCnXrWPjGh7uDm",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "3gfQU5c7rGIMJ2wJXM9YQ$$Pp9VxyPkObpzuW8N71Soz" : {
       "id" : "3gfQU5c7rGIMJ2wJXM9YQ$$Pp9VxyPkObpzuW8N71Soz",
       "component" : "Email",
@@ -127,6 +162,33 @@
         } ],
         "outputs" : [ {
           "id" : "qOfQCBIn5QZwkMdp8qDQ_$$OBlMGsEJtHM5XGV8X5Z0P",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "DnzNzUJfL6L8Tbwgdyj9W$$bedZYdg1d3Spak50bRvsh" : {
+      "id" : "DnzNzUJfL6L8Tbwgdyj9W$$bedZYdg1d3Spak50bRvsh",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : -40,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wyy5aSGtpLjhw9ZMDRKn1$$EhdDpnhKOCoIRGVfpKloZ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "QOifh3nhaCi5je1X8cfAy$$3Rzjiu3L7lKwB_1yvI_kf",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -228,6 +290,39 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "GOlAwfo9B7Gm65bC3xWd8$$yQtEXSUihvND_zPNRUDd_",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "3BfE98Nebg2pqbR5HoX6x$$QnE1cSEI-9Ot0bHMM-86X" : {
+      "id" : "3BfE98Nebg2pqbR5HoX6x$$QnE1cSEI-9Ot0bHMM-86X",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -180,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "8IhU5N1b4_eelbl4TZAEF$$JgzSA5irKmMuGm3ynQtRA",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "UX_hwhxp6uNZN_MP6I-XY$$cMVkmSGX93zfZl4zV8RCn",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
