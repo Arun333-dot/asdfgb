@@ -14,11 +14,6 @@ with DAG():
         component = "Model", 
         modelName = "model_pipeline123123213_FlattenSchema_1"
     )
-    model_pipeline123123213_WindowFunction_1 = Task(
-        task_id = "model_pipeline123123213_WindowFunction_1", 
-        component = "Model", 
-        modelName = "model_pipeline123123213_WindowFunction_1"
-    )
     model_pipeline123123213_Aggregate_1 = Task(
         task_id = "model_pipeline123123213_Aggregate_1", 
         component = "Model", 
