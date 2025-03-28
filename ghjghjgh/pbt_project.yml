@@ -110,8 +110,17 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/p10/model_p10_WindowFunction_2.sql
+    - models/p10/model_p10_Macro_1.sql
     - models/p13/schema.yml
+    - models/p10/model_p10_Join_1.sql
+    - models/p10/model_p10_SetOperation_1.sql
+    - models/p10/model_p10_WindowFunction_1.sql
+    - models/p10/schema.yml
+    - models/p10/model_p10_Macro_2.sql
     - models/p13/model_p13_WindowFunction_1.sql
+    - models/p10/model_p10_Filter_2.sql
+    - models/p10/model_p10_Filter_1.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-03-25 07:28:28'
@@ -159,10 +168,10 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/p4/model_p4_OrderBy_1_1_1.sql
     - models/p4/schema.yml
-    - models/p4/model_p4_OrderBy_1_1_2.sql
+    - models/p4/model_p4_OrderBy_1_1_1.sql
     - models/p4/model_p4_Reformat_1_2.sql
+    - models/p4/model_p4_OrderBy_1_1_2.sql
     - models/p4/model_p4_OrderBy_1_1.sql
     - .prophecy/ide/pipelines/p4.json
     - pipelines/p4.py
@@ -209,6 +218,15 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/p10/model_p10_WindowFunction_2.sql
+    - models/p10/model_p10_Macro_1.sql
+    - models/p10/model_p10_Join_1.sql
+    - models/p10/model_p10_SetOperation_1.sql
+    - models/p10/model_p10_WindowFunction_1.sql
+    - models/p10/schema.yml
+    - models/p10/model_p10_Macro_2.sql
+    - models/p10/model_p10_Filter_2.sql
+    - models/p10/model_p10_Filter_1.sql
     - .prophecy/ide/pipelines/p10.json
     - pipelines/p10.py
     createdAt: '2025-03-25 16:12:17'

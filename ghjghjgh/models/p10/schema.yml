@@ -1,0 +1,60 @@
+---
+version: 2
+models:
+- name: "model_p10_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_SetOperation_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Macro_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Macro_2"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Join_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Filter_2"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_WindowFunction_2"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p10_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p10_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_Filter_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_Macro_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_Macro_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_SetOperation_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_WindowFunction_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_WindowFunction_2_0"
+    tags:
+    - "prophecy_temp"
