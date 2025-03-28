@@ -113,7 +113,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "tQDCx2nk4yktmI6gpf2I5",
+        "label" : "SFTPSource_0"
+      } ]
     }
   },
   "externalSources" : {

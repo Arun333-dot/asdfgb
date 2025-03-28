@@ -20,7 +20,57 @@
       "enabled" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "tQDCx2nk4yktmI6gpf2I5" : {
+      "id" : "tQDCx2nk4yktmI6gpf2I5",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/test_20recordssdfklmsdklfmklsdmfklmsdkmfklmsdlkf.csv"
+                }
+              } ]
+            }
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ec91250a-6d75-421c-a965-f4e432caab13",
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
