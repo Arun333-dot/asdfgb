@@ -16,7 +16,10 @@ with DAG():
         filePath = {
           "type": "concat_operation", 
           "properties": {
-            "elements": [{"type" : "literal", "properties" : {"value" : "/jsndjnasjdnajksdnajksdnajksdnaksjdnaskd"}}]
+            "elements": [{
+                            "type": "literal", 
+                            "properties": {"value" : "/jsndjnasjdnajksdnajksdnajksdnaksjdnaskddoes_not_Exist"}
+                          }]
           }
         }
     )
