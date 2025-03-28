@@ -13,7 +13,7 @@ with DAG(Schedule = Schedule):
             "elements": [{
                             "type": "literal", 
                             "properties": {
-                              "value": "/prophecy-sftp/aruns/test_20recordssdfklmsdklfmklsdmfklmsdkmfklmsdlkfthis_is_my_job.csv"
+                              "value": "/prophecy-sftp/aruns/test_20recordssdfklmsdklfmklsdmfklmsdkmndfgdfgdfgdfgdfmfklmsdlkf.csv"
                             }
                           }]
           }
