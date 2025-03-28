@@ -11,8 +11,8 @@
       "entityConfig" : {
         "alias" : "\"prophecy__temp_this_is_simple_project_pipeline_post_WindowFunction_1_0\"",
         "materialized" : "table",
-        "database" : "\"hive_metastore\"",
-        "schema" : "\"arun123\"",
+        "database" : "\"database\"",
+        "schema" : "\"default\"",
         "type" : "ModelConfig"
       }
     },

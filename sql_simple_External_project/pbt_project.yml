@@ -575,8 +575,11 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/this_is_simple_project_pipeline/model_this_is_simple_project_pipeline_WindowFunction_1.sql
+    - models/this_is_simple_project_pipeline/model_this_is_simple_project_pipeline_Deduplicate_1.sql
+    - models/this_is_simple_project_pipeline/model_this_is_simple_project_pipeline_Aggregate_1.sql
     - models/this_is_simple_project_pipeline/schema.yml
+    - models/this_is_simple_project_pipeline/model_this_is_simple_project_pipeline_Join_1.sql
+    - models/this_is_simple_project_pipeline/model_this_is_simple_project_pipeline_WindowFunction_1.sql
     - .prophecy/ide/pipelines/this_is_simple_project_pipeline.json
     - pipelines/this_is_simple_project_pipeline.py
     createdAt: '2025-03-24 05:54:57'

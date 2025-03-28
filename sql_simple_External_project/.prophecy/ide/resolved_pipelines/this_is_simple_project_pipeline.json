@@ -12,6 +12,130 @@
     }
   },
   "processes" : {
+    "inLd1oQlQEHa4orL54ytU$$EnuIi4k-PYTcJ1MGOrBbM" : {
+      "id" : "inLd1oQlQEHa4orL54ytU$$EnuIi4k-PYTcJ1MGOrBbM",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_this_is_simple_project_pipeline_Deduplicate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_this_is_simple_project_pipeline_Deduplicate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_this_is_simple_project_pipeline_post_Deduplicate_1_0", "inLd1oQlQEHa4orL54ytU$$EnuIi4k-PYTcJ1MGOrBbM" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_this_is_simple_project_pipeline_Deduplicate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_this_is_simple_project_pipeline_Deduplicate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK" : {
+      "id" : "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -2000,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YqfcbZ81iRP2jdxkTD4xf$$esCr718KcnuE4QFmC26gO",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "mcczw-EFCTWeaMwNGw3Jv$$FXrZV93kL53QWkDKsKrxr" : {
+      "id" : "mcczw-EFCTWeaMwNGw3Jv$$FXrZV93kL53QWkDKsKrxr",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_this_is_simple_project_pipeline_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_this_is_simple_project_pipeline_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_this_is_simple_project_pipeline_post_Aggregate_1_0", "mcczw-EFCTWeaMwNGw3Jv$$FXrZV93kL53QWkDKsKrxr" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_this_is_simple_project_pipeline_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_this_is_simple_project_pipeline_Aggregate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "U_h_t1WAH4oI4aPECqX7S$$Y6l9qUpK4d49TcHFA_Spv" : {
+      "id" : "U_h_t1WAH4oI4aPECqX7S$$Y6l9qUpK4d49TcHFA_Spv",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : -560,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rOK2d81h-PXXnOF2LvZNf$$1jaH0-KBbjYHd2_jf2mWP",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "VLfNWljMgTzYaSmuY-GsE" : {
       "id" : "VLfNWljMgTzYaSmuY-GsE",
       "component" : "Dataset",
@@ -261,37 +385,29 @@
         "isCustomOutputSchema" : false
       }
     },
-    "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK" : {
-      "id" : "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK",
-      "component" : "OrchestrationSource",
-      "kind" : "DatabricksVolumeSource",
+    "l_ehSPqx8ZGjLKFX8u4ej$$UrJMAeIdRRsN47z0hl3Gq" : {
+      "id" : "l_ehSPqx8ZGjLKFX8u4ej$$UrJMAeIdRRsN47z0hl3Gq",
+      "component" : "Model",
       "metadata" : {
-        "label" : "OrchestrationSource_1",
-        "x" : -2000,
-        "y" : -920,
+        "label" : "model_this_is_simple_project_pipeline_Join_1",
         "phase" : 0
       },
       "properties" : {
-        "connector" : {
-          "kind" : "databricks",
-          "properties" : { },
-          "type" : "connector"
-        },
-        "properties" : { },
-        "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
-          "kind" : "csv",
-          "category" : "file"
-        }
+        "modelName" : "model_this_is_simple_project_pipeline_Join_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_this_is_simple_project_pipeline_post_Join_1_0", "l_ehSPqx8ZGjLKFX8u4ej$$UrJMAeIdRRsN47z0hl3Gq" ],
+        "type" : "table",
+        "isTemporaryTable" : true
       },
       "ports" : {
-        "inputs" : [ ],
+        "inputs" : [ {
+          "id" : "model_this_is_simple_project_pipeline_Join_1_in_1",
+          "slug" : "in_1"
+        } ],
         "outputs" : [ {
-          "id" : "YqfcbZ81iRP2jdxkTD4xf$$esCr718KcnuE4QFmC26gO",
-          "slug" : "out"
+          "id" : "model_this_is_simple_project_pipeline_Join_1_out_1",
+          "slug" : "out_1"
         } ],
         "isCustomOutputSchema" : false
       }
