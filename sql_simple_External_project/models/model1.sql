@@ -35,6 +35,14 @@ Limit_1 AS (
 
 ),
 
+all_type_databricks AS (
+
+  SELECT * 
+  
+  FROM {{ source('qa_team.qa_database', 'all_type_databricks') }}
+
+),
+
 Filter_1 AS (
 
   SELECT * 

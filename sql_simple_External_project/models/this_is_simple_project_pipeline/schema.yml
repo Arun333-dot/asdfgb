@@ -1,0 +1,36 @@
+---
+version: 2
+models:
+- name: "model_this_is_simple_project_pipeline_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_this_is_simple_project_pipeline_Aggregate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_this_is_simple_project_pipeline_Deduplicate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_this_is_simple_project_pipeline_Join_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_this_is_simple_project_pipeline_source"
+  database: "database"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_this_is_simple_project_pipeline_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_this_is_simple_project_pipeline_post_Deduplicate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_this_is_simple_project_pipeline_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_this_is_simple_project_pipeline_post_WindowFunction_1_0"
+    tags:
+    - "prophecy_temp"

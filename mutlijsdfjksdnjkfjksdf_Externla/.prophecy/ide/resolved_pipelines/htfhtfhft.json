@@ -1,0 +1,17 @@
+{
+  "id" : "htfhtfhft",
+  "metainfo" : {
+    "label" : "htfhtfhft",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

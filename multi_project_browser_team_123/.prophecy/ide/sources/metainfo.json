@@ -1,0 +1,84 @@
+{
+  "name" : "multi_project_browser_team_123",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "pipeline123123213" : {
+      "id" : "pipeline123123213",
+      "name" : "pipeline123123213",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/pipeline123123213.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "C5aDRRRuN7qzhbGetnPe_$$wJDsVVFALS4a5HI2DD6J3",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "hjghjgh" : {
+      "id" : "hjghjgh",
+      "name" : "hjghjgh",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/hjghjgh.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "ghghhj" : {
+      "id" : "ghghhj",
+      "name" : "ghghhj",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/ghghhj.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "uC8K8Tk8GDt3vCRHE39xf$$zaj-TJ6FFH_zKchULTNmT",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "multi_project_browser_team_123/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

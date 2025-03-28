@@ -11,7 +11,457 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "inLd1oQlQEHa4orL54ytU$$EnuIi4k-PYTcJ1MGOrBbM" : {
+      "id" : "inLd1oQlQEHa4orL54ytU$$EnuIi4k-PYTcJ1MGOrBbM",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "x" : -280,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AGifdaByt0jZOm1v6M8Kt$$RvZVxIJLwSQqav0asoJTj",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "FOMTghDxhUVMGihLbyaYd$$RrabzrfK7z0otvSfj2nKC",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK" : {
+      "id" : "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -2000,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YqfcbZ81iRP2jdxkTD4xf$$esCr718KcnuE4QFmC26gO",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "mcczw-EFCTWeaMwNGw3Jv$$FXrZV93kL53QWkDKsKrxr" : {
+      "id" : "mcczw-EFCTWeaMwNGw3Jv$$FXrZV93kL53QWkDKsKrxr",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : -420,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rRTH38O8kQZymMD_S6dxM$$QpZQjD5MkaXuBPXWLd0tT",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "JovVFanjmTymIMwUrjwHQ$$wxZWJreSry1QZ-lnNUCj2",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "U_h_t1WAH4oI4aPECqX7S$$Y6l9qUpK4d49TcHFA_Spv" : {
+      "id" : "U_h_t1WAH4oI4aPECqX7S$$Y6l9qUpK4d49TcHFA_Spv",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : -560,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rOK2d81h-PXXnOF2LvZNf$$1jaH0-KBbjYHd2_jf2mWP",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "VLfNWljMgTzYaSmuY-GsE" : {
+      "id" : "VLfNWljMgTzYaSmuY-GsE",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "all_type_databricks",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "all_type_databricks",
+          "sourceType" : "Source",
+          "sourceName" : "qa_team.qa_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oYyXErccP8pn2Kednlszx",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "2kMizqCkEnTHg-2SJV4w6",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "tiny_value",
+              "dataType" : {
+                "type" : "TinyInt"
+              }
+            }, {
+              "name" : "small_value",
+              "dataType" : {
+                "type" : "SmallInt"
+              }
+            }, {
+              "name" : "big_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "is_active",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "salary",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "float_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "double_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "binary_data",
+              "dataType" : {
+                "type" : "Binary"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_at_ntz",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "birth_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "interval_value",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interval_seconds",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "metadata",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "int_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "float_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Float"
+                }
+              }
+            }, {
+              "name" : "boolean_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Boolean"
+                }
+              }
+            }, {
+              "name" : "decimal_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Decimal"
+                }
+              }
+            }, {
+              "name" : "timestamp_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Timestamp"
+                }
+              }
+            }, {
+              "name" : "date_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Date"
+                }
+              }
+            }, {
+              "name" : "struct_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "type",
+                    "dataType" : {
+                      "type" : "String"
+                    },
+                    "description" : "Type field within the structured data array"
+                  }, {
+                    "name" : "value",
+                    "dataType" : {
+                      "type" : "Integer"
+                    },
+                    "description" : "Value associated with each entry in the structured array"
+                  } ]
+                }
+              }
+            }, {
+              "name" : "array_of_arrays",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }
+              }
+            }, {
+              "name" : "struct_of_array",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  },
+                  "description" : "Name associated with the structured array"
+                }, {
+                  "name" : "values",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  },
+                  "description" : "Values contained within the structured array"
+                } ]
+              }
+            }, {
+              "name" : "struct_of_array_of_structs",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  },
+                  "description" : "Unique identifier for the structure containing an array of structs."
+                }, {
+                  "name" : "details",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Struct",
+                      "fields" : [ {
+                        "name" : "key",
+                        "dataType" : {
+                          "type" : "String"
+                        },
+                        "description" : "Key value within each detail struct."
+                      }, {
+                        "name" : "val",
+                        "dataType" : {
+                          "type" : "Integer"
+                        },
+                        "description" : "Value associated with each key in the structured array of structs."
+                      } ]
+                    }
+                  },
+                  "description" : "Array of details associated with the structure."
+                } ]
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "l_ehSPqx8ZGjLKFX8u4ej$$UrJMAeIdRRsN47z0hl3Gq" : {
+      "id" : "l_ehSPqx8ZGjLKFX8u4ej$$UrJMAeIdRRsN47z0hl3Gq",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "x" : -140,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : ""
+          },
+          "joinType" : "inner",
+          "rightAlias" : null
+        } ],
+        "expressions" : [ ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AG2htX8Px68I-t1SnZ41x$$edR4jDrEp5K5IRuBXC2ac",
+          "slug" : "in0"
+        }, {
+          "id" : "fxYFPDFZ4usL7lofXQFpm$$qJG5y_DC5O5KraC8res3F",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "UpQIBxqPkovSsKZreoaiu$$cYt5A2DB_0_inyjrylgxh",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "mJF9N0kOR1upvAXrp3PhO$$SQrYzKL3MCjq5ZJqTuCLr" : {
+      "id" : "mJF9N0kOR1upvAXrp3PhO$$SQrYzKL3MCjq5ZJqTuCLr",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -1860,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "r-h3J7moTxgkHBrTovxcD$$jFPzhDK_5Ykd9EPPgHs-2",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "YKAmdTHNw4JOV-3xH2sbJ$$W5wKEkFq2KzXc4SseeHe7",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
