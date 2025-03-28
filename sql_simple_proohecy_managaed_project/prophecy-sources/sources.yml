@@ -1,0 +1,187 @@
+---
+version: 2
+sources:
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  tables:
+  - name: "all_type_databricks"
+    description: "Comprehensive dataset capturing diverse data types and structures,\
+      \ enabling detailed analysis of user attributes and behaviors."
+    columns:
+    - name: "id"
+      description: "Unique identifier for each record"
+      dataType:
+        type: "Integer"
+    - name: "tiny_value"
+      description: "A small integer value representing a specific metric"
+      dataType:
+        type: "TinyInt"
+    - name: "small_value"
+      description: "A small integer value used for categorization or ranking"
+      dataType:
+        type: "SmallInt"
+    - name: "big_value"
+      description: "A large numerical value representing significant data"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      description: "The name associated with the record"
+      dataType:
+        type: "String"
+    - name: "is_active"
+      description: "Indicates whether the record is currently active"
+      dataType:
+        type: "Boolean"
+    - name: "salary"
+      description: "The salary amount associated with the individual"
+      dataType:
+        type: "String"
+    - name: "float_value"
+      description: "A floating-point value representing a specific measurement"
+      dataType:
+        type: "Float"
+    - name: "double_value"
+      description: "A double-precision value used for more accurate measurements"
+      dataType:
+        type: "Double"
+    - name: "binary_data"
+      description: "Raw binary data associated with the record"
+      dataType:
+        type: "Binary"
+    - name: "created_at"
+      description: "Timestamp indicating when the record was created"
+      dataType:
+        type: "Timestamp"
+    - name: "created_at_ntz"
+      description: "Timestamp indicating when the record was created without timezone\
+        \ information"
+      dataType:
+        type: "Timestamp"
+    - name: "birth_date"
+      description: "The date of birth of the individual"
+      dataType:
+        type: "Date"
+    - name: "interval_value"
+      description: "Descriptive representation of a time interval"
+      dataType:
+        type: "String"
+    - name: "interval_seconds"
+      description: "Numeric representation of a time interval in seconds"
+      dataType:
+        type: "String"
+    - name: "metadata"
+      description: "Additional information related to the record"
+      dataType:
+        type: "String"
+    - name: "int_array"
+      description: "Array of integer values associated with the record"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Integer"
+    - name: "float_array"
+      description: "Array of float values associated with the record"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Float"
+    - name: "boolean_array"
+      description: "Array of boolean values representing various flags"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Boolean"
+    - name: "decimal_array"
+      description: "Array of decimal values for precise numerical data"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Decimal"
+    - name: "timestamp_array"
+      description: "Array of timestamps indicating specific moments in time"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Timestamp"
+    - name: "date_array"
+      description: "Array of dates associated with the record"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Date"
+    - name: "struct_array"
+      description: "Array of structured data containing type and value"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Struct"
+          fields:
+          - name: "type"
+            dataType:
+              type: "String"
+            description: "Type field within the structured data array"
+          - name: "value"
+            dataType:
+              type: "Integer"
+            description: "Value associated with each entry in the structured array"
+    - name: "array_of_arrays"
+      description: "Array containing multiple arrays of integers"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Array"
+          dataType:
+            type: "Integer"
+    - name: "struct_of_array"
+      description: "Structured data containing a name and an array of integer values"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "name"
+          dataType:
+            type: "String"
+          description: "Name associated with the structured array"
+        - name: "values"
+          dataType:
+            type: "Array"
+            dataType:
+              type: "Integer"
+          description: "Values contained within the structured array"
+    - name: "struct_of_array_of_structs"
+      description: "Structured data containing arrays of key-value pairs"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "id"
+          dataType:
+            type: "Integer"
+          description: "Unique identifier for the structure containing an array of\
+            \ structs."
+        - name: "details"
+          dataType:
+            type: "Array"
+            dataType:
+              type: "Struct"
+              fields:
+              - name: "key"
+                dataType:
+                  type: "String"
+                description: "Key value within each detail struct."
+              - name: "val"
+                dataType:
+                  type: "Integer"
+                description: "Value associated with each key in the structured array\
+                  \ of details."
+          description: "Array of details associated with the structure."
+    type: "table"
+  - name: "join"
+    columns: []
+    type: "table"
+- name: "main.information_schema"
+  database: "main"
+  schema: "information_schema"
+  tables:
+  - name: "routine_privileges"
+    columns: []
+    type: "table"

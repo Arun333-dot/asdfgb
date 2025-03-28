@@ -4,8 +4,6 @@ sources:
 - name: "hive_metastore.arun123"
   database: "hive_metastore"
   schema: "arun123"
-  config:
-    enabled: true
   tables:
   - name: "million_records"
     description: "A comprehensive dataset of individuals, capturing their names, cities,\
@@ -14,19 +12,491 @@ sources:
       identifier: true
     columns:
     - name: "ID"
-      description: "Unique identifier for each record"
       dataType:
         type: "Bigint"
     - name: "Name"
-      description: "The name of the individual"
       dataType:
         type: "String"
     - name: "Age"
-      description: "The age of the individual"
       dataType:
         type: "Bigint"
     - name: "City"
-      description: "The city where the individual resides"
+      dataType:
+        type: "String"
+    type: "table"
+  - name: "employees_2"
+    columns:
+    - name: "ID"
+      dataType:
+        type: "Bigint"
+    - name: "Name"
+      dataType:
+        type: "String"
+    - name: "Age"
+      dataType:
+        type: "Bigint"
+    - name: "City"
+      dataType:
+        type: "String"
+    - name: "Salary"
+      dataType:
+        type: "Double"
+    type: "view"
+- name: "qa_team.default"
+  database: "qa_team"
+  schema: "default"
+  tables:
+  - name: "seed22"
+    columns:
+    - name: "qw89"
+      dataType:
+        type: "String"
+    - name: "87"
+      dataType:
+        type: "Bigint"
+    type: "table"
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  tables:
+  - name: "store"
+    description: "Store location and operational details, aiding in market analysis\
+      \ and management of retail outlets."
+    columns:
+    - name: "S_STORE_SK"
+      description: "Unique identifier for the store"
+      dataType:
+        type: "Decimal"
+    - name: "S_STORE_ID"
+      description: "Store identification number"
+      dataType:
+        type: "String"
+    - name: "S_REC_START_DATE"
+      description: "The date when the store record became effective"
+      dataType:
+        type: "Date"
+    - name: "S_REC_END_DATE"
+      description: "The date when the store record was no longer effective"
+      dataType:
+        type: "Date"
+    - name: "S_CLOSED_DATE_SK"
+      description: "The unique identifier for the date when the store was closed"
+      dataType:
+        type: "Decimal"
+    - name: "S_STORE_NAME"
+      description: "The name of the store"
+      dataType:
+        type: "String"
+    - name: "S_NUMBER_EMPLOYEES"
+      description: "Total number of employees working at the store"
+      dataType:
+        type: "Decimal"
+    - name: "S_FLOOR_SPACE"
+      description: "Total floor space available in the store"
+      dataType:
+        type: "Decimal"
+    - name: "S_HOURS"
+      description: "Operating hours of the store"
+      dataType:
+        type: "String"
+    - name: "S_MANAGER"
+      description: "Name of the store manager"
+      dataType:
+        type: "String"
+    - name: "S_MARKET_ID"
+      description: "Unique identifier for the market in which the store operates"
+      dataType:
+        type: "Decimal"
+    - name: "S_GEOGRAPHY_CLASS"
+      description: "Classification of the geographical area where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_MARKET_DESC"
+      description: "Description of the market where the store operates"
+      dataType:
+        type: "String"
+    - name: "S_MARKET_MANAGER"
+      description: "Name of the manager responsible for the market"
+      dataType:
+        type: "String"
+    - name: "S_DIVISION_ID"
+      description: "Unique identifier for the division to which the store belongs"
+      dataType:
+        type: "Decimal"
+    - name: "S_DIVISION_NAME"
+      description: "Name of the division associated with the store"
+      dataType:
+        type: "String"
+    - name: "S_COMPANY_ID"
+      description: "Unique identifier for the company operating the store"
+      dataType:
+        type: "Decimal"
+    - name: "S_COMPANY_NAME"
+      description: "Name of the company that owns the store"
+      dataType:
+        type: "String"
+    - name: "S_STREET_NUMBER"
+      description: "Street number of the store's location"
+      dataType:
+        type: "String"
+    - name: "S_STREET_NAME"
+      description: "Name of the street where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_STREET_TYPE"
+      description: "Type of street where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_SUITE_NUMBER"
+      description: "Suite number of the store within a building"
+      dataType:
+        type: "String"
+    - name: "S_CITY"
+      description: "City where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_COUNTY"
+      description: "County where the store is situated"
+      dataType:
+        type: "String"
+    - name: "S_STATE"
+      description: "The state where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_ZIP"
+      description: "The ZIP code for the store's address"
+      dataType:
+        type: "String"
+    - name: "S_COUNTRY"
+      description: "Country where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_GMT_OFFSET"
+      description: "Time zone offset of the store from GMT"
+      dataType:
+        type: "Decimal"
+    - name: "S_TAX_PRECENTAGE"
+      description: "The percentage of tax applied to sales at the store"
+      dataType:
+        type: "Decimal"
+    type: "table"
+  - name: "9999rows_lessthan2mb"
+    columns: []
+    type: "table"
+  - name: "call_center"
+    columns: []
+    type: "table"
+  - name: "all_type_databricks"
+    description: "Comprehensive dataset capturing various data types and structures,\
+      \ enabling diverse analytical insights across multiple dimensions."
+    columns:
+    - name: "id"
+      description: "Unique identifier for each record"
+      dataType:
+        type: "Integer"
+    - name: "tiny_value"
+      description: "A small integer value for specific categorization"
+      dataType:
+        type: "TinyInt"
+    - name: "small_value"
+      description: "A small integer value used for various calculations"
+      dataType:
+        type: "SmallInt"
+    - name: "big_value"
+      description: "A large integer value representing significant data"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      description: "The name associated with the record"
+      dataType:
+        type: "String"
+    - name: "is_active"
+      description: "Indicates whether the record is currently active"
+      dataType:
+        type: "Boolean"
+    - name: "salary"
+      description: "The salary information of the individual"
+      dataType:
+        type: "String"
+    - name: "float_value"
+      description: "A floating-point value representing a measurement"
+      dataType:
+        type: "Float"
+    - name: "double_value"
+      description: "A double-precision value used for more accurate measurements"
+      dataType:
+        type: "Double"
+    - name: "binary_data"
+      description: "Raw binary data associated with the record"
+      dataType:
+        type: "Binary"
+    - name: "created_at"
+      description: "Timestamp indicating when the record was created"
+      dataType:
+        type: "Timestamp"
+    - name: "created_at_ntz"
+      description: "Timestamp indicating when the record was created without timezone\
+        \ information"
+      dataType:
+        type: "Timestamp"
+    - name: "birth_date"
+      description: "The date of birth of the individual"
+      dataType:
+        type: "Date"
+    - name: "interval_value"
+      description: "A string representation of a time interval"
+      dataType:
+        type: "String"
+    - name: "interval_seconds"
+      description: "The duration of the interval expressed in seconds"
+      dataType:
+        type: "String"
+    - name: "metadata"
+      description: "Additional information related to the record"
+      dataType:
+        type: "String"
+    - name: "int_array"
+      description: "Array of integer values associated with the record"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Integer"
+    - name: "float_array"
+      description: "Array of float values associated with the record"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Float"
+    - name: "boolean_array"
+      description: "Array of boolean values representing various flags"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Boolean"
+    - name: "decimal_array"
+      description: "Array of decimal values for precise numerical data"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Decimal"
+    - name: "timestamp_array"
+      description: "Array of timestamps indicating specific moments in time"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Timestamp"
+    - name: "date_array"
+      description: "Array of dates associated with the records"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Date"
+    - name: "struct_array"
+      description: "Array of structured data containing type and value"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Struct"
+          fields:
+          - name: "type"
+            dataType:
+              type: "String"
+            description: "Type field within the structured data array"
+          - name: "value"
+            dataType:
+              type: "Integer"
+            description: "Value associated with each entry in the structured array"
+    - name: "array_of_arrays"
+      description: "Array containing multiple arrays of integers"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Array"
+          dataType:
+            type: "Integer"
+    - name: "struct_of_array"
+      description: "Structured data containing a name and an array of values"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "name"
+          dataType:
+            type: "String"
+          description: "Name associated with the structured array"
+        - name: "values"
+          dataType:
+            type: "Array"
+            dataType:
+              type: "Integer"
+          description: "Values contained within the structured array"
+    - name: "struct_of_array_of_structs"
+      description: "Structured data containing arrays of key-value pairs"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "id"
+          dataType:
+            type: "Integer"
+          description: "Unique identifier for the structure containing an array of\
+            \ structs."
+        - name: "details"
+          dataType:
+            type: "Array"
+            dataType:
+              type: "Struct"
+              fields:
+              - name: "key"
+                dataType:
+                  type: "String"
+                description: "Key value within each detail struct."
+              - name: "val"
+                dataType:
+                  type: "Integer"
+                description: "Value associated with each key in the structured array\
+                  \ of structs."
+          description: "Array of details associated with the structure."
+    type: "table"
+- name: "main.information_schema"
+  database: "main"
+  schema: "information_schema"
+  tables:
+  - name: "columns"
+    description: "Metadata about database table columns, providing insights into data\
+      \ structure and characteristics for better data management."
+    columns:
+    - name: "table_catalog"
+      description: "The catalog name of the database containing the table"
+      dataType:
+        type: "String"
+    - name: "table_schema"
+      description: "The schema name within the database for the table"
+      dataType:
+        type: "String"
+    - name: "table_name"
+      description: "The name of the table in the database"
+      dataType:
+        type: "String"
+    - name: "column_name"
+      description: "Name of the column in the table"
+      dataType:
+        type: "String"
+    - name: "ordinal_position"
+      description: "Position of the column within the table"
+      dataType:
+        type: "Integer"
+    - name: "column_default"
+      description: "Default value assigned to the column"
+      dataType:
+        type: "String"
+    - name: "is_nullable"
+      description: "Indicates whether the column can accept null values."
+      dataType:
+        type: "String"
+    - name: "full_data_type"
+      description: "The complete data type description of the column."
+      dataType:
+        type: "String"
+    - name: "data_type"
+      description: "The basic data type of the column."
+      dataType:
+        type: "String"
+    - name: "character_maximum_length"
+      description: "Maximum length of character data in the column"
+      dataType:
+        type: "Bigint"
+    - name: "character_octet_length"
+      description: "Total byte length of character data in the column"
+      dataType:
+        type: "Bigint"
+    - name: "numeric_precision"
+      description: "Precision of numeric data in the column"
+      dataType:
+        type: "Integer"
+    - name: "numeric_precision_radix"
+      description: "Radix used for numeric precision calculations."
+      dataType:
+        type: "Integer"
+    - name: "numeric_scale"
+      description: "The scale of the numeric value indicating the number of digits\
+        \ to the right of the decimal point."
+      dataType:
+        type: "Integer"
+    - name: "datetime_precision"
+      description: "Precision of the datetime value, indicating the level of detail."
+      dataType:
+        type: "Integer"
+    - name: "interval_type"
+      description: "Type of interval defined for the column"
+      dataType:
+        type: "String"
+    - name: "interval_precision"
+      description: "Precision of the interval value"
+      dataType:
+        type: "Integer"
+    - name: "maximum_cardinality"
+      description: "Maximum number of values that can be stored in the column"
+      dataType:
+        type: "Bigint"
+    - name: "is_identity"
+      description: "Indicates whether the column is an identity column"
+      dataType:
+        type: "String"
+    - name: "identity_generation"
+      description: "Specifies the method of identity value generation"
+      dataType:
+        type: "String"
+    - name: "identity_start"
+      description: "The starting value for the identity column"
+      dataType:
+        type: "String"
+    - name: "identity_increment"
+      description: "The value by which the identity column will increase with each\
+        \ new record."
+      dataType:
+        type: "String"
+    - name: "identity_maximum"
+      description: "The maximum value that can be assigned to the identity column."
+      dataType:
+        type: "String"
+    - name: "identity_minimum"
+      description: "The minimum value that can be assigned to the identity column."
+      dataType:
+        type: "String"
+    - name: "identity_cycle"
+      description: "Indicates if the identity column cycles when it reaches its maximum\
+        \ value."
+      dataType:
+        type: "String"
+    - name: "is_generated"
+      description: "Indicates whether the column value is generated automatically."
+      dataType:
+        type: "String"
+    - name: "generation_expression"
+      description: "Expression used to generate the value for the column."
+      dataType:
+        type: "String"
+    - name: "is_system_time_period_start"
+      description: "Indicates if the column marks the start of a system time period."
+      dataType:
+        type: "String"
+    - name: "is_system_time_period_end"
+      description: "Indicates if the column marks the end of a system time period."
+      dataType:
+        type: "String"
+    - name: "system_time_period_timestamp_generation"
+      description: "Specifies how timestamps for the system time period are generated."
+      dataType:
+        type: "String"
+    - name: "is_updatable"
+      description: "Indicates whether the column can be updated"
+      dataType:
+        type: "String"
+    - name: "partition_index"
+      description: "Index indicating the partitioning of the table"
+      dataType:
+        type: "Integer"
+    - name: "comment"
+      description: "Description or notes about the column"
       dataType:
         type: "String"
     type: "table"

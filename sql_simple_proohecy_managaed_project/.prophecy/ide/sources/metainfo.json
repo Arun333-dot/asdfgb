@@ -42,6 +42,28 @@
       "preview" : [ ],
       "sources" : [ ]
     },
+    "mysql_pipeline" : {
+      "id" : "mysql_pipeline",
+      "name" : "mysql_pipeline",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/mysql_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "ml_ncoVLn0r8YEiy53mdq",
+        "label" : "MSSQLSource_0"
+      }, {
+        "id" : "DI2s3rW0uxoZ9iQT_Mt67",
+        "label" : "MSSQLSource_1"
+      }, {
+        "id" : "2j7jmjady12JQiey5GtY8",
+        "label" : "MSSQLSource_2"
+      } ]
+    },
     "p3" : {
       "id" : "p3",
       "name" : "p3",
@@ -55,6 +77,22 @@
       "preview" : [ ],
       "sources" : [ ]
     },
+    "ppipeline333" : {
+      "id" : "ppipeline333",
+      "name" : "ppipeline333",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/ppipeline333.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "Myi8PUEO8WUVMcsdr1oHZ",
+        "label" : "MSSQLSource_0"
+      } ]
+    },
     "p2" : {
       "id" : "p2",
       "name" : "p2",
@@ -66,7 +104,13 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "R2HLGG_UA0qNDAfTZ1FkU",
+        "label" : "MSSQLSource_0"
+      }, {
+        "id" : "EZNKfITM56ol0lw4jchlb",
+        "label" : "MSSQLSource_1"
+      } ]
     },
     "p1" : {
       "id" : "p1",
@@ -75,11 +119,51 @@
       "config" : {
         "schema" : {
           "type" : "record",
+          "fields" : [ {
+            "name" : "rwerwerwe",
+            "kind" : {
+              "type" : "string",
+              "value" : "'werererwewr'"
+            }
+          } ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "YVbqBgHcHDPW8p0CkVQTu",
+        "label" : "DatabricksSource_1"
+      }, {
+        "id" : "ldq-bmqyUmSPwfWoSYTip",
+        "label" : "DatabricksSource_3"
+      }, {
+        "id" : "ILZZjFESaH9T0aEA8RWuv",
+        "label" : "DatabricksSource_0"
+      }, {
+        "id" : "CrF99udYVvWLgaC4CuBwF",
+        "label" : "DatabricksSource_2"
+      }, {
+        "id" : "N9hASot3yEpur1zxg8ytG",
+        "label" : "DatabricksSource_4"
+      } ]
+    },
+    "p6" : {
+      "id" : "p6",
+      "name" : "p6",
+      "path" : "sql_simple_proohecy_managaed_project/.prophecy/ide/pipelines/p6.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
           "fields" : [ ]
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "I8a4LO9ad6azm4uUbqoKm",
+        "label" : "DatabricksSource_0"
+      }, {
+        "id" : "LuUHefE5cvDcfYtQ6aux1",
+        "label" : "DatabricksSource_1"
+      } ]
     }
   },
   "dependenciesContainer" : {

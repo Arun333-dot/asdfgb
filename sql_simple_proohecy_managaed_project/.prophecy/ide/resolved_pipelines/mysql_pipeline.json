@@ -1,0 +1,164 @@
+{
+  "id" : "mysql_pipeline",
+  "metainfo" : {
+    "label" : "mysql_pipeline",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "ml_ncoVLn0r8YEiy53mdq" : {
+      "id" : "ml_ncoVLn0r8YEiy53mdq",
+      "component" : "OrchestrationSource",
+      "kind" : "MSSQLSource",
+      "metadata" : {
+        "label" : "MSSQLSource_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "mssql",
+          "properties" : {
+            "id" : "dasadsads"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "mssql",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "Integer"
+                },
+                "description" : "Unique identifier for each record",
+                "name" : "id"
+              }, {
+                "dataType" : {
+                  "type" : "String"
+                },
+                "description" : "The name associated with the record",
+                "name" : "name"
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_database",
+            "name" : "test_table_rohit",
+            "schema" : "qa_schema"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "fc5130b2-e84f-48db-ba20-f9f0c1b40ee4",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "DI2s3rW0uxoZ9iQT_Mt67" : {
+      "id" : "DI2s3rW0uxoZ9iQT_Mt67",
+      "component" : "OrchestrationSource",
+      "kind" : "MSSQLSource",
+      "metadata" : {
+        "label" : "MSSQLSource_1",
+        "x" : -1000,
+        "y" : -100,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "mssql",
+          "properties" : {
+            "id" : "dasadsads"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "mssql",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_database",
+            "name" : "test_table",
+            "schema" : "qa_schema"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "15d0f576-ea17-4dd4-90f3-b4ffd3a00989",
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "2j7jmjady12JQiey5GtY8" : {
+      "id" : "2j7jmjady12JQiey5GtY8",
+      "component" : "OrchestrationSource",
+      "kind" : "MSSQLSource",
+      "metadata" : {
+        "label" : "MSSQLSource_2",
+        "x" : -720,
+        "y" : -320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "mssql",
+          "properties" : {
+            "id" : "dasadsads"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "mssql",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_database",
+            "name" : "pg",
+            "schema" : "qa_schema"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "972f57db-9ee0-4ae4-af80-4814743892de",
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

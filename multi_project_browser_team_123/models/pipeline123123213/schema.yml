@@ -1,0 +1,42 @@
+---
+version: 2
+models:
+- name: "model_pipeline123123213_Aggregate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline123123213_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline123123213_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline123123213_FlattenSchema_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline123123213_Join_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_pipeline123123213_source"
+  database: "hive_metastore"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_pipeline123123213_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline123123213_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline123123213_post_FlattenSchema_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline123123213_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline123123213_post_WindowFunction_1_0"
+    tags:
+    - "prophecy_temp"
