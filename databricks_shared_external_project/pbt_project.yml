@@ -1,0 +1,179 @@
+name: databricks_shared_external_project
+description: ''
+version: 0.0.1
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-26 12:13:48'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/m1:
+    name: m1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: table_catalog
+        dataType:
+          type: String
+      - name: table_schema
+        dataType:
+          type: String
+      - name: table_name
+        dataType:
+          type: String
+      - name: table_type
+        dataType:
+          type: String
+      - name: is_insertable_into
+        dataType:
+          type: String
+      - name: commit_action
+        dataType:
+          type: String
+      - name: table_owner
+        dataType:
+          type: String
+      - name: comment
+        dataType:
+          type: String
+      - name: created
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: last_altered
+        dataType:
+          type: Timestamp
+      - name: last_altered_by
+        dataType:
+          type: String
+      - name: data_source_format
+        dataType:
+          type: String
+      - name: storage_sub_directory
+        dataType:
+          type: String
+      - name: storage_path
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m1.sql
+    - .prophecy/ide/models/m1.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 12:20:44'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-26 12:13:50'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/main_information_schema:
+    name: main.information_schema
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-28 10:53:27'
+    tables:
+    - name: tables
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: table_catalog
+          dataType:
+            type: String
+        - name: table_schema
+          dataType:
+            type: String
+        - name: table_name
+          dataType:
+            type: String
+        - name: table_type
+          dataType:
+            type: String
+        - name: is_insertable_into
+          dataType:
+            type: String
+        - name: commit_action
+          dataType:
+            type: String
+        - name: table_owner
+          dataType:
+            type: String
+        - name: comment
+          dataType:
+            type: String
+        - name: created
+          dataType:
+            type: Timestamp
+        - name: created_by
+          dataType:
+            type: String
+        - name: last_altered
+          dataType:
+            type: Timestamp
+        - name: last_altered_by
+          dataType:
+            type: String
+        - name: data_source_format
+          dataType:
+            type: String
+        - name: storage_sub_directory
+          dataType:
+            type: String
+        - name: storage_path
+          dataType:
+            type: String
+      description: Metadata about database tables, providing insights into table ownership,
+        creation, and modification details.
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-28 10:53:27'
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines: {}
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2025-03-26 12:13:48'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
