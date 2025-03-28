@@ -86,12 +86,25 @@ sqlModels:
     createdAt: '2025-03-26 08:38:47'
   .prophecy/metadata/sqlmodels/m5:
     name: m5
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: STUDENT
+        dataType:
+          type: String
+      - name: SUBJECT
+        dataType:
+          type: String
+      - name: MARKS
+        dataType:
+          type: Number
     description: null
     author: arunsharma+admin@prophecy.io
     files:
     - models/m5.sql
     - .prophecy/ide/models/m5.json
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -127,7 +140,33 @@ sqlMacros:
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-26 08:24:08'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/BLACKROCK_TEST:
+    name: BLACKROCK.TEST
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-26 16:57:33'
+    tables:
+    - name: GRADES
+      schema:
+        entityType: ''
+        providerType: snowflake
+        fields:
+        - name: STUDENT
+          dataType:
+            type: String
+        - name: SUBJECT
+          dataType:
+            type: String
+        - name: MARKS
+          dataType:
+            type: Number
+      description: Student grades data for various subjects, enabling performance
+        tracking and assessment.
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-26 16:57:33'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines: {}
 sqlBusinessApps: {}
