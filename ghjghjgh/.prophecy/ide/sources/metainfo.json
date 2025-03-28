@@ -156,7 +156,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "BLqy2RVAZxBQRx5Egu8jm$$PKOR0xysG1uHtbufrRbsN",
+        "label" : "empty_output_csv"
+      } ]
     },
     "p2" : {
       "id" : "p2",

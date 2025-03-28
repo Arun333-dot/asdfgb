@@ -11,7 +11,57 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "BLqy2RVAZxBQRx5Egu8jm$$PKOR0xysG1uHtbufrRbsN" : {
+      "id" : "BLqy2RVAZxBQRx5Egu8jm$$PKOR0xysG1uHtbufrRbsN",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "empty_output_csv",
+        "x" : -820,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "category" : "file",
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "dfgdfgdfgdfg"
+                }
+              } ]
+            }
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "DjJ5rH5RnJJO4fM2BaCOP$$0b6hcluVau9KohSk0Tnou",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
