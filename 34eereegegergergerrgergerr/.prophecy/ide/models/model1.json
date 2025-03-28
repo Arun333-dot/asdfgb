@@ -1,0 +1,49 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##tdjB2aSv" : {
+      "id" : "model1##tdjB2aSv",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM in0\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xy1Sc6wL",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "SlKaD3lk",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
