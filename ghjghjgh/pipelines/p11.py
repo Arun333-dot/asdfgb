@@ -7,6 +7,6 @@ with DAG():
         format = CSVFormat(header = True, separator = ","), 
         filePath = {
           "type": "concat_operation", 
-          "properties": {"elements" : [{"type" : "literal", "properties" : {"value" : "dfgdfgdfgdfg"}}]}
+          "properties": {"elements" : [{"type" : "literal", "properties" : {"value" : "dfgdfgdfgdfg_ongithub"}}]}
         }
     )
