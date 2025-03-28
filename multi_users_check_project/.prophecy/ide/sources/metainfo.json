@@ -1,0 +1,48 @@
+{
+  "name" : "multi_users_check_project",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "asasdasd" : {
+      "id" : "asasdasd",
+      "name" : "asasdasd",
+      "path" : "multi_users_check_project/.prophecy/ide/pipelines/asasdasd.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "8wwTvt0_bRtynUWOTvz5S$$X3yuap_8tT-LYvcy3EKhQ",
+        "label" : "OrchestrationSource_1"
+      }, {
+        "id" : "X7F2nVBPA7mcGExH3lg1m$$34eCiof0VVkcSfPkRoLmg",
+        "label" : "OrchestrationSource_2"
+      }, {
+        "id" : "KAKT7f2-cZRsxsI88zObj$$jD0qRvQfTcVfXUQth9Fyv",
+        "label" : "OrchestrationSource_0"
+      } ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

@@ -1,0 +1,17 @@
+{
+  "id" : "p4",
+  "metainfo" : {
+    "label" : "p4",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
