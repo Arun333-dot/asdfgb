@@ -260,6 +260,68 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK" : {
+      "id" : "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -2000,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YqfcbZ81iRP2jdxkTD4xf$$esCr718KcnuE4QFmC26gO",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "mJF9N0kOR1upvAXrp3PhO$$SQrYzKL3MCjq5ZJqTuCLr" : {
+      "id" : "mJF9N0kOR1upvAXrp3PhO$$SQrYzKL3MCjq5ZJqTuCLr",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_this_is_simple_project_pipeline_WindowFunction_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_this_is_simple_project_pipeline_WindowFunction_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_this_is_simple_project_pipeline_post_WindowFunction_1_0", "mJF9N0kOR1upvAXrp3PhO$$SQrYzKL3MCjq5ZJqTuCLr" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_this_is_simple_project_pipeline_WindowFunction_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_this_is_simple_project_pipeline_WindowFunction_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

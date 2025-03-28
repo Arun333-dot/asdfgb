@@ -250,7 +250,10 @@
           } ]
         }
       } ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK",
+        "label" : "OrchestrationSource_1"
+      } ]
     }
   },
   "externalSources" : {

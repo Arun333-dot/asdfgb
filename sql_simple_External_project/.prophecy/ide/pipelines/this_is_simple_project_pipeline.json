@@ -260,6 +260,74 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK" : {
+      "id" : "tToe1Rcpqkl4NO43XubDF$$XfYgFLSB63GByowQkQWJK",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -2000,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YqfcbZ81iRP2jdxkTD4xf$$esCr718KcnuE4QFmC26gO",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "mJF9N0kOR1upvAXrp3PhO$$SQrYzKL3MCjq5ZJqTuCLr" : {
+      "id" : "mJF9N0kOR1upvAXrp3PhO$$SQrYzKL3MCjq5ZJqTuCLr",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -1860,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "r-h3J7moTxgkHBrTovxcD$$jFPzhDK_5Ykd9EPPgHs-2",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "YKAmdTHNw4JOV-3xH2sbJ$$W5wKEkFq2KzXc4SseeHe7",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],
