@@ -1,0 +1,86 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "DPAeEwDgwWgUAH54v4bdC$$VzgJJGxfZ_-Utvolf4VKq" : {
+      "id" : "DPAeEwDgwWgUAH54v4bdC$$VzgJJGxfZ_-Utvolf4VKq",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -920,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "IE80PtEOrliHfrF-j4qFQ$$L0-pIL9ZtxO4_0wm4rG7B",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "ln9_MVKMnUoG3Et-UKoz4$$m4EsOoTZ67IXFYJQrlFf0" : {
+      "id" : "ln9_MVKMnUoG3Et-UKoz4$$m4EsOoTZ67IXFYJQrlFf0",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -780,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "1AyYl0cKPg3tWz3gJ1ZZJ$$TLXUTjM-UQUHCo_-lOYc4",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "KaS_SmMSvZgJV640ECUM8$$HFpaT34U-qgayaE1Wspvw",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

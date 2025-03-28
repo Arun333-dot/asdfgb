@@ -1,0 +1,266 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "cOyfUYdxDKBkShtR25ZbQ$$Clufn1Sx7f6ua07U6HhqH" : {
+      "id" : "cOyfUYdxDKBkShtR25ZbQ$$Clufn1Sx7f6ua07U6HhqH",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_WindowFunction_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_WindowFunction_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_WindowFunction_1_0", "cOyfUYdxDKBkShtR25ZbQ$$Clufn1Sx7f6ua07U6HhqH" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_WindowFunction_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_WindowFunction_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "dMFd9mItyYJyW5SPWWNcj$$6aKcGFsV8Yia-ksJtSgOu" : {
+      "id" : "dMFd9mItyYJyW5SPWWNcj$$6aKcGFsV8Yia-ksJtSgOu",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -240,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xMXXcFaWWTTrK_tlwRjtL$$ZGhVi0SE8o8j_PFIGuBPL",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "9mx3eY59vX38IgkJpc1Jo$$DGpq7zY97w5CRzxya8G1Y" : {
+      "id" : "9mx3eY59vX38IgkJpc1Jo$$DGpq7zY97w5CRzxya8G1Y",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_Aggregate_1_0", "9mx3eY59vX38IgkJpc1Jo$$DGpq7zY97w5CRzxya8G1Y" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_Aggregate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz" : {
+      "id" : "CsJ_5qqVF-WI7yV03FnAG$$oNcckN3C37y6dxu_gpyiz",
+      "component" : "OrchestrationTarget",
+      "kind" : "DatabricksVolumeTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -520,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "or4qS-5a0UQXVtqJnxuI6$$4UiA-KQujWgxeSsvDErxt",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Bdo6-dbFKDflCnQ78YLP1$$mmVJb8f4snPKJZ-OscwM1" : {
+      "id" : "Bdo6-dbFKDflCnQ78YLP1$$mmVJb8f4snPKJZ-OscwM1",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : 40,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VnwxLJK_6svif2cd_1fRd$$439swS1cSsN6rcToo4PoI",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Koa0WGOHtq8A6iRaaFvqr$$f41uKRrQNTHFyK6MiWOxz" : {
+      "id" : "Koa0WGOHtq8A6iRaaFvqr$$f41uKRrQNTHFyK6MiWOxz",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_Aggregate_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_Aggregate_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_Aggregate_2_0", "Koa0WGOHtq8A6iRaaFvqr$$f41uKRrQNTHFyK6MiWOxz" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_Aggregate_2_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_Aggregate_2_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "CoFceV3kAstUdl4FxN_PI$$n36D8Sy00weEB5E8DBbUF" : {
+      "id" : "CoFceV3kAstUdl4FxN_PI$$n36D8Sy00weEB5E8DBbUF",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_3",
+        "x" : 320,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZAZtMWHMKGQWMQsKJkXCO$$Dt2zLaoA4BqS61VNbkYQX",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "G-w2bzOVIIfTjY4hQihaM$$ISbtcL7WIooOFIpXql_be" : {
+      "id" : "G-w2bzOVIIfTjY4hQihaM$$ISbtcL7WIooOFIpXql_be",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_WindowFunction_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_WindowFunction_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_WindowFunction_2_0", "G-w2bzOVIIfTjY4hQihaM$$ISbtcL7WIooOFIpXql_be" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_WindowFunction_2_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_WindowFunction_2_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

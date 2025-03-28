@@ -1,0 +1,107 @@
+{
+  "name" : "mutlijsdfjksdnjkfjksdf_Externla",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "mutlijsdfjksdnjkfjksdf_Externla/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "hjjkhjkhjk" : {
+      "id" : "hjjkhjkhjk",
+      "name" : "hjjkhjkhjk",
+      "path" : "mutlijsdfjksdnjkfjksdf_Externla/.prophecy/ide/pipelines/hjjkhjkhjk.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "fghfghfgh" : {
+      "id" : "fghfghfgh",
+      "name" : "fghfghfgh",
+      "path" : "mutlijsdfjksdnjkfjksdf_Externla/.prophecy/ide/pipelines/fghfghfgh.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "mutlijsdfjksdnjkfjksdf_Externla/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "htfhtfhft" : {
+      "id" : "htfhtfhft",
+      "name" : "htfhtfhft",
+      "path" : "mutlijsdfjksdnjkfjksdf_Externla/.prophecy/ide/pipelines/htfhtfhft.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "mutlijsdfjksdnjkfjksdf_Externla/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "Y1pWp7C_vrEvJhyxIxjfz$$ypvo1FRshWMuY1QKbQi78",
+        "label" : "OrchestrationSource_0"
+      } ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}
