@@ -1,0 +1,53 @@
+{
+  "id" : "hhghghf",
+  "metainfo" : {
+    "label" : "hhghghf",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "mDtTCAStjOk06_Yps_ZA9$$lHA3o5h8V-0thv2uahfAG" : {
+      "id" : "mDtTCAStjOk06_Yps_ZA9$$lHA3o5h8V-0thv2uahfAG",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -560,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "tj3eMHTXi3m6wSrE4UgMR$$XjGK8x8bRKH2wfA6iZ_7z",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
