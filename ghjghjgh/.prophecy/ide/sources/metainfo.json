@@ -27,7 +27,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "A47C_2WfE-RWMxFXsMKTO$$fBSgyPW_9XpUSxtFe_SSV",
+        "label" : "empty_output_csv"
+      } ]
     },
     "p12" : {
       "id" : "p12",

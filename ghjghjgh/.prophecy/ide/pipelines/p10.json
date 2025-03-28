@@ -46,6 +46,55 @@
         "outputs" : [ ],
         "isCustomOutputSchema" : false
       }
+    },
+    "A47C_2WfE-RWMxFXsMKTO$$fBSgyPW_9XpUSxtFe_SSV" : {
+      "id" : "A47C_2WfE-RWMxFXsMKTO$$fBSgyPW_9XpUSxtFe_SSV",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "empty_output_csv",
+        "x" : -2000,
+        "y" : -600,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "category" : "file",
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "ghjghjhgjghjghjhjghjghjghjghjghjghjhg"
+                }
+              } ]
+            }
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "WKq4UFVzYIelkMTwIN_-j$$oU43JZlyz6sCMbsUbuaph",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],
