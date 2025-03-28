@@ -11,7 +11,76 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "ZPiYf_icCbjPAYtXs-8HO$$EnnV2nxC_eJ5_b7OqYTln" : {
+      "id" : "ZPiYf_icCbjPAYtXs-8HO$$EnnV2nxC_eJ5_b7OqYTln",
+      "component" : "OrchestrationTarget",
+      "kind" : "SharepointTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ZSFe9SZugqAY8vdo1KySk$$yfqFRv1nISGFqm_1gkbVk",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I" : {
+      "id" : "piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -880,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "LB47sBZtxMa_rglt1Aefc$$ebj9JtJDMvSrubPVEmE8_",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "OwGthcvjRHCSv_JTKn0zt$$prqWHOLKEK69cGQNdc7n7",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

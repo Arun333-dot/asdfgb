@@ -62,6 +62,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+nonadmin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p6.json
     - pipelines/p6.py
     createdAt: '2025-03-25 11:01:51'
   .prophecy/metadata/sqlorchestratorpipeline/p78:
@@ -70,6 +71,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p78.json
     - pipelines/p78.py
     createdAt: '2025-03-25 16:12:55'
   .prophecy/metadata/sqlorchestratorpipeline/p2:
@@ -78,6 +80,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p2.json
     - pipelines/p2.py
     createdAt: '2025-03-25 07:39:25'
   .prophecy/metadata/sqlorchestratorpipeline/p15:
@@ -86,6 +89,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p15.json
     - pipelines/p15.py
     createdAt: '2025-03-25 16:16:23'
   .prophecy/metadata/sqlorchestratorpipeline/p5:
@@ -97,6 +101,7 @@ sqlOrchestratorPipelines:
     - models/p5/model_p5_Limit_1.sql
     - models/p5/schema.yml
     - models/p5/model_p5_OrderBy_1.sql
+    - .prophecy/ide/pipelines/p5.json
     - pipelines/p5.py
     createdAt: '2025-03-25 10:15:41'
   .prophecy/metadata/sqlorchestratorpipeline/p1:
@@ -105,6 +110,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/p13/model_p13_WindowFunction_1.sql
+    - models/p13/schema.yml
+    - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-03-25 07:28:28'
   .prophecy/metadata/sqlorchestratorpipeline/p12:
@@ -113,6 +121,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p12.json
     - pipelines/p12.py
     createdAt: '2025-03-25 16:13:53'
   .prophecy/metadata/sqlorchestratorpipeline/p9:
@@ -121,6 +130,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p9.json
     - pipelines/p9.py
     createdAt: '2025-03-25 16:11:34'
   .prophecy/metadata/sqlorchestratorpipeline/p11:
@@ -129,6 +139,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p11.json
     - pipelines/p11.py
     createdAt: '2025-03-25 16:13:36'
   .prophecy/metadata/sqlorchestratorpipeline/p13:
@@ -137,6 +148,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/p13/model_p13_WindowFunction_1.sql
+    - models/p13/schema.yml
+    - .prophecy/ide/pipelines/p13.json
     - pipelines/p13.py
     createdAt: '2025-03-25 16:14:49'
   .prophecy/metadata/sqlorchestratorpipeline/p4:
@@ -145,11 +159,12 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/p4/model_p4_OrderBy_1_1_2.sql
     - models/p4/model_p4_OrderBy_1_1.sql
     - models/p4/schema.yml
-    - models/p4/model_p4_Reformat_1_2.sql
-    - models/p4/model_p4_OrderBy_1_1_2.sql
     - models/p4/model_p4_OrderBy_1_1_1.sql
+    - models/p4/model_p4_Reformat_1_2.sql
+    - .prophecy/ide/pipelines/p4.json
     - pipelines/p4.py
     createdAt: '2025-03-25 08:29:18'
   .prophecy/metadata/sqlorchestratorpipeline/p6777:
@@ -158,6 +173,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p6777.json
     - pipelines/p6777.py
     createdAt: '2025-03-25 16:37:25'
   .prophecy/metadata/sqlorchestratorpipeline/p21:
@@ -166,6 +182,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p21.json
     - pipelines/p21.py
     createdAt: '2025-03-25 19:37:49'
   .prophecy/metadata/sqlorchestratorpipeline/p14:
@@ -174,6 +191,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p14.json
     - pipelines/p14.py
     createdAt: '2025-03-25 16:15:46'
   .prophecy/metadata/sqlorchestratorpipeline/p8:
@@ -182,6 +200,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p8.json
     - pipelines/p8.py
     createdAt: '2025-03-25 16:11:07'
   .prophecy/metadata/sqlorchestratorpipeline/p10:
@@ -190,6 +209,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p10.json
     - pipelines/p10.py
     createdAt: '2025-03-25 16:12:17'
   .prophecy/metadata/sqlorchestratorpipeline/p677:
@@ -198,6 +218,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p677.json
     - pipelines/p677.py
     createdAt: '2025-03-25 16:36:04'
   .prophecy/metadata/sqlorchestratorpipeline/p3:
@@ -206,6 +227,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p3.json
     - pipelines/p3.py
     createdAt: '2025-03-25 08:08:04'
 sqlBusinessApps: {}

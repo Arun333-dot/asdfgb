@@ -11,7 +11,70 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "ZPiYf_icCbjPAYtXs-8HO$$EnnV2nxC_eJ5_b7OqYTln" : {
+      "id" : "ZPiYf_icCbjPAYtXs-8HO$$EnnV2nxC_eJ5_b7OqYTln",
+      "component" : "OrchestrationTarget",
+      "kind" : "SharepointTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ZSFe9SZugqAY8vdo1KySk$$yfqFRv1nISGFqm_1gkbVk",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I" : {
+      "id" : "piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p13_WindowFunction_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p13_WindowFunction_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p13_post_WindowFunction_1_0", "piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p13_WindowFunction_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p13_WindowFunction_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
