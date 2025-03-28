@@ -7,6 +7,8 @@ with DAG():
         format = CSVFormat(header = True, separator = ","), 
         filePath = {
           "type": "concat_operation", 
-          "properties": {"elements" : [{"type" : "literal", "properties" : {"value" : "dfgdfgdfgdfg_on_prophecy34567"}}]}
+          "properties": {
+            "elements": [{"type" : "literal", "properties" : {"value" : "dfgdfgdfgdfg_on_prophecy34567_this_is_local"}}]
+          }
         }
     )
