@@ -62,7 +62,7 @@
           "path" : "out",
           "id" : "out",
           "language" : "sql",
-          "content" : "this is local statement"
+          "content" : "this is github remote statement"
         } ]
       },
       "ports" : {
