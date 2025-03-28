@@ -25,6 +25,18 @@ models:
 - name: "model_p10_WindowFunction_2"
   tags:
   - "prophecy_temp"
+- name: "model_p10_Aggregate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Filter_3"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Join_2"
+  tags:
+  - "prophecy_temp"
+- name: "model_p10_Aggregate_2"
+  tags:
+  - "prophecy_temp"
 sources:
 - name: "prophecy__temp_p10_source"
   database: "hive_metastore"
@@ -34,13 +46,25 @@ sources:
   config:
     enabled: true
   tables:
+  - name: "prophecy__temp_p10_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_Aggregate_2_0"
+    tags:
+    - "prophecy_temp"
   - name: "prophecy__temp_p10_post_Filter_1_0"
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_p10_post_Filter_2_0"
     tags:
     - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_Filter_3_0"
+    tags:
+    - "prophecy_temp"
   - name: "prophecy__temp_p10_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_post_Join_2_0"
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_p10_post_Macro_1_0"

@@ -112,14 +112,18 @@ sqlOrchestratorPipelines:
     files:
     - models/p10/model_p10_WindowFunction_2.sql
     - models/p10/model_p10_Macro_1.sql
+    - models/p10/model_p10_Aggregate_2.sql
     - models/p13/schema.yml
     - models/p10/model_p10_Join_1.sql
     - models/p10/model_p10_SetOperation_1.sql
     - models/p10/model_p10_WindowFunction_1.sql
+    - models/p10/model_p10_Join_2.sql
     - models/p10/schema.yml
     - models/p10/model_p10_Macro_2.sql
+    - models/p10/model_p10_Aggregate_1.sql
     - models/p13/model_p13_WindowFunction_1.sql
     - models/p10/model_p10_Filter_2.sql
+    - models/p10/model_p10_Filter_3.sql
     - models/p10/model_p10_Filter_1.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
@@ -220,12 +224,16 @@ sqlOrchestratorPipelines:
     files:
     - models/p10/model_p10_WindowFunction_2.sql
     - models/p10/model_p10_Macro_1.sql
+    - models/p10/model_p10_Aggregate_2.sql
     - models/p10/model_p10_Join_1.sql
     - models/p10/model_p10_SetOperation_1.sql
     - models/p10/model_p10_WindowFunction_1.sql
+    - models/p10/model_p10_Join_2.sql
     - models/p10/schema.yml
     - models/p10/model_p10_Macro_2.sql
+    - models/p10/model_p10_Aggregate_1.sql
     - models/p10/model_p10_Filter_2.sql
+    - models/p10/model_p10_Filter_3.sql
     - models/p10/model_p10_Filter_1.sql
     - .prophecy/ide/pipelines/p10.json
     - pipelines/p10.py
