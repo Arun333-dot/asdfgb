@@ -4,11 +4,25 @@ with DAG():
         component = "OrchestrationTarget", 
         kind = "SharepointTarget", 
         connector = Connection(kind = "sharepoint"), 
-        properties = {}, 
-        format = {"properties" : {"separator" : ",", "header" : True}, "kind" : "csv", "category" : "file"}
+        format = {"category" : "file", "kind" : "csv", "properties" : {"header" : True, "separator" : ","}}, 
+        properties = {}
+    )
+    empty_output_csv = SourceTask(
+        task_id = "empty_output_csv", 
+        component = "OrchestrationSource", 
+        kind = "SFTPSource", 
+        connector = Connection(kind = "sftp", id = "sftp"), 
+        format = CSVFormat(header = True, separator = ","), 
+        filePath = {
+          "type": "concat_operation", 
+          "properties": {
+            "elements": [{"type" : "literal", "properties" : {"value" : "/jsndjnasjdnajksdnajksdnajksdnaksjdnaskd"}}]
+          }
+        }
     )
     model_p13_WindowFunction_1 = Task(
         task_id = "model_p13_WindowFunction_1", 
         component = "Model", 
         modelName = "model_p13_WindowFunction_1"
     )
+    model_p13_WindowFunction_1.out_1 >> OrchestrationTarget_0.in0

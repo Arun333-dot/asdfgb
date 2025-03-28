@@ -233,7 +233,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "WtcvV4WQkJV1d22VbLjaK$$P5COT4Rb5mhDgTqKvUIDx",
+        "label" : "empty_output_csv"
+      } ]
     },
     "p6" : {
       "id" : "p6",

@@ -2,8 +2,8 @@
   config({    
     "materialized": "table",
     "alias": "prophecy__temp_p13_post_WindowFunction_1_0",
-    "database": "database",
-    "schema": "default"
+    "database": "hive_metastore",
+    "schema": "arun123"
   })
 }}
 

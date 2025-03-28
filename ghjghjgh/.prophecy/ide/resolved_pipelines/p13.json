@@ -18,8 +18,8 @@
       "kind" : "SharepointTarget",
       "metadata" : {
         "label" : "OrchestrationTarget_0",
-        "x" : -1020,
-        "y" : -480,
+        "x" : -60,
+        "y" : -440,
         "phase" : 0
       },
       "properties" : {
@@ -28,15 +28,15 @@
           "properties" : { },
           "type" : "connector"
         },
-        "properties" : { },
         "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
+          "category" : "file",
           "kind" : "csv",
-          "category" : "file"
-        }
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : { }
       },
       "ports" : {
         "inputs" : [ {
@@ -44,6 +44,55 @@
           "slug" : "in"
         } ],
         "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "WtcvV4WQkJV1d22VbLjaK$$P5COT4Rb5mhDgTqKvUIDx" : {
+      "id" : "WtcvV4WQkJV1d22VbLjaK$$P5COT4Rb5mhDgTqKvUIDx",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "empty_output_csv",
+        "x" : -680,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "category" : "file",
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/jsndjnasjdnajksdnajksdnajksdnaksjdnaskd"
+                }
+              } ]
+            }
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "FTBOEtF_VC_uP97rTikja$$ZlD0LwukbFItABee9qCh-",
+          "slug" : "out"
+        } ],
         "isCustomOutputSchema" : false
       }
     },
@@ -75,6 +124,12 @@
       }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "conn_piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I_ZPiYf_icCbjPAYtXs-8HO$$EnnV2nxC_eJ5_b7OqYTln",
+    "source" : "piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I",
+    "sourcePort" : "model_p13_WindowFunction_1_out_1",
+    "target" : "ZPiYf_icCbjPAYtXs-8HO$$EnnV2nxC_eJ5_b7OqYTln",
+    "targetPort" : "ZSFe9SZugqAY8vdo1KySk$$yfqFRv1nISGFqm_1gkbVk"
+  } ],
   "component" : "Pipeline"
 }

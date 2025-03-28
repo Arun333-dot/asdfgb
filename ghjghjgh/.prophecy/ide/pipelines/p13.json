@@ -18,8 +18,8 @@
       "kind" : "SharepointTarget",
       "metadata" : {
         "label" : "OrchestrationTarget_0",
-        "x" : -1020,
-        "y" : -480,
+        "x" : -60,
+        "y" : -440,
         "phase" : 0
       },
       "properties" : {
@@ -28,15 +28,15 @@
           "properties" : { },
           "type" : "connector"
         },
-        "properties" : { },
         "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
+          "category" : "file",
           "kind" : "csv",
-          "category" : "file"
-        }
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : { }
       },
       "ports" : {
         "inputs" : [ {
@@ -52,20 +52,15 @@
       "component" : "WindowFunction",
       "metadata" : {
         "label" : "WindowFunction_1",
-        "x" : -880,
-        "y" : -480,
+        "x" : -260,
+        "y" : -440,
         "phase" : 0
       },
       "properties" : {
-        "frameEndType" : null,
-        "frameEndValue" : null,
         "expressions" : [ ],
-        "frameType" : null,
         "activeTab" : "partitionTab",
         "columnsSelector" : [ ],
         "partitionExpressions" : [ ],
-        "frameStartValue" : null,
-        "frameStartType" : null,
         "ordersBy" : [ ]
       },
       "ports" : {
@@ -79,8 +74,63 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "WtcvV4WQkJV1d22VbLjaK$$P5COT4Rb5mhDgTqKvUIDx" : {
+      "id" : "WtcvV4WQkJV1d22VbLjaK$$P5COT4Rb5mhDgTqKvUIDx",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "empty_output_csv",
+        "x" : -680,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "category" : "file",
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/jsndjnasjdnajksdnajksdnajksdnaksjdnaskd"
+                }
+              } ]
+            }
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "FTBOEtF_VC_uP97rTikja$$ZlD0LwukbFItABee9qCh-",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "4E8a8Pmota35VxMhTe9Ue$$rGArju7BVSKLfnSCAY5pn",
+    "source" : "piGVWAGBgIRT8ElFcDsOH$$zK0ImOuxBqabKor7hmw3I",
+    "sourcePort" : "OwGthcvjRHCSv_JTKn0zt$$prqWHOLKEK69cGQNdc7n7",
+    "target" : "ZPiYf_icCbjPAYtXs-8HO$$EnnV2nxC_eJ5_b7OqYTln",
+    "targetPort" : "ZSFe9SZugqAY8vdo1KySk$$yfqFRv1nISGFqm_1gkbVk"
+  } ],
   "component" : "Pipeline"
 }
