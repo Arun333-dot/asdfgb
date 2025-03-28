@@ -1,0 +1,51 @@
+---
+version: 2
+models:
+- name: "m1"
+  columns:
+  - name: "commit_action"
+    dataType:
+      type: "String"
+  - name: "created_by"
+    dataType:
+      type: "String"
+  - name: "table_name"
+    dataType:
+      type: "String"
+  - name: "storage_path"
+    dataType:
+      type: "String"
+  - name: "data_source_format"
+    dataType:
+      type: "String"
+  - name: "last_altered"
+    dataType:
+      type: "Timestamp"
+  - name: "is_insertable_into"
+    dataType:
+      type: "String"
+  - name: "table_catalog"
+    dataType:
+      type: "String"
+  - name: "last_altered_by"
+    dataType:
+      type: "String"
+  - name: "comment"
+    dataType:
+      type: "String"
+  - name: "table_type"
+    dataType:
+      type: "String"
+  - name: "table_schema"
+    dataType:
+      type: "String"
+  - name: "table_owner"
+    dataType:
+      type: "String"
+  - name: "storage_sub_directory"
+    dataType:
+      type: "String"
+  - name: "created"
+    dataType:
+      type: "Timestamp"
+  tests: []
