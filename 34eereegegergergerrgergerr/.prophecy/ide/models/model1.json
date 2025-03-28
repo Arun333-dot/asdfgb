@@ -42,6 +42,38 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "NVykjKpKb7NqXAh_VEDpP$$mZCDVVhgpdOKYTI69AxKi" : {
+      "id" : "NVykjKpKb7NqXAh_VEDpP$$mZCDVVhgpdOKYTI69AxKi",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "local_statement",
+        "slug" : "local_statement",
+        "x" : -1100,
+        "y" : -480,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "This statement is intended for local use only and does not have a broader business impact.",
+        "autoUpdateComment" : true,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "this is local statement"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "vpaqAMqaYz4xT7IPWB70h$$HyQ9ztzRR8KS91LvAJ719",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ ],
