@@ -1,0 +1,85 @@
+{
+  "id" : "model3",
+  "metainfo" : {
+    "label" : "model3",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model3##lmn6Iyy1" : {
+      "id" : "model3##lmn6Iyy1",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model3",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM boolean_data\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "uZR2ZOvc",
+          "slug" : "boolean_data"
+        } ],
+        "outputs" : [ {
+          "id" : "Y7AbXYhG",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "JyGsgMfgvaOovN7n5-1Ub" : {
+      "id" : "JyGsgMfgvaOovN7n5-1Ub",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "boolean_data",
+        "slug" : "boolean_data",
+        "x" : -200,
+        "y" : 40,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "boolean_data",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "o4zDihiNgf0LtchpTl06A",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "YcD1dayLUzrQb_zM5t_VZ$$R2sAobX_zMbgNQL4boAC8",
+    "source" : "JyGsgMfgvaOovN7n5-1Ub",
+    "sourcePort" : "o4zDihiNgf0LtchpTl06A",
+    "target" : "model3##lmn6Iyy1",
+    "targetPort" : "uZR2ZOvc"
+  } ],
+  "component" : "Model"
+}
