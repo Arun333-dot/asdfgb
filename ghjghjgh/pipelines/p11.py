@@ -8,7 +8,7 @@ with DAG():
         filePath = {
           "type": "concat_operation", 
           "properties": {
-            "elements": [{"type" : "literal", "properties" : {"value" : "dfgdfgdfgdfg_on_prophecydsfsdfsdf"}}]
+            "elements": [{"type" : "literal", "properties" : {"value" : "dfgdfgdfgdfg_on_github"}}]
           }
         }
     )
