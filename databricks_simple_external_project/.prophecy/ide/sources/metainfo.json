@@ -103163,6 +103163,10 @@
       "https://github.com/prophecy-io/databricks-sql-basics" : "22363"
     }
   },
-  "entitiesToSync" : [ ],
+  "entitiesToSync" : [ {
+    "name" : "model3",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
   "frontEndLanguage" : "sql"
 }
