@@ -422,10 +422,110 @@
       "ports" : {
         "inputs" : [ {
           "id" : "TPcikI3bcNoE4ccsi3kre$$FLawf8ieTuuKHOTg_jG0f",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NULL_VALUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HOBBIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ADDRESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BANK_BALANCE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HAS_CREDIT_CARD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_EMPLOYED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "JOIN_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "LAST_LOGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAVORITE_COLORS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
           "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "Yh2DtEx0T805xDz6Bpdr6$$sJUOwGQmMNmriKviE9aWu",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "CUSTOM_OBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AGE",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "SALARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age2",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

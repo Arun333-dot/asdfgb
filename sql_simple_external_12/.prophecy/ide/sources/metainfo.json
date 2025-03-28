@@ -101,6 +101,19 @@
         "id" : "V57C2HgT4s1pmH9q6t_k-",
         "label" : "SFTPSource_2"
       } ]
+    },
+    "p6" : {
+      "id" : "p6",
+      "name" : "p6",
+      "path" : "sql_simple_external_12/.prophecy/ide/pipelines/p6.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "externalSources" : {

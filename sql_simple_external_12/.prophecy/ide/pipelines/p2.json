@@ -325,10 +325,151 @@
       "ports" : {
         "inputs" : [ {
           "id" : "vJ4ebXJitvdcRz-aAgr56$$VWSk3wrvNRAvbh7LBlljw",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "data_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "data_value",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  },
+                  "description" : "Unique identifier for the data entry"
+                }, {
+                  "name" : "category",
+                  "dataType" : {
+                    "type" : "String"
+                  },
+                  "description" : "Category of the data item"
+                }, {
+                  "name" : "item",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  },
+                  "description" : "List of items associated with the data value"
+                } ]
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
           "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "i3syM2K9UsEYiMy3RBIaB$$Q-FbHGm2pm9tz70z9kX5g",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "data_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "data_value",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  }
+                }, {
+                  "name" : "category",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "item",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }
+                } ]
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -566,6 +707,75 @@
       "ports" : {
         "inputs" : [ {
           "id" : "-xCtJe3q1yKd3XiZrtTkb$$KYoyyEinBRX_Ju4Cq3k9z",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "data_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "data_value",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  }
+                }, {
+                  "name" : "category",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "item",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }
+                } ]
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
           "slug" : "in"
         } ],
         "outputs" : [ ],
