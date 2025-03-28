@@ -26,19 +26,7 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/model3:
     name: model3
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: ID
-        dataType:
-          type: Bigint
-      - name: Name
-        dataType:
-          type: String
-      - name: Is_Active
-        dataType:
-          type: Boolean
+    schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
