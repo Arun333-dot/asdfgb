@@ -26,12 +26,28 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/model1:
     name: model1
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: ID
+        dataType:
+          type: Bigint
+      - name: Name
+        dataType:
+          type: String
+      - name: Age
+        dataType:
+          type: Bigint
+      - name: City
+        dataType:
+          type: String
     description: null
     author: arunsharma+admin@prophecy.io
     files:
     - models/model1.sql
     - .prophecy/ide/models/model1.json
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -51,7 +67,48 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-24 05:51:26'
-sqlSeeds: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/hjjjkhjk:
+    name: hjjjkhjk
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: a
+        dataType:
+          type: Integer
+      - name: b
+        dataType:
+          type: Integer
+      - name: c
+        dataType:
+          type: Integer
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/hjjjkhjk.csv
+    createdAt: '2025-03-25 04:21:55'
+  .prophecy/metadata/sqlseeds/seed2:
+    name: seed2
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: String
+      - name: time
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/seed2.csv
+    - seeds/seeds.yml
+    createdAt: '2025-03-25 04:36:25'
 sqlSources:
   .prophecy/metadata/sqlsources/hive_metastore_arun123:
     name: hive_metastore.arun123
@@ -82,6 +139,171 @@ sqlSources:
         cities, ages, and unique identifiers for demographic analysis.
       author: arunsharma+admin@prophecy.io
       createdAt: '2025-03-24 05:53:17'
+    - name: employees_2
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: ID
+          dataType:
+            type: Bigint
+        - name: Name
+          dataType:
+            type: String
+        - name: Age
+          dataType:
+            type: Bigint
+        - name: City
+          dataType:
+            type: String
+        - name: Salary
+          dataType:
+            type: Double
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-24 06:33:01'
+  .prophecy/metadata/sqlsources/qa_team_default:
+    name: qa_team.default
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-24 08:21:05'
+    tables:
+    - name: seed22
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: qw89
+          dataType:
+            type: String
+        - name: '87'
+          dataType:
+            type: Bigint
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-24 08:21:05'
+  .prophecy/metadata/sqlsources/qa_team_qa_database:
+    name: qa_team.qa_database
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-24 08:36:14'
+    tables:
+    - name: store
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: S_STORE_SK
+          dataType:
+            type: Decimal
+        - name: S_STORE_ID
+          dataType:
+            type: String
+        - name: S_REC_START_DATE
+          dataType:
+            type: Date
+        - name: S_REC_END_DATE
+          dataType:
+            type: Date
+        - name: S_CLOSED_DATE_SK
+          dataType:
+            type: Decimal
+        - name: S_STORE_NAME
+          dataType:
+            type: String
+        - name: S_NUMBER_EMPLOYEES
+          dataType:
+            type: Decimal
+        - name: S_FLOOR_SPACE
+          dataType:
+            type: Decimal
+        - name: S_HOURS
+          dataType:
+            type: String
+        - name: S_MANAGER
+          dataType:
+            type: String
+        - name: S_MARKET_ID
+          dataType:
+            type: Decimal
+        - name: S_GEOGRAPHY_CLASS
+          dataType:
+            type: String
+        - name: S_MARKET_DESC
+          dataType:
+            type: String
+        - name: S_MARKET_MANAGER
+          dataType:
+            type: String
+        - name: S_DIVISION_ID
+          dataType:
+            type: Decimal
+        - name: S_DIVISION_NAME
+          dataType:
+            type: String
+        - name: S_COMPANY_ID
+          dataType:
+            type: Decimal
+        - name: S_COMPANY_NAME
+          dataType:
+            type: String
+        - name: S_STREET_NUMBER
+          dataType:
+            type: String
+        - name: S_STREET_NAME
+          dataType:
+            type: String
+        - name: S_STREET_TYPE
+          dataType:
+            type: String
+        - name: S_SUITE_NUMBER
+          dataType:
+            type: String
+        - name: S_CITY
+          dataType:
+            type: String
+        - name: S_COUNTY
+          dataType:
+            type: String
+        - name: S_STATE
+          dataType:
+            type: String
+        - name: S_ZIP
+          dataType:
+            type: String
+        - name: S_COUNTRY
+          dataType:
+            type: String
+        - name: S_GMT_OFFSET
+          dataType:
+            type: Decimal
+        - name: S_TAX_PRECENTAGE
+          dataType:
+            type: Decimal
+      description: Comprehensive store information, including location, management,
+        and operational details, supporting market analysis and strategic planning.
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-24 08:36:14'
+    - name: 9999rows_lessthan2mb
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-24 08:51:40'
+    - name: call_center
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-24 09:08:49'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/this_is_simple_project_pipeline:
@@ -90,6 +312,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/this_is_simple_project_pipeline.json
     - pipelines/this_is_simple_project_pipeline.py
     createdAt: '2025-03-24 05:54:57'
 sqlBusinessApps: {}

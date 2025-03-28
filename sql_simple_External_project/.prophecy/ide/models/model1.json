@@ -7,7 +7,33 @@
     "sourceSuggestions" : {
       "sources" : [ ]
     },
-    "version" : 3
+    "version" : 3,
+    "properties" : {
+      "name" : "model1",
+      "columns" : [ {
+        "name" : "ID",
+        "dataType" : {
+          "type" : "Bigint"
+        }
+      }, {
+        "name" : "Name",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "Age",
+        "dataType" : {
+          "type" : "Bigint"
+        }
+      }, {
+        "name" : "City",
+        "dataType" : {
+          "type" : "String"
+        }
+      } ],
+      "tests" : [ ],
+      "providerType" : "databricks"
+    }
   },
   "processes" : {
     "n-SZdY134SecRZ9KLfT4o$$Wlg9A5peOHG_I-2hHtwgN" : {
@@ -168,8 +194,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model1",
-        "x" : 20,
-        "y" : 20,
+        "x" : 0,
+        "y" : -60,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -178,6 +204,7 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM Filter_1\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"

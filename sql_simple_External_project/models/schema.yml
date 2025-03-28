@@ -1,0 +1,18 @@
+---
+version: 2
+models:
+- name: "model1"
+  columns:
+  - name: "ID"
+    dataType:
+      type: "Bigint"
+  - name: "Name"
+    dataType:
+      type: "String"
+  - name: "Age"
+    dataType:
+      type: "Bigint"
+  - name: "City"
+    dataType:
+      type: "String"
+  tests: []

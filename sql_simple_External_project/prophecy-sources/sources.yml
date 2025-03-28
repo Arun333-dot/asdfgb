@@ -4,8 +4,6 @@ sources:
 - name: "hive_metastore.arun123"
   database: "hive_metastore"
   schema: "arun123"
-  config:
-    enabled: true
   tables:
   - name: "million_records"
     description: "A comprehensive dataset of individuals, capturing their names, cities,\
@@ -14,19 +12,177 @@ sources:
       identifier: true
     columns:
     - name: "ID"
-      description: "Unique identifier for each record"
       dataType:
         type: "Bigint"
     - name: "Name"
-      description: "The name of the individual"
       dataType:
         type: "String"
     - name: "Age"
-      description: "The age of the individual"
       dataType:
         type: "Bigint"
     - name: "City"
-      description: "The city where the individual resides"
       dataType:
         type: "String"
+    type: "table"
+  - name: "employees_2"
+    columns:
+    - name: "ID"
+      dataType:
+        type: "Bigint"
+    - name: "Name"
+      dataType:
+        type: "String"
+    - name: "Age"
+      dataType:
+        type: "Bigint"
+    - name: "City"
+      dataType:
+        type: "String"
+    - name: "Salary"
+      dataType:
+        type: "Double"
+    type: "view"
+- name: "qa_team.default"
+  database: "qa_team"
+  schema: "default"
+  tables:
+  - name: "seed22"
+    columns:
+    - name: "qw89"
+      dataType:
+        type: "String"
+    - name: "87"
+      dataType:
+        type: "Bigint"
+    type: "table"
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  tables:
+  - name: "store"
+    description: "Comprehensive store information, including location, management,\
+      \ and operational details, supporting market analysis and strategic planning."
+    columns:
+    - name: "S_STORE_SK"
+      description: "Unique identifier for the store"
+      dataType:
+        type: "Decimal"
+    - name: "S_STORE_ID"
+      description: "Store identification number"
+      dataType:
+        type: "String"
+    - name: "S_REC_START_DATE"
+      description: "The date when the store record became active"
+      dataType:
+        type: "Date"
+    - name: "S_REC_END_DATE"
+      description: "The date when the store record was closed or became inactive"
+      dataType:
+        type: "Date"
+    - name: "S_CLOSED_DATE_SK"
+      description: "The unique identifier for the date when the store was closed"
+      dataType:
+        type: "Decimal"
+    - name: "S_STORE_NAME"
+      description: "The name of the store"
+      dataType:
+        type: "String"
+    - name: "S_NUMBER_EMPLOYEES"
+      description: "Total number of employees working at the store"
+      dataType:
+        type: "Decimal"
+    - name: "S_FLOOR_SPACE"
+      description: "Total floor space area of the store in square units"
+      dataType:
+        type: "Decimal"
+    - name: "S_HOURS"
+      description: "Operating hours of the store"
+      dataType:
+        type: "String"
+    - name: "S_MANAGER"
+      description: "Name of the store manager"
+      dataType:
+        type: "String"
+    - name: "S_MARKET_ID"
+      description: "Unique identifier for the market where the store operates"
+      dataType:
+        type: "Decimal"
+    - name: "S_GEOGRAPHY_CLASS"
+      description: "Classification of the geographical area of the store"
+      dataType:
+        type: "String"
+    - name: "S_MARKET_DESC"
+      description: "Description of the market where the store operates"
+      dataType:
+        type: "String"
+    - name: "S_MARKET_MANAGER"
+      description: "Name of the manager responsible for the market"
+      dataType:
+        type: "String"
+    - name: "S_DIVISION_ID"
+      description: "Unique identifier for the division to which the store belongs"
+      dataType:
+        type: "Decimal"
+    - name: "S_DIVISION_NAME"
+      description: "Name of the division associated with the store"
+      dataType:
+        type: "String"
+    - name: "S_COMPANY_ID"
+      description: "Unique identifier for the company that owns the store"
+      dataType:
+        type: "Decimal"
+    - name: "S_COMPANY_NAME"
+      description: "Name of the company that operates the store"
+      dataType:
+        type: "String"
+    - name: "S_STREET_NUMBER"
+      description: "Street number of the store's location"
+      dataType:
+        type: "String"
+    - name: "S_STREET_NAME"
+      description: "Name of the street where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_STREET_TYPE"
+      description: "Type of street where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_SUITE_NUMBER"
+      description: "Suite number of the store within a building"
+      dataType:
+        type: "String"
+    - name: "S_CITY"
+      description: "City where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_COUNTY"
+      description: "County where the store is situated"
+      dataType:
+        type: "String"
+    - name: "S_STATE"
+      description: "The state where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_ZIP"
+      description: "The ZIP code for the store's address"
+      dataType:
+        type: "String"
+    - name: "S_COUNTRY"
+      description: "Country where the store is located"
+      dataType:
+        type: "String"
+    - name: "S_GMT_OFFSET"
+      description: "Time zone offset of the store from GMT"
+      dataType:
+        type: "Decimal"
+    - name: "S_TAX_PRECENTAGE"
+      description: "Percentage of tax applied to sales at the store"
+      dataType:
+        type: "Decimal"
+    type: "table"
+  - name: "9999rows_lessthan2mb"
+    columns: []
+    type: "table"
+  - name: "call_center"
+    columns: []
     type: "table"
