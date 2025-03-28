@@ -53,7 +53,7 @@
         "y" : -480,
         "phase" : 0,
         "macroDependencies" : [ ],
-        "comment" : "This statement is intended for local use only and does not have a broader business impact.",
+        "comment" : "This statement appears to be a placeholder or non-standard query and lacks context for business impact.",
         "autoUpdateComment" : true,
         "isLabelGrayed" : false
       },
@@ -62,7 +62,7 @@
           "path" : "out",
           "id" : "out",
           "language" : "sql",
-          "content" : "this is local statement"
+          "content" : "this is local statement 2"
         } ]
       },
       "ports" : {
