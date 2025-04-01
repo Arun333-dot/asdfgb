@@ -24,7 +24,6 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "",
-        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -37,6 +36,73 @@
         } ],
         "outputs" : [ {
           "id" : "S0usKKiS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "pe2JnsMPp34GLsA_95Zqd$$LM-T3LUrUk4hT7eZ7Vdep" : {
+      "id" : "pe2JnsMPp34GLsA_95Zqd$$LM-T3LUrUk4hT7eZ7Vdep",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "slug" : "WindowFunction_1",
+        "x" : -960,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "K4WToK8OTqVaoomgSsE9A$$J1JCpuXrNCl5nmY995SJO",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "By48sLf2W61lTzD25cnSY$$YsadPz4cSqTWlLIt4BWB3",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "aFMvnbearwdDM6Pd4TZmN$$63xaJD4Ivly7RyHf96hSk" : {
+      "id" : "aFMvnbearwdDM6Pd4TZmN$$63xaJD4Ivly7RyHf96hSk",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "slug" : "Deduplicate_1",
+        "x" : -820,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sYj4ldDydrSC7r932UgG1$$OpsBy7ubc1wp66PS62iZu",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "4i8lfQmYah7w6V2eDL040$$DIopRzyZnJjwy0cTK-qkc",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
