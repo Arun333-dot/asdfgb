@@ -54,6 +54,21 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-04-01 07:19:22'
+  .prophecy/metadata/sqlmodels/model3:
+    name: model3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model3.sql
+    - .prophecy/ide/models/model3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-04-01 08:30:58'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -76,10 +91,12 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
+    - models/pipeline1/model_pipeline1_Deduplicate_2.sql
     - models/pipeline1/schema.yml
     - models/pipeline1/model_pipeline1_Aggregate_1.sql
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
     createdAt: '2025-04-01 07:18:02'
