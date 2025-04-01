@@ -243,6 +243,10 @@
     "name" : "model2",
     "type" : "Model",
     "syncedOnce" : false
+  }, {
+    "name" : "model4",
+    "type" : "Model",
+    "syncedOnce" : false
   } ],
   "frontEndLanguage" : "sql"
 }

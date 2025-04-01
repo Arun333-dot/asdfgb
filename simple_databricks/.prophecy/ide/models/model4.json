@@ -3,7 +3,7 @@
   "metainfo" : {
     "label" : "model4",
     "autoLayout" : false,
-    "staleState" : "none",
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -65,6 +65,71 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "wJ6FjtjromVNr-czFuQpB",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "rl_wOn9KeqM5bM_HJnvYp$$ud3xiHlm4WOyNUsldnsq7" : {
+      "id" : "rl_wOn9KeqM5bM_HJnvYp$$ud3xiHlm4WOyNUsldnsq7",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : -960,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AdSomlRd39NfXJXKwrDe_$$zICSKdS2OTTA1_Mg4x36w",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Dz8mXD3b7g9iCHWZB8tLH$$jy8w_RsbnSzFGDY2yoPbh",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "qogISWK54EEn7gHR0fgjt$$tIaHYCuBe3Njzq2nshOXb" : {
+      "id" : "qogISWK54EEn7gHR0fgjt$$tIaHYCuBe3Njzq2nshOXb",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "slug" : "Deduplicate_1",
+        "x" : -820,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tP0kNuUzns-URr6CYFCL5$$K5NjwBj5ddNf7KJkI6y8c",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "QR_roAVRZni1e6iEJyz3R$$EwQZrR3z8EahkTUZPwnah",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,

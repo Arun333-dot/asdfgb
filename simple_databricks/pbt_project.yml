@@ -93,7 +93,7 @@ sqlModels:
       - name: ball
         dataType:
           type: Integer
-      - name: cat_ths_is_change
+      - name: cat_ths_is_prophecy
         dataType:
           type: Integer
     description: null
@@ -133,7 +133,7 @@ sqlSeeds:
       - name: ball
         dataType:
           type: Integer
-      - name: cat_ths_is_change
+      - name: cat_ths_is_prophecy
         dataType:
           type: Integer
     description: null
