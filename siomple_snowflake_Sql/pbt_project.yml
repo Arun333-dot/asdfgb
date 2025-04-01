@@ -79,7 +79,7 @@ sqlSeeds:
       - name: age
         dataType:
           type: Number
-      - name: status
+      - name: status_prophecy
         dataType:
           type: String
     description: null
