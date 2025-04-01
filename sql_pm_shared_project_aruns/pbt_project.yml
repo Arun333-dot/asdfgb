@@ -1,6 +1,6 @@
 name: sql_pm_shared_project_aruns
 description: ''
-version: '2'
+version: '3'
 author: sony@prophecy.io
 language: sql
 buildSystem: ''
