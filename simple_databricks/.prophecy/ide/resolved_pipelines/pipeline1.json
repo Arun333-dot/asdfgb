@@ -21,6 +21,63 @@
     }
   },
   "processes" : {
+    "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT" : {
+      "id" : "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline1_Deduplicate_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline1_Deduplicate_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Deduplicate_2_0", "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline1_Deduplicate_2_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline1_Deduplicate_2_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "prophecy__temp_pipeline1_pre_Deduplicate_1_0" : {
+      "id" : "prophecy__temp_pipeline1_pre_Deduplicate_1_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_pipeline1_pre_Deduplicate_1_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_pipeline1_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_3_1",
+          "slug" : "input_port_3_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_3_1",
+          "slug" : "output_port_3_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "vXgqND6uSozG0Mk0kiV99$$f7vNQqi4f_q3D3D-D0lO4" : {
       "id" : "vXgqND6uSozG0Mk0kiV99$$f7vNQqi4f_q3D3D-D0lO4",
       "component" : "Model",
@@ -54,8 +111,8 @@
       "kind" : "S3Source",
       "metadata" : {
         "label" : "OrchestrationSource_1",
-        "x" : -880,
-        "y" : -480,
+        "x" : -520,
+        "y" : -620,
         "phase" : 0
       },
       "properties" : {
@@ -64,15 +121,15 @@
           "properties" : { },
           "type" : "connector"
         },
-        "properties" : { },
         "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
+          "category" : "file",
           "kind" : "csv",
-          "category" : "file"
-        }
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : { }
       },
       "ports" : {
         "inputs" : [ ],
@@ -89,8 +146,70 @@
       "kind" : "S3Source",
       "metadata" : {
         "label" : "OrchestrationSource_2",
-        "x" : -887.5635986328125,
-        "y" : -556.9465942382812,
+        "x" : -480,
+        "y" : -840,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "format" : {
+          "category" : "file",
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : { }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Shl2ntD5eavWQumD3XnxY$$UYmv6PZRMpuvnMpg2WXrN",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la" : {
+      "id" : "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline1_Aggregate_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline1_Aggregate_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Aggregate_2_0", "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline1_Aggregate_2_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline1_Aggregate_2_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "4V_HUiSNfqDnhCnndnEBL$$Z45YiALa3QU-3WLeVQ3zF" : {
+      "id" : "4V_HUiSNfqDnhCnndnEBL$$Z45YiALa3QU-3WLeVQ3zF",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_4",
+        "x" : -1580,
+        "y" : -1000,
         "phase" : 0
       },
       "properties" : {
@@ -112,7 +231,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "Shl2ntD5eavWQumD3XnxY$$UYmv6PZRMpuvnMpg2WXrN",
+          "id" : "jrOFpj6IaULfzpSNxqKFc$$5n89hp4UxTslzlKxLrQIQ",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
@@ -129,7 +248,7 @@
         "modelName" : "model_pipeline1_Deduplicate_1"
       },
       "visualMetaInfo" : {
-        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Deduplicate_1_0", "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6" ],
+        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Deduplicate_1_0", "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6", "prophecy__temp_pipeline1_pre_Deduplicate_1_0" ],
         "type" : "table",
         "isTemporaryTable" : true
       },
@@ -156,7 +275,7 @@
         "modelName" : "model_pipeline1_Aggregate_1"
       },
       "visualMetaInfo" : {
-        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Aggregate_1_0", "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-" ],
+        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Aggregate_1_0", "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-", "prophecy__temp_pipeline1_pre_Aggregate_1_0" ],
         "type" : "table",
         "isTemporaryTable" : true
       },
@@ -178,8 +297,8 @@
       "kind" : "S3Source",
       "metadata" : {
         "label" : "OrchestrationSource_3",
-        "x" : -740,
-        "y" : -480,
+        "x" : -880,
+        "y" : -720,
         "phase" : 0
       },
       "properties" : {
@@ -188,21 +307,51 @@
           "properties" : { },
           "type" : "connector"
         },
-        "properties" : { },
         "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
+          "category" : "file",
           "kind" : "csv",
-          "category" : "file"
-        }
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : { }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "_n65oxM-dAOY0ZNUr4m_H$$Nvq2TExoxCG0ky4O4WhTj",
           "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "prophecy__temp_pipeline1_pre_Aggregate_1_0" : {
+      "id" : "prophecy__temp_pipeline1_pre_Aggregate_1_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_pipeline1_pre_Aggregate_1_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_pipeline1_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0_1",
+          "slug" : "input_port_0_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0_1",
+          "slug" : "output_port_0_1"
         } ],
         "isCustomOutputSchema" : false
       }
@@ -248,8 +397,8 @@
       "kind" : "S3Target",
       "metadata" : {
         "label" : "OrchestrationTarget_1",
-        "x" : -600,
-        "y" : -480,
+        "x" : -760,
+        "y" : -280,
         "phase" : 0
       },
       "properties" : {
@@ -258,15 +407,15 @@
           "properties" : { },
           "type" : "connector"
         },
-        "properties" : { },
         "format" : {
-          "properties" : {
-            "separator" : ",",
-            "header" : true
-          },
+          "category" : "file",
           "kind" : "csv",
-          "category" : "file"
-        }
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : { }
       },
       "ports" : {
         "inputs" : [ {
@@ -278,6 +427,30 @@
       }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "4oc2XASbN5J7lGIufyYvA$$xJCWcpWVSj-e082f_t0KO",
+    "source" : "1T4XHU1zxa_QNuSTQGVSs$$l4U4rfCVNG5PmPjmKs7B1",
+    "sourcePort" : "cbi12e023pf-MoQlnrRKW$$RoClVUJEDW3b-YvieLyb5",
+    "target" : "prophecy__temp_pipeline1_pre_Aggregate_1_0",
+    "targetPort" : "input_port_0_1"
+  }, {
+    "id" : "PsyEvuleadUoZktgEFqgx$$z5KdN_zNpzCyXYa75WH_C",
+    "source" : "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz",
+    "sourcePort" : "oeKqOlwik7MCSwCLmtDtb$$_FZ_GTvkmd7gYi3jUgx16",
+    "target" : "prophecy__temp_pipeline1_pre_Deduplicate_1_0",
+    "targetPort" : "input_port_3_1"
+  }, {
+    "id" : "conn_prophecy__temp_pipeline1_pre_Aggregate_1_0_-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-_WFNHdkTN34z55v-G5Cs-H$$G0b0vRhwh7yqDec7RVz5p",
+    "source" : "prophecy__temp_pipeline1_pre_Aggregate_1_0",
+    "sourcePort" : "output_port_0_1",
+    "target" : "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-",
+    "targetPort" : "model_pipeline1_Aggregate_1_in_1"
+  }, {
+    "id" : "conn_prophecy__temp_pipeline1_pre_Deduplicate_1_0_f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6_wZFzNTGV1afhWfPs2omKn$$-msDpGpf-Vgw6hBDxqPe7",
+    "source" : "prophecy__temp_pipeline1_pre_Deduplicate_1_0",
+    "sourcePort" : "output_port_3_1",
+    "target" : "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6",
+    "targetPort" : "model_pipeline1_Deduplicate_1_in_1"
+  } ],
   "component" : "Pipeline"
 }
