@@ -2,8 +2,8 @@
   "id" : "model1",
   "metainfo" : {
     "label" : "model1",
-    "autoLayout" : true,
-    "staleState" : "none",
+    "autoLayout" : false,
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##Nmpo1ZN2" : {
-      "id" : "final##Nmpo1ZN2",
+    "final##unfvtXxg" : {
+      "id" : "final##unfvtXxg",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model1",
@@ -27,8 +27,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "model1: this is model changes\n",
-        "isModel" : true,
+        "query" : "model1: this is prophecy changes\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -37,7 +36,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "F04lZLwn",
+          "id" : "gJfvbm22",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
