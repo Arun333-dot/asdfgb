@@ -108,6 +108,72 @@
         "autoUpdateOnRun" : false
       }
     },
+    "UMWBuxw5q9etmN21zhPhf$$F-NhDXKYvSBAP9kt85-X7" : {
+      "id" : "UMWBuxw5q9etmN21zhPhf$$F-NhDXKYvSBAP9kt85-X7",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -1320,
+        "y" : -640,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hFqj9YRYICBV6wdzI2F8H$$fCQJCD_e1hhwKq4GLVaqi",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "-P28dTNZAqUnKRz_tkO2i$$6FRSo18nIr4d1tXpvz0WQ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "ltA3nLAC_2B_fLXrebPsj$$Rnf91xAoB067GJxLpqDlp" : {
+      "id" : "ltA3nLAC_2B_fLXrebPsj$$Rnf91xAoB067GJxLpqDlp",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "slug" : "WindowFunction_1",
+        "x" : -1460,
+        "y" : -640,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3nYPFfbFKUq072t9ZwxY0$$m9ZjPHxCX3JSJZ_Ls-PPo",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "jf-clSrGlNt1d0YwEfHLY$$-w6osE4UqqDXlCRFF6Dle",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
     "model3##h6FlW6uV" : {
       "id" : "model3##h6FlW6uV",
       "component" : "TargetModel",
@@ -122,6 +188,7 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -134,6 +201,39 @@
         } ],
         "outputs" : [ {
           "id" : "uZUUCxsN",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "mNozRFC_F4MPKF-0m_742$$jyoVGlqBWGo6WYxuHZOWZ" : {
+      "id" : "mNozRFC_F4MPKF-0m_742$$jyoVGlqBWGo6WYxuHZOWZ",
+      "component" : "Intersect",
+      "metadata" : {
+        "label" : "Intersect_1",
+        "slug" : "Intersect_1",
+        "x" : -1180,
+        "y" : -640,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "operationType" : "intersect",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "N3g8P4AaKLK6hCJJEe5Pb$$HSWMAiyhBP3S_hRRl8K_E",
+          "slug" : "in0"
+        }, {
+          "id" : "sJFIx8rXviEnAaGXX7rh9$$E9xhqOdpzFmy6cLDLx4-V",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "R6qhQx6K_Gy5Zef8R76yU$$EsI3noo1tYDYqZ6qNeGNe",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
