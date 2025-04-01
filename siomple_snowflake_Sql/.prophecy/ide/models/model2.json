@@ -42,6 +42,51 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "QRqtoyL9IEn4qrOPqxZ-7$$UksDBOgTd5V_ANpBDQK4E" : {
+      "id" : "QRqtoyL9IEn4qrOPqxZ-7$$UksDBOgTd5V_ANpBDQK4E",
+      "component" : "Pivot",
+      "metadata" : {
+        "label" : "Pivot_1",
+        "slug" : "Pivot_1",
+        "x" : -960,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "inputAlias" : "in0",
+        "allowSelection" : true,
+        "pivotColumnValues" : [ ],
+        "expressions" : [ ],
+        "pivotColumn" : {
+          "expression" : {
+            "expression" : ""
+          },
+          "alias" : null,
+          "description" : null
+        },
+        "activeTab" : "expressions",
+        "aggregateExpression" : {
+          "expression" : {
+            "expression" : ""
+          },
+          "alias" : null,
+          "description" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oUIPg5WDJIkGXTzReS6H_$$UgC7U9mVhLseMu_3Gfkss",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "nZFeVGEC918hafnXXGD27$$OU9mtXd0Rx7ZqWyuZ-GDi",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ ],
