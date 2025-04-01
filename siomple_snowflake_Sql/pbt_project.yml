@@ -66,7 +66,28 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-04-01 07:33:59'
-sqlSeeds: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/seed1:
+    name: seed1
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Number
+      - name: status
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/seed1.csv
+    - seeds/seeds.yml
+    createdAt: '2025-04-01 08:48:21'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines: {}
