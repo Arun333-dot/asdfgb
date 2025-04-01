@@ -1,11 +1,11 @@
-WITH seed1 AS (
+WITH seed_prophecy AS (
 
   SELECT * 
   
-  FROM {{ ref('seed1')}}
+  FROM {{ ref('seed_prophecy')}}
 
 )
 
 SELECT *
 
-FROM seed1
+FROM seed_prophecy

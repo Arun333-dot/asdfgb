@@ -87,13 +87,10 @@ sqlModels:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: arun
+      - name: name
         dataType:
-          type: Integer
-      - name: ball
-        dataType:
-          type: Integer
-      - name: cat_ths_is_prophecy
+          type: String
+      - name: age
         dataType:
           type: Integer
     description: null
