@@ -1,4 +1,4 @@
-name: siomple_snowflake_Sql
+name: simple_sql_bigquery
 description: ''
 version: 0.0.1
 author: arunsharma+admin@prophecy.io
@@ -16,7 +16,7 @@ gemContainer:
   dependencies: null
 functions:
   author: null
-  createdAt: '2025-04-01 07:33:55'
+  createdAt: '2025-04-01 09:06:03'
   udfs: {}
   udafs: {}
   expressions: {}
@@ -38,22 +38,7 @@ sqlModels:
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2025-04-01 07:34:06'
-  .prophecy/metadata/sqlmodels/model2:
-    name: model2
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - models/model2.sql
-    - .prophecy/ide/models/model2.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-04-01 07:34:12'
+    createdAt: '2025-04-01 09:09:40'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -65,29 +50,26 @@ sqlMacros:
     files:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
-    createdAt: '2025-04-01 07:33:59'
+    createdAt: '2025-04-01 09:06:07'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/seed1:
     name: seed1
     schema:
       entityType: ''
-      providerType: Snowflake
+      providerType: BigQuery
       fields:
       - name: name
         dataType:
           type: String
-      - name: age
+      - name: age_github
         dataType:
-          type: Number
-      - name: status_prophecy
-        dataType:
-          type: String
+          type: Integer
     description: null
     author: arunsharma+admin@prophecy.io
     files:
     - seeds/seed1.csv
     - seeds/seeds.yml
-    createdAt: '2025-04-01 08:48:21'
+    createdAt: '2025-04-01 09:06:27'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines: {}
@@ -96,7 +78,7 @@ sqlPipeline:
   name: sqlPipeline
   description: null
   author: arunsharma+admin@prophecy.io
-  createdAt: '2025-04-01 07:33:55'
+  createdAt: '2025-04-01 09:06:03'
 dependencies: []
 projectDependencies: {}
 flags:
