@@ -10,6 +10,69 @@
     "version" : 3
   },
   "processes" : {
+    "B6FImGGiyR8xa8PlxVrAK$$DIvtztGlO89ECIbYZg_BR" : {
+      "id" : "B6FImGGiyR8xa8PlxVrAK$$DIvtztGlO89ECIbYZg_BR",
+      "component" : "Intersect",
+      "metadata" : {
+        "label" : "Intersect_1",
+        "slug" : "Intersect_1",
+        "x" : -680,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "operationType" : "intersect",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MFrMQABX5vAShnXNsNePk$$ho41NdYd6k0C4K4zEWobV",
+          "slug" : "in0"
+        }, {
+          "id" : "9GN92XxLsEzIN5DQIQEFL$$CaUXfInPiPHpGfWywflUn",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "JTzti9kmm1Uu7cA-RFj5X$$femDdNTOBPlL8HVvoGdpr",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "qJ4lcimVtS_qmgfnerHDu$$tvD13D_cCntCHvCzny8HA" : {
+      "id" : "qJ4lcimVtS_qmgfnerHDu$$tvD13D_cCntCHvCzny8HA",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -820,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7OklIuCzcaIDHRIeE2aDe$$AdRhvuRNt4ssifTvORXXy",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "B5ECTWSf0Lx1swEqDcZnK$$7qqqv04Vi_kHWeVi5z4yE",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
     "model45##jSCaYB49" : {
       "id" : "model45##jSCaYB49",
       "component" : "TargetModel",
@@ -17,14 +80,14 @@
         "label" : "model45",
         "x" : 20,
         "y" : 20,
-        "phase" : 0
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
-        "isModel" : true,
+        "query" : "SELECT * \n\nFROM in0\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -43,67 +106,62 @@
         "autoUpdateOnRun" : false
       }
     },
-    "pe2JnsMPp34GLsA_95Zqd$$LM-T3LUrUk4hT7eZ7Vdep" : {
-      "id" : "pe2JnsMPp34GLsA_95Zqd$$LM-T3LUrUk4hT7eZ7Vdep",
-      "component" : "WindowFunction",
+    "RSuEs2arQqDrz5GXnYStb$$BzthEkyWkAKdt7dhnUGY7" : {
+      "id" : "RSuEs2arQqDrz5GXnYStb$$BzthEkyWkAKdt7dhnUGY7",
+      "component" : "Subgraph",
       "metadata" : {
-        "label" : "WindowFunction_1",
-        "slug" : "WindowFunction_1",
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : -540,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "processes" : { },
+      "connections" : [ ],
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2uXy0UtNbLiUXwnx1UV5g$$S1paNHrsZM5fZEhlBG7Lv",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "xct5np0bPSvKxP4-F2-hs$$iZD98-t4FlEwlSUITXcew",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "canonical" : false
+    },
+    "Oh3s_7cU_BSDfJXCL3d4a$$y85SLpNx2rm-kxe463ago" : {
+      "id" : "Oh3s_7cU_BSDfJXCL3d4a$$y85SLpNx2rm-kxe463ago",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
         "x" : -960,
         "y" : -420,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "frameEndType" : null,
-        "frameEndValue" : null,
-        "expressions" : [ ],
-        "frameType" : null,
-        "activeTab" : "partitionTab",
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
         "columnsSelector" : [ ],
-        "partitionExpressions" : [ ],
-        "frameStartValue" : null,
-        "frameStartType" : null,
-        "ordersBy" : [ ]
+        "groupBy" : [ ]
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "K4WToK8OTqVaoomgSsE9A$$J1JCpuXrNCl5nmY995SJO",
+          "id" : "rFfKUhzT3PaPMvw6QDKQY$$MDeBhsi5_phbIuvURtQMP",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "By48sLf2W61lTzD25cnSY$$YsadPz4cSqTWlLIt4BWB3",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
-    "aFMvnbearwdDM6Pd4TZmN$$63xaJD4Ivly7RyHf96hSk" : {
-      "id" : "aFMvnbearwdDM6Pd4TZmN$$63xaJD4Ivly7RyHf96hSk",
-      "component" : "Deduplicate",
-      "metadata" : {
-        "label" : "Deduplicate_1",
-        "slug" : "Deduplicate_1",
-        "x" : -820,
-        "y" : -420,
-        "phase" : 0,
-        "macroDependencies" : [ ]
-      },
-      "properties" : {
-        "dedupColumns" : [ ],
-        "dedupType" : "distinct",
-        "columnsSelector" : [ ],
-        "orders" : [ ],
-        "useOrderBy" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "sYj4ldDydrSC7r932UgG1$$OpsBy7ubc1wp66PS62iZu",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "4i8lfQmYah7w6V2eDL040$$DIopRzyZnJjwy0cTK-qkc",
+          "id" : "cPlMbI4HOp0BOMDlvExn5$$HzNgSX0k-jlvyBfcTBLHU",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
