@@ -24,7 +24,7 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM seed\n",
+        "query" : "SELECT * \n\nFROM seed_prophecy\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -34,7 +34,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "TMFn6TF0",
-          "slug" : "seed"
+          "slug" : "seed_prophecy"
         } ],
         "outputs" : [ {
           "id" : "wHsjjh9E",
@@ -44,19 +44,19 @@
         "autoUpdateOnRun" : false
       }
     },
-    "Lp-vBeGKr52vWnWKNyNJG" : {
-      "id" : "Lp-vBeGKr52vWnWKNyNJG",
+    "Q4sRmuuQ0VmogNOrmRhhV" : {
+      "id" : "Q4sRmuuQ0VmogNOrmRhhV",
       "component" : "Seed",
       "metadata" : {
-        "label" : "seed",
-        "slug" : "seed",
+        "label" : "seed_prophecy",
+        "slug" : "seed_prophecy",
         "x" : -220,
-        "y" : -20,
+        "y" : 0,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "seed",
+          "name" : "seed_prophecy",
           "sourceType" : "Seed",
           "alias" : ""
         }
@@ -64,7 +64,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "U9-DtcfWKAjtJpwNt66sB",
+          "id" : "1EzvnNxkhXXIMU1IwFeuO",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -73,9 +73,9 @@
     }
   },
   "connections" : [ {
-    "id" : "2YG_p3AXa-qae1tebKHsG$$kPx07Hj3aDicxwsd1Ktnj",
-    "source" : "Lp-vBeGKr52vWnWKNyNJG",
-    "sourcePort" : "U9-DtcfWKAjtJpwNt66sB",
+    "id" : "RVfjEALARM5rG5RadwZtp$$6_s9s7auWpkGv7j-rFRAj",
+    "source" : "Q4sRmuuQ0VmogNOrmRhhV",
+    "sourcePort" : "1EzvnNxkhXXIMU1IwFeuO",
     "target" : "model1##hJLxxaI7",
     "targetPort" : "TMFn6TF0"
   } ],
