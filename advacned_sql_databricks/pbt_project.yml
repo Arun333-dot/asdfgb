@@ -1,6 +1,6 @@
 name: advacned_sql_databricks
 description: ''
-version: 0.0.1
+version: version
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
