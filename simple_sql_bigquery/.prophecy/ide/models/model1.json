@@ -1,0 +1,51 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "userDefinedConfig" : {
+        "vars" : { }
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "final##Nmpo1ZN2" : {
+      "id" : "final##Nmpo1ZN2",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "phase" : 0,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : true,
+        "incrementalEditorDisabled" : true,
+        "query" : "model1: this is model changes\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "F04lZLwn",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 0
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
