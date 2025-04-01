@@ -24,8 +24,8 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
-  .prophecy/metadata/sqlmodels/model1:
-    name: model1
+  .prophecy/metadata/sqlmodels/m2:
+    name: m2
     schema:
       entityType: ''
       providerType: Databricks
@@ -39,16 +39,15 @@ sqlModels:
     description: null
     author: sony@prophecy.io
     files:
-    - models/model1.sql
-    - .prophecy/ide/models/model1.json
-    - models/schema.yml
+    - models/m2.sql
+    - .prophecy/ide/models/m2.json
     sqlDependencies:
       models: []
       datasets: []
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2025-04-01 17:12:48'
+    createdAt: '2025-04-01 17:15:36'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:

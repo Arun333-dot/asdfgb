@@ -1,38 +1,22 @@
 {
-  "id" : "model1",
+  "id" : "m2",
   "metainfo" : {
-    "label" : "model1",
+    "label" : "m2",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
-    "version" : 3,
-    "properties" : {
-      "name" : "model1",
-      "columns" : [ {
-        "name" : "name",
-        "dataType" : {
-          "type" : "String"
-        }
-      }, {
-        "name" : "age",
-        "dataType" : {
-          "type" : "Integer"
-        }
-      } ],
-      "tests" : [ ],
-      "providerType" : "databricks"
-    }
+    "version" : 3
   },
   "processes" : {
-    "model1##JUIv6uzO" : {
-      "id" : "model1##JUIv6uzO",
+    "m2##KxKmZRHC" : {
+      "id" : "m2##KxKmZRHC",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "model1",
-        "x" : 40,
-        "y" : -140,
+        "label" : "m2",
+        "x" : 20,
+        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -49,25 +33,25 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "WlqQOKal",
+          "id" : "lsO2PF5L",
           "slug" : "seed1"
         } ],
         "outputs" : [ {
-          "id" : "QItAasah",
+          "id" : "PRaJhXED",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
     },
-    "zj6lx1E1g17iKyVSpjER4" : {
-      "id" : "zj6lx1E1g17iKyVSpjER4",
+    "xt9WzfBWlnYtWKnD2tyJy$$3MCGnVCTCdov5U6-tB6Qv" : {
+      "id" : "xt9WzfBWlnYtWKnD2tyJy$$3MCGnVCTCdov5U6-tB6Qv",
       "component" : "Seed",
       "metadata" : {
         "label" : "seed1",
         "slug" : "seed1",
-        "x" : -120,
-        "y" : 100,
+        "x" : -700,
+        "y" : -300,
         "phase" : 0
       },
       "properties" : {
@@ -80,7 +64,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "BcrLOhJxuW-NhVSGaV_aC",
+          "id" : "tlhEbuNZGUyO_rgoIqPi7$$hgODpeNgarYWjMPcRUBP9",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -89,11 +73,11 @@
     }
   },
   "connections" : [ {
-    "id" : "g_3SHMbRo0O5NOLJJtcDf$$y__MMsWx1drPJqxYPrQmE",
-    "source" : "zj6lx1E1g17iKyVSpjER4",
-    "sourcePort" : "BcrLOhJxuW-NhVSGaV_aC",
-    "target" : "model1##JUIv6uzO",
-    "targetPort" : "WlqQOKal"
+    "id" : "QIu1JVFZq8jAGwb_OtAe9",
+    "source" : "xt9WzfBWlnYtWKnD2tyJy$$3MCGnVCTCdov5U6-tB6Qv",
+    "sourcePort" : "tlhEbuNZGUyO_rgoIqPi7$$hgODpeNgarYWjMPcRUBP9",
+    "target" : "m2##KxKmZRHC",
+    "targetPort" : "lsO2PF5L"
   } ],
   "component" : "Model"
 }
