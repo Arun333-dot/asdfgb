@@ -1,0 +1,30 @@
+---
+version: 2
+models:
+- name: "model_pipeline1_Aggregate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline1_Deduplicate_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_pipeline1_FlattenSchema_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_pipeline1_source"
+  database: "database"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_pipeline1_post_Aggregate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline1_post_Deduplicate_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline1_post_FlattenSchema_1_0"
+    tags:
+    - "prophecy_temp"

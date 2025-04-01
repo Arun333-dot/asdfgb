@@ -21,6 +21,33 @@
     }
   },
   "processes" : {
+    "vXgqND6uSozG0Mk0kiV99$$f7vNQqi4f_q3D3D-D0lO4" : {
+      "id" : "vXgqND6uSozG0Mk0kiV99$$f7vNQqi4f_q3D3D-D0lO4",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline1_FlattenSchema_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline1_FlattenSchema_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_FlattenSchema_1_0", "vXgqND6uSozG0Mk0kiV99$$f7vNQqi4f_q3D3D-D0lO4" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline1_FlattenSchema_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline1_FlattenSchema_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz" : {
       "id" : "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz",
       "component" : "OrchestrationSource",
@@ -87,6 +114,60 @@
         "outputs" : [ {
           "id" : "Shl2ntD5eavWQumD3XnxY$$UYmv6PZRMpuvnMpg2WXrN",
           "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6" : {
+      "id" : "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline1_Deduplicate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline1_Deduplicate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Deduplicate_1_0", "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline1_Deduplicate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline1_Deduplicate_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-" : {
+      "id" : "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline1_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline1_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_pipeline1_post_Aggregate_1_0", "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline1_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline1_Aggregate_1_out_1",
+          "slug" : "out_1"
         } ],
         "isCustomOutputSchema" : false
       }

@@ -21,6 +21,32 @@
     }
   },
   "processes" : {
+    "vXgqND6uSozG0Mk0kiV99$$f7vNQqi4f_q3D3D-D0lO4" : {
+      "id" : "vXgqND6uSozG0Mk0kiV99$$f7vNQqi4f_q3D3D-D0lO4",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "x" : -180,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "flattenExpressions" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GPVYb0ftuqk1fIj-9smmy$$_nWpfMJTE01Luw9KZ-Kgb",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "SdMSIS7DafHXmEZk0ylF2$$3BPMg6fcHTSOXlmnYGjTS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz" : {
       "id" : "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz",
       "component" : "OrchestrationSource",
@@ -86,6 +112,65 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "Shl2ntD5eavWQumD3XnxY$$UYmv6PZRMpuvnMpg2WXrN",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6" : {
+      "id" : "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "x" : -320,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wZFzNTGV1afhWfPs2omKn$$-msDpGpf-Vgw6hBDxqPe7",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "WLrUjp0mwIfHJ7godd6Ul$$oLWUDjV1hzi9fVs8wKyuA",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-" : {
+      "id" : "-1QC1AyjgM5w6pTMn03e-$$cmEriHtdX8foXyIXkbTK-",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : -460,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WFNHdkTN34z55v-G5Cs-H$$G0b0vRhwh7yqDec7RVz5p",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "JAoJtpwWstKKjCNVX4fCp$$l3oC65cQlwDwYY6GYPNCT",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
