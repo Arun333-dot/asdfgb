@@ -3,7 +3,7 @@
   "metainfo" : {
     "label" : "model4",
     "autoLayout" : false,
-    "staleState" : "file",
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "seed1##iS7LjIGu" : {
-      "id" : "seed1##iS7LjIGu",
+    "seed1##vPeNhnzB" : {
+      "id" : "seed1##vPeNhnzB",
       "component" : "Model",
       "metadata" : {
         "label" : "seed1",
@@ -27,14 +27,14 @@
       },
       "properties" : {
         "table" : {
-          "name" : "seembnbmbnmbnmbnmbnmbnmd1",
+          "name" : "seed1_github",
           "sourceType" : "Model"
         }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "akUvmICh",
+          "id" : "xxJNVS47",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -42,8 +42,8 @@
       },
       "index" : 0
     },
-    "final##B2ywSNjx" : {
-      "id" : "final##B2ywSNjx",
+    "final##Xt7sV6Hp" : {
+      "id" : "final##Xt7sV6Hp",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model4",
@@ -65,11 +65,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "WU87UC03",
+          "id" : "F80Z6yrg",
           "slug" : "seed1"
         } ],
         "outputs" : [ {
-          "id" : "ofmev4YX",
+          "id" : "bCsHLQ1F",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -79,11 +79,11 @@
     }
   },
   "connections" : [ {
-    "id" : "Adj5xUgl",
-    "source" : "seed1##iS7LjIGu",
-    "sourcePort" : "akUvmICh",
-    "target" : "final##B2ywSNjx",
-    "targetPort" : "WU87UC03"
+    "id" : "mougttCn",
+    "source" : "seed1##vPeNhnzB",
+    "sourcePort" : "xxJNVS47",
+    "target" : "final##Xt7sV6Hp",
+    "targetPort" : "F80Z6yrg"
   } ],
   "component" : "Model"
 }
