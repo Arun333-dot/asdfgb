@@ -24,7 +24,7 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM seed\n",
+        "query" : "SELECT * \n\nFROM seed_github\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -34,7 +34,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "TMFn6TF0",
-          "slug" : "seed"
+          "slug" : "seed_github"
         } ],
         "outputs" : [ {
           "id" : "wHsjjh9E",
@@ -46,18 +46,18 @@
     },
     "Lp-vBeGKr52vWnWKNyNJG" : {
       "id" : "Lp-vBeGKr52vWnWKNyNJG",
-      "component" : "Seed",
+      "component" : "seed_github",
       "metadata" : {
-        "label" : "seed",
-        "slug" : "seed",
+        "label" : "seed_github",
+        "slug" : "seed_github",
         "x" : -220,
         "y" : -20,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "seed",
-          "sourceType" : "Seed",
+          "name" : "seed_github",
+          "sourceType" : "seed_github",
           "alias" : ""
         }
       },
