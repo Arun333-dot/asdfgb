@@ -2,7 +2,7 @@ WITH seed_prophecy AS (
 
   SELECT * 
   
-  FROM {{ ref('seed_prophecy')}}
+  FROM {{ ref('seed_github')}}
 
 )
 
