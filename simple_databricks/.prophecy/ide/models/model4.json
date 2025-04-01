@@ -31,8 +31,8 @@
     }
   },
   "processes" : {
-    "seed1##WyR6bvQ1" : {
-      "id" : "seed1##WyR6bvQ1",
+    "seed1##sy7SaATm" : {
+      "id" : "seed1##sy7SaATm",
       "component" : "Seed",
       "metadata" : {
         "label" : "seed1",
@@ -43,14 +43,14 @@
       },
       "properties" : {
         "table" : {
-          "name" : "seed1",
+          "name" : "seed_prophecy",
           "sourceType" : "Seed"
         }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "DlZTqCQE",
+          "id" : "yPsrCLgm",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -58,8 +58,8 @@
       },
       "index" : 0
     },
-    "final##cVstogwE" : {
-      "id" : "final##cVstogwE",
+    "final##DVpTxRZm" : {
+      "id" : "final##DVpTxRZm",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model4",
@@ -81,11 +81,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "ilM8pgOw",
+          "id" : "RaHIENF6",
           "slug" : "seed1"
         } ],
         "outputs" : [ {
-          "id" : "IL3MhRs1",
+          "id" : "UGRLnwWI",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -95,11 +95,11 @@
     }
   },
   "connections" : [ {
-    "id" : "JEHQrt4f",
-    "source" : "seed1##WyR6bvQ1",
-    "sourcePort" : "DlZTqCQE",
-    "target" : "final##cVstogwE",
-    "targetPort" : "ilM8pgOw"
+    "id" : "hPFeCaHh",
+    "source" : "seed1##sy7SaATm",
+    "sourcePort" : "yPsrCLgm",
+    "target" : "final##DVpTxRZm",
+    "targetPort" : "RaHIENF6"
   } ],
   "component" : "Model"
 }
