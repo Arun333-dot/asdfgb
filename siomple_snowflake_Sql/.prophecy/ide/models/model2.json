@@ -10,67 +10,7 @@
     "version" : 3
   },
   "processes" : {
-    "model2##e97jjWHy" : {
-      "id" : "model2##e97jjWHy",
-      "component" : "TargetModel",
-      "metadata" : {
-        "label" : "model2",
-        "x" : 20,
-        "y" : 20,
-        "phase" : 0
-      },
-      "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
-        "incrementalEditorDisabled" : true,
-        "query" : "",
-        "isModel" : true,
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Zlr0YrHA",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "HIRbRD9o",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
-    "QRqtoyL9IEn4qrOPqxZ-7$$UksDBOgTd5V_ANpBDQK4E" : {
-      "id" : "QRqtoyL9IEn4qrOPqxZ-7$$UksDBOgTd5V_ANpBDQK4E",
-      "component" : "Pivot",
-      "metadata" : {
-        "label" : "Pivot_1",
-        "slug" : "Pivot_1",
-        "x" : -960,
-        "y" : -420,
-        "phase" : 0,
-        "macroDependencies" : [ ]
-      },
-      "properties" : {
-        "inputAlias" : "in0",
-        "allowSelection" : true,
-        "pivotColumnValues" : [ ],
-        "expressions" : [ ],
-        "pivotColumn" : {
-          "expression" : {
-            "expression" : ""
-          },
-          "alias" : null,
-          "description" : null
-        },
-        "activeTab" : "expressions",
-        "aggregateExpression" : {
-          "expression" : {
-            "expression" : ""
-          },
+
           "alias" : null,
           "description" : null
         }
