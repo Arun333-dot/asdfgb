@@ -61,8 +61,8 @@ sqlMacros:
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-04-01 17:11:07'
 sqlSeeds:
-  .prophecy/metadata/sqlseeds/seed1:
-    name: seed1
+  .prophecy/metadata/sqlseeds/seed444444:
+    name: seed444444
     schema:
       entityType: ''
       providerType: Databricks
@@ -76,9 +76,9 @@ sqlSeeds:
     description: null
     author: sony@prophecy.io
     files:
-    - seeds/seed1.csv
+    - seeds/seed444444.csv
     - seeds/seeds.yml
-    createdAt: '2025-04-01 17:14:02'
+    createdAt: '2025-04-01 17:17:35'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines: {}

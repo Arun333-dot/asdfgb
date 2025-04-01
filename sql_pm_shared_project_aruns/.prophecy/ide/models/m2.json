@@ -24,7 +24,7 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM seed1\n",
+        "query" : "SELECT * \n\nFROM seed444444\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -34,7 +34,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "lsO2PF5L",
-          "slug" : "seed1"
+          "slug" : "seed444444"
         } ],
         "outputs" : [ {
           "id" : "PRaJhXED",
@@ -44,19 +44,19 @@
         "autoUpdateOnRun" : false
       }
     },
-    "xt9WzfBWlnYtWKnD2tyJy$$3MCGnVCTCdov5U6-tB6Qv" : {
-      "id" : "xt9WzfBWlnYtWKnD2tyJy$$3MCGnVCTCdov5U6-tB6Qv",
+    "VX61pmrF2tZrcH8bEz48B" : {
+      "id" : "VX61pmrF2tZrcH8bEz48B",
       "component" : "Seed",
       "metadata" : {
-        "label" : "seed1",
-        "slug" : "seed1",
-        "x" : -700,
-        "y" : -300,
+        "label" : "seed444444",
+        "slug" : "seed444444",
+        "x" : -100,
+        "y" : 0,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "seed1",
+          "name" : "seed444444",
           "sourceType" : "Seed",
           "alias" : ""
         }
@@ -64,7 +64,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "tlhEbuNZGUyO_rgoIqPi7$$hgODpeNgarYWjMPcRUBP9",
+          "id" : "ICNYnHkXZply4A_AyjNPM",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -73,9 +73,9 @@
     }
   },
   "connections" : [ {
-    "id" : "QIu1JVFZq8jAGwb_OtAe9",
-    "source" : "xt9WzfBWlnYtWKnD2tyJy$$3MCGnVCTCdov5U6-tB6Qv",
-    "sourcePort" : "tlhEbuNZGUyO_rgoIqPi7$$hgODpeNgarYWjMPcRUBP9",
+    "id" : "NNfnd8K3W_xsE6N-PQzr5$$9lKIKN3taR_3jkOa0_hSD",
+    "source" : "VX61pmrF2tZrcH8bEz48B",
+    "sourcePort" : "ICNYnHkXZply4A_AyjNPM",
     "target" : "m2##KxKmZRHC",
     "targetPort" : "lsO2PF5L"
   } ],
