@@ -108,6 +108,39 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "ypPVKIAb32y0eTfQ8Z1hH$$7Csir0ei95FX63e-Eg2s-" : {
+      "id" : "ypPVKIAb32y0eTfQ8Z1hH$$7Csir0ei95FX63e-Eg2s-",
+      "component" : "Except",
+      "metadata" : {
+        "label" : "Except_1",
+        "slug" : "Except_1",
+        "x" : -680,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "operationType" : "except",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2igH89SILsdT3PmZ03E8P$$FNIST3Mssmz5F_lI6ZdDs",
+          "slug" : "in0"
+        }, {
+          "id" : "-oVh-OiAaCFX2zmry50ex$$EJ4xqTfVyyDRBNtk4php6",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "jOVl31jyjgXDdScwExhYW$$-9IVnZGMi_Nd_-A31JmDz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ ],
