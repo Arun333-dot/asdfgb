@@ -1,0 +1,9 @@
+---
+packages:
+- revision: "0.0.1"
+  git: "https://github.com/prophecy-io/databricks-sql-basics"
+  subdirectory: ""
+- package: "dbt-labs/dbt_utils"
+  version:
+  - ">=1.0.0"
+  - "<2.0.0"

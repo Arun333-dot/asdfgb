@@ -1,0 +1,54 @@
+{
+  "name" : "sql_redshift_project",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "redshift",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : { },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Database",
+      "name" : "awsdatacatalog",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "dev",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "padb_harvest",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "qa_database",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "sample_data_dev",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "sumit-test",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

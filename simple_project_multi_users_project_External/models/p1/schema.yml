@@ -1,0 +1,18 @@
+---
+version: 2
+models:
+- name: "model_p1_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p1_source"
+  database: "hive_metastore"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p1_post_WindowFunction_1_0"
+    tags:
+    - "prophecy_temp"

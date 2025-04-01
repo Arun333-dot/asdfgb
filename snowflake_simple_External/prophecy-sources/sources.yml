@@ -1,0 +1,28 @@
+---
+version: 2
+sources:
+- name: "BLACKROCK.TEST"
+  database: "BLACKROCK"
+  schema: "TEST"
+  config:
+    enabled: true
+  tables:
+  - name: "GRADES"
+    description: "Student grades data for various subjects, enabling performance tracking\
+      \ and assessment."
+    quoting:
+      identifier: true
+    columns:
+    - name: "STUDENT"
+      description: "Name of the student receiving the grades"
+      dataType:
+        type: "String"
+    - name: "SUBJECT"
+      description: "The subject for which the grades are recorded"
+      dataType:
+        type: "String"
+    - name: "MARKS"
+      description: "The score achieved by the student in the subject"
+      dataType:
+        type: "Number"
+    type: "table"

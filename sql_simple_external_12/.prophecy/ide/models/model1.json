@@ -1,0 +1,84 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##GPKEwP7t" : {
+      "id" : "model1##GPKEwP7t",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM million_records\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "x9EyTA2o",
+          "slug" : "million_records"
+        } ],
+        "outputs" : [ {
+          "id" : "LBBKQEQ8",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "EHQc0ZP8icx2AtSV0hn6s$$ytKw46A8tO9LKFBx0VNqN" : {
+      "id" : "EHQc0ZP8icx2AtSV0hn6s$$ytKw46A8tO9LKFBx0VNqN",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "million_records",
+        "slug" : "million_records",
+        "x" : -480,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "million_records",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "bVaBJXST216aDmr9e8nkM$$JOzblwdh2WzkzgOan9GCW",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "7jVa_XrWQxx2y0-IcVDqD",
+    "source" : "EHQc0ZP8icx2AtSV0hn6s$$ytKw46A8tO9LKFBx0VNqN",
+    "sourcePort" : "bVaBJXST216aDmr9e8nkM$$JOzblwdh2WzkzgOan9GCW",
+    "target" : "model1##GPKEwP7t",
+    "targetPort" : "x9EyTA2o"
+  } ],
+  "component" : "Model"
+}

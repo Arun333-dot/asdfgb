@@ -1,0 +1,10 @@
+---
+version: 2
+sources:
+- name: "main.information_schema"
+  database: "main"
+  schema: "information_schema"
+  tables:
+  - name: "key_column_usage"
+    columns: []
+    type: "table"

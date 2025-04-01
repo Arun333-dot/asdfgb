@@ -1,0 +1,48 @@
+{
+  "id" : "model2",
+  "metainfo" : {
+    "label" : "model2",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model2##LUrvRZZf" : {
+      "id" : "model2##LUrvRZZf",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model2",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XyL4s6JQ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ggf4ckSX",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
