@@ -1,22 +1,20 @@
 {
-  "id" : "model1",
+  "id" : "model2",
   "metainfo" : {
-    "label" : "model1",
-    "autoLayout" : false,
-    "staleState" : "file",
+    "label" : "model2",
+    "autoLayout" : true,
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
     "version" : 3
   },
   "processes" : {
-    "model1##rb1cdnWw" : {
-      "id" : "model1##rb1cdnWw",
+    "model2##H7RBBd31" : {
+      "id" : "model2##H7RBBd31",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "model1",
-        "x" : 20,
-        "y" : 20,
+        "label" : "model2",
         "phase" : 0
       },
       "properties" : {
@@ -31,11 +29,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "aQVJzS9K",
+          "id" : "CJAwwLBE",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "F7JG1f8X",
+          "id" : "Th0RdItD",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
