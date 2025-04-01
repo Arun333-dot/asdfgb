@@ -15,9 +15,9 @@
     "version" : 3
   },
   "processes" : {
-    "seed1##vPeNhnzB" : {
-      "id" : "seed1##vPeNhnzB",
-      "component" : "Model",
+    "seed1##mfILe6jW" : {
+      "id" : "seed1##mfILe6jW",
+      "component" : "Seed",
       "metadata" : {
         "label" : "seed1",
         "x" : 20,
@@ -27,14 +27,14 @@
       },
       "properties" : {
         "table" : {
-          "name" : "seed1_github",
-          "sourceType" : "Model"
+          "name" : "seed_github",
+          "sourceType" : "Seed"
         }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "xxJNVS47",
+          "id" : "Yj2LOUnE",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -42,8 +42,8 @@
       },
       "index" : 0
     },
-    "final##Xt7sV6Hp" : {
-      "id" : "final##Xt7sV6Hp",
+    "final##LlEsjIZL" : {
+      "id" : "final##LlEsjIZL",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model4",
@@ -65,11 +65,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "F80Z6yrg",
+          "id" : "zshsGd0F",
           "slug" : "seed1"
         } ],
         "outputs" : [ {
-          "id" : "bCsHLQ1F",
+          "id" : "hBayZSjg",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -79,11 +79,11 @@
     }
   },
   "connections" : [ {
-    "id" : "mougttCn",
-    "source" : "seed1##vPeNhnzB",
-    "sourcePort" : "xxJNVS47",
-    "target" : "final##Xt7sV6Hp",
-    "targetPort" : "F80Z6yrg"
+    "id" : "Cvq530NQ",
+    "source" : "seed1##mfILe6jW",
+    "sourcePort" : "Yj2LOUnE",
+    "target" : "final##LlEsjIZL",
+    "targetPort" : "zshsGd0F"
   } ],
   "component" : "Model"
 }
