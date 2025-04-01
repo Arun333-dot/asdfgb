@@ -82,7 +82,23 @@ sqlMacros:
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-04-01 07:17:46'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/main_information_schema:
+    name: main.information_schema
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-04-01 08:36:27'
+    tables:
+    - name: key_column_usage
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-04-01 08:36:27'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
