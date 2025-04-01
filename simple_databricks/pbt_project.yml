@@ -41,7 +41,19 @@ sqlModels:
     createdAt: '2025-04-01 10:37:49'
   .prophecy/metadata/sqlmodels/model2:
     name: model2
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: arun
+        dataType:
+          type: Integer
+      - name: ball
+        dataType:
+          type: Integer
+      - name: cat_ths_is_prophecy
+        dataType:
+          type: Integer
     description: null
     author: arunsharma+admin@prophecy.io
     files:
