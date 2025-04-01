@@ -10,66 +10,6 @@
     "version" : 3
   },
   "processes" : {
-    "model2##hllXb9AE" : {
-      "id" : "model2##hllXb9AE",
-      "component" : "TargetModel",
-      "metadata" : {
-        "label" : "model2",
-        "x" : 20,
-        "y" : 20,
-        "phase" : 0
-      },
-      "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
-        "incrementalEditorDisabled" : true,
-        "query" : "",
-        "isModel" : true,
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "mF9OPu7c",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "QAEezIob",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
-    "0ML3q7LAigO4btcpJCF7u$$j2mDUx0oe1uoEn8aPB0o7" : {
-      "id" : "0ML3q7LAigO4btcpJCF7u$$j2mDUx0oe1uoEn8aPB0o7",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "Reformat_1",
-        "x" : -960,
-        "y" : -420,
-        "phase" : 0,
-        "macroDependencies" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "6AP4ql3ThWB62Paqg1fgA$$ES49W2uZQQYMoMBIJBVb-",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "GxoUeMu-44Z04BWjyCgq4$$4ft741ZgvNv__KSnccHlr",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
     }
   },
   "connections" : [ ],
