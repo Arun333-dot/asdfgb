@@ -15,6 +15,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model2",
+        "x" : 20,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -22,6 +24,7 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
