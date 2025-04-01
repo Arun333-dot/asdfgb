@@ -24,6 +24,6 @@ with DAG(Schedule = Schedule):
         format = CSVFormat(separator = ",", header = True), 
         filePath = {
           "type": "concat_operation", 
-          "properties": {"elements" : [{"type" : "literal", "properties" : {"value" : "this_is_github_path"}}]}
+          "properties": {"elements" : [{"type" : "literal", "properties" : {"value" : "randompath"}}]}
         }
     )

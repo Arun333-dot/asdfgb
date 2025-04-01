@@ -41,7 +41,19 @@ sqlModels:
     createdAt: '2025-04-01 07:19:14'
   .prophecy/metadata/sqlmodels/model2:
     name: model2
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: arun
+        dataType:
+          type: Integer
+      - name: ball
+        dataType:
+          type: Integer
+      - name: cat_ths_is_change
+        dataType:
+          type: Integer
     description: null
     author: arunsharma+admin@prophecy.io
     files:
@@ -69,6 +81,21 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2025-04-01 08:30:58'
+  .prophecy/metadata/sqlmodels/model4:
+    name: model4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model4.sql
+    - .prophecy/ide/models/model4.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-04-01 10:25:07'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -94,7 +121,7 @@ sqlSeeds:
       - name: ball
         dataType:
           type: Integer
-      - name: cat_ths_is_github
+      - name: cat_ths_is_change
         dataType:
           type: Integer
     description: null
@@ -122,20 +149,6 @@ sqlSources:
       createdAt: '2025-04-01 08:36:27'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
-    name: pipeline1
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - models/pipeline1/model_pipeline1_Aggregate_1.sql
-    - models/pipeline1/schema.yml
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
-    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
-    - models/pipeline1/model_pipeline1_Aggregate_2.sql
-    - .prophecy/ide/pipelines/pipeline1.json
-    - pipelines/pipeline1.py
-    createdAt: '2025-04-01 07:18:02'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline2:
     name: pipeline2
     schema: null
@@ -145,19 +158,46 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline2.json
     - pipelines/pipeline2.py
     createdAt: '2025-04-01 07:18:12'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
+    name: pipeline1
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_1.sql
+    - models/pipeline1/schema.yml
+    - models/pipeline1/model_pipeline1_Aggregate_2.sql
+    - .prophecy/ide/pipelines/pipeline1.json
+    - pipelines/pipeline1.py
+    createdAt: '2025-04-01 07:18:02'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
     name: pipeline3
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/pipeline3/model_pipeline3_Except_1.sql
     - models/pipeline3/model_pipeline3_Aggregate_1.sql
     - models/pipeline3/schema.yml
     - models/pipeline3/model_pipeline3_Deduplicate_1.sql
-    - models/pipeline3/model_pipeline3_Except_1.sql
     - .prophecy/ide/pipelines/pipeline3.json
     - pipelines/pipeline3.py
     createdAt: '2025-04-01 09:34:42'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline4:
+    name: pipeline4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline4/model_pipeline4_WindowFunction_1.sql
+    - models/pipeline4/schema.yml
+    - models/pipeline4/model_pipeline4_Filter_1.sql
+    - models/pipeline4/model_pipeline4_Intersect_1.sql
+    - .prophecy/ide/pipelines/pipeline4.json
+    - pipelines/pipeline4.py
+    createdAt: '2025-04-01 10:22:23'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
