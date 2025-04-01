@@ -26,7 +26,16 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/model1:
     name: model1
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
     description: null
     author: arunsharma+admin@prophecy.io
     files:
@@ -51,7 +60,59 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-04-01 04:25:25'
-sqlSeeds: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/seed:
+    name: seed
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/seed.csv
+    createdAt: '2025-04-01 11:33:19'
+  .prophecy/metadata/sqlseeds/seed_github:
+    name: seed_github
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/seed_github.csv
+    - seeds/seeds.yml
+    createdAt: '2025-04-01 11:34:31'
+  .prophecy/metadata/sqlseeds/seed_prophecy:
+    name: seed_prophecy
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/seed_prophecy.csv
+    createdAt: '2025-04-01 11:33:56'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:

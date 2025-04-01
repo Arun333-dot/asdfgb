@@ -3,7 +3,7 @@
   "metainfo" : {
     "label" : "model1",
     "autoLayout" : false,
-    "staleState" : "file",
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -15,13 +15,17 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model1",
-        "phase" : 0
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "SELECT * \n\nFROM seed\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -30,7 +34,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "TMFn6TF0",
-          "slug" : "in0"
+          "slug" : "seed"
         } ],
         "outputs" : [ {
           "id" : "wHsjjh9E",
@@ -39,8 +43,41 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "Lp-vBeGKr52vWnWKNyNJG" : {
+      "id" : "Lp-vBeGKr52vWnWKNyNJG",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "seed",
+        "slug" : "seed",
+        "x" : -220,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "seed",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "U9-DtcfWKAjtJpwNt66sB",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "2YG_p3AXa-qae1tebKHsG$$kPx07Hj3aDicxwsd1Ktnj",
+    "source" : "Lp-vBeGKr52vWnWKNyNJG",
+    "sourcePort" : "U9-DtcfWKAjtJpwNt66sB",
+    "target" : "model1##hJLxxaI7",
+    "targetPort" : "TMFn6TF0"
+  } ],
   "component" : "Model"
 }
