@@ -88,15 +88,15 @@ sqlSeeds:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: a
+      - name: afghfgh
         dataType:
-          type: Integer
-      - name: b
+          type: String
+      - name: bfghfgh
         dataType:
-          type: Integer
-      - name: c
+          type: String
+      - name: cfghfgh
         dataType:
-          type: Integer
+          type: String
     description: null
     author: arunsharma+admin@prophecy.io
     files:
