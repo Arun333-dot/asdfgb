@@ -128,11 +128,10 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_1.sql
     - models/pipeline1/schema.yml
-    - models/pipeline1/model_pipeline1_Deduplicate_2.sql
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
@@ -146,6 +145,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline2.json
     - pipelines/pipeline2.py
     createdAt: '2025-04-01 07:18:12'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
+    name: pipeline3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline3.json
+    - pipelines/pipeline3.py
+    createdAt: '2025-04-01 09:34:42'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

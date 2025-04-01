@@ -7,11 +7,19 @@
   })
 }}
 
-WITH Aggregate_2 AS (
+WITH Deduplicate_2 AS (
+
+  SELECT DISTINCT *
+  
+  FROM `` AS in0
+
+),
+
+Aggregate_2 AS (
 
   SELECT * 
   
-  FROM `` AS in0
+  FROM Deduplicate_2 AS in0
 
 )
 

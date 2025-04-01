@@ -26,8 +26,8 @@
       "component" : "Deduplicate",
       "metadata" : {
         "label" : "Deduplicate_2",
-        "x" : -1300,
-        "y" : -1000,
+        "x" : -1420,
+        "y" : -760,
         "phase" : 0
       },
       "properties" : {
@@ -150,8 +150,8 @@
       "component" : "Aggregate",
       "metadata" : {
         "label" : "Aggregate_2",
-        "x" : -1440,
-        "y" : -1000,
+        "x" : -1280,
+        "y" : -880,
         "phase" : 0
       },
       "properties" : {
@@ -388,6 +388,12 @@
     "sourcePort" : "oeKqOlwik7MCSwCLmtDtb$$_FZ_GTvkmd7gYi3jUgx16",
     "target" : "f65_JxoOQoKP4Ye0Z6ETP$$AigZl8X_oBhrTEKWRxlq6",
     "targetPort" : "wZFzNTGV1afhWfPs2omKn$$-msDpGpf-Vgw6hBDxqPe7"
+  }, {
+    "id" : "RO9VNI_abHTXgJRQNsBJf$$QX97cfxUmRPiKC092GAmq",
+    "source" : "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT",
+    "sourcePort" : "6mI6aTa9bWGp-mmjlMOsO$$bvXOCP07pT463SiU9u1HS",
+    "target" : "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la",
+    "targetPort" : "7lCGiSIfsYPOudDldLWpQ$$7-iP0wVK0DLUUdDAou-4N"
   } ],
   "component" : "Pipeline"
 }

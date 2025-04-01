@@ -56,6 +56,19 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "pipeline3" : {
+      "id" : "pipeline3",
+      "name" : "pipeline3",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/pipeline3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {

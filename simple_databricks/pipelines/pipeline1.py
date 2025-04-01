@@ -1,11 +1,6 @@
 Schedule = Schedule(cron = "* 0 2 * * * *", timezone = "GMT", emails = ["email@gmail.com"], enabled = False)
 
 with DAG(Schedule = Schedule):
-    model_pipeline1_Deduplicate_2 = Task(
-        task_id = "model_pipeline1_Deduplicate_2", 
-        component = "Model", 
-        modelName = "model_pipeline1_Deduplicate_2"
-    )
     OrchestrationSource_1 = Task(
         task_id = "OrchestrationSource_1", 
         component = "Dataset", 
@@ -90,6 +85,6 @@ with DAG(Schedule = Schedule):
         properties = {}
     )
     OrchestrationSource_0.out >> OrchestrationSource_0.input_port_0_1
-    OrchestrationSource_1.out >> OrchestrationSource_1.input_port_3_1
+    OrchestrationSource_1.out >> OrchestrationSource_1.input_port_2_1
     OrchestrationSource_0.output_port_0_1 >> model_pipeline1_Aggregate_1.in_1
-    OrchestrationSource_1.output_port_3_1 >> model_pipeline1_Deduplicate_1.in_1
+    OrchestrationSource_1.output_port_2_1 >> model_pipeline1_Deduplicate_1.in_1

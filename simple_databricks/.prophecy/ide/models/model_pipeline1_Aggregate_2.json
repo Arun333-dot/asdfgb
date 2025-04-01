@@ -39,12 +39,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_2_1",
-          "slug" : "input_port_2_1"
+          "id" : "input_port_5_1",
+          "slug" : "input_port_5_1"
         } ],
         "outputs" : [ {
-          "id" : "output_port_2_1",
-          "slug" : "output_port_2_1"
+          "id" : "output_port_5_1",
+          "slug" : "output_port_5_1"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -55,8 +55,8 @@
       "component" : "Aggregate",
       "metadata" : {
         "label" : "Aggregate_2",
-        "x" : -1440,
-        "y" : -1000,
+        "x" : -1280,
+        "y" : -880,
         "phase" : 0
       },
       "properties" : {
@@ -81,6 +81,35 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT" : {
+      "id" : "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_2",
+        "x" : -1420,
+        "y" : -760,
+        "phase" : 0
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SFXUTH5u4rUtPptwbqbmA$$6MDdPqvQTbsjEiWQKUWJd",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "6mI6aTa9bWGp-mmjlMOsO$$bvXOCP07pT463SiU9u1HS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ {
@@ -88,7 +117,13 @@
     "source" : "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la",
     "sourcePort" : "wHf9ch5Mt-3ufaPI1LVWv$$xLXQdMqHlNGzWKpc1qwM-",
     "target" : "prophecy__temp_pipeline1_post_Aggregate_2_0",
-    "targetPort" : "input_port_2_1"
+    "targetPort" : "input_port_5_1"
+  }, {
+    "id" : "RO9VNI_abHTXgJRQNsBJf$$QX97cfxUmRPiKC092GAmq",
+    "source" : "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT",
+    "sourcePort" : "6mI6aTa9bWGp-mmjlMOsO$$bvXOCP07pT463SiU9u1HS",
+    "target" : "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la",
+    "targetPort" : "7lCGiSIfsYPOudDldLWpQ$$7-iP0wVK0DLUUdDAou-4N"
   } ],
   "component" : "Model"
 }
