@@ -20,7 +20,43 @@
       "enabled" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "1T4XHU1zxa_QNuSTQGVSs$$l4U4rfCVNG5PmPjmKs7B1" : {
+      "id" : "1T4XHU1zxa_QNuSTQGVSs$$l4U4rfCVNG5PmPjmKs7B1",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "cbi12e023pf-MoQlnrRKW$$RoClVUJEDW3b-YvieLyb5",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
