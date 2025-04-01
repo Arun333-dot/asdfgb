@@ -208,19 +208,15 @@ sqlSources:
       createdAt: '2025-04-01 08:36:27'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
-    name: pipeline3
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline2:
+    name: pipeline2
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline3/model_pipeline3_Except_1.sql
-    - models/pipeline3/model_pipeline3_Aggregate_1.sql
-    - models/pipeline3/schema.yml
-    - models/pipeline3/model_pipeline3_Deduplicate_1.sql
-    - .prophecy/ide/pipelines/pipeline3.json
-    - pipelines/pipeline3.py
-    createdAt: '2025-04-01 09:34:42'
+    - .prophecy/ide/pipelines/pipeline2.json
+    - pipelines/pipeline2.py
+    createdAt: '2025-04-01 07:18:12'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline4:
     name: pipeline4
     schema: null
@@ -234,26 +230,30 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline4.json
     - pipelines/pipeline4.py
     createdAt: '2025-04-01 10:22:23'
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline2:
-    name: pipeline2
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
+    name: pipeline3
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - .prophecy/ide/pipelines/pipeline2.json
-    - pipelines/pipeline2.py
-    createdAt: '2025-04-01 07:18:12'
+    - models/pipeline3/model_pipeline3_Except_1.sql
+    - models/pipeline3/model_pipeline3_Aggregate_1.sql
+    - models/pipeline3/schema.yml
+    - models/pipeline3/model_pipeline3_Deduplicate_1.sql
+    - .prophecy/ide/pipelines/pipeline3.json
+    - pipelines/pipeline3.py
+    createdAt: '2025-04-01 09:34:42'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
     name: pipeline1
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
-    - models/pipeline1/schema.yml
-    - models/pipeline1/model_pipeline1_Aggregate_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_2.sql
+    - models/pipeline1/model_pipeline1_Aggregate_1.sql
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
+    - models/pipeline1/schema.yml
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
     createdAt: '2025-04-01 07:18:02'
