@@ -2,7 +2,7 @@ WITH seed1 AS (
 
   SELECT * 
   
-  FROM {{ ref('arunsharmadsfsdfsdfsdfsdf')}}
+  FROM {{ ref('arunsharmadsfsdfsfghfghfghdfsdfsdf')}}
 
 )
 
