@@ -21,6 +21,111 @@
     }
   },
   "processes" : {
+    "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz" : {
+      "id" : "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -880,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "oeKqOlwik7MCSwCLmtDtb$$_FZ_GTvkmd7gYi3jUgx16",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "4Gc_BhpqVCEPALJjE54fe$$9fAySbMGju_hUAOdkLl3t" : {
+      "id" : "4Gc_BhpqVCEPALJjE54fe$$9fAySbMGju_hUAOdkLl3t",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : -887.5635986328125,
+        "y" : -556.9465942382812,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Shl2ntD5eavWQumD3XnxY$$UYmv6PZRMpuvnMpg2WXrN",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "ThQj4OgUSUAg1LulL7oW4$$XXqxfg2AAxEQjLFxbmGWd" : {
+      "id" : "ThQj4OgUSUAg1LulL7oW4$$XXqxfg2AAxEQjLFxbmGWd",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_3",
+        "x" : -740,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "_n65oxM-dAOY0ZNUr4m_H$$Nvq2TExoxCG0ky4O4WhTj",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "1T4XHU1zxa_QNuSTQGVSs$$l4U4rfCVNG5PmPjmKs7B1" : {
       "id" : "1T4XHU1zxa_QNuSTQGVSs$$l4U4rfCVNG5PmPjmKs7B1",
       "component" : "OrchestrationSource",
@@ -53,6 +158,41 @@
           "id" : "cbi12e023pf-MoQlnrRKW$$RoClVUJEDW3b-YvieLyb5",
           "slug" : "out"
         } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "6ntR9rMQKcALDXmJbmWo5$$_1cFzoSOGDAW5HV5NOcvB" : {
+      "id" : "6ntR9rMQKcALDXmJbmWo5$$_1cFzoSOGDAW5HV5NOcvB",
+      "component" : "OrchestrationTarget",
+      "kind" : "S3Target",
+      "metadata" : {
+        "label" : "OrchestrationTarget_1",
+        "x" : -600,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xf-N07CoI6rhdr-W62vCT$$M1Q9nsoY5xTOqVFkeX_ar",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
         "isCustomOutputSchema" : false
       }
     }
