@@ -1,7 +1,7 @@
 {
-  "id" : "model1",
+  "id" : "model2",
   "metainfo" : {
-    "label" : "model1",
+    "label" : "model2",
     "autoLayout" : false,
     "staleState" : "file",
     "sourceSuggestions" : {
@@ -10,20 +10,21 @@
     "version" : 3
   },
   "processes" : {
-    "model1##jK2KP4C6" : {
-      "id" : "model1##jK2KP4C6",
+    "model2##hllXb9AE" : {
+      "id" : "model2##hllXb9AE",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "model1",
+        "label" : "model2",
         "x" : 20,
         "y" : 20,
-        "phase" : 0
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "SELECT * \n\nFROM in0\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -31,11 +32,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "FCtrhIRw",
+          "id" : "mF9OPu7c",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "YMdVDfGU",
+          "id" : "QAEezIob",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
