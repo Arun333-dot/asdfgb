@@ -20,7 +20,144 @@
       "enabled" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "cgqhGNKId71Y1o2q-DYHn$$3nH3QY58A3BDWoy7Q4cNH" : {
+      "id" : "cgqhGNKId71Y1o2q-DYHn$$3nH3QY58A3BDWoy7Q4cNH",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "empty_output_csv",
+        "x" : -560,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "randompath"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "bSV00o20tCrERy7SEY8WH$$ymV1Sm7igfzvwu6-mTsHW",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "nucDpjBbg_ZqrrO2OEJzc$$1WsxBPToOICso-dNSCJbc" : {
+      "id" : "nucDpjBbg_ZqrrO2OEJzc$$1WsxBPToOICso-dNSCJbc",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : -420,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wTBhkUmTaaErzvjMa356g$$-RkQNh_mVDc_ZOCu3UDWW",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "5FUwPUwihv1-55UIwB5KN$$ttrfFQXgwa5MbzAkh4zuy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "TYEU6dpJCIN0NDRBht9go$$XTZbkc6k-ZK5FKoW9kQW5" : {
+      "id" : "TYEU6dpJCIN0NDRBht9go$$XTZbkc6k-ZK5FKoW9kQW5",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "x" : -280,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "k5oX7eawrPqUhc95aMWir$$I7QbHiR3tekh8pry8zv7E",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "JifFSC0buqmwgL8_7iH8J$$9AoWBNcCnxLborwewAVk1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "jmqLOzmqweY9J4JsgmSyZ$$oDDqeBTROeiQLkHw0Kr7c" : {
+      "id" : "jmqLOzmqweY9J4JsgmSyZ$$oDDqeBTROeiQLkHw0Kr7c",
+      "component" : "Except",
+      "metadata" : {
+        "label" : "Except_1",
+        "x" : -140,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "operationType" : "except",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "l75ojkkMoZn1qRrav13DO$$RZ2SEX765kaI1Sh1IC7Lm",
+          "slug" : "in0"
+        }, {
+          "id" : "3K5ZNwEKYMj0twecOSYHe$$XmzEkgG1BN-jdsIGgAm3S",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "7Nuz5MWWpJSul0ot8GAIc$$HyYegL89E2qEPwQg1Rwt1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

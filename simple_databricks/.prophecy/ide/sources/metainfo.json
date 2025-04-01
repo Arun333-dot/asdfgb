@@ -68,7 +68,10 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "cgqhGNKId71Y1o2q-DYHn$$3nH3QY58A3BDWoy7Q4cNH",
+        "label" : "empty_output_csv"
+      } ]
     }
   },
   "dependenciesContainer" : {

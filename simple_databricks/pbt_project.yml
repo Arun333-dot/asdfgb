@@ -151,6 +151,10 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/pipeline3/model_pipeline3_Aggregate_1.sql
+    - models/pipeline3/schema.yml
+    - models/pipeline3/model_pipeline3_Deduplicate_1.sql
+    - models/pipeline3/model_pipeline3_Except_1.sql
     - .prophecy/ide/pipelines/pipeline3.json
     - pipelines/pipeline3.py
     createdAt: '2025-04-01 09:34:42'
