@@ -87,10 +87,13 @@ sqlModels:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: name
+      - name: arun
         dataType:
-          type: String
-      - name: age
+          type: Integer
+      - name: ball
+        dataType:
+          type: Integer
+      - name: cat_ths_is_prophecy
         dataType:
           type: Integer
     description: null
@@ -98,6 +101,7 @@ sqlModels:
     files:
     - models/model4.sql
     - .prophecy/ide/models/model4.json
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []

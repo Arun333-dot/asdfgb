@@ -12,11 +12,27 @@
         "vars" : { }
       }
     },
-    "version" : 3
+    "version" : 3,
+    "properties" : {
+      "name" : "model4",
+      "columns" : [ {
+        "name" : "name",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "age",
+        "dataType" : {
+          "type" : "Integer"
+        }
+      } ],
+      "tests" : [ ],
+      "providerType" : "databricks"
+    }
   },
   "processes" : {
-    "seed1##mfILe6jW" : {
-      "id" : "seed1##mfILe6jW",
+    "seed1##WyR6bvQ1" : {
+      "id" : "seed1##WyR6bvQ1",
       "component" : "Seed",
       "metadata" : {
         "label" : "seed1",
@@ -27,14 +43,14 @@
       },
       "properties" : {
         "table" : {
-          "name" : "seed_github",
+          "name" : "seed1",
           "sourceType" : "Seed"
         }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "Yj2LOUnE",
+          "id" : "DlZTqCQE",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -42,8 +58,8 @@
       },
       "index" : 0
     },
-    "final##LlEsjIZL" : {
-      "id" : "final##LlEsjIZL",
+    "final##cVstogwE" : {
+      "id" : "final##cVstogwE",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model4",
@@ -65,11 +81,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "zshsGd0F",
+          "id" : "ilM8pgOw",
           "slug" : "seed1"
         } ],
         "outputs" : [ {
-          "id" : "hBayZSjg",
+          "id" : "IL3MhRs1",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -79,11 +95,11 @@
     }
   },
   "connections" : [ {
-    "id" : "Cvq530NQ",
-    "source" : "seed1##mfILe6jW",
-    "sourcePort" : "Yj2LOUnE",
-    "target" : "final##LlEsjIZL",
-    "targetPort" : "zshsGd0F"
+    "id" : "JEHQrt4f",
+    "source" : "seed1##WyR6bvQ1",
+    "sourcePort" : "DlZTqCQE",
+    "target" : "final##cVstogwE",
+    "targetPort" : "ilM8pgOw"
   } ],
   "component" : "Model"
 }
