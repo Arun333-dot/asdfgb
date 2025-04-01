@@ -46,7 +46,7 @@ sqlSeeds:
       - name: name
         dataType:
           type: String
-      - name: age
+      - name: age_prophecy
         dataType:
           type: Integer
     description: null
