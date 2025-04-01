@@ -31,33 +31,6 @@
     }
   },
   "processes" : {
-    "seed1##sy7SaATm" : {
-      "id" : "seed1##sy7SaATm",
-      "component" : "Seed",
-      "metadata" : {
-        "label" : "seed1",
-        "x" : 20,
-        "y" : 20,
-        "phase" : 0,
-        "isLabelGrayed" : false
-      },
-      "properties" : {
-        "table" : {
-          "name" : "seed_prophecy",
-          "sourceType" : "Seed"
-        }
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "yPsrCLgm",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "index" : 0
-    },
     "final##DVpTxRZm" : {
       "id" : "final##DVpTxRZm",
       "component" : "TargetModel",
@@ -66,13 +39,15 @@
         "x" : 220,
         "y" : 20,
         "phase" : 0,
+        "macroDependencies" : [ ],
         "isLabelGrayed" : false
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT *\n\nFROM seed1\n",
+        "query" : "SELECT * \n\nFROM seed1\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -89,14 +64,40 @@
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
+      }
+    },
+    "W5Q3pbNIg2R1lGhxJ1Fp3" : {
+      "id" : "W5Q3pbNIg2R1lGhxJ1Fp3",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "seed1",
+        "slug" : "seed1",
+        "x" : -20,
+        "y" : 40,
+        "phase" : 0
       },
-      "index" : 1
+      "properties" : {
+        "table" : {
+          "name" : "seed1",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "K0kI5zkF5fFUA3Ygnm0xI",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ {
-    "id" : "hPFeCaHh",
-    "source" : "seed1##sy7SaATm",
-    "sourcePort" : "yPsrCLgm",
+    "id" : "tPs1oCAM5LUPA2iRTE5T0$$BmiZEcSEudQL8kKXKigq1",
+    "source" : "W5Q3pbNIg2R1lGhxJ1Fp3",
+    "sourcePort" : "K0kI5zkF5fFUA3Ygnm0xI",
     "target" : "final##DVpTxRZm",
     "targetPort" : "RaHIENF6"
   } ],
