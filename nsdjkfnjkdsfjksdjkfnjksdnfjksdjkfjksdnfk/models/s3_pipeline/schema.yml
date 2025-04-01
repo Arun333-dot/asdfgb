@@ -1,0 +1,24 @@
+---
+version: 2
+models:
+- name: "model_s3_pipeline_sorted_filter_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_s3_pipeline_source"
+  database: "tanmay"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_s3_pipeline_post_sorted_filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_s3_pipeline_pre_Reformat_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_s3_pipeline_pre_Reformat_1_1_0"
+    tags:
+    - "prophecy_temp"
