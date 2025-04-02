@@ -1,0 +1,5 @@
+---
+packages:
+- revision: "databricks_shared_external_project/relleamfklmdklf"
+  git: "https://github.com/Arun333-dot/asdfgb"
+  subdirectory: "databricks_shared_external_project"

@@ -1,0 +1,41 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "4318",
+    "jobId" : "jobs/aiarflow_job",
+    "name" : "aiarflow_job",
+    "dagName" : "staging_arunsharma_admin_advacned_sql_databricks_project_aiarflow_job",
+    "schedule" : "None",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "maxActiveRuns" : 1,
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : { },
+  "connections" : [ ]
+}
