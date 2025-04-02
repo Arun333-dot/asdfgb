@@ -15,39 +15,10 @@
     "editable" : true
   },
   "datasets" : { },
-  "pipelines" : {
-    "gdfgdfg" : {
-      "id" : "gdfgdfg",
-      "name" : "gdfgdfg",
-      "path" : "advacned_sql_databricks_project/.prophecy/ide/pipelines/gdfgdfg.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ ]
-    },
-    "p2" : {
-      "id" : "p2",
-      "name" : "p2",
-      "path" : "advacned_sql_databricks_project/.prophecy/ide/pipelines/p2.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ ]
-    }
-  },
+  "pipelines" : { },
   "dependenciesContainer" : {
     "dependencies" : { },
-    "prophecyProjectDependencies" : {
-      "https://github.com/Arun333-dot/asdfgb" : "22700"
-    }
+    "prophecyProjectDependencies" : { }
   },
   "entitiesToSync" : [ ],
   "frontEndLanguage" : "sql"
