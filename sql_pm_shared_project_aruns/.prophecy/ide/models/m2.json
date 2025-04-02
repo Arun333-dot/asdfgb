@@ -1,0 +1,83 @@
+{
+  "id" : "m2",
+  "metainfo" : {
+    "label" : "m2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "m2##KxKmZRHC" : {
+      "id" : "m2##KxKmZRHC",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "m2",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM seed444444\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lsO2PF5L",
+          "slug" : "seed444444"
+        } ],
+        "outputs" : [ {
+          "id" : "PRaJhXED",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "VX61pmrF2tZrcH8bEz48B" : {
+      "id" : "VX61pmrF2tZrcH8bEz48B",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "seed444444",
+        "slug" : "seed444444",
+        "x" : -100,
+        "y" : 0,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "seed444444",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ICNYnHkXZply4A_AyjNPM",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "NNfnd8K3W_xsE6N-PQzr5$$9lKIKN3taR_3jkOa0_hSD",
+    "source" : "VX61pmrF2tZrcH8bEz48B",
+    "sourcePort" : "ICNYnHkXZply4A_AyjNPM",
+    "target" : "m2##KxKmZRHC",
+    "targetPort" : "lsO2PF5L"
+  } ],
+  "component" : "Model"
+}
