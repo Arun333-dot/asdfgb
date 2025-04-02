@@ -46,6 +46,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-03-25 06:21:47'
 sqlBusinessApps: {}

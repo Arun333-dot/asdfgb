@@ -7,6 +7,9 @@ models:
 - name: "model_pipeline123123213_Filter_1"
   tags:
   - "prophecy_temp"
+- name: "model_pipeline123123213_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
 - name: "model_pipeline123123213_FlattenSchema_1"
   tags:
   - "prophecy_temp"
@@ -32,5 +35,8 @@ sources:
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_pipeline123123213_post_Join_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline123123213_post_WindowFunction_1_0"
     tags:
     - "prophecy_temp"

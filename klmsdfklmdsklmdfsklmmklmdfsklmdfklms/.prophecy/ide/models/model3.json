@@ -1,0 +1,264 @@
+{
+  "id" : "model3",
+  "metainfo" : {
+    "label" : "model3",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "-9ltMLUS5ACk_UModXmmT$$VAzQtQ7JZGaKnHubMPFLa" : {
+      "id" : "-9ltMLUS5ACk_UModXmmT$$VAzQtQ7JZGaKnHubMPFLa",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -800,
+        "y" : -420,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-GCWD_9FnuJCWyEErAB9d$$BbujctBh0zTvuoQEBSj5S",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "3HMGDZGFxdJuh53tcivNX$$521GOHDPnnBqpdKngp47R",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "vOigvEaXHCu5zOkS1-LLC$$veJs9l95rShHZ4aiDoTnM" : {
+      "id" : "vOigvEaXHCu5zOkS1-LLC$$veJs9l95rShHZ4aiDoTnM",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "all_type_databricks",
+        "slug" : "all_type_databricks",
+        "x" : -840,
+        "y" : -40,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "all_type_databricks",
+          "sourceType" : "Source",
+          "sourceName" : "qa_team.qa_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "emqzMCck1GlsILCTuqwIc$$1zPF8mJLeNHXmbR9iPKmT",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "Ng8glVpEpJlUPgztI0DjS$$TAUfRscERh5_-lyMRCqJh" : {
+      "id" : "Ng8glVpEpJlUPgztI0DjS$$TAUfRscERh5_-lyMRCqJh",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : -620,
+        "y" : -540,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Organizes chronic patient records in ascending order by ID.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ "vizRhticRYEiT4JJRzkzw$$kVwOobjYTyLAqcM6AmibW##id" ],
+        "orders" : [ {
+          "expression" : {
+            "expression" : "id"
+          },
+          "sortType" : "asc"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vizRhticRYEiT4JJRzkzw$$kVwOobjYTyLAqcM6AmibW",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "MWAmF1eJ2DOjPiEKybVBb$$Irppuinp999HJTgCxdKfd",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "JNU5baQ7U-IxcQokQGUY6$$loMxL-Rh0c8r8rt3sxLiJ" : {
+      "id" : "JNU5baQ7U-IxcQokQGUY6$$loMxL-Rh0c8r8rt3sxLiJ",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "slug" : "Limit_1",
+        "x" : -580,
+        "y" : -280,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "10"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "UqSvwIGemK0_fX3KK1O1B$$8XLLIJ5Q-Z8le5hcMD4cm",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "4izGcb8ErEVCg2eMfwh-y$$1vrh6bUgpo_rn7xtcI3E4",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "V8ejalz5Pvzwh-qXdZ4sr$$YMBfiJHXZoPigcFLMjDr2" : {
+      "id" : "V8ejalz5Pvzwh-qXdZ4sr$$YMBfiJHXZoPigcFLMjDr2",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -280,
+        "y" : -340,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "R0kEhzxLEXY7f0othL80R$$wj1_GMBPwjAwQMr1rLWaj",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "jMFYDPZVcoX9aej3lqwR_$$43cVwdxLz4olqZP4VAxeb",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "K8YsHe3HH9pbgTF9jjaXT$$C4vhgvDwghg2z2VPmsMCW" : {
+      "id" : "K8YsHe3HH9pbgTF9jjaXT$$C4vhgvDwghg2z2VPmsMCW",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : -1420,
+        "y" : -720,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "anUpFrTs7mh8REfLo9Tmx$$fp1rR54bUMbykqfITAxba",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "m0gG7f8gvF0fE41ZAu4cq$$APrVcRPzJXAqSMW5h-kLv",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "model3##z5dfB1EL" : {
+      "id" : "model3##z5dfB1EL",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model3",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Filter_1\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "j46YxYHz",
+          "slug" : "Filter_1"
+        } ],
+        "outputs" : [ {
+          "id" : "d372t5Oj",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "G5pHdb-FrasF-TDXSATUl",
+    "source" : "JNU5baQ7U-IxcQokQGUY6$$loMxL-Rh0c8r8rt3sxLiJ",
+    "sourcePort" : "4izGcb8ErEVCg2eMfwh-y$$1vrh6bUgpo_rn7xtcI3E4",
+    "target" : "V8ejalz5Pvzwh-qXdZ4sr$$YMBfiJHXZoPigcFLMjDr2",
+    "targetPort" : "R0kEhzxLEXY7f0othL80R$$wj1_GMBPwjAwQMr1rLWaj"
+  }, {
+    "id" : "0lQzeqclVztauUfmSALVM",
+    "source" : "Ng8glVpEpJlUPgztI0DjS$$TAUfRscERh5_-lyMRCqJh",
+    "sourcePort" : "MWAmF1eJ2DOjPiEKybVBb$$Irppuinp999HJTgCxdKfd",
+    "target" : "JNU5baQ7U-IxcQokQGUY6$$loMxL-Rh0c8r8rt3sxLiJ",
+    "targetPort" : "UqSvwIGemK0_fX3KK1O1B$$8XLLIJ5Q-Z8le5hcMD4cm"
+  }, {
+    "id" : "U5vnFE6VSFxxyWUrnghyp",
+    "source" : "-9ltMLUS5ACk_UModXmmT$$VAzQtQ7JZGaKnHubMPFLa",
+    "sourcePort" : "3HMGDZGFxdJuh53tcivNX$$521GOHDPnnBqpdKngp47R",
+    "target" : "Ng8glVpEpJlUPgztI0DjS$$TAUfRscERh5_-lyMRCqJh",
+    "targetPort" : "vizRhticRYEiT4JJRzkzw$$kVwOobjYTyLAqcM6AmibW"
+  }, {
+    "id" : "JwvfQILUJvDRhMawOOG6C",
+    "source" : "vOigvEaXHCu5zOkS1-LLC$$veJs9l95rShHZ4aiDoTnM",
+    "sourcePort" : "emqzMCck1GlsILCTuqwIc$$1zPF8mJLeNHXmbR9iPKmT",
+    "target" : "-9ltMLUS5ACk_UModXmmT$$VAzQtQ7JZGaKnHubMPFLa",
+    "targetPort" : "-GCWD_9FnuJCWyEErAB9d$$BbujctBh0zTvuoQEBSj5S"
+  }, {
+    "id" : "bNb8uynF2DJe-RxBIBL0o",
+    "source" : "V8ejalz5Pvzwh-qXdZ4sr$$YMBfiJHXZoPigcFLMjDr2",
+    "sourcePort" : "jMFYDPZVcoX9aej3lqwR_$$43cVwdxLz4olqZP4VAxeb",
+    "target" : "model3##z5dfB1EL",
+    "targetPort" : "j46YxYHz"
+  } ],
+  "component" : "Model"
+}
