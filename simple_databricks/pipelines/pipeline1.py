@@ -23,6 +23,20 @@ with DAG(Schedule = Schedule):
         connector = Connection(kind = "s3"), 
         format = CSVFormat(header = True, separator = ",")
     )
+    OrchestrationSource_5 = SourceTask(
+        task_id = "OrchestrationSource_5", 
+        component = "OrchestrationSource", 
+        kind = "DatabricksVolumeSource", 
+        connector = Connection(kind = "databricks"), 
+        format = CSVFormat(separator = ",", header = True)
+    )
+    OrchestrationSource_7 = SourceTask(
+        task_id = "OrchestrationSource_7", 
+        component = "OrchestrationSource", 
+        kind = "DatabricksVolumeSource", 
+        connector = Connection(kind = "databricks"), 
+        format = CSVFormat(separator = ",", header = True)
+    )
     OrchestrationSource_2 = SourceTask(
         task_id = "OrchestrationSource_2", 
         component = "OrchestrationSource", 
@@ -30,10 +44,25 @@ with DAG(Schedule = Schedule):
         connector = Connection(kind = "s3"), 
         format = CSVFormat(header = True, separator = ",")
     )
+    OrchestrationSource_6 = SourceTask(
+        task_id = "OrchestrationSource_6", 
+        component = "OrchestrationSource", 
+        kind = "DatabricksVolumeSource", 
+        connector = Connection(kind = "databricks"), 
+        format = CSVFormat(separator = ",", header = True)
+    )
     model_pipeline1_Aggregate_2 = Task(
         task_id = "model_pipeline1_Aggregate_2", 
         component = "Model", 
         modelName = "model_pipeline1_Aggregate_2"
+    )
+    OrchestrationTarget_2 = Task(
+        task_id = "OrchestrationTarget_2", 
+        component = "OrchestrationTarget", 
+        kind = "S3Target", 
+        connector = Connection(kind = "s3"), 
+        properties = {}, 
+        format = {"properties" : {"separator" : ",", "header" : True}, "kind" : "csv", "category" : "file"}
     )
     OrchestrationSource_4 = SourceTask(
         task_id = "OrchestrationSource_4", 

@@ -336,8 +336,17 @@
         "id" : "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz",
         "label" : "OrchestrationSource_1"
       }, {
+        "id" : "wA8OJJlmR7hE3CNm4XD8A$$gQLoe8a-jSyBHEtQsj8Kx",
+        "label" : "OrchestrationSource_5"
+      }, {
+        "id" : "4LbwDfPWgn_nCLqoOEnNo$$DKJavgpFkXKUwGk1RcBDw",
+        "label" : "OrchestrationSource_7"
+      }, {
         "id" : "4Gc_BhpqVCEPALJjE54fe$$9fAySbMGju_hUAOdkLl3t",
         "label" : "OrchestrationSource_2"
+      }, {
+        "id" : "CmKXIdhG5G4WpUuB7CeS7$$OeGcAGKeOvE2FqNkeL19z",
+        "label" : "OrchestrationSource_6"
       }, {
         "id" : "4V_HUiSNfqDnhCnndnEBL$$Z45YiALa3QU-3WLeVQ3zF",
         "label" : "OrchestrationSource_4"
@@ -528,6 +537,10 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
-  "entitiesToSync" : [ ],
+  "entitiesToSync" : [ {
+    "name" : "model2",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
   "frontEndLanguage" : "sql"
 }
