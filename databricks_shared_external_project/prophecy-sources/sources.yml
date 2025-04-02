@@ -1,0 +1,72 @@
+---
+version: 2
+sources:
+- name: "main.information_schema"
+  database: "main"
+  schema: "information_schema"
+  tables:
+  - name: "tables"
+    description: "Metadata about database tables, providing insights into table ownership,\
+      \ creation, and modification details."
+    columns:
+    - name: "table_catalog"
+      description: "The catalog name where the table is stored"
+      dataType:
+        type: "String"
+    - name: "table_schema"
+      description: "The schema under which the table is organized."
+      dataType:
+        type: "String"
+    - name: "table_name"
+      description: "The name of the table in the database"
+      dataType:
+        type: "String"
+    - name: "table_type"
+      description: "The type of the table indicating its purpose or function"
+      dataType:
+        type: "String"
+    - name: "is_insertable_into"
+      description: "Indicates whether new records can be added to the table."
+      dataType:
+        type: "String"
+    - name: "commit_action"
+      description: "The action taken to commit changes to the table"
+      dataType:
+        type: "String"
+    - name: "table_owner"
+      description: "The individual or entity that owns the table"
+      dataType:
+        type: "String"
+    - name: "comment"
+      description: "Description or notes about the table"
+      dataType:
+        type: "String"
+    - name: "created"
+      description: "Timestamp indicating when the table was created"
+      dataType:
+        type: "Timestamp"
+    - name: "created_by"
+      description: "The individual who created the table"
+      dataType:
+        type: "String"
+    - name: "last_altered"
+      description: "Timestamp of the last modification made to the table"
+      dataType:
+        type: "Timestamp"
+    - name: "last_altered_by"
+      description: "The individual who last modified the table"
+      dataType:
+        type: "String"
+    - name: "data_source_format"
+      description: "Format of the data source used for the table"
+      dataType:
+        type: "String"
+    - name: "storage_sub_directory"
+      description: "Sub-directory where the table's data is stored"
+      dataType:
+        type: "String"
+    - name: "storage_path"
+      description: "The location where the table's data is stored"
+      dataType:
+        type: "String"
+    type: "table"

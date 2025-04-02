@@ -3,11 +3,32 @@
   "metainfo" : {
     "label" : "m5",
     "autoLayout" : false,
-    "staleState" : "file",
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
-    "version" : 3
+    "version" : 3,
+    "properties" : {
+      "name" : "m5",
+      "columns" : [ {
+        "name" : "STUDENT",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "SUBJECT",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "MARKS",
+        "dataType" : {
+          "type" : "Number"
+        }
+      } ],
+      "tests" : [ ],
+      "providerType" : "snowflake"
+    }
   },
   "processes" : {
     "m5##OJdpd5Hx" : {
@@ -15,15 +36,16 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m5",
-        "x" : 20,
-        "y" : 20,
-        "phase" : 0
+        "x" : 220,
+        "y" : -280,
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "SELECT * \n\nFROM Reformat_1\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -33,7 +55,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "kN6JUNfl",
-          "slug" : "in0"
+          "slug" : "Reformat_1"
         } ],
         "outputs" : [ {
           "id" : "qCXiunxp",
@@ -42,8 +64,77 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "GAGU7e2IIKsuLK5Dhsq6W" : {
+      "id" : "GAGU7e2IIKsuLK5Dhsq6W",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "GRADES",
+        "slug" : "GRADES",
+        "x" : -580,
+        "y" : 240,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "GRADES",
+          "sourceType" : "Source",
+          "sourceName" : "BLACKROCK.TEST",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "weESfAuIYdWXXySpKqPiu",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "QGhKtzs5MJfXZoCWeELGu$$P9584DwFbTWkbQ0Sl9YLn" : {
+      "id" : "QGhKtzs5MJfXZoCWeELGu$$P9584DwFbTWkbQ0Sl9YLn",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -280,
+        "y" : -220,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KlEBM0UvA6rGLTRzgWaD-$$X0K17nYoqf87loicEi_fc",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "hu8QVAtXPzA5hZhB964qp$$Ln-nbpA7C2Zr9x30_XyyC",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "ISBJOE69fUhhz2-VhJSRV",
+    "source" : "GAGU7e2IIKsuLK5Dhsq6W",
+    "sourcePort" : "weESfAuIYdWXXySpKqPiu",
+    "target" : "QGhKtzs5MJfXZoCWeELGu$$P9584DwFbTWkbQ0Sl9YLn",
+    "targetPort" : "KlEBM0UvA6rGLTRzgWaD-$$X0K17nYoqf87loicEi_fc"
+  }, {
+    "id" : "Qu_HpDECuaSYOVfVBStZN",
+    "source" : "QGhKtzs5MJfXZoCWeELGu$$P9584DwFbTWkbQ0Sl9YLn",
+    "sourcePort" : "hu8QVAtXPzA5hZhB964qp$$Ln-nbpA7C2Zr9x30_XyyC",
+    "target" : "m5##OJdpd5Hx",
+    "targetPort" : "kN6JUNfl"
+  } ],
   "component" : "Model"
 }

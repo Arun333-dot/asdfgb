@@ -38,7 +38,121 @@
     }, {
       "type" : "Database",
       "name" : "BLACKROCK",
-      "children" : [ ]
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "CURATED",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "INFORMATION_SCHEMA",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "PUBLIC",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "PUBLIC_CURATED",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "PUBLIC_ML_RESULT",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "RAW",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "TEST",
+        "tables" : {
+          "GRADES" : {
+            "entityType" : "TABLE",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "STUDENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SUBJECT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MARKS",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "GRADES_PIVOT" : {
+            "entityType" : "TABLE",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "STUDENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MATHEMATICS",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "SCIENCE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "GEOGRAPHY",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "SCHEMA_DETECTION_RAW_TEST" : {
+            "entityType" : "TABLE",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TEST_NUMBER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TEST_DECIMAL",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TEST_DATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TEST_STRING",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "SCHEMA_DETECTION_STG_TEST" : {
+            "entityType" : "TABLE",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          }
+        }
+      } ]
     }, {
       "type" : "Database",
       "name" : "BOBW",
