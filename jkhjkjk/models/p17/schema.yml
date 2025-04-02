@@ -7,10 +7,16 @@ models:
 - name: "model_p17_Filter_1"
   tags:
   - "prophecy_temp"
+- name: "model_p17_WindowFunction_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p17_Filter_2"
+  tags:
+  - "prophecy_temp"
 sources:
 - name: "prophecy__temp_p17_source"
   database: "hive_metastore"
-  schema: "default"
+  schema: "arun123"
   tags:
   - "prophecy_temp"
   config:
@@ -20,5 +26,11 @@ sources:
     tags:
     - "prophecy_temp"
   - name: "prophecy__temp_p17_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p17_post_Filter_2_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p17_post_WindowFunction_1_0"
     tags:
     - "prophecy_temp"

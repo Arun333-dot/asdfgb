@@ -12,6 +12,39 @@
     }
   },
   "processes" : {
+    "mmJB3wmAnRQ3zE6-gJDmX$$ZEW8DI1KQCr-BRp-R3TE-" : {
+      "id" : "mmJB3wmAnRQ3zE6-gJDmX$$ZEW8DI1KQCr-BRp-R3TE-",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -1820,
+        "y" : -900,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hGX8tLQDw7m5quA4L050Z$$mWjbmT6Y3e2p6BkA2OzoP",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Ogj6RuPvafvCHqOQrF9Us$$4uHw0qBXXmrBa4U03lMvf",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "WzixtcyzrsQAeyzB-zYxl$$tm1L42ciYxc4KO6pxH0LZ" : {
       "id" : "WzixtcyzrsQAeyzB-zYxl$$tm1L42ciYxc4KO6pxH0LZ",
       "component" : "OrchestrationSource",
@@ -42,6 +75,33 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "kZywIAgWEmnBjzj22fFFH$$gfVrIMqYnfQREM4OS685Q",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "qafyRZ1utpY47SHzKZmP2$$SVZBGAHH_C2srP7zJUBi2" : {
+      "id" : "qafyRZ1utpY47SHzKZmP2$$SVZBGAHH_C2srP7zJUBi2",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_2",
+        "x" : -1680,
+        "y" : -900,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "9rqljvitOeSgUZx0ZWpF6$$Y19eo2lEUSIun8L-DCIzn",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "DxPWMAxK9tym7p44Hj_AY$$5fBle_-CCYNqKQgY-b5NO",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

@@ -1,4 +1,9 @@
 with DAG():
+    model_p17_WindowFunction_1 = Task(
+        task_id = "model_p17_WindowFunction_1", 
+        component = "Model", 
+        modelName = "model_p17_WindowFunction_1"
+    )
     OrchestrationSource_0 = SourceTask(
         task_id = "OrchestrationSource_0", 
         component = "OrchestrationSource", 
@@ -6,6 +11,7 @@ with DAG():
         connector = Connection(kind = "databricks"), 
         format = CSVFormat(separator = ",", header = True)
     )
+    model_p17_Filter_2 = Task(task_id = "model_p17_Filter_2", component = "Model", modelName = "model_p17_Filter_2")
     model_p17_Aggregate_1 = Task(
         task_id = "model_p17_Aggregate_1", 
         component = "Model", 
