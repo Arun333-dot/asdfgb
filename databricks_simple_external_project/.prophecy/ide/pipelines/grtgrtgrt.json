@@ -38,6 +38,29 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "vnWS_p0sy2s5UUPQk7Rir$$1PnaBbDdMgoJQMhfYem8w" : {
+      "id" : "vnWS_p0sy2s5UUPQk7Rir$$1PnaBbDdMgoJQMhfYem8w",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "m1_1",
+        "x" : -1520,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "macroName" : "m1",
+        "parameters" : [ ],
+        "projectName" : "databricks_shared_external_project"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "iwm2sEzapC9O0FeApIwGK$$AUeyUKqudM1_-ugILTrWy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],
