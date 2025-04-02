@@ -12,14 +12,14 @@
     }
   },
   "processes" : {
-    "tpzFBXUC29KW-ltWj-XYx" : {
-      "id" : "tpzFBXUC29KW-ltWj-XYx",
+    "R_3Z4Y1FjbTZA5-ihsfu3" : {
+      "id" : "R_3Z4Y1FjbTZA5-ihsfu3",
       "component" : "OrchestrationSource",
       "kind" : "SFTPSource",
       "metadata" : {
-        "label" : "SFTPSource_1",
-        "x" : -880,
-        "y" : -480,
+        "label" : "SFTPSource_0",
+        "x" : -1400,
+        "y" : -500,
         "phase" : 0
       },
       "properties" : {
@@ -36,6 +36,7 @@
           "kind" : "csv",
           "properties" : {
             "header" : true,
+            "nullValue" : "USA",
             "schema" : {
               "fields" : [ {
                 "dataType" : {
@@ -80,7 +81,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "02a4495c-e793-49c0-b876-0035f532d262",
+          "id" : "c557f490-b420-4dea-94c0-6882a43911c4",
           "schema" : {
             "entityType" : "",
             "providerType" : "databricks",
@@ -119,8 +120,98 @@
           "slug" : "out0"
         } ]
       }
+    },
+    "Ck3axHshWkU9cAf-7b3AV$$6nq7BsAL7dwDQ_ewn-aDB" : {
+      "id" : "Ck3axHshWkU9cAf-7b3AV$$6nq7BsAL7dwDQ_ewn-aDB",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_information_csv",
+        "x" : -380,
+        "y" : -620,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "category" : "file",
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/results_output_target.csv"
+                }
+              } ]
+            }
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hXS7NA1pv7hhPwhCF2tAV$$oZQx053zF0lySyRkmwKRj",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "0gDrHgjs9YZjvyarKm88o",
+    "source" : "R_3Z4Y1FjbTZA5-ihsfu3",
+    "sourcePort" : "c557f490-b420-4dea-94c0-6882a43911c4",
+    "target" : "Ck3axHshWkU9cAf-7b3AV$$6nq7BsAL7dwDQ_ewn-aDB",
+    "targetPort" : "hXS7NA1pv7hhPwhCF2tAV$$oZQx053zF0lySyRkmwKRj"
+  } ],
   "component" : "Pipeline"
 }

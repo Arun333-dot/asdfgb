@@ -1,0 +1,50 @@
+{
+  "name" : "simple_trino_project",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "trino",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : { },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "galaxy",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "prophecy_dataset_samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_prophecy",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "sample",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}
