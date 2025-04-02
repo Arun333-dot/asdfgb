@@ -45,13 +45,10 @@ sqlModels:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: arun
+      - name: name
         dataType:
-          type: Integer
-      - name: ball
-        dataType:
-          type: Integer
-      - name: cat_ths_is_prophecy
+          type: String
+      - name: age
         dataType:
           type: Integer
     description: null
@@ -140,13 +137,10 @@ sqlSeeds:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: arun
+      - name: name
         dataType:
-          type: Integer
-      - name: ball
-        dataType:
-          type: Integer
-      - name: cat_ths_is_prophecy
+          type: String
+      - name: age
         dataType:
           type: Integer
     description: null
@@ -170,7 +164,6 @@ sqlSeeds:
     author: arunsharma+admin@prophecy.io
     files:
     - seeds/seed_github.csv
-    - seeds/seeds.yml
     createdAt: '2025-04-01 10:51:55'
   .prophecy/metadata/sqlseeds/seed_prophecy:
     name: seed_prophecy
@@ -189,6 +182,24 @@ sqlSeeds:
     files:
     - seeds/seed_prophecy.csv
     createdAt: '2025-04-01 10:51:29'
+  .prophecy/metadata/sqlseeds/seeeeeeed:
+    name: seeeeeeed
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: Country
+        dataType:
+          type: String
+      - name: Name
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/seeeeeeed.csv
+    - seeds/seeds.yml
+    createdAt: '2025-04-01 13:17:42'
 sqlSources:
   .prophecy/metadata/sqlsources/main_information_schema:
     name: main.information_schema
@@ -206,30 +217,152 @@ sqlSources:
       description: null
       author: arunsharma+admin@prophecy.io
       createdAt: '2025-04-01 08:36:27'
+  .prophecy/metadata/sqlsources/qa_team_qa_database:
+    name: qa_team.qa_database
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-04-01 13:28:50'
+    tables:
+    - name: all_type_databricks
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: id
+          dataType:
+            type: Integer
+        - name: tiny_value
+          dataType:
+            type: TinyInt
+        - name: small_value
+          dataType:
+            type: SmallInt
+        - name: big_value
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: is_active
+          dataType:
+            type: Boolean
+        - name: salary
+          dataType:
+            type: String
+        - name: float_value
+          dataType:
+            type: Float
+        - name: double_value
+          dataType:
+            type: Double
+        - name: binary_data
+          dataType:
+            type: Binary
+        - name: created_at
+          dataType:
+            type: Timestamp
+        - name: created_at_ntz
+          dataType:
+            type: Timestamp
+        - name: birth_date
+          dataType:
+            type: Date
+        - name: interval_value
+          dataType:
+            type: String
+        - name: interval_seconds
+          dataType:
+            type: String
+        - name: metadata
+          dataType:
+            type: String
+        - name: int_array
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: float_array
+          dataType:
+            type: Array
+            dataType:
+              type: Float
+        - name: boolean_array
+          dataType:
+            type: Array
+            dataType:
+              type: Boolean
+        - name: decimal_array
+          dataType:
+            type: Array
+            dataType:
+              type: Decimal
+        - name: timestamp_array
+          dataType:
+            type: Array
+            dataType:
+              type: Timestamp
+        - name: date_array
+          dataType:
+            type: Array
+            dataType:
+              type: Date
+        - name: struct_array
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: type
+                dataType:
+                  type: String
+              - name: value
+                dataType:
+                  type: Integer
+        - name: array_of_arrays
+          dataType:
+            type: Array
+            dataType:
+              type: Array
+              dataType:
+                type: Integer
+        - name: struct_of_array
+          dataType:
+            type: Struct
+            fields:
+            - name: name
+              dataType:
+                type: String
+            - name: values
+              dataType:
+                type: Array
+                dataType:
+                  type: Integer
+        - name: struct_of_array_of_structs
+          dataType:
+            type: Struct
+            fields:
+            - name: id
+              dataType:
+                type: Integer
+            - name: details
+              dataType:
+                type: Array
+                dataType:
+                  type: Struct
+                  fields:
+                  - name: key
+                    dataType:
+                      type: String
+                  - name: val
+                    dataType:
+                      type: Integer
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-04-01 13:28:50'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline2:
-    name: pipeline2
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - .prophecy/ide/pipelines/pipeline2.json
-    - pipelines/pipeline2.py
-    createdAt: '2025-04-01 07:18:12'
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline4:
-    name: pipeline4
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - models/pipeline4/model_pipeline4_WindowFunction_1.sql
-    - models/pipeline4/schema.yml
-    - models/pipeline4/model_pipeline4_Intersect_1.sql
-    - models/pipeline4/model_pipeline4_Filter_1.sql
-    - .prophecy/ide/pipelines/pipeline4.json
-    - pipelines/pipeline4.py
-    createdAt: '2025-04-01 10:22:23'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
     name: pipeline3
     schema: null
@@ -243,20 +376,60 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline3.json
     - pipelines/pipeline3.py
     createdAt: '2025-04-01 09:34:42'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline6:
+    name: pipeline6
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline6.json
+    - pipelines/pipeline6.py
+    createdAt: '2025-04-01 13:55:07'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline4:
+    name: pipeline4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline4/model_pipeline4_WindowFunction_1.sql
+    - models/pipeline4/schema.yml
+    - models/pipeline4/model_pipeline4_Intersect_1.sql
+    - models/pipeline4/model_pipeline4_Filter_1.sql
+    - .prophecy/ide/pipelines/pipeline4.json
+    - pipelines/pipeline4.py
+    createdAt: '2025-04-01 10:22:23'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
     name: pipeline1
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - models/pipeline1/model_pipeline1_Aggregate_1.sql
+    - models/pipeline1/schema.yml
+    - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
-    - models/pipeline1/schema.yml
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
     createdAt: '2025-04-01 07:18:02'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline2:
+    name: pipeline2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline2.json
+    - pipelines/pipeline2.py
+    createdAt: '2025-04-01 07:18:12'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline5:
+    name: pipeline5
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline5.json
+    - pipelines/pipeline5.py
+    createdAt: '2025-04-01 11:47:58'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

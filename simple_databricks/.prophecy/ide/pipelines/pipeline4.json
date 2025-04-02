@@ -146,6 +146,42 @@
         "isCustomOutputSchema" : false
       }
     },
+    "O2zKSMSnj1-www-Prh082" : {
+      "id" : "O2zKSMSnj1-www-Prh082",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_1",
+        "x" : -1660,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xml",
+          "properties" : { }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/valid_data_records.xml"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "820aeb9b-98d7-476c-923c-11ad301f939e",
+          "slug" : "out0"
+        } ]
+      }
+    },
     "_siy6TzcLJd2WH4lQsqi4$$hjCz3alLUeDWw9slymMZX" : {
       "id" : "_siy6TzcLJd2WH4lQsqi4$$hjCz3alLUeDWw9slymMZX",
       "component" : "RestAPI",
@@ -194,6 +230,44 @@
         } ],
         "outputs" : [ ],
         "isCustomOutputSchema" : false
+      }
+    },
+    "ghX8nACmeMPoWrO-JPhpI" : {
+      "id" : "ghX8nACmeMPoWrO-JPhpI",
+      "component" : "OrchestrationSource",
+      "kind" : "MSSQLSource",
+      "metadata" : {
+        "label" : "MSSQLSource_1",
+        "x" : -1520,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "mssql",
+          "properties" : {
+            "id" : "dasadsads"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "mssql",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "orchestrator",
+            "name" : "tushartg",
+            "schema" : "dbo"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "039dfaf5-e010-4c2b-9b26-b5dface177a1",
+          "slug" : "out0"
+        } ]
       }
     }
   },

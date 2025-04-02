@@ -15,8 +15,8 @@ models:
   - "prophecy_temp"
 sources:
 - name: "prophecy__temp_pipeline1_source"
-  database: "database"
-  schema: "default"
+  database: "hive_metastore"
+  schema: "arun123"
   tags:
   - "prophecy_temp"
   config:
