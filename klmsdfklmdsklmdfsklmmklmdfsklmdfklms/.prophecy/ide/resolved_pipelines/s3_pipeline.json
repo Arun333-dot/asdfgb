@@ -1,0 +1,450 @@
+{
+  "id" : "s3_pipeline",
+  "metainfo" : {
+    "label" : "s3_pipeline",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "tz1WnqHHa6UzO0E4YwSFk$$2L0VGVzcOWuCbkITb6fJp" : {
+      "id" : "tz1WnqHHa6UzO0E4YwSFk$$2L0VGVzcOWuCbkITb6fJp",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "S3Source_0_1",
+        "x" : -700,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : {
+            "id" : "s3"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ",",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "_c0",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "First column representing a unique identifier or key."
+              }, {
+                "name" : "_c1",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "A unique identifier for a specific record."
+              }, {
+                "name" : "_c2",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "A unique identifier for a specific record in the dataset"
+              }, {
+                "name" : "_c3",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "A unique identifier for a specific record."
+              }, {
+                "name" : "_c4",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "A numerical value representing a key metric or measurement."
+              }, {
+                "name" : "_c5",
+                "dataType" : {
+                  "type" : "bool"
+                },
+                "description" : "Indicates a true or false condition related to the data."
+              }, {
+                "name" : "_c6",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "A numerical value representing a specific metric or measurement."
+              }, {
+                "name" : "_c7",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "A string value representing a specific attribute or detail."
+              }, {
+                "name" : "_c8",
+                "dataType" : {
+                  "type" : "date64"
+                },
+                "description" : "Date associated with the record"
+              }, {
+                "name" : "_c9",
+                "dataType" : {
+                  "type" : "timestamp"
+                },
+                "description" : "Timestamp indicating when the record was created or last updated"
+              } ]
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/orch_dataset/csv_data/csv_all_type_dataset_normal_colnames.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "wtiqLeIK0BIbJULUwli0s$$eCNO77HDrxUczh5ytlff3",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "_c0",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c1",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c2",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c3",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c4",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_c5",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "_c6",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_c7",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "_c8",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "_c9",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "q1fDRMTgcvAEoJ20RvElg$$Y7rt7krJavfIRHAKjjOjZ" : {
+      "id" : "q1fDRMTgcvAEoJ20RvElg$$Y7rt7krJavfIRHAKjjOjZ",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_s3_pipeline_sorted_filter_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_s3_pipeline_sorted_filter_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_s3_pipeline_post_sorted_filter_1_0", "q1fDRMTgcvAEoJ20RvElg$$Y7rt7krJavfIRHAKjjOjZ", "m49Gyx1Gjx1lGDxypoZXC$$9dL4dOlnbKJdSB3EjV42Z", "kNPjVb6huvWKWGr1yNH1M$$afkVWPF_cZVBIF9GN7WLx", "3Zbk3LK66zeEdDCoV5AM6$$Mzb1xEYnxEnv-nbZ7BJ0G", "prophecy__temp_s3_pipeline_pre_Reformat_1_0", "6LLRYPAZNY7B4-sIcZGKX$$AaqkwoDLc2MNkvpCczKsO", "prophecy__temp_s3_pipeline_pre_Reformat_1_1_0" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_s3_pipeline_sorted_filter_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_s3_pipeline_sorted_filter_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "prophecy__temp_s3_pipeline_pre_Reformat_1_0" : {
+      "id" : "prophecy__temp_s3_pipeline_pre_Reformat_1_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "S3Source_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_s3_pipeline_pre_Reformat_1_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_s3_pipeline_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0_1",
+          "slug" : "input_port_0_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0_1",
+          "slug" : "output_port_0_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "prophecy__temp_s3_pipeline_pre_Reformat_1_1_0" : {
+      "id" : "prophecy__temp_s3_pipeline_pre_Reformat_1_1_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "S3Source_0_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_s3_pipeline_pre_Reformat_1_1_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_s3_pipeline_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_1_1",
+          "slug" : "input_port_1_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_1_1",
+          "slug" : "output_port_1_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "X2YwF7db0yzURPCI4NjSx" : {
+      "id" : "X2YwF7db0yzURPCI4NjSx",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "S3Source_0",
+        "x" : -780,
+        "y" : -320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : {
+            "id" : "s3"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ",",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "_c0",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "First column representing a unique identifier or key."
+              }, {
+                "name" : "_c1",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "A unique identifier for a specific record."
+              }, {
+                "name" : "_c2",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "A unique identifier for a specific record in the dataset"
+              }, {
+                "name" : "_c3",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "A unique identifier for a specific record."
+              }, {
+                "name" : "_c4",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "A numerical value representing a key metric or measurement."
+              }, {
+                "name" : "_c5",
+                "dataType" : {
+                  "type" : "bool"
+                },
+                "description" : "Indicates a true or false condition related to the data."
+              }, {
+                "name" : "_c6",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "A numerical value representing a specific metric or measurement."
+              }, {
+                "name" : "_c7",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "A string value representing a specific attribute or detail."
+              }, {
+                "name" : "_c8",
+                "dataType" : {
+                  "type" : "date64"
+                },
+                "description" : "Date associated with the record"
+              }, {
+                "name" : "_c9",
+                "dataType" : {
+                  "type" : "timestamp"
+                },
+                "description" : "Timestamp indicating when the record was created or last updated"
+              } ]
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/orch_dataset/csv_data/csv_all_type_dataset_normal_colnames.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "11439e89-f565-4096-97e6-85bfa0d00b7c",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "_c0",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c1",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c2",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c3",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "_c4",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_c5",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "_c6",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_c7",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "_c8",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "_c9",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "tfRW8e2w6gRrQrKTD-_OK$$1URrF78Vx6CecO7ImtPBJ",
+    "source" : "X2YwF7db0yzURPCI4NjSx",
+    "sourcePort" : "11439e89-f565-4096-97e6-85bfa0d00b7c",
+    "target" : "prophecy__temp_s3_pipeline_pre_Reformat_1_0",
+    "targetPort" : "input_port_0_1"
+  }, {
+    "id" : "uXM_IOQs7-1my3CpKS4eI",
+    "source" : "tz1WnqHHa6UzO0E4YwSFk$$2L0VGVzcOWuCbkITb6fJp",
+    "sourcePort" : "wtiqLeIK0BIbJULUwli0s$$eCNO77HDrxUczh5ytlff3",
+    "target" : "prophecy__temp_s3_pipeline_pre_Reformat_1_1_0",
+    "targetPort" : "input_port_1_1"
+  }, {
+    "id" : "conn_prophecy__temp_s3_pipeline_pre_Reformat_1_0_3Zbk3LK66zeEdDCoV5AM6$$Mzb1xEYnxEnv-nbZ7BJ0G_XH-dZFODJSLH5oIBvPBdA$$cxfjutTyWG3fr3stJYS05",
+    "source" : "prophecy__temp_s3_pipeline_pre_Reformat_1_0",
+    "sourcePort" : "output_port_0_1",
+    "target" : "q1fDRMTgcvAEoJ20RvElg$$Y7rt7krJavfIRHAKjjOjZ",
+    "targetPort" : "model_s3_pipeline_sorted_filter_1_in_1"
+  }, {
+    "id" : "conn_prophecy__temp_s3_pipeline_pre_Reformat_1_1_0_6LLRYPAZNY7B4-sIcZGKX$$AaqkwoDLc2MNkvpCczKsO_0ph5Z_MSFeOwJ21noSegM$$uuUZCDXuOl3K2Fp8d7Dz4",
+    "source" : "prophecy__temp_s3_pipeline_pre_Reformat_1_1_0",
+    "sourcePort" : "output_port_1_1",
+    "target" : "q1fDRMTgcvAEoJ20RvElg$$Y7rt7krJavfIRHAKjjOjZ",
+    "targetPort" : "model_s3_pipeline_sorted_filter_1_in_1"
+  } ],
+  "component" : "Pipeline"
+}
