@@ -305,6 +305,22 @@
         "label" : "MSSQLSource_1"
       } ]
     },
+    "pipeline9" : {
+      "id" : "pipeline9",
+      "name" : "pipeline9",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/pipeline9.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "NPezxLDl0X5J_Op0dRDJx$$fOvXwXqzM9jFHjewKJ-77",
+        "label" : "SFTPSource_0"
+      } ]
+    },
     "pipeline3" : {
       "id" : "pipeline3",
       "name" : "pipeline3",
@@ -319,6 +335,22 @@
       "sources" : [ {
         "id" : "cgqhGNKId71Y1o2q-DYHn$$3nH3QY58A3BDWoy7Q4cNH",
         "label" : "empty_output_csv"
+      } ]
+    },
+    "pipeline8" : {
+      "id" : "pipeline8",
+      "name" : "pipeline8",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/pipeline8.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "Sork0lMYvjD73oF43VcFB",
+        "label" : "SFTPSource_0"
       } ]
     },
     "pipeline1" : {
@@ -399,8 +431,8 @@
       },
       "preview" : [ ],
       "sources" : [ {
-        "id" : "s5whIXgf2SxdlNTaitIGt",
-        "label" : "DatabricksSource_0"
+        "id" : "SBWtw5zZOFDUN2r3tL7Gs",
+        "label" : "DatabricksSource_1"
       } ]
     }
   },
