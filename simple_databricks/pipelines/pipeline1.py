@@ -64,12 +64,22 @@ with DAG(Schedule = Schedule):
         properties = {}, 
         format = {"properties" : {"separator" : ",", "header" : True}, "kind" : "csv", "category" : "file"}
     )
+    OrchestrationSource_4 = Task(
+        task_id = "OrchestrationSource_4", 
+        component = "Dataset", 
+        table = {
+          "name": "prophecy__temp_pipeline1_pre_Deduplicate_2_0", 
+          "sourceType": "Source", 
+          "sourceName": "prophecy__temp_pipeline1_source", 
+          "alias": ""
+        }
+    )
     OrchestrationSource_4 = SourceTask(
         task_id = "OrchestrationSource_4", 
         component = "OrchestrationSource", 
         kind = "S3Source", 
         connector = Connection(kind = "s3"), 
-        format = CSVFormat(separator = ",", header = True)
+        format = CSVFormat(header = True, separator = ",")
     )
     model_pipeline1_Deduplicate_1 = Task(
         task_id = "model_pipeline1_Deduplicate_1", 
@@ -114,6 +124,8 @@ with DAG(Schedule = Schedule):
         properties = {}
     )
     OrchestrationSource_0.out >> OrchestrationSource_0.input_port_0_1
-    OrchestrationSource_1.out >> OrchestrationSource_1.input_port_2_1
-    OrchestrationSource_0.output_port_0_1 >> model_pipeline1_Aggregate_1.in_1
     OrchestrationSource_1.output_port_2_1 >> model_pipeline1_Deduplicate_1.in_1
+    OrchestrationSource_4.output_port_5_1 >> model_pipeline1_Aggregate_2.in_1
+    OrchestrationSource_0.output_port_0_1 >> model_pipeline1_Aggregate_1.in_1
+    OrchestrationSource_1.out >> OrchestrationSource_1.input_port_2_1
+    OrchestrationSource_4.out >> OrchestrationSource_4.input_port_5_1

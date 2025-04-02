@@ -1,0 +1,74 @@
+{
+  "id" : "pipeline7",
+  "metainfo" : {
+    "label" : "pipeline7",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "yFF2SAGN-pLBJvcPcCbKg$$_tfQh2DpIV4idcYH22XFN" : {
+      "id" : "yFF2SAGN-pLBJvcPcCbKg$$_tfQh2DpIV4idcYH22XFN",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "empty_output_csv",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "fghfghfghfghfgfdfsdfsdfsdfsdfs"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "vQxaa98e21ZFEMPT65Ybf$$vUC77K91kBYGJIcqpFjww",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

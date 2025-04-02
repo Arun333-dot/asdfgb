@@ -40,3 +40,6 @@ sources:
   - name: "prophecy__temp_pipeline1_pre_Deduplicate_1_0"
     tags:
     - "prophecy_temp"
+  - name: "prophecy__temp_pipeline1_pre_Deduplicate_2_0"
+    tags:
+    - "prophecy_temp"

@@ -371,6 +371,22 @@
       "preview" : [ ],
       "sources" : [ ]
     },
+    "pipeline7" : {
+      "id" : "pipeline7",
+      "name" : "pipeline7",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/pipeline7.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "yFF2SAGN-pLBJvcPcCbKg$$_tfQh2DpIV4idcYH22XFN",
+        "label" : "empty_output_csv"
+      } ]
+    },
     "pipeline6" : {
       "id" : "pipeline6",
       "name" : "pipeline6",

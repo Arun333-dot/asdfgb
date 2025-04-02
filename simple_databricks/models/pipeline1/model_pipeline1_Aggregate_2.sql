@@ -7,11 +7,19 @@
   })
 }}
 
-WITH Deduplicate_2 AS (
+WITH OrchestrationSource_4 AS (
+
+  SELECT * 
+  
+  FROM {{ source('prophecy__temp_pipeline1_source', 'prophecy__temp_pipeline1_pre_Deduplicate_2_0') }}
+
+),
+
+Deduplicate_2 AS (
 
   SELECT DISTINCT *
   
-  FROM `` AS in0
+  FROM OrchestrationSource_4 AS in0
 
 ),
 

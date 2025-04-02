@@ -376,6 +376,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline3.json
     - pipelines/pipeline3.py
     createdAt: '2025-04-01 09:34:42'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline7:
+    name: pipeline7
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline7.json
+    - pipelines/pipeline7.py
+    createdAt: '2025-04-02 08:12:48'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline6:
     name: pipeline6
     schema: null
