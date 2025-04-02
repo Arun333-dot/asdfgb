@@ -9,11 +9,6 @@ with DAG(Schedule = Schedule):
         format = CSVFormat(separator = ",", header = True), 
         filePath = {
           "type": "concat_operation", 
-          "properties": {
-            "elements": [{
-                            "type": "literal", 
-                            "properties": {"value" : "fghfghfghfghfgfdfsdfsdfsdfsdfs_this_is_propheyc"}
-                          }]
-          }
+          "properties": {"elements" : [{"type" : "literal", "properties" : {"value" : "fghfghfghfghfgh this is not valida expressionsdfsdfsdfsdfsdfsdf_github"}}]}
         }
     )
