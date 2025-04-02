@@ -16,6 +16,19 @@
   },
   "datasets" : { },
   "pipelines" : {
+    "p10" : {
+      "id" : "p10",
+      "name" : "p10",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/p10.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
     "pipeline5" : {
       "id" : "pipeline5",
       "name" : "pipeline5",
