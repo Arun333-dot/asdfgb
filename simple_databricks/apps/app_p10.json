@@ -92,24 +92,146 @@
       "id" : "DataPreview1",
       "type" : "DataPreview",
       "properties" : {
-        "tableId" : "0tTiyqncRKKi8c3ukA-9e",
+        "tableId" : "T92unsQ4DiQxfkrbINxne",
         "columns" : [ {
-          "key" : "TITLE",
-          "column" : "TITLE",
-          "label" : "TITLE",
+          "key" : "id",
+          "column" : "id",
+          "label" : "id",
           "selected" : true
         }, {
-          "key" : "EMPLOYEE_ID",
-          "column" : "EMPLOYEE_ID",
-          "label" : "EMPLOYEE_ID",
+          "key" : "tiny_value",
+          "column" : "tiny_value",
+          "label" : "tiny_value",
           "selected" : true
         }, {
-          "key" : "MANAGER_ID",
-          "column" : "MANAGER_ID",
-          "label" : "MANAGER_ID",
+          "key" : "small_value",
+          "column" : "small_value",
+          "label" : "small_value",
+          "selected" : true
+        }, {
+          "key" : "big_value",
+          "column" : "big_value",
+          "label" : "big_value",
+          "selected" : true
+        }, {
+          "key" : "name",
+          "column" : "name",
+          "label" : "name",
+          "selected" : true
+        }, {
+          "key" : "is_active",
+          "column" : "is_active",
+          "label" : "is_active",
+          "selected" : true
+        }, {
+          "key" : "salary",
+          "column" : "salary",
+          "label" : "salary",
+          "selected" : true
+        }, {
+          "key" : "float_value",
+          "column" : "float_value",
+          "label" : "float_value",
+          "selected" : true
+        }, {
+          "key" : "double_value",
+          "column" : "double_value",
+          "label" : "double_value",
+          "selected" : true
+        }, {
+          "key" : "binary_data",
+          "column" : "binary_data",
+          "label" : "binary_data",
+          "selected" : true
+        }, {
+          "key" : "created_at",
+          "column" : "created_at",
+          "label" : "created_at",
+          "selected" : true
+        }, {
+          "key" : "created_at_ntz",
+          "column" : "created_at_ntz",
+          "label" : "created_at_ntz",
+          "selected" : true
+        }, {
+          "key" : "birth_date",
+          "column" : "birth_date",
+          "label" : "birth_date",
+          "selected" : true
+        }, {
+          "key" : "interval_value",
+          "column" : "interval_value",
+          "label" : "interval_value",
+          "selected" : true
+        }, {
+          "key" : "interval_seconds",
+          "column" : "interval_seconds",
+          "label" : "interval_seconds",
+          "selected" : true
+        }, {
+          "key" : "metadata",
+          "column" : "metadata",
+          "label" : "metadata",
+          "selected" : true
+        }, {
+          "key" : "int_array",
+          "column" : "int_array",
+          "label" : "int_array",
+          "selected" : true
+        }, {
+          "key" : "float_array",
+          "column" : "float_array",
+          "label" : "float_array",
+          "selected" : true
+        }, {
+          "key" : "boolean_array",
+          "column" : "boolean_array",
+          "label" : "boolean_array",
+          "selected" : true
+        }, {
+          "key" : "decimal_array",
+          "column" : "decimal_array",
+          "label" : "decimal_array",
+          "selected" : true
+        }, {
+          "key" : "timestamp_array",
+          "column" : "timestamp_array",
+          "label" : "timestamp_array",
+          "selected" : true
+        }, {
+          "key" : "date_array",
+          "column" : "date_array",
+          "label" : "date_array",
+          "selected" : true
+        }, {
+          "key" : "struct_array",
+          "column" : "struct_array",
+          "label" : "struct_array",
+          "selected" : true
+        }, {
+          "key" : "array_of_arrays",
+          "column" : "array_of_arrays",
+          "label" : "array_of_arrays",
+          "selected" : true
+        }, {
+          "key" : "struct_of_array",
+          "column" : "struct_of_array",
+          "label" : "struct_of_array",
+          "selected" : true
+        }, {
+          "key" : "struct_of_array_of_structs",
+          "column" : "struct_of_array_of_structs",
+          "label" : "struct_of_array_of_structs",
           "selected" : true
         } ],
         "title" : "Table Title"
+      },
+      "errors" : { }
+    }, {
+      "id" : "Text1",
+      "type" : "Text",
+      "properties" : {
+        "content" : "this is aruns text\n\n## this is heaing1\n\n## this is heading 2*dfgdfg*\n\n## **this is bold leetter**\n\n## **this is sublink **\n\n- htis is normal text\n- this is bulled list**dgfgfddfgdfgdf**\n- list elemetn 1\n- list element 2\n\n1. this is number list\n2. thius is number list 2\n\nthis element in quotesthis element is again in quotes"
       },
       "errors" : { }
     } ]
