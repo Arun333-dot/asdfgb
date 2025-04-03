@@ -1,0 +1,112 @@
+{
+  "id" : "app_p10",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "p10"
+  },
+  "definition" : {
+    "template" : [ {
+      "id" : "TextInput1",
+      "type" : "TextInput",
+      "properties" : {
+        "configField" : "config1",
+        "label" : "label_config1",
+        "defaultValue" : "config1_value"
+      },
+      "errors" : { }
+    }, {
+      "id" : "RadioGroup1",
+      "type" : "RadioGroup",
+      "properties" : {
+        "configField" : "config2",
+        "options" : [ {
+          "label" : "option",
+          "value" : "option",
+          "caption" : "option",
+          "hint" : "option",
+          "error" : false
+        } ],
+        "defaultValue" : "config2_value",
+        "isRequired" : true
+      },
+      "errors" : { }
+    }, {
+      "id" : "Textarea1",
+      "type" : "Textarea",
+      "properties" : {
+        "configField" : "config3",
+        "label" : "config3_label",
+        "defaultValue" : "config3_value",
+        "tooltip" : "config3_value_tooltip"
+      },
+      "errors" : { }
+    }, {
+      "id" : "FileUpload1",
+      "type" : "FileUpload",
+      "properties" : {
+        "sourceId" : "tXGD2AgkdESiKgSTRJYSn",
+        "sourceName" : "DatabricksSource_0",
+        "fileTypes" : [ "xls", "json", "csv" ],
+        "tooltip" : "",
+        "isRequired" : true
+      },
+      "errors" : { }
+    }, {
+      "id" : "FileUpload2",
+      "type" : "FileUpload",
+      "properties" : {
+        "sourceId" : "tXGD2AgkdESiKgSTRJYSn",
+        "sourceName" : "DatabricksSource_0",
+        "fileTypes" : [ ]
+      },
+      "errors" : { }
+    }, {
+      "id" : "Image1",
+      "type" : "Image",
+      "properties" : {
+        "sourceType" : "URL",
+        "source" : "https://www.google.com/imgres?q=image%20url&imgurl=https%3A%2F%2Fdcblog.b-cdn.net%2Fwp-content%2Fuploads%2F2021%2F02%2FFull-form-of-URL-1.jpg&imgrefurl=https%3A%2F%2Fwww.digitalclassworld.com%2Fblog%2Ffull-form-of-url%2F&docid=MpnWRLJ7F4FAJM&tbnid=vCof6eSLYDEmeM&vet=12ahUKEwjg9ZXuirqMAxX1UPUHHfCvK4cQM3oECFYQAA..i&w=1600&h=1288&hcb=2&ved=2ahUKEwjg9ZXuirqMAxX1UPUHHfCvK4cQM3oECFYQAA",
+        "height" : "auto",
+        "width" : "cover",
+        "tooltip" : "tooltip"
+      },
+      "errors" : { }
+    }, {
+      "id" : "Dropdown1",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "config1",
+        "label" : "config1_label",
+        "options" : [ {
+          "label" : "option",
+          "value" : "option",
+          "tooltip" : "option",
+          "error" : false
+        } ],
+        "defaultValue" : "config1_value",
+        "helpText" : "config ,abvel",
+        "tooltip" : "config dropdown"
+      },
+      "errors" : { }
+    } ]
+  },
+  "instances" : {
+    "config1" : {
+      "config" : {
+        "config1" : "option",
+        "config2" : "config2_value",
+        "config3" : "config3_value"
+      },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    }
+  }
+}

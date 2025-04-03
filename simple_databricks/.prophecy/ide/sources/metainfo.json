@@ -23,11 +23,32 @@
       "config" : {
         "schema" : {
           "type" : "record",
-          "fields" : [ ]
+          "fields" : [ {
+            "name" : "config1",
+            "kind" : {
+              "type" : "string",
+              "value" : "'config1'"
+            }
+          }, {
+            "name" : "config2",
+            "kind" : {
+              "type" : "string",
+              "value" : "'config2'"
+            }
+          }, {
+            "name" : "config3",
+            "kind" : {
+              "type" : "string",
+              "value" : "'config3'"
+            }
+          } ]
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "tXGD2AgkdESiKgSTRJYSn",
+        "label" : "DatabricksSource_0"
+      } ]
     },
     "pipeline5" : {
       "id" : "pipeline5",
@@ -296,6 +317,22 @@
         "label" : "SFTPSource_4"
       } ]
     },
+    "pipeline11" : {
+      "id" : "pipeline11",
+      "name" : "pipeline11",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/pipeline11.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "Uaqy-ynVae2pG3XhWr_96$$66YanjSxLxbJwJsySSjKK",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
     "pipeline4" : {
       "id" : "pipeline4",
       "name" : "pipeline4",
@@ -362,8 +399,8 @@
       },
       "preview" : [ ],
       "sources" : [ {
-        "id" : "Sork0lMYvjD73oF43VcFB",
-        "label" : "SFTPSource_0"
+        "id" : "9yUwZe3invuaul8JI1HI_",
+        "label" : "DatabricksSource_1"
       } ]
     },
     "pipeline1" : {
@@ -381,6 +418,9 @@
         "id" : "5WAQ3n3TEywrcCRmCrTth$$QPbNi7HbgGiYMJiS7Vgyz",
         "label" : "OrchestrationSource_1"
       }, {
+        "id" : "RBK19fdysGmMbYUR3Qa23",
+        "label" : "DatabricksSource_3"
+      }, {
         "id" : "wA8OJJlmR7hE3CNm4XD8A$$gQLoe8a-jSyBHEtQsj8Kx",
         "label" : "OrchestrationSource_5"
       }, {
@@ -396,11 +436,17 @@
         "id" : "4V_HUiSNfqDnhCnndnEBL$$Z45YiALa3QU-3WLeVQ3zF",
         "label" : "OrchestrationSource_4"
       }, {
+        "id" : "vJG7lJemhQ_IZ-y7ShRDk",
+        "label" : "DatabricksSource_2"
+      }, {
         "id" : "ThQj4OgUSUAg1LulL7oW4$$XXqxfg2AAxEQjLFxbmGWd",
         "label" : "OrchestrationSource_3"
       }, {
         "id" : "1T4XHU1zxa_QNuSTQGVSs$$l4U4rfCVNG5PmPjmKs7B1",
         "label" : "OrchestrationSource_0"
+      }, {
+        "id" : "khDEAD9UoQw9gcvYC-B6t",
+        "label" : "DatabricksSource_1"
       } ]
     },
     "pipeline2" : {

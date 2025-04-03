@@ -216,6 +216,7 @@ sqlSources:
         fields: []
       description: null
       author: arunsharma+admin@prophecy.io
+      tableType: table
       createdAt: '2025-04-01 08:36:27'
   .prophecy/metadata/sqlsources/qa_team_qa_database:
     name: qa_team.qa_database
@@ -360,6 +361,7 @@ sqlSources:
                       type: Integer
       description: null
       author: arunsharma+admin@prophecy.io
+      tableType: table
       createdAt: '2025-04-01 13:28:50'
     - name: customer
       schema:
@@ -423,7 +425,27 @@ sqlSources:
       description: Customer demographic and engagement data, essential for understanding
         customer profiles and enhancing marketing strategies.
       author: arunsharma+admin@prophecy.io
+      tableType: table
       createdAt: '2025-04-02 13:07:01'
+    - name: employees
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: TITLE
+          dataType:
+            type: String
+        - name: EMPLOYEE_ID
+          dataType:
+            type: Double
+        - name: MANAGER_ID
+          dataType:
+            type: Double
+      description: Employee information including titles and managerial relationships,
+        supporting organizational structure insights.
+      author: arunsharma+admin@prophecy.io
+      tableType: table
+      createdAt: '2025-04-02 17:48:24'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
@@ -488,17 +510,32 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p10.json
     - pipelines/p10.py
     createdAt: '2025-04-02 17:36:13'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline11:
+    name: pipeline11
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline11/model_pipeline11_Deduplicate_1.sql
+    - models/pipeline11/schema.yml
+    - models/pipeline11/model_pipeline11_Aggregate_1.sql
+    - .prophecy/ide/pipelines/pipeline11.json
+    - pipelines/pipeline11.py
+    createdAt: '2025-04-02 18:21:10'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
     name: pipeline1
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline1/schema.yml
-    - models/pipeline1/model_pipeline1_Aggregate_1.sql
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
+    - models/pipeline11/model_pipeline11_Aggregate_1.sql
+    - models/pipeline11/schema.yml
+    - models/pipeline1/schema.yml
+    - models/pipeline11/model_pipeline11_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_1.sql
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
     createdAt: '2025-04-01 07:18:02'
@@ -529,7 +566,16 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline2.json
     - pipelines/pipeline2.py
     createdAt: '2025-04-01 07:18:12'
-sqlBusinessApps: {}
+sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/app_p10:
+    name: app_p10
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app_p10.json
+    createdAt: '2025-04-02 19:14:21'
+    sqlOrchestrationPipelineName: p10
 sqlPipeline:
   name: sqlPipeline
   description: null

@@ -202,3 +202,20 @@ sources:
       dataType:
         type: "String"
     type: "table"
+  - name: "employees"
+    description: "Employee information including titles and managerial relationships,\
+      \ supporting organizational structure insights."
+    columns:
+    - name: "TITLE"
+      description: "The job title of the employee"
+      dataType:
+        type: "String"
+    - name: "EMPLOYEE_ID"
+      description: "Unique identifier for each employee"
+      dataType:
+        type: "Double"
+    - name: "MANAGER_ID"
+      description: "The ID of the employee's manager"
+      dataType:
+        type: "Double"
+    type: "table"
