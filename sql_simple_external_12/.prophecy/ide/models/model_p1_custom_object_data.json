@@ -122,10 +122,7 @@
         }
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "input_port_0_1",
-          "slug" : "input_port_0_1"
-        } ],
+        "inputs" : [ ],
         "outputs" : [ {
           "id" : "output_port_0_1",
           "slug" : "output_port_0_1"

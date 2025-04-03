@@ -8,3 +8,8 @@ with DAG():
         params = "", 
         headers = ""
     )
+    model_grtgrtgrt_m1_1 = Task(
+        task_id = "model_grtgrtgrt_m1_1", 
+        component = "Model", 
+        modelName = "model_grtgrtgrt_m1_1"
+    )

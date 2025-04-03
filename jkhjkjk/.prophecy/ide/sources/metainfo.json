@@ -1,0 +1,283 @@
+{
+  "name" : "clone_Test_External_project",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "ygfhjnmhgghj" : {
+      "id" : "ygfhjnmhgghj",
+      "name" : "ygfhjnmhgghj",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/ygfhjnmhgghj.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "wrtertrt" : {
+      "id" : "wrtertrt",
+      "name" : "wrtertrt",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/wrtertrt.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p77" : {
+      "id" : "p77",
+      "name" : "p77",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p77.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "otv0KSybuxSoZ3j9rat7s$$hj2rd4mUMpa87_ez8faca",
+        "label" : "OrchestrationSource_1"
+      }, {
+        "id" : "D3i5Mqo_j29C75TWo34r-$$ucPhccLbTiiV5GL_bnNlY",
+        "label" : "OrchestrationSource_2"
+      }, {
+        "id" : "xNOlEnjRU1u9U4wX7--tK$$M5sihKrXag9AOGnMQiFXh",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
+    "p17" : {
+      "id" : "p17",
+      "name" : "p17",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p17.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "WzixtcyzrsQAeyzB-zYxl$$tm1L42ciYxc4KO6pxH0LZ",
+        "label" : "OrchestrationSource_0"
+      }, {
+        "id" : "G-iLP7MVeDCVq7thd3a3T$$r5Nhe8RdG6nNAS4y6AjnA",
+        "label" : "OrchestrationSource_1"
+      } ]
+    },
+    "erterter" : {
+      "id" : "erterter",
+      "name" : "erterter",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/erterter.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "DR2orUNfRYJUVNusLOY4F$$KbuudM7KRhCk4JMl-fQi1",
+        "label" : "OrchestrationSource_0"
+      }, {
+        "id" : "bYk0nXVEpQt5CD-mjTF_5$$4ryZ8ERrnlGPCiR8NiK7Y",
+        "label" : "OrchestrationSource_1"
+      } ]
+    }
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "aman",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ash",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "kaustubh",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "maciej",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_0",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_1",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_10",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_11",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_12",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_13",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_14",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_15",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_16",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_17",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_18",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_19",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_3",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_4",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_5",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_6",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_7",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_8",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_9",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_performance",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rajat",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rohit",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rohit_temp",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "tanmay",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

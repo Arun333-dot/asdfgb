@@ -1,0 +1,54 @@
+{
+  "name" : "simplesql",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "simplesql/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "simplesql/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : {
+      "https://github.com/prophecy-io/databricks-sql-basics" : "22363"
+    }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

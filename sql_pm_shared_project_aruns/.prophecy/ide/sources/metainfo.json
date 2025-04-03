@@ -1,0 +1,27 @@
+{
+  "name" : "sql_pm_shared_project_aruns",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : { },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : {
+      "https://github.com/prophecy-io/databricks-sql-basics" : "12"
+    }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

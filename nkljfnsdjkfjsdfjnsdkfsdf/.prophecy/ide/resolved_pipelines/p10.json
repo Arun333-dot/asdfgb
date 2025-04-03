@@ -1,0 +1,81 @@
+{
+  "id" : "p10",
+  "metainfo" : {
+    "label" : "p10",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "1zJSDO8dEyNnJooVwP5bX$$F8yvr9k5xDRNbXWfYd0CQ" : {
+      "id" : "1zJSDO8dEyNnJooVwP5bX$$F8yvr9k5xDRNbXWfYd0CQ",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p10_Except_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p10_Except_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p10_post_Except_1_0", "1zJSDO8dEyNnJooVwP5bX$$F8yvr9k5xDRNbXWfYd0CQ" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p10_Except_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p10_Except_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "pVIb0985Kmc98aL0WLh9F$$TTaZaJC2SpfAaGllbivi7" : {
+      "id" : "pVIb0985Kmc98aL0WLh9F$$TTaZaJC2SpfAaGllbivi7",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p10_Filter_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p10_Filter_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p10_post_Filter_0_0", "pVIb0985Kmc98aL0WLh9F$$TTaZaJC2SpfAaGllbivi7" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p10_Filter_0_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p10_Filter_0_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

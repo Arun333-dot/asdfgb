@@ -1,0 +1,95 @@
+name: sql_pm_shared_project_aruns
+description: ''
+version: '3'
+author: sony@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-04-01 17:11:02'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/m2:
+    name: m2
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/m2.sql
+    - .prophecy/ide/models/m2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-04-01 17:15:36'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-04-01 17:11:07'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/seed444444:
+    name: seed444444
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: sony@prophecy.io
+    files:
+    - seeds/seed444444.csv
+    - seeds/seeds.yml
+    createdAt: '2025-04-01 17:17:35'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines: {}
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: sony@prophecy.io
+  createdAt: '2025-04-01 17:11:02'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}

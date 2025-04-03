@@ -7,19 +7,11 @@
   })
 }}
 
-WITH WindowFunction_1 AS (
+WITH FlattenSchema_1 AS (
 
   SELECT * 
   
   FROM `` AS in0
-
-),
-
-FlattenSchema_1 AS (
-
-  SELECT * 
-  
-  FROM WindowFunction_1 AS in0
 
 )
 

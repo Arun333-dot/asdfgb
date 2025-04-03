@@ -200,6 +200,15 @@ sqlSources:
     tables: []
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p6:
+    name: p6
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p6.json
+    - pipelines/p6.py
+    createdAt: '2025-03-28 12:46:19'
   .prophecy/metadata/sqlorchestratorpipeline/p2:
     name: p2
     schema: null
@@ -208,6 +217,7 @@ sqlOrchestratorPipelines:
     files:
     - models/p2/schema.yml
     - models/p2/model_p2_Reformat_1.sql
+    - .prophecy/ide/pipelines/p2.json
     - pipelines/p2.py
     createdAt: '2025-03-25 17:26:55'
   .prophecy/metadata/sqlorchestratorpipeline/p5:
@@ -218,6 +228,7 @@ sqlOrchestratorPipelines:
     files:
     - models/p5/schema.yml
     - models/p5/model_p5_Reformat_1.sql
+    - .prophecy/ide/pipelines/p5.json
     - pipelines/p5.py
     createdAt: '2025-03-25 18:03:19'
   .prophecy/metadata/sqlorchestratorpipeline/p1:
@@ -228,6 +239,7 @@ sqlOrchestratorPipelines:
     files:
     - models/p1/schema.yml
     - models/p1/model_p1_custom_object_data.sql
+    - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-03-25 12:03:03'
   .prophecy/metadata/sqlorchestratorpipeline/p4:
@@ -236,6 +248,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p4.json
     - pipelines/p4.py
     createdAt: '2025-03-25 17:56:51'
   .prophecy/metadata/sqlorchestratorpipeline/p3:
@@ -244,6 +257,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p3.json
     - pipelines/p3.py
     createdAt: '2025-03-25 17:52:34'
 sqlBusinessApps: {}

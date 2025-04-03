@@ -1,6 +1,6 @@
 name: multi_project_browser_team_123
 description: ''
-version: '2'
+version: '1'
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
@@ -62,6 +62,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma@prophecy.io
     files:
+    - models/pipeline123123213/model_pipeline123123213_WindowFunction_1.sql
     - models/pipeline123123213/model_pipeline123123213_Aggregate_1.sql
     - models/pipeline123123213/schema.yml
     - models/pipeline123123213/model_pipeline123123213_FlattenSchema_1.sql

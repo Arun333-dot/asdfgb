@@ -39,12 +39,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_1_1",
-          "slug" : "input_port_1_1"
+          "id" : "input_port_2_1",
+          "slug" : "input_port_2_1"
         } ],
         "outputs" : [ {
-          "id" : "output_port_1_1",
-          "slug" : "output_port_1_1"
+          "id" : "output_port_2_1",
+          "slug" : "output_port_2_1"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -76,35 +76,6 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
-    },
-    "OJuth-XorWqK1PknWEG96$$J_UpDCus0-poecOMiK2ut" : {
-      "id" : "OJuth-XorWqK1PknWEG96$$J_UpDCus0-poecOMiK2ut",
-      "component" : "WindowFunction",
-      "metadata" : {
-        "label" : "WindowFunction_1",
-        "x" : -1900,
-        "y" : -940,
-        "phase" : 0
-      },
-      "properties" : {
-        "expressions" : [ ],
-        "activeTab" : "partitionTab",
-        "columnsSelector" : [ ],
-        "partitionExpressions" : [ ],
-        "ordersBy" : [ ]
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "XjiHEjCaBfGUGCTixLPGw$$zNjcTlfGYYBPCvhczJ4JY",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "G4Tnip4vy0eJe9iS5WwQq$$1p6nDwGuhB-jvV5U2c73w",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
     }
   },
   "connections" : [ {
@@ -112,13 +83,7 @@
     "source" : "1yamzd3NAclkVHrgQ_Awa$$tDb8p7MQ8P3d77AKYLvxQ",
     "sourcePort" : "-GOCdBQJrEL5j4Yd-7e4w$$GWjSSKdtCE-4KJsuI-kwb",
     "target" : "prophecy__temp_pipeline123123213_post_FlattenSchema_1_0",
-    "targetPort" : "input_port_1_1"
-  }, {
-    "id" : "pdMWtpSSnkf8emnGO1owC$$MMjoSDHOpplCTov5UkVW5",
-    "source" : "OJuth-XorWqK1PknWEG96$$J_UpDCus0-poecOMiK2ut",
-    "sourcePort" : "G4Tnip4vy0eJe9iS5WwQq$$1p6nDwGuhB-jvV5U2c73w",
-    "target" : "1yamzd3NAclkVHrgQ_Awa$$tDb8p7MQ8P3d77AKYLvxQ",
-    "targetPort" : "lL06vhmRyDOtpdQX1CMdw$$Iqq-ltcVDMdRNVKWl7iDR"
+    "targetPort" : "input_port_2_1"
   } ],
   "component" : "Model"
 }

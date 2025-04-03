@@ -1,0 +1,39 @@
+{
+  "name" : "advacned_sql_databricks",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "pipeline1" : {
+      "id" : "pipeline1",
+      "name" : "pipeline1",
+      "path" : "advacned_sql_databricks/.prophecy/ide/pipelines/pipeline1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

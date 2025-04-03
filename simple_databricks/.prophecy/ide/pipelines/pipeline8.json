@@ -1,0 +1,228 @@
+{
+  "id" : "pipeline8",
+  "metainfo" : {
+    "label" : "pipeline8",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "hhio73dNgcqCmngnkk28a$$e1eN2gR5wXM8SQFkijSuu" : {
+      "id" : "hhio73dNgcqCmngnkk28a$$e1eN2gR5wXM8SQFkijSuu",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success",
+        "x" : -20,
+        "y" : -640
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "Without include data",
+        "includeData" : false,
+        "fileName" : "sdfsdfsdfsdfsdfsd.csv",
+        "to" : [ "arunsharma@prophecy.io", "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "csv",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "zKBQJci2otkSU2O6xiilf$$N8Dd6ZhDE1GW9jF-jGkdD",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "9yUwZe3invuaul8JI1HI_" : {
+      "id" : "9yUwZe3invuaul8JI1HI_",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_1",
+        "x" : -1060,
+        "y" : -340,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "tanmay",
+            "name" : "m1",
+            "schema" : "default"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "5cea1ef0-4e54-4cbe-9916-55e238011626",
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "OUCNnHoGOLpzIGqVTMulR$$YVy4UaKMlFA-PwR-pM0Kx" : {
+      "id" : "OUCNnHoGOLpzIGqVTMulR$$YVy4UaKMlFA-PwR-pM0Kx",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success_1_1",
+        "x" : -100,
+        "y" : -280
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "pipeline success",
+        "includeData" : false,
+        "fileName" : "sdfsdfsdfsdfsdfsd.xlsx",
+        "to" : [ "arunsharma@prophecy.io", "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "xlsx",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "riuXZTCJdaAQA1hqvnQNX$$QHE400GGP5hRNP1TseYtI",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "sZ8eAxQ70G7DuoKu4QS9h$$H1IFbGm_shT5lBBfugydO" : {
+      "id" : "sZ8eAxQ70G7DuoKu4QS9h$$H1IFbGm_shT5lBBfugydO",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success_1_1_1_1",
+        "x" : -760,
+        "y" : -60
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "pipeline success",
+        "includeData" : true,
+        "fileName" : "sdfsdfsdfsdfsdfsd.xlsx",
+        "to" : [ "arunsharma@prophecy.io", "soni.vaibhav@prophecy.io" ],
+        "attachmentPath" : "attachments/template_final.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wG7pAB83Q-PWPdOzgR6bg$$y9YnZa_gamc7iyDgBqBAH",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "aoOwz85JN_uAHAbgvr5Tr$$DXwQvQwC6DXBMcbh2jxOU" : {
+      "id" : "aoOwz85JN_uAHAbgvr5Tr$$DXwQvQwC6DXBMcbh2jxOU",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success_1_1_1",
+        "x" : -440,
+        "y" : -160
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "pipeline success",
+        "includeData" : true,
+        "fileName" : "sdfsdfsdfsdfsdfsd.xlsx",
+        "to" : [ "arunsharma@prophecy.io", "soni.vaibhav@prophecy.io" ],
+        "attachmentPath" : "attachments/template_final_1.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6BbOqIu2Vg2aCEV94X4om$$dHf3pRjDbotRuE9czFAxo",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "1pIMypyM5qli7AFH2Q6mH$$VrrgkQM1TDW3wSxOjD7hu" : {
+      "id" : "1pIMypyM5qli7AFH2Q6mH$$VrrgkQM1TDW3wSxOjD7hu",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success_1",
+        "x" : 140,
+        "y" : -420
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "This is with csv",
+        "includeData" : true,
+        "fileName" : "sdfsdfsdfsdfsdfsd.csv",
+        "to" : [ "arunsharma@prophecy.io", "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "csv",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "zCXTS3PZZ1iVS5lEJWU-y$$mZCZ3WU05m0bCrzwpp3oz",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "eJI_fm7vf8D22T6UDbtqW",
+    "source" : "9yUwZe3invuaul8JI1HI_",
+    "sourcePort" : "5cea1ef0-4e54-4cbe-9916-55e238011626",
+    "target" : "hhio73dNgcqCmngnkk28a$$e1eN2gR5wXM8SQFkijSuu",
+    "targetPort" : "zKBQJci2otkSU2O6xiilf$$N8Dd6ZhDE1GW9jF-jGkdD"
+  }, {
+    "id" : "5yEW5hK1XFiq9lMWXrvYR",
+    "source" : "9yUwZe3invuaul8JI1HI_",
+    "sourcePort" : "5cea1ef0-4e54-4cbe-9916-55e238011626",
+    "target" : "1pIMypyM5qli7AFH2Q6mH$$VrrgkQM1TDW3wSxOjD7hu",
+    "targetPort" : "zCXTS3PZZ1iVS5lEJWU-y$$mZCZ3WU05m0bCrzwpp3oz"
+  }, {
+    "id" : "3ujUpYmNDAp7Jinv45pm9",
+    "source" : "9yUwZe3invuaul8JI1HI_",
+    "sourcePort" : "5cea1ef0-4e54-4cbe-9916-55e238011626",
+    "target" : "OUCNnHoGOLpzIGqVTMulR$$YVy4UaKMlFA-PwR-pM0Kx",
+    "targetPort" : "riuXZTCJdaAQA1hqvnQNX$$QHE400GGP5hRNP1TseYtI"
+  }, {
+    "id" : "8dZvfkldzAlqgYOvvrWoJ",
+    "source" : "9yUwZe3invuaul8JI1HI_",
+    "sourcePort" : "5cea1ef0-4e54-4cbe-9916-55e238011626",
+    "target" : "aoOwz85JN_uAHAbgvr5Tr$$DXwQvQwC6DXBMcbh2jxOU",
+    "targetPort" : "6BbOqIu2Vg2aCEV94X4om$$dHf3pRjDbotRuE9czFAxo"
+  }, {
+    "id" : "dPRGctwg0T_S_uLLtSbCb",
+    "source" : "9yUwZe3invuaul8JI1HI_",
+    "sourcePort" : "5cea1ef0-4e54-4cbe-9916-55e238011626",
+    "target" : "sZ8eAxQ70G7DuoKu4QS9h$$H1IFbGm_shT5lBBfugydO",
+    "targetPort" : "wG7pAB83Q-PWPdOzgR6bg$$y9YnZa_gamc7iyDgBqBAH"
+  } ],
+  "component" : "Pipeline"
+}

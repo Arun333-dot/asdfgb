@@ -1,0 +1,28 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "boolean_data"
+    description: "Records of active status for various entities, enabling insights\
+      \ into engagement and activity levels."
+    quoting:
+      identifier: true
+    columns:
+    - name: "ID"
+      description: "Unique identifier for each record"
+      dataType:
+        type: "Bigint"
+    - name: "Name"
+      description: "The name associated with the record"
+      dataType:
+        type: "String"
+    - name: "Is_Active"
+      description: "Indicates whether the record is currently active"
+      dataType:
+        type: "Boolean"
+    type: "table"

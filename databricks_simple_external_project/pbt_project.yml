@@ -1,6 +1,6 @@
 name: databricks_simple_external_project
 description: ''
-version: 0.0.1
+version: '1'
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
@@ -23,7 +23,97 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model2:
+    name: model2
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: table_catalog
+        dataType:
+          type: String
+      - name: table_schema
+        dataType:
+          type: String
+      - name: table_name
+        dataType:
+          type: String
+      - name: table_type
+        dataType:
+          type: String
+      - name: is_insertable_into
+        dataType:
+          type: String
+      - name: commit_action
+        dataType:
+          type: String
+      - name: table_owner
+        dataType:
+          type: String
+      - name: comment
+        dataType:
+          type: String
+      - name: created
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: last_altered
+        dataType:
+          type: Timestamp
+      - name: last_altered_by
+        dataType:
+          type: String
+      - name: data_source_format
+        dataType:
+          type: String
+      - name: storage_sub_directory
+        dataType:
+          type: String
+      - name: storage_path
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model2.sql
+    - .prophecy/ide/models/model2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-28 10:58:26'
+  .prophecy/metadata/sqlmodels/model3:
+    name: model3
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: ID
+        dataType:
+          type: Bigint
+      - name: Name
+        dataType:
+          type: String
+      - name: Is_Active
+        dataType:
+          type: Boolean
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model3.sql
+    - .prophecy/ide/models/model3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-26 12:02:12'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -37,7 +127,33 @@ sqlMacros:
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-26 08:50:36'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-28 10:17:11'
+    tables:
+    - name: boolean_data
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: ID
+          dataType:
+            type: Bigint
+        - name: Name
+          dataType:
+            type: String
+        - name: Is_Active
+          dataType:
+            type: Boolean
+      description: Records of active status for various entities, enabling insights
+        into engagement and activity levels.
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-28 10:17:11'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/grtgrtgrt:
@@ -46,6 +162,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/grtgrtgrt/schema.yml
+    - models/grtgrtgrt/model_grtgrtgrt_m1_1.sql
+    - .prophecy/ide/pipelines/grtgrtgrt.json
     - pipelines/grtgrtgrt.py
     createdAt: '2025-03-26 08:50:58'
 sqlBusinessApps: {}
