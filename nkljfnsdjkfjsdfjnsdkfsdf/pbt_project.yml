@@ -1,6 +1,6 @@
 name: simple_databricks
 description: ''
-version: '4'
+version: '1'
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
