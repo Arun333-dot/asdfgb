@@ -1,0 +1,335 @@
+{
+  "id" : "pipeline6",
+  "metainfo" : {
+    "label" : "pipeline6",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "znOmt97IyP7W7i7ABkaOA$$6Y5w9UkRhEMjKmOiKXSMg" : {
+      "id" : "znOmt97IyP7W7i7ABkaOA$$6Y5w9UkRhEMjKmOiKXSMg",
+      "component" : "RestAPI",
+      "metadata" : {
+        "label" : "fetch_employees",
+        "x" : -520,
+        "y" : -340
+      },
+      "properties" : {
+        "method" : "GET",
+        "body" : "",
+        "url" : "https://postman-echo.com/get",
+        "params" : "name={{First Name}}&job={{Job Title}}",
+        "headers" : ""
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nV_VK-Gg1tVGPB1UiTHAs$$jUIjl0DDN-S0tpY3LFjbZ",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "First Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Last Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Street Address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "City Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "State Code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Zip Code",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Phone Number",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Email Address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Job Title",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Company Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "w77qmAc-kHoVaAnscQcv3$$ec4qMB_XLL7_yILRmPaER",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "First Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Last Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Street Address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "City Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "State Code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Zip Code",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Phone Number",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Email Address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Job Title",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Company Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "SBWtw5zZOFDUN2r3tL7Gs" : {
+      "id" : "SBWtw5zZOFDUN2r3tL7Gs",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_1",
+        "x" : -1120,
+        "y" : -340,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : {
+            "additionalProperties" : {
+              "copilot" : {
+                "datasetDescriptionStatus" : "fromCopilot"
+              }
+            },
+            "description" : "Contact information for individuals, aiding in outreach and relationship management efforts.",
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The first name of the individual",
+                "name" : "First Name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The surname of the individual",
+                "name" : "Last Name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The street address of the individual",
+                "name" : "Street Address"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the city where the individual resides.",
+                "name" : "City Name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Abbreviation representing the state of residence.",
+                "name" : "State Code"
+              }, {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Postal code for the address location",
+                "name" : "Zip Code"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Contact phone number of the individual",
+                "name" : "Phone Number"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The email address of the individual",
+                "name" : "Email Address"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The title of the individual's job position",
+                "name" : "Job Title"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Name of the company where the individual is employed",
+                "name" : "Company Name"
+              } ],
+              "providerType" : "Arrow"
+            }
+          }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_team",
+            "name" : "data_with_spaces",
+            "schema" : "qa_database"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "9450c55a-4579-4e14-9005-61ab72e225a6",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "First Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Last Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Street Address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "City Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "State Code",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Zip Code",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Phone Number",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Email Address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Job Title",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Company Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "0roORRXcZteNrTd27HnWD",
+    "source" : "SBWtw5zZOFDUN2r3tL7Gs",
+    "sourcePort" : "9450c55a-4579-4e14-9005-61ab72e225a6",
+    "target" : "znOmt97IyP7W7i7ABkaOA$$6Y5w9UkRhEMjKmOiKXSMg",
+    "targetPort" : "nV_VK-Gg1tVGPB1UiTHAs$$jUIjl0DDN-S0tpY3LFjbZ"
+  } ],
+  "component" : "Pipeline"
+}
