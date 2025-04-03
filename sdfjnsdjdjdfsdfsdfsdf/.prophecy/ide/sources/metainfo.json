@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "simplesql/.prophecy/ide/pipelines/p1.json",
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "simplesql/.prophecy/ide/pipelines/p2.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -29,10 +29,10 @@
       "preview" : [ ],
       "sources" : [ ]
     },
-    "p2" : {
-      "id" : "p2",
-      "name" : "p2",
-      "path" : "simplesql/.prophecy/ide/pipelines/p2.json",
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "simplesql/.prophecy/ide/pipelines/p1.json",
       "config" : {
         "schema" : {
           "type" : "record",
