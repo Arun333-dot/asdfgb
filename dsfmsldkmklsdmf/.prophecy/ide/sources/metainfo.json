@@ -1,5 +1,5 @@
 {
-  "name" : "clone_Test_External_project",
+  "name" : "simplesql",
   "fileSystem" : {
     "type" : "Folder",
     "name" : "",
@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p17" : {
-      "id" : "p17",
-      "name" : "p17",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p17.json",
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "simplesql/.prophecy/ide/pipelines/p2.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -29,26 +29,10 @@
       "preview" : [ ],
       "sources" : [ ]
     },
-    "p2" : {
-      "id" : "p2",
-      "name" : "p2",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p2.json",
-      "config" : {
-        "schema" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      },
-      "preview" : [ ],
-      "sources" : [ {
-        "id" : "rxg5KBrfH5vwgAmYM9POo$$j-kvxCOoQ39uvfnaPQ2Lb",
-        "label" : "OrchestrationSource_0"
-      } ]
-    },
     "p1" : {
       "id" : "p1",
       "name" : "p1",
-      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p1.json",
+      "path" : "simplesql/.prophecy/ide/pipelines/p1.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -61,7 +45,9 @@
   },
   "dependenciesContainer" : {
     "dependencies" : { },
-    "prophecyProjectDependencies" : { }
+    "prophecyProjectDependencies" : {
+      "https://github.com/prophecy-io/databricks-sql-basics" : "22363"
+    }
   },
   "entitiesToSync" : [ ],
   "frontEndLanguage" : "sql"

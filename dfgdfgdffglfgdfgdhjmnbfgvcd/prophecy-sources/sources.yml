@@ -1,0 +1,204 @@
+---
+version: 2
+sources:
+- name: "main.information_schema"
+  database: "main"
+  schema: "information_schema"
+  tables:
+  - name: "key_column_usage"
+    columns: []
+    type: "table"
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  tables:
+  - name: "all_type_databricks"
+    columns:
+    - name: "id"
+      dataType:
+        type: "Integer"
+    - name: "tiny_value"
+      dataType:
+        type: "TinyInt"
+    - name: "small_value"
+      dataType:
+        type: "SmallInt"
+    - name: "big_value"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      dataType:
+        type: "String"
+    - name: "is_active"
+      dataType:
+        type: "Boolean"
+    - name: "salary"
+      dataType:
+        type: "String"
+    - name: "float_value"
+      dataType:
+        type: "Float"
+    - name: "double_value"
+      dataType:
+        type: "Double"
+    - name: "binary_data"
+      dataType:
+        type: "Binary"
+    - name: "created_at"
+      dataType:
+        type: "Timestamp"
+    - name: "created_at_ntz"
+      dataType:
+        type: "Timestamp"
+    - name: "birth_date"
+      dataType:
+        type: "Date"
+    - name: "interval_value"
+      dataType:
+        type: "String"
+    - name: "interval_seconds"
+      dataType:
+        type: "String"
+    - name: "metadata"
+      dataType:
+        type: "String"
+    - name: "int_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Integer"
+    - name: "float_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Float"
+    - name: "boolean_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Boolean"
+    - name: "decimal_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Decimal"
+    - name: "timestamp_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Timestamp"
+    - name: "date_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Date"
+    - name: "struct_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Struct"
+          fields:
+          - name: "type"
+            dataType:
+              type: "String"
+          - name: "value"
+            dataType:
+              type: "Integer"
+    - name: "array_of_arrays"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Array"
+          dataType:
+            type: "Integer"
+    - name: "struct_of_array"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "name"
+          dataType:
+            type: "String"
+        - name: "values"
+          dataType:
+            type: "Array"
+            dataType:
+              type: "Integer"
+    - name: "struct_of_array_of_structs"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "id"
+          dataType:
+            type: "Integer"
+        - name: "details"
+          dataType:
+            type: "Array"
+            dataType:
+              type: "Struct"
+              fields:
+              - name: "key"
+                dataType:
+                  type: "String"
+              - name: "val"
+                dataType:
+                  type: "Integer"
+    type: "table"
+  - name: "customer"
+    description: "Customer demographic and engagement data, essential for understanding\
+      \ customer profiles and enhancing marketing strategies."
+    columns:
+    - name: "C_CUSTOMER_SK"
+      dataType:
+        type: "Double"
+    - name: "C_CUSTOMER_ID"
+      dataType:
+        type: "String"
+    - name: "C_CURRENT_CDEMO_SK"
+      dataType:
+        type: "Double"
+    - name: "C_CURRENT_HDEMO_SK"
+      dataType:
+        type: "Double"
+    - name: "C_CURRENT_ADDR_SK"
+      dataType:
+        type: "Double"
+    - name: "C_FIRST_SHIPTO_DATE_SK"
+      dataType:
+        type: "Double"
+    - name: "C_FIRST_SALES_DATE_SK"
+      dataType:
+        type: "Double"
+    - name: "C_SALUTATION"
+      dataType:
+        type: "String"
+    - name: "C_FIRST_NAME"
+      dataType:
+        type: "String"
+    - name: "C_LAST_NAME"
+      dataType:
+        type: "String"
+    - name: "C_PREFERRED_CUST_FLAG"
+      dataType:
+        type: "String"
+    - name: "C_BIRTH_DAY"
+      dataType:
+        type: "Double"
+    - name: "C_BIRTH_MONTH"
+      dataType:
+        type: "Double"
+    - name: "C_BIRTH_YEAR"
+      dataType:
+        type: "Double"
+    - name: "C_BIRTH_COUNTRY"
+      dataType:
+        type: "String"
+    - name: "C_LOGIN"
+      dataType:
+        type: "String"
+    - name: "C_EMAIL_ADDRESS"
+      dataType:
+        type: "String"
+    - name: "C_LAST_REVIEW_DATE"
+      dataType:
+        type: "String"
+    type: "table"
