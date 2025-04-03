@@ -131,6 +131,8 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/erterter/model_erterter_Aggregate_0.sql
+    - models/erterter/schema.yml
     - .prophecy/ide/pipelines/erterter.json
     - pipelines/erterter.py
     createdAt: '2025-03-27 10:35:33'

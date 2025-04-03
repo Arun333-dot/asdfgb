@@ -11,7 +11,39 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "oHUUi-HUOHMe8lHyK21In$$bJUsnNYEqxpndJmQf0wzj" : {
+      "id" : "oHUUi-HUOHMe8lHyK21In$$bJUsnNYEqxpndJmQf0wzj",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Iqb_DFuW6wgAH6PDC5PBY$$Z4fgUhJ6YAypk3E8WGcwS",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "f_RjP4i8_-n8z1KAW9JZV$$z4bl-GOXhKc8Xujdb9SNJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

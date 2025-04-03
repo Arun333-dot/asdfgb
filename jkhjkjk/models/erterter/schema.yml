@@ -1,0 +1,18 @@
+---
+version: 2
+models:
+- name: "model_erterter_Aggregate_0"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_erterter_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_erterter_post_Aggregate_0_0"
+    tags:
+    - "prophecy_temp"

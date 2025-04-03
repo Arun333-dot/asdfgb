@@ -11,7 +11,35 @@
       }
     }
   },
-  "processes" : { },
+  "processes" : {
+    "oHUUi-HUOHMe8lHyK21In$$bJUsnNYEqxpndJmQf0wzj" : {
+      "id" : "oHUUi-HUOHMe8lHyK21In$$bJUsnNYEqxpndJmQf0wzj",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_erterter_Aggregate_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_erterter_Aggregate_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_erterter_post_Aggregate_0_0", "oHUUi-HUOHMe8lHyK21In$$bJUsnNYEqxpndJmQf0wzj" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_erterter_Aggregate_0_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_erterter_Aggregate_0_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
