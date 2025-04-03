@@ -2,16 +2,24 @@
   config({    
     "materialized": "table",
     "alias": "prophecy__temp_pipeline1_post_Aggregate_2_0",
-    "database": "database",
-    "schema": "default"
+    "database": "hive_metastore",
+    "schema": "arun123"
   })
 }}
 
-WITH Deduplicate_2 AS (
+WITH OrchestrationSource_4 AS (
+
+  SELECT * 
+  
+  FROM {{ source('prophecy__temp_pipeline1_source', 'prophecy__temp_pipeline1_pre_Deduplicate_2_0') }}
+
+),
+
+Deduplicate_2 AS (
 
   SELECT DISTINCT *
   
-  FROM `` AS in0
+  FROM OrchestrationSource_4 AS in0
 
 ),
 

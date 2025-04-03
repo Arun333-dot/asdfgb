@@ -38,6 +38,33 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "vnWS_p0sy2s5UUPQk7Rir$$1PnaBbDdMgoJQMhfYem8w" : {
+      "id" : "vnWS_p0sy2s5UUPQk7Rir$$1PnaBbDdMgoJQMhfYem8w",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_grtgrtgrt_m1_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_grtgrtgrt_m1_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_grtgrtgrt_post_m1_1_0", "vnWS_p0sy2s5UUPQk7Rir$$1PnaBbDdMgoJQMhfYem8w" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_grtgrtgrt_m1_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_grtgrtgrt_m1_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

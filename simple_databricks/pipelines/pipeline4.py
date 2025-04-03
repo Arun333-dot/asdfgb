@@ -23,6 +23,14 @@ with DAG(Schedule = Schedule):
         component = "Model", 
         modelName = "model_pipeline4_WindowFunction_1"
     )
+    SFTPSource_1 = SourceTask(
+        task_id = "SFTPSource_1", 
+        component = "OrchestrationSource", 
+        kind = "SFTPSource", 
+        connector = Connection(kind = "sftp", authMethod = "password", id = "sftp", port = 22), 
+        format = XMLFormat(), 
+        filePath = "/prophecy-sftp/aruns/valid_data_records.xml"
+    )
     RestAPI_1 = Task(
         task_id = "RestAPI_1", 
         component = "RestAPI", 
@@ -33,3 +41,11 @@ with DAG(Schedule = Schedule):
         headers = ""
     )
     Email_1 = Task(task_id = "Email_1", component = "Email", to = None, subject = "", body = "", includeData = False)
+    MSSQLSource_1 = SourceTask(
+        task_id = "MSSQLSource_1", 
+        component = "OrchestrationSource", 
+        kind = "MSSQLSource", 
+        connector = Connection(kind = "mssql", id = "dasadsads"), 
+        format = MSSQLFormat(), 
+        tableFullName = {"database" : "orchestrator", "name" : "tushartg", "schema" : "dbo"}
+    )
