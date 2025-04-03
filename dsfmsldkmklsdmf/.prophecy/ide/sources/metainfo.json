@@ -41,6 +41,19 @@
       },
       "preview" : [ ],
       "sources" : [ ]
+    },
+    "bv" : {
+      "id" : "bv",
+      "name" : "bv",
+      "path" : "simplesql/.prophecy/ide/pipelines/bv.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
     }
   },
   "dependenciesContainer" : {
