@@ -20,7 +20,65 @@
       "enabled" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "pVIb0985Kmc98aL0WLh9F$$TTaZaJC2SpfAaGllbivi7" : {
+      "id" : "pVIb0985Kmc98aL0WLh9F$$TTaZaJC2SpfAaGllbivi7",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "aIyEq_GDIckgL0fg0HOVZ$$iWN8m5HhOdqWZ8mZ2qE9f",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "sBmN1XGP0Aj6ttfvUr7Np$$HOJHp9fe-6FR5XTclmMi3",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "1zJSDO8dEyNnJooVwP5bX$$F8yvr9k5xDRNbXWfYd0CQ" : {
+      "id" : "1zJSDO8dEyNnJooVwP5bX$$F8yvr9k5xDRNbXWfYd0CQ",
+      "component" : "Except",
+      "metadata" : {
+        "label" : "Except_1",
+        "x" : -880,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "operationType" : "except",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "E233AzAGQaP5h_psAfWs2$$9O-WwNn6RZOChGXvk6SO1",
+          "slug" : "in0"
+        }, {
+          "id" : "j_aGtX0R_bPRl6E4vq8uy$$2UCbtuDLRcjB_QbQT3pmg",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "zHT6lm8f9CrRS0ivwtZiF$$EE3F7L2EGTbFVUgZueFhI",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
