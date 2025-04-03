@@ -3,7 +3,7 @@
   "metainfo" : {
     "label" : "model4",
     "autoLayout" : false,
-    "staleState" : "none",
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -72,8 +72,8 @@
       "metadata" : {
         "label" : "seed1",
         "slug" : "seed1",
-        "x" : -240,
-        "y" : 20,
+        "x" : -560,
+        "y" : 140,
         "phase" : 0
       },
       "properties" : {
@@ -92,6 +92,42 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "-58v8yIyLl2dvVz7Wl3zB$$lpk7YzDDHJwbW8CiCyDqX" : {
+      "id" : "-58v8yIyLl2dvVz7Wl3zB$$lpk7YzDDHJwbW8CiCyDqX",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -160,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "No SQL query provided to analyze.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : ""
+          },
+          "alias" : "name_Age",
+          "_row_id" : "OtTdALImeB"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SsdptD-SFXj1NRJ3pL2SQ$$HQZWywZO3nnFjE7yMrMXH",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "5XpOChH8uaGaYAkSQNFGy$$WaGyP026WTbg2HKwlDa13",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ {
@@ -100,6 +136,12 @@
     "sourcePort" : "K1u1MZO0zJIIU7A-1eoqo",
     "target" : "final##HiDnOAXU",
     "targetPort" : "Bq72wLcH"
+  }, {
+    "id" : "fUcYrmyCfEeMo0wn879-M",
+    "source" : "9Lk8N8FmFUWpt5wj2p1rP",
+    "sourcePort" : "K1u1MZO0zJIIU7A-1eoqo",
+    "target" : "-58v8yIyLl2dvVz7Wl3zB$$lpk7YzDDHJwbW8CiCyDqX",
+    "targetPort" : "SsdptD-SFXj1NRJ3pL2SQ$$HQZWywZO3nnFjE7yMrMXH"
   } ],
   "component" : "Model"
 }
