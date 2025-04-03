@@ -986,6 +986,21 @@
       "ports" : {
         "inputs" : [ {
           "id" : "ctcQYotze0dr0C9Yfu_3n$$wnmKSQ2K3LOgQcuaKJe-V",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Country",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
           "slug" : "in0"
         } ],
         "outputs" : [ {
