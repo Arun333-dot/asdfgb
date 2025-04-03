@@ -41,7 +41,16 @@ sqlModels:
     createdAt: '2025-04-01 10:37:49'
   .prophecy/metadata/sqlmodels/model2:
     name: model2
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
     description: null
     author: arunsharma+admin@prophecy.io
     files:
@@ -71,7 +80,16 @@ sqlModels:
     createdAt: '2025-04-01 08:30:58'
   .prophecy/metadata/sqlmodels/model4:
     name: model4
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
     description: null
     author: arunsharma+admin@prophecy.io
     files:
@@ -297,11 +315,11 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_1.sql
     - models/pipeline1/schema.yml
     - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
     createdAt: '2025-04-01 07:18:02'
