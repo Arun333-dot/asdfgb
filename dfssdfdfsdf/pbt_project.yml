@@ -46,6 +46,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-03-27 09:32:47'
   .prophecy/metadata/sqlorchestratorpipeline/p17:
@@ -54,6 +55,7 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma@prophecy.io
     files:
+    - .prophecy/ide/pipelines/p17.json
     - pipelines/p17.py
     createdAt: '2025-03-27 09:32:55'
 sqlBusinessApps: {}
