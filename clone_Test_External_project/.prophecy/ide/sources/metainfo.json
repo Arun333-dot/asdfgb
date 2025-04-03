@@ -29,6 +29,22 @@
       "preview" : [ ],
       "sources" : [ ]
     },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "clone_Test_External_project/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "rxg5KBrfH5vwgAmYM9POo$$j-kvxCOoQ39uvfnaPQ2Lb",
+        "label" : "OrchestrationSource_0"
+      } ]
+    },
     "p1" : {
       "id" : "p1",
       "name" : "p1",
