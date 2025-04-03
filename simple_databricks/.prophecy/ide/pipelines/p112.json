@@ -26,8 +26,8 @@
       "component" : "Email",
       "metadata" : {
         "label" : "send_email_with_attachment",
-        "x" : 20,
-        "y" : -180
+        "x" : 180,
+        "y" : -320
       },
       "properties" : {
         "body" : "mail",
@@ -746,8 +746,8 @@
       "component" : "Email",
       "metadata" : {
         "label" : "send_email_with_attachment_1",
-        "x" : 180,
-        "y" : 100
+        "x" : 200,
+        "y" : -120
       },
       "properties" : {
         "body" : "mail",

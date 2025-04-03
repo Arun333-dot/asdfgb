@@ -94,10 +94,53 @@
     "config1" : {
       "config" : {
         "config1" : "option",
-        "config2" : "config2_value",
+        "config2" : "option",
         "config3" : "config3_value"
       },
-      "sources" : { },
+      "sources" : {
+        "tXGD2AgkdESiKgSTRJYSn" : {
+          "fileName" : "large_csv_500_columns.csv",
+          "process" : {
+            "component" : "OrchestrationSource",
+            "kind" : "DatabricksSource",
+            "id" : "9d6f44e2-49e8-4211-b4a1-53377780126b",
+            "ports" : {
+              "inputs" : [ ],
+              "outputs" : [ {
+                "id" : "08a6e83e-b2f0-4b7d-8bb7-8f78678e3460",
+                "slug" : "out0"
+              } ]
+            },
+            "metadata" : {
+              "label" : "DatabricksSource",
+              "x" : 0,
+              "y" : 0,
+              "phase" : 0
+            },
+            "properties" : {
+              "connector" : {
+                "kind" : "databricks",
+                "properties" : {
+                  "authType" : "pat",
+                  "id" : "connnection"
+                },
+                "type" : "connector"
+              },
+              "format" : {
+                "kind" : "databricks",
+                "properties" : { }
+              },
+              "properties" : {
+                "tableFullName" : {
+                  "database" : "qa_team",
+                  "name" : "customer",
+                  "schema" : "qa_database"
+                }
+              }
+            }
+          }
+        }
+      },
       "schedule" : {
         "cron" : "* 0 2 * * * *",
         "timeZone" : "GMT",

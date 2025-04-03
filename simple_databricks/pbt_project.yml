@@ -406,10 +406,10 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - models/pipeline1/schema.yml
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
     - models/pipeline11/schema.yml
     - .prophecy/ide/pipelines/pipeline1.json
@@ -448,8 +448,8 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline2/schema.yml
     - models/pipeline2/model_pipeline2_Deduplicate_2.sql
+    - models/pipeline2/schema.yml
     - .prophecy/ide/pipelines/pipeline2.json
     - pipelines/pipeline2.py
     createdAt: '2025-04-01 07:18:12'
