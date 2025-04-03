@@ -3,13 +3,43 @@
   "metainfo" : {
     "label" : "model2",
     "autoLayout" : false,
-    "staleState" : "none",
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
     "version" : 3
   },
   "processes" : {
+    "Ic-omqtZGpX1KBdSoeBeE$$h4RU0Wm3GR-zgmQQM3TJc" : {
+      "id" : "Ic-omqtZGpX1KBdSoeBeE$$h4RU0Wm3GR-zgmQQM3TJc",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -1380,
+        "y" : -580,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "JndkCl8y5nt8NLbR50rYm$$zjegz2V5YRypg-LZWv-zM",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "jVB1VFphB0eRNc4owtO-c$$ADlKIsFrUZkj8Pn2vY34O",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
     "model2##LxuP63le" : {
       "id" : "model2##LxuP63le",
       "component" : "TargetModel",
@@ -38,6 +68,32 @@
         } ],
         "outputs" : [ {
           "id" : "oxXyx89y",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "gdLxUfj5a85VHEuyQwfzg$$R8sXcivfRZdjgGMFg6Nkw" : {
+      "id" : "gdLxUfj5a85VHEuyQwfzg$$R8sXcivfRZdjgGMFg6Nkw",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "Macro_1",
+        "slug" : "Macro_1",
+        "x" : -960,
+        "y" : -580,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "macroName" : null,
+        "parameters" : [ ],
+        "projectName" : null
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "MnMi-rh8PlfKwQIZfjySs$$zzq5sGDJq07JkUL9OGRQS",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -99,6 +155,67 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "Kxzce-ebEklGB3bBY3gph",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "kTPfh4525enUvz0szSM5j$$VdVvBQXMfkV6PwfxfQoTv" : {
+      "id" : "kTPfh4525enUvz0szSM5j$$VdVvBQXMfkV6PwfxfQoTv",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : -1100,
+        "y" : -580,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "processes" : { },
+      "connections" : [ ],
+      "ports" : {
+        "inputs" : [ {
+          "id" : "9JTvuVIcE2jM8zUDNcqMz$$tdUu9bARiYDkCQJoe1XlJ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "5MMsJo88-mAuU8PMbWJeI$$TDOPVq8j9sVtfN0Y-BTO0",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "canonical" : false
+    },
+    "WvgJy4LCWqtpyEO3X7Pbk$$p6g4JUSEoGoCCMxwoMQyE" : {
+      "id" : "WvgJy4LCWqtpyEO3X7Pbk$$p6g4JUSEoGoCCMxwoMQyE",
+      "component" : "Except",
+      "metadata" : {
+        "label" : "Except_1",
+        "slug" : "Except_1",
+        "x" : -1240,
+        "y" : -580,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "operationType" : "except",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6Ji3ZbtuyY2tNevN48aDi$$kZvjLiI110kqcZ0X4zfB6",
+          "slug" : "in0"
+        }, {
+          "id" : "Pkz6_nVCTct4C2qOxSYPD$$zYMfgORPW5rf_ZORVwH-O",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "2O7--FK6elqlPIj_QXyYd$$JwhxtlgE0s3uZdqfCuMAc",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
