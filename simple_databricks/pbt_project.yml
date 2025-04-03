@@ -397,6 +397,8 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/p10/schema.yml
+    - models/p10/model_p10_Limit_1.sql
     - .prophecy/ide/pipelines/p10.json
     - pipelines/p10.py
     createdAt: '2025-04-02 17:36:13'

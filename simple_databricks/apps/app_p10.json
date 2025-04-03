@@ -88,14 +88,38 @@
         "tooltip" : "config dropdown"
       },
       "errors" : { }
+    }, {
+      "id" : "DataPreview1",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "0tTiyqncRKKi8c3ukA-9e",
+        "columns" : [ {
+          "key" : "TITLE",
+          "column" : "TITLE",
+          "label" : "TITLE",
+          "selected" : true
+        }, {
+          "key" : "EMPLOYEE_ID",
+          "column" : "EMPLOYEE_ID",
+          "label" : "EMPLOYEE_ID",
+          "selected" : true
+        }, {
+          "key" : "MANAGER_ID",
+          "column" : "MANAGER_ID",
+          "label" : "MANAGER_ID",
+          "selected" : true
+        } ],
+        "title" : "Table Title"
+      },
+      "errors" : { }
     } ]
   },
   "instances" : {
     "config1" : {
       "config" : {
-        "config1" : "option",
+        "config1" : "option2",
         "config2" : "option",
-        "config3" : "config3_value"
+        "config3" : "ghhg"
       },
       "sources" : {
         "tXGD2AgkdESiKgSTRJYSn" : {
@@ -103,11 +127,11 @@
           "process" : {
             "component" : "OrchestrationSource",
             "kind" : "DatabricksSource",
-            "id" : "9d6f44e2-49e8-4211-b4a1-53377780126b",
+            "id" : "28ec19b3-de19-42ec-9ea3-416e199167be",
             "ports" : {
               "inputs" : [ ],
               "outputs" : [ {
-                "id" : "08a6e83e-b2f0-4b7d-8bb7-8f78678e3460",
+                "id" : "640c43ea-ade6-4dd0-bc01-35984d7b997b",
                 "slug" : "out0"
               } ]
             },

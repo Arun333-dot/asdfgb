@@ -2,6 +2,22 @@ Config = {"config1" : "'config1'", "config2" : "'config2'", "config3" : "'config
 Schedule = Schedule(cron = "* 0 2 * * * *", timezone = "GMT", emails = ["email@gmail.com"], enabled = False)
 
 with DAG(Config = Config, Schedule = Schedule):
+    model_p10_Limit_1 = Task(task_id = "model_p10_Limit_1", component = "Model", modelName = "model_p10_Limit_1")
+    employees = Task(
+        task_id = "employees", 
+        component = "Dataset", 
+        table = {"name" : "employees", "sourceType" : "Table", "sourceName" : "qa_team.qa_database", "alias" : ""}
+    )
+    DatabricksSource_0 = Task(
+        task_id = "DatabricksSource_0", 
+        component = "Dataset", 
+        table = {
+          "name": "prophecy__temp_p10_pre_full_data_extraction_0", 
+          "sourceType": "Source", 
+          "sourceName": "prophecy__temp_p10_source", 
+          "alias": ""
+        }
+    )
     DatabricksSource_0 = SourceTask(
         task_id = "DatabricksSource_0", 
         component = "OrchestrationSource", 
@@ -171,3 +187,5 @@ with DAG(Config = Config, Schedule = Schedule):
         ), 
         tableFullName = {"database" : "qa_team", "name" : "all_type_databricks", "schema" : "qa_database"}
     )
+    DatabricksSource_0.out0 >> DatabricksSource_0.input_port_0_1
+    DatabricksSource_0.output_port_0_1 >> model_p10_Limit_1.in_1

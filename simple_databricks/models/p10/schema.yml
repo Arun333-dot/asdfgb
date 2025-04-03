@@ -1,0 +1,21 @@
+---
+version: 2
+models:
+- name: "model_p10_Limit_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p10_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p10_post_Limit_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p10_pre_full_data_extraction_0"
+    tags:
+    - "prophecy_temp"

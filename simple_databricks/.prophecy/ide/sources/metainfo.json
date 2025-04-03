@@ -60,7 +60,30 @@
           } ]
         }
       },
-      "preview" : [ ],
+      "preview" : [ {
+        "id" : "0tTiyqncRKKi8c3ukA-9e",
+        "label" : "employees",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "databricks",
+          "fields" : [ {
+            "name" : "TITLE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "EMPLOYEE_ID",
+            "dataType" : {
+              "type" : "Double"
+            }
+          }, {
+            "name" : "MANAGER_ID",
+            "dataType" : {
+              "type" : "Double"
+            }
+          } ]
+        }
+      } ],
       "sources" : [ {
         "id" : "tXGD2AgkdESiKgSTRJYSn",
         "label" : "DatabricksSource_0"
