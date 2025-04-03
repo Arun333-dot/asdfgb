@@ -1,6 +1,6 @@
 name: simplesql
 description: ''
-version: '2'
+version: '1'
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
