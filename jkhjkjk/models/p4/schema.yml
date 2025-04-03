@@ -10,7 +10,7 @@ models:
 sources:
 - name: "prophecy__temp_p4_source"
   database: "hive_metastore"
-  schema: "default"
+  schema: "arun123"
   tags:
   - "prophecy_temp"
   config:

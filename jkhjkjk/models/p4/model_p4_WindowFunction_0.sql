@@ -3,7 +3,7 @@
     "materialized": "table",
     "alias": "prophecy__temp_p4_post_WindowFunction_0_0",
     "database": "hive_metastore",
-    "schema": "default"
+    "schema": "arun123"
   })
 }}
 

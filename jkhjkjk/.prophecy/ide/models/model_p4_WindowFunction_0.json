@@ -12,7 +12,7 @@
         "alias" : "\"prophecy__temp_p4_post_WindowFunction_0_0\"",
         "materialized" : "table",
         "database" : "\"hive_metastore\"",
-        "schema" : "\"default\"",
+        "schema" : "\"arun123\"",
         "type" : "ModelConfig"
       }
     },
