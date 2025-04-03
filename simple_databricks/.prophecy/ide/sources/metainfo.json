@@ -16,6 +16,22 @@
   },
   "datasets" : { },
   "pipelines" : {
+    "pipeline10" : {
+      "id" : "pipeline10",
+      "name" : "pipeline10",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/pipeline10.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "azJkY3ETxDOCkI_BKTfVU",
+        "label" : "DatabricksSource_0"
+      } ]
+    },
     "p10" : {
       "id" : "p10",
       "name" : "p10",
@@ -371,6 +387,54 @@
         "label" : "SFTPSource_0"
       } ]
     },
+    "p112" : {
+      "id" : "p112",
+      "name" : "p112",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/p112.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "XloustabUooIGRlfWXuYD",
+        "label" : "DatabricksSource_0"
+      } ]
+    },
+    "pipeline12" : {
+      "id" : "pipeline12",
+      "name" : "pipeline12",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/pipeline12.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "YBAfNJfGPWW1vafQi6Aps",
+        "label" : "DatabricksSource_0"
+      } ]
+    },
+    "p11" : {
+      "id" : "p11",
+      "name" : "p11",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/p11.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "RIz6vbBqy9PWyegXperXh$$pbX5yllmS6uVlxWPcOV_W",
+        "label" : "SFTPSource_0"
+      } ]
+    },
     "pipeline3" : {
       "id" : "pipeline3",
       "name" : "pipeline3",
@@ -644,6 +708,10 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
-  "entitiesToSync" : [ ],
+  "entitiesToSync" : [ {
+    "name" : "model2",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
   "frontEndLanguage" : "sql"
 }

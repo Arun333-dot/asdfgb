@@ -1,15 +1,15 @@
 {{
   config({    
     "materialized": "table",
-    "alias": "prophecy__temp_pipeline11_post_Aggregate_1_0",
+    "alias": "prophecy__temp_pipeline2_post_Deduplicate_2_0",
     "database": "hive_metastore",
     "schema": "arun123"
   })
 }}
 
-WITH Aggregate_1 AS (
+WITH Deduplicate_2 AS (
 
-  SELECT * 
+  SELECT DISTINCT *
   
   FROM `` AS in0
 
@@ -17,4 +17,4 @@ WITH Aggregate_1 AS (
 
 SELECT *
 
-FROM Aggregate_1
+FROM Deduplicate_2

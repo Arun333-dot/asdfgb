@@ -182,25 +182,15 @@ sqlSeeds:
     files:
     - seeds/seed_prophecy.csv
     createdAt: '2025-04-01 10:51:29'
-  .prophecy/metadata/sqlseeds/seeeeeeed:
-    name: seeeeeeed
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: Country
-        dataType:
-          type: String
-      - name: Name
-        dataType:
-          type: String
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - seeds/seeeeeeed.csv
-    - seeds/seeds.yml
-    createdAt: '2025-04-01 13:17:42'
-sqlSources:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-04-03 09:13:30'
+    tables: []
   .prophecy/metadata/sqlsources/main_information_schema:
     name: main.information_schema
     description: null
@@ -208,16 +198,7 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2025-04-01 08:36:27'
-    tables:
-    - name: key_column_usage
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields: []
-      description: null
-      author: arunsharma+admin@prophecy.io
-      tableType: table
-      createdAt: '2025-04-01 08:36:27'
+    tables: []
   .prophecy/metadata/sqlsources/qa_team_qa_database:
     name: qa_team.qa_database
     description: null
@@ -226,143 +207,25 @@ sqlSources:
     - prophecy-sources/sources.yml
     createdAt: '2025-04-01 13:28:50'
     tables:
-    - name: all_type_databricks
+    - name: employees
       schema:
         entityType: ''
         providerType: databricks
         fields:
-        - name: id
-          dataType:
-            type: Integer
-        - name: tiny_value
-          dataType:
-            type: TinyInt
-        - name: small_value
-          dataType:
-            type: SmallInt
-        - name: big_value
-          dataType:
-            type: Bigint
-        - name: name
+        - name: TITLE
           dataType:
             type: String
-        - name: is_active
-          dataType:
-            type: Boolean
-        - name: salary
-          dataType:
-            type: String
-        - name: float_value
-          dataType:
-            type: Float
-        - name: double_value
+        - name: EMPLOYEE_ID
           dataType:
             type: Double
-        - name: binary_data
+        - name: MANAGER_ID
           dataType:
-            type: Binary
-        - name: created_at
-          dataType:
-            type: Timestamp
-        - name: created_at_ntz
-          dataType:
-            type: Timestamp
-        - name: birth_date
-          dataType:
-            type: Date
-        - name: interval_value
-          dataType:
-            type: String
-        - name: interval_seconds
-          dataType:
-            type: String
-        - name: metadata
-          dataType:
-            type: String
-        - name: int_array
-          dataType:
-            type: Array
-            dataType:
-              type: Integer
-        - name: float_array
-          dataType:
-            type: Array
-            dataType:
-              type: Float
-        - name: boolean_array
-          dataType:
-            type: Array
-            dataType:
-              type: Boolean
-        - name: decimal_array
-          dataType:
-            type: Array
-            dataType:
-              type: Decimal
-        - name: timestamp_array
-          dataType:
-            type: Array
-            dataType:
-              type: Timestamp
-        - name: date_array
-          dataType:
-            type: Array
-            dataType:
-              type: Date
-        - name: struct_array
-          dataType:
-            type: Array
-            dataType:
-              type: Struct
-              fields:
-              - name: type
-                dataType:
-                  type: String
-              - name: value
-                dataType:
-                  type: Integer
-        - name: array_of_arrays
-          dataType:
-            type: Array
-            dataType:
-              type: Array
-              dataType:
-                type: Integer
-        - name: struct_of_array
-          dataType:
-            type: Struct
-            fields:
-            - name: name
-              dataType:
-                type: String
-            - name: values
-              dataType:
-                type: Array
-                dataType:
-                  type: Integer
-        - name: struct_of_array_of_structs
-          dataType:
-            type: Struct
-            fields:
-            - name: id
-              dataType:
-                type: Integer
-            - name: details
-              dataType:
-                type: Array
-                dataType:
-                  type: Struct
-                  fields:
-                  - name: key
-                    dataType:
-                      type: String
-                  - name: val
-                    dataType:
-                      type: Integer
-      description: null
+            type: Double
+      description: Employee information including titles and managerial relationships,
+        supporting organizational structure insights.
       author: arunsharma+admin@prophecy.io
       tableType: table
-      createdAt: '2025-04-01 13:28:50'
+      createdAt: '2025-04-02 17:48:24'
     - name: customer
       schema:
         entityType: ''
@@ -422,30 +285,20 @@ sqlSources:
         - name: C_LAST_REVIEW_DATE
           dataType:
             type: String
-      description: Customer demographic and engagement data, essential for understanding
-        customer profiles and enhancing marketing strategies.
+      description: Customer profile data capturing essential details such as demographics,
+        contact information, and sales history.
       author: arunsharma+admin@prophecy.io
       tableType: table
-      createdAt: '2025-04-02 13:07:01'
-    - name: employees
+      createdAt: '2025-04-03 11:43:46'
+    - name: call_center
       schema:
         entityType: ''
         providerType: databricks
-        fields:
-        - name: TITLE
-          dataType:
-            type: String
-        - name: EMPLOYEE_ID
-          dataType:
-            type: Double
-        - name: MANAGER_ID
-          dataType:
-            type: Double
-      description: Employee information including titles and managerial relationships,
-        supporting organizational structure insights.
+        fields: []
+      description: null
       author: arunsharma+admin@prophecy.io
-      tableType: table
-      createdAt: '2025-04-02 17:48:24'
+      tableType: view
+      createdAt: '2025-04-03 11:58:28'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
@@ -461,15 +314,6 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline3.json
     - pipelines/pipeline3.py
     createdAt: '2025-04-01 09:34:42'
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline7:
-    name: pipeline7
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - .prophecy/ide/pipelines/pipeline7.json
-    - pipelines/pipeline7.py
-    createdAt: '2025-04-02 08:12:48'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline8:
     name: pipeline8
     schema: null
@@ -501,44 +345,16 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline4.json
     - pipelines/pipeline4.py
     createdAt: '2025-04-01 10:22:23'
-  .prophecy/metadata/sqlorchestratorpipeline/p10:
-    name: p10
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - .prophecy/ide/pipelines/p10.json
-    - pipelines/p10.py
-    createdAt: '2025-04-02 17:36:13'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline11:
     name: pipeline11
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline11/model_pipeline11_Deduplicate_1.sql
     - models/pipeline11/schema.yml
-    - models/pipeline11/model_pipeline11_Aggregate_1.sql
     - .prophecy/ide/pipelines/pipeline11.json
     - pipelines/pipeline11.py
     createdAt: '2025-04-02 18:21:10'
-  .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
-    name: pipeline1
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - models/pipeline1/model_pipeline1_Aggregate_2.sql
-    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
-    - models/pipeline11/model_pipeline11_Aggregate_1.sql
-    - models/pipeline11/schema.yml
-    - models/pipeline1/schema.yml
-    - models/pipeline11/model_pipeline11_Deduplicate_1.sql
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
-    - models/pipeline1/model_pipeline1_Aggregate_1.sql
-    - .prophecy/ide/pipelines/pipeline1.json
-    - pipelines/pipeline1.py
-    createdAt: '2025-04-01 07:18:02'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline5:
     name: pipeline5
     schema: null
@@ -548,6 +364,75 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline5.json
     - pipelines/pipeline5.py
     createdAt: '2025-04-01 11:47:58'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline7:
+    name: pipeline7
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline7.json
+    - pipelines/pipeline7.py
+    createdAt: '2025-04-02 08:12:48'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline12:
+    name: pipeline12
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline12.json
+    - pipelines/pipeline12.py
+    createdAt: '2025-04-03 09:29:46'
+  .prophecy/metadata/sqlorchestratorpipeline/p112:
+    name: p112
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p112.json
+    - pipelines/p112.py
+    createdAt: '2025-04-03 12:26:24'
+  .prophecy/metadata/sqlorchestratorpipeline/p10:
+    name: p10
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p10.json
+    - pipelines/p10.py
+    createdAt: '2025-04-02 17:36:13'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
+    name: pipeline1
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_2.sql
+    - models/pipeline1/schema.yml
+    - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
+    - models/pipeline11/schema.yml
+    - .prophecy/ide/pipelines/pipeline1.json
+    - pipelines/pipeline1.py
+    createdAt: '2025-04-01 07:18:02'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline10:
+    name: pipeline10
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pipeline10.json
+    - pipelines/pipeline10.py
+    createdAt: '2025-04-03 09:03:56'
+  .prophecy/metadata/sqlorchestratorpipeline/p11:
+    name: p11
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p11.json
+    - pipelines/p11.py
+    createdAt: '2025-04-03 12:25:51'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline9:
     name: pipeline9
     schema: null
@@ -563,6 +448,8 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/pipeline2/schema.yml
+    - models/pipeline2/model_pipeline2_Deduplicate_2.sql
     - .prophecy/ide/pipelines/pipeline2.json
     - pipelines/pipeline2.py
     createdAt: '2025-04-01 07:18:12'

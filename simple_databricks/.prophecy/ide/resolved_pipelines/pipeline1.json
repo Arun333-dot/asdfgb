@@ -487,13 +487,7 @@
             }, {
               "name" : "metadata",
               "dataType" : {
-                "type" : "Map",
-                "keyType" : {
-                  "type" : "String"
-                },
-                "valueType" : {
-                  "type" : "String"
-                }
+                "type" : "String"
               }
             }, {
               "name" : "int_array",
@@ -553,12 +547,14 @@
                     "name" : "type",
                     "dataType" : {
                       "type" : "String"
-                    }
+                    },
+                    "description" : "Type field within the structured data array"
                   }, {
                     "name" : "value",
                     "dataType" : {
                       "type" : "Integer"
-                    }
+                    },
+                    "description" : "Value associated with each entry in the structured array"
                   } ]
                 }
               }
@@ -581,7 +577,8 @@
                   "name" : "name",
                   "dataType" : {
                     "type" : "String"
-                  }
+                  },
+                  "description" : "Name associated with the structured array"
                 }, {
                   "name" : "values",
                   "dataType" : {
@@ -589,7 +586,8 @@
                     "dataType" : {
                       "type" : "Integer"
                     }
-                  }
+                  },
+                  "description" : "Values contained within the structured array"
                 } ]
               }
             }, {
@@ -600,7 +598,8 @@
                   "name" : "id",
                   "dataType" : {
                     "type" : "Integer"
-                  }
+                  },
+                  "description" : "Unique identifier for the struct containing an array of structs."
                 }, {
                   "name" : "details",
                   "dataType" : {
@@ -611,15 +610,18 @@
                         "name" : "key",
                         "dataType" : {
                           "type" : "String"
-                        }
+                        },
+                        "description" : "Key value within each detail struct."
                       }, {
                         "name" : "val",
                         "dataType" : {
                           "type" : "Integer"
-                        }
+                        },
+                        "description" : "Value associated with a specific key in a structured array of details."
                       } ]
                     }
-                  }
+                  },
+                  "description" : "Array of details associated with the struct."
                 } ]
               }
             } ]

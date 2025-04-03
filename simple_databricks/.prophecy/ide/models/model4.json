@@ -36,8 +36,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "model4",
-        "x" : 320,
-        "y" : -140,
+        "x" : 20,
+        "y" : 220,
         "phase" : 0,
         "macroDependencies" : [ ],
         "isLabelGrayed" : false
@@ -72,8 +72,8 @@
       "metadata" : {
         "label" : "seed1",
         "slug" : "seed1",
-        "x" : 20,
-        "y" : 60,
+        "x" : -240,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {

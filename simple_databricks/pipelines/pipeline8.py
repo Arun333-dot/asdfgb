@@ -7,7 +7,7 @@ with DAG(Schedule = Schedule):
         body = "this is aruns pipeline", 
         subject = "Without include data", 
         includeData = False, 
-        fileName = "sdfsdfsdfsdfsdfsd.csv", 
+        fileName = "sdfsdfsdfsdfsdfsd", 
         to = ["arunsharma@prophecy.io", "soni.vaibhav@prophecy.io"], 
         fileFormat = "csv", 
         hasTemplate = True
@@ -17,7 +17,26 @@ with DAG(Schedule = Schedule):
         component = "OrchestrationSource", 
         kind = "DatabricksSource", 
         connector = Connection(kind = "databricks", authType = "pat", id = "connection"), 
-        format = DATABRICKSFormat(), 
+        format = DATABRICKSFormat(
+          additionalProperties = {"copilot" : {"datasetDescriptionStatus" : "fromCopilot"}}, 
+          description = "Customer contact information, enabling effective communication and relationship management.", 
+          schema = {
+            "fields": [{
+                          "dataType": {"type" : "utf8"}, 
+                          "description": "The first name of the individual", 
+                          "name": "first_name"
+                        },                         {
+                          "dataType": {"type" : "utf8"}, 
+                          "description": "The last name of the individual", 
+                          "name": "last_name"
+                        },                         {
+                          "dataType": {"type" : "utf8"}, 
+                          "description": "The residential address of the individual", 
+                          "name": "address"
+                        }], 
+            "providerType": "Arrow"
+          }
+        ), 
         tableFullName = {"database" : "tanmay", "name" : "m1", "schema" : "default"}
     )
     notify_pipeline_success_1_1 = Task(
@@ -26,7 +45,7 @@ with DAG(Schedule = Schedule):
         body = "this is aruns pipeline", 
         subject = "pipeline success", 
         includeData = False, 
-        fileName = "sdfsdfsdfsdfsdfsd.xlsx", 
+        fileName = "sdfsdfsdfsdfsdfsd", 
         to = ["arunsharma@prophecy.io", "soni.vaibhav@prophecy.io"], 
         fileFormat = "xlsx", 
         hasTemplate = True
@@ -37,9 +56,9 @@ with DAG(Schedule = Schedule):
         body = "this is aruns pipeline", 
         subject = "pipeline success", 
         includeData = True, 
-        fileName = "sdfsdfsdfsdfsdfsd.xlsx", 
+        fileName = "sdfsdfsdfsdfsdfsd", 
         to = ["arunsharma@prophecy.io", "soni.vaibhav@prophecy.io"], 
-        attachmentPath = "attachments/template_final.xlsx", 
+        attachmentPath = "attachments/testing_template_1.xlsx", 
         fileFormat = "xlsx", 
         hasTemplate = True
     )
@@ -49,9 +68,9 @@ with DAG(Schedule = Schedule):
         body = "this is aruns pipeline", 
         subject = "pipeline success", 
         includeData = True, 
-        fileName = "sdfsdfsdfsdfsdfsd.xlsx", 
+        fileName = "sdfsdfsdfsdfsdfsd", 
         to = ["arunsharma@prophecy.io", "soni.vaibhav@prophecy.io"], 
-        attachmentPath = "attachments/template_final_1.xlsx", 
+        attachmentPath = "attachments/testing_template.xlsx", 
         fileFormat = "xlsx", 
         hasTemplate = False
     )
@@ -61,7 +80,7 @@ with DAG(Schedule = Schedule):
         body = "this is aruns pipeline", 
         subject = "This is with csv", 
         includeData = True, 
-        fileName = "sdfsdfsdfsdfsdfsd.csv", 
+        fileName = "sdfsdfsdfsdfsdfsd", 
         to = ["arunsharma@prophecy.io", "soni.vaibhav@prophecy.io"], 
         fileFormat = "csv", 
         hasTemplate = True

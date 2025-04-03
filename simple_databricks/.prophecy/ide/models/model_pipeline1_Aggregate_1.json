@@ -23,7 +23,7 @@
       "id" : "prophecy__temp_pipeline1_post_Aggregate_1_0",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "prophecy__temp_pipeline1_post_Aggregate_1_0",
+        "label" : "Aggregate_1",
         "phase" : 0
       },
       "properties" : {

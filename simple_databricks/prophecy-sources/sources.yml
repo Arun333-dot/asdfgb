@@ -4,204 +4,11 @@ sources:
 - name: "main.information_schema"
   database: "main"
   schema: "information_schema"
-  tables:
-  - name: "key_column_usage"
-    columns: []
-    type: "table"
+  tables: []
 - name: "qa_team.qa_database"
   database: "qa_team"
   schema: "qa_database"
   tables:
-  - name: "all_type_databricks"
-    columns:
-    - name: "id"
-      dataType:
-        type: "Integer"
-    - name: "tiny_value"
-      dataType:
-        type: "TinyInt"
-    - name: "small_value"
-      dataType:
-        type: "SmallInt"
-    - name: "big_value"
-      dataType:
-        type: "Bigint"
-    - name: "name"
-      dataType:
-        type: "String"
-    - name: "is_active"
-      dataType:
-        type: "Boolean"
-    - name: "salary"
-      dataType:
-        type: "String"
-    - name: "float_value"
-      dataType:
-        type: "Float"
-    - name: "double_value"
-      dataType:
-        type: "Double"
-    - name: "binary_data"
-      dataType:
-        type: "Binary"
-    - name: "created_at"
-      dataType:
-        type: "Timestamp"
-    - name: "created_at_ntz"
-      dataType:
-        type: "Timestamp"
-    - name: "birth_date"
-      dataType:
-        type: "Date"
-    - name: "interval_value"
-      dataType:
-        type: "String"
-    - name: "interval_seconds"
-      dataType:
-        type: "String"
-    - name: "metadata"
-      dataType:
-        type: "String"
-    - name: "int_array"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Integer"
-    - name: "float_array"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Float"
-    - name: "boolean_array"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Boolean"
-    - name: "decimal_array"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Decimal"
-    - name: "timestamp_array"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Timestamp"
-    - name: "date_array"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Date"
-    - name: "struct_array"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Struct"
-          fields:
-          - name: "type"
-            dataType:
-              type: "String"
-          - name: "value"
-            dataType:
-              type: "Integer"
-    - name: "array_of_arrays"
-      dataType:
-        type: "Array"
-        dataType:
-          type: "Array"
-          dataType:
-            type: "Integer"
-    - name: "struct_of_array"
-      dataType:
-        type: "Struct"
-        fields:
-        - name: "name"
-          dataType:
-            type: "String"
-        - name: "values"
-          dataType:
-            type: "Array"
-            dataType:
-              type: "Integer"
-    - name: "struct_of_array_of_structs"
-      dataType:
-        type: "Struct"
-        fields:
-        - name: "id"
-          dataType:
-            type: "Integer"
-        - name: "details"
-          dataType:
-            type: "Array"
-            dataType:
-              type: "Struct"
-              fields:
-              - name: "key"
-                dataType:
-                  type: "String"
-              - name: "val"
-                dataType:
-                  type: "Integer"
-    type: "table"
-  - name: "customer"
-    description: "Customer demographic and engagement data, essential for understanding\
-      \ customer profiles and enhancing marketing strategies."
-    columns:
-    - name: "C_CUSTOMER_SK"
-      dataType:
-        type: "Double"
-    - name: "C_CUSTOMER_ID"
-      dataType:
-        type: "String"
-    - name: "C_CURRENT_CDEMO_SK"
-      dataType:
-        type: "Double"
-    - name: "C_CURRENT_HDEMO_SK"
-      dataType:
-        type: "Double"
-    - name: "C_CURRENT_ADDR_SK"
-      dataType:
-        type: "Double"
-    - name: "C_FIRST_SHIPTO_DATE_SK"
-      dataType:
-        type: "Double"
-    - name: "C_FIRST_SALES_DATE_SK"
-      dataType:
-        type: "Double"
-    - name: "C_SALUTATION"
-      dataType:
-        type: "String"
-    - name: "C_FIRST_NAME"
-      dataType:
-        type: "String"
-    - name: "C_LAST_NAME"
-      dataType:
-        type: "String"
-    - name: "C_PREFERRED_CUST_FLAG"
-      dataType:
-        type: "String"
-    - name: "C_BIRTH_DAY"
-      dataType:
-        type: "Double"
-    - name: "C_BIRTH_MONTH"
-      dataType:
-        type: "Double"
-    - name: "C_BIRTH_YEAR"
-      dataType:
-        type: "Double"
-    - name: "C_BIRTH_COUNTRY"
-      dataType:
-        type: "String"
-    - name: "C_LOGIN"
-      dataType:
-        type: "String"
-    - name: "C_EMAIL_ADDRESS"
-      dataType:
-        type: "String"
-    - name: "C_LAST_REVIEW_DATE"
-      dataType:
-        type: "String"
-    type: "table"
   - name: "employees"
     description: "Employee information including titles and managerial relationships,\
       \ supporting organizational structure insights."
@@ -219,3 +26,87 @@ sources:
       dataType:
         type: "Double"
     type: "table"
+  - name: "customer"
+    description: "Customer profile data capturing essential details such as demographics,\
+      \ contact information, and sales history."
+    columns:
+    - name: "C_CUSTOMER_SK"
+      description: "Unique identifier for each customer in the system"
+      dataType:
+        type: "Double"
+    - name: "C_CUSTOMER_ID"
+      description: "Unique identifier for each customer"
+      dataType:
+        type: "String"
+    - name: "C_CURRENT_CDEMO_SK"
+      description: "Current demographic key representing customer characteristics."
+      dataType:
+        type: "Double"
+    - name: "C_CURRENT_HDEMO_SK"
+      description: "The current household demographic key for the customer"
+      dataType:
+        type: "Double"
+    - name: "C_CURRENT_ADDR_SK"
+      description: "The unique identifier for the customer's current address"
+      dataType:
+        type: "Double"
+    - name: "C_FIRST_SHIPTO_DATE_SK"
+      description: "The key representing the date of the customer's first shipment."
+      dataType:
+        type: "Double"
+    - name: "C_FIRST_SALES_DATE_SK"
+      description: "The date when the customer made their first purchase."
+      dataType:
+        type: "Double"
+    - name: "C_SALUTATION"
+      description: "The salutation used for addressing the customer"
+      dataType:
+        type: "String"
+    - name: "C_FIRST_NAME"
+      description: "The first name of the customer"
+      dataType:
+        type: "String"
+    - name: "C_LAST_NAME"
+      description: "The last name of the customer"
+      dataType:
+        type: "String"
+    - name: "C_PREFERRED_CUST_FLAG"
+      description: "Indicates whether the customer is a preferred customer."
+      dataType:
+        type: "String"
+    - name: "C_BIRTH_DAY"
+      description: "Day of the customer's birth"
+      dataType:
+        type: "Double"
+    - name: "C_BIRTH_MONTH"
+      description: "The month in which the customer was born"
+      dataType:
+        type: "Double"
+    - name: "C_BIRTH_YEAR"
+      description: "The year of birth of the customer"
+      dataType:
+        type: "Double"
+    - name: "C_BIRTH_COUNTRY"
+      description: "Country of birth of the customer"
+      dataType:
+        type: "String"
+    - name: "C_LOGIN"
+      description: "The login identifier for the customer"
+      dataType:
+        type: "String"
+    - name: "C_EMAIL_ADDRESS"
+      description: "Email address of the customer"
+      dataType:
+        type: "String"
+    - name: "C_LAST_REVIEW_DATE"
+      description: "The date when the customer last reviewed their account"
+      dataType:
+        type: "String"
+    type: "table"
+  - name: "call_center"
+    columns: []
+    type: "view"
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  tables: []
