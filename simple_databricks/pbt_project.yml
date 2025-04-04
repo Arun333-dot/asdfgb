@@ -499,8 +499,8 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline11/schema.yml
     - models/pipeline11/model_pipeline11_Deduplicate_1.sql
+    - models/pipeline11/schema.yml
     - models/pipeline11/model_pipeline11_Aggregate_1.sql
     - .prophecy/ide/pipelines/pipeline11.json
     - pipelines/pipeline11.py
@@ -558,14 +558,14 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline1/model_pipeline1_Aggregate_1.sql
-    - models/pipeline11/model_pipeline11_Aggregate_1.sql
+    - models/pipeline11/schema.yml
     - models/pipeline11/model_pipeline11_Deduplicate_1.sql
     - models/pipeline1/model_pipeline1_Aggregate_2.sql
-    - models/pipeline1/schema.yml
-    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_1.sql
     - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
-    - models/pipeline11/schema.yml
+    - models/pipeline1/schema.yml
+    - models/pipeline11/model_pipeline11_Aggregate_1.sql
+    - models/pipeline1/model_pipeline1_Deduplicate_1.sql
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
     createdAt: '2025-04-01 07:18:02'
@@ -608,6 +608,15 @@ sqlOrchestratorPipelines:
     - pipelines/pipeline2.py
     createdAt: '2025-04-01 07:18:12'
 sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/app2:
+    name: app2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app2.json
+    createdAt: '2025-04-03 18:32:06'
+    sqlOrchestrationPipelineName: pipeline11
   .prophecy/metadata/sqlbusinessapp/app_p10:
     name: app_p10
     schema: null
