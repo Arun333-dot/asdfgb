@@ -1,30 +1,6 @@
 Schedule = Schedule(cron = "* 0 2 * * * *", timezone = "GMT", emails = ["email@gmail.com"], enabled = False)
 
 with DAG(Schedule = Schedule):
-    notify_pipeline_success_1_1_1_2 = Task(
-        task_id = "notify_pipeline_success_1_1_1_2", 
-        component = "Email", 
-        body = "this is aruns pipeline", 
-        subject = "pipeline success", 
-        includeData = False, 
-        fileName = "sdfsdfsdfsdfsdfsd.xlsx", 
-        to = ["arunsharma@prophecy.io"], 
-        attachmentPath = "attachments/template_final_1.xlsx", 
-        fileFormat = "xlsx", 
-        hasTemplate = False
-    )
-    notify_pipeline_success_1_1_1 = Task(
-        task_id = "notify_pipeline_success_1_1_1", 
-        component = "Email", 
-        body = "this is aruns pipeline", 
-        subject = "pipeline success", 
-        includeData = True, 
-        fileName = "sdfsdfsdfsdfsdfsd.xlsx", 
-        to = ["arunsharma@prophecy.io"], 
-        attachmentPath = "attachments/template_final_1.xlsx", 
-        fileFormat = "xlsx", 
-        hasTemplate = False
-    )
     SFTPSource_0 = SourceTask(
         task_id = "SFTPSource_0", 
         component = "OrchestrationSource", 
@@ -69,6 +45,41 @@ with DAG(Schedule = Schedule):
         attachmentPath = "attachments/template_final.xlsx", 
         fileFormat = "xlsx", 
         hasTemplate = True
+    )
+    Email_1 = Task(
+        task_id = "Email_1", 
+        component = "Email", 
+        body = "", 
+        subject = "", 
+        includeData = False, 
+        fileName = "", 
+        to = None, 
+        fileFormat = "", 
+        hasTemplate = False
+    )
+    notify_pipeline_success_1_1_1 = Task(
+        task_id = "notify_pipeline_success_1_1_1", 
+        component = "Email", 
+        body = "this is aruns pipeline", 
+        subject = "pipeline success", 
+        includeData = True, 
+        fileName = "sdfsdfsdfsdfsdfsd.xlsx", 
+        to = ["arunsharma@prophecy.io"], 
+        attachmentPath = "attachments/template_final_1.xlsx", 
+        fileFormat = "xlsx", 
+        hasTemplate = False
+    )
+    notify_pipeline_success_1_1_1_2 = Task(
+        task_id = "notify_pipeline_success_1_1_1_2", 
+        component = "Email", 
+        body = "this is aruns pipeline", 
+        subject = "pipeline success", 
+        includeData = False, 
+        fileName = "sdfsdfsdfsdfsdfsd.xlsx", 
+        to = ["arunsharma@prophecy.io"], 
+        attachmentPath = "attachments/template_final_1.xlsx", 
+        fileFormat = "xlsx", 
+        hasTemplate = False
     )
     (
         SFTPSource_0.out0
