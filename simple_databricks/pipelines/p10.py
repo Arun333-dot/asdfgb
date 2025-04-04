@@ -171,6 +171,13 @@ with DAG(Config = Config, Schedule = Schedule):
         ), 
         tableFullName = {"database" : "qa_team", "name" : "all_type_databricks", "schema" : "qa_database"}
     )
+    OrchestrationSource_1 = SourceTask(
+        task_id = "OrchestrationSource_1", 
+        component = "OrchestrationSource", 
+        kind = "S3Source", 
+        connector = Connection(kind = "s3"), 
+        format = CSVFormat(separator = ",", header = True)
+    )
     model_p10_Limit_1 = Task(task_id = "model_p10_Limit_1", component = "Model", modelName = "model_p10_Limit_1")
     all_type_databricks = Task(
         task_id = "all_type_databricks", 

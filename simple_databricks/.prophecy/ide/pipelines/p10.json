@@ -556,6 +556,41 @@
         } ]
       }
     },
+    "ZYndb4e7qphWqwtX5y_N4$$rZolpZSqoJNqpFzxS3zHZ" : {
+      "id" : "ZYndb4e7qphWqwtX5y_N4$$rZolpZSqoJNqpFzxS3zHZ",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -2100,
+        "y" : -860,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "R2RWJQVWQNVI94HWzUDYH$$gMbaiKsahv43m1hClO8EM",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "eePcs5tP2Svh1IRFnww28$$QIhhruijXgj1jwoG0D1CD" : {
       "id" : "eePcs5tP2Svh1IRFnww28$$QIhhruijXgj1jwoG0D1CD",
       "component" : "Limit",

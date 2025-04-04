@@ -514,6 +514,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/pipeline5.json
     - pipelines/pipeline5.py
     createdAt: '2025-04-01 11:47:58'
+  .prophecy/metadata/sqlorchestratorpipeline/restapi_gem:
+    name: restapi_gem
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/restapi_gem.json
+    - pipelines/restapi_gem.py
+    createdAt: '2025-04-04 06:44:50'
   .prophecy/metadata/sqlorchestratorpipeline/pipeline7:
     name: pipeline7
     schema: null
@@ -558,14 +567,14 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline11/schema.yml
-    - models/pipeline11/model_pipeline11_Deduplicate_1.sql
-    - models/pipeline1/model_pipeline1_Aggregate_2.sql
-    - models/pipeline1/model_pipeline1_Aggregate_1.sql
     - models/pipeline1/model_pipeline1_FlattenSchema_1.sql
-    - models/pipeline1/schema.yml
+    - models/pipeline1/model_pipeline1_Aggregate_2.sql
     - models/pipeline11/model_pipeline11_Aggregate_1.sql
+    - models/pipeline1/model_pipeline1_Aggregate_1.sql
+    - models/pipeline11/model_pipeline11_Deduplicate_1.sql
+    - models/pipeline11/schema.yml
     - models/pipeline1/model_pipeline1_Deduplicate_1.sql
+    - models/pipeline1/schema.yml
     - .prophecy/ide/pipelines/pipeline1.json
     - pipelines/pipeline1.py
     createdAt: '2025-04-01 07:18:02'

@@ -311,6 +311,9 @@
         "id" : "P3jtYVhUxSM3FvCRHBZdI",
         "label" : "DatabricksSource_1"
       }, {
+        "id" : "ZYndb4e7qphWqwtX5y_N4$$rZolpZSqoJNqpFzxS3zHZ",
+        "label" : "OrchestrationSource_1"
+      }, {
         "id" : "tXGD2AgkdESiKgSTRJYSn",
         "label" : "DatabricksSource_0"
       } ]
@@ -762,6 +765,19 @@
         "label" : "DatabricksSource_1"
       } ]
     },
+    "restapi_gem" : {
+      "id" : "restapi_gem",
+      "name" : "restapi_gem",
+      "path" : "simple_databricks/.prophecy/ide/pipelines/restapi_gem.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
     "pipeline2" : {
       "id" : "pipeline2",
       "name" : "pipeline2",
@@ -957,10 +973,6 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
-  "entitiesToSync" : [ {
-    "name" : "model2",
-    "type" : "Model",
-    "syncedOnce" : false
-  } ],
+  "entitiesToSync" : [ ],
   "frontEndLanguage" : "sql"
 }
