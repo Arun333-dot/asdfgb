@@ -1,0 +1,21 @@
+---
+version: 2
+models:
+- name: "model_p2_Reformat_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p2_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p2_post_Reformat_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p2_pre_Reformat_1_0"
+    tags:
+    - "prophecy_temp"
