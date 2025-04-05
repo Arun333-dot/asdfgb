@@ -4,7 +4,10 @@ sources:
 - name: "qa_team.qa_database"
   database: "qa_team"
   schema: "qa_database"
-  tables: []
+  tables:
+  - name: "store"
+    columns: []
+    type: "table"
 - name: "hive_metastore.arun123"
   database: "hive_metastore"
   schema: "arun123"
