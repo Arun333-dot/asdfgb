@@ -189,6 +189,7 @@ sqlSources:
       description: A comprehensive dataset containing demographic information, including
         names, ages, IDs, and cities, useful for various analytical purposes.
       author: arunsharma+admin@prophecy.io
+      tableType: table
       createdAt: '2025-03-25 12:23:07'
   .prophecy/metadata/sqlsources/qa_team_qa_database:
     name: qa_team.qa_database
