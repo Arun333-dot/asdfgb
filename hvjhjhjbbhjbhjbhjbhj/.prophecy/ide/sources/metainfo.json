@@ -16,10 +16,10 @@
   },
   "datasets" : { },
   "pipelines" : {
-    "p1" : {
-      "id" : "p1",
-      "name" : "p1",
-      "path" : "sql_simple_external_version_Test/.prophecy/ide/pipelines/p1.json",
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "sql_simple_external_version_Test/.prophecy/ide/pipelines/p3.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -42,10 +42,10 @@
       "preview" : [ ],
       "sources" : [ ]
     },
-    "p3" : {
-      "id" : "p3",
-      "name" : "p3",
-      "path" : "sql_simple_external_version_Test/.prophecy/ide/pipelines/p3.json",
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "sql_simple_external_version_Test/.prophecy/ide/pipelines/p1.json",
       "config" : {
         "schema" : {
           "type" : "record",
@@ -53,8 +53,159 @@
         }
       },
       "preview" : [ ],
-      "sources" : [ ]
+      "sources" : [ {
+        "id" : "Clael5PBdhoLUPQ9scudD$$j7ohMaLm6KCc0moU9S0ik",
+        "label" : "OrchestrationSource_1"
+      }, {
+        "id" : "Oe9BWyzllo0F_REVRt9dP$$l2yciACVY4VSmbq3T11E0",
+        "label" : "OrchestrationSource_0"
+      } ]
     }
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "aman",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ash",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "kaustubh",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "maciej",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_0",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_1",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_10",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_11",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_12",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_13",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_14",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_15",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_16",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_17",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_18",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_19",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_3",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_4",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_5",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_6",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_7",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_8",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_9",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_performance",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rajat",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rohit",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rohit_temp",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "tanmay",
+      "children" : [ ]
+    } ]
   },
   "dependenciesContainer" : {
     "dependencies" : { },

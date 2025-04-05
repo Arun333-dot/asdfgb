@@ -1,0 +1,99 @@
+{
+  "id" : "model_p2_BulkColumnExpressions_1",
+  "metainfo" : {
+    "label" : "model_p2_BulkColumnExpressions_1",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"prophecy__temp_p2_post_BulkColumnExpressions_1_0\"",
+        "materialized" : "table",
+        "database" : "\"hive_metastore\"",
+        "schema" : "\"arun123\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "prophecy__temp_p2_post_BulkColumnExpressions_1_0" : {
+      "id" : "prophecy__temp_p2_post_BulkColumnExpressions_1_0",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "BulkColumnExpressions_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM BulkColumnExpressions_1\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_2_1",
+          "slug" : "input_port_2_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_2_1",
+          "slug" : "output_port_2_1"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S" : {
+      "id" : "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S",
+      "component" : "BulkColumnExpressions",
+      "metadata" : {
+        "label" : "BulkColumnExpressions_1",
+        "x" : -420,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "copyOriginalColumns" : false,
+        "changeOutputFieldType" : false,
+        "relation" : "in0",
+        "remainingColumns" : [ ],
+        "changeOutputFieldName" : false,
+        "schemaColDropdownSchema" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "columnNames" : [ ],
+        "isPrefix" : false,
+        "castOutputTypeName" : "Select output type",
+        "expressionToBeApplied" : "",
+        "dataType" : "",
+        "prefixSuffixToBeAdded" : "",
+        "prefixSuffixOption" : "Prefix / Suffix to be added"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Cp89MdlXkArOUMtJlMJ_Q$$yoO_ofYKe-1tmb930HuSn",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S_prophecy__temp_p2_post_BulkColumnExpressions_1_0",
+    "source" : "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S",
+    "sourcePort" : "Cp89MdlXkArOUMtJlMJ_Q$$yoO_ofYKe-1tmb930HuSn",
+    "target" : "prophecy__temp_p2_post_BulkColumnExpressions_1_0",
+    "targetPort" : "input_port_2_1"
+  } ],
+  "component" : "Model"
+}

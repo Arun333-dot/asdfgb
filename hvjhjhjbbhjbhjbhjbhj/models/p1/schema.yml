@@ -1,0 +1,30 @@
+---
+version: 2
+models:
+- name: "model_p1_BulkColumnRename_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p1_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p1_Intersect_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p1_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p1_post_BulkColumnRename_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p1_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p1_post_Intersect_1_0"
+    tags:
+    - "prophecy_temp"

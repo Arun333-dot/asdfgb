@@ -1,0 +1,30 @@
+---
+version: 2
+models:
+- name: "model_p2_BulkColumnExpressions_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p2_Filter_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p2_Intersect_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p2_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p2_post_BulkColumnExpressions_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p2_post_Filter_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p2_post_Intersect_1_0"
+    tags:
+    - "prophecy_temp"

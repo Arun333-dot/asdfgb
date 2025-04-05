@@ -20,7 +20,143 @@
       "enabled" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "3iLqiW62aOx45V1J3QzKv$$j2qNTr9ricrI9G79CI9J1" : {
+      "id" : "3iLqiW62aOx45V1J3QzKv$$j2qNTr9ricrI9G79CI9J1",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -560,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "_90J4E4lvWSJ21tV1UirL$$uc-kHcUOUmxFX_nQD7SQu",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S" : {
+      "id" : "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S",
+      "component" : "BulkColumnExpressions",
+      "metadata" : {
+        "label" : "BulkColumnExpressions_1",
+        "x" : -420,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "copyOriginalColumns" : false,
+        "changeOutputFieldType" : false,
+        "relation" : "in0",
+        "remainingColumns" : [ ],
+        "changeOutputFieldName" : false,
+        "schemaColDropdownSchema" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "columnNames" : [ ],
+        "isPrefix" : false,
+        "castOutputTypeName" : "Select output type",
+        "expressionToBeApplied" : "",
+        "dataType" : "",
+        "prefixSuffixToBeAdded" : "",
+        "prefixSuffixOption" : "Prefix / Suffix to be added"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Cp89MdlXkArOUMtJlMJ_Q$$yoO_ofYKe-1tmb930HuSn",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      },
+      "componentInfo" : {
+        "gemId" : "BulkColumnExpressions_DatabricksSqlBasics",
+        "name" : "BulkColumnExpressions",
+        "projectName" : "DatabricksSqlBasics",
+        "sourceProjectName" : "DatabricksSqlBasics",
+        "sourceProjectVersion" : "0.0.3.dev0"
+      }
+    },
+    "GcMEQzEU_QRiJcBNNceWV$$3qdA6u_Q_iIydD3b81e2F" : {
+      "id" : "GcMEQzEU_QRiJcBNNceWV$$3qdA6u_Q_iIydD3b81e2F",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : -280,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SON3yJ3E5O6goU5jqnhdb$$bGxFzfyHyk_pi3yUg0LXZ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Cxpc19LxO764hUMPOHwWz$$7vl-XtAkrDwOyvBviCyu-",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "-4mmSnWxVHmhV9lLLn6xf$$bQ_f01dU0HF98aXRI6zQr" : {
+      "id" : "-4mmSnWxVHmhV9lLLn6xf$$bQ_f01dU0HF98aXRI6zQr",
+      "component" : "Intersect",
+      "metadata" : {
+        "label" : "Intersect_1",
+        "x" : -140,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "operationType" : "intersect",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "leN6lACDKWwd1QxI5WQQ7$$Nxb-5KghHuFyhLMcLuU9K",
+          "slug" : "in0"
+        }, {
+          "id" : "temeyjbjDuaJAZGzvPCcb$$9A_Y1WrSdmF6qSxJzSAFr",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "DvamQcI5uQ5WcYsg8EEAp$$8aLLNBbbnhvdUWKdKtP8x",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

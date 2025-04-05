@@ -20,7 +20,124 @@
       "enabled" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S" : {
+      "id" : "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_BulkColumnExpressions_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_BulkColumnExpressions_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_BulkColumnExpressions_1_0", "v3J__0_tJ-EJa6whyllv8$$9vbkI0LkHqc4hJTHUZf2S" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_BulkColumnExpressions_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_BulkColumnExpressions_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "3iLqiW62aOx45V1J3QzKv$$j2qNTr9ricrI9G79CI9J1" : {
+      "id" : "3iLqiW62aOx45V1J3QzKv$$j2qNTr9ricrI9G79CI9J1",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -560,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "_90J4E4lvWSJ21tV1UirL$$uc-kHcUOUmxFX_nQD7SQu",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "-4mmSnWxVHmhV9lLLn6xf$$bQ_f01dU0HF98aXRI6zQr" : {
+      "id" : "-4mmSnWxVHmhV9lLLn6xf$$bQ_f01dU0HF98aXRI6zQr",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_Intersect_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_Intersect_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_Intersect_1_0", "-4mmSnWxVHmhV9lLLn6xf$$bQ_f01dU0HF98aXRI6zQr" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_Intersect_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_Intersect_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "GcMEQzEU_QRiJcBNNceWV$$3qdA6u_Q_iIydD3b81e2F" : {
+      "id" : "GcMEQzEU_QRiJcBNNceWV$$3qdA6u_Q_iIydD3b81e2F",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_p2_Filter_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_p2_Filter_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_p2_post_Filter_1_0", "GcMEQzEU_QRiJcBNNceWV$$3qdA6u_Q_iIydD3b81e2F" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_p2_Filter_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_p2_Filter_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }
