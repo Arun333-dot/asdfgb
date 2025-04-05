@@ -1,0 +1,347 @@
+{
+  "name" : "simple_sql_databricks",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "simple_sql_databricks/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "s3_pipeline" : {
+      "id" : "s3_pipeline",
+      "name" : "s3_pipeline",
+      "path" : "simple_sql_databricks/.prophecy/ide/pipelines/s3_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "tz1WnqHHa6UzO0E4YwSFk$$2L0VGVzcOWuCbkITb6fJp",
+        "label" : "S3Source_0_1"
+      }, {
+        "id" : "X2YwF7db0yzURPCI4NjSx",
+        "label" : "S3Source_0"
+      } ]
+    },
+    "sftp_pipeline" : {
+      "id" : "sftp_pipeline",
+      "name" : "sftp_pipeline",
+      "path" : "simple_sql_databricks/.prophecy/ide/pipelines/sftp_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "Vcx3SyZWAjXjWVFNqnBVR",
+        "label" : "SFTPSource_0"
+      }, {
+        "id" : "Mw0hRFGC96R-uiUIU_9qV$$XM6WZobBz29g2t3CMLmsa",
+        "label" : "SFTPSource_0_1"
+      } ]
+    },
+    "share_point_pipelien" : {
+      "id" : "share_point_pipelien",
+      "name" : "share_point_pipelien",
+      "path" : "simple_sql_databricks/.prophecy/ide/pipelines/share_point_pipelien.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "Ch6GgPlICjQgavFZa8sgG",
+        "label" : "SharepointSource_0"
+      }, {
+        "id" : "eHc6_s-Zxeyr1tG47TKpL$$bv17iFbWMyxgIXrA-DWIo",
+        "label" : "SharepointSource_0_1"
+      } ]
+    }
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "-",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "aman",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "apollo11",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ash",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dais2023",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dais_2024",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dais_gen_ai",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "data_engg",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dev",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "empty_catalog",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "empty_catalog_2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "evernorth",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "fsidemos",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "gen_ai",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "gen_ai_sparklearner",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "kaustubh",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "lineage_data",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "maciej",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "mei_dev",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "newcata_1",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "no_permission",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ntong",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ntong2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ntong_dais",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "prophecy_data",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_0",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_1",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_10",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_11",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_12",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_13",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_14",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_15",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_16",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_17",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_18",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_19",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_3",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_4",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_5",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_6",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_7",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_8",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_9",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_performance",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rajat",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rj",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rohit",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rohit_temp",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "snowflake_maciej",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "sony",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "tanmay",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "testcata",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : {
+      "https://github.com/prophecy-io/databricks-sql-basics" : "12"
+    }
+  },
+  "entitiesToSync" : [ {
+    "name" : "model3",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
+  "frontEndLanguage" : "sql"
+}

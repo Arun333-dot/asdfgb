@@ -1,0 +1,24 @@
+---
+version: 2
+models:
+- name: "model_share_point_pipelien_Limit_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_share_point_pipelien_source"
+  database: "tanmay"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_share_point_pipelien_post_Limit_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_share_point_pipelien_pre_Reformat_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0"
+    tags:
+    - "prophecy_temp"

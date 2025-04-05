@@ -1,0 +1,17 @@
+{
+  "id" : "ygfhjnmhgghj",
+  "metainfo" : {
+    "label" : "ygfhjnmhgghj",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

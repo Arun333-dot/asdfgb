@@ -2,7 +2,7 @@
   "id" : "pipeline2",
   "metainfo" : {
     "label" : "pipeline2",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -20,7 +20,36 @@
       "enabled" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "5SahEFGxzFdeKrQRhFFz7$$2cqMLMRyAiEBOGan9c9CI" : {
+      "id" : "5SahEFGxzFdeKrQRhFFz7$$2cqMLMRyAiEBOGan9c9CI",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_2",
+        "x" : -400,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qc1i-oPgtTncyc2cQvbEU$$eLKmvghhccA-Hm_p_KEql",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ipj1ZXJUJKxtqhTV2tdZA$$Jz8nEoQIil6Bm-6F7LICX",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

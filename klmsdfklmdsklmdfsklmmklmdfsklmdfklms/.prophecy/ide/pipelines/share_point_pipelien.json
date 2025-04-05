@@ -1,0 +1,1589 @@
+{
+  "id" : "share_point_pipelien",
+  "metainfo" : {
+    "label" : "share_point_pipelien",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "Lwbn6imWu0jNOMwdlHQnq$$MblCu1mlP9t3iSjQPn3QU" : {
+      "id" : "Lwbn6imWu0jNOMwdlHQnq$$MblCu1mlP9t3iSjQPn3QU",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "x" : -40,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ "NHr0KE4PEavVFahlhHyKd$$qn-YD2ESrQpcpBbMquC9t##Name" ],
+        "orders" : [ {
+          "expression" : {
+            "expression" : "Name"
+          },
+          "sortType" : "asc",
+          "nullsType" : "nulls first"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NHr0KE4PEavVFahlhHyKd$$qn-YD2ESrQpcpBbMquC9t",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "heR2wkzrw0qZnmWWxDuzJ$$wGF074hQ3NHVYq6lOgOyk",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO" : {
+      "id" : "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "x" : 100,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "10"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SlvMcRwKxLDRWCf3KxlQN$$3vvlFlPFeviGwxeqZQDvj",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "cv-Xsi2PAFp9iToszBL9e$$KzJyBoHVbppgVLxSNQhGP",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Ch6GgPlICjQgavFZa8sgG" : {
+      "id" : "Ch6GgPlICjQgavFZa8sgG",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "SharepointSource_0",
+        "x" : -840,
+        "y" : -320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : {
+            "id" : "sharepoint"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ",",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the entity or individual being engaged."
+              }, {
+                "name" : "Engagement category",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Category representing the level of engagement with the account"
+              }, {
+                "name" : "Engagement score",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "Score indicating the level of engagement with the account"
+              }, {
+                "name" : "Salesforce Account Account Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the Salesforce account associated with the engagement."
+              }, {
+                "name" : "Salesforce Account Crossbeam Databricks Account Status",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Status of the account in relation to Crossbeam and Databricks"
+              }, {
+                "name" : "Salesforce Account Account ID",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Unique identifier for the Salesforce account."
+              }, {
+                "name" : "Salesforce Account Industry",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The industry classification of the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Account Type",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Type of the Salesforce account indicating its classification."
+              }, {
+                "name" : "Salesforce Account Number Of Opportunities",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Total number of opportunities associated with the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Open To Low Code",
+                "dataType" : {
+                  "type" : "bool"
+                },
+                "description" : "Indicates whether the Salesforce account is receptive to low-code solutions"
+              }, {
+                "name" : "Hubspot Company Last Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The last marketing campaign that converted the company in Hubspot"
+              }, {
+                "name" : "Hubspot Company First Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The campaign that first engaged the company in Hubspot."
+              }, {
+                "name" : "Salesforce Account Last MQL Date",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The date when the account was last marked as a Marketing Qualified Lead."
+              } ]
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/csv_files/accounts_final.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "af15001d-d516-4f1c-ad27-19f6a86665dd",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "WcHNuVqN1-R8QO2g5QnbR$$G9IhQLZisxK_MnpuKdjac" : {
+      "id" : "WcHNuVqN1-R8QO2g5QnbR$$G9IhQLZisxK_MnpuKdjac",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "engagement_data_summary",
+        "x" : -300,
+        "y" : -200,
+        "phase" : 0
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : "true"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "in0.Name"
+          },
+          "alias" : "Name",
+          "_row_id" : "1551707750"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Engagement category`"
+          },
+          "alias" : "`Engagement category`",
+          "_row_id" : "1075676774"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Engagement score`"
+          },
+          "alias" : "`Engagement score`",
+          "_row_id" : "2142707239"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Account Name`"
+          },
+          "alias" : "`Salesforce Account Account Name`",
+          "_row_id" : "1768658484"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Crossbeam Databricks Account Status`"
+          },
+          "alias" : "`Salesforce Account Crossbeam Databricks Account Status`",
+          "_row_id" : "2009219254"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Account ID`"
+          },
+          "alias" : "`Salesforce Account Account ID`",
+          "_row_id" : "1826700358"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Industry`"
+          },
+          "alias" : "`Salesforce Account Industry`",
+          "_row_id" : "1788194947"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Account Type`"
+          },
+          "alias" : "`Salesforce Account Account Type`",
+          "_row_id" : "736550887"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Number Of Opportunities`"
+          },
+          "alias" : "`Salesforce Account Number Of Opportunities`",
+          "_row_id" : "993096177"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Open To Low Code`"
+          },
+          "alias" : "`Salesforce Account Open To Low Code`",
+          "_row_id" : "861469230"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Hubspot Company Last Touch Converting Campaign`"
+          },
+          "alias" : "`Hubspot Company Last Touch Converting Campaign`",
+          "_row_id" : "104892408"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Hubspot Company First Touch Converting Campaign`"
+          },
+          "alias" : "`Hubspot Company First Touch Converting Campaign`",
+          "_row_id" : "1575968221"
+        }, {
+          "expression" : {
+            "expression" : "in0.`Salesforce Account Last MQL Date`"
+          },
+          "alias" : "`Salesforce Account Last MQL Date`",
+          "_row_id" : "166581908"
+        } ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Name", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Engagement category", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Engagement score", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Account Name", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Crossbeam Databricks Account Status", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Account ID", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Industry", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Account Type", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Number Of Opportunities", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Open To Low Code", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Hubspot Company Last Touch Converting Campaign", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Hubspot Company First Touch Converting Campaign", "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc##Salesforce Account Last MQL Date" ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        }, {
+          "id" : "TMlOGUoFHTs296UuTs7ed$$ApzVeP42h_KYm-ApOU9EB",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "6VTqaRyA5ZVg_xDnctY10$$E3qlVujjQU5qUoYAwZxJT",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "43ACcKvdwHivXknvFe1un$$10UKxwN_WMzhuLaGo2pOl" : {
+      "id" : "43ACcKvdwHivXknvFe1un$$10UKxwN_WMzhuLaGo2pOl",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1_1",
+        "x" : -580,
+        "y" : 60,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Name", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Engagement category", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Engagement score", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Account Name", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Crossbeam Databricks Account Status", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Account ID", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Industry", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Account Type", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Number Of Opportunities", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Open To Low Code", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Hubspot Company Last Touch Converting Campaign", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Hubspot Company First Touch Converting Campaign", "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV##Salesforce Account Last MQL Date" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "Name"
+          },
+          "alias" : "Name",
+          "_row_id" : "411348242"
+        }, {
+          "expression" : {
+            "expression" : "`Engagement category`"
+          },
+          "alias" : "`Engagement category`",
+          "_row_id" : "1967697491"
+        }, {
+          "expression" : {
+            "expression" : "`Engagement score`"
+          },
+          "alias" : "`Engagement score`",
+          "_row_id" : "989888178"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Account Name`"
+          },
+          "alias" : "`Salesforce Account Account Name`",
+          "_row_id" : "227879061"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Crossbeam Databricks Account Status`"
+          },
+          "alias" : "`Salesforce Account Crossbeam Databricks Account Status`",
+          "_row_id" : "1286739538"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Account ID`"
+          },
+          "alias" : "`Salesforce Account Account ID`",
+          "_row_id" : "539157858"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Industry`"
+          },
+          "alias" : "`Salesforce Account Industry`",
+          "_row_id" : "1584206646"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Account Type`"
+          },
+          "alias" : "`Salesforce Account Account Type`",
+          "_row_id" : "29599982"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Number Of Opportunities`"
+          },
+          "alias" : "`Salesforce Account Number Of Opportunities`",
+          "_row_id" : "1322829284"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Open To Low Code`"
+          },
+          "alias" : "`Salesforce Account Open To Low Code`",
+          "_row_id" : "1526197480"
+        }, {
+          "expression" : {
+            "expression" : "`Hubspot Company Last Touch Converting Campaign`"
+          },
+          "alias" : "`Hubspot Company Last Touch Converting Campaign`",
+          "_row_id" : "657245309"
+        }, {
+          "expression" : {
+            "expression" : "`Hubspot Company First Touch Converting Campaign`"
+          },
+          "alias" : "`Hubspot Company First Touch Converting Campaign`",
+          "_row_id" : "1076849509"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Last MQL Date`"
+          },
+          "alias" : "`Salesforce Account Last MQL Date`",
+          "_row_id" : "1285274572"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "zLZ9Gt5OdA4bcRCzmDRtz$$W5vMsi_ai6LhugAg-LuTZ",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "eHc6_s-Zxeyr1tG47TKpL$$bv17iFbWMyxgIXrA-DWIo" : {
+      "id" : "eHc6_s-Zxeyr1tG47TKpL$$bv17iFbWMyxgIXrA-DWIo",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "SharepointSource_0_1",
+        "x" : -760,
+        "y" : 80,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : {
+            "id" : "sharepoint"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ",",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the entity or individual being engaged."
+              }, {
+                "name" : "Engagement category",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Category representing the level of engagement with the account"
+              }, {
+                "name" : "Engagement score",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "Score indicating the level of engagement with the account"
+              }, {
+                "name" : "Salesforce Account Account Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the Salesforce account associated with the engagement."
+              }, {
+                "name" : "Salesforce Account Crossbeam Databricks Account Status",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Status of the account in relation to Crossbeam and Databricks"
+              }, {
+                "name" : "Salesforce Account Account ID",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Unique identifier for the Salesforce account."
+              }, {
+                "name" : "Salesforce Account Industry",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The industry classification of the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Account Type",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Type of the Salesforce account indicating its classification."
+              }, {
+                "name" : "Salesforce Account Number Of Opportunities",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Total number of opportunities associated with the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Open To Low Code",
+                "dataType" : {
+                  "type" : "bool"
+                },
+                "description" : "Indicates whether the Salesforce account is receptive to low-code solutions"
+              }, {
+                "name" : "Hubspot Company Last Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The last marketing campaign that converted the company in Hubspot"
+              }, {
+                "name" : "Hubspot Company First Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The campaign that first engaged the company in Hubspot."
+              }, {
+                "name" : "Salesforce Account Last MQL Date",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The date when the account was last marked as a Marketing Qualified Lead."
+              } ]
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/csv_files/accounts_final.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "NCkLTR_3Ir5Pmq4Plsw72$$5krJwhAoq1wdv71Ba9tyl",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "ajvFFDJJeoN_JnM_bu0gj$$8jnhsKZxrZr33zlYa4D_J" : {
+      "id" : "ajvFFDJJeoN_JnM_bu0gj$$8jnhsKZxrZr33zlYa4D_J",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "x" : -660,
+        "y" : -340,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Name", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Engagement category", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Engagement score", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Account Name", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Crossbeam Databricks Account Status", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Account ID", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Industry", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Account Type", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Number Of Opportunities", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Open To Low Code", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Hubspot Company Last Touch Converting Campaign", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Hubspot Company First Touch Converting Campaign", "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab##Salesforce Account Last MQL Date" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "Name"
+          },
+          "alias" : "Name",
+          "_row_id" : "1013710405"
+        }, {
+          "expression" : {
+            "expression" : "`Engagement category`"
+          },
+          "alias" : "`Engagement category`",
+          "_row_id" : "505955212"
+        }, {
+          "expression" : {
+            "expression" : "`Engagement score`"
+          },
+          "alias" : "`Engagement score`",
+          "_row_id" : "1166835448"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Account Name`"
+          },
+          "alias" : "`Salesforce Account Account Name`",
+          "_row_id" : "261491618"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Crossbeam Databricks Account Status`"
+          },
+          "alias" : "`Salesforce Account Crossbeam Databricks Account Status`",
+          "_row_id" : "1864855897"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Account ID`"
+          },
+          "alias" : "`Salesforce Account Account ID`",
+          "_row_id" : "2058893532"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Industry`"
+          },
+          "alias" : "`Salesforce Account Industry`",
+          "_row_id" : "740746198"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Account Type`"
+          },
+          "alias" : "`Salesforce Account Account Type`",
+          "_row_id" : "1728859523"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Number Of Opportunities`"
+          },
+          "alias" : "`Salesforce Account Number Of Opportunities`",
+          "_row_id" : "27269258"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Open To Low Code`"
+          },
+          "alias" : "`Salesforce Account Open To Low Code`",
+          "_row_id" : "1481923224"
+        }, {
+          "expression" : {
+            "expression" : "`Hubspot Company Last Touch Converting Campaign`"
+          },
+          "alias" : "`Hubspot Company Last Touch Converting Campaign`",
+          "_row_id" : "375178264"
+        }, {
+          "expression" : {
+            "expression" : "`Hubspot Company First Touch Converting Campaign`"
+          },
+          "alias" : "`Hubspot Company First Touch Converting Campaign`",
+          "_row_id" : "1815790858"
+        }, {
+          "expression" : {
+            "expression" : "`Salesforce Account Last MQL Date`"
+          },
+          "alias" : "`Salesforce Account Last MQL Date`",
+          "_row_id" : "1554220282"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "2Kpz-9WfEj3T-COqfPLl5$$gQXFqLDCVnNgbRzY2AKkZ",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "MlkShJBA5MmLC-Rx4JtXz$$lJipMpJ1aojFRyHLuJhSY",
+    "source" : "Ch6GgPlICjQgavFZa8sgG",
+    "sourcePort" : "af15001d-d516-4f1c-ad27-19f6a86665dd",
+    "target" : "ajvFFDJJeoN_JnM_bu0gj$$8jnhsKZxrZr33zlYa4D_J",
+    "targetPort" : "id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab"
+  }, {
+    "id" : "EpNqWuEanEArB3Xi84EFd",
+    "source" : "eHc6_s-Zxeyr1tG47TKpL$$bv17iFbWMyxgIXrA-DWIo",
+    "sourcePort" : "NCkLTR_3Ir5Pmq4Plsw72$$5krJwhAoq1wdv71Ba9tyl",
+    "target" : "43ACcKvdwHivXknvFe1un$$10UKxwN_WMzhuLaGo2pOl",
+    "targetPort" : "hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV"
+  }, {
+    "id" : "TEnm1sjgLOYO7Kb_7qrHV",
+    "source" : "ajvFFDJJeoN_JnM_bu0gj$$8jnhsKZxrZr33zlYa4D_J",
+    "sourcePort" : "2Kpz-9WfEj3T-COqfPLl5$$gQXFqLDCVnNgbRzY2AKkZ",
+    "target" : "WcHNuVqN1-R8QO2g5QnbR$$G9IhQLZisxK_MnpuKdjac",
+    "targetPort" : "VYzwRhq-zs4hOoC2UyGtR$$oT9_pwCm0Bw27E0jNiSdc"
+  }, {
+    "id" : "CQ06VLlMFErZ6OWXRKyGS",
+    "source" : "43ACcKvdwHivXknvFe1un$$10UKxwN_WMzhuLaGo2pOl",
+    "sourcePort" : "zLZ9Gt5OdA4bcRCzmDRtz$$W5vMsi_ai6LhugAg-LuTZ",
+    "target" : "WcHNuVqN1-R8QO2g5QnbR$$G9IhQLZisxK_MnpuKdjac",
+    "targetPort" : "TMlOGUoFHTs296UuTs7ed$$ApzVeP42h_KYm-ApOU9EB"
+  }, {
+    "id" : "fDVZMN3cj2LGQvgdK1FEk$$8w0LUOxqnVgk84-jvTipW",
+    "source" : "WcHNuVqN1-R8QO2g5QnbR$$G9IhQLZisxK_MnpuKdjac",
+    "sourcePort" : "6VTqaRyA5ZVg_xDnctY10$$E3qlVujjQU5qUoYAwZxJT",
+    "target" : "Lwbn6imWu0jNOMwdlHQnq$$MblCu1mlP9t3iSjQPn3QU",
+    "targetPort" : "NHr0KE4PEavVFahlhHyKd$$qn-YD2ESrQpcpBbMquC9t"
+  }, {
+    "id" : "82Dp4LEUvJ6vs2KhHQQGg$$09pjjUN8Lu6n-PPeAJcaa",
+    "source" : "Lwbn6imWu0jNOMwdlHQnq$$MblCu1mlP9t3iSjQPn3QU",
+    "sourcePort" : "heR2wkzrw0qZnmWWxDuzJ$$wGF074hQ3NHVYq6lOgOyk",
+    "target" : "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO",
+    "targetPort" : "SlvMcRwKxLDRWCf3KxlQN$$3vvlFlPFeviGwxeqZQDvj"
+  } ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,17 @@
+{
+  "id" : "wrtertrt",
+  "metainfo" : {
+    "label" : "wrtertrt",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

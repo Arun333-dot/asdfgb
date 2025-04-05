@@ -1,0 +1,351 @@
+{
+  "id" : "pipeline9",
+  "metainfo" : {
+    "label" : "pipeline9",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "f34nRd-pzktG91DapeJCZ$$KDiL37WsX4LRthYrf49hl" : {
+      "id" : "f34nRd-pzktG91DapeJCZ$$KDiL37WsX4LRthYrf49hl",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success_1_1_1_2",
+        "x" : 100,
+        "y" : -120
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "pipeline success",
+        "includeData" : false,
+        "fileName" : "sdfsdfsdfsdfsdfsd.xlsx",
+        "to" : [ "arunsharma@prophecy.io" ],
+        "attachmentPath" : "attachments/template_final_1.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NFu71tksGNjAla11oZGxa$$1VfxIxbeYq5B_jc_cN-Hb",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "-FaUb3z8fWpIvG3nchYly$$-f3vb8dgZIF4DpZ2JyMA5" : {
+      "id" : "-FaUb3z8fWpIvG3nchYly$$-f3vb8dgZIF4DpZ2JyMA5",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success_1_1_1",
+        "x" : 20,
+        "y" : -400
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "pipeline success",
+        "includeData" : true,
+        "fileName" : "sdfsdfsdfsdfsdfsd.xlsx",
+        "to" : [ "arunsharma@prophecy.io" ],
+        "attachmentPath" : "attachments/template_final_1.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lVvhSgtVfxNdxHGR6E3Ql$$XbbF6hUV7G8uqMiYbFu_-",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "NPezxLDl0X5J_Op0dRDJx$$fOvXwXqzM9jFHjewKJ-77" : {
+      "id" : "NPezxLDl0X5J_Op0dRDJx$$fOvXwXqzM9jFHjewKJ-77",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "x" : -920,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "description" : "Demographic information of individuals, aiding in understanding customer profiles and geographic distribution.",
+            "separator" : ",",
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Unique identifier for each individual in the dataset",
+                "name" : "id"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The full name of the individual",
+                "name" : "name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Email address of the individual",
+                "name" : "email"
+              }, {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "The age of the individual",
+                "name" : "age"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The city where the individual resides",
+                "name" : "city"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The country where the individual resides",
+                "name" : "country"
+              } ],
+              "providerType" : "Arrow"
+            },
+            "additionalProperties" : {
+              "copilot" : {
+                "datasetDescriptionStatus" : "fromCopilot"
+              }
+            },
+            "header" : true
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/test_20records.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GIofawWF9Kl31rAoXPu5U$$n-1YAERvxpU5sQMYbmY0O",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "TxrpleUUbTbzJgnKYVsEH$$JfUc_VvrkhhXHjYM2Xkdd" : {
+      "id" : "TxrpleUUbTbzJgnKYVsEH$$JfUc_VvrkhhXHjYM2Xkdd",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_pipeline_success_1_1_1_1",
+        "x" : -640,
+        "y" : -240
+      },
+      "properties" : {
+        "body" : "this is aruns pipeline",
+        "subject" : "pipeline success",
+        "includeData" : true,
+        "fileName" : "sdfsdfsdfsdfsdfsd.xlsx",
+        "to" : [ "arunsharma@prophecy.io" ],
+        "attachmentPath" : "attachments/template_final.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XaGgtUCy_YQKGS3rUJ7mM$$IG1A7XLksW8subX8ofRMh",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "WlL6fTAiGNHpx7VofjUQe",
+    "source" : "NPezxLDl0X5J_Op0dRDJx$$fOvXwXqzM9jFHjewKJ-77",
+    "sourcePort" : "GIofawWF9Kl31rAoXPu5U$$n-1YAERvxpU5sQMYbmY0O",
+    "target" : "-FaUb3z8fWpIvG3nchYly$$-f3vb8dgZIF4DpZ2JyMA5",
+    "targetPort" : "lVvhSgtVfxNdxHGR6E3Ql$$XbbF6hUV7G8uqMiYbFu_-"
+  }, {
+    "id" : "m4ZewXLodKAdSl2Nf5U7x",
+    "source" : "NPezxLDl0X5J_Op0dRDJx$$fOvXwXqzM9jFHjewKJ-77",
+    "sourcePort" : "GIofawWF9Kl31rAoXPu5U$$n-1YAERvxpU5sQMYbmY0O",
+    "target" : "TxrpleUUbTbzJgnKYVsEH$$JfUc_VvrkhhXHjYM2Xkdd",
+    "targetPort" : "XaGgtUCy_YQKGS3rUJ7mM$$IG1A7XLksW8subX8ofRMh"
+  }, {
+    "id" : "TIu4NgPNM9c-zFAg17IZ1",
+    "source" : "NPezxLDl0X5J_Op0dRDJx$$fOvXwXqzM9jFHjewKJ-77",
+    "sourcePort" : "GIofawWF9Kl31rAoXPu5U$$n-1YAERvxpU5sQMYbmY0O",
+    "target" : "f34nRd-pzktG91DapeJCZ$$KDiL37WsX4LRthYrf49hl",
+    "targetPort" : "NFu71tksGNjAla11oZGxa$$1VfxIxbeYq5B_jc_cN-Hb"
+  } ],
+  "component" : "Pipeline"
+}

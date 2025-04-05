@@ -1,0 +1,429 @@
+{
+  "id" : "pipeline10",
+  "metainfo" : {
+    "label" : "pipeline10",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "uDmwg1XWO0umjYjWiZ5bR$$96ssUCK7cFEwnPZczJlnx" : {
+      "id" : "uDmwg1XWO0umjYjWiZ5bR$$96ssUCK7cFEwnPZczJlnx",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_with_attachment",
+        "x" : 40,
+        "y" : 80
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "This is 4th gem",
+        "includeData" : true,
+        "fileName" : "hello",
+        "to" : [ "soni.vaibhav@prophecy.io" ],
+        "attachmentPath" : "attachments/template_final_1.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Q3RUJ9w0G78orG1sndpVh$$SdUuHlFcVnj_Lw3HkJ4Mq",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "J3IjdFNymzV_4mNxlYX-c$$3TkUPWTEaSAG9GoLDumHn" : {
+      "id" : "J3IjdFNymzV_4mNxlYX-c$$3TkUPWTEaSAG9GoLDumHn",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_notification_2",
+        "x" : 0,
+        "y" : -620
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "This is without include data CSV",
+        "includeData" : false,
+        "fileName" : "hi",
+        "to" : [ "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "csv",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "aUwMx3TahRJwzvybBxI2U$$R9ObdZl1C6oGnNtYIRl1N",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "b-xek-vK-8XAjGIguHAfU$$mdhbkVEI13NoaDZKEDMtM" : {
+      "id" : "b-xek-vK-8XAjGIguHAfU$$mdhbkVEI13NoaDZKEDMtM",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_notification_3",
+        "x" : 20,
+        "y" : -340
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "",
+        "includeData" : false,
+        "fileName" : "hey",
+        "to" : [ "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "xlsx",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kiPencTcXhpi6GYC7951N$$OC3k9lGWmgbIsGmkXoXhd",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "LVSroA4AXKnnISiW4Da3A$$4u6NEWJPktozWS5MHukOG" : {
+      "id" : "LVSroA4AXKnnISiW4Da3A$$4u6NEWJPktozWS5MHukOG",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_notification",
+        "x" : 40,
+        "y" : -200
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "This is first gem",
+        "includeData" : true,
+        "fileName" : "avbcd",
+        "to" : [ "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "xlsx",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FRcYXBdmb67bQh8ixrSul$$Z31VviseIaaGwMq17H4AZ",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "azJkY3ETxDOCkI_BKTfVU" : {
+      "id" : "azJkY3ETxDOCkI_BKTfVU",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_0",
+        "x" : -720,
+        "y" : -300,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : {
+            "additionalProperties" : {
+              "copilot" : {
+                "datasetDescriptionStatus" : "fromCopilot"
+              }
+            },
+            "description" : "Customer contact information, enabling effective communication and relationship management.",
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The first name of the individual",
+                "name" : "first_name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The last name of the individual",
+                "name" : "last_name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The residential address of the individual",
+                "name" : "address"
+              } ],
+              "providerType" : "Arrow"
+            }
+          }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "tanmay",
+            "name" : "m1",
+            "schema" : "default"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "45c464f3-4204-4b2f-a6a8-1746be403203",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "oTYsiTbpGEYaY2NGRyu0Q$$38sUijYBKe0pJIaKQd2uB" : {
+      "id" : "oTYsiTbpGEYaY2NGRyu0Q$$38sUijYBKe0pJIaKQd2uB",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "notify_email_recipients",
+        "x" : 0,
+        "y" : -480
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "This is second gem",
+        "includeData" : true,
+        "fileName" : "xyz.csv",
+        "to" : [ "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "csv",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hkxGfoybZ5r-Rn5etDMEf$$85sdVAwixC-8bwkiKlYBj",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "3qkhguRHhUk08DSEK0gD5$$4XFZBm7MqBKJF48Gpr8kU" : {
+      "id" : "3qkhguRHhUk08DSEK0gD5$$4XFZBm7MqBKJF48Gpr8kU",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_notification_1",
+        "x" : 40,
+        "y" : -60
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "This is third gem",
+        "includeData" : true,
+        "fileName" : "myFile",
+        "to" : [ "soni.vaibhav@prophecy.io" ],
+        "attachmentPath" : "attachments/template_final.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xXXtjf1WGLP1HF6IkIJCc$$0TmMNAjgiSZg0FzcQGuyy",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "address",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "vBvXjnWbfiR6FvXV0Mp3k$$kRmozjKKHuyCofhlzZfH8",
+    "source" : "azJkY3ETxDOCkI_BKTfVU",
+    "sourcePort" : "45c464f3-4204-4b2f-a6a8-1746be403203",
+    "target" : "LVSroA4AXKnnISiW4Da3A$$4u6NEWJPktozWS5MHukOG",
+    "targetPort" : "FRcYXBdmb67bQh8ixrSul$$Z31VviseIaaGwMq17H4AZ"
+  }, {
+    "id" : "JXVm4Kaxf0XXJDk8EWdKH",
+    "source" : "azJkY3ETxDOCkI_BKTfVU",
+    "sourcePort" : "45c464f3-4204-4b2f-a6a8-1746be403203",
+    "target" : "oTYsiTbpGEYaY2NGRyu0Q$$38sUijYBKe0pJIaKQd2uB",
+    "targetPort" : "hkxGfoybZ5r-Rn5etDMEf$$85sdVAwixC-8bwkiKlYBj"
+  }, {
+    "id" : "cIUDgFY8el19ihV6GMASs",
+    "source" : "azJkY3ETxDOCkI_BKTfVU",
+    "sourcePort" : "45c464f3-4204-4b2f-a6a8-1746be403203",
+    "target" : "3qkhguRHhUk08DSEK0gD5$$4XFZBm7MqBKJF48Gpr8kU",
+    "targetPort" : "xXXtjf1WGLP1HF6IkIJCc$$0TmMNAjgiSZg0FzcQGuyy"
+  }, {
+    "id" : "y-IxUqmSL5p0t2N_x14LT",
+    "source" : "azJkY3ETxDOCkI_BKTfVU",
+    "sourcePort" : "45c464f3-4204-4b2f-a6a8-1746be403203",
+    "target" : "uDmwg1XWO0umjYjWiZ5bR$$96ssUCK7cFEwnPZczJlnx",
+    "targetPort" : "Q3RUJ9w0G78orG1sndpVh$$SdUuHlFcVnj_Lw3HkJ4Mq"
+  }, {
+    "id" : "PWSfC2WocpNXmT-JyT2L9",
+    "source" : "azJkY3ETxDOCkI_BKTfVU",
+    "sourcePort" : "45c464f3-4204-4b2f-a6a8-1746be403203",
+    "target" : "J3IjdFNymzV_4mNxlYX-c$$3TkUPWTEaSAG9GoLDumHn",
+    "targetPort" : "aUwMx3TahRJwzvybBxI2U$$R9ObdZl1C6oGnNtYIRl1N"
+  }, {
+    "id" : "cmwYfh7dTyPtxvf4aSpfg",
+    "source" : "azJkY3ETxDOCkI_BKTfVU",
+    "sourcePort" : "45c464f3-4204-4b2f-a6a8-1746be403203",
+    "target" : "b-xek-vK-8XAjGIguHAfU$$mdhbkVEI13NoaDZKEDMtM",
+    "targetPort" : "kiPencTcXhpi6GYC7951N$$OC3k9lGWmgbIsGmkXoXhd"
+  } ],
+  "component" : "Pipeline"
+}

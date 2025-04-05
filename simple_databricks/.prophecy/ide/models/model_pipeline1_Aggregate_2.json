@@ -11,8 +11,8 @@
       "entityConfig" : {
         "alias" : "\"prophecy__temp_pipeline1_post_Aggregate_2_0\"",
         "materialized" : "table",
-        "database" : "\"database\"",
-        "schema" : "\"default\"",
+        "database" : "\"hive_metastore\"",
+        "schema" : "\"arun123\"",
         "type" : "ModelConfig"
       }
     },
@@ -23,7 +23,7 @@
       "id" : "prophecy__temp_pipeline1_post_Aggregate_2_0",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "prophecy__temp_pipeline1_post_Aggregate_2_0",
+        "label" : "Aggregate_2",
         "phase" : 0
       },
       "properties" : {
@@ -39,12 +39,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_5_1",
-          "slug" : "input_port_5_1"
+          "id" : "input_port_6_1",
+          "slug" : "input_port_6_1"
         } ],
         "outputs" : [ {
-          "id" : "output_port_5_1",
-          "slug" : "output_port_5_1"
+          "id" : "output_port_6_1",
+          "slug" : "output_port_6_1"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -110,6 +110,31 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "prophecy__temp_pipeline1_pre_Deduplicate_2_0" : {
+      "id" : "prophecy__temp_pipeline1_pre_Deduplicate_2_0",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_4",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_pipeline1_pre_Deduplicate_2_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_pipeline1_source",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "output_port_5_1",
+          "slug" : "output_port_5_1"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ {
@@ -117,13 +142,19 @@
     "source" : "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la",
     "sourcePort" : "wHf9ch5Mt-3ufaPI1LVWv$$xLXQdMqHlNGzWKpc1qwM-",
     "target" : "prophecy__temp_pipeline1_post_Aggregate_2_0",
-    "targetPort" : "input_port_5_1"
+    "targetPort" : "input_port_6_1"
   }, {
     "id" : "RO9VNI_abHTXgJRQNsBJf$$QX97cfxUmRPiKC092GAmq",
     "source" : "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT",
     "sourcePort" : "6mI6aTa9bWGp-mmjlMOsO$$bvXOCP07pT463SiU9u1HS",
     "target" : "WZCN1SyDRs5q7UefjK4ol$$YqlutOsXdzDIukfb-T5la",
     "targetPort" : "7lCGiSIfsYPOudDldLWpQ$$7-iP0wVK0DLUUdDAou-4N"
+  }, {
+    "id" : "conn_prophecy__temp_pipeline1_pre_Deduplicate_2_0_LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT_SFXUTH5u4rUtPptwbqbmA$$6MDdPqvQTbsjEiWQKUWJd",
+    "source" : "prophecy__temp_pipeline1_pre_Deduplicate_2_0",
+    "sourcePort" : "output_port_5_1",
+    "target" : "LqbPVrvN3MgDHxSEcq2Cx$$Bnkg4aMFWwlu8h6u0xMFT",
+    "targetPort" : "SFXUTH5u4rUtPptwbqbmA$$6MDdPqvQTbsjEiWQKUWJd"
   } ],
   "component" : "Model"
 }
