@@ -1,6 +1,6 @@
 name: clone_project_test12
 description: ''
-version: '5'
+version: '1'
 author: arunsharma+admin@prophecy.io
 language: sql
 buildSystem: ''
