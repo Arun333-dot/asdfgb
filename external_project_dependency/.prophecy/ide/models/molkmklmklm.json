@@ -1,0 +1,83 @@
+{
+  "id" : "molkmklmklm",
+  "metainfo" : {
+    "label" : "molkmklmklm",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "molkmklmklm##pcokRXWb" : {
+      "id" : "molkmklmklm##pcokRXWb",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "molkmklmklm",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM weeed\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eEKoSZ7v",
+          "slug" : "weeed"
+        } ],
+        "outputs" : [ {
+          "id" : "Wjkg3WbU",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "kNhpycbK5RWGOcHj_wTk9" : {
+      "id" : "kNhpycbK5RWGOcHj_wTk9",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "weeed",
+        "slug" : "weeed",
+        "x" : -200,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "weeed",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "OmzO8PeH2iMhkeDujBHLg",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "Y1962ud0IRjxTnt2jBlFa$$HwGGvAdFc13HYnSTnmwqy",
+    "source" : "kNhpycbK5RWGOcHj_wTk9",
+    "sourcePort" : "OmzO8PeH2iMhkeDujBHLg",
+    "target" : "molkmklmklm##pcokRXWb",
+    "targetPort" : "eEKoSZ7v"
+  } ],
+  "component" : "Model"
+}
