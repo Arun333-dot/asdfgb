@@ -1,0 +1,315 @@
+{
+  "id" : "pipeline3",
+  "metainfo" : {
+    "label" : "pipeline3",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "string",
+          "kind" : {
+            "type" : "string",
+            "value" : "'Name'"
+          }
+        }, {
+          "name" : "number",
+          "kind" : {
+            "type" : "int",
+            "value" : "\"34234\""
+          }
+        }, {
+          "name" : "boolean",
+          "kind" : {
+            "type" : "boolean",
+            "value" : "\"true\""
+          }
+        }, {
+          "name" : "double",
+          "kind" : {
+            "type" : "double",
+            "value" : "\"234234234234\""
+          }
+        }, {
+          "name" : "Long",
+          "kind" : {
+            "type" : "long",
+            "value" : "\"123123123123123\""
+          }
+        }, {
+          "name" : "Float",
+          "kind" : {
+            "type" : "float",
+            "value" : "\"123123.556\""
+          }
+        }, {
+          "name" : "array",
+          "kind" : {
+            "type" : "array",
+            "elementType" : {
+              "type" : "string",
+              "value" : null
+            },
+            "value" : [ "'\\\"[\\\\\\\\\\\\\\'Name\\\\\\\\\\\\\\']\\\"'" ]
+          }
+        }, {
+          "name" : "date",
+          "kind" : {
+            "type" : "date",
+            "value" : null
+          }
+        }, {
+          "name" : "checkbox_boolean1",
+          "kind" : {
+            "type" : "boolean",
+            "value" : "True"
+          }
+        }, {
+          "name" : "checkobx_boolean2",
+          "kind" : {
+            "type" : "boolean",
+            "value" : "False"
+          }
+        }, {
+          "name" : "radiobutton_boolean1",
+          "kind" : {
+            "type" : "boolean",
+            "value" : "True"
+          }
+        }, {
+          "name" : "radiobutton_boolean2",
+          "kind" : {
+            "type" : "boolean",
+            "value" : "False"
+          }
+        }, {
+          "name" : "date",
+          "kind" : {
+            "type" : "date",
+            "value" : "'2024-08-28'"
+          }
+        } ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "KoHBnTy37CdEuWepqQ0Lm$$T-tuJkZRDzem05KlRvCdp" : {
+      "id" : "KoHBnTy37CdEuWepqQ0Lm$$T-tuJkZRDzem05KlRvCdp",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "x" : -220,
+        "y" : -820,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "{{ var('string') }}"
+          },
+          "alias" : "string_input_Default_Name",
+          "_row_id" : "9ENoeJQQ0p"
+        }, {
+          "expression" : {
+            "expression" : "{{ var('date') }}"
+          },
+          "alias" : "date",
+          "_row_id" : "PDH0hqk4kw"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lUzmb6K0O3URFf10MDCks$$7lRX8CmIJGygfIQGWftky",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "City",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "DeVRXBC7WhfU_sXx4WEDZ$$LxPyUvcmyLWT7mggHpTRb",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "string_input_Default_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "cSyTOZ7vq1Hb6pNG7jHNK$$cOH6tHX7weM_jpLuni8Nk" : {
+      "id" : "cSyTOZ7vq1Hb6pNG7jHNK$$cOH6tHX7weM_jpLuni8Nk",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "million_records",
+        "x" : -520,
+        "y" : -700,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "million_records",
+          "sourceType" : "Table",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "8rq9Z-HHZa2yvaH55sbLE$$5PkK0Dp9tEjlD1inDaxvP",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "wdetv65LGwev0BPAl8SaR$$9hJdMmNYu1Z05uqcCPHNs",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "City",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "gO3AKYt72BWz1lRBFIbYd$$t-9SnLsTkaVy_pGqyEPzy" : {
+      "id" : "gO3AKYt72BWz1lRBFIbYd$$t-9SnLsTkaVy_pGqyEPzy",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "Table_1",
+        "x" : 140,
+        "y" : -900,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "output_table",
+          "sourceType" : "Table",
+          "sourceName" : "qa_team.qa_database",
+          "alias" : "",
+          "additionalProperties" : null
+        },
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Bluo80zR8PVsAEV4y5hHf$$lma8rR-DQkxQ6YuHL3Z52",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "string_input_Default_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "UbqZm45aH3j_k9rUGA4cM$$l1jR7UHSlO0hxcB0nzAKU",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "string_input_Default_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "pp9Y_NpgaA2WEzrQJJbU6",
+    "source" : "cSyTOZ7vq1Hb6pNG7jHNK$$cOH6tHX7weM_jpLuni8Nk",
+    "sourcePort" : "wdetv65LGwev0BPAl8SaR$$9hJdMmNYu1Z05uqcCPHNs",
+    "target" : "KoHBnTy37CdEuWepqQ0Lm$$T-tuJkZRDzem05KlRvCdp",
+    "targetPort" : "lUzmb6K0O3URFf10MDCks$$7lRX8CmIJGygfIQGWftky"
+  }, {
+    "id" : "hETAiyEj-xuz6GB-T6EyB$$4-EPnVYkJ-HsJCU-VPK0u",
+    "source" : "KoHBnTy37CdEuWepqQ0Lm$$T-tuJkZRDzem05KlRvCdp",
+    "sourcePort" : "DeVRXBC7WhfU_sXx4WEDZ$$LxPyUvcmyLWT7mggHpTRb",
+    "target" : "gO3AKYt72BWz1lRBFIbYd$$t-9SnLsTkaVy_pGqyEPzy",
+    "targetPort" : "Bluo80zR8PVsAEV4y5hHf$$lma8rR-DQkxQ6YuHL3Z52"
+  } ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,165 @@
+{
+  "id" : "app_ppipelien3",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pipeline3"
+  },
+  "definition" : {
+    "template" : [ {
+      "id" : "DataPreview1",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "gO3AKYt72BWz1lRBFIbYd$$t-9SnLsTkaVy_pGqyEPzy",
+        "columns" : [ {
+          "key" : "radiobutton_boolean_default_true",
+          "column" : "radiobutton_boolean_default_true",
+          "label" : "radiobutton_boolean_default_true",
+          "selected" : true
+        }, {
+          "key" : "radiobutton_boolean_default_false",
+          "column" : "radiobutton_boolean_default_false",
+          "label" : "radiobutton_boolean_default_false",
+          "selected" : true
+        }, {
+          "key" : "checkbox_boolean_1",
+          "column" : "checkbox_boolean_1",
+          "label" : "checkbox_boolean_1",
+          "selected" : true
+        }, {
+          "key" : "checkbix_boolean2",
+          "column" : "checkbix_boolean2",
+          "label" : "checkbix_boolean2",
+          "selected" : true
+        }, {
+          "key" : "string_input_Default_Name",
+          "column" : "string_input_Default_Name",
+          "label" : "string_input_Default_Name",
+          "selected" : true
+        } ],
+        "title" : "Table Title"
+      },
+      "errors" : { },
+      "key" : "qZ4WMfMAAvoVMCV1QfJBd"
+    }, {
+      "id" : "RadioGroup1",
+      "type" : "RadioGroup",
+      "properties" : {
+        "configField" : "radiobutton_boolean1",
+        "options" : [ {
+          "label" : "false",
+          "value" : "false",
+          "error" : false
+        }, {
+          "label" : "true",
+          "value" : "true",
+          "error" : false
+        } ],
+        "defaultValue" : "true"
+      },
+      "errors" : { },
+      "key" : "0lT1mQHv7yJUqBacOCq9D"
+    }, {
+      "id" : "RadioGroup2",
+      "type" : "RadioGroup",
+      "properties" : {
+        "configField" : "radiobutton_boolean2",
+        "options" : [ {
+          "label" : "true",
+          "value" : "true",
+          "caption" : "true",
+          "error" : false
+        }, {
+          "label" : "false",
+          "value" : "false",
+          "caption" : "false",
+          "error" : false
+        } ],
+        "defaultValue" : "false"
+      },
+      "errors" : { },
+      "key" : "Fv8IuqxOexpSfxYkTzPEM"
+    }, {
+      "id" : "Dropdown1",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "checkbox_boolean1",
+        "label" : "checkox",
+        "options" : [ {
+          "label" : "true",
+          "value" : "true",
+          "error" : false
+        }, {
+          "label" : "false",
+          "value" : "false",
+          "error" : false
+        } ],
+        "defaultValue" : "true",
+        "helpText" : ""
+      },
+      "errors" : { },
+      "key" : "qcU0H9KWBfSNhiJPqYu0d"
+    }, {
+      "id" : "Dropdown2",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "checkobx_boolean2",
+        "label" : "checkobx2",
+        "options" : [ {
+          "label" : "True",
+          "value" : "True",
+          "error" : false
+        }, {
+          "label" : "false",
+          "value" : "false",
+          "error" : false
+        } ],
+        "defaultValue" : "false"
+      },
+      "errors" : { },
+      "key" : "1U7CINs1dwB-qAPqfJyz-"
+    }, {
+      "id" : "TextInput1",
+      "type" : "TextInput",
+      "properties" : {
+        "configField" : "string",
+        "label" : "string",
+        "defaultValue" : "Name"
+      },
+      "errors" : { },
+      "key" : "Jw8eJasMgxaj2XMNa1qyI"
+    }, {
+      "key" : "kuKDjPOujquCf9NPfvKA8",
+      "id" : "Date1",
+      "type" : "Date",
+      "properties" : {
+        "configField" : "date",
+        "label" : "this is date",
+        "format" : "MMMM d, yyyy",
+        "firstDay" : "Monday",
+        "defaultValue" : "2025-04-01"
+      },
+      "errors" : { }
+    } ]
+  },
+  "instances" : {
+    "configgg" : {
+      "config" : {
+        "radiobutton_boolean1" : "true",
+        "radiobutton_boolean2" : "false",
+        "checkbox_boolean1" : "true",
+        "checkobx_boolean2" : "false",
+        "string" : "Age"
+      },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    }
+  }
+}

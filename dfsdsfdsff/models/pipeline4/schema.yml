@@ -1,0 +1,21 @@
+---
+version: 2
+models:
+- name: "model_pipeline4_Reformat_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_pipeline4_source"
+  database: "Tanmay"
+  schema: "default"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_pipeline4_post_Reformat_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_pipeline4_pre_Reformat_1_0"
+    tags:
+    - "prophecy_temp"

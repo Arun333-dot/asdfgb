@@ -1,0 +1,132 @@
+{
+  "id" : "pipeline5",
+  "metainfo" : {
+    "label" : "pipeline5",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "ID",
+          "kind" : {
+            "type" : "string",
+            "value" : "'\\\"ID\\\"'"
+          }
+        }, {
+          "name" : "Name",
+          "kind" : {
+            "type" : "string",
+            "value" : "'\\\"Name\\\"'"
+          }
+        }, {
+          "name" : "Age",
+          "kind" : {
+            "type" : "string",
+            "value" : "'\\\"Age\\\"'"
+          }
+        } ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U" : {
+      "id" : "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "million_records",
+        "x" : -720,
+        "y" : -60,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "million_records",
+          "sourceType" : "Table",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "C26vkqbQOw5elWCPNNsG8$$X35tqATmMocNF1_6al8YR",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "fRAfRV-qszhiEUiKUaLJl$$gWHAoeIaT9Z4PLhYl4ps0",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "City",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL" : {
+      "id" : "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_pipeline5_Reformat_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_pipeline5_Reformat_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL", "DI3XclZ2WNz5olBxsdsJO$$C-umwjLBeZh35KxJMuphT", "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U" ],
+        "type" : "table",
+        "isTemporaryTable" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_pipeline5_Reformat_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_pipeline5_Reformat_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "v_m-hoon_0WMIo1xgMUGc",
+    "source" : "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U",
+    "sourcePort" : "fRAfRV-qszhiEUiKUaLJl$$gWHAoeIaT9Z4PLhYl4ps0",
+    "target" : "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL",
+    "targetPort" : "model_pipeline5_Reformat_1_in_1"
+  } ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,272 @@
+{
+  "id" : "pipeline5",
+  "metainfo" : {
+    "label" : "pipeline5",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "ID",
+          "kind" : {
+            "type" : "string",
+            "value" : "'\\\"ID\\\"'"
+          }
+        }, {
+          "name" : "Name",
+          "kind" : {
+            "type" : "string",
+            "value" : "'\\\"Name\\\"'"
+          }
+        }, {
+          "name" : "Age",
+          "kind" : {
+            "type" : "string",
+            "value" : "'\\\"Age\\\"'"
+          }
+        } ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "DI3XclZ2WNz5olBxsdsJO$$C-umwjLBeZh35KxJMuphT" : {
+      "id" : "DI3XclZ2WNz5olBxsdsJO$$C-umwjLBeZh35KxJMuphT",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "x" : -240,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "{{ var('Name') }}"
+          },
+          "alias" : "Name",
+          "_row_id" : "1805278378"
+        }, {
+          "expression" : {
+            "expression" : "{{ var('Age') }}"
+          },
+          "alias" : "Age",
+          "_row_id" : "1708431026"
+        }, {
+          "expression" : {
+            "expression" : "{{ var('ID') }}"
+          },
+          "alias" : "ID",
+          "_row_id" : "1005761616"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "93hgaS-78K9VK6o9nB3Cl$$cWL-HzHEneHi199XnmD2c",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "City",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "RWKNGZ65rMKnSeiOlzm2H$$73Ia27i_EtfVRgIB493di",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U" : {
+      "id" : "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "million_records",
+        "x" : -720,
+        "y" : -60,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "million_records",
+          "sourceType" : "Table",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "C26vkqbQOw5elWCPNNsG8$$X35tqATmMocNF1_6al8YR",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "fRAfRV-qszhiEUiKUaLJl$$gWHAoeIaT9Z4PLhYl4ps0",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "City",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL" : {
+      "id" : "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "Table_1",
+        "x" : 120,
+        "y" : -380,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "call_center",
+          "sourceType" : "Table",
+          "sourceName" : "qa_team.qa_database",
+          "alias" : "",
+          "additionalProperties" : null
+        },
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gs8x925SXfvFyqZmC-27D$$D2R5_YkUSmq3O2yAZ1poZ",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "6Il-xBAx1A_2A4dFrag2i$$nL1LOfoCQ4_l3TQKUa1-a",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "v_m-hoon_0WMIo1xgMUGc",
+    "source" : "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U",
+    "sourcePort" : "fRAfRV-qszhiEUiKUaLJl$$gWHAoeIaT9Z4PLhYl4ps0",
+    "target" : "DI3XclZ2WNz5olBxsdsJO$$C-umwjLBeZh35KxJMuphT",
+    "targetPort" : "93hgaS-78K9VK6o9nB3Cl$$cWL-HzHEneHi199XnmD2c"
+  }, {
+    "id" : "YzahsapOJLTZnZWmP_bFl$$q4CJ0Ptmxx8Dgz-3cfNyq",
+    "source" : "DI3XclZ2WNz5olBxsdsJO$$C-umwjLBeZh35KxJMuphT",
+    "sourcePort" : "RWKNGZ65rMKnSeiOlzm2H$$73Ia27i_EtfVRgIB493di",
+    "target" : "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL",
+    "targetPort" : "gs8x925SXfvFyqZmC-27D$$D2R5_YkUSmq3O2yAZ1poZ"
+  } ],
+  "component" : "Pipeline"
+}

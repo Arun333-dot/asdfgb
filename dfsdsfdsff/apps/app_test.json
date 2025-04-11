@@ -1,0 +1,52 @@
+{
+  "id" : "app_test",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pipeline23"
+  },
+  "definition" : {
+    "template" : [ {
+      "key" : "Zp5b5Ao6SH3TxLGKGgrl_",
+      "id" : "Checkbox1",
+      "type" : "Checkbox",
+      "properties" : {
+        "configField" : "boolean",
+        "label" : "this is hcekbocx",
+        "defaultValue" : true
+      },
+      "errors" : { }
+    } ]
+  },
+  "instances" : {
+    "config312323" : {
+      "config" : {
+        "boolean" : false
+      },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    },
+    "config41234234" : {
+      "config" : {
+        "boolean" : true
+      },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    }
+  }
+}
