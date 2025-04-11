@@ -26,7 +26,16 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/model3:
     name: model3
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: big_number
+        dataType:
+          type: Bigint
     description: null
     author: arunsharma+admin@prophecy.io
     files:
@@ -65,7 +74,19 @@ sqlSources:
       schema:
         entityType: ''
         providerType: databricks
-        fields: []
+        fields:
+        - name: ID
+          dataType:
+            type: Bigint
+        - name: Name
+          dataType:
+            type: String
+        - name: Age
+          dataType:
+            type: Bigint
+        - name: City
+          dataType:
+            type: String
       description: null
       author: arunsharma+admin@prophecy.io
       tableType: table
@@ -74,7 +95,13 @@ sqlSources:
       schema:
         entityType: ''
         providerType: databricks
-        fields: []
+        fields:
+        - name: id
+          dataType:
+            type: Integer
+        - name: big_number
+          dataType:
+            type: Bigint
       description: Large numerical data records used for analytical purposes, supporting
         insights into significant figures and trends.
       author: arunsharma+admin@prophecy.io
@@ -137,9 +164,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/pipeline23/schema.yml
     - models/pipeline2/schema.yml
     - models/pipeline2/model_pipeline2_Reformat_1.sql
+    - models/pipeline23/schema.yml
     - .prophecy/ide/pipelines/pipeline2.json
     - pipelines/pipeline2.py
     createdAt: '2025-04-07 16:40:13'
