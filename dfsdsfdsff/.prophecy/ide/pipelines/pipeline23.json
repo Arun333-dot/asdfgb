@@ -1,0 +1,225 @@
+{
+  "id" : "pipeline23",
+  "metainfo" : {
+    "label" : "pipeline23",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "string",
+          "kind" : {
+            "type" : "string",
+            "value" : "'Name'"
+          }
+        }, {
+          "name" : "Array",
+          "kind" : {
+            "type" : "array",
+            "elementType" : {
+              "type" : "string",
+              "value" : null
+            },
+            "value" : [ "'arun'", "'varun'", "'sumit'" ]
+          }
+        }, {
+          "name" : "date",
+          "kind" : {
+            "type" : "date",
+            "value" : "'2025-04-11'"
+          }
+        }, {
+          "name" : "boolean",
+          "kind" : {
+            "type" : "boolean",
+            "value" : "True"
+          }
+        }, {
+          "name" : "Int",
+          "kind" : {
+            "type" : "int",
+            "value" : "123"
+          }
+        }, {
+          "name" : "Double",
+          "kind" : {
+            "type" : "double",
+            "value" : "1311515623612"
+          }
+        }, {
+          "name" : "Long",
+          "kind" : {
+            "type" : "long",
+            "value" : "9007199254740991"
+          }
+        }, {
+          "name" : "Float",
+          "kind" : {
+            "type" : "float",
+            "value" : "9.22"
+          }
+        }, {
+          "name" : "sql_Expression",
+          "kind" : {
+            "type" : "sql_expression",
+            "value" : "select * from date(expr)"
+          }
+        } ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "aHOwam_OgBAaSm17CvXVs$$iPY-CGUQ_Noo4SRSlp3Tm" : {
+      "id" : "aHOwam_OgBAaSm17CvXVs$$iPY-CGUQ_Noo4SRSlp3Tm",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "million_records",
+        "x" : -780,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "million_records",
+          "sourceType" : "Table",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "B1PWIEwiurf5wUREc7Nev$$OVcaMk8ZzFQg-tvhbHhPE",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "ckFY385QRbfQ-UCIiua_h$$9e3cAiGJSATTiaeBv7Ox9",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "City",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "aZnQqCMkqlpMkOt2V126N$$NJvd_44yrTmlcMS63iQ_7" : {
+      "id" : "aZnQqCMkqlpMkOt2V126N$$NJvd_44yrTmlcMS63iQ_7",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "selected_records",
+        "x" : 200,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "{{ var('string') }}"
+          },
+          "alias" : "ID",
+          "_row_id" : "382772721"
+        }, {
+          "expression" : {
+            "expression" : "{{ var('Array') }}"
+          },
+          "alias" : "Name",
+          "_row_id" : "314712353"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Z5oxRBKsM9q3Uj56X0w7d$$QWumo65OT1b4SkH3nOUMN",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "City",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "hKMEMjJaBF1sWg_y1omju$$A6IwGFjAzLFPh5fil2W_4",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "Zz5no7ZCqxqaCnO8yGxtB$$Fy3RfzgQg43vf5AFaD2A-",
+    "source" : "aHOwam_OgBAaSm17CvXVs$$iPY-CGUQ_Noo4SRSlp3Tm",
+    "sourcePort" : "ckFY385QRbfQ-UCIiua_h$$9e3cAiGJSATTiaeBv7Ox9",
+    "target" : "aZnQqCMkqlpMkOt2V126N$$NJvd_44yrTmlcMS63iQ_7",
+    "targetPort" : "Z5oxRBKsM9q3Uj56X0w7d$$QWumo65OT1b4SkH3nOUMN"
+  } ],
+  "component" : "Pipeline"
+}

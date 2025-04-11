@@ -1,0 +1,55 @@
+{
+  "id" : "app_pipeline2",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pipeline2"
+  },
+  "definition" : {
+    "template" : [ {
+      "id" : "DataPreview1",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "kLW5VOIfcKiz2lOJTuNHA",
+        "columns" : [ {
+          "key" : "ID",
+          "column" : "ID",
+          "label" : "ID",
+          "selected" : true
+        }, {
+          "key" : "Name",
+          "column" : "Name",
+          "label" : "Name",
+          "selected" : true
+        }, {
+          "key" : "Age",
+          "column" : "Age",
+          "label" : "Age",
+          "selected" : true
+        }, {
+          "key" : "City",
+          "column" : "City",
+          "label" : "City",
+          "selected" : true
+        } ],
+        "title" : "Table Title"
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    } ]
+  },
+  "instances" : {
+    "config1" : {
+      "config" : { },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    }
+  }
+}

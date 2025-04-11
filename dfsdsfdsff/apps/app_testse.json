@@ -1,0 +1,29 @@
+{
+  "id" : "app_testse",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pipeline23"
+  },
+  "definition" : {
+    "template" : [ {
+      "key" : "JNIky2ZbRkslrjfsr4tdc",
+      "id" : "RadioGroup1",
+      "type" : "RadioGroup",
+      "properties" : {
+        "configField" : "string",
+        "options" : [ {
+          "label" : "Name",
+          "value" : "Name",
+          "error" : false
+        }, {
+          "label" : "Age",
+          "value" : "Age",
+          "error" : false
+        } ],
+        "defaultValue" : "ID"
+      },
+      "errors" : { }
+    } ]
+  },
+  "instances" : { }
+}

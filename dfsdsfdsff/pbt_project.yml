@@ -1,0 +1,309 @@
+name: clone_project_test12
+description: ''
+version: '5'
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-04-07 12:54:05'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model3:
+    name: model3
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: big_number
+        dataType:
+          type: Bigint
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model3.sql
+    - .prophecy/ide/models/model3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-04-11 15:06:07'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-04-07 12:54:11'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-04-07 12:54:11'
+    tables:
+    - name: million_records
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: ID
+          dataType:
+            type: Bigint
+        - name: Name
+          dataType:
+            type: String
+        - name: Age
+          dataType:
+            type: Bigint
+        - name: City
+          dataType:
+            type: String
+      description: null
+      author: arunsharma+admin@prophecy.io
+      tableType: table
+      createdAt: '2025-04-07 12:54:11'
+    - name: bigint_data
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: id
+          dataType:
+            type: Integer
+        - name: big_number
+          dataType:
+            type: Bigint
+      description: Large numerical data records used for analytical purposes, supporting
+        insights into significant figures and trends.
+      author: arunsharma+admin@prophecy.io
+      tableType: table
+      createdAt: '2025-04-11 11:10:32'
+  .prophecy/metadata/sqlsources/qa_team_qa_database:
+    name: qa_team.qa_database
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-04-07 12:54:11'
+    tables: []
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline3:
+    name: pipeline3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline3/model_pipeline3_Reformat_1.sql
+    - models/pipeline3/schema.yml
+    - .prophecy/ide/pipelines/pipeline3.json
+    - pipelines/pipeline3.py
+    createdAt: '2025-04-07 12:54:11'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline23:
+    name: pipeline23
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline23/schema.yml
+    - .prophecy/ide/pipelines/pipeline23.json
+    - pipelines/pipeline23.py
+    createdAt: '2025-04-11 10:01:25'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline4:
+    name: pipeline4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline4/schema.yml
+    - models/pipeline4/model_pipeline4_Reformat_1.sql
+    - .prophecy/ide/pipelines/pipeline4.json
+    - pipelines/pipeline4.py
+    createdAt: '2025-04-07 17:10:46'
+  .prophecy/metadata/sqlorchestratorpipeline/huge_seed:
+    name: huge_seed
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/huge_seed.json
+    - pipelines/huge_seed.py
+    createdAt: '2025-04-10 15:00:15'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline2:
+    name: pipeline2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline2/schema.yml
+    - models/pipeline2/model_pipeline2_Reformat_1.sql
+    - models/pipeline23/schema.yml
+    - .prophecy/ide/pipelines/pipeline2.json
+    - pipelines/pipeline2.py
+    createdAt: '2025-04-07 16:40:13'
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline5:
+    name: pipeline5
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/pipeline5/schema.yml
+    - models/pipeline5/model_pipeline5_Reformat_1.sql
+    - .prophecy/ide/pipelines/pipeline5.json
+    - pipelines/pipeline5.py
+    createdAt: '2025-04-07 17:24:29'
+sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/app2:
+    name: app2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app2.json
+    createdAt: '2025-04-07 12:54:11'
+    sqlOrchestrationPipelineName: pipeline3
+  .prophecy/metadata/sqlbusinessapp/app_for_Date:
+    name: app_for_Date
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app_for_Date.json
+    createdAt: '2025-04-11 08:56:08'
+    sqlOrchestrationPipelineName: pipeline3
+  .prophecy/metadata/sqlbusinessapp/app_testse:
+    name: app_testse
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app_testse.json
+    createdAt: '2025-04-11 13:08:41'
+    sqlOrchestrationPipelineName: pipeline23
+  .prophecy/metadata/sqlbusinessapp/app_test:
+    name: app_test
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app_test.json
+    createdAt: '2025-04-11 10:49:05'
+    sqlOrchestrationPipelineName: pipeline23
+  .prophecy/metadata/sqlbusinessapp/app1:
+    name: app1
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app1.json
+    createdAt: '2025-04-07 12:54:11'
+    sqlOrchestrationPipelineName: pipeline3
+  .prophecy/metadata/sqlbusinessapp/app_pipeline5:
+    name: app_pipeline5
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app_pipeline5.json
+    createdAt: '2025-04-07 17:27:31'
+    sqlOrchestrationPipelineName: pipeline5
+  .prophecy/metadata/sqlbusinessapp/app5:
+    name: app5
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app5.json
+    createdAt: '2025-04-07 17:03:02'
+    sqlOrchestrationPipelineName: pipeline3
+  .prophecy/metadata/sqlbusinessapp/app6:
+    name: app6
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app6.json
+    createdAt: '2025-04-07 17:12:58'
+    sqlOrchestrationPipelineName: pipeline4
+  .prophecy/metadata/sqlbusinessapp/app_ppipelien3:
+    name: app_ppipelien3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app_ppipelien3.json
+    createdAt: '2025-04-07 19:39:14'
+    sqlOrchestrationPipelineName: pipeline3
+  .prophecy/metadata/sqlbusinessapp/app4:
+    name: app4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app4.json
+    createdAt: '2025-04-07 12:54:11'
+    sqlOrchestrationPipelineName: pipeline3
+  .prophecy/metadata/sqlbusinessapp/app_pipeline2:
+    name: app_pipeline2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app_pipeline2.json
+    createdAt: '2025-04-07 16:46:04'
+    sqlOrchestrationPipelineName: pipeline2
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2025-04-07 12:54:05'
+dependencies: []
+projectDependencies:
+  '22363':
+    projectUID: 22363
+    projectName: ProphecyDatabricksSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
+    version: 0.0.3.dev0
+    isDefault: true
+    author: null
+    createdAt: '2025-04-07 13:18:45'
+  '22364':
+    projectUID: 22364
+    projectName: ProphecySnowflakeSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/snowflake-sql-basics&subPath=
+    version: 0.0.3.dev0
+    isDefault: true
+    author: null
+    createdAt: '2025-04-07 13:18:45'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

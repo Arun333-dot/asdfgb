@@ -1,0 +1,215 @@
+{
+  "id" : "app1",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pipeline3"
+  },
+  "definition" : {
+    "template" : [ {
+      "id" : "TextInput1",
+      "type" : "TextInput",
+      "properties" : {
+        "configField" : "string",
+        "label" : "string va;ue",
+        "defaultValue" : "config1_value"
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    }, {
+      "id" : "DataPreview1",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "",
+        "columns" : [ ],
+        "title" : "Table Title"
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "Text1",
+      "type" : "Text",
+      "properties" : {
+        "content" : ""
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    }, {
+      "id" : "DataPreview2",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "",
+        "columns" : [ ],
+        "title" : "Table Title"
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "Text2",
+      "type" : "Text",
+      "properties" : {
+        "content" : ""
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    }, {
+      "id" : "NumberInput1",
+      "type" : "NumberInput",
+      "properties" : {
+        "configField" : "number",
+        "label" : "number",
+        "format" : "Standard"
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    }, {
+      "id" : "Textarea1",
+      "type" : "Textarea",
+      "properties" : {
+        "configField" : "",
+        "label" : ""
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "NumberInput2",
+      "type" : "NumberInput",
+      "properties" : {
+        "configField" : "Float",
+        "label" : "float",
+        "format" : "Standard"
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    }, {
+      "id" : "NumberInput3",
+      "type" : "NumberInput",
+      "properties" : {
+        "configField" : "Long",
+        "label" : "long",
+        "format" : "Standard"
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    }, {
+      "id" : "NumberInput4",
+      "type" : "NumberInput",
+      "properties" : {
+        "configField" : "",
+        "label" : "",
+        "format" : "Standard"
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "Textarea2",
+      "type" : "Textarea",
+      "properties" : {
+        "configField" : "string",
+        "label" : ""
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "Dropdown1",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "Long",
+        "label" : "double",
+        "options" : [ ],
+        "defaultValue" : "default",
+        "helpText" : "this value is double",
+        "tooltip" : "double value "
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "Dropdown2",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "string",
+        "label" : "this is dropdown",
+        "options" : [ {
+          "label" : "option1",
+          "value" : "option1",
+          "tooltip" : "this is option1",
+          "error" : false
+        }, {
+          "label" : "option2",
+          "value" : "option2",
+          "tooltip" : "this is option2",
+          "error" : false
+        }, {
+          "label" : "option3",
+          "value" : "option3",
+          "tooltip" : "option3",
+          "error" : false
+        } ],
+        "defaultValue" : "this is default",
+        "helpText" : "this is help text",
+        "tooltip" : "this is dropdown"
+      },
+      "scrollInToView" : false,
+      "errors" : { }
+    }, {
+      "id" : "NumberInput5",
+      "type" : "NumberInput",
+      "properties" : {
+        "configField" : "",
+        "label" : "",
+        "format" : "Standard"
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "NumberInput6",
+      "type" : "NumberInput",
+      "properties" : {
+        "configField" : "",
+        "label" : "",
+        "format" : "Standard"
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "Textarea3",
+      "type" : "Textarea",
+      "properties" : {
+        "configField" : "",
+        "label" : ""
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    }, {
+      "id" : "Dropdown3",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "",
+        "label" : "",
+        "options" : [ ]
+      },
+      "scrollInToView" : false,
+      "errors" : {
+        "properties" : true
+      }
+    } ]
+  },
+  "instances" : { }
+}
