@@ -26,16 +26,7 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/model3:
     name: model3
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: id
-        dataType:
-          type: Integer
-      - name: big_number
-        dataType:
-          type: Bigint
+    schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
@@ -74,19 +65,7 @@ sqlSources:
       schema:
         entityType: ''
         providerType: databricks
-        fields:
-        - name: ID
-          dataType:
-            type: Bigint
-        - name: Name
-          dataType:
-            type: String
-        - name: Age
-          dataType:
-            type: Bigint
-        - name: City
-          dataType:
-            type: String
+        fields: []
       description: null
       author: arunsharma+admin@prophecy.io
       tableType: table
@@ -95,13 +74,7 @@ sqlSources:
       schema:
         entityType: ''
         providerType: databricks
-        fields:
-        - name: id
-          dataType:
-            type: Integer
-        - name: big_number
-          dataType:
-            type: Bigint
+        fields: []
       description: Large numerical data records used for analytical purposes, supporting
         insights into significant figures and trends.
       author: arunsharma+admin@prophecy.io
@@ -164,9 +137,9 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
+    - models/pipeline23/schema.yml
     - models/pipeline2/schema.yml
     - models/pipeline2/model_pipeline2_Reformat_1.sql
-    - models/pipeline23/schema.yml
     - .prophecy/ide/pipelines/pipeline2.json
     - pipelines/pipeline2.py
     createdAt: '2025-04-07 16:40:13'
@@ -288,14 +261,6 @@ sqlPipeline:
   createdAt: '2025-04-07 12:54:05'
 dependencies: []
 projectDependencies:
-  '22363':
-    projectUID: 22363
-    projectName: ProphecyDatabricksSqlBasics
-    repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
-    version: 0.0.3.dev0
-    isDefault: true
-    author: null
-    createdAt: '2025-04-07 13:18:45'
   '22364':
     projectUID: 22364
     projectName: ProphecySnowflakeSqlBasics
@@ -303,7 +268,15 @@ projectDependencies:
     version: 0.0.3.dev0
     isDefault: true
     author: null
-    createdAt: '2025-04-07 13:18:45'
+    createdAt: '2025-04-11 15:41:57'
+  '22363':
+    projectUID: 22363
+    projectName: ProphecyDatabricksSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
+    version: 0.0.3.dev0
+    isDefault: true
+    author: null
+    createdAt: '2025-04-11 15:41:57'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
