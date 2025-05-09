@@ -25106,10 +25106,6 @@
       "https://github.com/prophecy-io/databricks-sql-basics" : "10524"
     }
   },
-  "entitiesToSync" : [ {
-    "name" : "aruns_model",
-    "type" : "Model",
-    "syncedOnce" : false
-  } ],
+  "entitiesToSync" : [ ],
   "frontEndLanguage" : "sql"
 }
