@@ -23,53 +23,7 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels:
-  .prophecy/metadata/sqlmodels/m1:
-    name: m1
-    schema:
-      entityType: ''
-      providerType: Snowflake
-      fields:
-      - name: EMPLOYEE_ID
-        dataType:
-          type: Number
-      - name: DEPARTMENT_ID
-        dataType:
-          type: Number
-      - name: EMPLOYEE_NAME
-        dataType:
-          type: String
-      - name: HIRE_DATE
-        dataType:
-          type: Date
-      - name: SALARY
-        dataType:
-          type: Float
-      - name: PROJECTS
-        dataType:
-          type: Array
-      - name: PERFORMANCE
-        dataType:
-          type: Object
-      - name: SUPERVISOR
-        dataType:
-          type: Object
-      - name: TEAM_EFFORT
-        dataType:
-          type: Array
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - models/m1.sql
-    - .prophecy/ide/models/m1.json
-    - models/schema.yml
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-05-09 08:27:46'
+sqlModels: {}
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
