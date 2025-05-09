@@ -1,0 +1,55 @@
+---
+version: 2
+sources:
+- name: "SONY.WINDOWS_SCHEMA"
+  database: "SONY"
+  schema: "WINDOWS_SCHEMA"
+  config:
+    enabled: true
+  tables:
+  - name: "EMPLOYEE_TEST_WINDOWS"
+    description: "Employee records encompassing details on performance, projects,\
+      \ and team dynamics, aiding in workforce management and evaluation."
+    quoting:
+      identifier: true
+    columns:
+    - name: "EMPLOYEE_ID"
+      description: "The unique identifier for each employee"
+      dataType:
+        type: "Number"
+    - name: "DEPARTMENT_ID"
+      description: "The unique identifier for the department to which the employee\
+        \ belongs"
+      dataType:
+        type: "Number"
+    - name: "EMPLOYEE_NAME"
+      description: "The name of the employee"
+      dataType:
+        type: "String"
+    - name: "HIRE_DATE"
+      description: "The date when the employee was hired"
+      dataType:
+        type: "Date"
+    - name: "SALARY"
+      description: "The salary amount of the employee"
+      dataType:
+        type: "Float"
+    - name: "PROJECTS"
+      description: "Array of projects assigned to the employee"
+      dataType:
+        type: "Array"
+    - name: "PERFORMANCE"
+      description: "Object containing performance metrics and evaluations for the\
+        \ employee"
+      dataType:
+        type: "Object"
+    - name: "SUPERVISOR"
+      description: "Details about the employee's supervisor"
+      dataType:
+        type: "Object"
+    - name: "TEAM_EFFORT"
+      description: "Array representing the collaborative efforts of the employee within\
+        \ the team"
+      dataType:
+        type: "Array"
+    type: "table"
