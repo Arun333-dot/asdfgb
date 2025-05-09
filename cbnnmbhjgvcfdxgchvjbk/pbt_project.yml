@@ -1,0 +1,369 @@
+name: project_arun
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-05-09 06:42:42'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/aruns_model:
+    name: aruns_model
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: tiny_value
+        dataType:
+          type: TinyInt
+      - name: small_value
+        dataType:
+          type: SmallInt
+      - name: big_value
+        dataType:
+          type: Bigint
+      - name: name
+        dataType:
+          type: String
+      - name: is_active
+        dataType:
+          type: Boolean
+      - name: salary
+        dataType:
+          type: Decimal
+      - name: float_value
+        dataType:
+          type: Float
+      - name: double_value
+        dataType:
+          type: Double
+      - name: binary_data
+        dataType:
+          type: Binary
+      - name: created_at
+        dataType:
+          type: Timestamp
+      - name: created_at_ntz
+        dataType:
+          type: Timestamp
+      - name: birth_date
+        dataType:
+          type: Date
+      - name: interval_value
+        dataType:
+          type: Integer
+      - name: interval_seconds
+        dataType:
+          type: Integer
+      - name: metadata
+        dataType:
+          type: Map
+          keyType:
+            type: String
+          valueType:
+            type: String
+      - name: int_array
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: float_array
+        dataType:
+          type: Array
+          dataType:
+            type: Float
+      - name: boolean_array
+        dataType:
+          type: Array
+          dataType:
+            type: Boolean
+      - name: decimal_array
+        dataType:
+          type: Array
+          dataType:
+            type: Decimal
+      - name: timestamp_array
+        dataType:
+          type: Array
+          dataType:
+            type: Timestamp
+      - name: date_array
+        dataType:
+          type: Array
+          dataType:
+            type: Date
+      - name: struct_array
+        dataType:
+          type: Array
+          dataType:
+            type: Struct
+            fields:
+            - name: type
+              dataType:
+                type: String
+            - name: value
+              dataType:
+                type: Integer
+      - name: array_of_arrays
+        dataType:
+          type: Array
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+      - name: struct_of_array
+        dataType:
+          type: Struct
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: values
+            dataType:
+              type: Array
+              dataType:
+                type: Integer
+      - name: struct_of_array_of_structs
+        dataType:
+          type: Struct
+          fields:
+          - name: id
+            dataType:
+              type: Integer
+          - name: details
+            dataType:
+              type: Array
+              dataType:
+                type: Struct
+                fields:
+                - name: key
+                  dataType:
+                    type: String
+                - name: val
+                  dataType:
+                    type: Integer
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/aruns_model.sql
+    - .prophecy/ide/models/aruns_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-05-09 06:51:00'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-05-09 06:42:51'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_qa_database:
+    name: hive_metastore.qa_database
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-05-09 06:50:30'
+    tables:
+    - name: all_type_databricks
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: id
+          dataType:
+            type: Integer
+        - name: tiny_value
+          dataType:
+            type: TinyInt
+        - name: small_value
+          dataType:
+            type: SmallInt
+        - name: big_value
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: is_active
+          dataType:
+            type: Boolean
+        - name: salary
+          dataType:
+            type: Decimal
+        - name: float_value
+          dataType:
+            type: Float
+        - name: double_value
+          dataType:
+            type: Double
+        - name: binary_data
+          dataType:
+            type: Binary
+        - name: created_at
+          dataType:
+            type: Timestamp
+        - name: created_at_ntz
+          dataType:
+            type: Timestamp
+        - name: birth_date
+          dataType:
+            type: Date
+        - name: interval_value
+          dataType:
+            type: Integer
+        - name: interval_seconds
+          dataType:
+            type: Integer
+        - name: metadata
+          dataType:
+            type: Map
+            keyType:
+              type: String
+            valueType:
+              type: String
+        - name: int_array
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: float_array
+          dataType:
+            type: Array
+            dataType:
+              type: Float
+        - name: boolean_array
+          dataType:
+            type: Array
+            dataType:
+              type: Boolean
+        - name: decimal_array
+          dataType:
+            type: Array
+            dataType:
+              type: Decimal
+        - name: timestamp_array
+          dataType:
+            type: Array
+            dataType:
+              type: Timestamp
+        - name: date_array
+          dataType:
+            type: Array
+            dataType:
+              type: Date
+        - name: struct_array
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: type
+                dataType:
+                  type: String
+                description: Type field within each structure in the struct_array
+              - name: value
+                dataType:
+                  type: Integer
+                description: Value associated with each entry in the structured array
+        - name: array_of_arrays
+          dataType:
+            type: Array
+            dataType:
+              type: Array
+              dataType:
+                type: Integer
+        - name: struct_of_array
+          dataType:
+            type: Struct
+            fields:
+            - name: name
+              dataType:
+                type: String
+              description: Name associated with the structured data
+            - name: values
+              dataType:
+                type: Array
+                dataType:
+                  type: Integer
+              description: Array of integer values related to the structured data
+        - name: struct_of_array_of_structs
+          dataType:
+            type: Struct
+            fields:
+            - name: id
+              dataType:
+                type: Integer
+              description: Unique identifier for the struct containing an array of
+                structs
+            - name: details
+              dataType:
+                type: Array
+                dataType:
+                  type: Struct
+                  fields:
+                  - name: key
+                    dataType:
+                      type: String
+                    description: Key value within each detail struct
+                  - name: val
+                    dataType:
+                      type: Integer
+                    description: Value associated with each key in the structured
+                      array of details.
+              description: Array of details associated with the struct
+      description: Comprehensive dataset capturing diverse data types and structures,
+        enabling detailed analysis and insights across various dimensions.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2025-05-09 06:50:30'
+      tableType: table
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2025-05-09 06:42:42'
+dependencies: []
+projectDependencies:
+  '10524':
+    projectUID: 10524
+    projectName: ProphecyDatabricksSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
+    version: 0.0.5.dev2
+    isDefault: true
+    author: null
+    createdAt: '2025-05-09 06:42:29'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
