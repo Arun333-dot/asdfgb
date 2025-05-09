@@ -1,6 +1,6 @@
 name: snowflake
 description: ''
-version: 0.0.1
+version: '14'
 author: abhisheks+e2etests@prophecy.io
 language: sql
 buildSystem: ''
