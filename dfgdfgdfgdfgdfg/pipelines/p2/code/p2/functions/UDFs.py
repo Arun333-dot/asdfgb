@@ -14,8 +14,8 @@ from prophecy.lookups import (
 )
 
 def registerUDFs(spark: SparkSession):
+    spark.udf.register("udf_1", udf_1)
     spark.udf.register("udf_2", udf_2)
-    spark.udf.register("udf_3", udf_3)
     
 
     try:
@@ -24,8 +24,8 @@ def registerUDFs(spark: SparkSession):
     except :
         pass
 
-def udf_2Generator():
-    initial = 1000000
+def udf_1Generator():
+    initial = 10000
 
     @udf(returnType = IntegerType())
     def func(value=10):
@@ -33,15 +33,15 @@ def udf_2Generator():
 
     return func
 
-udf_2 = udf_2Generator()
+udf_1 = udf_1Generator()
 
-def udf_3Generator():
-    initial = 100000
+def udf_2Generator():
+    initial = 10000
 
     @udf(returnType = IntegerType())
     def func(value=10):
-        return (value * value + value - value * 10000 - 10000 / 2 - 200)
+        return (value * value + value - value * 10000 - 10000 / 2 - 2)
 
     return func
 
-udf_3 = udf_3Generator()
+udf_2 = udf_2Generator()

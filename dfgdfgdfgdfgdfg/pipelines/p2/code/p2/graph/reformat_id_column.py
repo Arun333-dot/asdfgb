@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from p2.config.ConfigStore import *
 from p2.functions import *
 
-def select_id(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.select(col("ID"))
+def reformat_id_column(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.select(udf_1(col("ID")).alias("dsfsdfsdfsdf"))
