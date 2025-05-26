@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: ID
+    type: long
+    nullable: true
+    metadata:
+      description: The unique identifier for each record
+      mappings: []
+      tags: []
+  - name: Name
+    type: string
+    nullable: true
+    metadata:
+      description: The name associated with the record
+      mappings: []
+      tags: []
+  - name: Is_Active
+    type: boolean
+    nullable: true
+    metadata:
+      description: Indicates whether the record is currently active
+      mappings: []
+      tags: []

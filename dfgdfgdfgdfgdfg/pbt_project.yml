@@ -1,0 +1,143 @@
+name: hotfix_project_sql
+description: ''
+version: 0.0.1
+author: arunsharma@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: hotfixprojectsql
+  parentArtefactID: arunsharmaprophecyioteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2025-05-26 19:47:55'
+pipelines:
+  pipelines/p1:
+    name: p1
+    description: ''
+    author: arunsharma@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2025-05-26 19:47:55'
+    datasets:
+      inputs:
+      - datasets/arun123_boolean_data
+      outputs:
+      - datasets/sdfsdf
+    subgraphs: []
+    dependencies: {}
+  pipelines/p2:
+    name: p2
+    description: ''
+    author: arunsharma@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2025-05-26 20:07:16'
+    datasets:
+      inputs:
+      - datasets/arun123_boolean_data
+      outputs:
+      - datasets/sdfsdf
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/arun123_boolean_data:
+    name: arun123_boolean_data
+    description: ''
+    author: arunsharma@prophecy.io
+    createdAt: '2025-05-26 20:05:25'
+    mode: batch
+    physicalDatasets:
+      databricks_new:
+        fabricId: 74
+        datasetType: Database
+        description: ''
+        author: arunsharma@prophecy.io
+        createdAt: '2025-05-26 20:05:25'
+  datasets/sdfsdf:
+    name: sdfsdf
+    description: ''
+    author: arunsharma@prophecy.io
+    createdAt: '2025-05-26 20:06:47'
+    mode: batch
+    physicalDatasets:
+      databricks_new:
+        fabricId: 74
+        datasetType: Database
+        description: ''
+        author: arunsharma@prophecy.io
+        createdAt: '2025-05-26 20:06:47'
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-05-26 19:47:55'
+  udfs:
+    udfs/udf_1:
+      name: udf_1
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: arunsharma@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+    udfs/udf_2:
+      name: udf_2
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: arunsharma@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2025-05-26T19:47:55.250655Z'
+  name: plibMaven
+  version: 8.9.1-SNAPSHOT
+  id: '1936933196'
+  createdAt: '2025-05-26T19:47:55.250655Z'
+  type: plibMaven
+- modifiedAt: '2025-05-26T19:47:55.250655Z'
+  name: plibPypi
+  version: 1.9.49
+  id: '1503411651'
+  createdAt: '2025-05-26T19:47:55.250655Z'
+  type: plibPypi
+projectDependencies:
+  '5':
+    projectUID: 5
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_5.git&subPath=
+    version: 0.0.9
+    isDefault: true
+    author: null
+    createdAt: '2025-05-26 19:47:11'
+  '4':
+    projectUID: 4
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_4.git&subPath=
+    version: 0.2.45
+    isDefault: true
+    author: null
+    createdAt: '2025-05-26 19:47:11'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
