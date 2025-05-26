@@ -41,6 +41,21 @@ pipelines:
       - datasets/sdfsdf
     subgraphs: []
     dependencies: {}
+  pipelines/ghj:
+    name: ghj
+    description: ''
+    author: arunsharma@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2025-05-26 20:35:31'
+    datasets:
+      inputs:
+      - datasets/arun123_boolean_data
+      outputs:
+      - datasets/sdfsdf
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/arun123_boolean_data:
     name: arun123_boolean_data
@@ -97,6 +112,14 @@ functions:
       createdAt: '2022-12-15 18:04:50'
     udfs/udf_3:
       name: udf_3
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: arunsharma@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+    udfs/udf_4:
+      name: udf_4
       description: ''
       tags: []
       inputs: []

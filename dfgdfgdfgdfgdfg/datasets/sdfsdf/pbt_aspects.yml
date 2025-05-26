@@ -9,3 +9,10 @@ schema:
       description: ''
       mappings: []
       tags: []
+  - name: sdfsdfsdf
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
