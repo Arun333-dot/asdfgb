@@ -17,4 +17,4 @@ def br_2(id: Column=lambda: col("ID")):
 
 @execute_rule
 def br5(id: Column=lambda: col("ID")):
-    return when((id == lit(12)), lit(1212)).otherwise(lit(12)).alias("asdasd")
+    return when((id == lit(12)), lit(12)).otherwise(lit(- 1)).alias("aadsas")

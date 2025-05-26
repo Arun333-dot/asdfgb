@@ -103,71 +103,21 @@
     "target" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
     "targetPort" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf"
   }, {
-    "id" : "pAumC3vTu_a1AksO8-DRU",
+    "id" : "a9s3ORwTviHdyPEjOD5_m",
     "source" : "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh",
     "sourcePort" : "Ce1CD8JOo_uPXgUfLmgHU$$-pDfDFg6Siwl_VUNZfP-J",
-    "target" : "NxjlXhAzCjJTwwbWe_fky$$sDFilA0vQuZzyRW1S1lJd",
-    "targetPort" : "2Nnt4KuhGXIuBTiLePlH4$$_dQbpSE85TTQbtDwUnrRn"
+    "target" : "qkesDXOb8yeiQE06-dEA8$$G2b39St3E2BqQPQb1X6Y9",
+    "targetPort" : "Smj3yYMM4p-TsJd9L5uVp$$C_3hDHgG1rRo2cLwyCfq-"
   } ],
   "processes" : {
-    "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW" : {
-      "id" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "sdfsdf",
-        "slug" : "sdfsdf",
-        "x" : -1640,
-        "y" : -760,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "ghfghfg",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "sdfsdf",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/sdfsdf"
-      }
-    },
     "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh" : {
       "id" : "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh",
       "component" : "Source",
       "metadata" : {
         "label" : "arun123_boolean_data",
         "slug" : "arun123_boolean_data",
-        "x" : -2260,
-        "y" : -580,
+        "x" : -2660,
+        "y" : -600,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -272,14 +222,64 @@
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
-    "NxjlXhAzCjJTwwbWe_fky$$sDFilA0vQuZzyRW1S1lJd" : {
-      "id" : "NxjlXhAzCjJTwwbWe_fky$$sDFilA0vQuZzyRW1S1lJd",
+    "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW" : {
+      "id" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "sdfsdf",
+        "slug" : "sdfsdf",
+        "x" : -1120,
+        "y" : -900,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ghfghfg",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sdfsdf",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/sdfsdf"
+      }
+    },
+    "qkesDXOb8yeiQE06-dEA8$$G2b39St3E2BqQPQb1X6Y9" : {
+      "id" : "qkesDXOb8yeiQE06-dEA8$$G2b39St3E2BqQPQb1X6Y9",
       "component" : "SchemaTransform",
       "metadata" : {
         "label" : "schema_transformation",
         "slug" : "schema_transformation",
-        "x" : -1960,
-        "y" : -960,
+        "x" : -1840,
+        "y" : -880,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -288,7 +288,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "2Nnt4KuhGXIuBTiLePlH4$$_dQbpSE85TTQbtDwUnrRn",
+          "id" : "Smj3yYMM4p-TsJd9L5uVp$$C_3hDHgG1rRo2cLwyCfq-",
           "slug" : "in0",
           "schema" : {
             "type" : "struct",
@@ -324,7 +324,7 @@
           "isStreaming" : false
         } ],
         "outputs" : [ {
-          "id" : "5Hd9vj6L7H-4WE_q4UQeg$$-VnqVKN4WAp0DZ3PrqAXZ",
+          "id" : "s5LUvVh0rwmSMbV9fNPKD$$mnG-pm7yE9SA-BF1eOAgT",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],

@@ -4,7 +4,12 @@
       "gemBuilderVersion" : "v1",
       "unitTestNullDataMigrated" : true
     },
-    "functions" : { },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
