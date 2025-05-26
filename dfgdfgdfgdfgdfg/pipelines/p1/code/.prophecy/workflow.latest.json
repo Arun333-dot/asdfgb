@@ -4,7 +4,12 @@
       "gemBuilderVersion" : "v1",
       "unitTestNullDataMigrated" : true
     },
-    "functions" : { },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
@@ -97,16 +102,72 @@
     "sourcePort" : "2AYcsCb1lJhc-6U4MNB6O$$34Hy5h6KbbtQWbmGt7VAz",
     "target" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
     "targetPort" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf"
+  }, {
+    "id" : "pAumC3vTu_a1AksO8-DRU",
+    "source" : "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh",
+    "sourcePort" : "Ce1CD8JOo_uPXgUfLmgHU$$-pDfDFg6Siwl_VUNZfP-J",
+    "target" : "NxjlXhAzCjJTwwbWe_fky$$sDFilA0vQuZzyRW1S1lJd",
+    "targetPort" : "2Nnt4KuhGXIuBTiLePlH4$$_dQbpSE85TTQbtDwUnrRn"
   } ],
   "processes" : {
+    "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW" : {
+      "id" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "sdfsdf",
+        "slug" : "sdfsdf",
+        "x" : -1640,
+        "y" : -760,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ghfghfg",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sdfsdf",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/sdfsdf"
+      }
+    },
     "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh" : {
       "id" : "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh",
       "component" : "Source",
       "metadata" : {
         "label" : "arun123_boolean_data",
         "slug" : "arun123_boolean_data",
-        "x" : -2060,
-        "y" : -720,
+        "x" : -2260,
+        "y" : -580,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -211,40 +272,50 @@
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
-    "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW" : {
-      "id" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
-      "component" : "Target",
+    "NxjlXhAzCjJTwwbWe_fky$$sDFilA0vQuZzyRW1S1lJd" : {
+      "id" : "NxjlXhAzCjJTwwbWe_fky$$sDFilA0vQuZzyRW1S1lJd",
+      "component" : "SchemaTransform",
       "metadata" : {
-        "label" : "sdfsdf",
-        "slug" : "sdfsdf",
-        "x" : -1700,
-        "y" : -740,
+        "label" : "schema_transformation",
+        "slug" : "schema_transformation",
+        "x" : -1960,
+        "y" : -960,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "dataPreview" : false
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf",
+          "id" : "2Nnt4KuhGXIuBTiLePlH4$$_dQbpSE85TTQbtDwUnrRn",
           "slug" : "in0",
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "ghfghfg",
-              "type" : "integer",
+              "name" : "ID",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The unique identifier for each record",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "sdfsdf",
-              "type" : "integer",
+              "name" : "Name",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The name associated with the record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Is_Active",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Indicates whether the record is currently active",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -252,13 +323,57 @@
           },
           "isStreaming" : false
         } ],
-        "outputs" : [ ],
+        "outputs" : [ {
+          "id" : "5Hd9vj6L7H-4WE_q4UQeg$$-VnqVKN4WAp0DZ3PrqAXZ",
+          "slug" : "out"
+        } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/sdfsdf"
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "br5()"
+            },
+            "param_errors" : [ {
+              "paramName" : "ID",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_4.git&subPath=&tag=0.2.45&projectSubscriptionProjectId=4&path=gems/SchemaTransform",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     }
   },

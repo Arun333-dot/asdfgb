@@ -154,6 +154,14 @@ functions:
       outputs: []
       author: arunsharma@prophecy.io
       createdAt: '2022-12-15 18:04:50'
+    businessRules/br5:
+      name: br5
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: arunsharma@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
 subgraphs: {}
 sqlModels: {}
 sqlSnapshots: {}
