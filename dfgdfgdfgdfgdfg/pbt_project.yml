@@ -114,7 +114,23 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
-  businessRules: {}
+  businessRules:
+    businessRules/br:
+      name: br
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: arunsharma@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+    businessRules/br2:
+      name: br2
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: arunsharma@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
 subgraphs: {}
 sqlModels: {}
 sqlSnapshots: {}
