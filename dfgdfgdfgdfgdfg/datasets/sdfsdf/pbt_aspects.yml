@@ -1,0 +1,11 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: ID
+    type: long
+    nullable: true
+    metadata:
+      description: The unique identifier for each record
+      mappings: []
+      tags: []
