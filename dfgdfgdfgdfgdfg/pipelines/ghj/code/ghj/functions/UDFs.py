@@ -60,11 +60,11 @@ def udf_3Generator():
 udf_3 = udf_3Generator()
 
 def udf_4Generator():
-    initial = 1909000
+    initial = 20000
 
     @udf(returnType = IntegerType())
     def func(value=10):
-        return (value * value + value - value * 10000 - 10000 / 2)
+        return (value * value + value - value * 10000 - 10000 / 2 - 12)
 
     return func
 

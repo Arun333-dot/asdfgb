@@ -4,7 +4,12 @@
       "gemBuilderVersion" : "v1",
       "unitTestNullDataMigrated" : true
     },
-    "functions" : { },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
@@ -98,6 +103,12 @@
     "sourcePort" : "oUQR4IIGMTh76xrrQzj0D$$jDzV6Q7kIbrOwE4q7NL2s",
     "target" : "_3_hBDZR_D3QbrWGrppDk$$VuKL9Ukljmu5GUAQTwasy",
     "targetPort" : "aHzzxB1-_GuxuaY_4P9m0$$_MzV3qQ0cXr743fRvTT4n"
+  }, {
+    "id" : "VdzaE78fFI_JSI0gIDHZa",
+    "source" : "LUz4gVtSucHz5fEP3cjHb$$Yj3ivTcH6DNH-789tYNmE",
+    "sourcePort" : "eGFVttHP7b_2BbOWepWCD$$zBGh6JSGdzgBhlHdzNJbV",
+    "target" : "CMM7-L404YlAjiOxUar1G$$EX35YvF_vjxSylB4bvM4s",
+    "targetPort" : "5OuRIy9BNB6TKy3LnIL7p$$z0SoAURZy7vnMx8bcFrKL"
   } ],
   "processes" : {
     "LUz4gVtSucHz5fEP3cjHb$$Yj3ivTcH6DNH-789tYNmE" : {
@@ -244,6 +255,143 @@
       },
       "properties" : {
         "datasetId" : "datasets/sdfsdf"
+      }
+    },
+    "CMM7-L404YlAjiOxUar1G$$EX35YvF_vjxSylB4bvM4s" : {
+      "id" : "CMM7-L404YlAjiOxUar1G$$EX35YvF_vjxSylB4bvM4s",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "schema_transformation",
+        "slug" : "schema_transformation",
+        "x" : -320,
+        "y" : -460,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5OuRIy9BNB6TKy3LnIL7p$$z0SoAURZy7vnMx8bcFrKL",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ID",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The unique identifier for each record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The name associated with the record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Is_Active",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Indicates whether the record is currently active",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "T6EuushH_AdAPMrkKbCEM$$FIgEkgdaNzVsePLF3f7Lm",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "br()"
+            },
+            "param_errors" : [ {
+              "paramName" : "ID",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        }, {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "br_2()"
+            },
+            "param_errors" : [ {
+              "paramName" : "ID",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_4.git&subPath=&tag=0.2.45&projectSubscriptionProjectId=4&path=gems/SchemaTransform",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     }
   },
