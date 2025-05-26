@@ -103,6 +103,14 @@ functions:
       outputs: []
       author: arunsharma@prophecy.io
       createdAt: '2022-12-15 18:04:50'
+    udfs/udf_4:
+      name: udf_4
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: arunsharma@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
   udafs: {}
   expressions: {}
   airflowFunctions: {}
