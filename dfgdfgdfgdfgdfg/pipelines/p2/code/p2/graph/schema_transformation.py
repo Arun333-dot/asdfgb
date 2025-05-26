@@ -7,4 +7,4 @@ from p2.config.ConfigStore import *
 from p2.functions import *
 
 def schema_transformation(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return add_rule(add_rule(in0, br()), br_2())
+    return add_rule(add_rule(in0, br()), br2())
