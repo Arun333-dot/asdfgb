@@ -10,6 +10,7 @@ def pipeline(spark: SparkSession) -> None:
     df_arun123_boolean_data = arun123_boolean_data(spark)
     df_reformatted_columns = reformatted_columns(spark, df_arun123_boolean_data)
     sdfsdf(spark, df_reformatted_columns)
+    df_schema_transformation = schema_transformation(spark, df_arun123_boolean_data)
 
 def main():
     spark = SparkSession.builder.enableHiveSupport().appName("p1").getOrCreate()
