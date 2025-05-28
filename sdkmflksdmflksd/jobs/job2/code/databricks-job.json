@@ -1,6 +1,14 @@
 {
   "fabric_id" : "7252",
-  "components" : [ ],
+  "components" : [ {
+    "ScriptComponent" : {
+      "path" : "dbfs:/FileStore/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/job2/Script_0--342935076.py",
+      "nodeName" : "Script_0",
+      "id" : "zIB5Q6V8GbLSEtBeEEYKy",
+      "language" : "python",
+      "content" : "print(\"arun sharma\")"
+    }
+  } ],
   "request" : {
     "format" : "MULTI_TASK",
     "name" : "job2",
@@ -43,7 +51,14 @@
       }
     } ],
     "email_notifications" : { },
-    "tasks" : [ ],
+    "tasks" : [ {
+      "task_key" : "Script_0",
+      "job_cluster_key" : "job2_default_small",
+      "spark_python_task" : {
+        "python_file" : "dbfs:/FileStore/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/job2/Script_0--342935076.py"
+      },
+      "email_notifications" : { }
+    } ],
     "max_concurrent_runs" : 1
   },
   "cluster_mode" : {

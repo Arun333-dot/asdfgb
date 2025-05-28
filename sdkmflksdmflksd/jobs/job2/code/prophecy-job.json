@@ -32,6 +32,42 @@
       "onFailure" : false
     }
   },
-  "processes" : { },
+  "processes" : {
+    "zIB5Q6V8GbLSEtBeEEYKy" : {
+      "id" : "zIB5Q6V8GbLSEtBeEEYKy",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "Script_0",
+        "x" : -260,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wFN6qMgBu3piY0mJzuVLU",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "zWxhfMIwH8L5fI1YcAmxq",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print(\"arun sharma\")"
+      }
+    }
+  },
   "connections" : [ ]
 }
