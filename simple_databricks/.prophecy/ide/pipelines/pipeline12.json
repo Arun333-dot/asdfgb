@@ -1,0 +1,98 @@
+{
+  "id" : "pipeline12",
+  "metainfo" : {
+    "label" : "pipeline12",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "YBAfNJfGPWW1vafQi6Aps" : {
+      "id" : "YBAfNJfGPWW1vafQi6Aps",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_0",
+        "x" : -640,
+        "y" : -300,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : { }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "tanmay",
+            "name" : "m1",
+            "schema" : "default"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "f992df57-cc19-4551-81e2-15fec3e4bc82",
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "-0bKjoZ2kxmF9k-BmyisO$$x52VV9K1jAZWtneLVA62k" : {
+      "id" : "-0bKjoZ2kxmF9k-BmyisO$$x52VV9K1jAZWtneLVA62k",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_with_attachment",
+        "x" : -500,
+        "y" : -300
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "",
+        "includeData" : true,
+        "fileName" : "abcd.docx",
+        "to" : [ "soni.vaibhav@prophecy.io" ],
+        "fileFormat" : "csv",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "EAArXtvr4ZkHYRi5I1tnn$$EPL7yRTrHm5ukgVXlEfIP",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "dg395xZ82lbbmvCSv12M4$$7ruH9Wd8l_lczZT2VwoBH",
+    "source" : "YBAfNJfGPWW1vafQi6Aps",
+    "sourcePort" : "f992df57-cc19-4551-81e2-15fec3e4bc82",
+    "target" : "-0bKjoZ2kxmF9k-BmyisO$$x52VV9K1jAZWtneLVA62k",
+    "targetPort" : "EAArXtvr4ZkHYRi5I1tnn$$EPL7yRTrHm5ukgVXlEfIP"
+  } ],
+  "component" : "Pipeline"
+}

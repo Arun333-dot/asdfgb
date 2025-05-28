@@ -1,0 +1,53 @@
+{
+  "id" : "fg",
+  "metainfo" : {
+    "label" : "fg",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "jX7AHJCC5WtJH2nCGMTpk$$He73SuqqbOz_0CLtIzcCv" : {
+      "id" : "jX7AHJCC5WtJH2nCGMTpk$$He73SuqqbOz_0CLtIzcCv",
+      "component" : "OrchestrationTarget",
+      "kind" : "S3Target",
+      "metadata" : {
+        "label" : "OrchestrationTarget_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Mv6-xFgOpX3U9w7cTAawj$$2Q9kcsTnewXuq6r3Y-TBY",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

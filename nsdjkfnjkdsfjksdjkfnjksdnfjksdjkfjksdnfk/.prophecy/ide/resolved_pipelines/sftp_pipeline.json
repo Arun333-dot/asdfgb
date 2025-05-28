@@ -1,0 +1,366 @@
+{
+  "id" : "sftp_pipeline",
+  "metainfo" : {
+    "label" : "sftp_pipeline",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "Vcx3SyZWAjXjWVFNqnBVR" : {
+      "id" : "Vcx3SyZWAjXjWVFNqnBVR",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "x" : -1000,
+        "y" : -380,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Unique identifier for each individual in the dataset",
+                "name" : "id"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The full name of the individual",
+                "name" : "name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Email address of the individual",
+                "name" : "email"
+              }, {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "The age of the individual",
+                "name" : "age"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The city where the individual resides",
+                "name" : "city"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The country where the individual resides",
+                "name" : "country"
+              } ],
+              "providerType" : "Arrow"
+            },
+            "separator" : ","
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/test_20records.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "16d7812f-fa97-4cbc-84f0-e8f9b4ba20c4",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "prophecy__temp_sftp_pipeline_pre_Reformat_1_0" : {
+      "id" : "prophecy__temp_sftp_pipeline_pre_Reformat_1_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_sftp_pipeline_pre_Reformat_1_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_sftp_pipeline_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_1_1",
+          "slug" : "input_port_1_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_1_1",
+          "slug" : "output_port_1_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "CmF3HSzK6a7wyA5A77xmK$$RtM66FoHqYopoNAJZPnoE" : {
+      "id" : "CmF3HSzK6a7wyA5A77xmK$$RtM66FoHqYopoNAJZPnoE",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_sftp_pipeline_Filter_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_sftp_pipeline_Filter_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_sftp_pipeline_post_Filter_1_0", "CmF3HSzK6a7wyA5A77xmK$$RtM66FoHqYopoNAJZPnoE", "rCg9QE7ozQifev-YAYkSB$$HTmDWLowEqovvTB2m2g4z", "b5C9C8xL4302mKD8LugWt$$B0eDxq2bpjIFDHWWJEtka", "gF5fMobOq6ztYOeMcVYzr$$1ynRUO_R4UWyIvyEIweWb", "prophecy__temp_sftp_pipeline_pre_Reformat_1_0", "HJZD7AOgAbmFAFUfFEvAx$$BBW3p8kZHfKjfkhECkV-C", "prophecy__temp_sftp_pipeline_pre_Reformat_2_0" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_sftp_pipeline_Filter_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_sftp_pipeline_Filter_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "prophecy__temp_sftp_pipeline_pre_Reformat_2_0" : {
+      "id" : "prophecy__temp_sftp_pipeline_pre_Reformat_2_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "SFTPSource_0_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_sftp_pipeline_pre_Reformat_2_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_sftp_pipeline_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0_1",
+          "slug" : "input_port_0_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0_1",
+          "slug" : "output_port_0_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Mw0hRFGC96R-uiUIU_9qV$$XM6WZobBz29g2t3CMLmsa" : {
+      "id" : "Mw0hRFGC96R-uiUIU_9qV$$XM6WZobBz29g2t3CMLmsa",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0_1",
+        "x" : -980,
+        "y" : -60,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ",",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "id",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Unique identifier for each individual in the dataset"
+              }, {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The full name of the individual"
+              }, {
+                "name" : "email",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Email address of the individual"
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "The age of the individual"
+              }, {
+                "name" : "city",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The city where the individual resides"
+              }, {
+                "name" : "country",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The country where the individual resides"
+              } ]
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/test_20records.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GJsYB_Q6K4yKjEK2lhXfk$$xeF6fd28uW5yicAyzO6e6",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "hEoG1O8_hSW9U06xB8XnB$$79TUsGd6K0kFbjkR6SV4h",
+    "source" : "Mw0hRFGC96R-uiUIU_9qV$$XM6WZobBz29g2t3CMLmsa",
+    "sourcePort" : "GJsYB_Q6K4yKjEK2lhXfk$$xeF6fd28uW5yicAyzO6e6",
+    "target" : "prophecy__temp_sftp_pipeline_pre_Reformat_2_0",
+    "targetPort" : "input_port_0_1"
+  }, {
+    "id" : "LCI2IHb89Xkf_lX1alVmh$$ZeORvk91_e46MV7xqn9aF",
+    "source" : "Vcx3SyZWAjXjWVFNqnBVR",
+    "sourcePort" : "16d7812f-fa97-4cbc-84f0-e8f9b4ba20c4",
+    "target" : "prophecy__temp_sftp_pipeline_pre_Reformat_1_0",
+    "targetPort" : "input_port_1_1"
+  }, {
+    "id" : "conn_prophecy__temp_sftp_pipeline_pre_Reformat_2_0_HJZD7AOgAbmFAFUfFEvAx$$BBW3p8kZHfKjfkhECkV-C_uZkCeNPk5PnWzhNL9jJnK$$2ZkrkkoI7RTW-R3bpURqX",
+    "source" : "prophecy__temp_sftp_pipeline_pre_Reformat_2_0",
+    "sourcePort" : "output_port_0_1",
+    "target" : "CmF3HSzK6a7wyA5A77xmK$$RtM66FoHqYopoNAJZPnoE",
+    "targetPort" : "model_sftp_pipeline_Filter_1_in_1"
+  }, {
+    "id" : "conn_prophecy__temp_sftp_pipeline_pre_Reformat_1_0_gF5fMobOq6ztYOeMcVYzr$$1ynRUO_R4UWyIvyEIweWb_2A-p6Q7hiMrNsjm9BondF$$fYIplo8xa3746XbsT4-K6",
+    "source" : "prophecy__temp_sftp_pipeline_pre_Reformat_1_0",
+    "sourcePort" : "output_port_1_1",
+    "target" : "CmF3HSzK6a7wyA5A77xmK$$RtM66FoHqYopoNAJZPnoE",
+    "targetPort" : "model_sftp_pipeline_Filter_1_in_1"
+  } ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,179 @@
+{
+  "id" : "app_pipeline5",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pipeline5"
+  },
+  "definition" : {
+    "template" : [ {
+      "id" : "TextInput1",
+      "type" : "TextInput",
+      "properties" : {
+        "configField" : "ID",
+        "label" : "id",
+        "defaultValue" : "ID"
+      },
+      "errors" : { },
+      "key" : "cO-u5Uy2BVd8iHThx3PDJ"
+    }, {
+      "id" : "TextInput2",
+      "type" : "TextInput",
+      "properties" : {
+        "configField" : "Name",
+        "label" : "name",
+        "defaultValue" : "City"
+      },
+      "errors" : { },
+      "key" : "GwD1zWR8nBe52XGb4XZs8"
+    }, {
+      "id" : "Textarea1",
+      "type" : "Textarea",
+      "properties" : {
+        "configField" : "Age",
+        "label" : "age",
+        "defaultValue" : "AGE"
+      },
+      "errors" : { },
+      "key" : "avkRZZvI2tbDHqzPVehQW"
+    }, {
+      "id" : "DataPreview1",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "hUSLFAQdj1zXYERR4vovs$$4wbR6bTASwwl3OsF60d5U",
+        "columns" : [ {
+          "key" : "ID",
+          "column" : "ID",
+          "label" : "ID",
+          "selected" : true
+        }, {
+          "key" : "Name",
+          "column" : "Name",
+          "label" : "Name",
+          "selected" : true
+        }, {
+          "key" : "Age",
+          "column" : "Age",
+          "label" : "Age",
+          "selected" : true
+        }, {
+          "key" : "City",
+          "column" : "City",
+          "label" : "City",
+          "selected" : true
+        } ],
+        "title" : "Table Title"
+      },
+      "errors" : { },
+      "key" : "B2Zs68NMYDWjYOtxx68go"
+    }, {
+      "id" : "DataPreview2",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "ymz2qIYhsqqbqxYg-oAUR$$y_9LbprMLaeC3YOfpDXRL",
+        "columns" : [ {
+          "key" : "Name",
+          "column" : "Name",
+          "label" : "Name",
+          "selected" : true
+        }, {
+          "key" : "Age",
+          "column" : "Age",
+          "label" : "Age",
+          "selected" : true
+        }, {
+          "key" : "ID",
+          "column" : "ID",
+          "label" : "ID",
+          "selected" : true
+        } ],
+        "title" : "output table"
+      },
+      "errors" : { },
+      "key" : "JuYL7DGz4VoTYp_Uzl9YV"
+    }, {
+      "key" : "udd2AYhJpbFJiws_413U4",
+      "id" : "Dropdown1",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "ID",
+        "label" : "this is id",
+        "options" : [ {
+          "label" : "4",
+          "value" : "4",
+          "error" : false
+        }, {
+          "label" : "5",
+          "value" : "5",
+          "error" : false
+        }, {
+          "label" : "None",
+          "value" : "",
+          "error" : false
+        }, {
+          "label" : "None",
+          "value" : "",
+          "error" : false
+        }, {
+          "label" : "None",
+          "value" : "",
+          "error" : false
+        }, {
+          "label" : "fd",
+          "value" : "fdfs",
+          "error" : false
+        } ],
+        "defaultValue" : "id",
+        "helpText" : "sddfsdfs",
+        "tooltip" : "sdfsdfsdfsdfsfsdf"
+      },
+      "errors" : { }
+    }, {
+      "key" : "RD1Urr2ilHBLVOokLMEu6",
+      "id" : "Dropdown2",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "ID",
+        "label" : "this is id dropdown",
+        "options" : [ {
+          "label" : "",
+          "value" : "",
+          "error" : false
+        } ],
+        "defaultValue" : "this is value"
+      },
+      "errors" : { }
+    } ]
+  },
+  "instances" : {
+    "config7" : {
+      "config" : {
+        "ID" : "Id",
+        "Name" : "City",
+        "Age" : "Age"
+      },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    },
+    "config79" : {
+      "config" : { },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    }
+  }
+}

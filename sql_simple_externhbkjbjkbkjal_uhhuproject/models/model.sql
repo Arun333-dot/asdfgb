@@ -1,11 +1,11 @@
-WITH model_1 AS (
+WITH test5672 AS (
 
   SELECT * 
   
-  FROM {{ source('hive_metastore.arun123', 'model') }}
+  FROM {{ source('hive_metastore.asadas', 'test5672') }}
 
 )
 
 SELECT *
 
-FROM model_1
+FROM test5672

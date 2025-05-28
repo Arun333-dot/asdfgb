@@ -1,0 +1,113 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "rxg5KBrfH5vwgAmYM9POo$$j-kvxCOoQ39uvfnaPQ2Lb" : {
+      "id" : "rxg5KBrfH5vwgAmYM9POo$$j-kvxCOoQ39uvfnaPQ2Lb",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : {
+            "separator" : ",",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rVDrSORlCe9XUyYyDAVMT$$TIei4WicK54unJbd_begg",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "du_N32USsDJtpunlOntZA$$rEn-7cgRZPI1krtPWfSJy" : {
+      "id" : "du_N32USsDJtpunlOntZA$$rEn-7cgRZPI1krtPWfSJy",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -880,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Qq4uaCPATX5wL8Mnkvnin$$FmTqX3Hwcq_4_eEmtfLIe",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "yYvfAyiyNAXVeI95GkmNg$$gxJ_2ay-Si5FBq08Hgu85",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "xBSyU2jlXREeESACN6LWV$$kS2LhZZ9yxD_qC44Yj0QR" : {
+      "id" : "xBSyU2jlXREeESACN6LWV$$kS2LhZZ9yxD_qC44Yj0QR",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : -740,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "TIZ4dmdd_AbjsNojKuA40$$xVOxs6bOtKxObOlHhNXGJ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "OF8k2aRA3ueliJldcaDIH$$qPQFTCH7mxpVC33Tup62r",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

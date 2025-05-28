@@ -1,0 +1,640 @@
+{
+  "id" : "XLSX_PIPELINE",
+  "metainfo" : {
+    "label" : "XLSX_PIPELINE",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "LjcxqCkJ95-7d4FEKVHsc$$iWHuGajmFW5dyzqbug-2Q" : {
+      "id" : "LjcxqCkJ95-7d4FEKVHsc$$iWHuGajmFW5dyzqbug-2Q",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xlsx",
+        "x" : 220,
+        "y" : 220,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xlsx"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xlsx",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Hrjst6ayQTSuC-lLSGBDt$$CKhedaIBKmP-ZUJolarIB",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "Integer",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "BigInt",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "SmallInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TinyInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Float",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Decimal",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Boolean",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "Timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "JSON",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Void",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "AbFlQSA3rpduHkBklhlnV" : {
+      "id" : "AbFlQSA3rpduHkBklhlnV",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_1",
+        "x" : -400,
+        "y" : 260,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xlsx",
+          "properties" : {
+            "allowUndefinedRows" : true,
+            "rawCellValue" : true,
+            "schema" : {
+              "fields" : [ {
+                "name" : "Integer",
+                "dataType" : {
+                  "type" : "int64"
+                }
+              }, {
+                "name" : "BigInt",
+                "dataType" : {
+                  "type" : "float64"
+                }
+              }, {
+                "name" : "SmallInt",
+                "dataType" : {
+                  "type" : "int64"
+                }
+              }, {
+                "name" : "TinyInt",
+                "dataType" : {
+                  "type" : "int64"
+                }
+              }, {
+                "name" : "Float",
+                "dataType" : {
+                  "type" : "float64"
+                }
+              }, {
+                "name" : "Decimal",
+                "dataType" : {
+                  "type" : "float64"
+                }
+              }, {
+                "name" : "Boolean",
+                "dataType" : {
+                  "type" : "int64"
+                }
+              }, {
+                "name" : "Date",
+                "dataType" : {
+                  "type" : "date32"
+                }
+              }, {
+                "name" : "Timestamp",
+                "dataType" : {
+                  "type" : "timestamp"
+                }
+              }, {
+                "name" : "JSON",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "Void",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              } ],
+              "providerType" : "arrow"
+            },
+            "allowIncompleteRows" : true,
+            "header" : true
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/advanced_data_types.xlsx"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "8f5829cb-60ba-4500-8f99-e70833357e72",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "Integer",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "BigInt",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "SmallInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TinyInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Float",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Decimal",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Boolean",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "Timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "JSON",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Void",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "CK_lsrucd6SKUJsOf5Io1$$0TekwHnzA8CTfrMraH1yO" : {
+      "id" : "CK_lsrucd6SKUJsOf5Io1$$0TekwHnzA8CTfrMraH1yO",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xml",
+        "x" : 220,
+        "y" : 420,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xml"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xml",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5dX_HoyYWl8UXpnE8yqha$$oOFGwaemyLdizmru9deFA",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "Integer",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "BigInt",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "SmallInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TinyInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Float",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Decimal",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Boolean",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "Timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "JSON",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Void",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "irsZjwj9AXC23YSNnQP_E$$TuiMIo2ELrN3a-TdVy3xK" : {
+      "id" : "irsZjwj9AXC23YSNnQP_E$$TuiMIo2ELrN3a-TdVy3xK",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_json",
+        "x" : 220,
+        "y" : 620,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.json"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "json",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xH0lvGm0A6NYnZZwauWg-$$syuttFgB_zrRLSGqXDtr5",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "Integer",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "BigInt",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "SmallInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TinyInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Float",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Decimal",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Boolean",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "Timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "JSON",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Void",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "BQeHedsherQ_ignrJ7T5c$$_BeB1551_aa_SVkGJHXfN" : {
+      "id" : "BQeHedsherQ_ignrJ7T5c$$_BeB1551_aa_SVkGJHXfN",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_csv",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.csv"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YldtuhF3pv7kqYKZ35CHn$$uycgTeCNYDccGbmKqCnZW",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "Integer",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "BigInt",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "SmallInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TinyInt",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Float",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Decimal",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Boolean",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "Timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "JSON",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Void",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "QdGc2-loAxQXSArU5_3xB",
+    "source" : "AbFlQSA3rpduHkBklhlnV",
+    "sourcePort" : "8f5829cb-60ba-4500-8f99-e70833357e72",
+    "target" : "BQeHedsherQ_ignrJ7T5c$$_BeB1551_aa_SVkGJHXfN",
+    "targetPort" : "YldtuhF3pv7kqYKZ35CHn$$uycgTeCNYDccGbmKqCnZW"
+  }, {
+    "id" : "jj9bkVBvPsydMvcYra9iE",
+    "source" : "AbFlQSA3rpduHkBklhlnV",
+    "sourcePort" : "8f5829cb-60ba-4500-8f99-e70833357e72",
+    "target" : "irsZjwj9AXC23YSNnQP_E$$TuiMIo2ELrN3a-TdVy3xK",
+    "targetPort" : "xH0lvGm0A6NYnZZwauWg-$$syuttFgB_zrRLSGqXDtr5"
+  }, {
+    "id" : "lVidL9jte1-LnY9Va0UdJ",
+    "source" : "AbFlQSA3rpduHkBklhlnV",
+    "sourcePort" : "8f5829cb-60ba-4500-8f99-e70833357e72",
+    "target" : "CK_lsrucd6SKUJsOf5Io1$$0TekwHnzA8CTfrMraH1yO",
+    "targetPort" : "5dX_HoyYWl8UXpnE8yqha$$oOFGwaemyLdizmru9deFA"
+  }, {
+    "id" : "aOugrqVZ1UVMWo42KHsU-",
+    "source" : "AbFlQSA3rpduHkBklhlnV",
+    "sourcePort" : "8f5829cb-60ba-4500-8f99-e70833357e72",
+    "target" : "LjcxqCkJ95-7d4FEKVHsc$$iWHuGajmFW5dyzqbug-2Q",
+    "targetPort" : "Hrjst6ayQTSuC-lLSGBDt$$CKhedaIBKmP-ZUJolarIB"
+  } ],
+  "component" : "Pipeline"
+}

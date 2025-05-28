@@ -1,0 +1,516 @@
+{
+  "id" : "share_point_pipelien",
+  "metainfo" : {
+    "label" : "share_point_pipelien",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO" : {
+      "id" : "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_share_point_pipelien_Limit_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_share_point_pipelien_Limit_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_share_point_pipelien_post_Limit_1_0", "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO", "Lwbn6imWu0jNOMwdlHQnq$$MblCu1mlP9t3iSjQPn3QU", "WcHNuVqN1-R8QO2g5QnbR$$G9IhQLZisxK_MnpuKdjac", "ajvFFDJJeoN_JnM_bu0gj$$8jnhsKZxrZr33zlYa4D_J", "prophecy__temp_share_point_pipelien_pre_Reformat_1_0", "43ACcKvdwHivXknvFe1un$$10UKxwN_WMzhuLaGo2pOl", "prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_share_point_pipelien_Limit_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_share_point_pipelien_Limit_1_out_1",
+          "slug" : "out_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0" : {
+      "id" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "SharepointSource_0_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_share_point_pipelien_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0_1",
+          "slug" : "input_port_0_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0_1",
+          "slug" : "output_port_0_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Ch6GgPlICjQgavFZa8sgG" : {
+      "id" : "Ch6GgPlICjQgavFZa8sgG",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "SharepointSource_0",
+        "x" : -840,
+        "y" : -320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : {
+            "id" : "sharepoint"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ",",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the entity or individual being engaged."
+              }, {
+                "name" : "Engagement category",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Category representing the level of engagement with the account"
+              }, {
+                "name" : "Engagement score",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "Score indicating the level of engagement with the account"
+              }, {
+                "name" : "Salesforce Account Account Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the Salesforce account associated with the engagement."
+              }, {
+                "name" : "Salesforce Account Crossbeam Databricks Account Status",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Status of the account in relation to Crossbeam and Databricks"
+              }, {
+                "name" : "Salesforce Account Account ID",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Unique identifier for the Salesforce account."
+              }, {
+                "name" : "Salesforce Account Industry",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The industry classification of the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Account Type",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Type of the Salesforce account indicating its classification."
+              }, {
+                "name" : "Salesforce Account Number Of Opportunities",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Total number of opportunities associated with the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Open To Low Code",
+                "dataType" : {
+                  "type" : "bool"
+                },
+                "description" : "Indicates whether the Salesforce account is receptive to low-code solutions"
+              }, {
+                "name" : "Hubspot Company Last Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The last marketing campaign that converted the company in Hubspot"
+              }, {
+                "name" : "Hubspot Company First Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The campaign that first engaged the company in Hubspot."
+              }, {
+                "name" : "Salesforce Account Last MQL Date",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The date when the account was last marked as a Marketing Qualified Lead."
+              } ]
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/csv_files/accounts_final.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "af15001d-d516-4f1c-ad27-19f6a86665dd",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "eHc6_s-Zxeyr1tG47TKpL$$bv17iFbWMyxgIXrA-DWIo" : {
+      "id" : "eHc6_s-Zxeyr1tG47TKpL$$bv17iFbWMyxgIXrA-DWIo",
+      "component" : "OrchestrationSource",
+      "kind" : "SharepointSource",
+      "metadata" : {
+        "label" : "SharepointSource_0_1",
+        "x" : -760,
+        "y" : 80,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sharepoint",
+          "properties" : {
+            "id" : "sharepoint"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "header" : true,
+            "separator" : ",",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the entity or individual being engaged."
+              }, {
+                "name" : "Engagement category",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Category representing the level of engagement with the account"
+              }, {
+                "name" : "Engagement score",
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "description" : "Score indicating the level of engagement with the account"
+              }, {
+                "name" : "Salesforce Account Account Name",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The name of the Salesforce account associated with the engagement."
+              }, {
+                "name" : "Salesforce Account Crossbeam Databricks Account Status",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Status of the account in relation to Crossbeam and Databricks"
+              }, {
+                "name" : "Salesforce Account Account ID",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Unique identifier for the Salesforce account."
+              }, {
+                "name" : "Salesforce Account Industry",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The industry classification of the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Account Type",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "Type of the Salesforce account indicating its classification."
+              }, {
+                "name" : "Salesforce Account Number Of Opportunities",
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "description" : "Total number of opportunities associated with the Salesforce account"
+              }, {
+                "name" : "Salesforce Account Open To Low Code",
+                "dataType" : {
+                  "type" : "bool"
+                },
+                "description" : "Indicates whether the Salesforce account is receptive to low-code solutions"
+              }, {
+                "name" : "Hubspot Company Last Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The last marketing campaign that converted the company in Hubspot"
+              }, {
+                "name" : "Hubspot Company First Touch Converting Campaign",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The campaign that first engaged the company in Hubspot."
+              }, {
+                "name" : "Salesforce Account Last MQL Date",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "description" : "The date when the account was last marked as a Marketing Qualified Lead."
+              } ]
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/csv_files/accounts_final.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "NCkLTR_3Ir5Pmq4Plsw72$$5krJwhAoq1wdv71Ba9tyl",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Engagement score",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Salesforce Account Account Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Crossbeam Databricks Account Status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Industry",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Account Type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Number Of Opportunities",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "Salesforce Account Open To Low Code",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Hubspot Company Last Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Hubspot Company First Touch Converting Campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Salesforce Account Last MQL Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "prophecy__temp_share_point_pipelien_pre_Reformat_1_0" : {
+      "id" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_0",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "SharepointSource_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_share_point_pipelien_source",
+          "alias" : ""
+        }
+      },
+      "visualMetaInfo" : {
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_1_1",
+          "slug" : "input_port_1_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_1_1",
+          "slug" : "output_port_1_1"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "EpNqWuEanEArB3Xi84EFd",
+    "source" : "eHc6_s-Zxeyr1tG47TKpL$$bv17iFbWMyxgIXrA-DWIo",
+    "sourcePort" : "NCkLTR_3Ir5Pmq4Plsw72$$5krJwhAoq1wdv71Ba9tyl",
+    "target" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0",
+    "targetPort" : "input_port_0_1"
+  }, {
+    "id" : "MlkShJBA5MmLC-Rx4JtXz$$lJipMpJ1aojFRyHLuJhSY",
+    "source" : "Ch6GgPlICjQgavFZa8sgG",
+    "sourcePort" : "af15001d-d516-4f1c-ad27-19f6a86665dd",
+    "target" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_0",
+    "targetPort" : "input_port_1_1"
+  }, {
+    "id" : "conn_prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0_43ACcKvdwHivXknvFe1un$$10UKxwN_WMzhuLaGo2pOl_hXQLBqsoy7c3beVcXOFXW$$ZEAtsrJsaigVT73ZIctLV",
+    "source" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_1_0",
+    "sourcePort" : "output_port_0_1",
+    "target" : "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO",
+    "targetPort" : "model_share_point_pipelien_Limit_1_in_1"
+  }, {
+    "id" : "conn_prophecy__temp_share_point_pipelien_pre_Reformat_1_0_ajvFFDJJeoN_JnM_bu0gj$$8jnhsKZxrZr33zlYa4D_J_id6mmh9wtQgjBJIZjlyN8$$e4Iq02CtfQTZyCnZYUeab",
+    "source" : "prophecy__temp_share_point_pipelien_pre_Reformat_1_0",
+    "sourcePort" : "output_port_1_1",
+    "target" : "m0SCzftqoNe-nQ-dA0HZS$$_S8y6ejELrWojTzMlksPO",
+    "targetPort" : "model_share_point_pipelien_Limit_1_in_1"
+  } ],
+  "component" : "Pipeline"
+}

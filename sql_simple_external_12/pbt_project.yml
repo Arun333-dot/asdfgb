@@ -1,0 +1,259 @@
+name: sql_simple_external_12
+description: ''
+version: '5'
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-25 11:35:11'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model1:
+    name: model1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: ID
+        dataType:
+          type: Bigint
+      - name: Name
+        dataType:
+          type: String
+      - name: Age
+        dataType:
+          type: Bigint
+      - name: City
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model1.sql
+    - .prophecy/ide/models/model1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-25 12:20:32'
+  .prophecy/metadata/sqlmodels/model1ss:
+    name: model1ss
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model1ss.sql
+    - .prophecy/ide/models/model1ss.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-25 13:32:07'
+  .prophecy/metadata/sqlmodels/model2:
+    name: model2
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: ID
+        dataType:
+          type: Bigint
+      - name: Name
+        dataType:
+          type: String
+      - name: Age
+        dataType:
+          type: Bigint
+      - name: City
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model2.sql
+    - .prophecy/ide/models/model2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-25 12:20:38'
+  .prophecy/metadata/sqlmodels/model3:
+    name: model3
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: ID
+        dataType:
+          type: Bigint
+      - name: Name
+        dataType:
+          type: String
+      - name: Age
+        dataType:
+          type: Bigint
+      - name: City
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model3.sql
+    - .prophecy/ide/models/model3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-25 12:20:46'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-25 11:35:14'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/VXCVXCVXCVXCVX:
+    name: VXCVXCVXCVXCVX
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: NAME
+        dataType:
+          type: String
+      - name: AGE
+        dataType:
+          type: Integer
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - seeds/VXCVXCVXCVXCVX.csv
+    - seeds/seeds.yml
+    createdAt: '2025-03-25 15:47:50'
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-25 12:23:07'
+    tables:
+    - name: million_records
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: ID
+          dataType:
+            type: Bigint
+        - name: Name
+          dataType:
+            type: String
+        - name: Age
+          dataType:
+            type: Bigint
+        - name: City
+          dataType:
+            type: String
+      description: A comprehensive dataset containing demographic information, including
+        names, ages, IDs, and cities, useful for various analytical purposes.
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-25 12:23:07'
+  .prophecy/metadata/sqlsources/qa_team_qa_database:
+    name: qa_team.qa_database
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-25 11:37:10'
+    tables: []
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/p2/schema.yml
+    - models/p2/model_p2_Reformat_1.sql
+    - pipelines/p2.py
+    createdAt: '2025-03-25 17:26:55'
+  .prophecy/metadata/sqlorchestratorpipeline/p5:
+    name: p5
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/p5/schema.yml
+    - models/p5/model_p5_Reformat_1.sql
+    - pipelines/p5.py
+    createdAt: '2025-03-25 18:03:19'
+  .prophecy/metadata/sqlorchestratorpipeline/p1:
+    name: p1
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/p1/schema.yml
+    - models/p1/model_p1_custom_object_data.sql
+    - pipelines/p1.py
+    createdAt: '2025-03-25 12:03:03'
+  .prophecy/metadata/sqlorchestratorpipeline/p4:
+    name: p4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p4.py
+    createdAt: '2025-03-25 17:56:51'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p3.py
+    createdAt: '2025-03-25 17:52:34'
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2025-03-25 11:35:11'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}

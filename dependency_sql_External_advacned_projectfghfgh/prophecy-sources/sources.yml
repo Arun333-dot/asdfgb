@@ -1,0 +1,155 @@
+---
+version: 2
+sources:
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  config:
+    enabled: true
+  tables:
+  - name: "customer"
+    description: "Customer demographic and contact information, enabling personalized\
+      \ marketing and customer relationship management."
+    quoting:
+      identifier: true
+    columns:
+    - name: "C_CUSTOMER_SK"
+      description: "Unique identifier for each customer in the system"
+      dataType:
+        type: "Decimal"
+    - name: "C_CUSTOMER_ID"
+      description: "Unique identifier for the customer"
+      dataType:
+        type: "String"
+    - name: "C_CURRENT_CDEMO_SK"
+      description: "Current demographic key associated with the customer"
+      dataType:
+        type: "Decimal"
+    - name: "C_CURRENT_HDEMO_SK"
+      description: "The current household demographic key associated with the customer"
+      dataType:
+        type: "Decimal"
+    - name: "C_CURRENT_ADDR_SK"
+      description: "The unique identifier for the customer's current address"
+      dataType:
+        type: "Decimal"
+    - name: "C_FIRST_SHIPTO_DATE_SK"
+      description: "The key representing the date of the customer's first shipment"
+      dataType:
+        type: "Decimal"
+    - name: "C_FIRST_SALES_DATE_SK"
+      description: "The date when the customer made their first purchase."
+      dataType:
+        type: "Decimal"
+    - name: "C_SALUTATION"
+      description: "The salutation used for the customer"
+      dataType:
+        type: "String"
+    - name: "C_FIRST_NAME"
+      description: "The first name of the customer"
+      dataType:
+        type: "String"
+    - name: "C_LAST_NAME"
+      description: "The last name of the customer"
+      dataType:
+        type: "String"
+    - name: "C_PREFERRED_CUST_FLAG"
+      description: "Indicates whether the customer is a preferred customer"
+      dataType:
+        type: "String"
+    - name: "C_BIRTH_DAY"
+      description: "The day of the customer's birth"
+      dataType:
+        type: "Decimal"
+    - name: "C_BIRTH_MONTH"
+      description: "The month in which the customer was born"
+      dataType:
+        type: "Decimal"
+    - name: "C_BIRTH_YEAR"
+      description: "The year of birth of the customer"
+      dataType:
+        type: "Decimal"
+    - name: "C_BIRTH_COUNTRY"
+      description: "Country of birth of the customer"
+      dataType:
+        type: "String"
+    - name: "C_LOGIN"
+      description: "The login identifier for the customer"
+      dataType:
+        type: "String"
+    - name: "C_EMAIL_ADDRESS"
+      description: "Email address of the customer"
+      dataType:
+        type: "String"
+    - name: "C_LAST_REVIEW_DATE"
+      description: "The date when the customer last reviewed their account"
+      dataType:
+        type: "String"
+    type: "table"
+  - name: "orders"
+    description: "Order records capturing user transactions and their statuses, enabling\
+      \ insights into purchasing behavior."
+    columns:
+    - name: "ID"
+      description: "Unique identifier for each order"
+      dataType:
+        type: "Decimal"
+    - name: "USER_ID"
+      description: "The unique identifier for the user who placed the order"
+      dataType:
+        type: "Decimal"
+    - name: "ORDER_DATE"
+      description: "The date when the order was placed"
+      dataType:
+        type: "Date"
+    - name: "STATUS"
+      description: "Current status of the order"
+      dataType:
+        type: "String"
+    type: "table"
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  config:
+    enabled: true
+  tables:
+  - name: "sqlmodel"
+    description: "Customer contact and account information, supporting customer relationship\
+      \ management and engagement strategies."
+    quoting:
+      identifier: true
+    columns:
+    - name: "customer_id"
+      description: "The unique identifier for each customer"
+      dataType:
+        type: "Bigint"
+    - name: "first_name"
+      description: "The first name of the customer"
+      dataType:
+        type: "String"
+    - name: "last_name"
+      description: "The last name of the customer"
+      dataType:
+        type: "String"
+    - name: "phone"
+      description: "Contact phone number of the customer"
+      dataType:
+        type: "String"
+    - name: "email"
+      description: "Email address of the customer"
+      dataType:
+        type: "String"
+    - name: "country_code"
+      description: "The code representing the customer's country"
+      dataType:
+        type: "String"
+    - name: "account_open_date"
+      description: "Date when the customer's account was opened"
+      dataType:
+        type: "Date"
+    - name: "account_flags"
+      description: "Flags indicating the status or characteristics of the customer's\
+        \ account"
+      dataType:
+        type: "String"
+    type: "table"

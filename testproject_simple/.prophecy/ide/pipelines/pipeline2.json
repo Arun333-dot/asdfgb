@@ -1,0 +1,17 @@
+{
+  "id" : "pipeline2",
+  "metainfo" : {
+    "label" : "pipeline2",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

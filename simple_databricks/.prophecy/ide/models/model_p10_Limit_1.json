@@ -1,0 +1,308 @@
+{
+  "id" : "model_p10_Limit_1",
+  "metainfo" : {
+    "label" : "model_p10_Limit_1",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"prophecy__temp_p10_post_Limit_1_0\"",
+        "materialized" : "table",
+        "database" : "\"hive_metastore\"",
+        "schema" : "\"arun123\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "prophecy__temp_p10_post_Limit_1_0" : {
+      "id" : "prophecy__temp_p10_post_Limit_1_0",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "Limit_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM Limit_1\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_1_1",
+          "slug" : "input_port_1_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_1_1",
+          "slug" : "output_port_1_1"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "eePcs5tP2Svh1IRFnww28$$QIhhruijXgj1jwoG0D1CD" : {
+      "id" : "eePcs5tP2Svh1IRFnww28$$QIhhruijXgj1jwoG0D1CD",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "x" : -440,
+        "y" : -400,
+        "phase" : 0
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "10"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KFbHf7wJLkFFkejWHbvyJ$$36vmazlm-kQV4QD--nlmi",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "kEmAIVZRLv0IHAea1bS7p$$Hl-dLq6YMta6uhmqoCfUP",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "wJ5NwtYJmnupBnsPEV0C_$$JFA3jZmYag9yOSrVxb2ir" : {
+      "id" : "wJ5NwtYJmnupBnsPEV0C_$$JFA3jZmYag9yOSrVxb2ir",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "full_data_extraction",
+        "x" : -800,
+        "y" : -300,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##id", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##tiny_value", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##small_value", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##big_value", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##name", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##is_active", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##salary", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##float_value", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##double_value", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##binary_data", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##created_at", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##created_at_ntz", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##birth_date", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##interval_value", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##interval_seconds", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##metadata", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##int_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##float_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##boolean_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##decimal_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##timestamp_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##date_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##struct_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##array_of_arrays", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##struct_of_array", "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG##struct_of_array_of_structs" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "id"
+          },
+          "alias" : "id",
+          "_row_id" : "843514668"
+        }, {
+          "expression" : {
+            "expression" : "tiny_value"
+          },
+          "alias" : "tiny_value",
+          "_row_id" : "289361205"
+        }, {
+          "expression" : {
+            "expression" : "small_value"
+          },
+          "alias" : "small_value",
+          "_row_id" : "1501576849"
+        }, {
+          "expression" : {
+            "expression" : "big_value"
+          },
+          "alias" : "big_value",
+          "_row_id" : "1869413340"
+        }, {
+          "expression" : {
+            "expression" : "name"
+          },
+          "alias" : "name",
+          "_row_id" : "546452949"
+        }, {
+          "expression" : {
+            "expression" : "is_active"
+          },
+          "alias" : "is_active",
+          "_row_id" : "787200603"
+        }, {
+          "expression" : {
+            "expression" : "salary"
+          },
+          "alias" : "salary",
+          "_row_id" : "1911774331"
+        }, {
+          "expression" : {
+            "expression" : "float_value"
+          },
+          "alias" : "float_value",
+          "_row_id" : "2034930558"
+        }, {
+          "expression" : {
+            "expression" : "double_value"
+          },
+          "alias" : "double_value",
+          "_row_id" : "1066780273"
+        }, {
+          "expression" : {
+            "expression" : "binary_data"
+          },
+          "alias" : "binary_data",
+          "_row_id" : "1436066016"
+        }, {
+          "expression" : {
+            "expression" : "created_at"
+          },
+          "alias" : "created_at",
+          "_row_id" : "878031332"
+        }, {
+          "expression" : {
+            "expression" : "created_at_ntz"
+          },
+          "alias" : "created_at_ntz",
+          "_row_id" : "2112765057"
+        }, {
+          "expression" : {
+            "expression" : "birth_date"
+          },
+          "alias" : "birth_date",
+          "_row_id" : "975298739"
+        }, {
+          "expression" : {
+            "expression" : "interval_value"
+          },
+          "alias" : "interval_value",
+          "_row_id" : "1750550346"
+        }, {
+          "expression" : {
+            "expression" : "interval_seconds"
+          },
+          "alias" : "interval_seconds",
+          "_row_id" : "429268444"
+        }, {
+          "expression" : {
+            "expression" : "metadata"
+          },
+          "alias" : "metadata",
+          "_row_id" : "697102604"
+        }, {
+          "expression" : {
+            "expression" : "int_array"
+          },
+          "alias" : "int_array",
+          "_row_id" : "406224676"
+        }, {
+          "expression" : {
+            "expression" : "float_array"
+          },
+          "alias" : "float_array",
+          "_row_id" : "1784323655"
+        }, {
+          "expression" : {
+            "expression" : "boolean_array"
+          },
+          "alias" : "boolean_array",
+          "_row_id" : "405203375"
+        }, {
+          "expression" : {
+            "expression" : "decimal_array"
+          },
+          "alias" : "decimal_array",
+          "_row_id" : "1885324602"
+        }, {
+          "expression" : {
+            "expression" : "timestamp_array"
+          },
+          "alias" : "timestamp_array",
+          "_row_id" : "1233861153"
+        }, {
+          "expression" : {
+            "expression" : "date_array"
+          },
+          "alias" : "date_array",
+          "_row_id" : "243038824"
+        }, {
+          "expression" : {
+            "expression" : "struct_array"
+          },
+          "alias" : "struct_array",
+          "_row_id" : "730151713"
+        }, {
+          "expression" : {
+            "expression" : "array_of_arrays"
+          },
+          "alias" : "array_of_arrays",
+          "_row_id" : "2010488201"
+        }, {
+          "expression" : {
+            "expression" : "struct_of_array"
+          },
+          "alias" : "struct_of_array",
+          "_row_id" : "300357422"
+        }, {
+          "expression" : {
+            "expression" : "struct_of_array_of_structs"
+          },
+          "alias" : "struct_of_array_of_structs",
+          "_row_id" : "1630394480"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "eVhp14DmrYDK4vzK9nMu2$$d_TrJLAR2VmF-H4_0FfBz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "prophecy__temp_p10_pre_full_data_extraction_0" : {
+      "id" : "prophecy__temp_p10_pre_full_data_extraction_0",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "DatabricksSource_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "prophecy__temp_p10_pre_full_data_extraction_0",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy__temp_p10_source",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "output_port_0_1",
+          "slug" : "output_port_0_1"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_eePcs5tP2Svh1IRFnww28$$QIhhruijXgj1jwoG0D1CD_prophecy__temp_p10_post_Limit_1_0",
+    "source" : "eePcs5tP2Svh1IRFnww28$$QIhhruijXgj1jwoG0D1CD",
+    "sourcePort" : "kEmAIVZRLv0IHAea1bS7p$$Hl-dLq6YMta6uhmqoCfUP",
+    "target" : "prophecy__temp_p10_post_Limit_1_0",
+    "targetPort" : "input_port_1_1"
+  }, {
+    "id" : "IKCXuGZM_2hVTXHwWtroz$$VUtAiQarygGsEtHKChSC_",
+    "source" : "wJ5NwtYJmnupBnsPEV0C_$$JFA3jZmYag9yOSrVxb2ir",
+    "sourcePort" : "eVhp14DmrYDK4vzK9nMu2$$d_TrJLAR2VmF-H4_0FfBz",
+    "target" : "eePcs5tP2Svh1IRFnww28$$QIhhruijXgj1jwoG0D1CD",
+    "targetPort" : "KFbHf7wJLkFFkejWHbvyJ$$36vmazlm-kQV4QD--nlmi"
+  }, {
+    "id" : "conn_prophecy__temp_p10_pre_full_data_extraction_0_wJ5NwtYJmnupBnsPEV0C_$$JFA3jZmYag9yOSrVxb2ir_tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG",
+    "source" : "prophecy__temp_p10_pre_full_data_extraction_0",
+    "sourcePort" : "output_port_0_1",
+    "target" : "wJ5NwtYJmnupBnsPEV0C_$$JFA3jZmYag9yOSrVxb2ir",
+    "targetPort" : "tExCtAcI2qSgtd_OeyN98$$GFp_QE_KbrOksO9WfvfKG"
+  } ],
+  "component" : "Model"
+}

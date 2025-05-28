@@ -1,0 +1,443 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3,
+    "properties" : {
+      "name" : "model1",
+      "columns" : [ {
+        "name" : "name",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "is_active",
+        "dataType" : {
+          "type" : "Boolean"
+        }
+      }, {
+        "name" : "struct_array",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Struct",
+            "fields" : [ {
+              "name" : "type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "value",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          }
+        }
+      }, {
+        "name" : "float_value",
+        "dataType" : {
+          "type" : "Float"
+        }
+      }, {
+        "name" : "decimal_array",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Decimal"
+          }
+        }
+      }, {
+        "name" : "interval_seconds",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "int_array",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Integer"
+          }
+        }
+      }, {
+        "name" : "struct_of_array",
+        "dataType" : {
+          "type" : "Struct",
+          "fields" : [ {
+            "name" : "name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "values",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "timestamp_array",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Timestamp"
+          }
+        }
+      }, {
+        "name" : "interval_value",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "double_value",
+        "dataType" : {
+          "type" : "Double"
+        }
+      }, {
+        "name" : "salary",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "small_value",
+        "dataType" : {
+          "type" : "SmallInt"
+        }
+      }, {
+        "name" : "id",
+        "dataType" : {
+          "type" : "Integer"
+        }
+      }, {
+        "name" : "struct_of_array_of_structs",
+        "dataType" : {
+          "type" : "Struct",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }, {
+            "name" : "details",
+            "dataType" : {
+              "type" : "Array",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "key",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "val",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                } ]
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "boolean_array",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Boolean"
+          }
+        }
+      }, {
+        "name" : "date_array",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Date"
+          }
+        }
+      }, {
+        "name" : "float_array",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Float"
+          }
+        }
+      }, {
+        "name" : "binary_data",
+        "dataType" : {
+          "type" : "Binary"
+        }
+      }, {
+        "name" : "metadata",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "created_at",
+        "dataType" : {
+          "type" : "Timestamp"
+        }
+      }, {
+        "name" : "tiny_value",
+        "dataType" : {
+          "type" : "TinyInt"
+        }
+      }, {
+        "name" : "created_at_ntz",
+        "dataType" : {
+          "type" : "Timestamp"
+        }
+      }, {
+        "name" : "birth_date",
+        "dataType" : {
+          "type" : "Date"
+        }
+      }, {
+        "name" : "big_value",
+        "dataType" : {
+          "type" : "Bigint"
+        }
+      }, {
+        "name" : "array_of_arrays",
+        "dataType" : {
+          "type" : "Array",
+          "dataType" : {
+            "type" : "Array",
+            "dataType" : {
+              "type" : "Integer"
+            }
+          }
+        }
+      } ],
+      "tests" : [ ],
+      "providerType" : "databricks"
+    }
+  },
+  "processes" : {
+    "model1##R5L7lFRd" : {
+      "id" : "model1##R5L7lFRd",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 340,
+        "y" : -220,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Filter_1\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ltbO70Y3",
+          "slug" : "Filter_1"
+        } ],
+        "outputs" : [ {
+          "id" : "JP3pbFSL",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "WDuG0OQ4EHHbDgOTmkA-k$$pDmKCcpUh6p0395oKAryp" : {
+      "id" : "WDuG0OQ4EHHbDgOTmkA-k$$pDmKCcpUh6p0395oKAryp",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 0,
+        "y" : -280,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IjimP6Vcb-DKlHK32PnX6$$0spp_7mf12QY1UygGgJTC",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "FVSCENi7hWabeEzHg69uM$$xHLDZGCDlPxa-LnMtQQGH",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "ifeahqJlyG-4NJcZaMzVF$$-1GOl7F1Ese01EPqye8aX" : {
+      "id" : "ifeahqJlyG-4NJcZaMzVF$$-1GOl7F1Ese01EPqye8aX",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "slug" : "Limit_1",
+        "x" : -300,
+        "y" : -220,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "10"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IRZQFMGh1BT3RhZLvmGu8$$TBgYQ3kOcVPUcDDEMWFZA",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Ly4gzOioClZxzOUQ3Dj0i$$5w1Jmk3gnXgaUBQH6wNHo",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "_ZxscRG9hdwSBjFtgDmUq$$XV-jI5qUX9w67uBugogSn" : {
+      "id" : "_ZxscRG9hdwSBjFtgDmUq$$XV-jI5qUX9w67uBugogSn",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -520,
+        "y" : -360,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MYSlJJELtLFvhZtGT05Hi$$j38cHufagX0__YQ2pknvV",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "RjoOA5-E_28s0bmwRW2HZ$$i6Tm5vUysFPWhe7oM29yv",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "3jmYjjiqJ0DMLOQ2uc1fZ$$MWf1Q-EgHbWdN5NBoOhwH" : {
+      "id" : "3jmYjjiqJ0DMLOQ2uc1fZ$$MWf1Q-EgHbWdN5NBoOhwH",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : -340,
+        "y" : -480,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Organizes chronic patient records in ascending order by ID.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ "sYpmiebpfWUrJZOu67cEo$$-XN8ihGvj_AaI9VXvzcCP##id" ],
+        "orders" : [ {
+          "expression" : {
+            "expression" : "id"
+          },
+          "sortType" : "asc"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sYpmiebpfWUrJZOu67cEo$$-XN8ihGvj_AaI9VXvzcCP",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TCVIGBOYvJ_4EloAqZLg9$$BKLpvYwZf4XLXG2e3HRsg",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "eoI2Zb76iEwPWKBVHU3gj" : {
+      "id" : "eoI2Zb76iEwPWKBVHU3gj",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "all_type_databricks",
+        "slug" : "all_type_databricks",
+        "x" : -860,
+        "y" : -100,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "all_type_databricks",
+          "sourceType" : "Source",
+          "sourceName" : "qa_team.qa_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "E_8dvfUk9WS6ZG7bz8KMx",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "65mJJxJSRfkpg10tJlsRc$$jTnkKaTQSEmuKZkE3yfWe",
+    "source" : "ifeahqJlyG-4NJcZaMzVF$$-1GOl7F1Ese01EPqye8aX",
+    "sourcePort" : "Ly4gzOioClZxzOUQ3Dj0i$$5w1Jmk3gnXgaUBQH6wNHo",
+    "target" : "WDuG0OQ4EHHbDgOTmkA-k$$pDmKCcpUh6p0395oKAryp",
+    "targetPort" : "IjimP6Vcb-DKlHK32PnX6$$0spp_7mf12QY1UygGgJTC"
+  }, {
+    "id" : "vkYapJOkDpBCTAuOtjl01$$aFb58TkBPAX04quvk6KPa",
+    "source" : "3jmYjjiqJ0DMLOQ2uc1fZ$$MWf1Q-EgHbWdN5NBoOhwH",
+    "sourcePort" : "TCVIGBOYvJ_4EloAqZLg9$$BKLpvYwZf4XLXG2e3HRsg",
+    "target" : "ifeahqJlyG-4NJcZaMzVF$$-1GOl7F1Ese01EPqye8aX",
+    "targetPort" : "IRZQFMGh1BT3RhZLvmGu8$$TBgYQ3kOcVPUcDDEMWFZA"
+  }, {
+    "id" : "76VsAQThiFxUaUq6Qqcui$$cHcvjP94INV7KX2NI-akI",
+    "source" : "_ZxscRG9hdwSBjFtgDmUq$$XV-jI5qUX9w67uBugogSn",
+    "sourcePort" : "RjoOA5-E_28s0bmwRW2HZ$$i6Tm5vUysFPWhe7oM29yv",
+    "target" : "3jmYjjiqJ0DMLOQ2uc1fZ$$MWf1Q-EgHbWdN5NBoOhwH",
+    "targetPort" : "sYpmiebpfWUrJZOu67cEo$$-XN8ihGvj_AaI9VXvzcCP"
+  }, {
+    "id" : "TJLmi_18MzOUiv61S3tGf",
+    "source" : "eoI2Zb76iEwPWKBVHU3gj",
+    "sourcePort" : "E_8dvfUk9WS6ZG7bz8KMx",
+    "target" : "_ZxscRG9hdwSBjFtgDmUq$$XV-jI5qUX9w67uBugogSn",
+    "targetPort" : "MYSlJJELtLFvhZtGT05Hi$$j38cHufagX0__YQ2pknvV"
+  }, {
+    "id" : "cbcEVdPrJOWDdY5mxAP3Z",
+    "source" : "WDuG0OQ4EHHbDgOTmkA-k$$pDmKCcpUh6p0395oKAryp",
+    "sourcePort" : "FVSCENi7hWabeEzHg69uM$$xHLDZGCDlPxa-LnMtQQGH",
+    "target" : "model1##R5L7lFRd",
+    "targetPort" : "ltbO70Y3"
+  } ],
+  "component" : "Model"
+}

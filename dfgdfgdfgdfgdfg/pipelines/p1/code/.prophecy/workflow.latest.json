@@ -1,0 +1,387 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.9.1-SNAPSHOT",
+        "pyPiVersion" : "1.9.49"
+      },
+      "sparkConfigJinjaEnabled" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/p1",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "p1",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true,
+      "isNullValuesInUnitTestsEnabled" : true,
+      "sparkConfigOptions" : {
+        "disableSparkCreationTimeConfigGeneration" : true
+      }
+    },
+    "language" : "python",
+    "fabricId" : "74",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "arunsharmaprophecyioteam.hotfixprojectsql.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.warehouse.functions", "prophecy.spark_basic.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ {
+      "name" : "spark.default.parallelism",
+      "value" : "4"
+    }, {
+      "name" : "spark.sql.legacy.allowUntypedScalaUDF",
+      "value" : "true"
+    } ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "5",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "4",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "p1",
+    "configTopLevelPackage" : "p1",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "HGcsRbbyJEIZGRYQN98tf$$CNZOyoUaDoON1vYmKOS3j",
+    "source" : "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh",
+    "sourcePort" : "Ce1CD8JOo_uPXgUfLmgHU$$-pDfDFg6Siwl_VUNZfP-J",
+    "target" : "YIGI8cADAjSsHSJSOkfV0$$clABtcPrVWu4FgtQmHH7S",
+    "targetPort" : "utLSK3JAH68f-SGwpMaXg$$0n7hbcjAnrbVH0T1MSF1d"
+  }, {
+    "id" : "-tR8Gwzh6dsjiKoC8LYd3$$CQG-SxMsuZLzQ70zPazgv",
+    "source" : "YIGI8cADAjSsHSJSOkfV0$$clABtcPrVWu4FgtQmHH7S",
+    "sourcePort" : "2AYcsCb1lJhc-6U4MNB6O$$34Hy5h6KbbtQWbmGt7VAz",
+    "target" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
+    "targetPort" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf"
+  }, {
+    "id" : "a9s3ORwTviHdyPEjOD5_m",
+    "source" : "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh",
+    "sourcePort" : "Ce1CD8JOo_uPXgUfLmgHU$$-pDfDFg6Siwl_VUNZfP-J",
+    "target" : "qkesDXOb8yeiQE06-dEA8$$G2b39St3E2BqQPQb1X6Y9",
+    "targetPort" : "Smj3yYMM4p-TsJd9L5uVp$$C_3hDHgG1rRo2cLwyCfq-"
+  } ],
+  "processes" : {
+    "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh" : {
+      "id" : "2Lu62_XqJ3pbtWrel_kAV$$tF9ms3s4DfRq00Z2XTUWh",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "arun123_boolean_data",
+        "slug" : "arun123_boolean_data",
+        "x" : -2660,
+        "y" : -600,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Ce1CD8JOo_uPXgUfLmgHU$$-pDfDFg6Siwl_VUNZfP-J",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/arun123_boolean_data"
+      }
+    },
+    "YIGI8cADAjSsHSJSOkfV0$$clABtcPrVWu4FgtQmHH7S" : {
+      "id" : "YIGI8cADAjSsHSJSOkfV0$$clABtcPrVWu4FgtQmHH7S",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformatted_columns",
+        "slug" : "reformatted_columns",
+        "x" : -1900,
+        "y" : -720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "utLSK3JAH68f-SGwpMaXg$$0n7hbcjAnrbVH0T1MSF1d",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ID",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The unique identifier for each record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The name associated with the record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Is_Active",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Indicates whether the record is currently active",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "2AYcsCb1lJhc-6U4MNB6O$$34Hy5h6KbbtQWbmGt7VAz",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "ghfghfg",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "udf_1(120)"
+          },
+          "description" : ""
+        }, {
+          "target" : "sdfsdf",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "udf_2(123123)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_4.git&subPath=&tag=0.2.45&projectSubscriptionProjectId=4&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW" : {
+      "id" : "QY183zRk9Go8YajAZPRVd$$KJmAv60pikYAMuenvisqW",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "sdfsdf",
+        "slug" : "sdfsdf",
+        "x" : -1120,
+        "y" : -900,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "l6DDlBSD7Qfz-ypOZdaC-$$vV722P5iiVd7103u-gYTf",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ghfghfg",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sdfsdf",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/sdfsdf"
+      }
+    },
+    "qkesDXOb8yeiQE06-dEA8$$G2b39St3E2BqQPQb1X6Y9" : {
+      "id" : "qkesDXOb8yeiQE06-dEA8$$G2b39St3E2BqQPQb1X6Y9",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "schema_transformation",
+        "slug" : "schema_transformation",
+        "x" : -1840,
+        "y" : -880,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Smj3yYMM4p-TsJd9L5uVp$$C_3hDHgG1rRo2cLwyCfq-",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ID",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The unique identifier for each record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The name associated with the record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Is_Active",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Indicates whether the record is currently active",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "s5LUvVh0rwmSMbV9fNPKD$$mnG-pm7yE9SA-BF1eOAgT",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "br5()"
+            },
+            "param_errors" : [ {
+              "paramName" : "ID",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_4.git&subPath=&tag=0.2.45&projectSubscriptionProjectId=4&path=gems/SchemaTransform",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}

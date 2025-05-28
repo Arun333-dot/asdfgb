@@ -1,0 +1,1004 @@
+{
+  "id" : "p112",
+  "metainfo" : {
+    "label" : "p112",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    }
+  },
+  "processes" : {
+    "najaiZJGpPUPMZ4Q_cp3e$$0-NDyqe0vkDXN84ecsN2E" : {
+      "id" : "najaiZJGpPUPMZ4Q_cp3e$$0-NDyqe0vkDXN84ecsN2E",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_with_attachment",
+        "x" : 180,
+        "y" : -320
+      },
+      "properties" : {
+        "body" : "mail",
+        "subject" : "this is a email",
+        "includeData" : true,
+        "fileName" : "email",
+        "to" : [ "arunsharma@prophecy.io" ],
+        "attachmentPath" : "attachments/abcd.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vgsCw4GR9OAh4w4mMg5_k$$tuPWiHLqKgS58LwUVSy1h",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "tiny_value",
+              "dataType" : {
+                "type" : "TinyInt"
+              }
+            }, {
+              "name" : "small_value",
+              "dataType" : {
+                "type" : "SmallInt"
+              }
+            }, {
+              "name" : "big_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "is_active",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "salary",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "float_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "double_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "binary_data",
+              "dataType" : {
+                "type" : "Binary"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_at_ntz",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "birth_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "interval_value",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interval_seconds",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "metadata",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "int_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "float_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Float"
+                }
+              }
+            }, {
+              "name" : "boolean_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Boolean"
+                }
+              }
+            }, {
+              "name" : "decimal_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Decimal"
+                }
+              }
+            }, {
+              "name" : "timestamp_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Timestamp"
+                }
+              }
+            }, {
+              "name" : "date_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Date"
+                }
+              }
+            }, {
+              "name" : "struct_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "type",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "value",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  } ]
+                }
+              }
+            }, {
+              "name" : "array_of_arrays",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }
+              }
+            }, {
+              "name" : "struct_of_array",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "values",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  }
+                } ]
+              }
+            }, {
+              "name" : "struct_of_array_of_structs",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "details",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Struct",
+                      "fields" : [ {
+                        "name" : "key",
+                        "dataType" : {
+                          "type" : "String"
+                        }
+                      }, {
+                        "name" : "val",
+                        "dataType" : {
+                          "type" : "Integer"
+                        }
+                      } ]
+                    }
+                  }
+                } ]
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "XloustabUooIGRlfWXuYD" : {
+      "id" : "XloustabUooIGRlfWXuYD",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksSource",
+      "metadata" : {
+        "label" : "DatabricksSource_0",
+        "x" : -440,
+        "y" : -120,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "authType" : "pat",
+            "id" : "connnection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "databricks",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "name" : "id",
+                "dataType" : {
+                  "type" : "int32"
+                }
+              }, {
+                "name" : "tiny_value",
+                "dataType" : {
+                  "type" : "int8"
+                }
+              }, {
+                "name" : "small_value",
+                "dataType" : {
+                  "type" : "int16"
+                }
+              }, {
+                "name" : "big_value",
+                "dataType" : {
+                  "type" : "int64"
+                }
+              }, {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "is_active",
+                "dataType" : {
+                  "type" : "bool"
+                }
+              }, {
+                "name" : "salary",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "float_value",
+                "dataType" : {
+                  "type" : "float32"
+                }
+              }, {
+                "name" : "double_value",
+                "dataType" : {
+                  "type" : "float64"
+                }
+              }, {
+                "name" : "binary_data",
+                "dataType" : {
+                  "type" : "binary"
+                }
+              }, {
+                "name" : "created_at",
+                "dataType" : {
+                  "type" : "timestamp"
+                }
+              }, {
+                "name" : "created_at_ntz",
+                "dataType" : {
+                  "type" : "timestamp"
+                }
+              }, {
+                "name" : "birth_date",
+                "dataType" : {
+                  "type" : "date32"
+                }
+              }, {
+                "name" : "interval_value",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "interval_seconds",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "metadata",
+                "dataType" : {
+                  "type" : "Map",
+                  "keyType" : {
+                    "type" : "utf8"
+                  },
+                  "valueType" : {
+                    "type" : "utf8"
+                  }
+                }
+              }, {
+                "name" : "int_array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "int32"
+                  }
+                }
+              }, {
+                "name" : "float_array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "float32"
+                  }
+                }
+              }, {
+                "name" : "boolean_array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "bool"
+                  }
+                }
+              }, {
+                "name" : "decimal_array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "decimal"
+                  }
+                }
+              }, {
+                "name" : "timestamp_array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "timestamp"
+                  }
+                }
+              }, {
+                "name" : "date_array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "date32"
+                  }
+                }
+              }, {
+                "name" : "struct_array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Struct",
+                    "fields" : [ {
+                      "name" : "type",
+                      "dataType" : {
+                        "type" : "utf8"
+                      }
+                    }, {
+                      "name" : "value",
+                      "dataType" : {
+                        "type" : "int32"
+                      }
+                    } ]
+                  }
+                }
+              }, {
+                "name" : "array_of_arrays",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "int32"
+                    }
+                  }
+                }
+              }, {
+                "name" : "struct_of_array",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "name",
+                    "dataType" : {
+                      "type" : "utf8"
+                    }
+                  }, {
+                    "name" : "values",
+                    "dataType" : {
+                      "type" : "Array",
+                      "dataType" : {
+                        "type" : "int32"
+                      }
+                    }
+                  } ]
+                }
+              }, {
+                "name" : "struct_of_array_of_structs",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "id",
+                    "dataType" : {
+                      "type" : "int32"
+                    }
+                  }, {
+                    "name" : "details",
+                    "dataType" : {
+                      "type" : "Array",
+                      "dataType" : {
+                        "type" : "Struct",
+                        "fields" : [ {
+                          "name" : "key",
+                          "dataType" : {
+                            "type" : "utf8"
+                          }
+                        }, {
+                          "name" : "val",
+                          "dataType" : {
+                            "type" : "int32"
+                          }
+                        } ]
+                      }
+                    }
+                  } ]
+                }
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "tableFullName" : {
+            "database" : "qa_team",
+            "name" : "all_type_databricks",
+            "schema" : "qa_database"
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "2b7e9280-ec92-40fc-a5bd-662c4a323198",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "tiny_value",
+              "dataType" : {
+                "type" : "TinyInt"
+              }
+            }, {
+              "name" : "small_value",
+              "dataType" : {
+                "type" : "SmallInt"
+              }
+            }, {
+              "name" : "big_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "is_active",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "salary",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "float_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "double_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "binary_data",
+              "dataType" : {
+                "type" : "Binary"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_at_ntz",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "birth_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "interval_value",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interval_seconds",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "metadata",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "int_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "float_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Float"
+                }
+              }
+            }, {
+              "name" : "boolean_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Boolean"
+                }
+              }
+            }, {
+              "name" : "decimal_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Decimal"
+                }
+              }
+            }, {
+              "name" : "timestamp_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Timestamp"
+                }
+              }
+            }, {
+              "name" : "date_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Date"
+                }
+              }
+            }, {
+              "name" : "struct_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "type",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "value",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  } ]
+                }
+              }
+            }, {
+              "name" : "array_of_arrays",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }
+              }
+            }, {
+              "name" : "struct_of_array",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "values",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  }
+                } ]
+              }
+            }, {
+              "name" : "struct_of_array_of_structs",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "details",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Struct",
+                      "fields" : [ {
+                        "name" : "key",
+                        "dataType" : {
+                          "type" : "String"
+                        }
+                      }, {
+                        "name" : "val",
+                        "dataType" : {
+                          "type" : "Integer"
+                        }
+                      } ]
+                    }
+                  }
+                } ]
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "EvfdLXiiHdYGNf050v2AR$$blAWQgTgSf-u7rsmmfdME" : {
+      "id" : "EvfdLXiiHdYGNf050v2AR$$blAWQgTgSf-u7rsmmfdME",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_with_attachment_1",
+        "x" : 200,
+        "y" : -120
+      },
+      "properties" : {
+        "body" : "mail",
+        "subject" : "this is a email",
+        "includeData" : true,
+        "fileName" : "email",
+        "to" : [ "arunsharma@prophecy.io" ],
+        "attachmentPath" : "attachments/abcd.xlsx",
+        "fileFormat" : "xlsx",
+        "hasTemplate" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6T8h0igp3Bt9G_eyzgjRE$$yD1YnXy8sJETFAuWxuq2O",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "tiny_value",
+              "dataType" : {
+                "type" : "TinyInt"
+              }
+            }, {
+              "name" : "small_value",
+              "dataType" : {
+                "type" : "SmallInt"
+              }
+            }, {
+              "name" : "big_value",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "is_active",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "salary",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "float_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "double_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "binary_data",
+              "dataType" : {
+                "type" : "Binary"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_at_ntz",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "birth_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "interval_value",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interval_seconds",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "metadata",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "int_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "float_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Float"
+                }
+              }
+            }, {
+              "name" : "boolean_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Boolean"
+                }
+              }
+            }, {
+              "name" : "decimal_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Decimal"
+                }
+              }
+            }, {
+              "name" : "timestamp_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Timestamp"
+                }
+              }
+            }, {
+              "name" : "date_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Date"
+                }
+              }
+            }, {
+              "name" : "struct_array",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "type",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "value",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  } ]
+                }
+              }
+            }, {
+              "name" : "array_of_arrays",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Array",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }
+              }
+            }, {
+              "name" : "struct_of_array",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "values",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  }
+                } ]
+              }
+            }, {
+              "name" : "struct_of_array_of_structs",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "details",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Struct",
+                      "fields" : [ {
+                        "name" : "key",
+                        "dataType" : {
+                          "type" : "String"
+                        }
+                      }, {
+                        "name" : "val",
+                        "dataType" : {
+                          "type" : "Integer"
+                        }
+                      } ]
+                    }
+                  }
+                } ]
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "9JlJQ7nkdretxnRR3BiVN",
+    "source" : "XloustabUooIGRlfWXuYD",
+    "sourcePort" : "2b7e9280-ec92-40fc-a5bd-662c4a323198",
+    "target" : "najaiZJGpPUPMZ4Q_cp3e$$0-NDyqe0vkDXN84ecsN2E",
+    "targetPort" : "vgsCw4GR9OAh4w4mMg5_k$$tuPWiHLqKgS58LwUVSy1h"
+  }, {
+    "id" : "dlbaWYkhaYgQp6GELL2wY",
+    "source" : "XloustabUooIGRlfWXuYD",
+    "sourcePort" : "2b7e9280-ec92-40fc-a5bd-662c4a323198",
+    "target" : "EvfdLXiiHdYGNf050v2AR$$blAWQgTgSf-u7rsmmfdME",
+    "targetPort" : "6T8h0igp3Bt9G_eyzgjRE$$yD1YnXy8sJETFAuWxuq2O"
+  } ],
+  "component" : "Pipeline"
+}

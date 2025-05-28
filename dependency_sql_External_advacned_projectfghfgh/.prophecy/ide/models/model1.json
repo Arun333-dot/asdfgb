@@ -1,0 +1,85 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##A9R0jLPQ" : {
+      "id" : "model1##A9R0jLPQ",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM sqlmodel\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lzsAfxJU",
+          "slug" : "sqlmodel"
+        } ],
+        "outputs" : [ {
+          "id" : "wM0Wc42u",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "j-jP-tSmiMsJ2OztEesBE" : {
+      "id" : "j-jP-tSmiMsJ2OztEesBE",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "sqlmodel",
+        "slug" : "sqlmodel",
+        "x" : -1100,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "sqlmodel",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZI-ugvPyK8nm7FBycdUJf",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "LLT0bVWpLxgCaFme3jFUI",
+    "source" : "j-jP-tSmiMsJ2OztEesBE",
+    "sourcePort" : "ZI-ugvPyK8nm7FBycdUJf",
+    "target" : "model1##A9R0jLPQ",
+    "targetPort" : "lzsAfxJU"
+  } ],
+  "component" : "Model"
+}

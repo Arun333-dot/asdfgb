@@ -1,0 +1,1917 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "data_diff_1000_records",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "data_diff_1000_records",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "data_diff_1000_records",
+              "expression" : {
+                "expression" : "data_diff_1000_records.Name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "data_diff_1000_records.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "data_diff_1000_records.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "data_diff_1000_records.City"
+              },
+              "alias" : "City"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "data_diff_1000_records",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "different_types_2",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "different_types_2",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "salary" ],
+            "conditions" : [ {
+              "alias" : "different_types_2",
+              "expression" : {
+                "expression" : "different_types_2.Salary = all_type_databricks.salary"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "different_types_2.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "different_types_2.Name"
+              },
+              "alias" : "Name"
+            }, {
+              "expression" : {
+                "expression" : "different_types_2.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "different_types_2.City"
+              },
+              "alias" : "City"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "different_types_2",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "salary" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "employees_2",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "employees_2",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "employees_2",
+              "expression" : {
+                "expression" : "employees_2.Name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "employees_2.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "employees_2.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "employees_2.City"
+              },
+              "alias" : "City"
+            }, {
+              "expression" : {
+                "expression" : "employees_2.Salary"
+              },
+              "alias" : "Salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "employees_2",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "employees_3",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "employees_3",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "employees_3",
+              "expression" : {
+                "expression" : "employees_3.Name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "employees_3.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "employees_3.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "employees_3.City"
+              },
+              "alias" : "City"
+            }, {
+              "expression" : {
+                "expression" : "employees_3.Salary"
+              },
+              "alias" : "Salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "employees_3",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "million_records",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "million_records_1",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "million_records_1",
+              "expression" : {
+                "expression" : "million_records_1.Name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "million_records_1.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "million_records_1.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "million_records_1.City"
+              },
+              "alias" : "City"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "million_records_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "employees_1",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "employees_1",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "employees_1",
+              "expression" : {
+                "expression" : "employees_1.Name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "employees_1.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "employees_1.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "employees_1.City"
+              },
+              "alias" : "City"
+            }, {
+              "expression" : {
+                "expression" : "employees_1.Salary"
+              },
+              "alias" : "Salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "employees_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "file_2",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "file_2",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "file_2",
+              "expression" : {
+                "expression" : "file_2.Name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "file_2.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "file_2.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "file_2.Grade"
+              },
+              "alias" : "Grade"
+            }, {
+              "expression" : {
+                "expression" : "file_2.Subject"
+              },
+              "alias" : "Subject"
+            }, {
+              "expression" : {
+                "expression" : "file_2.Marks"
+              },
+              "alias" : "Marks"
+            }, {
+              "expression" : {
+                "expression" : "file_2.School"
+              },
+              "alias" : "School"
+            }, {
+              "expression" : {
+                "expression" : "file_2.District"
+              },
+              "alias" : "District"
+            }, {
+              "expression" : {
+                "expression" : "file_2.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "file_2.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "file_2",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "large_length_data",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "large_length_data",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "large_length_data",
+              "expression" : {
+                "expression" : "large_length_data.Name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "large_length_data.ID"
+              },
+              "alias" : "ID"
+            }, {
+              "expression" : {
+                "expression" : "large_length_data.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "large_length_data.City"
+              },
+              "alias" : "City"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "large_length_data",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "prophecy__temp_pipeline1_post_sftpsource_0_0",
+            "sourceName" : "hive_metastore.arun123",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "prophecy__temp_pipeline1_post_sftpsource_0_0",
+        "canJoinWith" : [ {
+          "processLabel" : "all_type_databricks",
+          "processId" : "aQynQmOoWMLWlmjzaCgNV",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "prophecy__temp_pipeline1_post_sftpsource_0_0",
+              "expression" : {
+                "expression" : "prophecy__temp_pipeline1_post_sftpsource_0_0.name = all_type_databricks.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "prophecy__temp_pipeline1_post_sftpsource_0_0.email"
+              },
+              "alias" : "email"
+            }, {
+              "expression" : {
+                "expression" : "prophecy__temp_pipeline1_post_sftpsource_0_0.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "prophecy__temp_pipeline1_post_sftpsource_0_0.city"
+              },
+              "alias" : "city"
+            }, {
+              "expression" : {
+                "expression" : "prophecy__temp_pipeline1_post_sftpsource_0_0.country"
+              },
+              "alias" : "country"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.double_value"
+              },
+              "alias" : "double_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.boolean_array"
+              },
+              "alias" : "boolean_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array"
+              },
+              "alias" : "struct_of_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_value"
+              },
+              "alias" : "interval_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.array_of_arrays"
+              },
+              "alias" : "array_of_arrays"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_of_array_of_structs"
+              },
+              "alias" : "struct_of_array_of_structs"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.big_value"
+              },
+              "alias" : "big_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.timestamp_array"
+              },
+              "alias" : "timestamp_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_array"
+              },
+              "alias" : "float_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.decimal_array"
+              },
+              "alias" : "decimal_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.metadata"
+              },
+              "alias" : "metadata"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.struct_array"
+              },
+              "alias" : "struct_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.birth_date"
+              },
+              "alias" : "birth_date"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.float_value"
+              },
+              "alias" : "float_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.tiny_value"
+              },
+              "alias" : "tiny_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.binary_data"
+              },
+              "alias" : "binary_data"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.interval_seconds"
+              },
+              "alias" : "interval_seconds"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.small_value"
+              },
+              "alias" : "small_value"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.date_array"
+              },
+              "alias" : "date_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.int_array"
+              },
+              "alias" : "int_array"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "all_type_databricks.created_at_ntz"
+              },
+              "alias" : "created_at_ntz"
+            } ],
+            "headAlias" : "prophecy__temp_pipeline1_post_sftpsource_0_0",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : false
+        } ]
+      } ]
+    },
+    "version" : 3,
+    "properties" : {
+      "name" : "model1",
+      "columns" : [ {
+        "name" : "ID",
+        "dataType" : {
+          "type" : "Bigint"
+        }
+      }, {
+        "name" : "Name",
+        "dataType" : {
+          "type" : "String"
+        }
+      }, {
+        "name" : "Age",
+        "dataType" : {
+          "type" : "Bigint"
+        }
+      }, {
+        "name" : "City",
+        "dataType" : {
+          "type" : "String"
+        }
+      } ],
+      "tests" : [ ],
+      "providerType" : "databricks"
+    }
+  },
+  "processes" : {
+    "n-SZdY134SecRZ9KLfT4o$$Wlg9A5peOHG_I-2hHtwgN" : {
+      "id" : "n-SZdY134SecRZ9KLfT4o$$Wlg9A5peOHG_I-2hHtwgN",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "ordered_reformat_1",
+        "slug" : "ordered_reformat_1",
+        "x" : -520,
+        "y" : -60,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Organizes chronic patient records in ascending order by ID.",
+        "autoUpdateComment" : true,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "GBI8UcZu-dz-o8TkXE7HD$$ejcNlCzfvikYc9RMZrIBM##id" ],
+        "orders" : [ {
+          "expression" : {
+            "expression" : "id"
+          },
+          "sortType" : "asc",
+          "nullsType" : "nulls first"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GBI8UcZu-dz-o8TkXE7HD$$ejcNlCzfvikYc9RMZrIBM",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "D7OvkOwawQNkeC7mfUp24$$Yx2wNk6mqagmm5F_r_BLQ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "Yk4tihx1WvaZzdtKh7Dn7" : {
+      "id" : "Yk4tihx1WvaZzdtKh7Dn7",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "million_records",
+        "slug" : "million_records",
+        "x" : -820,
+        "y" : -60,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "million_records",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Dkhjv-9WAI1OBHhYTn94v",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "gmCEHEzhGx2J3OVHMgvSL$$mrjWE2nU8UB19hiPb9zkj" : {
+      "id" : "gmCEHEzhGx2J3OVHMgvSL$$mrjWE2nU8UB19hiPb9zkj",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -680,
+        "y" : -60,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pQ4BsRUWlb77SlfZwezXB$$QozlgvzT5UhZtU-tO2pMA",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "8f2lyj9UQc_NBq3J3Zlhs$$kLtk6wOhLBO1Xei4VbIHf",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "D95w336XhiyJ2sBtf8_Ui$$HBdkHdle0LTMOu4Fxd3y7" : {
+      "id" : "D95w336XhiyJ2sBtf8_Ui$$HBdkHdle0LTMOu4Fxd3y7",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "slug" : "Limit_1",
+        "x" : -340,
+        "y" : -60,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "10"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4LOASmTIk2AMn8XKeA7cn$$9xOx589qoG9CBj4_btSH5",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "RazYfmM50n3j8K5zYCRS_$$FOhnW0F4bKOKgMR4UcMOe",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "aQynQmOoWMLWlmjzaCgNV" : {
+      "id" : "aQynQmOoWMLWlmjzaCgNV",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "all_type_databricks",
+        "slug" : "all_type_databricks",
+        "x" : -1160,
+        "y" : -340,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "all_type_databricks",
+          "sourceType" : "Source",
+          "sourceName" : "qa_team.qa_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "nTTnfolbXfXCeARRWPgU5",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "l2VUDGqEMZ4U_rLHAPAMr$$8fDgSRH3eyMDYmyPgYKrG" : {
+      "id" : "l2VUDGqEMZ4U_rLHAPAMr$$8fDgSRH3eyMDYmyPgYKrG",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -160,
+        "y" : -60,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tiGSvwrwuibUlcTJpzLb2$$yed6LEv_XMEIyAo7nqDkq",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "F8GjbrUwQ7QXxKI8taqoq$$_n4hZAlLYBnKu1kcanft-",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "model1##EJan7MBG" : {
+      "id" : "model1##EJan7MBG",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 0,
+        "y" : -60,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Filter_1\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AcGtNSDD",
+          "slug" : "Filter_1"
+        } ],
+        "outputs" : [ {
+          "id" : "lWoQcrGg",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "Li300CpVgA95nwZseua0k$$0m1Rfq6Mqux2iTGu_a21U",
+    "source" : "Yk4tihx1WvaZzdtKh7Dn7",
+    "sourcePort" : "Dkhjv-9WAI1OBHhYTn94v",
+    "target" : "gmCEHEzhGx2J3OVHMgvSL$$mrjWE2nU8UB19hiPb9zkj",
+    "targetPort" : "pQ4BsRUWlb77SlfZwezXB$$QozlgvzT5UhZtU-tO2pMA"
+  }, {
+    "id" : "7C9Pqb3xi805mnAejd56L$$euPg2JKLRJQ7MEMWWovBm",
+    "source" : "gmCEHEzhGx2J3OVHMgvSL$$mrjWE2nU8UB19hiPb9zkj",
+    "sourcePort" : "8f2lyj9UQc_NBq3J3Zlhs$$kLtk6wOhLBO1Xei4VbIHf",
+    "target" : "n-SZdY134SecRZ9KLfT4o$$Wlg9A5peOHG_I-2hHtwgN",
+    "targetPort" : "GBI8UcZu-dz-o8TkXE7HD$$ejcNlCzfvikYc9RMZrIBM"
+  }, {
+    "id" : "nRsgk1CLiWeSox0SnHO8Z$$9tdZHXACGTcp_q0_-mDFX",
+    "source" : "n-SZdY134SecRZ9KLfT4o$$Wlg9A5peOHG_I-2hHtwgN",
+    "sourcePort" : "D7OvkOwawQNkeC7mfUp24$$Yx2wNk6mqagmm5F_r_BLQ",
+    "target" : "D95w336XhiyJ2sBtf8_Ui$$HBdkHdle0LTMOu4Fxd3y7",
+    "targetPort" : "4LOASmTIk2AMn8XKeA7cn$$9xOx589qoG9CBj4_btSH5"
+  }, {
+    "id" : "iYWwBisYzNiq8ctW27gry$$IYdc76DxC2HVnYD3Udq98",
+    "source" : "D95w336XhiyJ2sBtf8_Ui$$HBdkHdle0LTMOu4Fxd3y7",
+    "sourcePort" : "RazYfmM50n3j8K5zYCRS_$$FOhnW0F4bKOKgMR4UcMOe",
+    "target" : "l2VUDGqEMZ4U_rLHAPAMr$$8fDgSRH3eyMDYmyPgYKrG",
+    "targetPort" : "tiGSvwrwuibUlcTJpzLb2$$yed6LEv_XMEIyAo7nqDkq"
+  }, {
+    "id" : "a3TNZhfrxggHW7qYdB3md",
+    "source" : "l2VUDGqEMZ4U_rLHAPAMr$$8fDgSRH3eyMDYmyPgYKrG",
+    "sourcePort" : "F8GjbrUwQ7QXxKI8taqoq$$_n4hZAlLYBnKu1kcanft-",
+    "target" : "model1##EJan7MBG",
+    "targetPort" : "AcGtNSDD"
+  } ],
+  "component" : "Model"
+}

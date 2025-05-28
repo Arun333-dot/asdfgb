@@ -1,0 +1,12 @@
+---
+version: 2
+models:
+- name: "model4"
+  columns:
+  - name: "name"
+    dataType:
+      type: "String"
+  - name: "age"
+    dataType:
+      type: "Integer"
+  tests: []

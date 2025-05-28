@@ -1,0 +1,96 @@
+{
+  "id" : "model_pipeline4_WindowFunction_1",
+  "metainfo" : {
+    "label" : "model_pipeline4_WindowFunction_1",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"prophecy__temp_pipeline4_post_WindowFunction_1_0\"",
+        "materialized" : "table",
+        "database" : "\"hive_metastore\"",
+        "schema" : "\"arun123\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "prophecy__temp_pipeline4_post_WindowFunction_1_0" : {
+      "id" : "prophecy__temp_pipeline4_post_WindowFunction_1_0",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM WindowFunction_1\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0_1",
+          "slug" : "input_port_0_1"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0_1",
+          "slug" : "output_port_0_1"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "DEPCbZtRedpZzH4SMTUEM$$Alu3V1zwGydvayzmE-wFY" : {
+      "id" : "DEPCbZtRedpZzH4SMTUEM$$Alu3V1zwGydvayzmE-wFY",
+      "component" : "WindowFunction",
+      "metadata" : {
+        "label" : "WindowFunction_1",
+        "x" : -880,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "frameEndType" : null,
+        "frameEndValue" : null,
+        "expressions" : [ ],
+        "frameType" : null,
+        "activeTab" : "partitionTab",
+        "columnsSelector" : [ ],
+        "partitionExpressions" : [ ],
+        "frameStartValue" : null,
+        "frameStartType" : null,
+        "ordersBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Wl2WlOrIbPvTsSS-Zc6VH$$mI5H6RX4iFsg9ts3tiWCq",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "gXn3o4vjDdiQhH8UEGmmv$$0-eaiDfHL8Nlp19e8MxgN",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_DEPCbZtRedpZzH4SMTUEM$$Alu3V1zwGydvayzmE-wFY_prophecy__temp_pipeline4_post_WindowFunction_1_0",
+    "source" : "DEPCbZtRedpZzH4SMTUEM$$Alu3V1zwGydvayzmE-wFY",
+    "sourcePort" : "gXn3o4vjDdiQhH8UEGmmv$$0-eaiDfHL8Nlp19e8MxgN",
+    "target" : "prophecy__temp_pipeline4_post_WindowFunction_1_0",
+    "targetPort" : "input_port_0_1"
+  } ],
+  "component" : "Model"
+}

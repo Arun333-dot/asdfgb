@@ -1,0 +1,85 @@
+name: snowflake_simple_Test_project_
+description: ''
+version: '1'
+author: arunsharma@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-11 10:11:43'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-11 10:11:46'
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/pipeline1:
+    name: pipeline1
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pipeline1.json
+    createdAt: '2025-03-11 10:17:18'
+  .prophecy/metadata/sqlorchestratorpipeline/xml_pipeline:
+    name: xml_pipeline
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/xml_pipeline.json
+    createdAt: '2025-03-11 18:09:12'
+  .prophecy/metadata/sqlorchestratorpipeline/XLSX_PIPELINE:
+    name: XLSX_PIPELINE
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/XLSX_PIPELINE.json
+    createdAt: '2025-03-11 19:12:11'
+  .prophecy/metadata/sqlorchestratorpipeline/json_pipeline:
+    name: json_pipeline
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/json_pipeline.json
+    createdAt: '2025-03-11 17:50:11'
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma@prophecy.io
+  createdAt: '2025-03-11 10:11:43'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

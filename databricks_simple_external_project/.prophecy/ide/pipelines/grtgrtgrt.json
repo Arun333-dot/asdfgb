@@ -1,0 +1,68 @@
+{
+  "id" : "grtgrtgrt",
+  "metainfo" : {
+    "label" : "grtgrtgrt",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "YS6CM17_cqNjY7EPmpNJ5$$fX0nh-fV1ZsFeLzyeMcTN" : {
+      "id" : "YS6CM17_cqNjY7EPmpNJ5$$fX0nh-fV1ZsFeLzyeMcTN",
+      "component" : "RestAPI",
+      "metadata" : {
+        "label" : "fetch_invalid_url",
+        "x" : -1020,
+        "y" : -480
+      },
+      "properties" : {
+        "method" : "GET",
+        "body" : "",
+        "url" : "this_is_invalid_url",
+        "params" : "",
+        "headers" : ""
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "g5IhBfHIGMvt2xwOzsHMu$$nfjCytrjrRevkRCufdFJG",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "QUhsF0Whfu4vCwlWa8ubZ$$p6Oy6NGJ8B7w7soTP67Ds",
+          "slug" : "out0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "vnWS_p0sy2s5UUPQk7Rir$$1PnaBbDdMgoJQMhfYem8w" : {
+      "id" : "vnWS_p0sy2s5UUPQk7Rir$$1PnaBbDdMgoJQMhfYem8w",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "m1_1",
+        "x" : -1520,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "macroName" : "m1",
+        "parameters" : [ ],
+        "projectName" : "databricks_shared_external_project"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "iwm2sEzapC9O0FeApIwGK$$AUeyUKqudM1_-ugILTrWy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

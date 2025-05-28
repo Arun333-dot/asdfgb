@@ -1,0 +1,301 @@
+{
+  "id" : "app_p10",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "p10"
+  },
+  "definition" : {
+    "template" : [ {
+      "id" : "TextInput1",
+      "type" : "TextInput",
+      "properties" : {
+        "configField" : "config1",
+        "label" : "label_config1",
+        "defaultValue" : "config1_value"
+      },
+      "errors" : { }
+    }, {
+      "id" : "RadioGroup1",
+      "type" : "RadioGroup",
+      "properties" : {
+        "configField" : "config2",
+        "options" : [ {
+          "label" : "option",
+          "value" : "option",
+          "caption" : "option",
+          "hint" : "option",
+          "error" : false
+        } ],
+        "defaultValue" : "config2_value",
+        "isRequired" : true
+      },
+      "errors" : { }
+    }, {
+      "id" : "Textarea1",
+      "type" : "Textarea",
+      "properties" : {
+        "configField" : "config3",
+        "label" : "config3_label",
+        "defaultValue" : "config3_value",
+        "tooltip" : "config3_value_tooltip"
+      },
+      "errors" : { }
+    }, {
+      "id" : "FileUpload1",
+      "type" : "FileUpload",
+      "properties" : {
+        "sourceId" : "tXGD2AgkdESiKgSTRJYSn",
+        "sourceName" : "DatabricksSource_0",
+        "fileTypes" : [ "xls", "json", "csv" ],
+        "tooltip" : "",
+        "isRequired" : true
+      },
+      "errors" : { }
+    }, {
+      "id" : "FileUpload2",
+      "type" : "FileUpload",
+      "properties" : {
+        "sourceId" : "tXGD2AgkdESiKgSTRJYSn",
+        "sourceName" : "DatabricksSource_0",
+        "fileTypes" : [ ]
+      },
+      "errors" : { }
+    }, {
+      "id" : "Image1",
+      "type" : "Image",
+      "properties" : {
+        "sourceType" : "URL",
+        "source" : "https://www.google.com/imgres?q=image%20url&imgurl=https%3A%2F%2Fdcblog.b-cdn.net%2Fwp-content%2Fuploads%2F2021%2F02%2FFull-form-of-URL-1.jpg&imgrefurl=https%3A%2F%2Fwww.digitalclassworld.com%2Fblog%2Ffull-form-of-url%2F&docid=MpnWRLJ7F4FAJM&tbnid=vCof6eSLYDEmeM&vet=12ahUKEwjg9ZXuirqMAxX1UPUHHfCvK4cQM3oECFYQAA..i&w=1600&h=1288&hcb=2&ved=2ahUKEwjg9ZXuirqMAxX1UPUHHfCvK4cQM3oECFYQAA",
+        "height" : "auto",
+        "width" : "cover",
+        "tooltip" : "tooltip"
+      },
+      "errors" : { }
+    }, {
+      "id" : "Dropdown1",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "config1",
+        "label" : "config1_label",
+        "options" : [ {
+          "label" : "option",
+          "value" : "option",
+          "tooltip" : "option",
+          "error" : false
+        } ],
+        "defaultValue" : "config1_value",
+        "helpText" : "config ,abvel",
+        "tooltip" : "config dropdown"
+      },
+      "errors" : { }
+    }, {
+      "id" : "DataPreview1",
+      "type" : "DataPreview",
+      "properties" : {
+        "tableId" : "T92unsQ4DiQxfkrbINxne",
+        "columns" : [ {
+          "key" : "id",
+          "column" : "id",
+          "label" : "id",
+          "selected" : true
+        }, {
+          "key" : "tiny_value",
+          "column" : "tiny_value",
+          "label" : "tiny_value",
+          "selected" : true
+        }, {
+          "key" : "small_value",
+          "column" : "small_value",
+          "label" : "small_value",
+          "selected" : true
+        }, {
+          "key" : "big_value",
+          "column" : "big_value",
+          "label" : "big_value",
+          "selected" : true
+        }, {
+          "key" : "name",
+          "column" : "name",
+          "label" : "name",
+          "selected" : true
+        }, {
+          "key" : "is_active",
+          "column" : "is_active",
+          "label" : "is_active",
+          "selected" : true
+        }, {
+          "key" : "salary",
+          "column" : "salary",
+          "label" : "salary",
+          "selected" : true
+        }, {
+          "key" : "float_value",
+          "column" : "float_value",
+          "label" : "float_value",
+          "selected" : true
+        }, {
+          "key" : "double_value",
+          "column" : "double_value",
+          "label" : "double_value",
+          "selected" : true
+        }, {
+          "key" : "binary_data",
+          "column" : "binary_data",
+          "label" : "binary_data",
+          "selected" : true
+        }, {
+          "key" : "created_at",
+          "column" : "created_at",
+          "label" : "created_at",
+          "selected" : true
+        }, {
+          "key" : "created_at_ntz",
+          "column" : "created_at_ntz",
+          "label" : "created_at_ntz",
+          "selected" : true
+        }, {
+          "key" : "birth_date",
+          "column" : "birth_date",
+          "label" : "birth_date",
+          "selected" : true
+        }, {
+          "key" : "interval_value",
+          "column" : "interval_value",
+          "label" : "interval_value",
+          "selected" : true
+        }, {
+          "key" : "interval_seconds",
+          "column" : "interval_seconds",
+          "label" : "interval_seconds",
+          "selected" : true
+        }, {
+          "key" : "metadata",
+          "column" : "metadata",
+          "label" : "metadata",
+          "selected" : true
+        }, {
+          "key" : "int_array",
+          "column" : "int_array",
+          "label" : "int_array",
+          "selected" : true
+        }, {
+          "key" : "float_array",
+          "column" : "float_array",
+          "label" : "float_array",
+          "selected" : true
+        }, {
+          "key" : "boolean_array",
+          "column" : "boolean_array",
+          "label" : "boolean_array",
+          "selected" : true
+        }, {
+          "key" : "decimal_array",
+          "column" : "decimal_array",
+          "label" : "decimal_array",
+          "selected" : true
+        }, {
+          "key" : "timestamp_array",
+          "column" : "timestamp_array",
+          "label" : "timestamp_array",
+          "selected" : true
+        }, {
+          "key" : "date_array",
+          "column" : "date_array",
+          "label" : "date_array",
+          "selected" : true
+        }, {
+          "key" : "struct_array",
+          "column" : "struct_array",
+          "label" : "struct_array",
+          "selected" : true
+        }, {
+          "key" : "array_of_arrays",
+          "column" : "array_of_arrays",
+          "label" : "array_of_arrays",
+          "selected" : true
+        }, {
+          "key" : "struct_of_array",
+          "column" : "struct_of_array",
+          "label" : "struct_of_array",
+          "selected" : true
+        }, {
+          "key" : "struct_of_array_of_structs",
+          "column" : "struct_of_array_of_structs",
+          "label" : "struct_of_array_of_structs",
+          "selected" : true
+        } ],
+        "title" : "Table Title"
+      },
+      "errors" : { }
+    }, {
+      "id" : "Text1",
+      "type" : "Text",
+      "properties" : {
+        "content" : "this is aruns text\n\n## this is heaing1\n\n## this is heading 2*dfgdfg*\n\n## **this is bold leetter**\n\n## **this is sublink **\n\n- htis is normal text\n- this is bulled list**dgfgfddfgdfgdf**\n- list elemetn 1\n- list element 2\n\n1. this is number list\n2. thius is number list 2\n\nthis element in quotesthis element is again in quotes"
+      },
+      "errors" : { }
+    } ]
+  },
+  "instances" : {
+    "config1" : {
+      "config" : {
+        "config1" : "option2",
+        "config2" : "option",
+        "config3" : "ghhg"
+      },
+      "sources" : {
+        "tXGD2AgkdESiKgSTRJYSn" : {
+          "fileName" : "large_csv_500_columns.csv",
+          "process" : {
+            "component" : "OrchestrationSource",
+            "kind" : "DatabricksSource",
+            "id" : "28ec19b3-de19-42ec-9ea3-416e199167be",
+            "ports" : {
+              "inputs" : [ ],
+              "outputs" : [ {
+                "id" : "640c43ea-ade6-4dd0-bc01-35984d7b997b",
+                "slug" : "out0"
+              } ]
+            },
+            "metadata" : {
+              "label" : "DatabricksSource",
+              "x" : 0,
+              "y" : 0,
+              "phase" : 0
+            },
+            "properties" : {
+              "connector" : {
+                "kind" : "databricks",
+                "properties" : {
+                  "authType" : "pat",
+                  "id" : "connnection"
+                },
+                "type" : "connector"
+              },
+              "format" : {
+                "kind" : "databricks",
+                "properties" : { }
+              },
+              "properties" : {
+                "tableFullName" : {
+                  "database" : "qa_team",
+                  "name" : "customer",
+                  "schema" : "qa_database"
+                }
+              }
+            }
+          }
+        }
+      },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    }
+  }
+}

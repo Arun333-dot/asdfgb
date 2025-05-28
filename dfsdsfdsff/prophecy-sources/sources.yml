@@ -1,0 +1,39 @@
+---
+version: 2
+sources:
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  tables: []
+- name: "hive_metastore.arun123"
+  database: "hive_metastore"
+  schema: "arun123"
+  tables:
+  - name: "million_records"
+    columns:
+    - name: "ID"
+      dataType:
+        type: "Bigint"
+    - name: "Name"
+      dataType:
+        type: "String"
+    - name: "Age"
+      dataType:
+        type: "Bigint"
+    - name: "City"
+      dataType:
+        type: "String"
+    type: "table"
+  - name: "bigint_data"
+    description: "Large numerical data records used for analytical purposes, supporting\
+      \ insights into significant figures and trends."
+    columns:
+    - name: "id"
+      description: "Unique identifier for each record in the dataset"
+      dataType:
+        type: "Integer"
+    - name: "big_number"
+      description: "A large numerical value represented as Bigint"
+      dataType:
+        type: "Bigint"
+    type: "table"

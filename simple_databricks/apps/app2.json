@@ -1,0 +1,22 @@
+{
+  "id" : "app2",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pipeline11"
+  },
+  "instances" : {
+    "cx. " : {
+      "config" : { },
+      "sources" : { },
+      "schedule" : {
+        "cron" : "* 0 2 * * * *",
+        "timeZone" : "GMT",
+        "emailOnSuccess" : false,
+        "emailOnFailure" : false,
+        "emailOnStart" : false,
+        "emails" : [ "email@gmail.com" ],
+        "enabled" : false
+      }
+    }
+  }
+}

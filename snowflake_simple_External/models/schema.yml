@@ -1,0 +1,15 @@
+---
+version: 2
+models:
+- name: "m5"
+  columns:
+  - name: "STUDENT"
+    dataType:
+      type: "String"
+  - name: "SUBJECT"
+    dataType:
+      type: "String"
+  - name: "MARKS"
+    dataType:
+      type: "Number"
+  tests: []

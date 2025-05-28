@@ -1,6 +1,6 @@
 name: dependency_sql_simple_ext
 description: ''
-version: '1'
+version: '2'
 author: arunsharma@prophecy.io
 language: sql
 buildSystem: ''
@@ -23,7 +23,46 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model1:
+    name: model1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Bigint
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: first_order
+        dataType:
+          type: Date
+      - name: most_recent_order
+        dataType:
+          type: Date
+      - name: number_of_orders
+        dataType:
+          type: Bigint
+      - name: customer_lifetime_value
+        dataType:
+          type: Double
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/model1.sql
+    - .prophecy/ide/models/model1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-03-10 18:44:34'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -37,9 +76,88 @@ sqlMacros:
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-10 07:16:25'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_arun123:
+    name: hive_metastore.arun123
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-10 18:45:42'
+    tables:
+    - name: sqlmodel
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: customer_id
+          dataType:
+            type: Bigint
+        - name: first_name
+          dataType:
+            type: String
+        - name: last_name
+          dataType:
+            type: String
+        - name: phone
+          dataType:
+            type: String
+        - name: email
+          dataType:
+            type: String
+        - name: country_code
+          dataType:
+            type: String
+        - name: account_open_date
+          dataType:
+            type: Date
+        - name: account_flags
+          dataType:
+            type: String
+      description: Customer account information, including personal details and account
+        status, supporting customer relationship management efforts.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 18:45:42'
+    - name: model
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: customer_id
+          dataType:
+            type: Bigint
+        - name: first_name
+          dataType:
+            type: String
+        - name: last_name
+          dataType:
+            type: String
+        - name: first_order
+          dataType:
+            type: Date
+        - name: most_recent_order
+          dataType:
+            type: Date
+        - name: number_of_orders
+          dataType:
+            type: Bigint
+        - name: customer_lifetime_value
+          dataType:
+            type: Double
+      description: Customer order history and lifetime value data, enabling insights
+        into customer behavior and retention.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-10 18:48:06'
 sqlUnreferencedSources: {}
-sqlOrchestratorPipelines: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/pip1lin1:
+    name: pip1lin1
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/pip1lin1.json
+    createdAt: '2025-03-10 07:32:29'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline

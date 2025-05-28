@@ -1,0 +1,365 @@
+{
+  "name" : "snowflake_simple_Test_project_",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "snowflake",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "pipeline1" : {
+      "id" : "pipeline1",
+      "name" : "pipeline1",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/pipeline1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "EvJybHD2yWFW4nXBKtA1u$$ZMdktohQL_6ibPl6OK0EU",
+        "label" : "user_profiles_csv"
+      }, {
+        "id" : "xi_koNA-y4ufIm7y0YMca$$xFqZLMNXWbObv9yRHtH0t",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "HyctJgl41g38OOGQ-sg4x$$mhNvNcRdNDIa7pN43Y6vj",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "aTlHOWr9hp6d8CmdpnKse",
+        "label" : "SFTPSource_0",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "id",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "name",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "email",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "age",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "city",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "country",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "kkfClPc53R9tL6zjjGcqw$$L3lLxDvm2ZVyz4P51ehrE",
+        "label" : "user_profiles_xml"
+      } ],
+      "sources" : [ {
+        "id" : "aTlHOWr9hp6d8CmdpnKse",
+        "label" : "SFTPSource_0"
+      } ]
+    },
+    "XLSX_PIPELINE" : {
+      "id" : "XLSX_PIPELINE",
+      "name" : "XLSX_PIPELINE",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/XLSX_PIPELINE.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "LjcxqCkJ95-7d4FEKVHsc$$iWHuGajmFW5dyzqbug-2Q",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "AbFlQSA3rpduHkBklhlnV",
+        "label" : "SFTPSource_1",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "Integer",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "BigInt",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "SmallInt",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "TinyInt",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "Float",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Decimal",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "Boolean",
+            "dataType" : {
+              "type" : "Number"
+            }
+          }, {
+            "name" : "Date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "Timestamp",
+            "dataType" : {
+              "type" : "Timestamp"
+            }
+          }, {
+            "name" : "JSON",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "Void",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "CK_lsrucd6SKUJsOf5Io1$$0TekwHnzA8CTfrMraH1yO",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "irsZjwj9AXC23YSNnQP_E$$TuiMIo2ELrN3a-TdVy3xK",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "BQeHedsherQ_ignrJ7T5c$$_BeB1551_aa_SVkGJHXfN",
+        "label" : "user_profiles_csv"
+      } ],
+      "sources" : [ {
+        "id" : "AbFlQSA3rpduHkBklhlnV",
+        "label" : "SFTPSource_1"
+      } ]
+    },
+    "xml_pipeline" : {
+      "id" : "xml_pipeline",
+      "name" : "xml_pipeline",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/xml_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "v8KIYbtjiiwCeVGw7yGKs",
+        "label" : "SFTPSource_1",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "@id",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "array_data",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "description",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "price",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "publish_date",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "genre",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "struct_data",
+            "dataType" : {
+              "type" : "Variant"
+            }
+          }, {
+            "name" : "json_data",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "author",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "title",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "t7TIsHrJbwnumGNzGlG8p$$nYxtIgFOO04PY_E8-SEGw",
+        "label" : "user_profiles_csv"
+      }, {
+        "id" : "YFWeCJYk9ZdQup0jv5ln_$$kkx64kDjYQ3loU4dEAqzX",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "cGF2KORLTWKZmxhOi-Tlh$$W0NqDgdXSLqfGswFXpkHG",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "UMTV7iEZog4GaICFIIO_o$$_elfmE03Q-9VJOa4UxZyb",
+        "label" : "user_profiles_json"
+      } ],
+      "sources" : [ {
+        "id" : "v8KIYbtjiiwCeVGw7yGKs",
+        "label" : "SFTPSource_1"
+      } ]
+    },
+    "json_pipeline" : {
+      "id" : "json_pipeline",
+      "name" : "json_pipeline",
+      "path" : "snowflake_simple_Test_project_/.prophecy/ide/pipelines/json_pipeline.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "UGQebudeIm7blWGL4HXdx$$FalCcUm1RVQvqB-vTOnUd",
+        "label" : "user_profiles_xlsx"
+      }, {
+        "id" : "xkkqYQknFcLJud7dq7q2t$$lkBEXUvkk_jVM5m34o8n-",
+        "label" : "user_profiles_xml"
+      }, {
+        "id" : "vTLupw5DmiRyTxz5FF0TC$$oF6cX6fyWJNKMLUJ_kgce",
+        "label" : "user_profiles_json"
+      }, {
+        "id" : "6r6yJkbhpF0FK85R9hF8Q",
+        "label" : "SFTPSource_1",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "snowflake",
+          "fields" : [ {
+            "name" : "FAVORITE_COLORS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "ADDRESS",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "BANK_BALANCE",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HAS_CREDIT_CARD",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "HOBBIES",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "ID",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "SALARY",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "JOIN_DATE",
+            "dataType" : {
+              "type" : "Date"
+            }
+          }, {
+            "name" : "LAST_LOGIN",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "CUSTOM_OBJECT",
+            "dataType" : {
+              "type" : "String"
+            }
+          }, {
+            "name" : "AGE",
+            "dataType" : {
+              "type" : "Float"
+            }
+          }, {
+            "name" : "IS_EMPLOYED",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      }, {
+        "id" : "1YAW7BXxNKcl6WLVBHV4M$$TPeKdGDw6pk9DEes4f1jZ",
+        "label" : "user_profiles_csv"
+      } ],
+      "sources" : [ {
+        "id" : "6r6yJkbhpF0FK85R9hF8Q",
+        "label" : "SFTPSource_1"
+      } ]
+    }
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

@@ -1,0 +1,84 @@
+{
+  "id" : "model3",
+  "metainfo" : {
+    "label" : "model3",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model3##GXEzMdjO" : {
+      "id" : "model3##GXEzMdjO",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model3",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM bigint_data\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OeS7vXIU",
+          "slug" : "bigint_data"
+        } ],
+        "outputs" : [ {
+          "id" : "kHaqDN8q",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "MhwhhawsUIZewbqVBB0W5" : {
+      "id" : "MhwhhawsUIZewbqVBB0W5",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "bigint_data",
+        "slug" : "bigint_data",
+        "x" : -200,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "bigint_data",
+          "sourceType" : "Table",
+          "sourceName" : "hive_metastore.arun123",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "d8zLxj5yvg_Q7ED-Q5TUF",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "rrsiXbNyJ8haHiihRXpSw$$o793rnQchryOdlro9xfyN",
+    "source" : "MhwhhawsUIZewbqVBB0W5",
+    "sourcePort" : "d8zLxj5yvg_Q7ED-Q5TUF",
+    "target" : "model3##GXEzMdjO",
+    "targetPort" : "OeS7vXIU"
+  } ],
+  "component" : "Model"
+}

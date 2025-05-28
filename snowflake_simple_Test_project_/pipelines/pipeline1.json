@@ -1,0 +1,487 @@
+{
+  "id" : "pipeline1",
+  "metainfo" : {
+    "label" : "pipeline1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "EvJybHD2yWFW4nXBKtA1u$$ZMdktohQL_6ibPl6OK0EU" : {
+      "id" : "EvJybHD2yWFW4nXBKtA1u$$ZMdktohQL_6ibPl6OK0EU",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_csv",
+        "x" : 1060,
+        "y" : 40,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.csv"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PFztxrYGXOcVYVWamRG-S$$NtjZKdYNnRASVlKgiaegc",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "xi_koNA-y4ufIm7y0YMca$$xFqZLMNXWbObv9yRHtH0t" : {
+      "id" : "xi_koNA-y4ufIm7y0YMca$$xFqZLMNXWbObv9yRHtH0t",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_json",
+        "x" : 1060,
+        "y" : 320,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.json"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "json",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3h-73WW1zbwILc3Q1cdwx$$66HF6fLLMbWgnfOQ-Plzi",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "HyctJgl41g38OOGQ-sg4x$$mhNvNcRdNDIa7pN43Y6vj" : {
+      "id" : "HyctJgl41g38OOGQ-sg4x$$mhNvNcRdNDIa7pN43Y6vj",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xlsx",
+        "x" : 1120,
+        "y" : 840,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xlsx"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xlsx",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gfh9m88bv-KMdmEJ2_46o$$RUEn2FuhluuFDuLc_615C",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "aTlHOWr9hp6d8CmdpnKse" : {
+      "id" : "aTlHOWr9hp6d8CmdpnKse",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "x" : 240,
+        "y" : 480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "csv",
+          "properties" : {
+            "separator" : ",",
+            "schema" : {
+              "fields" : [ {
+                "name" : "id",
+                "dataType" : {
+                  "type" : "int64"
+                }
+              }, {
+                "name" : "name",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "email",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "age",
+                "dataType" : {
+                  "type" : "int64"
+                }
+              }, {
+                "name" : "city",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              }, {
+                "name" : "country",
+                "dataType" : {
+                  "type" : "utf8"
+                }
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/test_20records.csv"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "222086a6-de05-417d-b39f-61417452a346",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "kkfClPc53R9tL6zjjGcqw$$L3lLxDvm2ZVyz4P51ehrE" : {
+      "id" : "kkfClPc53R9tL6zjjGcqw$$L3lLxDvm2ZVyz4P51ehrE",
+      "component" : "OrchestrationTarget",
+      "kind" : "SFTPTarget",
+      "metadata" : {
+        "label" : "user_profiles_xml",
+        "x" : 1080,
+        "y" : 580,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_connection"
+          },
+          "type" : "connector"
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "/prophecy-sftp/aruns/snowflake_result.xml"
+                }
+              } ]
+            }
+          }
+        },
+        "format" : {
+          "properties" : {
+            "separator" : ","
+          },
+          "kind" : "xml",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qlmhfem9z0LXI954blORd$$ONjRdqxUdSsuAcm31HDCB",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "snowflake",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "luXqUPxIIFVXDgqOQW2mz",
+    "source" : "aTlHOWr9hp6d8CmdpnKse",
+    "sourcePort" : "222086a6-de05-417d-b39f-61417452a346",
+    "target" : "EvJybHD2yWFW4nXBKtA1u$$ZMdktohQL_6ibPl6OK0EU",
+    "targetPort" : "PFztxrYGXOcVYVWamRG-S$$NtjZKdYNnRASVlKgiaegc"
+  }, {
+    "id" : "e-3k8-LVnMLfHzABFydc4",
+    "source" : "aTlHOWr9hp6d8CmdpnKse",
+    "sourcePort" : "222086a6-de05-417d-b39f-61417452a346",
+    "target" : "xi_koNA-y4ufIm7y0YMca$$xFqZLMNXWbObv9yRHtH0t",
+    "targetPort" : "3h-73WW1zbwILc3Q1cdwx$$66HF6fLLMbWgnfOQ-Plzi"
+  }, {
+    "id" : "Bip9g3SxDLDKYUDWf-Rsu",
+    "source" : "aTlHOWr9hp6d8CmdpnKse",
+    "sourcePort" : "222086a6-de05-417d-b39f-61417452a346",
+    "target" : "kkfClPc53R9tL6zjjGcqw$$L3lLxDvm2ZVyz4P51ehrE",
+    "targetPort" : "qlmhfem9z0LXI954blORd$$ONjRdqxUdSsuAcm31HDCB"
+  }, {
+    "id" : "CbpdWICniHmNreC_8u9rd",
+    "source" : "aTlHOWr9hp6d8CmdpnKse",
+    "sourcePort" : "222086a6-de05-417d-b39f-61417452a346",
+    "target" : "HyctJgl41g38OOGQ-sg4x$$mhNvNcRdNDIa7pN43Y6vj",
+    "targetPort" : "gfh9m88bv-KMdmEJ2_46o$$RUEn2FuhluuFDuLc_615C"
+  } ],
+  "component" : "Pipeline"
+}
