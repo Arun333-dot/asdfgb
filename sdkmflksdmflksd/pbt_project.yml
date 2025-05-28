@@ -10,10 +10,148 @@ buildSystemDetails:
   buildSystem: maven
   author: null
   createdAt: '2025-05-28 09:51:11'
-pipelines: {}
+pipelines:
+  pipelines/ewrwe:
+    name: ewrwe
+    description: ''
+    author: arunsharma+sp@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2025-05-28 09:56:08'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/o9kl:
+    name: o9kl
+    description: ''
+    fabricUID: 7252
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-05-28 09:56:56'
+    author: arunsharma+sp@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/job2:
+    name: job2
+    description: ''
+    fabricUID: 7252
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-05-28 09:57:08'
+    author: arunsharma+sp@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/job3:
+    name: job3
+    description: ''
+    fabricUID: 7252
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-05-28 09:57:35'
+    author: arunsharma+sp@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/job4:
+    name: job4
+    description: ''
+    fabricUID: 7252
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-05-28 09:57:51'
+    author: arunsharma+sp@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/job5:
+    name: job5
+    description: ''
+    fabricUID: 7252
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-05-28 09:58:00'
+    author: arunsharma+sp@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: 2.12.15
   gemLibsVersion: 1.1.26
