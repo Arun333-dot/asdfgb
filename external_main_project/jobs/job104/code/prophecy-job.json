@@ -1,0 +1,118 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "4331",
+    "jobId" : "jobs/job104",
+    "name" : "job104",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "IRAx_QNhDb3AvrvA0gag4$$_TNju038KMmz9EbkLaXHC" : {
+      "id" : "IRAx_QNhDb3AvrvA0gag4$$_TNju038KMmz9EbkLaXHC",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -1000,
+        "y" : -480
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eYuoellCyiX_JZK5HA41T$$enDEl5zxtzYknD7p0pDJl",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "F-oU9CJyWZuYHQoCqoZgc$$BehFjE5KIobMbpJ7qLYPN",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "projectId" : "",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : false,
+        "execTest" : true,
+        "currentProjectModels" : [ ]
+      }
+    },
+    "mVTvH4G-3d4K05Zm7jW6f$$k1I-trzhb2XEUlHqGVD8a" : {
+      "id" : "mVTvH4G-3d4K05Zm7jW6f$$k1I-trzhb2XEUlHqGVD8a",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : -860,
+        "y" : -480
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XECDbxmOH4p9DVOrcn1yP$$1b0k0SMl3HfGl2AfEzC4F",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "1Zab02C6tY1-BMZ_LCn4U$$tUzNg_gMVTacDA-lZZLOw",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : ""
+      }
+    }
+  },
+  "connections" : [ ]
+}
