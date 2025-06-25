@@ -34,6 +34,31 @@ jobs:
     author: arunsharma+admin@prophecy.io
     models: []
     sqlProjects: []
+  jobs/job103:
+    name: job103
+    description: ''
+    fabricUID: 4331
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-06-25 05:23:34'
+    author: arunsharma+admin@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -48,7 +73,22 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/m103:
+    name: m103
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/m103.sql
+    - .prophecy/ide/models/m103.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-06-25 05:24:22'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -92,6 +132,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p102.json
     - pipelines/p102.py
     createdAt: '2025-06-25 05:08:59'
+  .prophecy/metadata/sqlorchestratorpipeline/p103:
+    name: p103
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p103.json
+    - pipelines/p103.py
+    createdAt: '2025-06-25 05:23:28'
 sqlBusinessApps:
   .prophecy/metadata/sqlbusinessapp/app102:
     name: app102
@@ -102,3 +151,12 @@ sqlBusinessApps:
     - apps/app102.json
     createdAt: '2025-06-25 05:09:11'
     sqlOrchestrationPipelineName: p102
+  .prophecy/metadata/sqlbusinessapp/app103:
+    name: app103
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app103.json
+    createdAt: '2025-06-25 05:23:51'
+    sqlOrchestrationPipelineName: p103
