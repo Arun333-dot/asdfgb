@@ -59,6 +59,31 @@ jobs:
     author: arunsharma+admin@prophecy.io
     models: []
     sqlProjects: []
+  jobs/job106:
+    name: job106
+    description: ''
+    fabricUID: 4331
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-06-25 06:38:07'
+    author: arunsharma+admin@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -108,6 +133,15 @@ flags:
   shouldAddDefaultDependenciesIfAbsent: false
 pipelineConfigurations: {}
 sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p106:
+    name: p106
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p106.json
+    - pipelines/p106.py
+    createdAt: '2025-06-25 06:37:58'
   .prophecy/metadata/sqlorchestratorpipeline/p102:
     name: p102
     schema: null
@@ -145,3 +179,12 @@ sqlBusinessApps:
     - apps/app102.json
     createdAt: '2025-06-25 05:09:11'
     sqlOrchestrationPipelineName: p102
+  .prophecy/metadata/sqlbusinessapp/app106:
+    name: app106
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app106.json
+    createdAt: '2025-06-25 06:38:46'
+    sqlOrchestrationPipelineName: p106

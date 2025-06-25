@@ -1,0 +1,92 @@
+{
+  "id" : "app106",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "p106"
+  },
+  "definition" : {
+    "template" : [ {
+      "key" : "BjVFdVCi2JXGD0zdcftb1",
+      "id" : "Chart1",
+      "type" : "map",
+      "properties" : {
+        "tableId" : "",
+        "title" : "Charts Title",
+        "type" : "map",
+        "config" : {
+          "xAxisColumn" : "",
+          "yAxisColumn" : [ {
+            "name" : "",
+            "agg" : "Avg"
+          } ],
+          "showLegend" : true,
+          "showTooltip" : true,
+          "barAndLineConfig" : {
+            "showGrid" : true
+          },
+          "areaConfig" : {
+            "showGrid" : true,
+            "stacked" : false,
+            "showGradient" : true
+          },
+          "pieConfig" : {
+            "angle" : "full",
+            "chartStyle" : "pie",
+            "innerRadius" : 0,
+            "outerRadius" : 100,
+            "centerX" : 50,
+            "centerY" : 50
+          },
+          "candlestickConfig" : {
+            "openColumn" : "",
+            "closeColumn" : ""
+          },
+          "mapConfig" : {
+            "mapType" : "marker",
+            "fitBounds" : false,
+            "markerConfig" : {
+              "options" : {
+                "pathOptions" : {
+                  "color" : "black",
+                  "fillColor" : "black",
+                  "fillOpacity" : 0.1
+                },
+                "showTooltip" : true,
+                "showLabel" : true
+              },
+              "columns" : {
+                "column" : "",
+                "labelColumn" : "",
+                "tooltipColumns" : [ ]
+              }
+            },
+            "displacementConfig" : {
+              "options" : {
+                "pathOptions" : {
+                  "color" : "blue",
+                  "weight" : 1.5
+                },
+                "showArrow" : true
+              },
+              "columns" : {
+                "sourceColumn" : "",
+                "sourceLabelColumn" : "",
+                "destinationColumn" : "",
+                "destinationLabelColumn" : "",
+                "tooltipColumns" : [ ]
+              }
+            }
+          },
+          "scatterConfig" : {
+            "series" : [ ],
+            "type" : "Scatter"
+          }
+        }
+      },
+      "errors" : {
+        "properties" : true
+      }
+    } ]
+  },
+  "instances" : { }
+}
