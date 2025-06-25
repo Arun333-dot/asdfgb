@@ -127,15 +127,6 @@ sqlOrchestratorPipelines:
     - pipelines/p104.py
     createdAt: '2025-06-25 05:26:46'
 sqlBusinessApps:
-  .prophecy/metadata/sqlbusinessapp/app102:
-    name: app102
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - apps/app102.json
-    createdAt: '2025-06-25 05:09:11'
-    sqlOrchestrationPipelineName: p102
   .prophecy/metadata/sqlbusinessapp/app104:
     name: app104
     schema: null
@@ -145,3 +136,12 @@ sqlBusinessApps:
     - apps/app104.json
     createdAt: '2025-06-25 05:27:07'
     sqlOrchestrationPipelineName: p104
+  .prophecy/metadata/sqlbusinessapp/app102:
+    name: app102
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app102.json
+    createdAt: '2025-06-25 05:09:11'
+    sqlOrchestrationPipelineName: p102
