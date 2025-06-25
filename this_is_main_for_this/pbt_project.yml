@@ -1,0 +1,110 @@
+name: sql_externla_project_main_test
+description: ''
+version: 0.0.1
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/job201:
+    name: job201
+    description: ''
+    fabricUID: 4331
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-06-25 09:02:32'
+    author: arunsharma+admin@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-06-25 09:01:53'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model201:
+    name: model201
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/model201.sql
+    - .prophecy/ide/models/model201.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-06-25 09:02:54'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-06-25 09:02:06'
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2025-06-25 09:01:53'
+dependencies: []
+projectDependencies:
+  '22363':
+    projectUID: 22363
+    projectName: ProphecyDatabricksSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
+    version: 0.0.10
+    isDefault: true
+    author: null
+    createdAt: '2025-06-25 09:01:29'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p201:
+    name: p201
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p201.json
+    - pipelines/p201.py
+    createdAt: '2025-06-25 09:02:24'
+sqlBusinessApps: {}
