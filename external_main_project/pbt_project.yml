@@ -132,6 +132,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p102.json
     - pipelines/p102.py
     createdAt: '2025-06-25 05:08:59'
+  .prophecy/metadata/sqlorchestratorpipeline/p104:
+    name: p104
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p104.json
+    - pipelines/p104.py
+    createdAt: '2025-06-25 06:32:22'
   .prophecy/metadata/sqlorchestratorpipeline/p103:
     name: p103
     schema: null
@@ -142,6 +151,15 @@ sqlOrchestratorPipelines:
     - pipelines/p103.py
     createdAt: '2025-06-25 05:23:28'
 sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/app104:
+    name: app104
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - apps/app104.json
+    createdAt: '2025-06-25 06:32:22'
+    sqlOrchestrationPipelineName: p104
   .prophecy/metadata/sqlbusinessapp/app102:
     name: app102
     schema: null
