@@ -84,6 +84,31 @@ jobs:
     author: arunsharma+admin@prophecy.io
     models: []
     sqlProjects: []
+  jobs/job108:
+    name: job108
+    description: ''
+    fabricUID: 4331
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-06-25 06:43:05'
+    author: arunsharma+admin@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -133,24 +158,15 @@ flags:
   shouldAddDefaultDependenciesIfAbsent: false
 pipelineConfigurations: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/p106:
-    name: p106
+  .prophecy/metadata/sqlorchestratorpipeline/p108:
+    name: p108
     schema: null
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - .prophecy/ide/pipelines/p106.json
-    - pipelines/p106.py
-    createdAt: '2025-06-25 06:37:58'
-  .prophecy/metadata/sqlorchestratorpipeline/p102:
-    name: p102
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - .prophecy/ide/pipelines/p102.json
-    - pipelines/p102.py
-    createdAt: '2025-06-25 05:08:59'
+    - .prophecy/ide/pipelines/p108.json
+    - pipelines/p108.py
+    createdAt: '2025-06-25 06:42:58'
   .prophecy/metadata/sqlorchestratorpipeline/p104:
     name: p104
     schema: null
@@ -160,6 +176,24 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p104.json
     - pipelines/p104.py
     createdAt: '2025-06-25 05:26:46'
+  .prophecy/metadata/sqlorchestratorpipeline/p102:
+    name: p102
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p102.json
+    - pipelines/p102.py
+    createdAt: '2025-06-25 05:08:59'
+  .prophecy/metadata/sqlorchestratorpipeline/p106:
+    name: p106
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p106.json
+    - pipelines/p106.py
+    createdAt: '2025-06-25 06:37:58'
 sqlBusinessApps:
   .prophecy/metadata/sqlbusinessapp/app104:
     name: app104
