@@ -226,6 +226,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p108.json
     - pipelines/p108.py
     createdAt: '2025-06-25 06:42:58'
+  .prophecy/metadata/sqlorchestratorpipeline/p109_2:
+    name: p109_2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p109_2.json
+    - pipelines/p109_2.py
+    createdAt: '2025-06-25 06:53:36'
   .prophecy/metadata/sqlorchestratorpipeline/p108_2:
     name: p108_2
     schema: null
