@@ -73,6 +73,7 @@ sqlMacros:
     author: arunsharma+admin@prophecy.io
     files:
     - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
     createdAt: '2025-07-04 19:56:39'
 sqlSeeds: {}
 sqlSources: {}
@@ -96,15 +97,6 @@ flags:
   shouldAddDefaultDependenciesIfAbsent: false
 pipelineConfigurations: {}
 sqlOrchestratorPipelines:
-  .prophecy/metadata/sqlorchestratorpipeline/p3:
-    name: p3
-    schema: null
-    description: null
-    author: arunsharma+admin@prophecy.io
-    files:
-    - .prophecy/ide/pipelines/p3.json
-    - pipelines/p3.py
-    createdAt: '2025-07-04 19:56:39'
   .prophecy/metadata/sqlorchestratorpipeline/p1:
     name: p1
     schema: null
@@ -114,4 +106,13 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-07-04 19:58:44'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p3.json
+    - pipelines/p3.py
+    createdAt: '2025-07-04 19:56:39'
 sqlBusinessApps: {}
