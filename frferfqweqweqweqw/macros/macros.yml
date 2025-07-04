@@ -1,0 +1,11 @@
+---
+version: 2
+macros:
+- name: "g1"
+  arguments:
+  - name: "parameter1"
+    type: "value"
+  macroType: "query"
+- name: "f1"
+  arguments: []
+  macroType: "expression"
