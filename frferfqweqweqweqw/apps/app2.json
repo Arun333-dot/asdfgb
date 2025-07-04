@@ -1,0 +1,11 @@
+{
+  "id" : "app2",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "p2"
+  },
+  "definition" : {
+    "template" : [ ]
+  },
+  "instances" : { }
+}
