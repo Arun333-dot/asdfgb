@@ -11,6 +11,19 @@ buildSystemDetails:
   author: null
   createdAt: '2025-07-04 21:02:52'
 pipelines:
+  pipelines/p1:
+    name: p1
+    description: ''
+    author: arunsharma+admin@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2025-07-04 20:56:46'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
   pipelines/p2:
     name: p2
     description: ''
@@ -27,6 +40,31 @@ pipelines:
 datasets: {}
 templates: {}
 jobs:
+  jobs/job1:
+    name: job1
+    description: ''
+    fabricUID: 4205
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-07-04 21:00:35'
+    author: arunsharma+admin@prophecy.io
+    models: []
+    sqlProjects: []
   jobs/j2:
     name: j2
     description: ''
@@ -59,7 +97,7 @@ gemContainer:
   dependencies: null
 functions:
   author: null
-  createdAt: '2025-07-04 21:02:52'
+  createdAt: '2025-07-04 20:56:46'
   udfs: {}
   udafs: {}
   expressions: {}
@@ -75,17 +113,17 @@ sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- modifiedAt: '2025-07-04T21:02:52.529149Z'
+- modifiedAt: '2025-07-04T20:56:46.047092Z'
   name: plibMaven
   version: 8.11.0-SNAPSHOT
-  id: '232332718'
-  createdAt: '2025-07-04T21:02:52.529149Z'
+  id: '729795468'
+  createdAt: '2025-07-04T20:56:46.047092Z'
   type: plibMaven
-- modifiedAt: '2025-07-04T21:02:52.529149Z'
+- modifiedAt: '2025-07-04T20:56:46.047092Z'
   name: plibPypi
   version: 2.0.4
-  id: '38847679'
-  createdAt: '2025-07-04T21:02:52.529149Z'
+  id: '780614926'
+  createdAt: '2025-07-04T20:56:46.047092Z'
   type: plibPypi
 projectDependencies:
   '42':
